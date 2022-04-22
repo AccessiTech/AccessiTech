@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.1.3",
+    "eslint": "^8.13.0",
     "react-bootstrap": "^2.3.0",
     "react-scripts": "5.0.1"
   },
@@ -38,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "A real simple website.",
+  "main": "index.js",
+  "repository": "https://github.com/AccessiTech/AccessiTech.git",
+  "author": "AccessiT3ch <accessiT3ch@gmail.com>",
+  "license": "MIT"
 }
