@@ -25,6 +25,12 @@ function App() {
             {/* todo: add social buttons */}
           </Col>
         </Row>
+        <Row className="about-row">
+          <Col xs={12} md={{span: 8, offset: 2}}>
+            <p>AccessiTech LLC is a social enterprise dedicated to removing barriers for disabled design technologists by producing and sharing relevant industry expertise and personal / professional exploration via content across multiple social, hosting, and streaming platforms.</p>
+            <p>As a social enterprise, AccessiTech LLC fosters positive social change by promoting and collaborating on emergent technologies aimed at increasing accessibility, inclusion, and equity for all.</p>
+          </Col>
+        </Row>
       </Container>
     </main>
   );
