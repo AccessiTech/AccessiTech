@@ -41,3 +41,9 @@
   max-width: 100%;
   border-radius: 100%;
 }
+
+.footer-row {
+  background-color: #FC389A;
+  padding:2rem 0 1rem;
+  color: black;
+}

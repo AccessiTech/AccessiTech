@@ -45,6 +45,11 @@ function App() {
             <img src={purposePicSrc} className="purpose-picture" />
           </Col>
         </Row>
+        <Row className="footer-row">
+          <Col>
+            <p>Copyright © 2021 AccessiTech LLC. All rights reserved.</p>
+          </Col>
+        </Row>
       </Container>
     </main>
   );
