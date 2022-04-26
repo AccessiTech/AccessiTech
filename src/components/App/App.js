@@ -23,7 +23,7 @@ function App() {
         >
           <Col>
             <Header />
-            <h2>Accessibility for Design Technologists</h2>
+            <h2 tabIndex={2} >Accessibility for Design Technologists</h2>
             {/* todo: add social buttons */}
           </Col>
         </Row>
@@ -35,7 +35,7 @@ function App() {
         </Row>
         <Row className="purpose-row">
           <Col className="purpose-text" xs={12} md={{span: 4, offset: 2}}>
-            <h3>Purpose</h3>
+            <h3 tabIndex={2}>Purpose</h3>
             <p>AccessiTech believes access to technology is a human right, particularly when such technology promotes, protects, and/or facilitates other human rights.</p>
             <p>Producing and publishing content on accessibility in technology, AccessiTech LLC provides clear and concise information to help disabled peoples more readily utilize the accessibility options available in their lives in order to better enable them to pursue their passions in a digital world.</p>
             <p>Through the proliferation, decentralization, and democratization of technology accessibility information, AccessiTech LLC seeks to lower the barriers to entry for disabled peoples throughout design and development communities abroad.</p>
@@ -47,7 +47,7 @@ function App() {
         </Row>
         <Row className="footer-row">
           <Col>
-            <p>Copyright © 2021 AccessiTech LLC. All rights reserved.</p>
+            <p tabIndex={0}>Copyright © 2021 AccessiTech LLC. All rights reserved.</p>
           </Col>
         </Row>
       </Container>
