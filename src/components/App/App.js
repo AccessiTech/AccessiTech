@@ -6,13 +6,12 @@ import Header from '../Header/Header';
 import SpalshSocials from '../SplashSocials/SplashSocials';
 import './App.css';
 import { TAGLINE } from '../../settings/strings';
+import { PURPOSE_PIC_URL, SPLASH_BG_URL } from '../../settings/settings';
 
 function App() {
   const splashRowStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}'/assets/images/splashBG.jpg')`,
+    backgroundImage: SPLASH_BG_URL,
   };
-
-  const purposePicSrc = `${process.env.PUBLIC_URL}/assets/images/hands.png`;
 
   return (
     <main className="App">
@@ -42,7 +41,7 @@ function App() {
             <p>Collaborating and promoting design and technology for social change, AccessiTech LLC aims to help create an increasingly accessible world for all.</p>
           </Col>
           <Col className="purpose-image" xs={12} md={{span: 5}}>
-            <img src={purposePicSrc} className="purpose-picture" alt="Hands typing in pain" title="Image Credit: Urupong from Ghetty Images" />
+            <img src={PURPOSE_PIC_URL} className="purpose-picture" alt="Hands typing in pain" title="Image Credit: Urupong from Ghetty Images" />
           </Col>
         </Row>
         <Row className="footer-row">

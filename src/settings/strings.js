@@ -10,10 +10,9 @@ export const YOUTUBE_LABEL = 'AccessiTech on YouTube';
 export const WHITE = 'white';
 export const TRANSPARENT = 'transparent';
 export const TARGET_BLANK = '_blank';
+export const EN = 'en';
 
 // URLs
 export const TWITTER_URL = "https://twitter.com/accessiT3ch";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/accessitech/";
 export const YOUTUBE_URL = "https://www.youtube.com/channel/UCcke0DIj4p7QMFEKyFTU8RA";
-
-
