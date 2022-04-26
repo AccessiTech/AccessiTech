@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from '../Header/Header';
+import SpalshSocials from '../SplashSocials/SplashSocials';
 import './App.css';
 
 
@@ -24,7 +25,7 @@ function App() {
           <Col>
             <Header />
             <h2>Accessibility for Design Technologists</h2>
-            {/* todo: add social buttons */}
+            <SpalshSocials />
           </Col>
         </Row>
         <Row className="about-row">
