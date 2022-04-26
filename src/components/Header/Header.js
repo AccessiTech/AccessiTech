@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className="main-header">
       {/* todo: add accessibility options widget */}
-      <h1 tabIndex={1} style={headerStyle}>AccessiTech LLC</h1>
+      <h1 style={headerStyle}>AccessiTech LLC</h1>
     </header>
   )
 }
