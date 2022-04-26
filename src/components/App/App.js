@@ -5,8 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Header from '../Header/Header';
 import SpalshSocials from '../SplashSocials/SplashSocials';
 import './App.css';
-
-
+import { TAGLINE } from '../../settings/strings';
 
 function App() {
   const splashRowStyle = {
@@ -24,7 +23,7 @@ function App() {
         >
           <Col>
             <Header />
-            <h2>Accessibility for Design Technologists</h2>
+            <h2>{TAGLINE}</h2>
             <SpalshSocials />
           </Col>
         </Row>
