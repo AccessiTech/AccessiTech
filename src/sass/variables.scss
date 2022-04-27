@@ -1,0 +1,17 @@
+// Bootstrap Settings
+$enable-rounded: false;
+
+// Global Variables!
+$yellow: #FDB81E;
+$darkBlue: #061A32;
+$pink: #FC389A;
+$lightBlue: #02C2E8;
+$grey: #AEB0B5;
+$black: black;
+$white: white;
+
+// Bootstrap Overrides
+$primary: $yellow;
+$secondary: $pink;
+
+$focus-border: 2px solid $white;

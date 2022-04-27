@@ -1,14 +1,22 @@
 import React from 'react';
-import './Header.css';
+import { PUBLIC_URL } from '../../settings/env';
+import { ACCESSITECH_LOGO, COMPANY_TITLE, ROOT } from '../../settings/strings';
+import './Header.scss';
 
 function Header() {
   const headerStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}'/assets/images/TypeLogo_White_HC.svg')`
+    backgroundImage: `url(${PUBLIC_URL}'/assets/images/TypeLogo_White_HC.svg')`
   };
   return (
-    <header className="main-header">
+    <header className="main-header" title="Header">
       {/* todo: add accessibility options widget */}
-      <h1 style={headerStyle}>AccessiTech LLC</h1>
+      <a
+        href={ROOT}
+        alt={ACCESSITECH_LOGO}
+        title={COMPANY_TITLE}
+      >
+        <h1 style={headerStyle}>{COMPANY_TITLE}</h1>
+      </a>
     </header>
   )
 }
