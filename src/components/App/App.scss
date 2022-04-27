@@ -1,18 +1,7 @@
-// Bootstrap Settings
-$enable-rounded: false;
+@import "./../../sass/variables.scss";
+@import "~bootstrap/scss/bootstrap";
 
-// Global Variables!
-$yellow: #FDB81E;
-$darkBlue: #061A32;
-$pink: #FC389A;
-$lightBlue: #02C2E8;
-$grey: #AEB0B5;
-$black: black;
-$white: white;
-
-$primary: $yellow;
-$secondary: $pink;
-
+// App Styling
 ul {
   padding: 0;
   list-style: none;
@@ -73,4 +62,4 @@ ul {
   }
 }
 
-@import "~bootstrap/scss/bootstrap";
+
