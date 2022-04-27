@@ -1,10 +1,11 @@
 import React from 'react';
+import { PUBLIC_URL } from '../../settings/env';
 import { ACCESSITECH_LOGO, COMPANY_TITLE, ROOT } from '../../settings/strings';
 import './Header.scss';
 
 function Header() {
   const headerStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}'/assets/images/TypeLogo_White_HC.svg')`
+    backgroundImage: `url(${PUBLIC_URL}'/assets/images/TypeLogo_White_HC.svg')`
   };
   return (
     <header className="main-header" title="Header">
