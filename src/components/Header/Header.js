@@ -1,6 +1,6 @@
 import React from 'react';
 import { ACCESSITECH_LOGO, COMPANY_TITLE, ROOT } from '../../settings/strings';
-import './Header.css';
+import './Header.scss';
 
 function Header() {
   const headerStyle = {

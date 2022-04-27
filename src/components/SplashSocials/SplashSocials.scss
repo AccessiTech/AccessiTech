@@ -1,0 +1,21 @@
+.splash-social-buttons {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+
+  li {
+    display: inline-block;
+    margin: 0 2rem;
+
+    .social-icon {
+      border: 1px solid white;
+
+      &:hover,
+      &:focus-visible {
+        outline: none;
+        border-width: 2px;
+      }
+    }
+  }
+}

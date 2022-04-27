@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer';
 import SpalshSocials from '../SplashSocials/SplashSocials';
 import { SPLASH_BG, TAGLINE } from '../../settings/strings';
 import { PURPOSE_PIC_URL } from '../../settings/settings';
-import './App.css';
+import './App.scss';
 
 function App() {
   const splashRowStyle = {
