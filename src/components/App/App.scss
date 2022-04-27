@@ -63,7 +63,7 @@ ul {
     &:focus,
     &:focus-visible {
       outline: none;
-      border: $focus-border;
+      outline: $focus-border;
     }
   }
 }
