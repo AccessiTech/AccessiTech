@@ -16,7 +16,7 @@
       &:hover,
       &:focus-visible {
         outline: none;
-        border-width: 2px;
+        border: $focus-border;
       }
     }
   }

@@ -54,11 +54,17 @@ ul {
 
 .footer-row {
   background-color: $pink;
-  color: black;
+  color: $black;
 
   a {
     color: $black;
     text-decoration: none;
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border: $focus-border;
+    }
   }
 }
 

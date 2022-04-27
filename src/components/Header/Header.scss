@@ -1,14 +1,25 @@
+@import "src/sass/variables.scss";
+
 .main-header {
   h1 {
-    margin-top: 38vh;
     color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: calc(50% + 0.5vw);
+    background-position-x: calc(50% + 1rem);
+    width: 345px;
   }
 
   a {
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 36vh;
     text-decoration: none;
+
+    &:focus,
+    &:focus-visible {
+      border: none;
+      outline: $focus-border;
+    }
   }
 }
