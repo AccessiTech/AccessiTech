@@ -16,6 +16,7 @@
     "eslint": "^8.13.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^3.2.3",
     "react-bootstrap": "^2.3.0",
     "react-scripts": "5.0.1",
     "sass": "^1.51.0"
@@ -23,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "yarn build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
