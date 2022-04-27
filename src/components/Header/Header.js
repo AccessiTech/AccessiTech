@@ -1,4 +1,5 @@
 import React from 'react';
+import { ACCESSITECH_LOGO, COMPANY_TITLE, ROOT } from '../../settings/strings';
 import './Header.css';
 
 function Header() {
@@ -8,7 +9,13 @@ function Header() {
   return (
     <header className="main-header">
       {/* todo: add accessibility options widget */}
-      <h1 style={headerStyle}>AccessiTech LLC</h1>
+      <a
+        href={ROOT}
+        alt={ACCESSITECH_LOGO}
+        title={COMPANY_TITLE}
+      >
+        <h1 style={headerStyle}>{COMPANY_TITLE}</h1>
+      </a>
     </header>
   )
 }
