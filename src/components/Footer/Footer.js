@@ -1,6 +1,6 @@
 import React from 'react';
 import { ACCESSITECH, COMPANY_TITLE, GMAIL_LABEL, GMAIL_URL, LINKEDIN_LABEL, LINKEDIN_URL, TARGET_BLANK, TWITTER_HANDLE, TWITTER_LABEL, TWITTER_URL, YOUTUBE_LABEL, YOUTUBE_URL } from '../../settings/strings';
-
+import './Footer.css';
 
 function Footer () {
   return (<section className="footer-section">
