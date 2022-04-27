@@ -30,7 +30,7 @@ function App() {
       </Row>
 
       {/* Main Rows */}
-      <main title="About AccessiTech">
+      <main aria-label="About AccessiTech">
         <Row className="about-row">
           <Col xs={12} md={{span: 8, offset: 2}}>
             <blockquote title="Vision">

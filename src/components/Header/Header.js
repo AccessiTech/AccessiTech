@@ -8,7 +8,7 @@ function Header() {
     backgroundImage: `url(${PUBLIC_URL}'/assets/images/TypeLogo_White_HC.svg')`
   };
   return (
-    <header className="main-header" title="Header">
+    <header className="main-header" aria-label="Header">
       {/* todo: add accessibility options widget */}
       <a
         href={ROOT}
