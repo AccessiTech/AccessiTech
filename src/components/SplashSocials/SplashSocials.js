@@ -4,7 +4,7 @@ import './SplashSocials.scss';
 import { WHITE, TRANSPARENT, TARGET_BLANK, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL, TWITTER_LABEL, YOUTUBE_LABEL, LINKEDIN_LABEL } from '../../settings/strings';
 
 function SpalshSocials () {
-  return (<section className="splash-social-buttons">
+  return (<section className="splash-social-buttons" title="Social Media Buttons">
     <ul>
       <li>
         <SocialIcon

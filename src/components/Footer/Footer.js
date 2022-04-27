@@ -3,9 +3,9 @@ import { ACCESSITECH, COMPANY_TITLE, GMAIL_LABEL, GMAIL_URL, LINKEDIN_LABEL, LIN
 import './Footer.scss';
 
 function Footer () {
-  return (<section className="footer-section">
+  return (<section className="footer-section" title="Footer">
     <h3>Reach Out!</h3>
-    <ul>
+    <ul title="contact list">
       <li>
         <a
           href={GMAIL_URL}
@@ -35,7 +35,7 @@ function Footer () {
         >linkedin at {COMPANY_TITLE}</a>
       </li>
     </ul>
-    <p className="copyright">Copyright © 2021 AccessiTech LLC. All rights reserved.</p>
+    <p title="copyright" className="copyright">Copyright © 2021 AccessiTech LLC. All rights reserved.</p>
   </section>);
 }
 

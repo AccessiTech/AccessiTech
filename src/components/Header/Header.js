@@ -7,7 +7,7 @@ function Header() {
     backgroundImage: `url(${process.env.PUBLIC_URL}'/assets/images/TypeLogo_White_HC.svg')`
   };
   return (
-    <header className="main-header">
+    <header className="main-header" title="Header">
       {/* todo: add accessibility options widget */}
       <a
         href={ROOT}
