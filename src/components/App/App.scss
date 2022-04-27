@@ -1,3 +1,6 @@
+// Bootstrap Settings
+$enable-rounded: false;
+
 // Global Variables!
 $yellow: #FDB81E;
 $darkBlue: #061A32;
@@ -6,6 +9,9 @@ $lightBlue: #02C2E8;
 $grey: #AEB0B5;
 $black: black;
 $white: white;
+
+$primary: $yellow;
+$secondary: $pink;
 
 ul {
   padding: 0;
