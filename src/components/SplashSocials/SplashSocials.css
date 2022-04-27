@@ -15,7 +15,6 @@
 }
 
 .social-icon:hover,
-.social-icon:focus,
 .social-icon:focus-visible {
   outline: none;
   border-width: 2px;
