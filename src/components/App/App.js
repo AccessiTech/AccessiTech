@@ -3,14 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import SpalshSocials from '../SplashSocials/SplashSocials';
+import { SPLASH_BG, TAGLINE } from '../../settings/strings';
+import { PURPOSE_PIC_URL } from '../../settings/settings';
 import './App.css';
-import { TAGLINE } from '../../settings/strings';
-import { PURPOSE_PIC_URL, SPLASH_BG_URL } from '../../settings/settings';
 
 function App() {
   const splashRowStyle = {
-    backgroundImage: SPLASH_BG_URL,
+    backgroundImage: SPLASH_BG  ,
   };
 
   return (
@@ -46,7 +47,7 @@ function App() {
         </Row>
         <Row className="footer-row">
           <Col>
-            <p>Copyright © 2021 AccessiTech LLC. All rights reserved.</p>
+            <Footer />
           </Col>
         </Row>
       </Container>

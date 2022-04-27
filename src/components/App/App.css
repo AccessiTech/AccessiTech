@@ -44,6 +44,10 @@
 
 .footer-row {
   background-color: #FC389A;
-  padding:2rem 0 1rem;
   color: black;
+}
+
+.footer-row a {
+  color: black;
+  text-decoration: none;
 }
