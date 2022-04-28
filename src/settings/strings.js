@@ -20,7 +20,7 @@ export const TWITTER_HANDLE = 'accessiT3ch';
 export const SPLASH_BG = `url(${SPLASH_BG_URL})`;
 
 // URLs
-export const ROOT = "/";
+export const ROOT = "/AccessiTech";
 export const TWITTER_URL = "https://twitter.com/accessiT3ch";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/accessitech/";
 export const YOUTUBE_URL = "https://www.youtube.com/channel/UCcke0DIj4p7QMFEKyFTU8RA";
