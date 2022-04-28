@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AccessiTech/static/css/main.4552da49.css",
-    "main.js": "/AccessiTech/static/js/main.d731c8da.js",
+    "main.css": "/AccessiTech/static/css/main.df8841d6.css",
+    "main.js": "/AccessiTech/static/js/main.dab8f61f.js",
     "static/js/787.316bd577.chunk.js": "/AccessiTech/static/js/787.316bd577.chunk.js",
     "index.html": "/AccessiTech/index.html",
-    "main.4552da49.css.map": "/AccessiTech/static/css/main.4552da49.css.map",
-    "main.d731c8da.js.map": "/AccessiTech/static/js/main.d731c8da.js.map",
+    "main.df8841d6.css.map": "/AccessiTech/static/css/main.df8841d6.css.map",
+    "main.dab8f61f.js.map": "/AccessiTech/static/js/main.dab8f61f.js.map",
     "787.316bd577.chunk.js.map": "/AccessiTech/static/js/787.316bd577.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4552da49.css",
-    "static/js/main.d731c8da.js"
+    "static/css/main.df8841d6.css",
+    "static/js/main.dab8f61f.js"
   ]
 }
