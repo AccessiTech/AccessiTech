@@ -11,7 +11,7 @@ import './App.scss';
 
 function App() {
   const splashRowStyle = {
-    backgroundImage: SPLASH_BG  ,
+    backgroundImage: SPLASH_BG,
   };
 
   return (
