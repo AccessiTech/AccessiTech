@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# AccessiTech
+This repository hosts a real simple website and is the accessitech homepage.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Connect with Me!
+* 🖥️ <a href="https://accessitech.github.io/AccessiTech/" alt="AccessiTech Website" title="AccessiTech Website" target="_blank">AccessiTech Website</a>
+* 👨‍💼 <a href="https://www.linkedin.com/company/accessitech/" alt="AccessiTech on LinkedIn" title="AccessiTech on LinkedIn" target="_blank">AccessiTech on LinkedIn</a>
+* ⏯️ <a href="https://www.youtube.com/channel/UCcke0DIj4p7QMFEKyFTU8RA" alt="AccessiTech on YouTube" title="AccessiTech on YouTube" target="_blank">AccessiTech on YouTube</a>
+* 🐦 <a href="https://twitter.com/accessiT3ch" alt="AccessiTech on Twitter" title="AccessiTech on Twitter" target="_blank">AccessiTech on Twitter</a>
+<!-- <a href="" alt="AccessiTech on Reddit" title="AccessiTech on Reddit" target="_blank">AccessiTech on Reddit</a> -->
+<!-- <a href="" alt="AccessiTech on Instagram" title="AccessiTech on Instagram" target="_blank"><img src="AccessiTech on Instagram"></a> -->
 
-## Available Scripts
+## About AccessiTech LLC
+### Accessibility for Design Technologists
 
-In the project directory, you can run:
+AccessiTech LLC is a social enterprise dedicated to removing barriers for disabled design technologists by producing and sharing relevant industry expertise and personal / professional exploration via content across multiple social, hosting, and streaming platforms.
 
-### `npm start`
+As a social enterprise, AccessiTech LLC fosters positive social change by promoting and collaborating on emergent technologies aimed at increasing accessibility, inclusion, and equity for all.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## The Why
+AccessiTech believes access to technology is a human right, particularly when such technology promotes, protects, and/or facilitates other human rights.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Producing and publishing content on accessibility in technology, AccessiTech LLC provides clear and concise information to help disabled peoples more readily utilize the accessibility options available in their lives in order to better enable them to pursue their passions in a digital world.
 
-### `npm test`
+Through the proliferation, decentralization, and democratization of technology accessibility information, AccessiTech LLC seeks to lower the barriers to entry for disabled peoples throughout design and development communities abroad.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Collaborating and promoting design and technology for social change, AccessiTech LLC aims to help create an increasingly accessible world for all.
 
-### `npm run build`
+## Collaboration
+As I found a mentally believe it collaboration is a form of accessibility, I encourage anyone and everyone who is interested in what excess attack is doing two reach out!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Accessibility of this Website
+Accessibility has been at the forefront of the design and development of this site. That being said, I am here to learn as much as I am to share, if not more so! If you notice something that makes this site inaccessible to you, that's a mismatch and I want to address it! If I'm doing something wrong our outdated, or if you have ideas of how to better implement accessibility in the design or development, let me know and we can find solutions together! While I'm doing everything I can upfront, I know that implementing web accessibility is an ongoing and iterative process, so please bear with me!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Issues / Bugs / Requests / etc
+I am an adament believer in simple and descriptive [Issues](https://github.com/AccessiTech/AccessiTech/issues) as a primary means of discussing and collaborating on just about anything!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Contributing to this Website
+I am very open to collaboration as, these days, the mobility of my hands is quite limited. If you like to contribute let me know in a issue and we can chat, or fork my repo and go to town!
