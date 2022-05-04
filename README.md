@@ -1,6 +1,14 @@
 # AccessiTech
 This repository hosts a real simple website and is the accessitech homepage.
 
+### Connect with Me!
+* 🖥️ <a href="https://accessitech.github.io/AccessiTech/" alt="AccessiTech Website" title="AccessiTech Website" target="_blank">AccessiTech Website</a>
+* 👨‍💼 <a href="https://www.linkedin.com/company/accessitech/" alt="AccessiTech on LinkedIn" title="AccessiTech on LinkedIn" target="_blank">AccessiTech on LinkedIn</a>
+* ⏯️ <a href="https://www.youtube.com/channel/UCcke0DIj4p7QMFEKyFTU8RA" alt="AccessiTech on YouTube" title="AccessiTech on YouTube" target="_blank">AccessiTech on YouTube</a>
+* 🐦 <a href="https://twitter.com/accessiT3ch" alt="AccessiTech on Twitter" title="AccessiTech on Twitter" target="_blank">AccessiTech on Twitter</a>
+<!-- <a href="" alt="AccessiTech on Reddit" title="AccessiTech on Reddit" target="_blank">AccessiTech on Reddit</a> -->
+<!-- <a href="" alt="AccessiTech on Instagram" title="AccessiTech on Instagram" target="_blank"><img src="AccessiTech on Instagram"></a> -->
+
 ## About AccessiTech LLC
 ### Accessibility for Design Technologists
 
