@@ -13,6 +13,10 @@
     @include margin(0 1rem 1rem);
   }
 
+  .github-issues {
+    @include margin-top(2rem);
+  }
+
   .copyright {
     @include margin(3rem 0 1rem);
   }

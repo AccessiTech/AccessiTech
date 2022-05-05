@@ -1,5 +1,5 @@
 import React from 'react';
-import { ACCESSITECH, COMPANY_TITLE, LINKEDIN_LABEL, LINKEDIN_URL, REDDIT_HANDLE, REDDIT_LABEL, REDDIT_URL, TARGET_BLANK, TWITTER_HANDLE, TWITTER_LABEL, TWITTER_URL, YOUTUBE_LABEL, YOUTUBE_URL } from '../../settings/strings';
+import { ACCESSITECH, COMPANY_TITLE, GITHUB_ISSUES, GITHUB_ISSUES_URL, LINKEDIN_LABEL, LINKEDIN_URL, REDDIT_HANDLE, REDDIT_LABEL, REDDIT_URL, TARGET_BLANK, TWITTER_HANDLE, TWITTER_LABEL, TWITTER_URL, YOUTUBE_LABEL, YOUTUBE_URL } from '../../settings/strings';
 import './Footer.scss';
 
 function Footer () {
@@ -42,6 +42,14 @@ function Footer () {
         >reddit at {REDDIT_HANDLE}</a>
       </li>
     </ul>
+    <p aria-label="reporting an issue" className='github-issues'>
+      Report bugs, request features, and start collaborating via&nbsp;
+      <a
+        href={GITHUB_ISSUES_URL}
+        target={TARGET_BLANK}
+        alt={GITHUB_ISSUES}
+      >GitHub issues</a>!
+    </p>
     <p aria-label="copyright" className="copyright">Copyright © 2021 AccessiTech LLC. All rights reserved.</p>
   </section>);
 }
