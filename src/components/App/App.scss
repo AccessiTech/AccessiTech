@@ -1,5 +1,6 @@
+// @use "../node_modules/bootstrap/scss/vendor/_rfs.scss";
 @import "./../../sass/variables.scss";
-@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap.scss";
 
 // App Styling
 ul {
@@ -18,28 +19,28 @@ ul {
   background-position: center;
 
   h2 {
-    margin-top: $alt-section-padding;
+    @include margin-top($alt-section-padding);
     color: $white;
     font-style: italic;
-    font-size: $tagline-font-size;
+    @include font-size(1.75rem);
     font-weight: 300;
   }
 }
 
 .about-row {
-  padding: 2.5rem 0;
+  @include padding(2.5rem 0);
 
   p {
-    margin: 2.5rem 0;
+    @include margin(2.5rem 0);
     color: $darkBlue;
-    font-size: $about-font-size;
+    @include font-size($about-font-size);
     font-style: italic;
   }
 }
 
 .purpose-row {
   background-color: $yellow;
-  padding: $main-section-padding 0;
+  @include padding($main-section-padding 0);
 
   .purpose-text {
     text-align: left;

@@ -1,14 +1,15 @@
 @import "src/sass/variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
 
 .splash-social-buttons {
   position: absolute;
-  bottom: $alt-section-padding;
+  bottom: rfs-value($alt-section-padding);
   left: 0;
   right: 0;
 
   li {
     display: inline-block;
-    margin: 0 2rem;
+    @include margin(0 2rem);
 
     .social-icon {
       border: 1px solid $white;
