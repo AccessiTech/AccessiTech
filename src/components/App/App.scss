@@ -21,10 +21,9 @@ ul {
     margin-top: 4rem;
     color: $white;
     font-style: italic;
-    font-size: 1.75rem;
+    font-size: $tagline-font-size;
     font-weight: 300;
   }
-
 }
 
 .about-row {
@@ -33,7 +32,7 @@ ul {
   p {
     margin: 3rem 0;
     color: $darkBlue;
-    font-size: 1.25rem;
+    font-size: $about-font-size;
     font-style: italic;
   }
 }
