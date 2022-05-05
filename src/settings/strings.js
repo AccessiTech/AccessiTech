@@ -11,6 +11,8 @@ export const YOUTUBE_LABEL = 'AccessiTech on YouTube';
 export const GMAIL_LABEL = 'AccessiTech on Gmail';
 export const ACCESSITECH_LOGO = 'AccessiTech Logo';
 export const REDDIT_LABEL = 'AccessiTech on Reddit';
+export const GITHUB_LABEL = 'AccessiTech on GitHub';
+export const GITHUB_ISSUES = 'GitHub Issues';
 
 // Magical Strings
 export const WHITE = 'white';
@@ -28,3 +30,5 @@ export const LINKEDIN_URL = "https://www.linkedin.com/company/accessitech/";
 export const YOUTUBE_URL = "https://www.youtube.com/channel/UCcke0DIj4p7QMFEKyFTU8RA";
 export const GMAIL_URL = "mailto:accessit3ch@gmail.com";
 export const REDDIT_URL = "https://www.reddit.com/user/accessitech";
+export const GITHUB_ORG_URL = "https://github.com/AccessiTech";
+export const GITHUB_ISSUES_URL = "https://github.com/AccessiTech/AccessiTech/issues";
