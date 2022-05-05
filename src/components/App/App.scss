@@ -8,6 +8,27 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: underline dotted $white;
+
+  &:hover {
+    text-decoration-style: dashed;
+  }
+
+  &:focus-visible {
+    outline: $focus-border;
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration-color: rgba($color: $white, $alpha: 0.5);
+  }
+
+  &.dark {
+    text-decoration-color: $darkBlue;
+  }
+}
+
 .App {
   text-align: center;
   color: $darkBlue;
@@ -58,13 +79,6 @@ ul {
 
   a {
     color: $black;
-    text-decoration: none;
-
-    &:focus,
-    &:focus-visible {
-      outline: none;
-      outline: $focus-border;
-    }
   }
 }
 
