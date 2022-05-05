@@ -1,8 +1,10 @@
+@import "./../../sass/variables.scss";
+
 .footer-section {
+  padding-top: $alt-section-padding;
   
   h3 {
     margin-bottom: 1.75rem;
-    margin-top: 2.25rem;
   }
 
   li {

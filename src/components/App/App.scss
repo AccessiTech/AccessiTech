@@ -18,7 +18,7 @@ ul {
   background-position: center;
 
   h2 {
-    margin-top: 4rem;
+    margin-top: $alt-section-padding;
     color: $white;
     font-style: italic;
     font-size: $tagline-font-size;
@@ -27,10 +27,10 @@ ul {
 }
 
 .about-row {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 
   p {
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     color: $darkBlue;
     font-size: $about-font-size;
     font-style: italic;
@@ -39,7 +39,7 @@ ul {
 
 .purpose-row {
   background-color: $yellow;
-  padding: 5rem 0;
+  padding: $main-section-padding 0;
 
   .purpose-text {
     text-align: left;
