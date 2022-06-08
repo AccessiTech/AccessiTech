@@ -1,4 +1,5 @@
 import React from 'react';
+import { getT } from '../../i18n';
 import { IMAGES_URL } from '../../settings/env';
 import { ACCESSITECH_LOGO_LABEL, COMPANY_TITLE, ROOT } from '../../settings/strings';
 import './Header.scss';
@@ -12,7 +13,7 @@ function Header() {
       {/* todo: add accessibility options widget */}
       <a
         href={ROOT}
-        alt={ACCESSITECH_LOGO_LABEL}
+        alt={getT(ACCESSITECH_LOGO_LABEL)}
         title={COMPANY_TITLE}
       >
         <h1 className="logo-container" style={headerStyle}>{COMPANY_TITLE}</h1>

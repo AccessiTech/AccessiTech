@@ -1,4 +1,5 @@
 import React from 'react';
+import { getT } from '../../i18n';
 import { ACCESSITECH, COMPANY_TITLE, COPYRIGHT_P1, GITHUB_ISSUES, GITHUB_ISSUES_URL, ISSUES_P1, LINKEDIN_LABEL, LINKEDIN_URL, REACH_OUT_HEADER, REDDIT_HANDLE, REDDIT_LABEL, REDDIT_URL, TARGET_BLANK, TWITTER_HANDLE, TWITTER_LABEL, TWITTER_URL, YOUTUBE_LABEL, YOUTUBE_URL } from '../../settings/strings';
 import './Footer.scss';
 
@@ -44,14 +45,14 @@ function Footer () {
       </li>
     </ul>
     <p aria-label="reporting an issue" className='github-issues'>
-      {ISSUES_P1}&nbsp;
+      {getT(ISSUES_P1)}&nbsp;
       <a
         href={GITHUB_ISSUES_URL}
         target={TARGET_BLANK}
         alt={GITHUB_ISSUES}
-      >{GITHUB_ISSUES}</a>!
+      >{getT(GITHUB_ISSUES)}</a>!
     </p>
-    <p aria-label="copyright" className="copyright">{COPYRIGHT_P1}</p>
+    <p aria-label="copyright" className="copyright">{getT(COPYRIGHT_P1)}</p>
   </section>);
 }
 
