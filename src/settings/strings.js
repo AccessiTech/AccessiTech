@@ -14,6 +14,19 @@ export const REDDIT_LABEL = 'AccessiTech on Reddit';
 export const GITHUB_LABEL = 'AccessiTech on GitHub';
 export const GITHUB_ISSUES = 'GitHub Issues';
 
+
+// Content Strings
+export const VISION_P1 = 'AccessiTech LLC is a social enterprise dedicated to removing barriers for disabled design technologists by producing and sharing relevant industry expertise and personal / professional exploration via content across multiple social, hosting, and streaming platforms.';
+export const VISION_P2 = 'As a social enterprise, AccessiTech LLC fosters positive social change by promoting and collaborating on emergent technologies aimed at increasing accessibility, inclusion, and equity for all.';
+export const PURPOSE_HEADER = 'Purpose';
+export const PURPOSE_P1 = 'AccessiTech believes access to technology is a human right, particularly when such technology promotes, protects, and/or facilitates other human rights.';
+export const PURPOSE_P2 = 'Producing and publishing content on accessibility in technology, AccessiTech LLC provides clear and concise information to help disabled peoples more readily utilize the accessibility options available in their lives in order to better enable them to pursue their passions in a digital world.';
+export const PURPOSE_P3 = 'Through the proliferation, decentralization, and democratization of technology accessibility information, AccessiTech LLC seeks to lower the barriers to entry for disabled peoples throughout design and development communities abroad.';
+export const PURPOSE_P4 = 'Collaborating and promoting design and technology for social change, AccessiTech LLC aims to help create an increasingly accessible world for all.';
+export const REACH_OUT_HEADER = 'Reach Out!';
+export const ISSUES_P1 = 'Report bugs, request features, and start collaborating via';
+export const COPYRIGHT_P1 = 'Copyright © 2021 AccessiTech LLC. All rights reserved.';
+
 // Magical Strings
 export const WHITE = 'white';
 export const TRANSPARENT = 'transparent';

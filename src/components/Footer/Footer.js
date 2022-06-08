@@ -1,10 +1,10 @@
 import React from 'react';
-import { ACCESSITECH, COMPANY_TITLE, GITHUB_ISSUES, GITHUB_ISSUES_URL, LINKEDIN_LABEL, LINKEDIN_URL, REDDIT_HANDLE, REDDIT_LABEL, REDDIT_URL, TARGET_BLANK, TWITTER_HANDLE, TWITTER_LABEL, TWITTER_URL, YOUTUBE_LABEL, YOUTUBE_URL } from '../../settings/strings';
+import { ACCESSITECH, COMPANY_TITLE, COPYRIGHT_P1, GITHUB_ISSUES, GITHUB_ISSUES_URL, ISSUES_P1, LINKEDIN_LABEL, LINKEDIN_URL, REACH_OUT_HEADER, REDDIT_HANDLE, REDDIT_LABEL, REDDIT_URL, TARGET_BLANK, TWITTER_HANDLE, TWITTER_LABEL, TWITTER_URL, YOUTUBE_LABEL, YOUTUBE_URL } from '../../settings/strings';
 import './Footer.scss';
 
 function Footer () {
   return (<section className="footer-section" aria-label="Footer">
-    <h3>Reach Out!</h3>
+    <h3>{REACH_OUT_HEADER}</h3>
     <ul aria-label="contact list">
       {/* <li>
         <a
@@ -13,6 +13,7 @@ function Footer () {
           alt={GMAIL_LABEL}
         >gmail at {TWITTER_HANDLE}</a>
       </li> */}
+      {/* todo: use dynamic display strings */}
       <li>
         <a
           href={TWITTER_URL}
@@ -43,14 +44,14 @@ function Footer () {
       </li>
     </ul>
     <p aria-label="reporting an issue" className='github-issues'>
-      Report bugs, request features, and start collaborating via&nbsp;
+      {ISSUES_P1}&nbsp;
       <a
         href={GITHUB_ISSUES_URL}
         target={TARGET_BLANK}
         alt={GITHUB_ISSUES}
-      >GitHub issues</a>!
+      >{GITHUB_ISSUES}</a>!
     </p>
-    <p aria-label="copyright" className="copyright">Copyright © 2021 AccessiTech LLC. All rights reserved.</p>
+    <p aria-label="copyright" className="copyright">{COPYRIGHT_P1}</p>
   </section>);
 }
 

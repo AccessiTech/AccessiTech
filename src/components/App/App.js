@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import SpalshSocials from '../SplashSocials/SplashSocials';
-import { SPLASH_BG, TAGLINE } from '../../settings/strings';
+import { PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, SPLASH_BG, TAGLINE, VISION_P1, VISION_P2 } from '../../settings/strings';
 import { PURPOSE_PIC_URL } from '../../settings/settings';
 import './App.scss';
 
@@ -34,19 +34,19 @@ function App() {
         <Row className="about-row">
           <Col xs={12} md={{span: 8, offset: 2}}>
             <blockquote title="Vision">
-              <p>AccessiTech LLC is a social enterprise dedicated to removing barriers for disabled design technologists by producing and sharing relevant industry expertise and personal / professional exploration via content across multiple social, hosting, and streaming platforms.</p>
-              <p>As a social enterprise, AccessiTech LLC fosters positive social change by promoting and collaborating on emergent technologies aimed at increasing accessibility, inclusion, and equity for all.</p>
+              <p>{VISION_P1}</p>
+              <p>{VISION_P2}</p>
             </blockquote>
           </Col>
         </Row>
         <Row className="purpose-row">
           <Col className="purpose-text" xs={12} md={{span: 4, offset: 2}}>
             <article title="Purpose">
-              <h3>Purpose</h3>
-              <p>AccessiTech believes access to technology is a human right, particularly when such technology promotes, protects, and/or facilitates other human rights.</p>
-              <p>Producing and publishing content on accessibility in technology, AccessiTech LLC provides clear and concise information to help disabled peoples more readily utilize the accessibility options available in their lives in order to better enable them to pursue their passions in a digital world.</p>
-              <p>Through the proliferation, decentralization, and democratization of technology accessibility information, AccessiTech LLC seeks to lower the barriers to entry for disabled peoples throughout design and development communities abroad.</p>
-              <p>Collaborating and promoting design and technology for social change, AccessiTech LLC aims to help create an increasingly accessible world for all.</p>
+              <h3>{PURPOSE_HEADER}</h3>
+              <p>{PURPOSE_P1}</p>
+              <p>{PURPOSE_P2}</p>
+              <p>{PURPOSE_P3}</p>
+              <p>{PURPOSE_P4}</p>
             </article>
           </Col>
           <Col className="purpose-image" xs={12} md={{span: 5}} title="image">
