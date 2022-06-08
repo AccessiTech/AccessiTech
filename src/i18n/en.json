@@ -1,0 +1,78 @@
+{
+  "TAGLINE": {
+    "message": "Accessibility for Design Technologists",
+    "description": ""
+  },
+  "LINKEDIN_LABEL": {
+    "message": "AccessiTech on LinkedIn",
+    "description": ""
+  },
+  "TWITTER_LABEL": {
+    "message": "AccessiTech on Twitter",
+    "description": ""
+  },
+  "YOUTUBE_LABEL": {
+    "message": "AccessiTech on YouTube",
+    "description": ""
+  },
+  "GMAIL_LABEL": {
+    "message": "AccessiTech on Gmail",
+    "description": ""
+  },
+  "ACCESSITECH_LOGO_LABEL": {
+    "message": "AccessiTech Logo",
+    "description": ""
+  },
+  "REDDIT_LABEL": {
+    "message": "AccessiTech on Reddit",
+    "description": ""
+  },
+  "GITHUB_LABEL": {
+    "message": "AccessiTech on GitHub",
+    "description": ""
+  },
+  "VISION_P1": {
+    "message": "AccessiTech LLC is a social enterprise dedicated to removing barriers for disabled design technologists by producing and sharing relevant industry expertise and personal / professional exploration via content across multiple social, hosting, and streaming platforms.",
+    "description": ""
+  },
+  "VISION_P2": {
+    "message": "As a social enterprise, AccessiTech LLC fosters positive social change by promoting and collaborating on emergent technologies aimed at increasing accessibility, inclusion, and equity for all.",
+    "description": ""
+  },
+  "PURPOSE_HEADER": {
+    "message": "Purpose",
+    "description": ""
+  },
+  "PURPOSE_P1": {
+    "message": "AccessiTech believes access to technology is a human right, particularly when such technology promotes, protects, and/or facilitates other human rights.",
+    "description": ""
+  },
+  "PURPOSE_P2": {
+    "message": "Producing and publishing content on accessibility in technology, AccessiTech LLC provides clear and concise information to help disabled peoples more readily utilize the accessibility options available in their lives in order to better enable them to pursue their passions in a digital world.",
+    "description": ""
+  },
+  "PURPOSE_P3": {
+    "message": "Through the proliferation, decentralization, and democratization of technology accessibility information, AccessiTech LLC seeks to lower the barriers to entry for disabled peoples throughout design and development communities abroad.",
+    "description": ""
+  },
+  "PURPOSE_P4": {
+    "message": "Collaborating and promoting design and technology for social change, AccessiTech LLC aims to help create an increasingly accessible world for all.",
+    "description": ""
+  },
+  "REACH_OUT_HEADER": {
+    "message": "Reach Out!",
+    "description": ""
+  },
+  "ISSUES_P1": {
+    "message": "Report bugs, request features, and start collaborating via",
+    "description": ""
+  },
+  "GITHUB_ISSUES": {
+    "message": "GitHub Issues",
+    "description": ""
+  },
+  "COPYRIGHT_P1": {
+    "message": "Copyright © 2021 AccessiTech LLC. All rights reserved.",
+    "description": ""
+  }
+}
