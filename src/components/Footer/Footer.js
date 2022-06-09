@@ -1,12 +1,12 @@
 import React from 'react';
 import { getT } from '../../i18n';
-import { ACCESSITECH, COMPANY_TITLE, COPYRIGHT_P1, GITHUB_ISSUES, GITHUB_ISSUES_URL, ISSUES_P1, LINKEDIN_LABEL, LINKEDIN_URL, REACH_OUT_HEADER, REDDIT_HANDLE, REDDIT_LABEL, REDDIT_URL, TARGET_BLANK, TWITTER_HANDLE, TWITTER_LABEL, TWITTER_URL, YOUTUBE_LABEL, YOUTUBE_URL } from '../../settings/strings';
+import { CONTACT_LIST, COPYRIGHT, COPYRIGHT_P1, FOOTER, FOOTER_LINKEDIN, FOOTER_REDDIT, FOOTER_TWITTER, FOOTER_YOUTUBE, GITHUB_ISSUES, GITHUB_ISSUES_URL, ISSUES_P1, LINKEDIN_LABEL, LINKEDIN_URL, REACH_OUT_HEADER, REDDIT_LABEL, REDDIT_URL, REPORTING_AN_ISSUE, TARGET_BLANK, TWITTER_LABEL, TWITTER_URL, YOUTUBE_LABEL, YOUTUBE_URL } from '../../settings/strings';
 import './Footer.scss';
 
 function Footer () {
-  return (<section className="footer-section" aria-label="Footer">
+  return (<section className="footer-section" aria-label={getT(FOOTER)}>
     <h3>{REACH_OUT_HEADER}</h3>
-    <ul aria-label="contact list">
+    <ul aria-label={CONTACT_LIST}>
       {/* <li>
         <a
           href={GMAIL_URL}
@@ -20,31 +20,31 @@ function Footer () {
           href={TWITTER_URL}
           target={TARGET_BLANK}
           alt={TWITTER_LABEL}
-        >twitter at {TWITTER_HANDLE}</a>
+        >{getT(FOOTER_TWITTER)}</a>
       </li>
       <li>
         <a
           href={YOUTUBE_URL}
           target={TARGET_BLANK}
           alt={YOUTUBE_LABEL}
-        >youtube at {ACCESSITECH}</a>
+        >{getT(FOOTER_YOUTUBE)}</a>
       </li>
       <li>
         <a
           href={LINKEDIN_URL}
           target={TARGET_BLANK}
           alt={LINKEDIN_LABEL}
-        >linkedin at {COMPANY_TITLE}</a>
+        >{getT(FOOTER_LINKEDIN)}</a>
       </li>
       <li>
         <a 
           href={REDDIT_URL}
           target={TARGET_BLANK}
           alt={REDDIT_LABEL}
-        >reddit at {REDDIT_HANDLE}</a>
+        >{getT(FOOTER_REDDIT)}</a>
       </li>
     </ul>
-    <p aria-label="reporting an issue" className='github-issues'>
+    <p aria-label={getT(REPORTING_AN_ISSUE)} className='github-issues'>
       {getT(ISSUES_P1)}&nbsp;
       <a
         href={GITHUB_ISSUES_URL}
@@ -52,7 +52,7 @@ function Footer () {
         alt={GITHUB_ISSUES}
       >{getT(GITHUB_ISSUES)}</a>!
     </p>
-    <p aria-label="copyright" className="copyright">{getT(COPYRIGHT_P1)}</p>
+    <p aria-label={getT(COPYRIGHT)} className="copyright">{getT(COPYRIGHT_P1)}</p>
   </section>);
 }
 

@@ -74,5 +74,102 @@
   "COPYRIGHT_P1": {
     "message": "Copyright © 2021 AccessiTech LLC. All rights reserved.",
     "description": ""
+  },
+  "SOCIAL_MEDIA_BUTTONS": {
+    "message": "Social Media Buttons",
+    "description": ""
+  },
+  "FOOTER": {
+    "message": "Footer",
+    "description": ""
+  },
+  "CONTACT_LIST": {
+    "message": "Contact List",
+    "description": ""
+  },
+  "REPORTING_AN_ISSUE": {
+    "message": "Reporting an Issue",
+    "description": ""
+  },
+  "COPYRIGHT": {
+    "message": "Copyright",
+    "description": ""
+  },
+  "HEADER": {
+    "message": "Header",
+    "description": ""
+  },
+  "APP_ROOT": {
+    "message": "App Root",
+    "description": ""
+  },
+  "ABOUT_ACCESSITECH": {
+    "message": "About $ACCESSITECH$",
+    "description": "",
+    "placeholders": {
+      "ACCESSITECH": {
+        "content":"AccessiTech"
+      }
+    }
+  },
+  "PURPOSE_PIC_ALT": {
+    "message": "Image Credit: $CREDIT$ from $GHETTY$",
+    "description": "",
+    "placeholders": {
+      "CHREDIT":{
+        "content": "Urupong"
+      },
+      "GHETTY": {
+        "content": "Ghetty Images"
+      }
+    }
+  },
+  "FOOTER_TWITTER": {
+    "message": "$twitter$ at $accessiT3ch$",
+    "description": "",
+    "placeholders": {
+      "linkedin": {
+        "twitter": "twitter"
+      },
+      "company": {
+        "accessiT3ch": "accessiT3ch"
+      }
+    }
+  },
+  "FOOTER_YOUTUBE": {
+    "message": "$youtube$ at $AccessiTech$",
+    "description": "",
+    "placeholders": {
+      "youtube": {
+        "content": "youtube"
+      },
+      "company": {
+        "AccessiTech": "AccessiTech"
+      }
+    }
+  },
+  "FOOTER_LINKEDIN": {
+    "message": "$linkedin$ at $company$",
+    "description": "",
+    "placeholders": {
+      "linkedin": {
+        "content": "linkedin"
+      },
+      "company": {
+        "content": "AccessiTech LLC"
+      }
+    }
+  },
+  "FOOTER_REDDIT": {
+    "message": "&reddit& at $handle$",
+    "description": "",
+    "placeholders": {
+      "reddit": {
+        "content": "reddit"
+      },
+      "company": {
+        "handle": "u/accessiTech"
+      }
+    }
   }
 }

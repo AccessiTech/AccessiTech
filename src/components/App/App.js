@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import SpalshSocials from '../SplashSocials/SplashSocials';
-import { PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, SPLASH_BG, TAGLINE, VISION_P1, VISION_P2 } from '../../settings/strings';
+import { ABOUT_ACCESSITECH, APP_ROOT, PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, PURPOSE_PIC_ALT, SPLASH_BG, TAGLINE, VISION_P1, VISION_P2 } from '../../settings/strings';
 import { PURPOSE_PIC_URL } from '../../settings/settings';
 import './App.scss';
 import { getT } from '../../i18n';
@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <Container fluid className="App">
+    <Container fluid className="App" aria-label={getT(APP_ROOT)}>
 
       {/* Splash Row */}
       <Row
@@ -31,7 +31,7 @@ function App() {
       </Row>
 
       {/* Main Rows */}
-      <main aria-label="About AccessiTech">
+      <main aria-label={getT(ABOUT_ACCESSITECH)}>
         <Row className="about-row">
           <Col xs={12} md={{span: 8, offset: 2}}>
             <blockquote title="Vision">
@@ -51,7 +51,12 @@ function App() {
             </article>
           </Col>
           <Col className="purpose-image" xs={12} md={{span: 5}} title="image">
-            <img src={PURPOSE_PIC_URL} className="purpose-picture" alt="" title="Image Credit: Urupong from Ghetty Images" />
+            <img
+              src={PURPOSE_PIC_URL}
+              className="purpose-picture"
+              alt={getT(PURPOSE_PIC_ALT)}
+              title={getT(PURPOSE_PIC_ALT)}
+            />
           </Col>
         </Row>
       </main>
