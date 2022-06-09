@@ -15,61 +15,64 @@ function App() {
     backgroundImage: SPLASH_BG,
   };
 
-  return (
-    <Container fluid className="App" aria-label={getT(APP_ROOT)}>
+const splashRowStyle = {
+  backgroundImage: SPLASH_BG,
+};
 
-      {/* Splash Row */}
-      <Row
-        className="splash-row"
-        style={splashRowStyle}
-      >
-        <Col>
-          <Header />
-          <h2>{getT(TAGLINE)}</h2>
-          <SpalshSocials />
+const App = () => (
+  <Container fluid className="App" aria-label={getT(APP_ROOT)}>
+
+    {/* Splash Row */}
+    <Row
+      className="splash-row"
+      style={splashRowStyle}
+    >
+      <Col>
+        <Header />
+        <h2>{getT(TAGLINE)}</h2>
+        <SpalshSocials />
+      </Col>
+    </Row>
+
+    {/* Main Rows */}
+    <main aria-label={getT(ABOUT_ACCESSITECH)}>
+      <Row className="about-row">
+        <Col xs={12} md={{span: 8, offset: 2}}>
+          <blockquote title="Vision">
+            <p>{getT(VISION_P1)}</p>
+            <p>{getT(VISION_P2)}</p>
+          </blockquote>
         </Col>
       </Row>
-
-      {/* Main Rows */}
-      <main aria-label={getT(ABOUT_ACCESSITECH)}>
-        <Row className="about-row">
-          <Col xs={12} md={{span: 8, offset: 2}}>
-            <blockquote title="Vision">
-              <p>{getT(VISION_P1)}</p>
-              <p>{getT(VISION_P2)}</p>
-            </blockquote>
-          </Col>
-        </Row>
-        <Row className="purpose-row">
-          <Col className="purpose-text" xs={12} md={{span: 4, offset: 2}}>
-            <article title="Purpose">
-              <h3>{getT(PURPOSE_HEADER)}</h3>
-              <p>{getT(PURPOSE_P1)}</p>
-              <p>{getT(PURPOSE_P2)}</p>
-              <p>{getT(PURPOSE_P3)}</p>
-              <p>{getT(PURPOSE_P4)}</p>
-            </article>
-          </Col>
-          <Col className="purpose-image" xs={12} md={{span: 5}} title="image">
-            <img
-              src={PURPOSE_PIC_URL}
-              className="purpose-picture"
-              alt={getT(PURPOSE_PIC_ALT)}
-              title={getT(PURPOSE_PIC_ALT)}
-            />
-          </Col>
-        </Row>
-      </main>
-      
-
-      {/* Footer Row */}
-      <Row className="footer-row">
-        <Col>
-          <Footer />
+      <Row className="purpose-row">
+        <Col className="purpose-text" xs={12} md={{span: 4, offset: 2}}>
+          <article title="Purpose">
+            <h3>{getT(PURPOSE_HEADER)}</h3>
+            <p>{getT(PURPOSE_P1)}</p>
+            <p>{getT(PURPOSE_P2)}</p>
+            <p>{getT(PURPOSE_P3)}</p>
+            <p>{getT(PURPOSE_P4)}</p>
+          </article>
+        </Col>
+        <Col className="purpose-image" xs={12} md={{span: 5}} title="image">
+          <img
+            src={PURPOSE_PIC_URL}
+            className="purpose-picture"
+            alt={getT(PURPOSE_PIC_ALT)}
+            title={getT(PURPOSE_PIC_ALT)}
+          />
         </Col>
       </Row>
-    </Container>
-  );
-}
+    </main>
+    
+
+    {/* Footer Row */}
+    <Row className="footer-row">
+      <Col>
+        <Footer />
+      </Col>
+    </Row>
+  </Container>
+);
 
 export default App;
