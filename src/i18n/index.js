@@ -1,11 +1,21 @@
 import * as i18n from "./i18nSlice";
 
-// Redux Slice
-export const i18nSlice = i18n.default;
+// i18nSlice module
+export default i18n;
+
+// Redux Slice Reucer
+export const i18nSliceReducer = i18n.default;
+
+// Module Exports
+export const {
+  i18nSlice,
+  i18nSliceName,
+  SET_LANG_ACTION
+} = i18n;
+
+// Redux Action Creators
+export const setLang = i18nSlice.actions[SET_LANG_ACTION];
 
 // Redux Selectors
 export const getCurrentLang = i18n.getCurrentLang;
 export const getT = i18n.getT;
-
-// i18nSlice module
-export default i18n;

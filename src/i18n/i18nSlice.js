@@ -2,18 +2,23 @@ import { createSlice } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux';
 import en from './en.json';
 
+// Slice Magical Strings
 export const i18nSliceName = 'i18n';
+export const SET_LANG_ACTION = `SET_LANG_ACTION`;
 
+// THE I18N SLICE REDUCER
 export const i18nSlice = createSlice({
   name: i18nSliceName,
   initialState: {
-    lang: 'en',
+    lang: '',
     translations: {
       'en': en,
     },
   },
   reducers: {
-
+    [SET_LANG_ACTION]: (state, payload) => {
+      state.lang = payload;
+    },
   },
 });
 

@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { i18nSlice } from '../i18n';
+import { i18nSliceReducer, i18nSliceName } from '../i18n';
 
 export default configureStore({
   reducer: {
-    i18n: i18nSlice,
+    [i18nSliceName]: i18nSliceReducer,
   },
 });

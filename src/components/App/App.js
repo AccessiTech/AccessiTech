@@ -8,12 +8,10 @@ import SpalshSocials from '../SplashSocials/SplashSocials';
 import { ABOUT_ACCESSITECH, APP_ROOT, PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, PURPOSE_PIC_ALT, SPLASH_BG, TAGLINE, VISION_P1, VISION_P2 } from '../../settings/strings';
 import { PURPOSE_PIC_URL } from '../../settings/settings';
 import './App.scss';
-import { getT } from '../../i18n';
+import store from '../../store/store';
+import { getT, setLang } from '../../i18n';
 
-function App() {
-  const splashRowStyle = {
-    backgroundImage: SPLASH_BG,
-  };
+store.dispatch(setLang('en'));
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
