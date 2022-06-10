@@ -16,9 +16,14 @@ export const i18nSlice = createSlice({
     },
   },
   reducers: {
-    [SET_LANG_ACTION]: (state, payload) => {
-      state.lang = payload;
-    },
+    [SET_LANG_ACTION]: {
+      reducer: (state, payload) => {
+        state.lang = payload.lang;
+      },
+      prepare: (lang) => {
+        return { payload: lang };
+      }
+    } ,
   },
 });
 
@@ -41,8 +46,31 @@ export const getCurrentLang = () => {
  * @param lang (optional string) lang code
  * @returns (string|null) translated string or null if lang
  */
-export const getT = (stringKey, lang = 'en') => {
+export const getT = (stringKey, lang) => {
   const slice = useSelector((state) => state[i18nSliceName]);
-  const displayStrings = slice.translations && slice.translations[lang];
-  return displayStrings && displayStrings[stringKey] && displayStrings[stringKey].message || null;
+  const langKey = lang || slice.lang || 'en';
+  const displayStrings = slice.translations && slice.translations[langKey];
+  if (!displayStrings || !displayStrings[stringKey]) {
+    return null
+  }
+
+  return parseTranslation(displayStrings[stringKey]) || null;
 };
+
+
+const parseTranslation = (translation) => {
+  const { placeholders, message } = translation;
+
+  if (!placeholders) {
+    return message;
+  }
+
+  let parsedTranslation = message;
+
+  for (let key in placeholders) {
+    const content = placeholders[key].content;
+    parsedTranslation = parsedTranslation.replace(`$${key}$`, content);
+  }
+
+  return parsedTranslation;
+}
