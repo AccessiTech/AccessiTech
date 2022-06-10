@@ -5,7 +5,7 @@ import './Footer.scss';
 
 function Footer () {
   return (<section className="footer-section" aria-label={getT(FOOTER)}>
-    <h3>{REACH_OUT_HEADER}</h3>
+    <h3>{getT(REACH_OUT_HEADER)}</h3>
     <ul aria-label={CONTACT_LIST}>
       {/* <li>
         <a
