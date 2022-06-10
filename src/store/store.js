@@ -5,4 +5,5 @@ export default configureStore({
   reducer: {
     [i18nSliceName]: i18nSliceReducer,
   },
+  devTools: process.env.NODE_ENV !== 'production',
 });
