@@ -33,7 +33,7 @@ export default i18nSlice.reducer;
 
 /**
  * Get Current Language
- * @returns (string|null) language key for current language
+ * @returns {string|null} language key for current language
  */
 export const getCurrentLang = () => {
   const slice = useSelector((state) => state[i18nSliceName]);
@@ -42,9 +42,9 @@ export const getCurrentLang = () => {
 
 /**
  * Get Translation
- * @param stringKey (string) unique identifier for selecting translated string
- * @param lang (optional string) lang code
- * @returns (string|null) translated string or null if lang
+ * @param {string} stringKey unique identifier for selecting translated string
+ * @param {string} lang (optional) lang code
+ * @returns {string|null} translated string or null if lang
  */
 export const getT = (stringKey, lang) => {
   const slice = useSelector((state) => state[i18nSliceName]);
@@ -57,7 +57,11 @@ export const getT = (stringKey, lang) => {
   return parseTranslation(displayStrings[stringKey]) || null;
 };
 
-
+/**
+ * Parse Translation
+ * @param {*} translation Translation object followin Chrome i18n formatting
+ * @returns {string} Translated string formatted with placeholders
+ */
 const parseTranslation = (translation) => {
   const { placeholders, message } = translation;
 
