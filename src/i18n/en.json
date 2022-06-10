@@ -116,7 +116,7 @@
     "message": "Image Credit: $CREDIT$ from $GHETTY$",
     "description": "",
     "placeholders": {
-      "CHREDIT":{
+      "CREDIT":{
         "content": "Urupong"
       },
       "GHETTY": {
@@ -128,11 +128,11 @@
     "message": "$twitter$ at $accessiT3ch$",
     "description": "",
     "placeholders": {
-      "linkedin": {
-        "twitter": "twitter"
+      "twitter": {
+        "content": "twitter"
       },
-      "company": {
-        "accessiT3ch": "accessiT3ch"
+      "accessiT3ch": {
+        "content": "accessiT3ch"
       }
     }
   },
@@ -143,8 +143,8 @@
       "youtube": {
         "content": "youtube"
       },
-      "company": {
-        "AccessiTech": "AccessiTech"
+      "AccessiTech": {
+        "content": "AccessiTech"
       }
     }
   },
@@ -161,14 +161,14 @@
     }
   },
   "FOOTER_REDDIT": {
-    "message": "&reddit& at $handle$",
+    "message": "$reddit$ at $handle$",
     "description": "",
     "placeholders": {
       "reddit": {
         "content": "reddit"
       },
-      "company": {
-        "handle": "u/accessiTech"
+      "handle": {
+        "content": "u/accessiTech"
       }
     }
   }
