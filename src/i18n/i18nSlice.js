@@ -1,29 +1,46 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux';
-import en from './en.json';
+import translations from './translations';
 
 // Slice Magical Strings
 export const i18nSliceName = 'i18n';
-export const SET_LANG_ACTION = `SET_LANG_ACTION`;
+export const SET_LANG_ACTION = 'SET_LANG_ACTION';
+export const FETCH_LANG_LIB = 'FETCH_LANG_LIB';
 
 // THE I18N SLICE REDUCER
 export const i18nSlice = createSlice({
   name: i18nSliceName,
   initialState: {
     lang: '',
-    translations: {
-      'en': en,
-    },
+    translations: {},
   },
   reducers: {
     [SET_LANG_ACTION]: {
-      reducer: (state, payload) => {
+
+      reducer: (state, action) => {
+        const { payload } = action;
         state.lang = payload.lang;
+        state.translations[payload.lang] = payload.langLib;
       },
+
       prepare: (lang) => {
-        return { payload: lang };
+        const langLib = translations[lang] || {};
+        const parsedLangLib = {};
+
+        for (let stringKey in langLib) {
+          const translation = langLib[stringKey];
+          parsedLangLib[stringKey] = parseTranslation(translation)
+        }
+
+        return {
+          payload: {
+
+            lang,
+            langLib: parsedLangLib,
+          }
+        };
       }
-    } ,
+    },
   },
 });
 
@@ -50,11 +67,8 @@ export const getT = (stringKey, lang) => {
   const slice = useSelector((state) => state[i18nSliceName]);
   const langKey = lang || slice.lang || 'en';
   const displayStrings = slice.translations && slice.translations[langKey];
-  if (!displayStrings || !displayStrings[stringKey]) {
-    return null
-  }
-
-  return parseTranslation(displayStrings[stringKey]) || null;
+  // console.log(displayStrings[stringKey])
+  return (displayStrings && displayStrings[stringKey]) || ''
 };
 
 /**
@@ -62,7 +76,7 @@ export const getT = (stringKey, lang) => {
  * @param {*} translation Translation object followin Chrome i18n formatting
  * @returns {string} Translated string formatted with placeholders
  */
-const parseTranslation = (translation) => {
+export const parseTranslation = (translation) => {
   const { placeholders, message } = translation;
 
   if (!placeholders) {

@@ -11,7 +11,9 @@ import './App.scss';
 import store from '../../store/store';
 import { getT, setLang } from '../../i18n';
 
-store.dispatch(setLang('en'));
+// todo: detect browser location
+const defaultLang = 'en';
+store.dispatch(setLang(defaultLang));
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
