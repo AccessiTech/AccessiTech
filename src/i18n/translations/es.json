@@ -1,0 +1,264 @@
+{
+  "TAGLINE": {
+    "message": "Accesibilidad para tecnólogos del diseño",
+    "description": "Splash tagline: accessibility for desginers and developers"
+  },
+  "LINKEDIN_LABEL": {
+    "message": "$AccessiTech$ on $LinkedIn$",
+    "description": "Splash Socials: label for LinkedIn button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "LinkedIn": {
+        "content": "LinkedIn"
+      }
+    }
+  },
+  "TWITTER_LABEL": {
+    "message": "$AccessiTech$ en $Twitter$",
+    "description": "Splash Socials: label for Twitter button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "Twitter": {
+        "content": "Twitter"
+      }
+    }
+  },
+  "YOUTUBE_LABEL": {
+    "message": "$AccessiTech$ en $YouTube$",
+    "description": "Splash Socials: label for YouTube button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "YouTube": {
+        "content": "YouTube"
+      }
+    }
+  },
+  "GMAIL_LABEL": {
+    "message": "$AccessiTech$ en $Gmail$",
+    "description": "Splash Socials: label for Gmail button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "Gmail": {
+        "content": "Gmail"
+      }
+    }
+  },
+  "REDDIT_LABEL": {
+    "message": "$AccessiTech$ en $Reddit$",
+    "description": "Splash Socials: label for Reddit button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "Reddit": {
+        "content": "Reddit"
+      }
+    }
+  },
+  "GITHUB_LABEL": {
+    "message": "$AccessiTech$ en $GitHub$",
+    "description": "Splash Socials: label for GitHub button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "GitHub": {
+        "content": "GitHub"
+      }
+    }
+  },
+  "ACCESSITECH_LOGO_LABEL": {
+    "message": "Logotipo de $AccessiTech$",
+    "description": "Splash Logo: label for the company logo",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      }
+    }
+  },
+  "VISION_P1": {
+    "message": "$company$ es una empresa social dedicada a eliminar las barreras para los tecnólogos de diseño discapacitados al producir y compartir la experiencia relevante de la industria y la exploración personal y profesional a través de contenido en múltiples plataformas sociales, de hospedaje y de transmisión.",
+    "description": "About Section: first paragraph describing the vision of the company",
+    "placeholders": {
+      "company": {
+        "content": "AccessiTech LLC"
+      }
+    }
+  },
+  "VISION_P2": {
+    "message": "Como empresa social, $company$ fomenta el cambio social positivo al promover y colaborar en tecnologías emergentes destinadas a aumentar la accesibilidad, la inclusión y la equidad para todos.",
+    "description": "About Section: second paragraph describing the vision of the company",
+    "placeholders": {
+      "company": {
+        "content": "AccessiTech LLC"
+      }
+    }
+  },
+  "PURPOSE_HEADER": {
+    "message": "Objetivo",
+    "description": "Purpose Section: header for section describing the purpose of the company"
+  },
+  "PURPOSE_P1": {
+    "message": "$AccessiTech$ cree que el acceso a la tecnología es un derecho humano, particularmente cuando dicha tecnología promueve, protege y/o facilita otros derechos humanos.",
+    "description": "Purpose Section: first paragraph describing the purpose of the company",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      }
+    }
+  },
+  "PURPOSE_P2": {
+    "message": "Al producir y publicar contenido sobre accesibilidad en tecnología, $AccessiTech$ proporciona información clara y concisa para ayudar a las personas discapacitadas a utilizar más fácilmente las opciones de accesibilidad disponibles en sus vidas para permitirles perseguir mejor sus pasiones en un mundo digital.",
+    "description": "Purpose Section: second paragraph describing the purpose of the company",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech LLC"
+      }
+    }
+  },
+  "PURPOSE_P3": {
+    "message": "A través de la proliferación, descentralización y democratización de la información de accesibilidad tecnológica, $AccessiTech$ busca reducir las barreras de entrada para las personas con discapacidad en las comunidades de diseño y desarrollo en el extranjero.",
+    "description": "Purpose Section: third paragraph describing the purpose of the company",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech LLC"
+      }
+    }
+  },
+  "PURPOSE_P4": {
+    "message": "Colaborando y promoviendo el diseño y la tecnología para el cambio social, $AccessiTech$ tiene como objetivo ayudar a crear un mundo cada vez más accesible para todos.",
+    "description": "Purpose Section: fourth paragraph describing the purpose of the company",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech LLC"
+      }
+    }
+  },
+  "REACH_OUT_HEADER": {
+    "message": "¡Alcanzar!",
+    "description": "Footer Section: Header for section containing contact links in the footer"
+  },
+  "ISSUES_P1": {
+    "message": "Informe errores, solicite funciones y comience a colaborar a través de $blank$",
+    "description": "Footer Section: sentence describing how to open github tickets",
+    "placeholders": {
+      "blank": ""
+    }
+  },
+  "GITHUB_ISSUES": {
+    "message": "Problemas de $GitHub$",
+    "description": "Link Text: for github issues link",
+    "placeholders": {
+      "GitHub": "GitHub"
+    }
+  },
+  "COPYRIGHT_P1": {
+    "message": "Copyright © 2021 AccessiTech LLC. Reservados todos los derechos.",
+    "description": "Footer Section: copyright sentence at bottom of the page"
+  },
+  "SOCIAL_MEDIA_BUTTONS": {
+    "message": "Botones de Redes Sociales",
+    "description": "Element Label: describing buttons for social media"
+  },
+  "FOOTER": {
+    "message": "Pie de Página",
+    "description": "Element Label: describing the footer section"
+  },
+  "CONTACT_LIST": {
+    "message": "Lista de Contactos",
+    "description": "Element Label: describing links for contacting the company"
+  },
+  "REPORTING_AN_ISSUE": {
+    "message": "Informar un Problema",
+    "description": "Element Label: describing the link for opening Githuib Issues"
+  },
+  "COPYRIGHT": {
+    "message": "Derechos de Autor",
+    "description": "Section Label: for the copyright content"
+  },
+  "HEADER": {
+    "message": "Encabezamiento",
+    "description": "Section Label: for the header content"
+  },
+  "APP_ROOT": {
+    "message": "Raíz de la Aplicación",
+    "description": "Section Label: for the entire front-end application"
+  },
+  "ABOUT_ACCESSITECH": {
+    "message": "Acerca de $ACCESITECH$",
+    "description": "Section Label: for the main content of the site",
+    "placeholders": {
+      "ACCESSITECH": {
+        "content":"AccessiTech"
+      }
+    }
+  },
+  "PURPOSE_PIC_ALT": {
+    "message": "Crédito de la Imagen: $CRÉDITO$ de $GHETTY$",
+    "description": "Alt Text: credit information for about section image",
+    "placeholders": {
+      "CREDIT":{
+        "content": "Urupong"
+      },
+      "GHETTY": {
+        "content": "Ghetty Images"
+      }
+    }
+  },
+  "FOOTER_TWITTER": {
+    "message": "$twitter$ en $accessiT3ch$",
+    "description": "Link Text: for footer twitter link",
+    "placeholders": {
+      "twitter": {
+        "content": "twitter"
+      },
+      "accessiT3ch": {
+        "content": "accessiT3ch"
+      }
+    }
+  },
+  "FOOTER_YOUTUBE": {
+    "message": "$youtube$ en $AccessiTech$",
+    "description": "Link Text: for footer YouTube link",
+    "placeholders": {
+      "youtube": {
+        "content": "youtube"
+      },
+      "AccessiTech": {
+        "content": "AccessiTech"
+      }
+    }
+  },
+  "FOOTER_LINKEDIN": {
+    "message": "$linkedin$ en $company$",
+    "description": "Link Text: for footer LinkedIn link",
+    "placeholders": {
+      "linkedin": {
+        "content": "linkedin"
+      },
+      "company": {
+        "content": "AccessiTech LLC"
+      }
+    }
+  },
+  "FOOTER_REDDIT": {
+    "message": "$reddit$ en $handle$",
+    "description": "Link Text: for footer reddit link",
+    "placeholders": {
+      "reddit": {
+        "content": "reddit"
+      },
+      "handle": {
+        "content": "u/accessiTech"
+      }
+    }
+  }
+}
