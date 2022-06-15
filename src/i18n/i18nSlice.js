@@ -34,7 +34,6 @@ export const i18nSlice = createSlice({
 
         return {
           payload: {
-
             lang,
             langLib: parsedLangLib,
           }
@@ -54,7 +53,7 @@ export default i18nSlice.reducer;
  */
 export const getCurrentLang = () => {
   const slice = useSelector((state) => state[i18nSliceName]);
-  return slice && slice.lang || null;
+  return (slice && slice.lang) || null;
 }
 
 /**
