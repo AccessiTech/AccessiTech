@@ -1,71 +1,71 @@
 {
   "TAGLINE": {
     "message": "Accessibility for Design Technologists",
-    "description": ""
+    "description": "Splash tagline: accessibility for desginers and developers"
   },
   "LINKEDIN_LABEL": {
     "message": "AccessiTech on LinkedIn",
-    "description": ""
+    "description": "Splash Socials: label for LinkedIn button"
   },
   "TWITTER_LABEL": {
     "message": "AccessiTech on Twitter",
-    "description": ""
+    "description": "Splash Socials: label for Twitter button"
   },
   "YOUTUBE_LABEL": {
     "message": "AccessiTech on YouTube",
-    "description": ""
+    "description": "Splash Socials: label for YouTube button"
   },
   "GMAIL_LABEL": {
     "message": "AccessiTech on Gmail",
-    "description": ""
+    "description": "Splash Socials: label for Gmail button"
   },
   "ACCESSITECH_LOGO_LABEL": {
     "message": "AccessiTech Logo",
-    "description": ""
+    "description": "Splash Logo: label for the company logo"
   },
   "REDDIT_LABEL": {
     "message": "AccessiTech on Reddit",
-    "description": ""
+    "description": "Splash Socials: label for Reddit button"
   },
   "GITHUB_LABEL": {
     "message": "AccessiTech on GitHub",
-    "description": ""
+    "description": "Splash Socials: label for GitHub button"
   },
   "VISION_P1": {
     "message": "AccessiTech LLC is a social enterprise dedicated to removing barriers for disabled design technologists by producing and sharing relevant industry expertise and personal / professional exploration via content across multiple social, hosting, and streaming platforms.",
-    "description": ""
+    "description": "About Section: first paragraph describing the vision of the company"
   },
   "VISION_P2": {
     "message": "As a social enterprise, AccessiTech LLC fosters positive social change by promoting and collaborating on emergent technologies aimed at increasing accessibility, inclusion, and equity for all.",
-    "description": ""
+    "description": "About Section: second paragraph describing the vision of the company"
   },
   "PURPOSE_HEADER": {
     "message": "Purpose",
-    "description": ""
+    "description": "Purpose Section: header for section describing the purpose of the company"
   },
   "PURPOSE_P1": {
     "message": "AccessiTech believes access to technology is a human right, particularly when such technology promotes, protects, and/or facilitates other human rights.",
-    "description": ""
+    "description": "Purpose Section: first paragraph describing the purpose of the company"
   },
   "PURPOSE_P2": {
     "message": "Producing and publishing content on accessibility in technology, AccessiTech LLC provides clear and concise information to help disabled peoples more readily utilize the accessibility options available in their lives in order to better enable them to pursue their passions in a digital world.",
-    "description": ""
+    "description": "Purpose Section: second paragraph describing the purpose of the company"
   },
   "PURPOSE_P3": {
     "message": "Through the proliferation, decentralization, and democratization of technology accessibility information, AccessiTech LLC seeks to lower the barriers to entry for disabled peoples throughout design and development communities abroad.",
-    "description": ""
+    "description": "Purpose Section: third paragraph describing the purpose of the company"
   },
   "PURPOSE_P4": {
     "message": "Collaborating and promoting design and technology for social change, AccessiTech LLC aims to help create an increasingly accessible world for all.",
-    "description": ""
+    "description": "Purpose Section: fourth paragraph describing the purpose of the company"
   },
   "REACH_OUT_HEADER": {
     "message": "Reach Out!",
-    "description": ""
+    "description": "Footer Section: Header for section containing contact links in the footer"
   },
   "ISSUES_P1": {
     "message": "Report bugs, request features, and start collaborating via",
-    "description": ""
+    "description": "Footer Section: sentence describing how to open github tickets"
   },
   "GITHUB_ISSUES": {
     "message": "GitHub Issues",
@@ -73,35 +73,35 @@
   },
   "COPYRIGHT_P1": {
     "message": "Copyright © 2021 AccessiTech LLC. All rights reserved.",
-    "description": ""
+    "description": "Footer Section: copyright sentence at bottom of the page"
   },
   "SOCIAL_MEDIA_BUTTONS": {
     "message": "Social Media Buttons",
-    "description": ""
+    "description": "Element Label: describing buttons for social media"
   },
   "FOOTER": {
     "message": "Footer",
-    "description": ""
+    "description": "Element Label: describing the footer section"
   },
   "CONTACT_LIST": {
     "message": "Contact List",
-    "description": ""
+    "description": "Element Label: describing links for contacting the company"
   },
   "REPORTING_AN_ISSUE": {
     "message": "Reporting an Issue",
-    "description": ""
+    "description": "Element Label: describing the link for opening Githuib Issues"
   },
   "COPYRIGHT": {
     "message": "Copyright",
-    "description": ""
+    "description": "Section Label: for the copyright content"
   },
   "HEADER": {
     "message": "Header",
-    "description": ""
+    "description": "Section Label: for the header content"
   },
   "APP_ROOT": {
     "message": "App Root",
-    "description": ""
+    "description": "Section Label: for the entire front-end application"
   },
   "ABOUT_ACCESSITECH": {
     "message": "About $ACCESSITECH$",
