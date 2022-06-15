@@ -9,11 +9,11 @@ import { ABOUT_ACCESSITECH, APP_ROOT, PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PU
 import { PURPOSE_PIC_URL } from '../../settings/settings';
 import './App.scss';
 import store from '../../store/store';
-import { getT, setLang } from '../../i18n';
+import { getBrowserLanguage, getT, setLang } from '../../i18n';
 import { useParams } from 'react-router-dom';
 
 // todo: detect browser location
-const defaultLang = 'en';
+const defaultLang = getBrowserLanguage();
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,

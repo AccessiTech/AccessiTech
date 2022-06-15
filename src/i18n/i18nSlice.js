@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux';
+import { EN } from '../settings/strings';
 import translations from './translations';
 
 // Slice Magical Strings
@@ -90,4 +91,33 @@ export const parseTranslation = (translation) => {
   }
 
   return parsedTranslation;
+}
+
+// Slice Helpers
+
+/**
+ * Get Browser Language
+ * @returns {string} key of preferred language as per window.navigator
+ */
+export const getBrowserLanguage = () => {
+  const { language, languages, userLanguage } = window.navigator;
+
+  if (userLanguage && translations[userLanguage]) {
+    return userLanguage;
+  }
+
+  if (language && translations[language]) {
+    return language;
+  }
+
+  if (!Array.isArray(languages)) {
+    return EN;
+  }
+
+  for (let l = 0; l < languages.length; l += 1) {
+    if (translations[languages[l]]) {
+      return languages[l];
+    }
+  }
+  return EN;
 }
