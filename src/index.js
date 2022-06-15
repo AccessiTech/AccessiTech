@@ -13,6 +13,9 @@ root.render(
       <Routes>
         <Route path='/' element={<App />}>
           <Route path=':lang' element={<App />} />
+          <Route path='AccessiTech' element={<App />}>
+            <Route path=':lang' element={<App />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
