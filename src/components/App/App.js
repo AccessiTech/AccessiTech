@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,16 +10,23 @@ import { PURPOSE_PIC_URL } from '../../settings/settings';
 import './App.scss';
 import store from '../../store/store';
 import { getT, setLang } from '../../i18n';
+import { useParams } from 'react-router-dom';
 
 // todo: detect browser location
 const defaultLang = 'en';
-store.dispatch(setLang(defaultLang));
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
 };
 
-const App = () => (
+const App = () => {
+  const { lang } = useParams();
+
+  useEffect(() => {
+    store.dispatch(setLang(lang || defaultLang));
+  }, []);
+
+  return (
   <Container fluid className="App" aria-label={getT(APP_ROOT)}>
 
     {/* Splash Row */}
@@ -74,5 +81,6 @@ const App = () => (
     </Row>
   </Container>
 );
+}
 
 export default App;
