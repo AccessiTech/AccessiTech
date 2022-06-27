@@ -22,5 +22,5 @@ export const setLang = i18nSlice.actions[SET_LANG_ACTION];
 // Redux Selectors
 export const getCurrentLang = i18n.getCurrentLang;
 export const getT = i18n.getT;
-
+export const getLanguageKeys = i18n.getLanguageKeys;
 

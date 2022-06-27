@@ -9,13 +9,17 @@ export const SET_LANG_ACTION = 'SET_LANG_ACTION';
 export const FETCH_LANG_LIB = 'FETCH_LANG_LIB';
 
 export const languageKeys = Object.keys(translations);
+
+export const i18nSliceInitialState = {
+  lang: '',
+  languageKeys,
+  translations: {},
+};
+
 // THE I18N SLICE REDUCER
 export const i18nSlice = createSlice({
   name: i18nSliceName,
-  initialState: {
-    lang: '',
-    translations: {},
-  },
+  initialState: i18nSliceInitialState,
   reducers: {
     [SET_LANG_ACTION]: {
 
@@ -68,9 +72,19 @@ export const getT = (stringKey, lang) => {
   const slice = useSelector((state) => state[i18nSliceName]);
   const langKey = lang || slice.lang || 'en';
   const displayStrings = slice.translations && slice.translations[langKey];
-  // console.log(displayStrings[stringKey])
   return (displayStrings && displayStrings[stringKey]) || ''
 };
+
+/**
+ * Get Language Keys
+ * @returns {string|null}
+ */
+export const getLanguageKeys = () => {
+  const slice = useSelector((state) => state[i18nSliceName]);
+  return (slice && slice.languageKeys) || null;
+}
+
+// Slice Helpers
 
 /**
  * Parse Translation
@@ -93,8 +107,6 @@ export const parseTranslation = (translation) => {
 
   return parsedTranslation;
 }
-
-// Slice Helpers
 
 /**
  * Get Browser Language
