@@ -11,7 +11,7 @@ function Header() {
   };
   return (
     <header className="main-header" aria-label={getT(HEADER)}>
-      {/* todo: add accessibility options widget */}
+      <A11Y />
       <a
         href={ROOT}
         alt={getT(ACCESSITECH_LOGO_LABEL)}
@@ -19,7 +19,6 @@ function Header() {
       >
         <h1 className="logo-container" style={headerStyle}>{COMPANY_TITLE}</h1>
       </a>
-      <A11Y />
     </header>
   )
 }
