@@ -1,7 +1,7 @@
 import React  from 'react';
 import Form from 'react-bootstrap/Form';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getCurrentLang, getLanguageKeys, setLang } from '../../i18n';
+import { getCurrentLang, getLanguageKeys, langKeyDisplayStrings, setLang } from '../../i18n';
 import { ROOT } from '../../settings/strings';
 import store from '../../store/store';
 import './a11y.scss';
@@ -15,8 +15,12 @@ function A11Y() {
   const currentLang = getCurrentLang() || lang;
 
   return (languageKeys && languageKeys.length) ? (
-    <div className="a11y-container">
+    <div
+      className="a11y-container"
+      aria-label="Accessibility Options"
+    >
       <Form.Select
+        aria-label="Lanage Selection"
         className="language-select"
         defaultValue={currentLang}
         onChange={(e) => {
@@ -30,7 +34,7 @@ function A11Y() {
             className="language-select-option"
             key={`${namespace}/${i}`}
             value={lang}
-          >{lang}</option>
+          >{langKeyDisplayStrings[lang]}</option>
         )}
       </Form.Select>
     </div>
