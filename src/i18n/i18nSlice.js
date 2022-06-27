@@ -8,6 +8,7 @@ export const i18nSliceName = 'i18n';
 export const SET_LANG_ACTION = 'SET_LANG_ACTION';
 export const FETCH_LANG_LIB = 'FETCH_LANG_LIB';
 
+export const languageKeys = Object.keys(translations);
 // THE I18N SLICE REDUCER
 export const i18nSlice = createSlice({
   name: i18nSliceName,

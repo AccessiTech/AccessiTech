@@ -12,6 +12,7 @@ export const {
   i18nSliceName,
   getBrowserLanguage,
   FETCH_LANG_LIB,
+  languageKeys,
   SET_LANG_ACTION
 } = i18n;
 
