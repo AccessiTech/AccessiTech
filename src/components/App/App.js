@@ -12,7 +12,6 @@ import store from '../../store/store';
 import { getBrowserLanguage, getT, setLang } from '../../i18n';
 import { useParams } from 'react-router-dom';
 
-// todo: detect browser location
 const defaultLang = getBrowserLanguage();
 
 const splashRowStyle = {
@@ -22,6 +21,7 @@ const splashRowStyle = {
 const App = () => {
   const { lang } = useParams();
 
+  // First Runtime Only
   useEffect(() => {
     store.dispatch(setLang(lang || defaultLang));
   }, []);
