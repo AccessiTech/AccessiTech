@@ -1,12 +1,13 @@
-import React from 'react';
+import React  from 'react';
 import Form from 'react-bootstrap/Form';
-import { languageKeys } from '../../i18n';
+import { getLanguageKeys } from '../../i18n';
 import './a11y.scss';
 
 const namespace = 'a11y/'
 
-function A11Y() {
 
+function A11Y() {
+  const languageKeys = getLanguageKeys();
   return (languageKeys && languageKeys.length) ? (
     <div className="a11y-container">
       <Form.Select
