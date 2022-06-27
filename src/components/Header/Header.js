@@ -2,6 +2,7 @@ import React from 'react';
 import { getT } from '../../i18n';
 import { IMAGES_URL } from '../../settings/env';
 import { ACCESSITECH_LOGO_LABEL, COMPANY_TITLE, HEADER, ROOT } from '../../settings/strings';
+import A11Y from '../A11Y/A11Y';
 import './Header.scss';
 
 function Header() {
@@ -18,6 +19,7 @@ function Header() {
       >
         <h1 className="logo-container" style={headerStyle}>{COMPANY_TITLE}</h1>
       </a>
+      <A11Y />
     </header>
   )
 }

@@ -1,0 +1,18 @@
+@import "src/sass/variables.scss";
+
+.a11y-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+
+  .language-select {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: 0 0 0 2px $white;
+    }
+  }
+}
