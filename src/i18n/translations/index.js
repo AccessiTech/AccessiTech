@@ -7,3 +7,9 @@ const translations = {
   fr,
 };
 export default translations;
+
+export const displayStrings = {
+  en: 'En',
+  es: 'Es',
+  fr: 'Fr',
+};
