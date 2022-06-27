@@ -27,9 +27,6 @@ export const i18nSlice = createSlice({
         const { payload } = action;
         state.lang = payload.lang;
         state.translations[payload.lang] = payload.langLib;
-        state.languageKeys = state.languageKeys
-          .filter((l) =>  l !== payload.lang);
-        state.languageKeys.unshift(payload.lang);
       },
 
       prepare: (lang) => {
