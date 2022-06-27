@@ -8,11 +8,11 @@
   .language-select {
     background-color: transparent;
     border: none;
-    box-shadow: none;
+    box-shadow: $no-box-shadow;
 
     &:hover,
     &:focus-visible {
-      box-shadow: 0 0 0 2px $white;
+      box-shadow: $focus-box-shadow;
     }
   }
 }

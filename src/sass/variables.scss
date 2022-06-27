@@ -16,7 +16,11 @@ $secondary: $pink;
 $form-select-indicator-color: $white;
 $form-select-color: $white;
 
+$unfocus-border: 1px solid $white;
 $focus-border: 2px solid $white;
+$no-box-shadow: 0 0 0 0 $white;
+$unfocus-box-shadow: 0 0 0 1px $white;
+$focus-box-shadow: 0 0 0 2px $white;
 
 // Global RTS variables
 $tagline-font-size: 1.75rem;

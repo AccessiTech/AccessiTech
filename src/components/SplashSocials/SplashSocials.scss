@@ -12,7 +12,7 @@
     @include margin(0 2rem);
 
     .social-icon {
-      border: 1px solid $white;
+      border: $unfocus-border;
 
       &:hover,
       &:focus-visible {
