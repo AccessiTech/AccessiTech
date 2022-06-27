@@ -1,6 +1,8 @@
 import React from 'react';
+import { getT } from '../../i18n';
 import { IMAGES_URL } from '../../settings/env';
-import { ACCESSITECH_LOGO, COMPANY_TITLE, ROOT } from '../../settings/strings';
+import { ACCESSITECH_LOGO_LABEL, COMPANY_TITLE, HEADER, ROOT } from '../../settings/strings';
+import A11Y from '../A11Y/A11Y';
 import './Header.scss';
 
 function Header() {
@@ -8,11 +10,11 @@ function Header() {
     backgroundImage: `url('${IMAGES_URL}/TypeLogo_White_HC.svg')`,
   };
   return (
-    <header className="main-header" aria-label="Header">
-      {/* todo: add accessibility options widget */}
+    <header className="main-header" aria-label={getT(HEADER)}>
+      <A11Y />
       <a
         href={ROOT}
-        alt={ACCESSITECH_LOGO}
+        alt={getT(ACCESSITECH_LOGO_LABEL)}
         title={COMPANY_TITLE}
       >
         <h1 className="logo-container" style={headerStyle}>{COMPANY_TITLE}</h1>

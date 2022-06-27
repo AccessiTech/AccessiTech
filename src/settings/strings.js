@@ -1,18 +1,43 @@
 import { SPLASH_BG_URL } from "./settings";
 
-// Display Strings
+// Display Strings (non-translatable)
 export const SITE_TITLE = 'AccessiTech';
 export const ACCESSITECH = 'AccessiTech';
 export const COMPANY_TITLE = 'AccessiTech LLC'
-export const TAGLINE = 'Accessibility for Design Technologists';
-export const LINKEDIN_LABEL = 'AccessiTech on LinkedIn';
-export const TWITTER_LABEL = 'AccessiTech on Twitter';
-export const YOUTUBE_LABEL = 'AccessiTech on YouTube';
-export const GMAIL_LABEL = 'AccessiTech on Gmail';
-export const ACCESSITECH_LOGO = 'AccessiTech Logo';
-export const REDDIT_LABEL = 'AccessiTech on Reddit';
-export const GITHUB_LABEL = 'AccessiTech on GitHub';
-export const GITHUB_ISSUES = 'GitHub Issues';
+
+// i18n stringKey keys
+export const TAGLINE = 'TAGLINE';
+export const LINKEDIN_LABEL = 'LINKEDIN_LABEL';
+export const TWITTER_LABEL = 'TWITTER_LABELr';
+export const YOUTUBE_LABEL = 'YOUTUBE_LABEL';
+export const GMAIL_LABEL = 'GMAIL_LABEL';
+export const ACCESSITECH_LOGO_LABEL = 'ACCESSITECH_LOGO_LABEL';
+export const REDDIT_LABEL = 'REDDIT_LABEL';
+export const GITHUB_LABEL = 'GITHUB_LABEL';
+export const GITHUB_ISSUES = 'GITHUB_ISSUES';
+export const VISION_P1 = 'VISION_P1';
+export const VISION_P2 = 'VISION_P2';
+export const PURPOSE_HEADER = 'PURPOSE_HEADER';
+export const PURPOSE_P1 = 'PURPOSE_P1';
+export const PURPOSE_P2 = 'PURPOSE_P2';
+export const PURPOSE_P3 = 'PURPOSE_P2';
+export const PURPOSE_P4 = 'PURPOSE_P2';
+export const REACH_OUT_HEADER = 'REACH_OUT_HEADER';
+export const ISSUES_P1 = 'ISSUES_P1';
+export const COPYRIGHT_P1 = 'COPYRIGHT_P1';
+export const SOCIAL_MEDIA_BUTTONS = 'SOCIAL_MEDIA_BUTTONS';
+export const FOOTER = 'FOOTER';
+export const CONTACT_LIST = "CONTACT_LIST";
+export const REPORTING_AN_ISSUE = "REPORTING_AN_ISSUE";
+export const COPYRIGHT = 'COPYRIGHT';
+export const HEADER = 'HEADER';
+export const APP_ROOT = 'APP_ROOT';
+export const ABOUT_ACCESSITECH = 'ABOUT_ACCESSITECH';
+export const PURPOSE_PIC_ALT = 'PURPOSE_PIC_ALT';
+export const FOOTER_TWITTER = 'FOOTER_TWITTER';
+export const FOOTER_YOUTUBE = 'FOOTER_YOUTUBE';
+export const FOOTER_LINKEDIN = 'FOOTER_LINKEDIN';
+export const FOOTER_REDDIT = 'FOOTER_REDDIT';
 
 // Magical Strings
 export const WHITE = 'white';
