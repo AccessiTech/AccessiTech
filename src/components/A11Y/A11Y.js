@@ -2,6 +2,8 @@ import React  from 'react';
 import Form from 'react-bootstrap/Form';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getCurrentLang, getLanguageKeys, langKeyDisplayStrings, setLang } from '../../i18n';
+import { translationFlags } from '../../i18n/translations';
+import { EN } from '../../settings/strings';
 import store from '../../store/store';
 import './a11y.scss';
 
@@ -18,6 +20,9 @@ function A11Y() {
       className="a11y-container"
       aria-label="Accessibility Options"
     >
+      <span role="img" aria-hidden="true" className="language-flag">
+        {translationFlags[lang || EN]}
+      </span>
       <Form.Select
         aria-label="Lanage Selection"
         className="language-select"
@@ -33,7 +38,9 @@ function A11Y() {
             className="language-select-option"
             key={`${namespace}/${i}`}
             value={lang}
-          >{langKeyDisplayStrings[lang]}</option>
+          >
+            {langKeyDisplayStrings[lang]}
+          </option>
         )}
       </Form.Select>
     </div>
