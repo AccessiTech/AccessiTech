@@ -8,7 +8,8 @@ export const COMPANY_TITLE = 'AccessiTech LLC'
 // i18n stringKey keys
 export const TAGLINE = 'TAGLINE';
 export const LINKEDIN_LABEL = 'LINKEDIN_LABEL';
-export const TWITTER_LABEL = 'TWITTER_LABELr';
+export const TWITTER_LABEL = 'TWITTER_LABEL';
+export const TWITCH_LABEL = 'TWITCH_LABEL';
 export const YOUTUBE_LABEL = 'YOUTUBE_LABEL';
 export const GMAIL_LABEL = 'GMAIL_LABEL';
 export const ACCESSITECH_LOGO_LABEL = 'ACCESSITECH_LOGO_LABEL';
@@ -35,6 +36,7 @@ export const APP_ROOT = 'APP_ROOT';
 export const ABOUT_ACCESSITECH = 'ABOUT_ACCESSITECH';
 export const PURPOSE_PIC_ALT = 'PURPOSE_PIC_ALT';
 export const FOOTER_TWITTER = 'FOOTER_TWITTER';
+export const FOOTER_TWITCH = 'FOOTER_TWITCH';
 export const FOOTER_YOUTUBE = 'FOOTER_YOUTUBE';
 export const FOOTER_LINKEDIN = 'FOOTER_LINKEDIN';
 export const FOOTER_REDDIT = 'FOOTER_REDDIT';

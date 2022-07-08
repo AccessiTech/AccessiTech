@@ -27,6 +27,18 @@
       }
     }
   },
+  "TWITCH_LABEL": {
+    "message": "$AccessiTech$ on $Twitch$",
+    "description": "Splash Socials: label for Twitch button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "Twitch": {
+        "content": "Twitch"
+      }
+    }
+  },
   "YOUTUBE_LABEL": {
     "message": "$AccessiTech$ on $YouTube$",
     "description": "Splash Socials: label for YouTube button",
@@ -150,14 +162,18 @@
     "message": "Report bugs, request features, and start collaborating via $blank$",
     "description": "Footer Section: sentence describing how to open github tickets",
     "placeholders": {
-      "blank": ""
+      "blank": {
+        "content": ""
+      }
     }
   },
   "GITHUB_ISSUES": {
     "message": "$GitHub$ Issues",
     "description": "Link Text: for github issues link",
     "placeholders": {
-      "GitHub": "GitHub"
+      "GitHub": {
+        "content": "GitHub"
+      }
     }
   },
   "COPYRIGHT_P1": {
@@ -222,6 +238,18 @@
       },
       "accessiT3ch": {
         "content": "accessiT3ch"
+      }
+    }
+  },
+  "FOOTER_TWITCH": {
+    "message": "$twitch$ at $accessiTech$",
+    "description": "Link Text: for footer twitch link",
+    "placeholders": {
+      "twitch": {
+        "content": "twitch"
+      },
+      "accessiTech": {
+        "content": "accessiTech"
       }
     }
   },
