@@ -40,7 +40,7 @@ a {
   background-position: center;
 
   h2 {
-    @include margin-top($alt-section-padding);
+    margin-top: $alt-section-padding;
     color: $white;
     font-style: italic;
     @include font-size(1.75rem);
