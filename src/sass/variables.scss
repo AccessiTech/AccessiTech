@@ -22,6 +22,17 @@ $no-box-shadow: 0 0 0 0 $white;
 $unfocus-box-shadow: 0 0 0 1px $white;
 $focus-box-shadow: 0 0 0 2px $white;
 
+// High Contrast Styles
+$hc-focus-box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(0 0 0 / 67%);
+
+@mixin hc-text-shadow ($color: rgba(0,0,0,0.75)) {
+  text-shadow: 
+    1px 1px $color,
+    -1px 1px $color,
+    1px -1px $color,
+    -1px -1px $color;
+}
+
 // Global RTS variables
 $tagline-font-size: 1.75rem;
 $about-font-size: 1.25rem;

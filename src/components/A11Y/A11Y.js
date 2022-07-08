@@ -6,7 +6,7 @@ import { ROOT } from '../../settings/strings';
 import store from '../../store/store';
 import './a11y.scss';
 
-const namespace = 'a11y/'
+export const namespace = 'a11y/'
 
 function A11Y() {
   let navigate = useNavigate();
