@@ -20,29 +20,31 @@ function A11Y() {
       className="a11y-container"
       aria-label="Accessibility Options"
     >
-      <span role="img" aria-hidden="true" className="language-flag">
-        {translationFlags[lang || EN]}
-      </span>
-      <Form.Select
-        aria-label="Lanage Selection"
-        className="language-select"
-        defaultValue={currentLang}
-        onChange={(e) => {
-          e.preventDefault();
-          store.dispatch(setLang(e.target.value));
-          navigate(`${e.target.value}`)
-        }}
-      >
-        {languageKeys.map((lang, i) => 
-          <option
-            className="language-select-option"
-            key={`${namespace}/${i}`}
-            value={lang}
-          >
-            {langKeyDisplayStrings[lang]}
-          </option>
-        )}
-      </Form.Select>
+      <div className="selector-container">
+        <span role="img" aria-hidden="true" className="language-flag">
+          {translationFlags[lang || EN]}
+        </span>
+        <Form.Select
+          aria-label="Lanage Selection"
+          className="language-select"
+          defaultValue={currentLang}
+          onChange={(e) => {
+            e.preventDefault();
+            store.dispatch(setLang(e.target.value));
+            navigate(`${e.target.value}`)
+          }}
+        >
+          {languageKeys.map((lang, i) => 
+            <option
+              className="language-select-option"
+              key={`${namespace}/${i}`}
+              value={lang}
+            >
+              {langKeyDisplayStrings[lang]}
+            </option>
+          )}
+        </Form.Select>
+      </div>
     </div>
   ) : null;
 }
