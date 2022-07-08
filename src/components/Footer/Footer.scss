@@ -8,6 +8,10 @@
     @include margin-bottom(1.75rem);
   }
 
+  ul {
+    padding-left: 0;
+  }
+
   li {
     display: inline-block;
     @include margin(0 1rem 1rem);
