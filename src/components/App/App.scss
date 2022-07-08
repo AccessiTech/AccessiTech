@@ -47,39 +47,3 @@ a {
     font-weight: 300;
   }
 }
-
-.about-row {
-  @include padding(2.5rem 0);
-
-  p {
-    @include margin(2.5rem 0);
-    color: $darkBlue;
-    @include font-size($about-font-size);
-    font-style: italic;
-  }
-}
-
-.purpose-row {
-  background-color: $yellow;
-  @include padding($main-section-padding 0);
-
-  .purpose-text {
-    text-align: left;
-  }
-  
-  .purpose-picture {
-    max-width: 100%;
-    border-radius: 100%;
-  }
-}
-
-.footer-row {
-  background-color: $pink;
-  color: $black;
-
-  a {
-    color: $black;
-  }
-}
-
-
