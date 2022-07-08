@@ -59,3 +59,4 @@ export const GMAIL_URL = "mailto:accessit3ch@gmail.com";
 export const REDDIT_URL = "https://www.reddit.com/user/accessitech";
 export const GITHUB_ORG_URL = "https://github.com/AccessiTech";
 export const GITHUB_ISSUES_URL = "https://github.com/AccessiTech/AccessiTech/issues";
+export const TWITCH_URL = "https://www.twitch.tv/accessitech";

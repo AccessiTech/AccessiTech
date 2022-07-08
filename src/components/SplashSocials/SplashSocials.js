@@ -1,7 +1,7 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import './SplashSocials.scss';
-import { WHITE, TRANSPARENT, TARGET_BLANK, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL, TWITTER_LABEL, YOUTUBE_LABEL, LINKEDIN_LABEL, REDDIT_LABEL, REDDIT_URL, GITHUB_LABEL, GITHUB_ORG_URL, SOCIAL_MEDIA_BUTTONS } from '../../settings/strings';
+import { WHITE, TRANSPARENT, TARGET_BLANK, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL, TWITTER_LABEL, YOUTUBE_LABEL, LINKEDIN_LABEL, REDDIT_LABEL, REDDIT_URL, GITHUB_LABEL, GITHUB_ORG_URL, SOCIAL_MEDIA_BUTTONS, TWITCH_URL } from '../../settings/strings';
 import { getT } from '../../i18n';
 
 function SpalshSocials () {
@@ -15,6 +15,15 @@ function SpalshSocials () {
           bgColor={TRANSPARENT}
           target={TARGET_BLANK}
         />
+      </li>
+      <li>
+        <SocialIcon
+          label={getT(TWITTER_LABEL)}
+          url={TWITCH_URL}
+          fgColor={WHITE}
+          bgColor={TRANSPARENT}
+          target={TARGET_BLANK}
+         />
       </li>
       <li>
         <SocialIcon
