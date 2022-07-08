@@ -4,21 +4,18 @@ import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import store from './store/store';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<App />}>
           <Route path=':lang' element={<App />} />
-          <Route path='AccessiTech' element={<App />}>
-            <Route path=':lang' element={<App />} />
-          </Route>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 );
 

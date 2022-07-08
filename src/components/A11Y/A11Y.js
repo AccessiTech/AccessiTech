@@ -2,7 +2,6 @@ import React  from 'react';
 import Form from 'react-bootstrap/Form';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getCurrentLang, getLanguageKeys, langKeyDisplayStrings, setLang } from '../../i18n';
-import { ROOT } from '../../settings/strings';
 import store from '../../store/store';
 import './a11y.scss';
 
@@ -26,7 +25,7 @@ function A11Y() {
         onChange={(e) => {
           e.preventDefault();
           store.dispatch(setLang(e.target.value));
-          navigate(`${ROOT}/${e.target.value}`)
+          navigate(`${e.target.value}`)
         }}
       >
         {languageKeys.map((lang, i) => 
