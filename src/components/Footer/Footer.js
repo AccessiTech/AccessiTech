@@ -1,6 +1,6 @@
 import React from 'react';
 import { getT } from '../../i18n';
-import { CONTACT_LIST, COPYRIGHT, COPYRIGHT_P1, FOOTER, FOOTER_LINKEDIN, FOOTER_REDDIT, FOOTER_TWITTER, FOOTER_YOUTUBE, GITHUB_ISSUES, GITHUB_ISSUES_URL, ISSUES_P1, LINKEDIN_LABEL, LINKEDIN_URL, REACH_OUT_HEADER, REDDIT_LABEL, REDDIT_URL, REPORTING_AN_ISSUE, TARGET_BLANK, TWITTER_LABEL, TWITTER_URL, YOUTUBE_LABEL, YOUTUBE_URL } from '../../settings/strings';
+import { CONTACT_LIST, COPYRIGHT, COPYRIGHT_P1, FOOTER, FOOTER_LINKEDIN, FOOTER_REDDIT, FOOTER_TWITCH, FOOTER_TWITTER, FOOTER_YOUTUBE, GITHUB_ISSUES, GITHUB_ISSUES_URL, ISSUES_P1, LINKEDIN_URL, REACH_OUT_HEADER, REDDIT_URL, REPORTING_AN_ISSUE, TARGET_BLANK, TWITCH_URL, TWITTER_URL, YOUTUBE_URL } from '../../settings/strings';
 import './Footer.scss';
 
 function Footer () {
@@ -19,33 +19,40 @@ function Footer () {
         <a
           href={TWITTER_URL}
           target={TARGET_BLANK}
-          alt={TWITTER_LABEL}
+          alt={FOOTER_TWITTER}
         >{getT(FOOTER_TWITTER)}</a>
+      </li>
+      <li>
+        <a
+          href={TWITCH_URL}
+          target={TARGET_BLANK}
+          alt={FOOTER_TWITCH}
+        >{getT(FOOTER_TWITCH)}</a>
       </li>
       <li>
         <a
           href={YOUTUBE_URL}
           target={TARGET_BLANK}
-          alt={YOUTUBE_LABEL}
+          alt={FOOTER_YOUTUBE}
         >{getT(FOOTER_YOUTUBE)}</a>
       </li>
       <li>
         <a
           href={LINKEDIN_URL}
           target={TARGET_BLANK}
-          alt={LINKEDIN_LABEL}
+          alt={FOOTER_LINKEDIN}
         >{getT(FOOTER_LINKEDIN)}</a>
       </li>
       <li>
         <a 
           href={REDDIT_URL}
           target={TARGET_BLANK}
-          alt={REDDIT_LABEL}
+          alt={FOOTER_REDDIT}
         >{getT(FOOTER_REDDIT)}</a>
       </li>
     </ul>
     <p aria-label={getT(REPORTING_AN_ISSUE)} className='github-issues'>
-      {getT(ISSUES_P1)}&nbsp;
+      {getT(ISSUES_P1)}
       <a
         href={GITHUB_ISSUES_URL}
         target={TARGET_BLANK}
