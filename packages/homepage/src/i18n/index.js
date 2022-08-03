@@ -14,10 +14,12 @@ export const {
   getBrowserLanguage,
   FETCH_LANG_LIB,
   languageKeys,
-  SET_LANG_ACTION
+  SET_LANG_ACTION,
+  INIT_TRANSLATIONS_ACTION,
 } = i18n;
 
 // Redux Action Creators
+export const initTranslations = i18nSlice.actions[INIT_TRANSLATIONS_ACTION];
 export const setLang = i18nSlice.actions[SET_LANG_ACTION];
 
 // Redux Selectors

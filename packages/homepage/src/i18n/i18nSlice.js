@@ -1,19 +1,16 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { createSlice } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux';
-import translations from '../settings/translations';
 
 // Slice Magical Strings
 export const i18nSliceName = 'i18n';
 export const SET_LANG_ACTION = 'SET_LANG_ACTION';
-export const FETCH_LANG_LIB = 'FETCH_LANG_LIB';
-export const EN = 'EN';
-
-export const languageKeys = Object.keys(translations);
+export const INIT_TRANSLATIONS_ACTION = 'INIT_TRANSLATIONS_ACTION';
+export const EN = 'en';
 
 export const i18nSliceInitialState = {
   lang: '',
-  languageKeys,
+  languageKeys: [],
   translations: {},
 };
 
@@ -23,30 +20,38 @@ export const i18nSlice = createSlice({
   initialState: i18nSliceInitialState,
   reducers: {
     [SET_LANG_ACTION]: {
-
       reducer: (state, action) => {
-        const { payload } = action;
-        state.lang = payload.lang;
-        state.translations[payload.lang] = payload.langLib;
+        state.lang = action.payload;
       },
+    },
 
-      prepare: (lang) => {
-        const langLib = translations[lang] || {};
+    [INIT_TRANSLATIONS_ACTION]: {
+      prepare: (translationsLib) => {
+        const langLib = translationsLib || {};
         const parsedLangLib = {};
 
-        for (let stringKey in langLib) {
-          const translation = langLib[stringKey];
-          parsedLangLib[stringKey] = parseTranslation(translation)
+        for (let langKey in langLib) {
+          parsedLangLib[langKey] = {}
+
+          for (let stringKey in langLib[langKey]) {
+            const translation = langLib[langKey][stringKey];
+            parsedLangLib[langKey][stringKey] = parseTranslation(translation);
+          }
         }
 
         return {
           payload: {
-            lang,
-            langLib: parsedLangLib,
+            languageKeys: Object.keys(translationsLib),
+            translations: parsedLangLib,
           }
-        };
+        }
+      },
+
+      reducer: (state, action) => {
+        state.languageKeys = action.payload.languageKeys;
+        state.translations = action.payload.translations;
       }
-    },
+    }
   },
 });
 
@@ -85,11 +90,20 @@ export const getLanguageKeys = () => {
   return (slice && slice.languageKeys) || null;
 }
 
+/**
+ * Get Translations
+ * @returns {object|null} 
+ */
+export const useTranslations = () => {
+  const slice = useSelector((state) => state[i18nSliceName]);
+  return (slice && slice.translations) || null;
+}
+
 // Slice Helpers
 
 /**
  * Parse Translation
- * @param {*} translation Translation object followin Chrome i18n formatting
+ * @param {*} translation Translation object following Chrome i18n formatting
  * @returns {string} Translated string formatted with placeholders
  */
 export const parseTranslation = (translation) => {
@@ -114,6 +128,7 @@ export const parseTranslation = (translation) => {
  * @returns {string} key of preferred language as per window.navigator
  */
 export const getBrowserLanguage = () => {
+  const translations = useTranslations();
   const { language, languages, userLanguage } = window.navigator;
 
   if (userLanguage && translations[userLanguage]) {

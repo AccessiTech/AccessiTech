@@ -8,23 +8,25 @@ import SpalshSocials from '../SplashSocials/SplashSocials';
 import { ABOUT_ACCESSITECH, APP_ROOT,  SPLASH_BG, TAGLINE } from '../../settings/strings';
 import './App.scss';
 import store from '../../store/store';
-import { getBrowserLanguage, getT, setLang } from '../../i18n';
+import { getBrowserLanguage, getT, initTranslations, setLang } from '../../i18n';
 import { useParams } from 'react-router-dom';
 import About from '../About/About';
+import translations from '../../settings/translations';
 
-const defaultLang = getBrowserLanguage();
+store.dispatch(initTranslations(translations))
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
 };
 
 const App = () => {
+  const defaultLang = getBrowserLanguage();
   const { lang } = useParams();
 
-  // First Runtime Only
   useEffect(() => {
-    store.dispatch(setLang(lang || defaultLang));
-  }, [lang]);
+    store.dispatch(
+      setLang((lang || defaultLang)));
+  }, [lang, defaultLang]);
 
   return (
   <Container fluid className="App" aria-label={getT(APP_ROOT)}>
