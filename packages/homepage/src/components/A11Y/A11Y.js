@@ -2,7 +2,7 @@ import React  from 'react';
 import Form from 'react-bootstrap/Form';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getCurrentLang, getLanguageKeys, langKeyDisplayStrings, setLang } from '../../i18n';
-import { translationFlags } from '../../i18n/translations';
+import { translationFlags } from '../../settings/translations';
 import { EN } from '../../settings/strings';
 import store from '../../store/store';
 import './a11y.scss';

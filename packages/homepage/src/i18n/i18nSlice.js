@@ -1,13 +1,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { createSlice } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux';
-import { EN } from '../settings/strings';
-import translations from './translations';
+import translations from '../settings/translations';
 
 // Slice Magical Strings
 export const i18nSliceName = 'i18n';
 export const SET_LANG_ACTION = 'SET_LANG_ACTION';
 export const FETCH_LANG_LIB = 'FETCH_LANG_LIB';
+export const EN = 'EN';
 
 export const languageKeys = Object.keys(translations);
 
