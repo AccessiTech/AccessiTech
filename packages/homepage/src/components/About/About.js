@@ -2,7 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './About.scss';
-import { getT } from '../../i18n';
+import { getT } from '@accessitech/i18n';
 import { PURPOSE_PIC_URL } from '../../settings/settings';
 import { PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, PURPOSE_PIC_ALT, VISION_P1, VISION_P2 } from '../../settings/strings';
 

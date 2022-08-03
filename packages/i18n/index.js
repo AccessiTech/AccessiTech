@@ -1,5 +1,4 @@
 import * as i18n from "./i18nSlice";
-import { displayStrings } from "../settings/translations";
 
 // i18nSlice module
 export default i18n;
@@ -26,5 +25,3 @@ export const setLang = i18nSlice.actions[SET_LANG_ACTION];
 export const getCurrentLang = i18n.getCurrentLang;
 export const getT = i18n.getT;
 export const getLanguageKeys = i18n.getLanguageKeys;
-
-export const langKeyDisplayStrings = displayStrings;

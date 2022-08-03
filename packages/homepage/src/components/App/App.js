@@ -8,7 +8,7 @@ import SpalshSocials from '../SplashSocials/SplashSocials';
 import { ABOUT_ACCESSITECH, APP_ROOT,  SPLASH_BG, TAGLINE } from '../../settings/strings';
 import './App.scss';
 import store from '../../store/store';
-import { getBrowserLanguage, getT, initTranslations, setLang } from '../../i18n';
+import { getBrowserLanguage, getT, initTranslations, setLang } from '@accessitech/i18n';
 import { useParams } from 'react-router-dom';
 import About from '../About/About';
 import translations from '../../settings/translations';

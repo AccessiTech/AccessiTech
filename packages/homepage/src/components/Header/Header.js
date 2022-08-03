@@ -1,5 +1,5 @@
 import React from 'react';
-import { getT } from '../../i18n';
+import { getT } from '@accessitech/i18n';
 import { IMAGES_URL } from '../../settings/env';
 import { ACCESSITECH_LOGO_LABEL, COMPANY_TITLE, HEADER, ROOT } from '../../settings/strings';
 import A11Y from '../A11Y/A11Y';

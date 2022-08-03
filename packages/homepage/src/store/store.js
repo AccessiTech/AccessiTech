@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { i18nSliceReducer, i18nSliceName } from '../i18n';
+import { i18nSliceReducer, i18nSliceName } from '@accessitech/i18n';
 
 export default configureStore({
   reducer: {

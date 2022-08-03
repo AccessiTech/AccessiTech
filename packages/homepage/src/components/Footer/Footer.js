@@ -1,5 +1,5 @@
 import React from 'react';
-import { getT } from '../../i18n';
+import { getT } from '@accessitech/i18n';
 import { CONTACT_LIST, COPYRIGHT, COPYRIGHT_P1, FOOTER, FOOTER_LINKEDIN, FOOTER_REDDIT, FOOTER_TWITCH, FOOTER_TWITTER, FOOTER_YOUTUBE, GITHUB_ISSUES, GITHUB_ISSUES_URL, ISSUES_P1, LINKEDIN_URL, REACH_OUT_HEADER, REDDIT_URL, REPORTING_AN_ISSUE, TARGET_BLANK, TWITCH_URL, TWITTER_URL, YOUTUBE_URL } from '../../settings/strings';
 import './Footer.scss';
 

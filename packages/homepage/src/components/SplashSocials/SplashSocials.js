@@ -2,7 +2,7 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import './SplashSocials.scss';
 import { WHITE, TRANSPARENT, TARGET_BLANK, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL, TWITTER_LABEL, YOUTUBE_LABEL, LINKEDIN_LABEL, REDDIT_LABEL, REDDIT_URL, GITHUB_LABEL, GITHUB_ORG_URL, SOCIAL_MEDIA_BUTTONS, TWITCH_URL } from '../../settings/strings';
-import { getT } from '../../i18n';
+import { getT } from '@accessitech/i18n';
 
 function SpalshSocials () {
   return (<section className="splash-social-buttons" aria-label={getT(SOCIAL_MEDIA_BUTTONS)}>

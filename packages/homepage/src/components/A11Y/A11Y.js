@@ -1,8 +1,8 @@
 import React  from 'react';
 import Form from 'react-bootstrap/Form';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getCurrentLang, getLanguageKeys, langKeyDisplayStrings, setLang } from '../../i18n';
-import { translationFlags } from '../../settings/translations';
+import { getCurrentLang, getLanguageKeys, setLang } from '@accessitech/i18n';
+import { translationFlags, displayStrings } from '../../settings/translations';
 import { EN } from '../../settings/strings';
 import store from '../../store/store';
 import './a11y.scss';
@@ -40,7 +40,7 @@ function A11Y() {
               key={`${namespace}/${i}`}
               value={lang}
             >
-              {langKeyDisplayStrings[lang]}
+              {displayStrings[lang]}
             </option>
           )}
         </Form.Select>
