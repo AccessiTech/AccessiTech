@@ -24,7 +24,7 @@ const App = () => {
   // First Runtime Only
   useEffect(() => {
     store.dispatch(setLang(lang || defaultLang));
-  }, []);
+  }, [lang]);
 
   return (
   <Container fluid className="App" aria-label={getT(APP_ROOT)}>

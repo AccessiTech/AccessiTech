@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { createSlice } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux';
 import { EN } from '../settings/strings';
