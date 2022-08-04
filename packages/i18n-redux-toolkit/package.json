@@ -1,0 +1,34 @@
+{
+  "name": "@accessitech/i18n-redux-toolkit",
+  "version": "0.1.0",
+  "description": "An internationalization @reduxjs/toolkit slice package.",
+  "main": "index.js",
+  "author": "AccessiTech LLC <accessit3ch@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "homepage": "https://accessitech.github.io/AccessiTech/tree/main/packages/i18n",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "react-redux": "^8.0.2"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AccessiTech/AccessiTech.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/AccessiTech/AccessiTech/issues"
+  }
+}

@@ -1,8 +1,8 @@
 import React  from 'react';
 import Form from 'react-bootstrap/Form';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getCurrentLang, getLanguageKeys, langKeyDisplayStrings, setLang } from '../../i18n';
-import { translationFlags } from '../../i18n/translations';
+import { useCurrentLang, useLanguageKeys, setLang } from '@accessitech/i18n-redux-toolkit';
+import { translationFlags, displayStrings } from '../../settings/translations';
 import { EN } from '../../settings/strings';
 import store from '../../store/store';
 import './a11y.scss';
@@ -11,9 +11,9 @@ export const namespace = 'a11y/'
 
 function A11Y() {
   let navigate = useNavigate();
-  const languageKeys = getLanguageKeys();
+  const languageKeys = useLanguageKeys();
   const { lang } = useParams();
-  const currentLang = getCurrentLang() || lang;
+  const currentLang = useCurrentLang() || lang;
 
   return (languageKeys && languageKeys.length) ? (
     <div
@@ -40,7 +40,7 @@ function A11Y() {
               key={`${namespace}/${i}`}
               value={lang}
             >
-              {langKeyDisplayStrings[lang]}
+              {displayStrings[lang]}
             </option>
           )}
         </Form.Select>
