@@ -8,7 +8,7 @@ import SpalshSocials from '../SplashSocials/SplashSocials';
 import { ABOUT_ACCESSITECH, APP_ROOT,  SPLASH_BG, TAGLINE } from '../../settings/strings';
 import './App.scss';
 import store from '../../store/store';
-import { getBrowserLanguage, getT, initTranslations, setLang } from '@accessitech/i18n';
+import { getBrowserLanguage, useT, initTranslations, setLang } from '@accessitech/i18n-redux-toolkit';
 import { useParams } from 'react-router-dom';
 import About from '../About/About';
 import translations from '../../settings/translations';
@@ -20,7 +20,7 @@ const splashRowStyle = {
 };
 
 const App = () => {
-  const defaultLang = getBrowserLanguage();
+  const defaultLang = getBrowserLanguage(translations);
   const { lang } = useParams();
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const App = () => {
   }, [lang, defaultLang]);
 
   return (
-  <Container fluid className="App" aria-label={getT(APP_ROOT)}>
+  <Container fluid className="App" aria-label={useT(APP_ROOT)}>
 
     {/* Splash Row */}
     <Row
@@ -38,13 +38,13 @@ const App = () => {
     >
       <Col>
         <Header />
-        <h2>{getT(TAGLINE)}</h2>
+        <h2>{useT(TAGLINE)}</h2>
         <SpalshSocials />
       </Col>
     </Row>
 
     {/* Main Rows */}
-    <main aria-label={getT(ABOUT_ACCESSITECH)}>
+    <main aria-label={useT(ABOUT_ACCESSITECH)}>
       <About />
     </main>
     

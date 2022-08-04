@@ -1,7 +1,7 @@
 import React  from 'react';
 import Form from 'react-bootstrap/Form';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getCurrentLang, getLanguageKeys, setLang } from '@accessitech/i18n';
+import { useCurrentLang, useLanguageKeys, setLang } from '@accessitech/i18n-redux-toolkit';
 import { translationFlags, displayStrings } from '../../settings/translations';
 import { EN } from '../../settings/strings';
 import store from '../../store/store';
@@ -11,9 +11,9 @@ export const namespace = 'a11y/'
 
 function A11Y() {
   let navigate = useNavigate();
-  const languageKeys = getLanguageKeys();
+  const languageKeys = useLanguageKeys();
   const { lang } = useParams();
-  const currentLang = getCurrentLang() || lang;
+  const currentLang = useCurrentLang() || lang;
 
   return (languageKeys && languageKeys.length) ? (
     <div
