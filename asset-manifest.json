@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AccessiTech/static/css/main.88d580e9.css",
-    "main.js": "/AccessiTech/static/js/main.14a3f1e7.js",
-    "static/js/787.316bd577.chunk.js": "/AccessiTech/static/js/787.316bd577.chunk.js",
+    "main.css": "/AccessiTech/static/css/main.a751aefa.css",
+    "main.js": "/AccessiTech/static/js/main.0d94e483.js",
+    "static/js/415.1d062751.chunk.js": "/AccessiTech/static/js/415.1d062751.chunk.js",
     "index.html": "/AccessiTech/index.html",
-    "main.88d580e9.css.map": "/AccessiTech/static/css/main.88d580e9.css.map",
-    "main.14a3f1e7.js.map": "/AccessiTech/static/js/main.14a3f1e7.js.map",
-    "787.316bd577.chunk.js.map": "/AccessiTech/static/js/787.316bd577.chunk.js.map"
+    "main.a751aefa.css.map": "/AccessiTech/static/css/main.a751aefa.css.map",
+    "main.0d94e483.js.map": "/AccessiTech/static/js/main.0d94e483.js.map",
+    "415.1d062751.chunk.js.map": "/AccessiTech/static/js/415.1d062751.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88d580e9.css",
-    "static/js/main.14a3f1e7.js"
+    "static/css/main.a751aefa.css",
+    "static/js/main.0d94e483.js"
   ]
 }
