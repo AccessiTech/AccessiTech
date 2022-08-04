@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
-import { i18nSliceName } from './strings';
+import { EN, i18nSliceName } from './strings';
 
 /**
- * Get Current Language
+ * Use Current Language
  * @returns {string|null} language key for current language
  */
 export const useCurrentLang = () => {
@@ -11,21 +11,21 @@ export const useCurrentLang = () => {
 }
 
 /**
- * Get Translation
+ * Use Translation
  * @param {string} stringKey unique identifier for selecting translated string
  * @param {string} lang (optional) lang code
  * @returns {string|null} translated string or null if lang
  */
 export const useT = (stringKey, lang) => {
   const slice = useSelector((state) => state[i18nSliceName]);
-  const langKey = lang || slice.lang || 'en';
+  const langKey = lang || slice.lang || EN;
   const displayStrings = slice.translations && slice.translations[langKey];
-  return (displayStrings && displayStrings[stringKey]) || ''
+  return (displayStrings && displayStrings[stringKey]) || '';
 };
 
 /**
- * Get Language Keys
- * @returns {string|null}
+ * Use Language Keys
+ * @returns {[string]|null} language keys of translated display string libs
  */
 export const useLanguageKeys = () => {
   const slice = useSelector((state) => state[i18nSliceName]);
@@ -33,7 +33,7 @@ export const useLanguageKeys = () => {
 }
 
 /**
- * Get Translations
+ * Use Translations
  * @returns {object|null} 
  */
 export const useTranslations = () => {

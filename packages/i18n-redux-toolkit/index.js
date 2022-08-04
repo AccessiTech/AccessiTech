@@ -23,7 +23,6 @@ export {
   useTranslations,
 } from './src/hooks';
 
-
 // Magical Strings
 export {
   EN,
