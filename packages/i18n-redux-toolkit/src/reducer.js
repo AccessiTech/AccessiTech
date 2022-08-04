@@ -9,6 +9,35 @@ export const i18nSliceInitialState = {
   translations: {},
 };
 
+/** Prepare Translations for initTranslations
+ * @param {object} translationsLib Chrome i18n formatted paired with language id key
+ * @returns {object} payload object for the reducer
+ */
+export const prepareTranslations = (translationsLib) => {
+  const langLib = translationsLib || {};
+  const parsedLangLib = {};
+
+  // Loop through all i18n translation resources
+  for (let langKey in langLib) {
+    parsedLangLib[langKey] = {}
+
+    // Loop through all translated display strings
+    for (let stringKey in langLib[langKey]) {
+      const translation = langLib[langKey][stringKey];
+
+      // Parse the i18n formatted entry to a translated display string
+      parsedLangLib[langKey][stringKey] = parseTranslation(translation);
+    }
+  }
+
+  return {
+    payload: {
+      languageKeys: Object.keys(translationsLib),
+      translations: parsedLangLib,
+    }
+  }
+}
+
 // THE I18N SLICE REDUCER
 export const i18nSlice = createSlice({
   name: i18nSliceName,
@@ -24,30 +53,7 @@ export const i18nSlice = createSlice({
 
     // Loads and parses translated display strings
     [INIT_TRANSLATIONS_ACTION]: {
-      prepare: (translationsLib) => {
-        const langLib = translationsLib || {};
-        const parsedLangLib = {};
-
-        // Loop through all i18n translation resources
-        for (let langKey in langLib) {
-          parsedLangLib[langKey] = {}
-
-          // Loop through all translated display strings
-          for (let stringKey in langLib[langKey]) {
-            const translation = langLib[langKey][stringKey];
-
-            // Parse the i18n formatted entry to a translated display string
-            parsedLangLib[langKey][stringKey] = parseTranslation(translation);
-          }
-        }
-
-        return {
-          payload: {
-            languageKeys: Object.keys(translationsLib),
-            translations: parsedLangLib,
-          }
-        }
-      },
+      prepare: prepareTranslations,
 
       // todo - loop through action translations to add and update w/o deleting state translations
       reducer: (state, action) => {
