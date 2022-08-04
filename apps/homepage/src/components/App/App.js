@@ -20,13 +20,12 @@ const splashRowStyle = {
 };
 
 const App = () => {
-  const defaultLang = getBrowserLanguage(translations);
   const { lang } = useParams();
-
+  
   useEffect(() => {
     store.dispatch(
-      setLang((lang || defaultLang)));
-  }, [lang, defaultLang]);
+      setLang((lang || getBrowserLanguage(translations))));
+  }, [lang]);
 
   return (
   <Container fluid className="App" aria-label={useT(APP_ROOT)}>
