@@ -6,7 +6,11 @@
   "author": "AccessiTech LLC <accessit3ch@gmail.com>",
   "license": "MIT",
   "private": false,
-  "homepage": "https://accessitech.github.io/AccessiTech/tree/main/packages/i18n#readme",
+  "homepage": "https://accessitech.github.io/AccessiTech/tree/main/packages/i18n",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "react-redux": "^8.0.2"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
