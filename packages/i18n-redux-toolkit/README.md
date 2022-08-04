@@ -11,21 +11,21 @@ This package manages internationalization (i18n) of display text in React apps u
 3. Get and Set the language of your App
 4. Use Translations in your App
 
-> store.js
-
 ```JS
+// store.js
+
 import i18nSlice, { i18nSliceName } from '@accessitech/i18n-redux-toolkit';
 
 export default configureStore({
   reducer: {
-    [i18nSliceName]: i18nSlice.reducer
-  }
+    [i18nSliceName]: i18nSlice.reducer,
+  },
 });
 ```
 
-> app.js
-
 ```JS
+// App.js
+
 import {
   initTranslations,
   getBrowserLanguage,
@@ -40,7 +40,7 @@ const App = () => {
 
   useEffect(() => {
     const browserLang = getBrowserLanguage(translations);
-    store.dispatch(setLang(browserLang))
+    store.dispatch(setLang(browserLang));
   }, []);
 
   return <p>{useT('DISPLAY_STRING_KEY')}</p>;
@@ -69,7 +69,8 @@ const translations = {
 
 ### Action Creators
 
-> `initTranslations(translationsLib)`
+#### `initTranslations(translationsLib)`
+
 Adds parsed translations library to the store.
 
 ```JS
@@ -80,7 +81,8 @@ Adds parsed translations library to the store.
 */
 ```
 
-> `setLang(lang)`
+#### `setLang(lang)`
+
 Sets the language in the store.
 
 ```JS
@@ -92,7 +94,8 @@ Sets the language in the store.
 
 ### Hooks
 
-> `useCurrentLang()`
+#### `useCurrentLang()`
+
 Get the id key of the current language.
 
 ```JS
@@ -102,7 +105,8 @@ Get the id key of the current language.
  */
 ```
 
-> `useLanguageKeys()`
+#### `useLanguageKeys()`
+
 Get language keys for loaded translation languages.
 
 ```JS
@@ -112,7 +116,8 @@ Get language keys for loaded translation languages.
  */
 ```
 
-> `useT(stringKey), useT(stringKey, lang)`
+#### `useT(stringKey), useT(stringKey, lang)`
+
 Translate display strings.
 
 ```JS
@@ -124,7 +129,8 @@ Translate display strings.
  */
 ```
 
-> `useTranslations()`
+#### `useTranslations()`
+
 Get translations library object from store.
 
 ```JS
@@ -136,7 +142,8 @@ Get translations library object from store.
 
 ### Helpers
 
-> `parseTranslation(translation)`
+#### `parseTranslation(translation)`
+
 Get converted display string from i18n formatted objects.
 
 ```JS
@@ -147,7 +154,8 @@ Get converted display string from i18n formatted objects.
  */
 ```
 
-> `getBrowserLanguage(translations)`
+#### `getBrowserLanguage(translations)`
+
 Get users' preferred language from the browser.
 
 ```JS
