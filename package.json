@@ -37,6 +37,7 @@
   "homepage": "https://accessitech.github.io/AccessiTech/",
   "license": "MIT",
   "workspaces": [
+    "apps/*",
     "packages/*"
   ]
 }
