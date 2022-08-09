@@ -1,5 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit';
-// import { useSelector } from 'react-redux';
 
 import i18nSlice, {
     initTranslations,
@@ -11,7 +10,6 @@ import i18nSlice, {
 
 import {
     EN,
-    messages,
     MESSAGE_1,
     MESSAGE_4,
     translations,
@@ -21,19 +19,14 @@ import {
 
 describe('@accessitech/i18n-redux-toolkit', () => {
 
-    it('Is defined', ()=> {
-        expect(i18nSlice).not.toBe(undefined);
-        expect(i18nSlice.reducer).not.toBe(undefined);
-        expect(i18nSliceName).not.toBe(undefined);
-    });
-
-    const store = configureStore({
-        reducer: {
-            [i18nSliceName]: i18nSlice.reducer
-        }
-    });
+    let store;
 
     it('Initializes the reducer in the store', () => {
+        store = configureStore({
+            reducer: {
+                [i18nSliceName]: i18nSlice.reducer
+            }
+        });
         const initialSliceState = store.getState();
         expect(initialSliceState[i18nSliceName]).toBe(i18nSliceInitialState);
     });
@@ -49,7 +42,6 @@ describe('@accessitech/i18n-redux-toolkit', () => {
     });
 
     it('Adds translated messages to the store', () => {
-
         store.dispatch(initTranslations(translations));
         const currentState = store.getState();
         const nextState = {
