@@ -55,7 +55,7 @@ The Redux slice in this module is only compatible with `@reduxjs/toolkit`, not `
 
 ### Translations
 
-This module does not contain any translations itself, and must be provided an object containing Chrome i18n formatted translations paired with language id keys.
+This module does not contain any translations itself, and must be provided an object containing [Chrome i18n message](https://developer.chrome.com/docs/extensions/mv3/i18n-messages/) formatted translations paired with language id keys.
 
 ```JS
 const translations = {
