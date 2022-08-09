@@ -6,6 +6,7 @@ import i18nSlice, {
     // getBrowserLanguage,
     i18nSliceInitialState,
     i18nSliceName,
+    setLang,
 } from '../.';
 
 import {
@@ -52,7 +53,13 @@ describe('@accessitech/i18n-redux-toolkit', () => {
         expect(currentState[i18nSliceName]).toStrictEqual(nextState);
     });
 
-    // it('Sets the current language in the store', () => {
+    it('Sets the current language in the store', () => {
+        store.dispatch(setLang(EN));
+        const { lang:lang1 } = (store.getState())[i18nSliceName];
+        expect(lang1).toBe(EN);
         
-    // });
+        store.dispatch(setLang(FR));
+        const { lang:lang2 } = (store.getState())[i18nSliceName];
+        expect(lang2).toBe(FR);
+    });
 });
