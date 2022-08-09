@@ -1,0 +1,1 @@
+export { i18nSelect, namespace } from "./src/i18nSelect";
