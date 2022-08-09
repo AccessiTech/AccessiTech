@@ -2,24 +2,19 @@ import { configureStore } from '@reduxjs/toolkit';
 
 import i18nSlice, {
     initTranslations,
-    parseTranslation,
-    // getBrowserLanguage,
     i18nSliceInitialState,
     i18nSliceName,
     setLang,
-} from '../.';
+} from '..';
 
 import {
     EN,
-    MESSAGE_1,
-    MESSAGE_4,
     translations,
     translatedMessages,
     FR,
 } from './messages';
 
-describe('@accessitech/i18n-redux-toolkit', () => {
-
+describe('@accessitech/i18n-redux-toolkit/reducer', () => {
     let store;
 
     it('Initializes the reducer in the store', () => {
@@ -30,16 +25,6 @@ describe('@accessitech/i18n-redux-toolkit', () => {
         });
         const initialSliceState = store.getState();
         expect(initialSliceState[i18nSliceName]).toBe(i18nSliceInitialState);
-    });
-
-    it('Parses i18n formatted messages', () => {
-        const messages = translations[EN];
-        const m1 = parseTranslation(messages[MESSAGE_1]);
-        expect(m1).toBe("Hello world!!");
-        const m4 = parseTranslation(messages[MESSAGE_4])
-        expect(m4).toBe("AccessiTech on LinkedIn");
-        const m5 = parseTranslation("some random text");
-        expect(m5).toBe(undefined);
     });
 
     it('Adds translated messages to the store', () => {
@@ -62,4 +47,9 @@ describe('@accessitech/i18n-redux-toolkit', () => {
         const { lang:lang2 } = (store.getState())[i18nSliceName];
         expect(lang2).toBe(FR);
     });
+
+    // it('Gets the current language from the store', () => {
+    //     const lang = useCurrentLang();
+    //     expect(lang).toBe(FR);
+    // });
 });
