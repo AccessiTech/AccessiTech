@@ -34,7 +34,7 @@ describe('@accessitech/i18n-redux-toolkit/reducer', () => {
             ...i18nSliceInitialState,
             languageKeys: [EN, FR],
             translations: translatedMessages,
-        }
+        };
         expect(currentState[i18nSliceName]).toStrictEqual(nextState);
     });
 
@@ -47,9 +47,4 @@ describe('@accessitech/i18n-redux-toolkit/reducer', () => {
         const { lang:lang2 } = (store.getState())[i18nSliceName];
         expect(lang2).toBe(FR);
     });
-
-    // it('Gets the current language from the store', () => {
-    //     const lang = useCurrentLang();
-    //     expect(lang).toBe(FR);
-    // });
 });
