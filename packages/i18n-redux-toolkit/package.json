@@ -1,6 +1,6 @@
 {
   "name": "@accessitech/i18n-redux-toolkit",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An internationalization @reduxjs/toolkit slice package.",
   "main": "index.js",
   "author": "AccessiTech LLC <accessit3ch@gmail.com>",
