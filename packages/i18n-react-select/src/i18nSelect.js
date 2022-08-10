@@ -7,7 +7,6 @@ export const namespace = '@accessitech/i18n-react-select/';
 export const I18nSelect = (props) => {
 
   const { 
-    lang,
     languageKeys,
     displayStrings,
     translationFlags,
@@ -17,9 +16,11 @@ export const I18nSelect = (props) => {
 
   return (
     <div className="selector-container">
-      <span role="img" aria-hidden="true" className="language-flag">
-        {translationFlags[lang || EN]}
-      </span>
+      {(translationFlags ? 
+        <span role="img" aria-hidden="true" className="language-flag">
+          {translationFlags[currentLang || EN]}
+        </span>
+      :'')}
       <Form.Select
         aria-label="Language Selection"
         className="language-select"
