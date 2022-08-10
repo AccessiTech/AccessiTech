@@ -54,7 +54,7 @@
   "description": "A real simple website.",
   "main": "index.js",
   "repository": "https://github.com/AccessiTech/AccessiTech.git",
-  "author": "AccessiT3ch <accessiT3ch@gmail.com>",
+  "author": "AccessiTech LLC <accessiT3ch@gmail.com>",
   "homepage": "https://accessitech.github.io/AccessiTech/",
   "license": "MIT"
 }
