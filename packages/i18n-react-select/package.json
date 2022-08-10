@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A react component for setting internationalization language.",
   "author": "AccessiTech LLC <accessiT3ch@gmail.com>",
-  "homepage": "https://accessitech.github.io/AccessiTech/tree/main/packages/i18n-react-select#readme",
+  "homepage": "https://github.com/AccessiTech/AccessiTech/tree/i18n-react-select/add-tests/packages/i18n-react-select#readme",
   "license": "MIT",
   "main": "dist/i18nSelect.js",
   "directories": {
