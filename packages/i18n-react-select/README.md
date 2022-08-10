@@ -15,6 +15,7 @@ yarn add @accessitech/i18n-react-select
 import React from 'react';
 import { I18nSelect } from '@accessitech/i18n-react-select';
 
+
 const MyComponent = () => (
   <I18nSelect
     currentLang={'en'}
@@ -27,11 +28,16 @@ const MyComponent = () => (
       'en': '🇺🇸',
       'fr': '🇫🇷',
     }}
+    onChange={(e) => {
+      // do something to update your state
+    }}
   />
 );
 ```
 
 ## API
+
+This package doesn't include any helpers or other functionality, so the only interface is via the component props.
 
 ### Props
 
@@ -50,3 +56,7 @@ const MyComponent = () => (
 #### `translationFlags` (optional)
 
 `{'languageId': 'flagEmoji' }` An optional object of flag emojis paired with their language id keys. If present, the flags will render next to the selector based on the current language.
+
+#### `onChange`
+
+`function(e)` A callback function passing the onChange event as the only parameter.
