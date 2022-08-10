@@ -6,6 +6,10 @@ This package manages internationalization (i18n) of display text in React apps u
 
 ## Usage
 
+```bash
+yarn add @accessitech/i18n-redux-toolkit
+```
+
 1. Add the redux slice to your store
 2. initialize your translations
 3. Get and Set the language of your App

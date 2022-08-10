@@ -15,7 +15,6 @@ yarn add @accessitech/i18n-react-select
 import React from 'react';
 import { I18nSelect } from '@accessitech/i18n-react-select';
 
-
 const MyComponent = () => (
   <I18nSelect
     currentLang={'en'}
