@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 export const EN = 'en';
 export const namespace = '@accessitech/i18n-react-select/';
 
-export const i18nSelect = (props) => {
+export const I18nSelect = (props) => {
 
   const { 
     lang,
@@ -40,4 +40,4 @@ export const i18nSelect = (props) => {
   );
 }
 
-export default i18nSelect;
+export default I18nSelect;
