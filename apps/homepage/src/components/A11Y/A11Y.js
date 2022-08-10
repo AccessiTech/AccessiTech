@@ -1,7 +1,7 @@
 import React  from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useCurrentLang, useLanguageKeys, setLang } from '@accessitech/i18n-redux-toolkit';
-// import i18nSelect from '@accessitech/i18n-react-select';
+import I18nSelect from '@accessitech/i18n-react-select';
 import { translationFlags, displayStrings } from '../../settings/translations';
 import store from '../../store/store';
 import './a11y.scss';
@@ -34,8 +34,9 @@ function A11Y() {
       className="a11y-container"
       aria-label="Accessibility Options"
     >
-      {/* <i18nSelect {...i18nSelectProps} /> */}
-      {JSON.stringify(i18nSelectProps)}
+      <I18nSelect
+        { ...i18nSelectProps }
+      />
     </div>
   ) : null;
 }
