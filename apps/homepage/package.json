@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@accessitech/i18n-redux-toolkit": "*",
+    "@accessitech/i18n-react-select": "*",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^13.5.0",
@@ -53,7 +54,7 @@
   "description": "A real simple website.",
   "main": "index.js",
   "repository": "https://github.com/AccessiTech/AccessiTech.git",
-  "author": "AccessiT3ch <accessiT3ch@gmail.com>",
+  "author": "AccessiTech LLC <accessiT3ch@gmail.com>",
   "homepage": "https://accessitech.github.io/AccessiTech/",
   "license": "MIT"
 }

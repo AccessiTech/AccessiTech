@@ -1,9 +1,8 @@
 import React  from 'react';
-import Form from 'react-bootstrap/Form';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useCurrentLang, useLanguageKeys, setLang } from '@accessitech/i18n-redux-toolkit';
+import I18nSelect from '@accessitech/i18n-react-select';
 import { translationFlags, displayStrings } from '../../settings/translations';
-import { EN } from '../../settings/strings';
 import store from '../../store/store';
 import './a11y.scss';
 
@@ -15,36 +14,29 @@ function A11Y() {
   const { lang } = useParams();
   const currentLang = useCurrentLang() || lang;
 
+  const i18nSelectOnChange = (e) => {
+    e.preventDefault();
+    store.dispatch(setLang(e.target.value));
+    navigate(`${e.target.value}`)
+  }
+
+  const i18nSelectProps = {
+    lang,
+    languageKeys,
+    displayStrings,
+    translationFlags,
+    currentLang,
+    onChange: i18nSelectOnChange,
+  };
+
   return (languageKeys && languageKeys.length) ? (
     <div
       className="a11y-container"
       aria-label="Accessibility Options"
     >
-      <div className="selector-container">
-        <span role="img" aria-hidden="true" className="language-flag">
-          {translationFlags[lang || EN]}
-        </span>
-        <Form.Select
-          aria-label="Lanage Selection"
-          className="language-select"
-          defaultValue={currentLang}
-          onChange={(e) => {
-            e.preventDefault();
-            store.dispatch(setLang(e.target.value));
-            navigate(`${e.target.value}`)
-          }}
-        >
-          {languageKeys.map((lang, i) => 
-            <option
-              className="language-select-option"
-              key={`${namespace}/${i}`}
-              value={lang}
-            >
-              {displayStrings[lang]}
-            </option>
-          )}
-        </Form.Select>
-      </div>
+      <I18nSelect
+        { ...i18nSelectProps }
+      />
     </div>
   ) : null;
 }
