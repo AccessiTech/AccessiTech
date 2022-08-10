@@ -13,12 +13,15 @@
     "react-test-renderer": "^18.2.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "uninstall": "lerna clean && yarn cache clean",
+    "reinstall": "yarn uninstall && yarn && lerna bootstrap"
   },
   "jest": {
     "testEnvironment": "jsdom",
     "moduleNameMapper": {
-      "^.+\\.(css|less|scss)$": "babel-jest"
+      "^.+\\.(css|less|scss)$": "babel-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
     },
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
