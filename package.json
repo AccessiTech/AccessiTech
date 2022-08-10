@@ -22,8 +22,7 @@
   "jest": {
     "testEnvironment": "jsdom",
     "moduleNameMapper": {
-      "^.+\\.(css|less|scss)$": "babel-jest",
-      "^.+\\.(js|jsx)$": "babel-jest"
+      "^.+\\.(css|less|scss)$": "babel-jest"
     },
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
