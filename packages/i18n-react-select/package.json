@@ -5,9 +5,9 @@
   "author": "AccessiTech LLC <accessiT3ch@gmail.com>",
   "homepage": "https://accessitech.github.io/AccessiTech/tree/main/packages/i18n-react-select#readme",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/i18nSelect.js",
   "directories": {
-    "lib": "src",
+    "lib": "dist",
     "test": "__tests__"
   },
   "files": [
