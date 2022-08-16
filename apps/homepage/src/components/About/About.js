@@ -3,11 +3,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './About.scss';
 import { useT } from '@accessitech/i18n-redux-toolkit';
-import { PURPOSE_PIC_SIZES, PURPOSE_PIC_SRCSET, PURPOSE_PIC_URL_1024 } from '../../settings/settings';
+import { PURPOSE_PIC_RATIO, PURPOSE_PIC_SIZES, PURPOSE_PIC_SRCSET, PURPOSE_PIC_URL_1024 } from '../../settings/settings';
 import { PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, PURPOSE_PIC_ALT, VISION_P1, VISION_P2 } from '../../settings/strings';
+import { useWindowSize } from '../../settings/utils';
 
+const About = () => {
+ const [width] = useWindowSize();
+  const purposeImageWidth = width > 767 ?
+  ((width - ((1.625 * 16) + (0.045 * width))) * ((41 + (2/3)) / 100)) :
+  (width - 24);
+  const purposeImageHeight = purposeImageWidth * PURPOSE_PIC_RATIO;
 
-const About = () => (
+ return (
   <>
     <Row className="about-row">
       <Col xs={12} md={{ span: 8, offset: 2 }}>
@@ -36,10 +43,12 @@ const About = () => (
           className="purpose-picture"
           alt={useT(PURPOSE_PIC_ALT)}
           title={useT(PURPOSE_PIC_ALT)}
+           width={purposeImageWidth}
+           height={purposeImageHeight}
         />
       </Col>
     </Row>
   </>
-)
+)};
 
 export default About;
