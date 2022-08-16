@@ -1,7 +1,7 @@
 import { IMAGES_URL } from "./env";
 
 // Splash Background Image
-export const SPLASH_BG_URL = `${IMAGES_URL}/splashBG.jpg`;
+export const SPLASH_BG_URL = `${IMAGES_URL}/splashBG.webp`;
 
 // About Purpose Image
 export const PURPOSE_PIC_URL_480 = `${IMAGES_URL}/hands_480.webp`;
