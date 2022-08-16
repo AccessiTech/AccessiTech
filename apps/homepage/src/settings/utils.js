@@ -1,9 +1,17 @@
 import { useState, useLayoutEffect } from "react";
 
+/**
+ * Get Viewport Width
+ * @returns {number} the width of the window
+ */
 export const getViewportWidth = () => {
   return Math.max([window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0]);
 }
 
+/**
+ * Get Viewport Height
+ * @returns {number} the height of the window
+ */
 export const getViewportHeight = () => {
   return Math.max([window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0]);
 }

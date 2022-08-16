@@ -7,8 +7,6 @@ import { PURPOSE_PIC_SIZES, PURPOSE_PIC_SRCSET, PURPOSE_PIC_URL_1024 } from '../
 import { PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, PURPOSE_PIC_ALT, VISION_P1, VISION_P2 } from '../../settings/strings';
 import { useWindowSize } from '../../settings/utils';
 
-
-
 const About = () => {
  const [width] = useWindowSize();
   const purposeImageSize = width > 767 ?
