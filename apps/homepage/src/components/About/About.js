@@ -3,8 +3,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './About.scss';
 import { useT } from '@accessitech/i18n-redux-toolkit';
-import { PURPOSE_PIC_URL } from '../../settings/settings';
+import { PURPOSE_PIC_SIZES, PURPOSE_PIC_SRCSET, PURPOSE_PIC_URL } from '../../settings/settings';
 import { PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, PURPOSE_PIC_ALT, VISION_P1, VISION_P2 } from '../../settings/strings';
+
 
 const About = () => (
   <>
@@ -29,6 +30,8 @@ const About = () => (
       </Col>
       <Col className="purpose-image" xs={12} md={{ span: 5 }} aria-label="image">
         <img
+          srcSet={PURPOSE_PIC_SRCSET}
+          sizes={PURPOSE_PIC_SIZES}
           src={PURPOSE_PIC_URL}
           className="purpose-picture"
           alt={useT(PURPOSE_PIC_ALT)}
