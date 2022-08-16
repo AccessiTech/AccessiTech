@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import SpalshSocials from '../SplashSocials/SplashSocials';
+import SplashSocials from '../SplashSocials/SplashSocials';
 import { ABOUT_ACCESSITECH, APP_ROOT,  SPLASH_BG, TAGLINE } from '../../settings/strings';
 import './App.scss';
 import store from '../../store/store';
@@ -38,7 +38,7 @@ const App = () => {
       <Col>
         <Header />
         <h2>{useT(TAGLINE)}</h2>
-        <SpalshSocials />
+        <SplashSocials />
       </Col>
     </Row>
 

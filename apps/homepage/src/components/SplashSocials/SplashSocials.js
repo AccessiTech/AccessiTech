@@ -4,7 +4,7 @@ import './SplashSocials.scss';
 import { WHITE, TRANSPARENT, TARGET_BLANK, TWITTER_URL, YOUTUBE_URL, LINKEDIN_URL, TWITTER_LABEL, YOUTUBE_LABEL, LINKEDIN_LABEL, REDDIT_LABEL, REDDIT_URL, GITHUB_LABEL, GITHUB_ORG_URL, SOCIAL_MEDIA_BUTTONS, TWITCH_URL } from '../../settings/strings';
 import { useT } from '@accessitech/i18n-redux-toolkit';
 
-function SpalshSocials () {
+function SplashSocials () {
   return (<section className="splash-social-buttons" aria-label={useT(SOCIAL_MEDIA_BUTTONS)}>
     <ul>
       <li>
@@ -65,4 +65,4 @@ function SpalshSocials () {
   </section>);
 }
 
-export default SpalshSocials;
+export default SplashSocials;
