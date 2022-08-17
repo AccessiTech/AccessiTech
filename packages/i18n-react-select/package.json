@@ -1,6 +1,6 @@
 {
   "name": "@accessitech/i18n-react-select",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A react component for setting internationalization language.",
   "author": "AccessiTech LLC <accessiT3ch@gmail.com>",
   "homepage": "https://github.com/AccessiTech/AccessiTech/tree/i18n-react-select/add-tests/packages/i18n-react-select#readme",
