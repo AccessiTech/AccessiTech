@@ -2,7 +2,7 @@ import React  from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useCurrentLang, useLanguageKeys, setLang } from '@accessitech/i18n-redux-toolkit';
 import I18nSelect from '@accessitech/i18n-react-select';
-import { translationFlags, displayStrings } from '../../settings/translations';
+import { displayStrings } from '../../settings/translations';
 import store from '../../store/store';
 import './a11y.scss';
 
@@ -24,7 +24,7 @@ function A11Y() {
     lang,
     languageKeys,
     displayStrings,
-    translationFlags,
+    // translationFlags,
     currentLang,
     onChange: i18nSelectOnChange,
   };
