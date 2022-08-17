@@ -14,9 +14,11 @@ export const I18nSelect = (props) => {
     onChange,
   } = props || {};
 
+  const hasFlags = typeof translationFlags !== 'undefined';
+
   return (
-    <div className="selector-container">
-      {(translationFlags ? 
+    <div className={`selector-container${ hasFlags ? ' hasFlags' : ''}`}>
+      {(hasFlags ? 
         <span role="img" aria-hidden="true" className="language-flag">
           {translationFlags[currentLang || EN]}
         </span>

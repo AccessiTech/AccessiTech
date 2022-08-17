@@ -18,20 +18,20 @@ exports.namespace = namespace;
 
 var I18nSelect = function I18nSelect(props) {
   var _ref = props || {},
-      lang = _ref.lang,
       languageKeys = _ref.languageKeys,
       displayStrings = _ref.displayStrings,
       translationFlags = _ref.translationFlags,
       currentLang = _ref.currentLang,
       onChange = _ref.onChange;
 
+  var hasFlags = typeof translationFlags !== 'undefined';
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "selector-container"
-  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "selector-container".concat(hasFlags ? ' hasFlags' : '')
+  }, hasFlags ? /*#__PURE__*/_react.default.createElement("span", {
     role: "img",
     "aria-hidden": "true",
     className: "language-flag"
-  }, translationFlags[lang || EN]), /*#__PURE__*/_react.default.createElement(_Form.default.Select, {
+  }, translationFlags[currentLang || EN]) : '', /*#__PURE__*/_react.default.createElement(_Form.default.Select, {
     "aria-label": "Language Selection",
     className: "language-select",
     defaultValue: currentLang,
