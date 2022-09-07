@@ -56,7 +56,8 @@ export const useFontSize = () => {
  * @returns {string} font size class
 */
 export const getFontSizeClass = (fontSize) => {
-  return `font-size-${fontSize}`;
+  const string = fontSize.toString().replace('.', '-');
+  return `font-size-${string}`;
 }
 
 // Utils

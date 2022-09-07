@@ -1,5 +1,6 @@
 // @use "../node_modules/bootstrap/scss/vendor/_rfs.scss";
 @import "./../../sass/variables.scss";
+@import "./../FontOptions/fontOptions.scss";
 @import "~bootstrap/scss/bootstrap.scss";
 
 // App Styling
@@ -43,7 +44,7 @@ a {
     margin-top: $alt-section-padding;
     color: $white;
     font-style: italic;
-    @include font-size(1.75rem);
     font-weight: 300;
+    @include font-resizing(1.75rem);
   }
 }
