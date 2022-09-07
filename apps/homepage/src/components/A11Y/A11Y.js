@@ -5,6 +5,7 @@ import I18nSelect from '@accessitech/i18n-react-select';
 import { displayStrings } from '../../settings/translations';
 import store from '../../store/store';
 import './a11y.scss';
+import FontOptions from '../FontOptions/FontOptions';
 
 export const namespace = 'a11y/'
 
@@ -34,6 +35,7 @@ function A11Y() {
       className="a11y-container"
       aria-label="Accessibility Options"
     >
+      <FontOptions />
       <I18nSelect
         { ...i18nSelectProps }
       />
