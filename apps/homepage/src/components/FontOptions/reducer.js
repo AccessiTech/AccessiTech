@@ -49,3 +49,29 @@ export const useFontSize = () => {
   const slice = useSelector((state) => state[fontOptionsSliceName]);
   return (slice && slice.fontSize) || 1;
 };
+
+// Helpers
+/** Get Font Size Class
+ * @param {number} fontSize font size in rem
+ * @returns {string} font size class
+*/
+export const getFontSizeClass = (fontSize) => {
+  return `font-size-${fontSize}`;
+}
+
+// Utils
+/** Debounce
+ * @param {function} func function to debounce
+ * @param {number} wait time to wait in ms
+ * @returns {function} debounced function
+ * @example const debouncedFunction = debounce(() => { console.log('hello'); }, 1000);
+ */
+export const debounce = (fn, delay) => {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      fn(...args);
+    }, delay);
+  };
+};

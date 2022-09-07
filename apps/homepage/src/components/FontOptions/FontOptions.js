@@ -1,5 +1,7 @@
 import React  from 'react';
 import {
+  debounce,
+  getFontSizeClass,
   setFontSize,
   toggleFontOptions,
   useFontSize,
@@ -15,9 +17,22 @@ export const onFontOptionsToggle = (e) => {
   store.dispatch(toggleFontOptions());
 }
 
+export const onFontSizeChange = (e, fontSize) => {
+  e.preventDefault();
+  const newFontSize = Number(e.target.value).toFixed(1);
+  const body = document.querySelector('body');
+  if (body) {
+    for (let i = 0.5; i <= 5; i += 0.1) {
+      body.classList.remove(getFontSizeClass((Math.round(i * 10) / 10).toFixed(1)));
+    }
+    body.classList.add(getFontSizeClass(newFontSize));
+  }
+  store.dispatch(setFontSize(newFontSize));
+};
+
 function FontOptions() {
   const isOpen = useIsOpen();
-  const fontSize = useFontSize() || 1;
+  const fontSize = Number(useFontSize() || 1).toFixed(1);
 
   return (
     <div className="font-options-container">
@@ -29,7 +44,7 @@ function FontOptions() {
 
             <div className="font-options__row">
               <label htmlFor="font-options__font-size">Font Size:</label>
-              <span className="font-options__font-size-value">{fontSize.toFixed(1)}x</span>
+              <span className="font-options__font-size-value">{fontSize}x</span>
               <br/>
               <input
                 type="range"
@@ -39,9 +54,7 @@ function FontOptions() {
                 max="5"
                 step={0.1}
                 defaultValue={fontSize}
-                onChange={(e) => {
-                  store.dispatch(setFontSize(e.target.value));
-                }}
+                onChange={(e) => debounce(onFontSizeChange(e, fontSize), 250)}
               />
             </div>
           
