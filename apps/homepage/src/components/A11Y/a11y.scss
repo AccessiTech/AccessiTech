@@ -37,4 +37,19 @@
       }
     }
   }
+
+  .font-options-container {
+    text-align: left;
+    position: relative;
+
+    .font-options {
+      position: absolute;
+      left: -50%;
+
+      legend {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
 }

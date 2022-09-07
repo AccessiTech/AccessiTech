@@ -4,11 +4,13 @@ import { useSelector } from 'react-redux';
 // Initial State
 export const fontOptionsInitialState = {
   isOpen: false,
+  fontSize: 1,
 };
 
 // Magical Strings!
 export const fontOptionsSliceName = 'fontOptions';
 export const TOGGLE_FONT_OPTIONS_ACTION = 'TOGGLE_FONT_OPTIONS_ACTION';
+export const SET_FONT_SIZE_ACTION = 'SET_FONT_SIZE_ACTION';
 
 // THE FONT OPTIONS SLICE REDUCER
 export const fontOptionsSlice = createSlice({
@@ -17,12 +19,16 @@ export const fontOptionsSlice = createSlice({
   reducers: {
     [TOGGLE_FONT_OPTIONS_ACTION]: (state) => {
       state.isOpen = !state.isOpen;
+    },
+    [SET_FONT_SIZE_ACTION]: (state, action) => {
+      state.fontSize = action.payload;
     }
   },
 });
 
 // Action Creators
 export const toggleFontOptions = fontOptionsSlice.actions[TOGGLE_FONT_OPTIONS_ACTION];
+export const setFontSize = fontOptionsSlice.actions[SET_FONT_SIZE_ACTION];
 
 // Hooks
 
@@ -33,4 +39,13 @@ export const toggleFontOptions = fontOptionsSlice.actions[TOGGLE_FONT_OPTIONS_AC
 export  const useIsOpen = () => {
   const slice = useSelector((state) => state[fontOptionsSliceName]);
   return (slice && slice.isOpen) || false;
-}
+};
+
+/** Use Font Size
+ * @returns {number} font size in rem
+ * @example const fontSize = useFontSize();
+*/
+export const useFontSize = () => {
+  const slice = useSelector((state) => state[fontOptionsSliceName]);
+  return (slice && slice.fontSize) || 1;
+};
