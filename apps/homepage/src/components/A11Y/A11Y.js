@@ -38,6 +38,12 @@ function A11Y() {
     onChange: i18nSelectOnChange,
   };
 
+  const onEscapeKey = (e) => {
+    if (e.key === 'Escape' && isA11yOpen) {
+      store.dispatch(toggleA11y());
+    }
+  };
+
   return (languageKeys && languageKeys.length) ? (
     <div
       className="a11y-container"
@@ -49,6 +55,7 @@ function A11Y() {
           onClick={onA11yToggle}
           aria-label="Toggle Accessibility Options"
           // aria-roledescription='button'
+          onKeyDown={onEscapeKey}
         >
           <i className="fa fa-cog" />
         </button>
@@ -62,6 +69,7 @@ function A11Y() {
           <button
             className="a11y__settings-close"
             onClick={onA11yToggle}
+            onKeyDown={onEscapeKey}
             aria-label="Close Accessibility Options"
           >
             <i className="fa-solid fa-xmark" />

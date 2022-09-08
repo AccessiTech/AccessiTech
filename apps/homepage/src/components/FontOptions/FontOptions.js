@@ -61,6 +61,7 @@ export const onFontFamilyChange = (e) => {
   store.dispatch(setFontFamily(fontFamilyClass));
 }
 
+
 /** Font Options
  * @returns {object} font options component  
  **/
@@ -68,6 +69,12 @@ function FontOptions() {
   const isOpen = useIsOpen();
   const fontSize = Number(useFontSize() || 1).toFixed(1);
   const fontFamily = useFontFamily()
+  
+  const onEscapeKey = (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      store.dispatch(toggleFontOptions());
+    }
+  }
 
   return (
     <div className="font-options-container">
@@ -75,6 +82,7 @@ function FontOptions() {
         className={`${isOpen ? 'isOpen ' : ''}font-options-toggle`}
         onClick={onFontOptionsToggle}
         aria-label="Toggle font options menu"
+        onKeyDown={onEscapeKey}
       >
         <i className="fa-solid fa-font" />
       </button>
@@ -97,6 +105,7 @@ function FontOptions() {
                 step={0.1}
                 defaultValue={fontSize}
                 onChange={(e) => debounce(onFontSizeChange(e, fontSize), 250)}
+                onKeyDown={onEscapeKey}
               />
             </div>
           
@@ -108,6 +117,7 @@ function FontOptions() {
                 aria-label='Font Family Select'
                 defaultValue={fontFamily}
                 onChange={onFontFamilyChange}
+                onKeyDown={onEscapeKey}
               >
                 <option value="sans-serif">Sans Serif</option>
                 <option value="serif">Serif</option>
