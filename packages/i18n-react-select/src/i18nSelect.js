@@ -34,6 +34,7 @@ export const I18nSelect = (props) => {
             className="language-select-option"
             key={`${namespace}/${i}`}
             value={lang}
+            // todo: aria-label={fullStrings[lang]}
           >
             {displayStrings[lang]}
           </option>
