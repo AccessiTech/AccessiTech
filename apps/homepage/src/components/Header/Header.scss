@@ -10,8 +10,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: calc(50% + 1rem);
-    width: 365px;
+    // background-position-x: calc(50% + 1rem);
+    position: relative;
+    left: 1rem;
   }
 
   a {
