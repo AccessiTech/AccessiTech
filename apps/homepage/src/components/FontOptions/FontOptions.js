@@ -11,6 +11,24 @@ import { onFontFamilyChange, onFontOptionsToggle, onFontSizeChange } from './hel
 
 export const namespace = 'fontOptions/';
 
+// Display Strings!
+export const FONT_OPTIONS_TOGGLE_LABEL = 'Toggle Font Options Menu';
+export const FONT_OPTIONS_TITLE = 'Font Options';
+export const FONT_OPTIONS_DESCRIPTION = 'Change the font size and family of the page';
+export const FONT_SIZE_LABEL = 'Font Size: ';
+export const FONT_OPTIONS_FAMILY_LABEL = 'Font Family: ';
+export const FONT_OPTIONS_SIZE_INPUT_LABEL = 'Font Size Range Input';
+export const FONT_FAMILY_SELECT_LABEL = 'Font Family Select';
+export const SERIF_DISPLAY = 'Serif';
+export const SANS_SERIF_DISPLAY = 'Sans Serif';
+export const MONOSPACE_DISPLAY = 'Monospace';
+
+// Magic Strings!!
+export const SERIF = 'serif';
+export const SANS_SERIF = 'sans-serif';
+export const MONOSPACE = 'monospace';
+export const ESCAPE = 'Escape';
+
 /** Font Options
  * @returns {object} font options component  
  **/
@@ -20,7 +38,7 @@ function FontOptions() {
   const fontFamily = useFontFamily()
   
   const onEscapeKey = (e) => {
-    if (e.key === 'Escape' && isOpen) {
+    if (e.key === ESCAPE && isOpen) {
       store.dispatch(toggleFontOptions());
     }
   }
@@ -30,7 +48,7 @@ function FontOptions() {
       <button
         className={`${isOpen ? 'isOpen ' : ''}font-options-toggle`}
         onClick={onFontOptionsToggle}
-        aria-label="Toggle font options menu"
+        aria-label={FONT_OPTIONS_TOGGLE_LABEL}
         onKeyDown={onEscapeKey}
       >
         <i className="fa-solid fa-font" />
@@ -38,17 +56,17 @@ function FontOptions() {
       {isOpen && (
         <form id={`${namespace}form`} className="font-options">
           <fieldset>
-            <legend>Font Options</legend>
+            <legend>{FONT_OPTIONS_TITLE}</legend>
 
             <div className="font-options__row">
-              <label htmlFor="font-options__font-size">Font Size:&nbsp; </label>
+              <label htmlFor="font-options__font-size">{FONT_SIZE_LABEL}</label>
               <span className="font-options__font-size-value">{fontSize}x</span>
               <br/>
               <input
                 type="range"
                 id="font-options__font-size"
                 name="font-options__font-size"
-                aria-label='Font Size Range Input'
+                aria-label={FONT_OPTIONS_SIZE_INPUT_LABEL}
                 min="0.5"
                 max="5"
                 step={0.1}
@@ -59,18 +77,18 @@ function FontOptions() {
             </div>
           
             <div className="font-options__row">
-              <label htmlFor="font-options__font-family">Font Family:&nbsp;</label>
+              <label htmlFor="font-options__font-family">{FONT_OPTIONS_FAMILY_LABEL}</label>
               <select
                 id="font-options__font-family"
                 name="font-options__font-family"
-                aria-label='Font Family Select'
+                aria-label={FONT_FAMILY_SELECT_LABEL}
                 defaultValue={fontFamily}
                 onChange={onFontFamilyChange}
                 onKeyDown={onEscapeKey}
               >
-                <option value="sans-serif">Sans Serif</option>
-                <option value="serif">Serif</option>
-                <option value="monospace">Monospace</option>
+                <option value={SANS_SERIF}>{SANS_SERIF_DISPLAY}</option>
+                <option value={SERIF}>{SERIF_DISPLAY}</option>
+                <option value={MONOSPACE}>{MONOSPACE_DISPLAY}</option>
               </select>
             </div>
 
