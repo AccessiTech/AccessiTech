@@ -35,7 +35,14 @@ function A11Y() {
       className="a11y-container"
       aria-label="Accessibility Options"
     >
-      <FontOptions />
+      <div className="a11y__settings-container">
+        <button className="a11y__settings-toggle">
+          <i className="fa-solid fa-cog" />
+        </button>
+        <menu className="a11y__settings">
+          <li><FontOptions /></li>
+        </menu>
+      </div>
       <I18nSelect
         { ...i18nSelectProps }
       />

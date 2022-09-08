@@ -7,6 +7,32 @@
   top: 1rem;
   right: 1rem;
 
+  .a11y__settings-container {
+    display: flex;
+
+    .a11y__settings-toggle {
+      background-color: transparent;
+      color: white;
+      border: none;
+      @include hc-text-shadow;
+
+      &:hover,
+      &:focus-visible {
+        box-shadow: $hc-focus-box-shadow;
+      }
+    }
+
+    menu.a11y__settings {
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+
   .selector-container {
     display: flex;
 
@@ -61,7 +87,7 @@
 
     .font-options {
       position: absolute;
-      right: -3px;
+      // right: -3px;
       top: calc(36px + 0.5rem);
       min-width: 250px;
       padding: 1rem;
