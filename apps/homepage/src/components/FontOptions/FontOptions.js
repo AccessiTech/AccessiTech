@@ -36,7 +36,9 @@ function FontOptions() {
 
   return (
     <div className="font-options-container">
-      <button onClick={onFontOptionsToggle}>Fonts</button>
+      <button onClick={onFontOptionsToggle}>
+        <i className="fa-solid fa-font" />
+      </button>
       {isOpen && (
         <form id={`${namespace}form`} className="font-options">
           <fieldset>
