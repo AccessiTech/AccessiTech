@@ -47,7 +47,7 @@ $font-sizes: (
   "5-0": 5,
 );
 
-@mixin font-resizing($size) {
+@mixin font-resize($size) {
   @each $key, $value in $font-sizes {
     body.font-size-#{$key} & {
       font-size: $value * $size;

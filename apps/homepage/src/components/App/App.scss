@@ -30,6 +30,29 @@ a {
   }
 }
 
+p, a {
+  @include font-resize(1rem);
+}
+
+h1, .h1 {
+  @include font-resize(2.5rem);
+}
+h2, .h2 {
+  @include font-resize(2rem);
+}
+h3, .h3 {
+  @include font-resize(1.75rem);
+}
+h4, .h4 {
+  @include font-resize(1.5rem);
+}
+h5, .h5 {
+  @include font-resize(1.25rem);
+}
+h6, .h6 {
+  @include font-resize(1rem);
+}
+
 .App {
   text-align: center;
   color: $darkBlue;
@@ -45,6 +68,6 @@ a {
     color: $white;
     font-style: italic;
     font-weight: 300;
-    @include font-resizing(1.75rem);
+    @include font-resize(1.75rem);
   }
 }
