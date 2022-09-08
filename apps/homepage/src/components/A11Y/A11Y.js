@@ -43,22 +43,32 @@ function A11Y() {
       className="a11y-container"
       aria-label="Accessibility Options"
     >
-      <div className="a11y__settings-container">
+      <div className={`${isA11yOpen ? 'isOpen ' : ''}a11y__settings-container`}>
         <button
           className="a11y__settings-toggle"
           onClick={onA11yToggle}
-          >
+          aria-label="Toggle Accessibility Options"
+          // aria-roledescription='button'
+        >
           <i className="fa fa-cog" />
         </button>
         {isA11yOpen && (
           <menu className="a11y__settings">
             <li><FontOptions /></li>
+            <li><I18nSelect { ...i18nSelectProps } /></li>
           </menu>
         )}
+        {isA11yOpen && (
+          <button
+            className="a11y__settings-close"
+            onClick={onA11yToggle}
+            aria-label="Close Accessibility Options"
+          >
+            <i className="fa-solid fa-xmark" />
+          </button>
+        )}
+
       </div>
-      <I18nSelect
-        { ...i18nSelectProps }
-      />
     </div>
   ) : null;
 }

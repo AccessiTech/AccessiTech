@@ -36,7 +36,7 @@ function FontOptions() {
 
   return (
     <div className="font-options-container">
-      <button className='font-options-toggle' onClick={onFontOptionsToggle}>
+      <button className={`${isOpen ? 'isOpen ' : ''}font-options-toggle`} onClick={onFontOptionsToggle}>
         <i className="fa-solid fa-font" />
       </button>
       {isOpen && (
@@ -45,7 +45,7 @@ function FontOptions() {
             <legend>Font Options</legend>
 
             <div className="font-options__row">
-              <label htmlFor="font-options__font-size">Font Size:</label>
+              <label htmlFor="font-options__font-size">Font Size:&nbsp; </label>
               <span className="font-options__font-size-value">{fontSize}x</span>
               <br/>
               <input

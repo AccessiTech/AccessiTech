@@ -9,11 +9,18 @@
 
   .a11y__settings-container {
     display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    min-width: 36px;
 
-    .a11y__settings-toggle {
+    .a11y__settings-toggle,
+    .a11y__settings-close {
       background-color: transparent;
       color: white;
       border: none;
+      outline: none;
+      min-height: 36px;
+      min-width: 36px;
       @include hc-text-shadow;
 
       &:hover,
@@ -25,7 +32,10 @@
     menu.a11y__settings {
       display: flex;
       margin: 0;
-      padding: 0;
+      padding: 0 0.75rem;
+      border: solid white;
+      border-width: 0 1px;
+
 
       li {
         list-style: none;
@@ -48,6 +58,7 @@
       background-color: transparent;
       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiAxNic+CiAgPHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPSdibGFjaycgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBzdHJva2Utd2lkdGg9JzUnIGQ9J00yIDVsNiA2IDYtNicvPgogIDxwYXRoIGZpbGw9J25vbmUnIHN0cm9rZT0nd2hpdGUnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcgc3Ryb2tlLXdpZHRoPScyJyBkPSdNMiA1bDYgNiA2LTYnLz4KPC9zdmc+);
       border: none;
+      outline: none;
       box-shadow: $no-box-shadow;
       cursor: pointer;
       @include hc-text-shadow;
@@ -75,19 +86,29 @@
       background-color: transparent;
       border: none;
       box-shadow: $no-box-shadow;
-      height: 36px;
+      outline: none;
+      min-height: 36px;
+      min-width: 36px;
       cursor: pointer;
       @include hc-text-shadow;
   
+      &.isOpen {
+        border: $unfocus-border;
+      }
+
       &:hover,
       &:focus-visible {
         box-shadow: $hc-focus-box-shadow;
+
+        &.isOpen {
+          border: none;
+        }
       }
     }
 
     .font-options {
       position: absolute;
-      // right: -3px;
+      right: 0;
       top: calc(36px + 0.5rem);
       min-width: 250px;
       padding: 1rem;
@@ -96,6 +117,7 @@
 
       legend {
         @include font-resize(1.25rem);
+        font-weight: 600;
         margin-bottom: 0.5rem;
       }
 
