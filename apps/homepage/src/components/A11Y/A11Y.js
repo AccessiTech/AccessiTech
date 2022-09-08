@@ -44,17 +44,17 @@ function A11Y() {
       aria-label="Accessibility Options"
     >
       <div className="a11y__settings-container">
+        <button
+          className="a11y__settings-toggle"
+          onClick={onA11yToggle}
+          >
+          <i className="fa fa-cog" />
+        </button>
         {isA11yOpen && (
           <menu className="a11y__settings">
             <li><FontOptions /></li>
           </menu>
         )}
-        <button
-          className="a11y__settings-toggle"
-          onClick={onA11yToggle}
-        >
-          <i className="fa-solid fa-cog" />
-        </button>
       </div>
       <I18nSelect
         { ...i18nSelectProps }
