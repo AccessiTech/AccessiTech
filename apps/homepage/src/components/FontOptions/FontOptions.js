@@ -14,12 +14,19 @@ import store from '../../store/store';
 
 export const namespace = 'fontOptions/';
 
+/** On Font Options Toggle
+ * @param {Event} e
+ */
 export const onFontOptionsToggle = (e) => {
   e.preventDefault();
   console.log(typeof toggleFontOptions)
   store.dispatch(toggleFontOptions());
 }
 
+/** On font size change
+ * @param {Event} e
+ * @param {Number} fontSize
+*/
 export const onFontSizeChange = (e, fontSize) => {
   e.preventDefault();
   const newFontSize = Number(e.target.value).toFixed(1);
@@ -33,11 +40,14 @@ export const onFontSizeChange = (e, fontSize) => {
   store.dispatch(setFontSize(newFontSize));
 };
 
+/** On Font Family Change
+ * @param {object} e event
+ * @param {string} fontFamily font family
+*/
 export const onFontFamilyChange = (e) => {
   e.preventDefault();
-console.log(e.target.value)
   const body = document.querySelector('body');
-  const fontFamilyClass = getFontSizeClass(e.target.value)
+  const fontFamilyClass = getFontFamilyClass(e.target.value)
   if (body) {
     if (body.classList.contains(fontFamilyClass)) {
       body.classList.remove(fontFamilyClass);
@@ -51,6 +61,9 @@ console.log(e.target.value)
   store.dispatch(setFontFamily(fontFamilyClass));
 }
 
+/** Font Options
+ * @returns {object} font options component  
+ **/
 function FontOptions() {
   const isOpen = useIsOpen();
   const fontSize = Number(useFontSize() || 1).toFixed(1);
@@ -58,7 +71,11 @@ function FontOptions() {
 
   return (
     <div className="font-options-container">
-      <button className={`${isOpen ? 'isOpen ' : ''}font-options-toggle`} onClick={onFontOptionsToggle}>
+      <button
+        className={`${isOpen ? 'isOpen ' : ''}font-options-toggle`}
+        onClick={onFontOptionsToggle}
+        aria-label="Toggle font options menu"
+      >
         <i className="fa-solid fa-font" />
       </button>
       {isOpen && (
@@ -74,6 +91,7 @@ function FontOptions() {
                 type="range"
                 id="font-options__font-size"
                 name="font-options__font-size"
+                aria-label='Font Size Range Input'
                 min="0.5"
                 max="5"
                 step={0.1}
@@ -87,11 +105,12 @@ function FontOptions() {
               <select
                 id="font-options__font-family"
                 name="font-options__font-family"
+                aria-label='Font Family Select'
                 defaultValue={fontFamily}
                 onChange={onFontFamilyChange}
               >
-                <option value="serif">Serif</option>
                 <option value="sans-serif">Sans Serif</option>
+                <option value="serif">Serif</option>
                 <option value="monospace">Monospace</option>
               </select>
             </div>
