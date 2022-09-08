@@ -1,66 +1,15 @@
 import React  from 'react';
 import {
   debounce,
-  getFontFamilyClass,
-  getFontSizeClass,
-  setFontFamily,
-  setFontSize,
   toggleFontOptions,
   useFontFamily,
   useFontSize,
   useIsOpen,
 } from './reducer';
 import store from '../../store/store';
+import { onFontFamilyChange, onFontOptionsToggle, onFontSizeChange } from './helpers';
 
 export const namespace = 'fontOptions/';
-
-/** On Font Options Toggle
- * @param {Event} e
- */
-export const onFontOptionsToggle = (e) => {
-  e.preventDefault();
-  console.log(typeof toggleFontOptions)
-  store.dispatch(toggleFontOptions());
-}
-
-/** On font size change
- * @param {Event} e
- * @param {Number} fontSize
-*/
-export const onFontSizeChange = (e, fontSize) => {
-  e.preventDefault();
-  const newFontSize = Number(e.target.value).toFixed(1);
-  const body = document.querySelector('body');
-  if (body) {
-    for (let i = 0.5; i <= 5; i += 0.1) {
-      body.classList.remove(getFontSizeClass((Math.round(i * 10) / 10).toFixed(1)));
-    }
-    body.classList.add(getFontSizeClass(newFontSize));
-  }
-  store.dispatch(setFontSize(newFontSize));
-};
-
-/** On Font Family Change
- * @param {object} e event
- * @param {string} fontFamily font family
-*/
-export const onFontFamilyChange = (e) => {
-  e.preventDefault();
-  const body = document.querySelector('body');
-  const fontFamilyClass = getFontFamilyClass(e.target.value)
-  if (body) {
-    if (body.classList.contains(fontFamilyClass)) {
-      body.classList.remove(fontFamilyClass);
-    } else  {
-      body.classList.remove(getFontFamilyClass('serif'));
-      body.classList.remove(getFontFamilyClass('sans-serif'));
-      body.classList.remove(getFontFamilyClass('monospace'));
-    }
-    body.classList.add(fontFamilyClass);
-  }
-  store.dispatch(setFontFamily(fontFamilyClass));
-}
-
 
 /** Font Options
  * @returns {object} font options component  
@@ -124,6 +73,7 @@ function FontOptions() {
                 <option value="monospace">Monospace</option>
               </select>
             </div>
+
             {/* <div className="font-options__row">
               <label htmlFor="font-options__font-weight">Font Color</label>
               <input type="color" id="font-options__font-weight" name="font-options__font-weight" />
@@ -135,10 +85,6 @@ function FontOptions() {
             <div className="font-options__row">
               <label htmlFor="font-options__letter-spacing">Letter Spacing</label>
               <input type="range" id="font-options__letter-spacing" name="font-options__letter-spacing" min="0.5" max="5" step={0.1} />
-            </div>
-            <div className="font-options__row">
-              <label htmlFor="font-options__font-weight">Font Weight</label>
-              <input type="range" id="font-options__font-weight" name="font-options__font-weight" min="0" max="900" step={100} />
             </div>
             <div className="font-options__row">
               <label htmlFor="font-options__bionic">Bionic</label>
