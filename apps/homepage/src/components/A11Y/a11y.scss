@@ -115,6 +115,10 @@
       background-color: white;
       border: 1px solid black;
 
+      .font-family-monospace & {
+        min-width: 280px;
+      }
+
       legend {
         @include font-resize(1.25rem);
         font-weight: 600;
