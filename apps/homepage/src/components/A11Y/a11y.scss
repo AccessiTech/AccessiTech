@@ -42,14 +42,39 @@
   .font-options-container {
     text-align: left;
     position: relative;
+    margin-right: .5rem;
+
+    .font-options-toggle {
+      color: white;
+      background-color: transparent;
+      border: none;
+      box-shadow: $no-box-shadow;
+      height: 36px;
+      cursor: pointer;
+      @include hc-text-shadow;
+  
+      &:hover,
+      &:focus-visible {
+        box-shadow: $hc-focus-box-shadow;
+      }
+    }
 
     .font-options {
       position: absolute;
-      left: -50%;
+      right: -3px;
+      top: calc(36px + 0.5rem);
+      min-width: 250px;
+      padding: 1rem;
+      background-color: white;
+      border: 1px solid black;
 
       legend {
         @include font-resize(1.25rem);
         margin-bottom: 0.5rem;
+      }
+
+      input[type="range"] {
+        width: 100%;
       }
     }
   }

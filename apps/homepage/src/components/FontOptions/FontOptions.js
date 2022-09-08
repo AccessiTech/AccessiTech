@@ -36,7 +36,7 @@ function FontOptions() {
 
   return (
     <div className="font-options-container">
-      <button onClick={onFontOptionsToggle}>
+      <button className='font-options-toggle' onClick={onFontOptionsToggle}>
         <i className="fa-solid fa-font" />
       </button>
       {isOpen && (
