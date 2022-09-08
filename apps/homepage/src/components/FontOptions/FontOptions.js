@@ -1,9 +1,12 @@
 import React  from 'react';
 import {
   debounce,
+  getFontFamilyClass,
   getFontSizeClass,
+  setFontFamily,
   setFontSize,
   toggleFontOptions,
+  useFontFamily,
   useFontSize,
   useIsOpen,
 } from './reducer';
@@ -30,9 +33,28 @@ export const onFontSizeChange = (e, fontSize) => {
   store.dispatch(setFontSize(newFontSize));
 };
 
+export const onFontFamilyChange = (e) => {
+  e.preventDefault();
+console.log(e.target.value)
+  const body = document.querySelector('body');
+  const fontFamilyClass = getFontSizeClass(e.target.value)
+  if (body) {
+    if (body.classList.contains(fontFamilyClass)) {
+      body.classList.remove(fontFamilyClass);
+    } else  {
+      body.classList.remove(getFontFamilyClass('serif'));
+      body.classList.remove(getFontFamilyClass('sans-serif'));
+      body.classList.remove(getFontFamilyClass('monospace'));
+    }
+    body.classList.add(fontFamilyClass);
+  }
+  store.dispatch(setFontFamily(fontFamilyClass));
+}
+
 function FontOptions() {
   const isOpen = useIsOpen();
   const fontSize = Number(useFontSize() || 1).toFixed(1);
+  const fontFamily = useFontFamily()
 
   return (
     <div className="font-options-container">
@@ -60,15 +82,20 @@ function FontOptions() {
               />
             </div>
           
-            {/* <div className="font-options__row">
-              <label htmlFor="font-options__font-family">Font Family</label>
-              <select id="font-options__font-family" name="font-options__font-family">
+            <div className="font-options__row">
+              <label htmlFor="font-options__font-family">Font Family:&nbsp;</label>
+              <select
+                id="font-options__font-family"
+                name="font-options__font-family"
+                defaultValue={fontFamily}
+                onChange={onFontFamilyChange}
+              >
                 <option value="serif">Serif</option>
                 <option value="sans-serif">Sans Serif</option>
                 <option value="monospace">Monospace</option>
               </select>
             </div>
-            <div className="font-options__row">
+            {/* <div className="font-options__row">
               <label htmlFor="font-options__font-weight">Font Color</label>
               <input type="color" id="font-options__font-weight" name="font-options__font-weight" />
             </div>
