@@ -11,6 +11,7 @@ import store from '../../store/store';
 import { getBrowserLanguage, useT, initTranslations, setLang } from '@accessitech/i18n-redux-toolkit';
 import { useParams } from 'react-router-dom';
 import About from '../About/About';
+import Services from '../Services/Services';
 import translations from '../../settings/translations';
 
 store.dispatch(initTranslations(translations))
@@ -45,6 +46,7 @@ const App = () => {
     {/* Main Rows */}
     <main aria-label={useT(ABOUT_ACCESSITECH)}>
       <About />
+      <Services />
     </main>
     
 
