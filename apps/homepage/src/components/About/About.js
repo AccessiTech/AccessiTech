@@ -25,7 +25,7 @@ const About = () => {
     </Row>
 
     <Row className="purpose-row">
-      <Col className="purpose-text" xs={12} md={{ span: 4, offset: 2 }}>
+      <Col className="purpose-text" xs={12} md={7}>
         <article title="Purpose">
           <h3>{useT(PURPOSE_HEADER)}</h3>
           <p>{useT(PURPOSE_P1)}</p>
@@ -42,8 +42,8 @@ const About = () => {
           className="purpose-picture"
           alt={useT(PURPOSE_PIC_ALT)}
           title={useT(PURPOSE_PIC_ALT)}
-           width={purposeImageSize}
-           height={purposeImageSize}
+          width={purposeImageSize}
+          height={purposeImageSize}
         />
       </Col>
     </Row>
