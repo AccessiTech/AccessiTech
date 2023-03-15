@@ -3,8 +3,53 @@
 
 #services {
   text-align: left;
-  @include padding(0 0 2.5rem);
+  
   .row {
     @include padding(2.5rem 0 0);
+    
+    &.services-header-row {
+      @include padding(5rem 0);
+      background-color: $pink;
+      color: $darkBlue;
+
+      .purpose-picture {
+        max-width: 100%;
+        border-radius: 100%;
+        aspect-ratio: 1 / 1;
+      }
+    }
+
+    &.services-row {
+      background-color: $yellow;
+      color: $darkBlue;
+      @include padding-bottom(2.5rem);
+
+      & > div {
+        @include padding-bottom(2.5rem);
+        @include margin-top(2.5rem);
+
+        article {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+        }
+
+        .btn {
+          width: 100%;
+          background-color: $darkBlue;
+          border: none;
+          color: $yellow;
+          box-shadow: 0 0 0 1px $darkBlue;
+          
+
+          &:hover,
+          &:focus,
+          &:focus-visible {
+            box-shadow: 0 0 0 2px $white;
+          }
+        }
+      }
+    }
   }
 }

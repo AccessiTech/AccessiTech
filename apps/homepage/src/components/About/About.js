@@ -3,28 +3,29 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './About.scss';
 import { useT } from '@accessitech/i18n-redux-toolkit';
-import { PURPOSE_PIC_SIZES, PURPOSE_PIC_SRCSET, PURPOSE_PIC_URL_1024 } from '../../settings/settings';
-import { PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, PURPOSE_PIC_ALT, VISION_P1, VISION_P2 } from '../../settings/strings';
-import { useWindowSize } from '../../settings/utils';
+// import { PURPOSE_PIC_SIZES, PURPOSE_PIC_SRCSET, PURPOSE_PIC_URL_1024 } from '../../settings/settings';
+import { 
+  // PURPOSE_HEADER, PURPOSE_P1, PURPOSE_P2, PURPOSE_P3, PURPOSE_P4, PURPOSE_PIC_ALT,  
+  VISION_P3 } from '../../settings/strings';
+// import { useWindowSize } from '../../settings/utils';
 
 const About = () => {
- const [width] = useWindowSize();
-  const purposeImageSize = width > 767 ?
-  ((width - ((1.625 * 16) + (0.045 * width))) * ((41 + (2/3)) / 100)) :
-  (width - 24);
+//  const [width] = useWindowSize();
+//   const purposeImageSize = width > 767 ?
+//   ((width - ((1.625 * 16) + (0.045 * width))) * ((41 + (2/3)) / 100)) :
+//   (width - 24);
 
  return (
   <>
     <Row className="about-row">
       <Col xs={12} md={{ span: 8, offset: 2 }}>
         <blockquote title="Vision">
-          <p>{useT(VISION_P1)}</p>
-          <p>{useT(VISION_P2)}</p>
+          <p>{useT(VISION_P3)}</p>
         </blockquote>
       </Col>
     </Row>
 
-    <Row className="purpose-row">
+    {/* <Row className="purpose-row">
       <Col className="purpose-text" xs={12} md={7}>
         <article title="Purpose">
           <h3>{useT(PURPOSE_HEADER)}</h3>
@@ -46,7 +47,7 @@ const About = () => {
           height={purposeImageSize}
         />
       </Col>
-    </Row>
+    </Row> */}
   </>
 )};
 
