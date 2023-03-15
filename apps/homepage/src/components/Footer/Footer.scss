@@ -1,6 +1,15 @@
 @import "./../../sass/variables.scss";
 @import "~bootstrap/scss/bootstrap.scss";
 
+.footer-row {
+  background-color: $darkBlue;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
 .footer-section {
   @include padding-top($alt-section-padding);
   

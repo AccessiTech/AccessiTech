@@ -114,6 +114,15 @@
       }
     }
   },
+  "VISION_P3": {
+    "message": "$company$ est une entreprise sociale qui vise à éliminer les obstacles pour les technologues en conception handicapés et à promouvoir les technologies émergentes qui améliorent l'accessibilité, l'inclusion et l'équité pour tous.",
+    "description": "About Section: second iteration describing the vision of the company",
+    "placeholders": {
+      "company": {
+        "content": "AccessiTech LLC"
+      }
+    }
+  },
   "PURPOSE_HEADER": {
     "message": "Objectif",
     "description": "Purpose Section: header for section describing the purpose of the company"
@@ -288,5 +297,99 @@
         "content": "u/accessiTech"
       }
     }
+  },
+  "SERVICES_HEADER": {
+    "message": "Prestations de service",
+    "description": "Header: for the services section"
+  },
+  "SERVICES_P1": {
+    "message": "En tant que technologue en conception avec plus de 10 ans d'expérience professionnelle dans plusieurs secteurs, j'offre un mentorat indépendant sur diverses plateformes tout en continuant à produire des logiciels pour l'accessibilité numérique.",
+    "description": "Services Section: first paragraph describing the services we provide"
+  },
+  "SERVICES_P2": {
+    "message": "En tant que consultant en accessibilité, j'offre une large gamme de services tout au long du cycle de vie du produit, y compris, mais sans s'y limiter: les audits d'accessibilité, la recherche de conception, la gestion de projet et l'ingénierie complète.",
+    "description": "Services Section: second paragraph describing the services we provide"
+  },
+  "SERVICES_P3": {
+    "message": "En tant que consultant en accessibilité, je vérifie la conformité des conceptions et des logiciels en matière d'accessibilité, j'offre des services de gestion de projet et j'assure la livraison de logiciels robustes et accessibles.",
+    "description": "Services Section: second iteration describing the services we provide"
+  },
+  "MENTORSHIP_HEADER": {
+    "message": "Mentorat Web",
+    "description": "Header: for the mentorship section"
+  },
+  "MENTORSHIP_P1": {
+    "message": "Comme je suis capable d'écrire de moins en moins de code, je suis de plus en plus enthousiaste à l'idée de transmettre mes leçons apprises à la prochaine génération de concepteurs et de développeurs. Apprendre à coder, j'ai trouvé, est généralement une courbe d'apprentissage très raide. Bien qu'il existe une pléthore de ressources et de communautés, le volume considérable d'informations déjà disponibles peut être écrasant et intimidant.",
+    "description": "Mentorship Section: first paragraph describing the mentorship we provide"
+  },
+  "MENTORSHIP_P2": {
+    "message": "Mon rôle principal dans l'enseignement est d'aider les étudiants à s'adapter à cette courbe d'apprentissage, à dissiper les mythes et les inquiétudes tout en élucidant les raccourcis et les pièges, et à promouvoir leur propre capacité à apprendre. Mon objectif est de briser l'illusion de l'ingénieur web omniscient et tout-puissant tout en inculquant les meilleures pratiques du domaine.",
+    "description": "Mentorship Section: second paragraph describing the mentorship we provide"
+  },
+  "MENTORSHIP_P3": {
+    "message": "Comme je suis capable d'écrire moins de code, je suis ravi d'offrir un mentorat en conception et développement Web, aidant à surmonter la courbe d'apprentissage abrupte du codage, dissipant les mythes et les inquiétudes, et favorisant leur capacité à apprendre tout en inculquant les meilleures pratiques du domaine.",
+    "description": "Mentorship Section: second iteration describing the mentorship we provide"
+  },
+  "MENTORSHIP_CTA": {
+    "message": "En savoir plus sur le Web",
+    "description": "Call to Action: for the mentorship section"
+  },
+  "MENTORSHIP_EMAIL_SUBJECT": {
+    "message": "$subject$Services de mentorat",
+    "description": "Email Subject: for the mentorship section CTA url",
+    "placeholders": {
+      "subject": {
+        "content": "subject="
+      }
+    }
+  },
+  "CONSULTATION_HEADER": {
+    "message": "Consultation d'accessibilité",
+    "description": "Header: for the consultation section"
+  },
+  "CONSULTATION_P1": {
+    "message": "J'audite la conception et/ou les logiciels nouveaux et existants pour la conformité à l'accessibilité (WCAG 2.x) et les meilleures pratiques. Je générerai un rapport avec les résultats, y compris des suggestions et des ressources spécifiques au projet pour les audits de base et des recommandations spécifiques à la mise en œuvre pour des audits plus avancés. Je peux également concevoir et/ou exécuter des études de recherche UX pour aider à garantir une expérience utilisateur/client accessible.",
+    "description": "Consultation Section: first paragraph describing the consultation we provide"
+  },
+  "CONSULTATION_P2": {
+    "message": "J'offre des services de gestion de projet pour aider les équipes techniques existantes à mettre en œuvre des produits accessibles numériquement. Que vous refactorisiez votre site pour l'accessibilité, que vous développiez des outils Web pour les technologies d'assistance ou que vous conceviez des SDK pour les développeurs handicapés, je vous aiderai. Cela implique généralement la définition de la portée, l'analyse de la base de code, la recherche de produits, la planification du travail du projet et BEAUCOUP de problèmes Github organisés via des sprints et des jalons. Si cela ne ressemble pas à votre équipe, c'est très bien aussi, je suis flexible et adaptable! Avec un mandat de conception et d'ingénierie UX derrière moi, je suis prêt à aider votre équipe à livrer des logiciels robustes et accessibles de manière sûre et saine.",
+    "description": "Consultation Section: second paragraph describing the consultation we provide"
+  },
+  "CONSULTATION_P3": {
+    "message": "En tant que consultant en accessibilité, je vérifie la conformité des conceptions et des logiciels en matière d'accessibilité, j'offre des services de gestion de projet et j'assure la livraison de logiciels robustes et accessibles.",
+    "description": "Consultation Section: second iteration describing the consultation we provide"
+  },
+  "CONSULTATION_CTA": {
+    "message": "Contactez-moi pour une consultation",
+    "description": "Call to Action: for the consultation section button"
+  },
+  "PRODUCTION_HEADER": {
+    "message": "Production de logiciels",
+    "description": "Header: for the production section"
+  },
+  "PRODUCTION_P1": {
+    "message": "Je crois qu'un logiciel open source gratuit, modulaire et robuste est la quintessence de l'existence d'un Web véritablement accessible à la fois pour les utilisateurs et les développeurs de produits numériques. AccessiTech produit fièrement de tels logiciels dans le but de faire proliférer des outils d'accessibilité accessibles dans les communautés TIC capacitaires d'aujourd'hui. Nous devons être le changement que nous souhaitons voir, après tout!",
+    "description": "Production Section: first paragraph describing the production we provide"
+  },
+  "PRODUCTION_P2": {
+    "message": "Je suis un ingénieur full-stack spécialisé dans le développement front-end. J'ai de l'expérience avec un large éventail de technologies et de frameworks, y compris, mais sans s'y limiter: React, Vue, Angular, Node, Express, MongoDB et PostgreSQL. Je suis également un concepteur UX chevronné avec une formation en conception visuelle, en architecture de l'information et en recherche d'utilisateurs.",
+    "description": "Production Section: second paragraph describing the production we provide"
+  },
+  "PRODUCTION_P3": {
+    "message": "Pour voir sur quoi je travaille actuellement, consultez ma section Projets en cours. Pour demander une solution, poser des questions sur un produit ou, si vous êtes intéressé à contribuer, lancez une discussion sur GitHub!",
+    "description": "Production Section: third paragraph describing the production we provide"
+  },
+  "PRODUCTION_P4": {
+    "message": "Je crois qu'un logiciel open source gratuit, modulaire et robuste est crucial pour créer un Web accessible à la fois pour les utilisateurs et les développeurs. $company$ produit et promeut fièrement de tels logiciels pour contrer le capacitisme dans les communautés TIC d'aujourd'hui.",
+    "description": "Production Section: second iteration describing the production we provide",
+    "placeholders": {
+      "company": {
+        "content": "AccessiTech"
+      }
+    }
+  },
+  "PRODUCTION_CTA": {
+    "message": "Rejoindre la conversation",
+    "description": "Call to Action: for the production section button"
   }
 }
