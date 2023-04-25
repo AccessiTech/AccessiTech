@@ -421,11 +421,11 @@
     "description": "Header: for the QA section"
   },
   "QA_P1": {
-    "message": "",
+    "message": "As a QA Engineer, I have spent my career testing, triaging, and debugging software at every stage of the product life cycle, including: test planning, end-to-end quality assurance, unit/integration testing, user/usability testing, and more. ",
     "description": "QA Section: first paragraph describing the QA we provide"
   },
   "QA_CTA": {
-    "message": "Contact me about QA",
+    "message": "Let me test your code",
     "description": "Call to Action: for the QA section button"
   }
 }

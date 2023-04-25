@@ -64,6 +64,9 @@ export const PRODUCTION_P2 = 'PRODUCTION_P2';
 export const PRODUCTION_P3 = 'PRODUCTION_P3';
 export const PRODUCTION_P4 = 'PRODUCTION_P4';
 export const PRODUCTION_CTA = 'PRODUCTION_CTA';
+export const QA_HEADER = 'QA_HEADER';
+export const QA_P1 = 'QA_P1';
+export const QA_CTA = 'QA_CTA';
 
 // Magical Strings
 export const WHITE = 'white';
@@ -82,6 +85,7 @@ export const ROOT = "/AccessiTech";
 export const FIVERR_URL = "https://www.fiverr.com/accessitech";
 export const FIVERR_AUDIT_URL = "https://www.fiverr.com/accessitech/audit-websites-for-wcag-accessibility-compliance";
 export const FIVERR_MENTORSHIP_URL = "https://www.fiverr.com/accessitech/teach-you-web-development";
+export const FIVERR_QA_URL = "https://www.fiverr.com/accessitech/review-your-frontend-code";
 export const TWITTER_URL = "https://twitter.com/accessiT3ch";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/accessitech/";
 export const YOUTUBE_URL = "https://www.youtube.com/channel/UCcke0DIj4p7QMFEKyFTU8RA";

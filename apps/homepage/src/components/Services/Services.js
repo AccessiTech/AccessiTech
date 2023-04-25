@@ -9,6 +9,7 @@ import {
   CONSULTATION_P3,
   FIVERR_AUDIT_URL,
   FIVERR_MENTORSHIP_URL,
+  FIVERR_QA_URL,
   GITHUB_DISCUSSIONS_URL,
   MENTORSHIP_CTA,
   MENTORSHIP_HEADER,
@@ -17,6 +18,9 @@ import {
   PRODUCTION_HEADER,
   PRODUCTION_P4,
   PURPOSE_PIC_ALT,
+  QA_CTA,
+  QA_HEADER,
+  QA_P1,
   SERVICES_HEADER,
   SERVICES_P1,
   SERVICES_P2,
@@ -65,8 +69,7 @@ const Services = () => {
           className="consultation-col"
           sm={12}
           md={{ span: 10, offset: 1 }}
-          lg={6}
-          xl={{span: 4, offset: 0}}
+          lg={5}
         >
           <article>
             <div>
@@ -84,11 +87,32 @@ const Services = () => {
           </article>
         </Col>
         <Col
+          className="qa-col"
+          sm={12}
+          md={{ span: 10, offset: 1 }}
+          lg={{ span: 5, offset: 0 }}
+        >
+          <article>
+            <div>
+              <h4>{useT(QA_HEADER)}</h4>
+              <p>{useT(QA_P1)}</p>
+            </div>
+            <Button
+
+              size="lg"
+              target={TARGET_BLANK}
+              href={FIVERR_QA_URL}
+              title={useT(QA_CTA)}
+            >
+              {useT(QA_CTA)}
+            </Button>
+          </article>
+        </Col>
+        <Col
           className="mentorship-col"
           sm={12}
           md={{ span: 10, offset: 1 }}
-          lg={{ span: 6, offset: 5 }}
-          xl={{span: 4, offset: 0}}
+          lg={{ span: 5, offset: 1 }}
         >
           <article>
             <div>
@@ -109,8 +133,7 @@ const Services = () => {
           className="production-col"
           sm={12}
           md={{ span: 10, offset: 1 }}
-          lg={{ span: 6, offset: 1 }}
-          xl={{ span: 4, offset: 0 }}
+          lg={{ span: 5, offset: 0 }}
         >
           <article>
             <div>
