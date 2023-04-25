@@ -380,7 +380,7 @@
     "description": "Consultation Section: second paragraph describing the consultation we provide"
   },
   "CONSULTATION_P3": {
-    "message": "As an Accessibility Consultant I audits designs and software for accessibility compliance, offer project management services, and ensure the shipping of robust and accessible software.",
+    "message": "As an Accessibility Consultant I audit designs and software for accessibility compliance, offer project management services, and ensure the shipping of robust and accessible software.",
     "description": "Consultation Section: second iteration describing the consultation we provide"
   },
   "CONSULTATION_CTA": {
@@ -415,5 +415,17 @@
   "PRODUCTION_CTA": {
     "message": "Join the conversation",
     "description": "Call to Action: for the production section button"
+  },
+  "QA_HEADER": {
+    "message": "Quality Assurance",
+    "description": "Header: for the QA section"
+  },
+  "QA_P1": {
+    "message": "",
+    "description": "QA Section: first paragraph describing the QA we provide"
+  },
+  "QA_CTA": {
+    "message": "Contact me about QA",
+    "description": "Call to Action: for the QA section button"
   }
 }
