@@ -80,6 +80,8 @@ export const TERTIARY = "tertiary";
 // URLs
 export const ROOT = "/AccessiTech";
 export const FIVERR_URL = "https://www.fiverr.com/accessitech";
+export const FIVERR_AUDIT_URL = "https://www.fiverr.com/accessitech/audit-websites-for-wcag-accessibility-compliance";
+export const FIVERR_MENTORSHIP_URL = "https://www.fiverr.com/accessitech/teach-you-web-development";
 export const TWITTER_URL = "https://twitter.com/accessiT3ch";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/accessitech/";
 export const YOUTUBE_URL = "https://www.youtube.com/channel/UCcke0DIj4p7QMFEKyFTU8RA";
