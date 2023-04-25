@@ -7,6 +7,7 @@ export const COMPANY_TITLE = 'AccessiTech LLC'
 
 // i18n stringKey keys
 export const TAGLINE = 'TAGLINE';
+export const FIVERR_LABEL = 'FIVERR_LABEL';
 export const LINKEDIN_LABEL = 'LINKEDIN_LABEL';
 export const TWITTER_LABEL = 'TWITTER_LABEL';
 export const TWITCH_LABEL = 'TWITCH_LABEL';
@@ -77,6 +78,7 @@ export const TERTIARY = "tertiary";
 
 // URLs
 export const ROOT = "/AccessiTech";
+export const FIVERR_URL = "https://www.fiverr.com/accessitech";
 export const TWITTER_URL = "https://twitter.com/accessiT3ch";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/accessitech/";
 export const YOUTUBE_URL = "https://www.youtube.com/channel/UCcke0DIj4p7QMFEKyFTU8RA";

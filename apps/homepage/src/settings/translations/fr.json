@@ -15,6 +15,18 @@
       }
     }
   },
+    "FIVERR_LABEL": {
+    "message": "$AccessiTech$ sur $Fiverr$",
+    "description": "Splash Socials: label for Fiverr button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "Fiverr": {
+        "content": "Fiverr"
+      }
+    }
+  },
   "TWITTER_LABEL": {
     "message": "$AccessiTech$ sur $Twitter$",
     "description": "Splash Socials: label for Twitter button",

@@ -4,7 +4,7 @@
     "description": "Splash tagline: accessibility for desginers and developers"
   },
   "LINKEDIN_LABEL": {
-    "message": "$AccessiTech$ on $LinkedIn$",
+    "message": "$AccessiTech$ en $LinkedIn$",
     "description": "Splash Socials: label for LinkedIn button",
     "placeholders": {
       "AccessiTech": {
@@ -12,6 +12,18 @@
       },
       "LinkedIn": {
         "content": "LinkedIn"
+      }
+    }
+  },
+    "FIVERR_LABEL": {
+    "message": "$AccessiTech$ en $Fiverr$",
+    "description": "Splash Socials: label for Fiverr button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "Fiverr": {
+        "content": "Fiverr"
       }
     }
   },
