@@ -415,5 +415,17 @@
   "PRODUCTION_CTA": {
     "message": "Unirse a la conversación",
     "description": "Call to Action: for the production section button"
+  },
+  "QA_HEADER": {
+    "message": "Seguro de Calidad",
+    "description": "Header: for the QA section"
+  },
+  "QA_P1": {
+    "message": "Como ingeniero de control de calidad, pasé mi carrera probando, clasificando y depurando software en cada etapa del ciclo de vida del producto, que incluye: planificación de pruebas, control de calidad de extremo a extremo, pruebas de unidad/integración, pruebas de usabilidad/usuario y más.",
+    "description": "QA Section: first paragraph describing the QA we provide"
+  },
+  "QA_CTA": {
+    "message": "Déjame probar tu código",
+    "description": "Call to Action: for the QA section button"
   }
 }

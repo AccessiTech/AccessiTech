@@ -415,5 +415,17 @@
   "PRODUCTION_CTA": {
     "message": "Rejoindre la conversation",
     "description": "Call to Action: for the production section button"
+  },
+  "QA_HEADER": {
+    "message": "Assurance Qualité",
+    "description": "Header: for the QA section"
+  },
+  "QA_P1": {
+    "message": "En tant qu'ingénieur QA, j'ai passé ma carrière à tester, trier et déboguer des logiciels à chaque étape du cycle de vie du produit, y compris : la planification des tests, l'assurance qualité de bout en bout, les tests unitaires/d'intégration, les tests utilisateur/utilisabilité et plus.",
+    "description": "QA Section: first paragraph describing the QA we provide"
+  },
+  "QA_CTA": {
+    "message": "Laissez-moi tester votre code",
+    "description": "Call to Action: for the QA section button"
   }
 }
