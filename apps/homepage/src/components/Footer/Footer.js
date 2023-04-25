@@ -4,12 +4,14 @@ import {
   CONTACT_LIST,
   COPYRIGHT,
   COPYRIGHT_P1,
+  FIVERR_URL,
   FOOTER,
+  FOOTER_FIVERR,
   FOOTER_LINKEDIN,
   FOOTER_REDDIT,
-  FOOTER_TWITCH,
+  // FOOTER_TWITCH,
   FOOTER_TWITTER,
-  FOOTER_YOUTUBE,
+  // FOOTER_YOUTUBE,
   GITHUB_ISSUES,
   GITHUB_ISSUES_URL,
   ISSUES_P1,
@@ -18,9 +20,9 @@ import {
   REDDIT_URL,
   REPORTING_AN_ISSUE,
   TARGET_BLANK,
-  TWITCH_URL,
+  // TWITCH_URL,
   TWITTER_URL,
-  YOUTUBE_URL,
+  // YOUTUBE_URL,
 } from "../../settings/strings";
 import "./Footer.scss";
 
@@ -29,36 +31,51 @@ function Footer() {
     <section className="footer-section" aria-label={useT(FOOTER)}>
       <h3>{useT(REACH_OUT_HEADER)}</h3>
       <ul aria-label={CONTACT_LIST}>
-        {/* <li>
+        {/* 
+        <li>
         <a
           href={GMAIL_URL}
           target={TARGET_BLANK}
           alt={GMAIL_LABEL}
         >gmail at {TWITTER_HANDLE}</a>
-      </li> */}
-        <li>
-          <a href={TWITTER_URL} target={TARGET_BLANK} alt={FOOTER_TWITTER}>
-            {useT(FOOTER_TWITTER)}
-          </a>
-        </li>
+      </li> 
         <li>
           <a href={TWITCH_URL} target={TARGET_BLANK} alt={FOOTER_TWITCH}>
             {useT(FOOTER_TWITCH)}
           </a>
         </li>
         <li>
-          <a href={YOUTUBE_URL} target={TARGET_BLANK} alt={FOOTER_YOUTUBE}>
+          <a href={YOUTUBE_URL} target={TARGET_BLANK} alt={useT(FOOTER_YOUTUBE)}>
             {useT(FOOTER_YOUTUBE)}
           </a>
         </li>
+        */}
         <li>
-          <a href={LINKEDIN_URL} target={TARGET_BLANK} alt={FOOTER_LINKEDIN}>
+          <a href={FIVERR_URL} target={TARGET_BLANK} alt={useT(FOOTER_FIVERR)}>
+            {useT(FOOTER_FIVERR)}
+          </a>
+        </li>
+        <li>
+          <a
+            href={LINKEDIN_URL}
+            target={TARGET_BLANK}
+            alt={useT(FOOTER_LINKEDIN)}
+          >
             {useT(FOOTER_LINKEDIN)}
           </a>
         </li>
         <li>
-          <a href={REDDIT_URL} target={TARGET_BLANK} alt={FOOTER_REDDIT}>
+          <a href={REDDIT_URL} target={TARGET_BLANK} alt={useT(FOOTER_REDDIT)}>
             {useT(FOOTER_REDDIT)}
+          </a>
+        </li>
+        <li>
+          <a
+            href={TWITTER_URL}
+            target={TARGET_BLANK}
+            alt={useT(FOOTER_TWITTER)}
+          >
+            {useT(FOOTER_TWITTER)}
           </a>
         </li>
       </ul>

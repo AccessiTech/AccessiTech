@@ -310,6 +310,18 @@
       }
     }
   },
+  "FOOTER_FIVERR": {
+    "message": "$fiverr$ sur $accessiTech$",
+    "description": "Link Text: for footer fiverr link",
+    "placeholders": {
+      "fiverr": {
+        "content": "fiverr"
+      },
+      "accessiTech": {
+        "content": "accessiTech"
+      }
+    }
+  },
   "SERVICES_HEADER": {
     "message": "Prestations de service",
     "description": "Header: for the services section"
