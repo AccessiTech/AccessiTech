@@ -7,6 +7,7 @@ export const COMPANY_TITLE = 'AccessiTech LLC'
 
 // i18n stringKey keys
 export const TAGLINE = 'TAGLINE';
+export const FIVERR_LABEL = 'FIVERR_LABEL';
 export const LINKEDIN_LABEL = 'LINKEDIN_LABEL';
 export const TWITTER_LABEL = 'TWITTER_LABEL';
 export const TWITCH_LABEL = 'TWITCH_LABEL';
@@ -41,6 +42,7 @@ export const FOOTER_TWITCH = 'FOOTER_TWITCH';
 export const FOOTER_YOUTUBE = 'FOOTER_YOUTUBE';
 export const FOOTER_LINKEDIN = 'FOOTER_LINKEDIN';
 export const FOOTER_REDDIT = 'FOOTER_REDDIT';
+export const FOOTER_FIVERR = 'FOOTER_FIVERR';
 export const SERVICES_HEADER = 'SERVICES_HEADER';
 export const SERVICES_P1 = "SERVICES_P1";
 export const SERVICES_P2 = "SERVICES_P2";
@@ -77,6 +79,9 @@ export const TERTIARY = "tertiary";
 
 // URLs
 export const ROOT = "/AccessiTech";
+export const FIVERR_URL = "https://www.fiverr.com/accessitech";
+export const FIVERR_AUDIT_URL = "https://www.fiverr.com/accessitech/audit-websites-for-wcag-accessibility-compliance";
+export const FIVERR_MENTORSHIP_URL = "https://www.fiverr.com/accessitech/teach-you-web-development";
 export const TWITTER_URL = "https://twitter.com/accessiT3ch";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/accessitech/";
 export const YOUTUBE_URL = "https://www.youtube.com/channel/UCcke0DIj4p7QMFEKyFTU8RA";

@@ -7,11 +7,10 @@ import {
   CONSULTATION_CTA,
   CONSULTATION_HEADER,
   CONSULTATION_P3,
+  FIVERR_AUDIT_URL,
+  FIVERR_MENTORSHIP_URL,
   GITHUB_DISCUSSIONS_URL,
-  GMAIL_URL,
-  LINKEDIN_URL,
   MENTORSHIP_CTA,
-  MENTORSHIP_EMAIL_SUBJECT,
   MENTORSHIP_HEADER,
   MENTORSHIP_P3,
   PRODUCTION_CTA,
@@ -76,7 +75,7 @@ const Services = () => {
             </div>
             <Button
               size="lg"
-              href={LINKEDIN_URL}
+              href={FIVERR_AUDIT_URL}
               target={TARGET_BLANK}
               title={useT(CONSULTATION_CTA)}
             >
@@ -99,7 +98,7 @@ const Services = () => {
             <Button
               size="lg"
               target={TARGET_BLANK}
-              href={`${GMAIL_URL}?${useT(MENTORSHIP_EMAIL_SUBJECT)}`}
+              href={FIVERR_MENTORSHIP_URL}
               title={useT(MENTORSHIP_CTA)}
             >
               {useT(MENTORSHIP_CTA)}

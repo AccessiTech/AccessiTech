@@ -27,6 +27,18 @@
       }
     }
   },
+  "FIVERR_LABEL": {
+    "message": "$AccessiTech$ on $Fiverr$",
+    "description": "Splash Socials: label for Fiverr button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "Fiverr": {
+        "content": "Fiverr"
+      }
+    }
+  },
   "TWITCH_LABEL": {
     "message": "$AccessiTech$ on $Twitch$",
     "description": "Splash Socials: label for Twitch button",
@@ -295,6 +307,18 @@
       },
       "handle": {
         "content": "u/accessiTech"
+      }
+    }
+  },
+  "FOOTER_FIVERR": {
+    "message": "$fiverr$ at $accessiTech$",
+    "description": "Link Text: for footer fiverr link",
+    "placeholders": {
+      "fiverr": {
+        "content": "fiverr"
+      },
+      "accessiTech": {
+        "content": "accessiTech"
       }
     }
   },
