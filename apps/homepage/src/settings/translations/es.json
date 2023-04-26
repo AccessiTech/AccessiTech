@@ -367,6 +367,15 @@
       }
     }
   },
+  "CONSULTATION_EMAIL_SUBJECT": {
+    "message": "$subject$Consulta de Accesibilidad",
+    "description": "Email Subject: for the consultation section CTA url",
+    "placeholders": {
+      "subject": {
+        "content": "subject="
+      }
+    }
+  },
   "CONSULTATION_HEADER": {
     "message": "Consulta de Accesibilidad",
     "description": "Header: for the consultation section"

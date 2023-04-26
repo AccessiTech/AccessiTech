@@ -5,12 +5,14 @@ import "./Services.scss";
 
 import {
   CONSULTATION_CTA,
+  CONSULTATION_EMAIL_SUBJECT,
   CONSULTATION_HEADER,
   CONSULTATION_P3,
-  FIVERR_AUDIT_URL,
+  // FIVERR_AUDIT_URL,
   FIVERR_MENTORSHIP_URL,
   FIVERR_QA_URL,
   GITHUB_DISCUSSIONS_URL,
+  GMAIL_URL,
   MENTORSHIP_CTA,
   MENTORSHIP_HEADER,
   MENTORSHIP_P3,
@@ -36,18 +38,14 @@ const Services = () => {
   return (
     <section id="services">
       <Row className="services-header-row">
-        <Col
-          xs={12}
-          md={{ span: 5, offset: 1 }}
-          xl={{ span: 6, offset: 1 }}
-        >
+        <Col xs={12} md={{ span: 5, offset: 1 }} xl={{ span: 6, offset: 1 }}>
           <h3>{useT(SERVICES_HEADER)}</h3>
           <p>{useT(SERVICES_P1)}</p>
           <p>{useT(SERVICES_P2)}</p>
         </Col>
         <Col
           className="purpose-image"
-          xs={{span: 6, offset: 3}}
+          xs={{ span: 6, offset: 3 }}
           md={{ span: 4, offset: 0 }}
           lg={{ span: 3, offset: 1 }}
           xl={{ span: 2, offset: 1 }}
@@ -78,7 +76,7 @@ const Services = () => {
             </div>
             <Button
               size="lg"
-              href={FIVERR_AUDIT_URL}
+              href={`${GMAIL_URL}?${useT(CONSULTATION_EMAIL_SUBJECT)}`}
               target={TARGET_BLANK}
               title={useT(CONSULTATION_CTA)}
             >
@@ -98,7 +96,6 @@ const Services = () => {
               <p>{useT(QA_P1)}</p>
             </div>
             <Button
-
               size="lg"
               target={TARGET_BLANK}
               href={FIVERR_QA_URL}
