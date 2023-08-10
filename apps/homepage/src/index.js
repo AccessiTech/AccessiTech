@@ -9,13 +9,13 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    <HashRouter>
+    <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
       <Routes>
         <Route path='/' element={<App />}>
           <Route path=':lang' element={<App />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </Provider>
 );
 
