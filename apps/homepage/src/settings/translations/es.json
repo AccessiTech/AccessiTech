@@ -441,8 +441,12 @@
     "message": "Haga clic para copiar el enlace",
     "description": "Button: for the copy to clipboard button"
   },
-  "SUCCESS_MESSAGE": {
+  "COPY_SUCCESS_MESSAGE": {
     "message": "¡Copiada!",
+    "description": "Message: for the copy to clipboard button"
+  },
+  "COPY_FAIL_MESSAGE": {
+    "message": "Error al copiar",
     "description": "Message: for the copy to clipboard button"
   }
 }

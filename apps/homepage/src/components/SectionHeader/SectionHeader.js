@@ -4,7 +4,8 @@ import { FaLink } from "@accessitech/react-icons/fa";
 import "./SectionHeader.scss";
 
 const CLICK_TO_COPY = "click to copy link";
-const SUCCESS_MESSAGE = "Copied!";
+const COPY_SUCCESS_MESSAGE = "Copied!";
+const COPY_FAIL_MESSAGE = "Unable to copy to clipboard";
 
 /** SectionHeader component
  * @param {string} title - The title of the section
@@ -16,14 +17,28 @@ const SUCCESS_MESSAGE = "Copied!";
  * @description - This is a section header component
  */
 
-export const SectionHeader = ({ title, id, use, linkTitle, successText }) => {
+export const SectionHeader = ({
+  title,
+  id,
+  use,
+  linkTitle,
+  successText,
+  failText,
+}) => {
   const [showSuccess, setShowSuccess] = React.useState(false);
+  const [showFail, setShowFail] = React.useState(false);
   const onSuccess = () => {
     setShowSuccess(true);
     setTimeout(() => {
       setShowSuccess(false);
     }, 2500);
-  }
+  };
+  const onFail = () => {
+    setShowFail(true);
+    setTimeout(() => {
+      setShowFail(false);
+    }, 2500);
+  };
   let header;
   switch (use) {
     case "h1":
@@ -71,18 +86,18 @@ export const SectionHeader = ({ title, id, use, linkTitle, successText }) => {
       onSuccess();
     } catch (err) {
       console.error("Unable to copy to clipboard", err);
+      onFail();
     }
     document.body.removeChild(textArea);
   };
-
-
 
   return (
     <a id={id} className="section-anchor" href={`#${id}`} title={title}>
       {header}
       <button title={linkTitle || CLICK_TO_COPY} onClick={handleClick}>
         <FaLink aria-hidden="true" title={linkTitle || CLICK_TO_COPY} />
-        {showSuccess && <span>{successText || SUCCESS_MESSAGE}</span>}
+        {showSuccess && <span>{successText || COPY_SUCCESS_MESSAGE}</span>}
+        {showFail && <span>{failText || COPY_FAIL_MESSAGE}</span>}
       </button>
     </a>
   );
@@ -94,6 +109,7 @@ SectionHeader.propTypes = {
   use: PropTypes.string,
   linkTitle: PropTypes.string,
   successText: PropTypes.string,
+  failText: PropTypes.string,
 };
 
 export default SectionHeader;

@@ -27,8 +27,9 @@ import {
   SERVICES_HEADER,
   SERVICES_P1,
   SERVICES_P2,
-  SUCCESS_MESSAGE,
+  COPY_SUCCESS_MESSAGE,
   TARGET_BLANK,
+  COPY_FAIL_MESSAGE,
 } from "../../settings/strings";
 import {
   PURPOSE_PIC_SIZES,
@@ -42,7 +43,13 @@ const Services = () => {
     <section id="services">
       <Row className="services-header-row">
         <Col xs={12} md={{ span: 5, offset: 1 }} xl={{ span: 6, offset: 1 }}>
-          <SectionHeader title={useT(SERVICES_HEADER)} id="services" />
+          <SectionHeader
+            title={useT(SERVICES_HEADER)}
+            id="services"
+            linkTitle={useT(CLICK_TO_COPY)}
+            successText={useT(COPY_SUCCESS_MESSAGE)}
+            failText={useT(COPY_FAIL_MESSAGE)}
+          />
           <p>{useT(SERVICES_P1)}</p>
           <p>{useT(SERVICES_P2)}</p>
         </Col>
@@ -79,7 +86,8 @@ const Services = () => {
                 id="consultation"
                 use="h4"
                 linkTitle={useT(CLICK_TO_COPY)}
-                successText={useT(SUCCESS_MESSAGE)}
+                successText={useT(COPY_SUCCESS_MESSAGE)}
+                failText={useT(COPY_FAIL_MESSAGE)}
               />
               <p>{useT(CONSULTATION_P3)}</p>
             </div>
@@ -106,7 +114,8 @@ const Services = () => {
                 id="qa"
                 use="h4"
                 linkTitle={useT(CLICK_TO_COPY)}
-                successText={useT(SUCCESS_MESSAGE)}
+                successText={useT(COPY_SUCCESS_MESSAGE)}
+                failText={useT(COPY_FAIL_MESSAGE)}
               />
               <p>{useT(QA_P1)}</p>
             </div>
@@ -133,7 +142,8 @@ const Services = () => {
                 id="mentorship"
                 use="h4"
                 linkTitle={useT(CLICK_TO_COPY)}
-                successText={useT(SUCCESS_MESSAGE)}
+                successText={useT(COPY_SUCCESS_MESSAGE)}
+                failText={useT(COPY_FAIL_MESSAGE)}
               />
               <p>{useT(MENTORSHIP_P3)}</p>
             </div>
@@ -160,7 +170,8 @@ const Services = () => {
                 id="production"
                 use="h4"
                 linkTitle={useT(CLICK_TO_COPY)}
-                successText={useT(SUCCESS_MESSAGE)}
+                successText={useT(COPY_SUCCESS_MESSAGE)}
+                failText={useT(COPY_FAIL_MESSAGE)}
               />
               <p>{useT(PRODUCTION_P4)}</p>
             </div>
