@@ -436,5 +436,17 @@
   "QA_CTA": {
     "message": "Laissez-moi tester votre code",
     "description": "Call to Action: for the QA section button"
+  },
+  "CLICK_TO_COPY": {
+    "message": "Cliquez pour copier le lien",
+    "description": "Button: for the copy to clipboard button"
+  },
+  "COPY_SUCCESS_MESSAGE": {
+    "message": "Copié !",
+    "description": "Message: for the copy to clipboard button"
+  },
+  "COPY_FAIL_MESSAGE": {
+    "message": "Échec de la copie",
+    "description": "Message: for the copy to clipboard button"
   }
 }

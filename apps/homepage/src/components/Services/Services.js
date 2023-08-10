@@ -4,6 +4,7 @@ import { useT } from "@accessitech/i18n-redux-toolkit";
 import "./Services.scss";
 
 import {
+  CLICK_TO_COPY,
   CONSULTATION_CTA,
   CONSULTATION_EMAIL_SUBJECT,
   CONSULTATION_HEADER,
@@ -26,20 +27,29 @@ import {
   SERVICES_HEADER,
   SERVICES_P1,
   SERVICES_P2,
+  COPY_SUCCESS_MESSAGE,
   TARGET_BLANK,
+  COPY_FAIL_MESSAGE,
 } from "../../settings/strings";
 import {
   PURPOSE_PIC_SIZES,
   PURPOSE_PIC_SRCSET,
   PURPOSE_PIC_URL_1024,
 } from "../../settings/settings";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 const Services = () => {
   return (
     <section id="services">
       <Row className="services-header-row">
         <Col xs={12} md={{ span: 5, offset: 1 }} xl={{ span: 6, offset: 1 }}>
-          <h3>{useT(SERVICES_HEADER)}</h3>
+          <SectionHeader
+            title={useT(SERVICES_HEADER)}
+            id="services"
+            linkTitle={useT(CLICK_TO_COPY)}
+            successText={useT(COPY_SUCCESS_MESSAGE)}
+            failText={useT(COPY_FAIL_MESSAGE)}
+          />
           <p>{useT(SERVICES_P1)}</p>
           <p>{useT(SERVICES_P2)}</p>
         </Col>
@@ -71,7 +81,14 @@ const Services = () => {
         >
           <article>
             <div>
-              <h4>{useT(CONSULTATION_HEADER)}</h4>
+              <SectionHeader
+                title={useT(CONSULTATION_HEADER)}
+                id="consultation"
+                use="h4"
+                linkTitle={useT(CLICK_TO_COPY)}
+                successText={useT(COPY_SUCCESS_MESSAGE)}
+                failText={useT(COPY_FAIL_MESSAGE)}
+              />
               <p>{useT(CONSULTATION_P3)}</p>
             </div>
             <Button
@@ -92,7 +109,14 @@ const Services = () => {
         >
           <article>
             <div>
-              <h4>{useT(QA_HEADER)}</h4>
+              <SectionHeader
+                title={useT(QA_HEADER)}
+                id="qa"
+                use="h4"
+                linkTitle={useT(CLICK_TO_COPY)}
+                successText={useT(COPY_SUCCESS_MESSAGE)}
+                failText={useT(COPY_FAIL_MESSAGE)}
+              />
               <p>{useT(QA_P1)}</p>
             </div>
             <Button
@@ -113,7 +137,14 @@ const Services = () => {
         >
           <article>
             <div>
-              <h4>{useT(MENTORSHIP_HEADER)}</h4>
+              <SectionHeader
+                title={useT(MENTORSHIP_HEADER)}
+                id="mentorship"
+                use="h4"
+                linkTitle={useT(CLICK_TO_COPY)}
+                successText={useT(COPY_SUCCESS_MESSAGE)}
+                failText={useT(COPY_FAIL_MESSAGE)}
+              />
               <p>{useT(MENTORSHIP_P3)}</p>
             </div>
             <Button
@@ -134,7 +165,14 @@ const Services = () => {
         >
           <article>
             <div>
-              <h4>{useT(PRODUCTION_HEADER)}</h4>
+              <SectionHeader
+                title={useT(PRODUCTION_HEADER)}
+                id="production"
+                use="h4"
+                linkTitle={useT(CLICK_TO_COPY)}
+                successText={useT(COPY_SUCCESS_MESSAGE)}
+                failText={useT(COPY_FAIL_MESSAGE)}
+              />
               <p>{useT(PRODUCTION_P4)}</p>
             </div>
 
