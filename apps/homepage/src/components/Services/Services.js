@@ -4,6 +4,7 @@ import { useT } from "@accessitech/i18n-redux-toolkit";
 import "./Services.scss";
 
 import {
+  CLICK_TO_COPY,
   CONSULTATION_CTA,
   CONSULTATION_EMAIL_SUBJECT,
   CONSULTATION_HEADER,
@@ -26,6 +27,7 @@ import {
   SERVICES_HEADER,
   SERVICES_P1,
   SERVICES_P2,
+  SUCCESS_MESSAGE,
   TARGET_BLANK,
 } from "../../settings/strings";
 import {
@@ -76,6 +78,8 @@ const Services = () => {
                 title={useT(CONSULTATION_HEADER)}
                 id="consultation"
                 use="h4"
+                linkTitle={useT(CLICK_TO_COPY)}
+                successText={useT(SUCCESS_MESSAGE)}
               />
               <p>{useT(CONSULTATION_P3)}</p>
             </div>
@@ -101,6 +105,8 @@ const Services = () => {
                 title={useT(QA_HEADER)}
                 id="qa"
                 use="h4"
+                linkTitle={useT(CLICK_TO_COPY)}
+                successText={useT(SUCCESS_MESSAGE)}
               />
               <p>{useT(QA_P1)}</p>
             </div>
@@ -126,6 +132,8 @@ const Services = () => {
                 title={useT(MENTORSHIP_HEADER)}
                 id="mentorship"
                 use="h4"
+                linkTitle={useT(CLICK_TO_COPY)}
+                successText={useT(SUCCESS_MESSAGE)}
               />
               <p>{useT(MENTORSHIP_P3)}</p>
             </div>
@@ -151,6 +159,8 @@ const Services = () => {
                 title={useT(PRODUCTION_HEADER)}
                 id="production"
                 use="h4"
+                linkTitle={useT(CLICK_TO_COPY)}
+                successText={useT(SUCCESS_MESSAGE)}
               />
               <p>{useT(PRODUCTION_P4)}</p>
             </div>

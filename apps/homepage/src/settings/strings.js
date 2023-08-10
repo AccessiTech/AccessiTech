@@ -68,6 +68,9 @@ export const PRODUCTION_CTA = 'PRODUCTION_CTA';
 export const QA_HEADER = 'QA_HEADER';
 export const QA_P1 = 'QA_P1';
 export const QA_CTA = 'QA_CTA';
+export const CLICK_TO_COPY = "CLICK_TO_COPY";
+export const SUCCESS_MESSAGE = "SUCCESS_MESSAGE";
+
 
 // Magical Strings
 export const WHITE = 'white';

@@ -10,11 +10,13 @@ const SUCCESS_MESSAGE = "Copied!";
  * @param {string} title - The title of the section
  * @param {string} id - The id of the section
  * @param {string} use - The type of header to use (default: h3)
+ * @param {string} linkTitle - The title of the link button (default: "click to copy link")
+ * @param {string} successText - The text to display when the link is copied (default: "Copied!")
  * @returns {JSX} - The section header
  * @description - This is a section header component
  */
 
-export const SectionHeader = ({ title, id, use, linkText, successText }) => {
+export const SectionHeader = ({ title, id, use, linkTitle, successText }) => {
   const [showSuccess, setShowSuccess] = React.useState(false);
   const onSuccess = () => {
     setShowSuccess(true);
@@ -78,8 +80,8 @@ export const SectionHeader = ({ title, id, use, linkText, successText }) => {
   return (
     <a id={id} className="section-anchor" href={`#${id}`} title={title}>
       {header}
-      <button title={linkText || CLICK_TO_COPY} onClick={handleClick}>
-        <FaLink aria-hidden="true" title={linkText || CLICK_TO_COPY} />
+      <button title={linkTitle || CLICK_TO_COPY} onClick={handleClick}>
+        <FaLink aria-hidden="true" title={linkTitle || CLICK_TO_COPY} />
         {showSuccess && <span>{successText || SUCCESS_MESSAGE}</span>}
       </button>
     </a>
@@ -90,7 +92,7 @@ SectionHeader.propTypes = {
   title: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   use: PropTypes.string,
-  linkText: PropTypes.string,
+  linkTitle: PropTypes.string,
   successText: PropTypes.string,
 };
 
