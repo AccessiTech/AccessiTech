@@ -1,0 +1,49 @@
+@import "./../../sass/variables.scss";
+
+a.section-anchor {
+  h3,
+  h4 {
+    display: inline-block;
+  }
+  button {
+    position: relative;
+    font-size: 1rem;
+    left: 1rem;
+    bottom: 0.25rem;
+    transition: opacity 0.5s, box-shadow 0.5s;
+    opacity: 0;
+    box-shadow: 0 0 0 2px transparent;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+
+    span {
+      position: absolute;
+      left: 2.5rem;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    box-shadow: none;
+    outline: none;
+
+    h3,
+    h4 {
+      border-bottom: 2px solid white;
+      margin-bottom: calc(0.5rem - 2px);
+    }
+    button {
+      opacity: 1;
+
+      &:hover,
+      &:focus,
+      &:focus-visible {
+        box-shadow: $focus-box-shadow inset;
+        outline: none;
+      }
+    }
+  }
+}
