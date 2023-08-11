@@ -12,6 +12,8 @@ Currently the AccessiTech homepage is the only app hosted in this repository, an
 
 ## Collaborating
 
+[Issues](https://github.com/AccessiTech/AccessiTech/issues) | [Milestones](https://github.com/AccessiTech/AccessiTech/milestones)
+
 AccessiTech is open to virtually any form of collaboration, reach out today!
 
 ### Discussions
