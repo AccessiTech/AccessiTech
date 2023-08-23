@@ -448,5 +448,9 @@
   "COPY_FAIL_MESSAGE": {
     "message": "Error al copiar",
     "description": "Message: for the copy to clipboard button"
+  },
+  "SKIP_TO_MAIN_CONTENT": {
+    "message": "Saltar al contenido principal",
+    "description": "Link: for the skip to main content link"
   }
 }
