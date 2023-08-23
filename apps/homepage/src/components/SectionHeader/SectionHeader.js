@@ -92,7 +92,7 @@ export const SectionHeader = ({
   };
 
   return (
-    <a id={id} className="section-anchor" href={`#${id}`} title={title}>
+    <a id={`${id}-link`} className="section-anchor" href={`#${id}`} title={title}>
       {header}
       <button title={linkTitle || CLICK_TO_COPY} onClick={handleClick}>
         <FaLink aria-hidden="true" title={linkTitle || CLICK_TO_COPY} />

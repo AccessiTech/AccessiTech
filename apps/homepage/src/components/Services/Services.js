@@ -40,7 +40,7 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 
 const Services = () => {
   return (
-    <section id="services">
+    <section id="services-row">
       <Row className="services-header-row">
         <Col xs={12} md={{ span: 5, offset: 1 }} xl={{ span: 6, offset: 1 }}>
           <SectionHeader
