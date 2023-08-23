@@ -71,6 +71,7 @@ export const QA_CTA = 'QA_CTA';
 export const CLICK_TO_COPY = "CLICK_TO_COPY";
 export const COPY_SUCCESS_MESSAGE = "COPY_SUCCESS_MESSAGE";
 export const COPY_FAIL_MESSAGE = "COPY_FAIL_MESSAGE";
+export const SKIP_TO_MAIN_CONTENT = "SKIP_TO_MAIN_CONTENT";
 
 // Magical Strings
 export const WHITE = 'white';
