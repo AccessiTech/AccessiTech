@@ -30,7 +30,7 @@ const App = () => {
 
   return (
   <Container fluid className="App" aria-label={useT(APP_ROOT)}>
-
+    <a className="skip-link" href="#main">Skip to main content</a>
     {/* Splash Row */}
     <Row
       className="splash-row"
@@ -44,7 +44,7 @@ const App = () => {
     </Row>
 
     {/* Main Rows */}
-    <main aria-label={useT(ABOUT_ACCESSITECH)}>
+    <main id='main' aria-label={useT(ABOUT_ACCESSITECH)}>
       <About />
       <Services />
     </main>
