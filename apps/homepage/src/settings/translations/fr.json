@@ -452,5 +452,45 @@
   "SKIP_TO_MAIN_CONTENT": {
     "message": "Passer au contenu principal",
     "description": "Link: for the skip to main content link"
+  },
+  "FONT_OPTIONS_TOGGLE_LABEL": {
+    "message": "Basculer le menu Options de police",
+    "description": "Label: for the font options toggle"
+  },
+  "FONT_OPTIONS_TITLE": {
+    "message": "Options de police",
+    "description": "Title: for the font options menu"
+  },
+  "FONT_OPTIONS_DESCRIPTION": {
+    "message": "Changer la taille de la police et la famille de la page",
+    "description": "Description: for the font options menu"
+  },
+  "FONT_SIZE_LABEL": {
+    "message": "Taille de police",
+    "description": "Label: for the font size slider"
+  },
+  "FONT_OPTIONS_FAMILY_LABEL": {
+    "message": "Famille de polices",
+    "description": "Label: for the font family dropdown"
+  },
+  "FONT_OPTIONS_SIZE_INPUT_LABEL": {
+    "message": "Entrée de la plage de taille de police",
+    "description": "Label: for the font size input element"
+  },
+  "FONT_FAMILY_SELECT_LABEL": {
+    "message": "Sélection de la famille de polices",
+    "description": "Label: for the font family select element"
+  },
+  "SERIF_DISPLAY": {
+    "message": "Empattements",
+    "description": "Option: for the serif font family"
+  },
+  "SANS_SERIF_DISPLAY": {
+    "message": "Sans Empattements",
+    "description": "Option: for the sans serif font family"
+  },
+  "MONOSPACE_DISPLAY": {
+    "message": "Monospace",
+    "description": "Option: for the monospace font family"
   }
 }
