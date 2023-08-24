@@ -5,7 +5,7 @@ import I18nSelect from '@accessitech/i18n-react-select';
 import { displayStrings } from '../../settings/translations';
 import store from '../../store/store';
 import './a11y.scss';
-import FontOptions from '../FontOptions/FontOptions';
+import { FontOptions } from '../FontOptions/FontOptions';
 import { toggleA11y, useIsA11yOpen } from '../../store/a11y';
 import { useOutsideClick } from '../../settings/utils';
 

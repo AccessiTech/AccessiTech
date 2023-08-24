@@ -37,7 +37,7 @@ export const ESCAPE = "Escape";
 /** Font Options
  * @returns {object} font options component
  **/
-function FontOptions(props) {
+export const FontOptions = (props) => {
   const isOpen = useIsOpen();
   const fontSize = Number(useFontSize() || 1).toFixed(1);
   const fontFamily = useFontFamily();
