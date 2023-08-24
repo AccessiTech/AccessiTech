@@ -32,14 +32,19 @@ export const ESCAPE = 'Escape';
 /** Font Options
  * @returns {object} font options component  
  **/
-function FontOptions() {
+function FontOptions(props) {
   const isOpen = useIsOpen();
   const fontSize = Number(useFontSize() || 1).toFixed(1);
-  const fontFamily = useFontFamily()
+  const fontFamily = useFontFamily();
+  const { onClose } = props || {};
   
   const onEscapeKey = (e) => {
-    if (e.key === ESCAPE && isOpen) {
-      store.dispatch(toggleFontOptions());
+    if (e.key === ESCAPE) {
+      if (isOpen) {
+        store.dispatch(toggleFontOptions());
+      } else if (onClose) {
+        onClose(e);
+      }
     }
   }
 

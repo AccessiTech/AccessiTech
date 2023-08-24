@@ -29,6 +29,12 @@ function A11Y() {
     store.dispatch(toggleA11y());
   };
 
+  const onEscapeKey = (e) => {
+    if (e.key === 'Escape' && isA11yOpen) {
+      store.dispatch(toggleA11y());
+    }
+  };
+
   const i18nSelectProps = {
     lang,
     languageKeys,
@@ -36,12 +42,7 @@ function A11Y() {
     // translationFlags,
     currentLang,
     onChange: i18nSelectOnChange,
-  };
-
-  const onEscapeKey = (e) => {
-    if (e.key === 'Escape' && isA11yOpen) {
-      store.dispatch(toggleA11y());
-    }
+    onClose: onEscapeKey,
   };
 
   return (languageKeys && languageKeys.length) ? (
@@ -61,7 +62,7 @@ function A11Y() {
         </button>
         {isA11yOpen && (
           <menu className="a11y__settings">
-            <li><FontOptions /></li>
+            <li><FontOptions onClose={onEscapeKey} /></li>
             <li><I18nSelect { ...i18nSelectProps } /></li>
           </menu>
         )}
