@@ -452,5 +452,45 @@
   "SKIP_TO_MAIN_CONTENT": {
     "message": "Saltar al contenido principal",
     "description": "Link: for the skip to main content link"
+  },
+  "FONT_OPTIONS_TOGGLE_LABEL": {
+    "message": "Alternar menú de opciones de fuente",
+    "description": "Label: for the font options toggle"
+  },
+  "FONT_OPTIONS_TITLE": {
+    "message": "Opciones de fuente",
+    "description": "Title: for the font options menu"
+  },
+  "FONT_OPTIONS_DESCRIPTION": {
+    "message": "Cambiar el tamaño de fuente y la familia de la página.",
+    "description": "Description: for the font options menu"
+  },
+  "FONT_SIZE_LABEL": {
+    "message": "Tamaño de fuente",
+    "description": "Label: for the font size slider"
+  },
+  "FONT_OPTIONS_FAMILY_LABEL": {
+    "message": "Familia tipográfica",
+    "description": "Label: for the font family dropdown"
+  },
+  "FONT_OPTIONS_SIZE_INPUT_LABEL": {
+    "message": "Entrada de rango de tamaño de fuente",
+    "description": "Label: for the font size input element"
+  },
+  "FONT_FAMILY_SELECT_LABEL": {
+    "message": "Seleccionar familia de fuentes",
+    "description": "Label: for the font family select element"
+  },
+  "SERIF_DISPLAY": {
+    "message": "Serifa",
+    "description": "Option: for the serif font family"
+  },
+  "SANS_SERIF_DISPLAY": {
+    "message": "Sans Serifa",
+    "description": "Option: for the sans serif font family"
+  },
+  "MONOSPACE_DISPLAY": {
+    "message": "Monospace",
+    "description": "Option: for the monospace font family"
   }
 }
