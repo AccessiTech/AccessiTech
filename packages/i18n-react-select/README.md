@@ -59,3 +59,7 @@ This package doesn't include any helpers or other functionality, so the only int
 #### `onChange`
 
 `function(e)` A callback function passing the onChange event as the only parameter.
+
+#### `onClose` (optional)
+
+`function(e)` An optional callback function passing the key down event as the only parameter. This is useful for when you want to close the dropdown menu after a selection is made.
