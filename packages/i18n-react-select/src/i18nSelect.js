@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 export const EN = 'en';
 export const namespace = '@accessitech/i18n-react-select/';
+export const ESCAPE = 'Escape';
 
 export const I18nSelect = (props) => {
 
@@ -12,10 +13,15 @@ export const I18nSelect = (props) => {
     translationFlags,
     currentLang,
     onChange,
+    onClose,
   } = props || {};
 
   const hasFlags = typeof translationFlags !== 'undefined';
-
+  const onEscapeKey = (e) => {
+    if (e.key === ESCAPE && onClose) {
+      onClose(e);
+    }
+  }
   return (
     <div className={`selector-container${ hasFlags ? ' hasFlags' : ''}`}>
       {(hasFlags ? 
@@ -28,6 +34,7 @@ export const I18nSelect = (props) => {
         className="language-select"
         defaultValue={currentLang}
         onChange={onChange}
+        onKeyDown={onEscapeKey}
       >
         {languageKeys.map((lang, i) =>
           <option
