@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { useRef }  from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useCurrentLang, useLanguageKeys, setLang } from '@accessitech/i18n-redux-toolkit';
 import I18nSelect from '@accessitech/i18n-react-select';
@@ -7,16 +7,24 @@ import store from '../../store/store';
 import './a11y.scss';
 import FontOptions from '../FontOptions/FontOptions';
 import { toggleA11y, useIsA11yOpen } from '../../store/a11y';
+import { useOutsideClick } from '../../settings/utils';
 
 
 export const namespace = 'a11y/'
 
 function A11Y() {
+  const i18nSelectRef = useRef(null);
   let navigate = useNavigate();
   const languageKeys = useLanguageKeys();
   const { lang } = useParams();
   const currentLang = useCurrentLang() || lang;
   const isA11yOpen = useIsA11yOpen();
+
+  const removeEventListener = useOutsideClick(i18nSelectRef, () => {
+    if (isA11yOpen) {
+      store.dispatch(toggleA11y());
+    }
+  });
 
   const i18nSelectOnChange = (e) => {
     e.preventDefault();
@@ -26,11 +34,15 @@ function A11Y() {
 
   const onA11yToggle = (e) => {
     e.preventDefault();
+    if (isA11yOpen) {
+      removeEventListener();
+    }
     store.dispatch(toggleA11y());
   };
 
   const onEscapeKey = (e) => {
     if (e.key === 'Escape' && isA11yOpen) {
+      removeEventListener();
       store.dispatch(toggleA11y());
     }
   };
@@ -49,6 +61,7 @@ function A11Y() {
     <div
       className="a11y-container"
       aria-label="Accessibility Options"
+      ref={i18nSelectRef}
     >
       <div className={`${isA11yOpen ? 'isOpen ' : ''}a11y__settings-container`}>
         <button
