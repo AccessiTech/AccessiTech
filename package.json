@@ -15,6 +15,8 @@
     "react-test-renderer": "^18.2.0"
   },
   "scripts": {
+    "build": "lerna run build --stream --ignore @accessitech/homepage",
+    "watch": "lerna watch --ignore @accessitech/homepage -- yarn build --scope \\$LERNA_PACKAGE_NAME",
     "test": "jest",
     "uninstall": "lerna clean && yarn cache clean",
     "reinstall": "yarn uninstall && yarn && lerna bootstrap"
