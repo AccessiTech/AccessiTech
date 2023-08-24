@@ -51,7 +51,7 @@ function FontOptions(props) {
   return (
     <div className="font-options-container">
       <button
-        className={`${isOpen ? 'isOpen ' : ''}font-options-toggle`}
+        className={`${isOpen ? "isOpen " : ""}font-options-toggle`}
         onClick={onFontOptionsToggle}
         aria-label={FONT_OPTIONS_TOGGLE_LABEL}
         onKeyDown={onEscapeKey}
@@ -64,9 +64,15 @@ function FontOptions(props) {
             <legend>{FONT_OPTIONS_TITLE}</legend>
 
             <div className="font-options__row">
-              <label htmlFor="font-options__font-size">{FONT_SIZE_LABEL}</label>
-              <span className="font-options__font-size-value">{fontSize}x</span>
-              <br/>
+              <div className="flex-row flex-space-between">
+                <label htmlFor="font-options__font-size">
+                  {FONT_SIZE_LABEL}
+                </label>
+                <span className="font-options__font-size-value">
+                  {fontSize}x
+                </span>
+              </div>
+
               <input
                 type="range"
                 id="font-options__font-size"
@@ -80,21 +86,26 @@ function FontOptions(props) {
                 onKeyDown={onEscapeKey}
               />
             </div>
-          
+
             <div className="font-options__row">
-              <label htmlFor="font-options__font-family">{FONT_OPTIONS_FAMILY_LABEL}</label>
-              <select
-                id="font-options__font-family"
-                name="font-options__font-family"
-                aria-label={FONT_FAMILY_SELECT_LABEL}
-                defaultValue={fontFamily}
-                onChange={onFontFamilyChange}
-                onKeyDown={onEscapeKey}
-              >
-                <option value={SANS_SERIF}>{SANS_SERIF_DISPLAY}</option>
-                <option value={SERIF}>{SERIF_DISPLAY}</option>
-                <option value={MONOSPACE}>{MONOSPACE_DISPLAY}</option>
-              </select>
+              <div className="flex-row flex-space-between">
+                <label htmlFor="font-options__font-family">
+                  {FONT_OPTIONS_FAMILY_LABEL}
+                </label>
+
+                <select
+                  id="font-options__font-family"
+                  name="font-options__font-family"
+                  aria-label={FONT_FAMILY_SELECT_LABEL}
+                  defaultValue={fontFamily}
+                  onChange={onFontFamilyChange}
+                  onKeyDown={onEscapeKey}
+                >
+                  <option value={SANS_SERIF}>{SANS_SERIF_DISPLAY}</option>
+                  <option value={SERIF}>{SERIF_DISPLAY}</option>
+                  <option value={MONOSPACE}>{MONOSPACE_DISPLAY}</option>
+                </select>
+              </div>
             </div>
 
             {/* <div className="font-options__row">

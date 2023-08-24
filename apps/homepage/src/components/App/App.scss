@@ -74,6 +74,10 @@ h6, .h6 {
   flex-direction: column;
 }
 
+.flex-space-between {
+  justify-content: space-between;
+}
+
 .App {
   text-align: center;
   color: $darkBlue;
