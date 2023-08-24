@@ -27,6 +27,18 @@
       }
     }
   },
+  "FIVERR_LABEL": {
+    "message": "$AccessiTech$ on $Fiverr$",
+    "description": "Splash Socials: label for Fiverr button",
+    "placeholders": {
+      "AccessiTech": {
+        "content": "AccessiTech"
+      },
+      "Fiverr": {
+        "content": "Fiverr"
+      }
+    }
+  },
   "TWITCH_LABEL": {
     "message": "$AccessiTech$ on $Twitch$",
     "description": "Splash Socials: label for Twitch button",
@@ -108,6 +120,15 @@
   "VISION_P2": {
     "message": "As a social enterprise, $company$ fosters positive social change by promoting and collaborating on emergent technologies aimed at increasing accessibility, inclusion, and equity for all.",
     "description": "About Section: second paragraph describing the vision of the company",
+    "placeholders": {
+      "company": {
+        "content": "AccessiTech LLC"
+      }
+    }
+  },
+  "VISION_P3": {
+    "message": "$company$ is a social enterprise that aims to eliminate barriers for disabled design technologists and promote emergent technologies that improve accessibility, inclusion, and equity for all.",
+    "description": "About Section: second iteration describing the vision of the company",
     "placeholders": {
       "company": {
         "content": "AccessiTech LLC"
@@ -288,5 +309,148 @@
         "content": "u/accessiTech"
       }
     }
+  },
+  "FOOTER_FIVERR": {
+    "message": "$fiverr$ at $accessiTech$",
+    "description": "Link Text: for footer fiverr link",
+    "placeholders": {
+      "fiverr": {
+        "content": "fiverr"
+      },
+      "accessiTech": {
+        "content": "accessiTech"
+      }
+    }
+  },
+  "SERVICES_HEADER": {
+    "message": "Services",
+    "description": "Header: for the services section"
+  },
+  "SERVICES_P1": {
+    "message": "As a design technologist with over 10 years of professional experience across multiple industries I offer independent mentorship through various platforms as I continue to produce software for digital accessibility.",
+    "description": "Services Section: first paragraph describing the services we provide"
+  },
+  "SERVICES_P2": {
+    "message": "As an accessibility consultant I offer a wide range of services throughout the product lifecycle, including but not limited to: Accessibility Audits, Design Research, Project Management, and Full-Stack Engineering.",
+    "description": "Services Section: second paragraph describing the services we provide"
+  },
+  "SERVICES_P3": {
+    "message": "As an Accessibility Consultant I audits designs and software for accessibility compliance, offer project management services, and ensure the shipping of robust and accessible software.",
+    "description": "Services Section: second iteration describing the services we provide"
+  },
+  "MENTORSHIP_HEADER": {
+    "message": "Web Mentorship",
+    "description": "Header: for the mentorship section"
+  },
+  "MENTORSHIP_P1": {
+    "message": "As I am able to write less and less code, I've become more and more excited to pass on my lessons learned to the next generation of designers and developers. Learning to code, I have found, is generally a very steep learning curve. While there are a plethora of resources and communities, the sheer volume of information that is already out there can be overwhelming and intimidating.",
+    "description": "Mentorship Section: first paragraph describing the mentorship we provide"
+  },
+  "MENTORSHIP_P2": {
+    "message": "My primary role when teaching is helping students ramp up into this learning curve, dispelling myths and worries while elucidating shortcuts and gotchas, and promote their own capacity to learn. I aim to tear down the illusion of the all-knowing, all-powerful web engineer while instilling best practices of the field.",
+    "description": "Mentorship Section: second paragraph describing the mentorship we provide"
+  },
+  "MENTORSHIP_P3": {
+    "message": "As I am able to write less code, I am excited to offer mentorship in web design and development, helping overcome the steep learning curve of coding, dispelling myths and worries, and promoting their capacity to learn while instilling best practices of the field.",
+    "description": "Mentorship Section: second iteration describing the mentorship we provide"
+  },
+  "MENTORSHIP_CTA": {
+    "message": "Learn more about the web",
+    "description": "Call to Action: for the mentorship section"
+  },
+  "MENTORSHIP_EMAIL_SUBJECT": {
+    "message": "$subject$Mentorship Services",
+    "description": "Email Subject: for the mentorship section CTA url",
+    "placeholders": {
+      "subject": {
+        "content": "subject="
+      }
+    }
+  },
+  "CONSULTATION_EMAIL_SUBJECT": {
+    "message": "$subject$Accessibility Consultation",
+    "description": "Email Subject: for the consultation section CTA url",
+    "placeholders": {
+      "subject": {
+        "content": "subject="
+      }
+    }
+  },
+  "CONSULTATION_HEADER": {
+    "message": "Accessibility Consultation",
+    "description": "Header: for the consultation section"
+  },
+  "CONSULTATION_P1": {
+    "message": "I audit new and existing design and/or software for accessibility compliance (WCAG 2.x) and best practices. I will generate a report with the results, including project-specific suggestions and resources for basic audits and implementation-specific recommendations for more advanced audits. I can also design and/or execute UX research studies to help ensure an accessible user/customer experience.",
+    "description": "Consultation Section: first paragraph describing the consultation we provide"
+  },
+  "CONSULTATION_P2": {
+    "message": "I offer project management services to support existing technical teams implementing digitally accessible products. Whether you're refactoring your site for accessibility, developing web tooling for assistive tech, or designing SDKs for disabled developers, I will help. Typically this involves scope definition, codebase analysis, product research, project work planning, and LOTS of Github issues organized via sprints and milestones. If that doesn't sound like your team, that's fine too, I'm flexible and adaptable! With a tenure of UX design and engineering behind me, I am prepared to help your team ship robust and accessible software in a safe and sane manner.",
+    "description": "Consultation Section: second paragraph describing the consultation we provide"
+  },
+  "CONSULTATION_P3": {
+    "message": "As an Accessibility Consultant I audit designs and software for accessibility compliance, offer project management services, and ensure the shipping of robust and accessible software.",
+    "description": "Consultation Section: second iteration describing the consultation we provide"
+  },
+  "CONSULTATION_CTA": {
+    "message": "Contact me about consultation",
+    "description": "Call to Action: for the consultation section button"
+  },
+  "PRODUCTION_HEADER": {
+    "message": "Software Production",
+    "description": "Header: for the production section"
+  },
+  "PRODUCTION_P1": {
+    "message": "I believe that free, modular, and robust open-source software is quintessential for the existence of a truly accessible web for both users and developers of digital products. AccessiTech proudly produces such softwares with the intent of proliferating accessible accessibility tooling throughout todays ableist ICT communities. We must be the change we wish to see, after all!",
+    "description": "Production Section: first paragraph describing the production we provide"
+  },
+  "PRODUCTION_P2": {
+    "message": "I am a full-stack engineer with a focus on front-end development. I have experience with a wide range of technologies and frameworks, including but not limited to: React, Vue, Angular, Node, Express, MongoDB, and PostgreSQL. I am also a seasoned UX designer with a background in visual design, information architecture, and user research.",
+    "description": "Production Section: second paragraph describing the production we provide"
+  },
+  "PRODUCTION_P3": {
+    "message": "To see what I'm currently working on, check out my Current Projects section. To request a solution, ask about a product, or if interested in contributing start a Discussion on GitHub!",
+    "description": "Production Section: third paragraph describing the production we provide"
+  },
+  "PRODUCTION_P4": {
+    "message": "I believe that free, modular, and robust open-source software is crucial for creating an accessible web for both users and developers alike. $company$ proudly produces and promotes such software to counter ableism in ICT communities today.",
+    "description": "Production Section: second iteration describing the production we provide",
+    "placeholders": {
+      "company": {
+        "content": "AccessiTech"
+      }
+    }
+  },
+  "PRODUCTION_CTA": {
+    "message": "Join the conversation",
+    "description": "Call to Action: for the production section button"
+  },
+  "QA_HEADER": {
+    "message": "Quality Assurance",
+    "description": "Header: for the QA section"
+  },
+  "QA_P1": {
+    "message": "As a QA Engineer, I have spent my career testing, triaging, and debugging software at every stage of the product life cycle, including: test planning, end-to-end quality assurance, unit/integration testing, user/usability testing, and more. ",
+    "description": "QA Section: first paragraph describing the QA we provide"
+  },
+  "QA_CTA": {
+    "message": "Let me test your code",
+    "description": "Call to Action: for the QA section button"
+  },
+  "CLICK_TO_COPY": {
+    "message": "Click to copy link",
+    "description": "Button: for the copy to clipboard button"
+  },
+  "COPY_SUCCESS_MESSAGE": {
+    "message": "Copied!",
+    "description": "Message: for the copy to clipboard button"
+  },
+  "COPY_FAIL_MESSAGE": {
+    "message": "Failed to copy",
+    "description": "Message: for the copy to clipboard button"
+  },
+  "SKIP_TO_MAIN_CONTENT": {
+    "message": "Skip to main content",
+    "description": "Link: for the skip to main content link"
   }
 }

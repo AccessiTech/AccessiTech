@@ -5,12 +5,13 @@ import Col from 'react-bootstrap/Col';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import SplashSocials from '../SplashSocials/SplashSocials';
-import { ABOUT_ACCESSITECH, APP_ROOT,  SPLASH_BG, TAGLINE } from '../../settings/strings';
+import { ABOUT_ACCESSITECH, APP_ROOT,  SKIP_TO_MAIN_CONTENT,  SPLASH_BG, TAGLINE } from '../../settings/strings';
 import './App.scss';
 import store from '../../store/store';
 import { getBrowserLanguage, useT, initTranslations, setLang } from '@accessitech/i18n-redux-toolkit';
 import { useParams } from 'react-router-dom';
 import About from '../About/About';
+import Services from '../Services/Services';
 import translations from '../../settings/translations';
 
 store.dispatch(initTranslations(translations))
@@ -29,7 +30,7 @@ const App = () => {
 
   return (
   <Container fluid className="App" aria-label={useT(APP_ROOT)}>
-
+    <a className="skip-link" href="#main">{useT(SKIP_TO_MAIN_CONTENT)}</a>
     {/* Splash Row */}
     <Row
       className="splash-row"
@@ -43,8 +44,9 @@ const App = () => {
     </Row>
 
     {/* Main Rows */}
-    <main aria-label={useT(ABOUT_ACCESSITECH)}>
+    <main id='main' aria-label={useT(ABOUT_ACCESSITECH)}>
       <About />
+      <Services />
     </main>
     
 

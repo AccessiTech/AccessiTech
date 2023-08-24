@@ -92,3 +92,17 @@ h6, .h6 {
     @include font-resize(1.75rem);
   }
 }
+
+a.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.25s;
+  transition-delay: 1.5s;
+
+  &:focus {
+    opacity: 1;
+    transition-delay: 0s;
+  }
+}
