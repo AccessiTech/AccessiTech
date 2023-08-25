@@ -89,7 +89,7 @@ export const BODY = 'body';
 export const ESCAPE = 'Escape';
 
 // URLs
-export const ROOT = "/AccessiTech";
+export const ROOT = "/";
 export const FIVERR_URL = "https://www.fiverr.com/accessitech";
 export const FIVERR_AUDIT_URL = "https://www.fiverr.com/accessitech/audit-websites-for-wcag-accessibility-compliance";
 export const FIVERR_MENTORSHIP_URL = "https://www.fiverr.com/accessitech/teach-you-web-development";
