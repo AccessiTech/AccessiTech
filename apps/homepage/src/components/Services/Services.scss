@@ -22,6 +22,13 @@
         border-radius: 100%;
         aspect-ratio: 1 / 1;
       }
+
+      .simplified-view & {
+        padding-bottom: 0;
+        .purpose-image {
+          display: none;
+        }
+      }
     }
 
     &.services-row {
@@ -50,13 +57,17 @@
           background-color: $darkBlue;
           border: none;
           color: $yellow;
-          box-shadow: 0 0 0 1px $darkBlue;
+          box-shadow: $sv-unfocus-box-shadow;
           
 
           &:hover,
           &:focus,
           &:focus-visible {
             box-shadow: 0 0 0 2px $white;
+
+            .simplified-view & {
+              box-shadow: $sv-focus-box-shadow;
+            }
           }
         }
       }

@@ -76,6 +76,7 @@ export const SKIP_TO_MAIN_CONTENT = "SKIP_TO_MAIN_CONTENT";
 // Magical Strings
 export const WHITE = 'white';
 export const TRANSPARENT = 'transparent';
+export const DARK_BLUE = "#061A32";
 export const TARGET_BLANK = '_blank';
 export const EN = 'en';
 export const TWITTER_HANDLE = 'accessiT3ch';
@@ -84,9 +85,11 @@ export const SPLASH_BG = `url(${SPLASH_BG_URL})`;
 export const PRIMARY = "primary";
 export const SECONDARY = "secondary";
 export const TERTIARY = "tertiary";
+export const BODY = 'body';
+export const ESCAPE = 'Escape';
 
 // URLs
-export const ROOT = "/AccessiTech";
+export const ROOT = "/";
 export const FIVERR_URL = "https://www.fiverr.com/accessitech";
 export const FIVERR_AUDIT_URL = "https://www.fiverr.com/accessitech/audit-websites-for-wcag-accessibility-compliance";
 export const FIVERR_MENTORSHIP_URL = "https://www.fiverr.com/accessitech/teach-you-web-development";

@@ -7,6 +7,11 @@
   left: 0;
   right: 0;
 
+  .simplified-view & {
+    position: relative;
+    bottom: auto;
+  }
+
   ul {
     padding-left: 0;
     display: flex;
@@ -23,6 +28,12 @@
         outline: none;
         border: $focus-border;
       }
+    }
+
+    .simplified-view & {
+      display: inline-block !important;
+      margin-right: 1rem;
+      margin-top: 5rem;
     }
   }
 }

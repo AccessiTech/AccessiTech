@@ -10,6 +10,14 @@
     color: $darkBlue;
     @include font-resize($about-font-size);
     font-style: italic;
+
+    .simplified-view & {
+      margin-bottom: 0;
+    }
+  }
+
+  .simplified-view & {
+    margin-bottom: 0;
   }
 }
 
