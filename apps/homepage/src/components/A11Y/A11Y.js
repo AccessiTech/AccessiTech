@@ -44,7 +44,7 @@ function A11Y() {
   const i18nSelectOnChange = (e) => {
     e.preventDefault();
     store.dispatch(setLang(e.target.value));
-    navigate(`${e.target.value}`)
+    navigate(`/${e.target.value}`)
   }
 
   const onA11yToggle = (e) => {
