@@ -76,6 +76,7 @@ export const SKIP_TO_MAIN_CONTENT = "SKIP_TO_MAIN_CONTENT";
 // Magical Strings
 export const WHITE = 'white';
 export const TRANSPARENT = 'transparent';
+export const DARK_BLUE = "#061A32";
 export const TARGET_BLANK = '_blank';
 export const EN = 'en';
 export const TWITTER_HANDLE = 'accessiT3ch';
