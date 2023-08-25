@@ -28,6 +28,10 @@
 
   .github-issues {
     @include margin-top(2rem);
+
+    a {
+      display: inline;
+    }
   }
 
   .copyright {

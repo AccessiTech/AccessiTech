@@ -7,6 +7,7 @@ a.section-anchor {
   }
   button {
     position: relative;
+    display: initial;
     font-size: 1rem;
     left: 1rem;
     bottom: 0.25rem;
@@ -44,6 +45,10 @@ a.section-anchor {
       &:focus-visible {
         box-shadow: $focus-box-shadow inset;
         outline: none;
+
+        .simplified-view & {
+          box-shadow: $sv-focus-box-shadow;
+        }
       }
     }
   }

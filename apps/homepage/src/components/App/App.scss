@@ -14,6 +14,22 @@ body {
   &.font-family-monospace {
     font-family: monospace;
   }
+
+  &.simplified-view {
+    * {
+      color: $darkBlue !important;
+      background: none !important;
+      text-shadow: none !important;
+      border-color: $darkBlue !important;
+      transition: none !important;
+      display: block;
+      text-align: unset;
+      margin-left: unset;
+    }
+    script {
+      display: none;
+    }
+  }
 }
 ul {
   padding: 0;
@@ -30,37 +46,55 @@ a {
   &:focus-visible {
     outline: $focus-border;
     text-decoration: none;
+
+    .simplified-view & {
+      outline: $sv-focus-border;
+    }
   }
 
   &:visited {
     text-decoration-color: rgba($color: $white, $alpha: 0.5);
+
+    .simplified-view & {
+      text-decoration-color: rgba($color: $darkBlue, $alpha: 0.5);
+    }
   }
 
-  &.dark {
+  &.dark,
+  .simplified-view & {
     text-decoration-color: $darkBlue;
   }
 }
 
-p, a, span, label {
+p,
+a,
+span,
+label {
   @include font-resize(1rem);
 }
 
-h1, .h1 {
+h1,
+.h1 {
   @include font-resize(2.5rem);
 }
-h2, .h2 {
+h2,
+.h2 {
   @include font-resize(2rem);
 }
-h3, .h3 {
+h3,
+.h3 {
   @include font-resize(1.75rem);
 }
-h4, .h4 {
+h4,
+.h4 {
   @include font-resize(1.5rem);
 }
-h5, .h5 {
+h5,
+.h5 {
   @include font-resize(1.25rem);
 }
-h6, .h6 {
+h6,
+.h6 {
   @include font-resize(1rem);
 }
 
@@ -94,6 +128,10 @@ h6, .h6 {
     font-style: italic;
     font-weight: 300;
     @include font-resize(1.75rem);
+  }
+
+  .simplified-view & {
+    height: auto;
   }
 }
 

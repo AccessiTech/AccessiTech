@@ -17,6 +17,7 @@
     .a11y__settings-toggle,
     .a11y__settings-close {
       background-color: transparent;
+      text-align: center;
       color: white;
       border: none;
       outline: none;
@@ -77,12 +78,14 @@
     }
   }
 
-  .font-options-container {
-    text-align: left;
+  .font-options-container,
+  .simplified-view-container {
+    text-align: center;
     position: relative;
     margin-right: .5rem;
 
-    .font-options-toggle {
+    .font-options-toggle,
+    .simplified-view-toggle {
       color: white;
       background-color: transparent;
       border: none;
