@@ -6,7 +6,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import SplashSocials from '../../components/SplashSocials/SplashSocials';
 import { ABOUT_ACCESSITECH, APP_ROOT,  SKIP_TO_MAIN_CONTENT,  SPLASH_BG, TAGLINE, VISION_P3 } from '../../settings/strings';
-import './App.scss';
+import './Home.scss';
 import store from '../../store/store';
 import { getBrowserLanguage, useT, initTranslations, setLang } from '@accessitech/i18n-redux-toolkit';
 import { useParams } from 'react-router-dom';
@@ -19,7 +19,7 @@ const splashRowStyle = {
   backgroundImage: SPLASH_BG,
 };
 
-const App = () => {
+const Home = () => {
   const { lang } = useParams();
   
   useEffect(() => {
@@ -68,4 +68,4 @@ const App = () => {
 );
 }
 
-export default App;
+export default Home;
