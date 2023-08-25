@@ -84,6 +84,8 @@ export const SPLASH_BG = `url(${SPLASH_BG_URL})`;
 export const PRIMARY = "primary";
 export const SECONDARY = "secondary";
 export const TERTIARY = "tertiary";
+export const BODY = 'body';
+export const ESCAPE = 'Escape';
 
 // URLs
 export const ROOT = "/AccessiTech";
