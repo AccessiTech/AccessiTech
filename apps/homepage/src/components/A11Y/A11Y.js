@@ -57,7 +57,7 @@ function A11Y() {
     onClose: onEscapeKey,
   };
 
-  return (languageKeys && languageKeys.length) ? (
+  return (
     <div
       className="a11y-container"
       aria-label="Accessibility Options"
@@ -68,7 +68,6 @@ function A11Y() {
           className="a11y__settings-toggle"
           onClick={onA11yToggle}
           aria-label="Toggle Accessibility Options"
-          // aria-roledescription='button'
           onKeyDown={onEscapeKey}
         >
           <i className="fa fa-cog" />
@@ -76,7 +75,7 @@ function A11Y() {
         {isA11yOpen && (
           <menu className="a11y__settings">
             <li><FontOptions onClose={onEscapeKey} /></li>
-            <li><I18nSelect { ...i18nSelectProps } /></li>
+            {languageKeys && languageKeys.length  && (<li><I18nSelect { ...i18nSelectProps } /></li>)}
           </menu>
         )}
         {isA11yOpen && (
@@ -92,7 +91,7 @@ function A11Y() {
 
       </div>
     </div>
-  ) : null;
+  );
 }
 
 export default A11Y;
