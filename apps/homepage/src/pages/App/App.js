@@ -2,16 +2,16 @@ import React, { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import SplashSocials from '../SplashSocials/SplashSocials';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import SplashSocials from '../../components/SplashSocials/SplashSocials';
 import { ABOUT_ACCESSITECH, APP_ROOT,  SKIP_TO_MAIN_CONTENT,  SPLASH_BG, TAGLINE } from '../../settings/strings';
 import './App.scss';
 import store from '../../store/store';
 import { getBrowserLanguage, useT, initTranslations, setLang } from '@accessitech/i18n-redux-toolkit';
 import { useParams } from 'react-router-dom';
-import About from '../About/About';
-import Services from '../Services/Services';
+import About from '../../components/About/About';
+import Services from '../../components/Services/Services';
 import translations from '../../settings/translations';
 
 store.dispatch(initTranslations(translations))

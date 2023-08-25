@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './components/App/App';
+import App from './pages/App/App';
 import reportWebVitals from './reportWebVitals';
 import store from './store/store';
 import { Provider } from 'react-redux';
@@ -12,6 +12,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>
+          <Route path='about' element={<App />} />
           <Route path=':lang' element={<App />} />
         </Route>
       </Routes>
