@@ -28,7 +28,7 @@ import "./Footer.scss";
 
 function Footer() {
   return (
-    <section className="footer-section" aria-label={useT(FOOTER)}>
+    <footer className="footer-section" aria-label={useT(FOOTER)}>
       <h3>{useT(REACH_OUT_HEADER)}</h3>
       <ul aria-label={CONTACT_LIST}>
         {/* 
@@ -89,7 +89,7 @@ function Footer() {
       <p aria-label={useT(COPYRIGHT)} className="copyright">
         {useT(COPYRIGHT_P1)}
       </p>
-    </section>
+    </footer>
   );
 }
 
