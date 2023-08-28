@@ -1,0 +1,15 @@
+@import "./../../sass/variables.scss";
+
+.About {
+  h1 {
+    text-align: initial;
+  }
+  .header-row {
+    background-color: $yellow;
+    color: $darkBlue;
+    margin-bottom: 1rem;
+  }
+  .footer-row {
+    margin-top: 1rem;
+  }
+}
