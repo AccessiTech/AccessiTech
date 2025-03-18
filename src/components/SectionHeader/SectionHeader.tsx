@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FaLink } from "@accessitech/react-icons/fa";
+import { FaLink } from "react-icons/fa";
 import "./SectionHeader.scss";
 
 const CLICK_TO_COPY = "click to copy link";
