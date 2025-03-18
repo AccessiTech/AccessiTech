@@ -1,0 +1,45 @@
+// Bootstrap Settings
+$enable-rounded: false;
+
+// Global Variables!
+$yellow: #FDB81E;
+$darkBlue: #061A32;
+$pink: #FC389A;
+$lightBlue: #02C2E8;
+$grey: #AEB0B5;
+$black: black;
+$white: white;
+
+// Bootstrap Overrides
+$primary: $yellow;
+$secondary: $pink;
+$form-select-indicator-color: $white;
+$form-select-color: $white;
+
+$unfocus-border: 1px solid $white;
+$focus-border: 2px solid $white;
+$no-box-shadow: 0 0 0 0 $white;
+$unfocus-box-shadow: 0 0 0 1px $white;
+$focus-box-shadow: 0 0 0 2px $white;
+
+$sv-unfocus-border: 1px solid $darkBlue;
+$sv-focus-border: 2px solid $darkBlue;
+$sv-unfocus-box-shadow: 0 0 0 1px $darkBlue;
+$sv-focus-box-shadow: 0 0 0 2px $darkBlue;
+
+// High Contrast Styles
+$hc-focus-box-shadow: inset 0 0 0 1px rgb(0 0 0 / 67%), inset 0 0 0 3px white;
+
+@mixin hc-text-shadow ($color: rgba(0,0,0,0.75)) {
+  text-shadow: 
+    1px 1px $color,
+    -1px 1px $color,
+    1px -1px $color,
+    -1px -1px $color;
+}
+
+// Global RTS variables
+$tagline-font-size: 1.75rem;
+$about-font-size: 1.25rem;
+$main-section-padding: 5rem;
+$alt-section-padding: 4rem;

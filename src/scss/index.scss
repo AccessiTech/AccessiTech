@@ -1,72 +1,113 @@
+@import "./variables.scss";
+// @import "./../components/FontOptions/fontOptions.scss";
+@import "~bootstrap/scss/bootstrap.scss";
 
-@import "bootstrap/scss/bootstrap.scss";
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+// App Styling
+body {
+  &.font-family-serif {
+    font-family: serif;
+  }
+  &.font-family-sans-serif {
+    font-family: sans-serif;
+  }
+  &.font-family-monospace {
+    font-family: monospace;
+  }
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  &.simplified-view {
+    * {
+      color: $darkBlue !important;
+      background: none !important;
+      text-shadow: none !important;
+      border-color: $darkBlue !important;
+      transition: none !important;
+      display: block;
+      text-align: unset;
+      margin-left: unset;
+    }
+    script {
+      display: none;
+    }
+  }
+}
+ul {
+  padding: 0;
+  list-style: none;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: underline dotted $white;
+
+  &:hover {
+    text-decoration-style: dashed;
+  }
+
+  &:focus-visible {
+    outline: $focus-border;
+    text-decoration: none;
+
+    .simplified-view & {
+      outline: $sv-focus-border;
+    }
+  }
+
+  &:visited {
+    text-decoration-color: rgba($color: $white, $alpha: 0.5);
+
+    .simplified-view & {
+      text-decoration-color: rgba($color: $darkBlue, $alpha: 0.5);
+    }
+  }
+
+  &.dark,
+  .simplified-view & {
+    text-decoration-color: $darkBlue;
+  }
 }
 
-body {
-  margin: 0;
+p,
+a,
+span,
+label {
+  @include font-resize(1rem);
+}
+
+h1,
+.h1 {
+  @include font-resize(2.5rem);
+}
+h2,
+.h2 {
+  @include font-resize(2rem);
+}
+h3,
+.h3 {
+  @include font-resize(1.75rem);
+}
+h4,
+.h4 {
+  @include font-resize(1.5rem);
+}
+h5,
+.h5 {
+  @include font-resize(1.25rem);
+}
+h6,
+.h6 {
+  @include font-resize(1rem);
+}
+
+.flex-row {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: row;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.flex-space-between {
+  justify-content: space-between;
 }
