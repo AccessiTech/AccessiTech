@@ -12,8 +12,6 @@ import {
 } from "reduxjs-toolkit-persist";
 import { PersistConfig, Persistor } from "reduxjs-toolkit-persist/lib/types";
 import storage from "reduxjs-toolkit-persist/lib/storage";
-import { sessionSlice, sessionSliceName } from "./session";
-import { countSlice, countSliceName } from "./count";
 
 export const persistConfig: PersistConfig<any> = {
   key: "@accessitech/homepage",
@@ -21,8 +19,7 @@ export const persistConfig: PersistConfig<any> = {
 };
 
 export const rootReducer = combineReducers({
-  [sessionSliceName]: sessionSlice.reducer,
-  [countSliceName]: countSlice.reducer,
+
 });
 
 export const persistedReducer = persistReducer(persistConfig, rootReducer);
