@@ -1,5 +1,6 @@
-@import "./../../sass/variables.scss";
-@import "~bootstrap/scss/bootstrap.scss";
+// @import "./../../sass/variables.scss";
+@import "bootstrap/scss/bootstrap.scss";
+@import "./../../components/FontOptions/fontOptions.scss";
 
 #services-row {
   text-align: left;
