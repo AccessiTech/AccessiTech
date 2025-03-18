@@ -12,6 +12,10 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
   // Note - update the basename value to reflect the location of your application.
   // base: "/vite-react-bootstrap-redux-toolkit-ts/",
 });
