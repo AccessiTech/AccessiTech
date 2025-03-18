@@ -13,5 +13,5 @@ export default defineConfig({
     },
   },
   // Note - update the basename value to reflect the location of your application.
-  base: "/vite-react-bootstrap-redux-toolkit-ts/",
+  // base: "/vite-react-bootstrap-redux-toolkit-ts/",
 });
