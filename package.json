@@ -1,7 +1,7 @@
 {
-  "name": "vite-serverless-react-bootstrap-redux-toolkit",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@accessitech/homepage",
+  "private": false,
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
