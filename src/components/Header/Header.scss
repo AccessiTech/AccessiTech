@@ -1,0 +1,44 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+.main-header {
+  position: relative;
+  z-index: 5;
+  
+  h1 {
+    color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    // background-position-x: calc(50% + 1rem);
+    position: relative;
+    left: 1rem;
+
+    .simplified-view & {
+      left: auto;
+    }
+  }
+
+  a {
+    display: inline-block;
+    @include padding(1rem);
+    margin-top: 36vh;
+    text-decoration: none;
+
+    &:focus,
+    &:focus-visible {
+      border: none;
+      outline: $focus-border;
+
+      .simplified-view & {
+        display: inline-block;
+        outline-color: $darkBlue;
+      }
+    }
+
+    .simplified-view & {
+      padding-left: initial;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+  }
+}

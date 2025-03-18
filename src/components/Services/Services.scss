@@ -1,0 +1,81 @@
+// @import "./../../sass/variables.scss";
+@import "bootstrap/scss/bootstrap.scss";
+@import "./../../components/FontOptions/fontOptions.scss";
+
+#services-row {
+  text-align: left;
+  
+  .row {
+    @include padding(2.5rem 0 0);
+    
+    &.services-header-row {
+      @include padding(5rem 0);
+      background-color: $pink;
+      color: $darkBlue;
+
+      a {
+        text-decoration: none;
+        color: $darkBlue;
+      }
+
+      .purpose-picture {
+        max-width: 100%;
+        border-radius: 100%;
+        aspect-ratio: 1 / 1;
+      }
+
+      .simplified-view & {
+        padding-bottom: 0;
+        .purpose-image {
+          display: none;
+        }
+      }
+    }
+
+    &.services-row {
+      background-color: $yellow;
+      color: $darkBlue;
+      @include padding-bottom(2.5rem);
+
+      a {
+        text-decoration: none;
+        color: $darkBlue;
+      }
+
+      & > div {
+        @include padding-bottom(2.5rem);
+        @include margin-top(2.5rem);
+
+        article {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+        }
+
+        .btn {
+          width: 100%;
+          background-color: $darkBlue;
+          border: none;
+          color: $yellow;
+          box-shadow: $sv-unfocus-box-shadow;
+          
+
+          &:hover,
+          &:focus,
+          &:focus-visible {
+            box-shadow: 0 0 0 2px $white;
+
+            .simplified-view & {
+              box-shadow: $sv-focus-box-shadow;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & > div > div {
+    position: relative;
+  }
+}

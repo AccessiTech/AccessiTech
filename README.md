@@ -1,27 +1,101 @@
-# AccessiTech
+# vite-spa-react-bootstrap-redux-toolkit
 
-This mono-repository contains packages under the `@accessitech` namespace, as well as a few applications which use them.
+A Vite template for typescript react apps using react-bootstrap and redux-toolkit.
 
-## Packages
+## Usage
 
-This repo currently uses lerna to manage accessible accessibility software.
+If you haven't already, globally install `vite` and `degit`:
 
-## Apps
+```bash
+npm install -g vite degit
 
-Currently the AccessiTech homepage is the only app hosted in this repository, and is deployed via Github Pages.
+# or
 
-## Collaborating
+yarn global add vite degit
+```
 
-[Issues](https://github.com/AccessiTech/AccessiTech/issues) | [Milestones](https://github.com/AccessiTech/AccessiTech/milestones)
+Then, to create a new project based on this template:
 
-AccessiTech is open to virtually any form of collaboration, reach out today!
+```bash
+npx degit accessitech/vite-react-bootstrap-redux-toolkit-ts my-app
+```
 
-### Discussions
+Navigate to the new directory and install dependencies, and start the dev server:
 
-Requests, concerns, questions, and comments are all welcome via [GitHub Discussions](https://github.com/AccessiTech/AccessiTech/discussions/) so come [say hello](https://github.com/AccessiTech/AccessiTech/discussions/33)!
+```bash
+cd my-app
+npm install
+npm run dev
 
-### Issues
+# or
 
-Actual work items are tracked via [Github Issues](https://github.com/AccessiTech/AccessiTech/issues), which are really great for delineating requirements and hosting feature/bug specific conversations.
+cd my-app
+yarn
+yarn dev
+```
 
-_Note: all issues in this repo should pertain to the AccessiTech homepage or `@accessitech` packages, all other issues should be created in the [AccessiTech PM repo](https://github.com/AccessiTech/Project-Management)_
+## Features
+
+Different branches offer different options for the template; each stack offers slightly different FE tooling.
+
+### `rbrt-spa`
+
+React, Bootstrap, and Redux Toolkit (rbrt) single page application (spa).
+
+#### `rbrt-spa` Includes
+
+- [React](https://reactjs.org/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+
+#### Installing `rbrt-spa`
+
+```bash
+npx degit accessitech/vite-react-bootstrap-redux-toolkit-ts my-app
+
+# or
+
+npx degit accessitech/vite-react-bootstrap-redux-toolkit-ts#rbrt-spa my-app
+```
+
+### `rbrt-mpa`
+
+React, Bootstrap, and Redux Toolkit (rbrt) multi page application (mpa).
+
+#### `rbrt-mpa` Includes
+
+- rbrt-spa + [React Router DOM](https://reactrouter.com/web/guides/quick-start)
+
+#### Installing `rbrt-mpa`
+
+```bash
+npx degit accessitech/vite-react-bootstrap-redux-toolkit-ts#rbrt-mpa my-app
+```
+
+### `grbrt-spa`
+
+GitHub Pages, React, Bootstrap, and Redux Toolkit (grbrt) single page application (spa).
+
+#### `grbrt-spa` Includes
+
+- rbrt-spa + [GitHub Pages](https://pages.github.com/)
+
+#### Installing `grbrt-spa`
+
+```bash
+npx degit accessitech/vite-react-bootstrap-redux-toolkit-ts#grbrt-spa my-app
+```
+
+### `grbrt-mpa`
+
+GitHub Pages, React, Bootstrap, and Redux Toolkit (grbrt) multi page application (mpa).
+
+#### `grbrt-mpa` Includes
+
+- rbrt-mpa + [GitHub Pages](https://pages.github.com/)
+
+#### Installing `grbrt-mpa`
+
+```bash
+npx degit accessitech/vite-react-bootstrap-redux-toolkit-ts#grbrt-mpa my-app
+```

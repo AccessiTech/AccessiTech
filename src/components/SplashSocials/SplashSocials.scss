@@ -1,0 +1,38 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+.splash-social-buttons {
+  position: absolute;
+  bottom: rfs-value($alt-section-padding);
+  left: 0;
+  right: 0;
+
+  .simplified-view & {
+    position: relative;
+    bottom: auto;
+  }
+
+  ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  li {
+
+    .social-icon {
+      border: $unfocus-border;
+
+      &:hover,
+      &:focus-visible {
+        outline: none;
+        border: $focus-border;
+      }
+    }
+
+    .simplified-view & {
+      display: inline-block !important;
+      margin-right: 1rem;
+      margin-top: 5rem;
+    }
+  }
+}

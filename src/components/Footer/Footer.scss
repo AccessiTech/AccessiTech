@@ -1,0 +1,39 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+.footer-row {
+  background-color: $darkBlue;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.footer-section {
+  @include padding-top($alt-section-padding);
+  
+  h3 {
+    @include margin-bottom(1.75rem);
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+    @include margin(0 1rem 1rem);
+  }
+
+  .github-issues {
+    @include margin-top(2rem);
+
+    a {
+      display: inline;
+    }
+  }
+
+  .copyright {
+    @include margin(3rem 0 1rem);
+  }
+}
