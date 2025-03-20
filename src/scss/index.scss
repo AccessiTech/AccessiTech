@@ -1,7 +1,6 @@
 @import "./../components/FontOptions/fontOptions.scss";
 @import "bootstrap/scss/bootstrap.scss";
 
-
 // App Styling
 body {
   &.font-family-serif {
@@ -109,4 +108,17 @@ h6,
 
 .flex-space-between {
   justify-content: space-between;
+}
+
+.content-row {
+  flex-grow: 1;
+  & > .col {
+    @include padding(0);
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

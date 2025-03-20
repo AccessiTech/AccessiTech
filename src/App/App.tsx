@@ -16,6 +16,7 @@ export const App = () => {
             <Header />
           </Col>
         </Row>
+        {/* Main Content Row */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
