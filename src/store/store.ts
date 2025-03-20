@@ -19,6 +19,7 @@ import { blogSlice, blogSliceName } from "./blog";
 export const persistConfig: PersistConfig<any> = {
   key: "@accessitech/homepage",
   storage,
+  blacklist: [blogSliceName],
 };
 
 export const rootReducer = combineReducers({
