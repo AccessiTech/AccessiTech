@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Col, Row } from "react-bootstrap";
 import { getBlog, useBlogEntriesArray } from "../../store/blog";
+import { Link, useNavigate } from "react-router-dom";
+import { Breadcrumb, Col, Row } from "react-bootstrap";
 import store from "../../store/store";
 import './Blog.scss';
 
 export const Blog = () => {
+  const navigate = useNavigate();
   const blog = useBlogEntriesArray();
 
   useEffect(() => {
@@ -14,6 +15,16 @@ export const Blog = () => {
 
   return (
     <Row className="content-row">
+      <nav className="offset-md-2 breadcrumb-container">
+        <Breadcrumb >
+          <Breadcrumb.Item href="/" onClick={(e: any) => {
+            e.preventDefault();
+            navigate('/')
+          }}>Home</Breadcrumb.Item>
+          <Breadcrumb.Item active>Blog</Breadcrumb.Item>
+        </Breadcrumb>
+      </nav>
+
       <main id='main' aria-label="Blog" className="blog-page">
         <Col>
           <Row>

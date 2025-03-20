@@ -122,3 +122,17 @@ h6,
   flex-direction: column;
   min-height: 100vh;
 }
+
+.breadcrumb-container {
+  position: absolute;
+  @include padding-top(1.5rem);
+  
+  a {
+    color: $darkBlue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline dotted $darkBlue;
+    }
+  }
+}
