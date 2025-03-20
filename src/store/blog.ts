@@ -1,9 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
+import { getMetaData } from "../settings/utils";
 
 export const blogSliceName = "blog";
 
-export const GET_BLOG = "GET_BLOG";
 export const GET_BLOG_ENTRY = "GET_BLOG_ENTRY";
 
 export enum BlogOrder {
@@ -19,42 +19,14 @@ export interface Blog {
   title: string;
   content: string;
   date: string;
-  order?: BlogOrder;
+  description?: string;
 }
 
 export interface BlogState {
+  order?: BlogOrder;
   isLoading: boolean;
   entries: { [id: string]: Blog };
 }
-
-export const getBlog = createAsyncThunk(GET_BLOG, async () => {
-  const response = await fetch("/rss.xml");
-  if (!response.ok) {
-    throw new Error("Failed to fetch blogs");
-  }
-  const text = await response.text();
-  if (!text) {
-    throw new Error("Failed to parse blogs");
-  }
-  const parser = new DOMParser();
-  const xml = parser.parseFromString(text, "text/xml");
-  const items = xml.querySelectorAll("item");
-  const blog: { [id: string]: Blog } = {};
-  items.forEach((item) => {
-    const title = item.querySelector("title")?.textContent || "";
-    const link = item.querySelector("link")?.textContent || "";
-    const id = link.split("/").pop()?.replace(".md", "") || "";
-    const date = item.querySelector("pubDate")?.textContent || "";
-    blog[id] = {
-      loaded: false,
-      id,
-      title,
-      content: "",
-      date,
-    };
-  });
-  return blog;
-});
 
 export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (id: string) => {
   const response = await fetch(`/blog/${id}.md`);
@@ -62,13 +34,22 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (id: string) 
     throw new Error("Failed to fetch blog");
   }
   const text = await response.text();
-  const title = text.split("\n")[0].replace("# ", "");
+  if (!text) {
+    throw new Error("Failed to parse blog");
+  }
+  const metaData = getMetaData(text);
+  const date = metaData["date"] || "";
+  const description = metaData["description"] || "";
+  const content = Object.keys(metaData).length ? text.substring(text.indexOf("-->") + 3, text.length) : text;
+  const title = metaData["title"] || content.split("\n")[0].replace("# ", "");
 
   return {
     loaded: true,
     id,
     title,
-    content: text,
+    content,
+    date,
+    description,
   } as Blog;
 });
 
@@ -82,18 +63,7 @@ export const blogSlice = createSlice({
   initialState: blogInitialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(getBlog.pending, (state) => {
-      state.isLoading = true;
-    });
-    builder.addCase(getBlog.fulfilled, (state, action) => {
-      state.isLoading = false;
-      state.entries = action.payload;
-    });
-    builder.addCase(getBlog.rejected, (state) => {
-      state.isLoading = false;
-    });
     builder.addCase(getBlogEntry.fulfilled, (state, action) => {
-      console.log('hi')
       state.entries[action.payload.id] = {
         ...state.entries[action.payload.id],
         ...action.payload,
@@ -118,7 +88,7 @@ export const useBlogEntry = (id: string): Blog => {
   return useBlog().entries[id];
 };
 
-export const useBlogEntriesArray = (order: BlogOrder = BlogOrder.DATE_ASC): Blog[] => {
+export const useBlogEntriesArray = (order: BlogOrder = BlogOrder.DATE_DESC): Blog[] => {
   const entries = useBlogEntries();
   return Object.values(entries).sort((a, b) => {
     switch (order) {
