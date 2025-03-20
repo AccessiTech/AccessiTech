@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
 import { getMetaData } from "../settings/utils";
+import { NavigateFunction } from "react-router-dom";
 
 export const blogSliceName = "blog";
 
@@ -27,16 +28,30 @@ export interface BlogState {
   isLoading: boolean;
   entries: { [id: string]: Blog };
 }
-
-export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (id: string) => {
-  const response = await fetch(`/blog/${id}.md`);
-  if (!response.ok) {
-    throw new Error("Failed to fetch blog");
-  }
-  const text = await response.text();
+export interface GetBlogEntryPayload {
+  id: string;
+  navigate: NavigateFunction;
+}
+export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
+  { id, navigate }: GetBlogEntryPayload
+) => {
+  const response = await fetch(`/blog/${id}.md`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch blog");
+      }
+      return response;
+    })
+    .catch((e:string) => {
+      console.error(e);
+      navigate("/blog");
+    });
+  
+  const text = await response?.text();
   if (!text) {
     throw new Error("Failed to parse blog");
   }
+
   const metaData = getMetaData(text);
   const date = metaData["date"] || "";
   const description = metaData["description"] || "";

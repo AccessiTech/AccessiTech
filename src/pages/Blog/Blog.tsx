@@ -27,7 +27,7 @@ export const Blog = () => {
         items.forEach((item) => {
           const link = item.querySelector("link")?.textContent || "";
           const id = link.split("/").pop()?.replace(".md", "") || "";
-          store.dispatch(getBlogEntry(id));
+          store.dispatch(getBlogEntry({id, navigate}));
         })
       })
   }, []);

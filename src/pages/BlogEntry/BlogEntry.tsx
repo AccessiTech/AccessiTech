@@ -12,9 +12,9 @@ export const BlogEntry = () => {
 
   useEffect(() => {
     if (!entry?.loaded) {
-      store.dispatch(getBlogEntry(id));
+      store.dispatch(getBlogEntry({id, navigate}));
     }
-  }, [id, entry]);
+  }, [id, entry, navigate]);
 
   return (
     <Row className="content-row">
