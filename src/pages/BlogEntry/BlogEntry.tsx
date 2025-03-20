@@ -5,7 +5,7 @@ import { getBlogEntry, useBlogEntry } from "../../store/blog";
 import store from "../../store/store";
 
 export const BlogEntry = () => {
-  const id = useParams().id || '';
+  const id = useParams().id as string;
   const entry = useBlogEntry(id);
 
   useEffect(() => {
@@ -13,6 +13,10 @@ export const BlogEntry = () => {
       store.dispatch(getBlogEntry(id));
     }
   }, [id, entry]);
+
+  if (!entry) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div>
