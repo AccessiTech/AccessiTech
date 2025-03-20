@@ -1,6 +1,7 @@
-import { useParams } from "react-router-dom";
-import { getBlogEntry, useBlogEntry } from "../../store/blog";
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import ReactMarkdown from 'react-markdown';
+import { getBlogEntry, useBlogEntry } from "../../store/blog";
 import store from "../../store/store";
 
 export const BlogEntry = () => {
@@ -15,9 +16,7 @@ export const BlogEntry = () => {
 
   return (
     <div>
-      <h1>Blog Entry</h1>
-      <h2>{entry?.title}</h2>
-      <p>{entry?.content}</p>
+      <ReactMarkdown>{entry.content}</ReactMarkdown>
     </div>
   );
 }
