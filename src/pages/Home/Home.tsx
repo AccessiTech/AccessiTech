@@ -4,6 +4,8 @@ import SplashSocials from '../../components/SplashSocials/SplashSocials';
 import { SPLASH_BG } from '../../settings/strings';
 import Services from '../../components/Services/Services';
 import './Home.scss';
+import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
@@ -16,7 +18,7 @@ export const TAGLINE = "Accessibility for Design Technologists";
 export const VISION_P3 = "AccessiTech LLC is a social enterprise that aims to eliminate barriers for disabled design technologists and promote emergent technologies that improve accessibility, inclusion, and equity for all.";
 
 export const Home = () => {
-
+  const navigate = useNavigate();
   return (
     <>
     {/* Splash Row */}
@@ -39,6 +41,14 @@ export const Home = () => {
           <blockquote>
             <p>{(VISION_P3)}</p>
           </blockquote>
+          <Button
+            href="/blog"
+            variant="primary"
+            onClick={(e:any) => {
+              e.preventDefault();
+              navigate('/blog')
+            }}
+          >Check out the AccessiTech Blog to Learn More</Button>
         </Col>
       </Row>
 
