@@ -75,3 +75,12 @@ export const getMetaData = (text: string):{[key:string]:string} => {
   });
   return metaData;
 };
+
+export const getDDMMMYYYY = (date: string):string => {
+  const options:any = {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  };
+  return new Date(date).toLocaleDateString('en-UK', options);
+}

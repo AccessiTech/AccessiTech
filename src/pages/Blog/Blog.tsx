@@ -4,6 +4,7 @@ import { Breadcrumb, Col, Row } from "react-bootstrap";
 import { getBlogEntry, useBlogEntriesArray } from "../../store/blog";
 import store from "../../store/store";
 import './Blog.scss';
+import { getDDMMMYYYY } from "../../settings/utils";
 
 export const Blog = () => {
   const navigate = useNavigate();
@@ -52,7 +53,7 @@ export const Blog = () => {
               {blog.map((blog: any) => (
                 <article key={`blog-${blog.id}`} className="blog-entry">
                   <Link key={blog.id} to={`/blog/${blog.id}`}>
-                    <span>{blog.date}</span>
+                    <span>{getDDMMMYYYY(blog.date)}</span>
                     <h3>{blog.title}</h3>
                     <p>{blog.description}</p>
                   </Link>
