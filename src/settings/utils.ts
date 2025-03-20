@@ -53,3 +53,34 @@ export const useOutsideClick = (ref:any, callback:any) => {
   document.addEventListener("click", handleClick);
   return () => document.removeEventListener("click", handleClick);
 };
+
+export const getPageFromPath = (pathname: string):string => {
+  let newPage = pathname.replace('/', '') ? pathname.replace('/', '') : 'home';
+  if (newPage.indexOf('/') > -1) {
+    newPage = newPage.split('/')[0];
+  }
+  return newPage;
+}
+
+export const getMetaData = (text: string):{[key:string]:string} => {
+
+  const metaData:{[key:string]:string} = {};
+  const lines = text.split("\n");
+  lines.forEach((line) => {
+    const key = line.split(":")[0]?.replace("<!--", "").trim();
+    const value = line.split(":")[1]?.replace("-->", "").trim();
+    if (key && value) {
+      metaData[key] = value;
+    }
+  });
+  return metaData;
+};
+
+export const getDDMMMYYYY = (date: string):string => {
+  const options:any = {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  };
+  return new Date(date).toLocaleDateString('en-UK', options);
+}

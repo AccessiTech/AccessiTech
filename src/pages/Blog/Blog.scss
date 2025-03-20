@@ -1,0 +1,24 @@
+@import 'bootstrap/scss/bootstrap';
+
+.blog-page {
+  background-color: $yellow;
+}
+
+.blog-page,
+.blog-entry-page {
+  @include padding($alt-section-padding 0);
+  text-align: left;
+
+  a {
+    color: $darkBlue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline dotted $darkBlue;
+    }
+  }
+
+  .blog-entry {
+    @include margin(1.5rem 0);
+  }
+}
