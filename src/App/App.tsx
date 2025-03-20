@@ -9,26 +9,26 @@ import Header from "../components/Header/Header";
 export const App = () => {
 
   return (
-    <Container fluid className="App" aria-label={(APP_ROOT)}>
-      <Row>
-        <Col>
-          <Header />
-        </Col>
-      </Row>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Container fluid className="App" aria-label={(APP_ROOT)}>
+        <Row className="header-row">
+          <Col>
+            <Header />
+          </Col>
+        </Row>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogEntry />} />
         </Routes>
-      </BrowserRouter>
-      {/* Footer Row */}
-      <Row className="footer-row">
-        <Col>
-          <Footer />
-        </Col>
-      </Row>
-    </Container>
+        {/* Footer Row */}
+        <Row className="footer-row">
+          <Col>
+            <Footer />
+          </Col>
+        </Row>
+      </Container>
+    </BrowserRouter>
   )
 }
 
