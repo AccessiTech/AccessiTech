@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { SKIP_TO_MAIN_CONTENT } from '../../pages/Home/Home';
 import { IMAGES_URL } from '../../settings/env';
 import { COMPANY_TITLE, ROOT } from '../../settings/strings';
@@ -10,6 +10,7 @@ import { getPageFromPath } from '../../settings/utils';
 export const HEADER = 'Header';
 
 function Header() {
+  const navigate = useNavigate();
   const location = useLocation();
   const { pathname } = location;
   const [page, setPage] = useState(getPageFromPath(pathname));
@@ -28,6 +29,10 @@ function Header() {
       <a
         href={ROOT}
         title={COMPANY_TITLE}
+        onClick={(e: any) => {
+          e.preventDefault();
+          navigate(ROOT);
+        }}
       >
         <h1 className="logo-container" style={headerStyle}>{COMPANY_TITLE}</h1>
       </a>
