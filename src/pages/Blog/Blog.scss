@@ -17,4 +17,8 @@
       text-decoration: underline dotted $darkBlue;
     }
   }
+
+  .blog-entry {
+    @include margin(1.5rem 0);
+  }
 }

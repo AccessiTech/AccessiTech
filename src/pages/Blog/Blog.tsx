@@ -50,10 +50,11 @@ export const Blog = () => {
             <Col xs={12} md={{ span: 8, offset: 2 }}>
               <h2>Blog</h2>
               {blog.map((blog: any) => (
-                <article key={`blog-${blog.id}`}>
+                <article key={`blog-${blog.id}`} className="blog-entry">
                   <Link key={blog.id} to={`/blog/${blog.id}`}>
+                    <span>{blog.date}</span>
                     <h3>{blog.title}</h3>
-                    <p>{blog.date}</p>
+                    <p>{blog.description}</p>
                   </Link>
                 </article>
               ))}
