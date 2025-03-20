@@ -3,8 +3,8 @@ import { useSelector } from "react-redux";
 
 export const blogSliceName = "blog";
 
-export const GET_BLOGS = "GET_BLOGS";
 export const GET_BLOG = "GET_BLOG";
+export const GET_BLOG_ENTRY = "GET_BLOG_ENTRY";
 
 export enum BlogOrder {
   ASC = "asc",
@@ -27,7 +27,7 @@ export interface BlogState {
   entries: { [id: string]: Blog };
 }
 
-export const getBlog = createAsyncThunk(GET_BLOGS, async () => {
+export const getBlog = createAsyncThunk(GET_BLOG, async () => {
   const response = await fetch("/rss.xml");
   if (!response.ok) {
     throw new Error("Failed to fetch blogs");
@@ -56,16 +56,17 @@ export const getBlog = createAsyncThunk(GET_BLOGS, async () => {
   return blogs;
 });
 
-export const getBlogEntry = createAsyncThunk(GET_BLOG, async (id: string) => {
+export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (id: string) => {
   const response = await fetch(`/blog/${id}.md`);
   if (!response.ok) {
     throw new Error("Failed to fetch blog");
   }
   const text = await response.text();
+  const title = text.split("\n")[0].replace("# ", "");
   return {
     loaded: true,
     id,
-    title: id,
+    title,
     content: text,
   } as Blog;
 });
