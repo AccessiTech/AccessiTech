@@ -1,8 +1,12 @@
 @import 'bootstrap/scss/bootstrap';
 
 .blog-page {
-  @include padding(2rem 0);
   background-color: $yellow;
+}
+
+.blog-page,
+.blog-entry-page {
+  @include padding($alt-section-padding 0);
   text-align: left;
 
   a {
