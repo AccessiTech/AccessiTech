@@ -14,7 +14,7 @@ export const Blog = () => {
     fetch("/rss.xml")
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Failed to fetch blogs");
+          throw new Error("Failed to fetch rss.xml");
         }
         return response.text();
       })
@@ -31,6 +31,10 @@ export const Blog = () => {
           store.dispatch(getBlogEntry({id, navigate}));
         })
       })
+      .catch((e) => {
+        console.error(e);
+        navigate("/");
+      });
   }, []);
 
   return (
