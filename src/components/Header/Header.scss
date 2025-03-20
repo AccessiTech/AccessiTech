@@ -1,21 +1,20 @@
 @import "bootstrap/scss/bootstrap.scss";
 
 .main-header {
-  position: relative;
+  position: absolute;
   z-index: 5;
+  width: 100%;
+
+  .simplified-view & {
+    position: relative;
+  }
   
   h1 {
     color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
-    // background-position-x: calc(50% + 1rem);
     position: relative;
-    left: 1rem;
-
-    .simplified-view & {
-      left: auto;
-    }
   }
 
   a {

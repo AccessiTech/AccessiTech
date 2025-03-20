@@ -1,8 +1,5 @@
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 import SplashSocials from '../../components/SplashSocials/SplashSocials';
 import { SPLASH_BG } from '../../settings/strings';
 import Services from '../../components/Services/Services';
@@ -21,15 +18,14 @@ export const VISION_P3 = "AccessiTech LLC is a social enterprise that aims to el
 export const Home = () => {
 
   return (
-  <Container fluid className="App" aria-label={(APP_ROOT)}>
-    <a className="skip-link" href="#main">{(SKIP_TO_MAIN_CONTENT)}</a>
+    <>
     {/* Splash Row */}
     <Row
       className="splash-row"
       style={splashRowStyle}
     >
       <Col>
-        <Header />
+        {/* <Header /> */}
         <h2>{(TAGLINE)}</h2>
         <SplashSocials />
       </Col>
@@ -49,15 +45,7 @@ export const Home = () => {
       <Services />
 
     </main>
-    
-
-    {/* Footer Row */}
-    <Row className="footer-row">
-      <Col>
-        <Footer />
-      </Col>
-    </Row>
-  </Container>
+  </>
 );
 }
 
