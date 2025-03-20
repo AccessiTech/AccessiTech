@@ -1,9 +1,24 @@
 @import "bootstrap/scss/bootstrap.scss";
 
+.header-row {
+  .col {
+    @include padding(0);
+  }
+}
+
 .main-header {
   position: absolute;
   z-index: 5;
   width: 100%;
+
+  &.blog {
+    position: relative;
+    background-color: $darkBlue;
+    
+    a {
+      margin-top: 0;
+    }
+  }
 
   .simplified-view & {
     position: relative;
