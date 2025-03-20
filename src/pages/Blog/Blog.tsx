@@ -25,6 +25,9 @@ export const Blog = () => {
         const parser = new DOMParser();
         const xml = parser.parseFromString(text, "text/xml");
         const items = xml.querySelectorAll("item");
+        if (!items || !items.length) {
+          throw new Error("Failed to load blogs");
+        }
         items.forEach((item) => {
           const link = item.querySelector("link")?.textContent || "";
           const id = link.split("/").pop()?.replace(".md", "") || "";
