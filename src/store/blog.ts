@@ -39,9 +39,9 @@ export const getBlog = createAsyncThunk(GET_BLOG, async () => {
   const parser = new DOMParser();
   const xml = parser.parseFromString(text, "text/xml");
   const items = xml.querySelectorAll("item");
-  const blogs: { [id: string]: Blog } = {};
   items.forEach((item) => {
     const title = item.querySelector("title")?.textContent || "";
+  const blog: { [id: string]: Blog } = {};
     const link = item.querySelector("link")?.textContent || "";
     const id = link.split("/").pop()?.replace(".md", "") || "";
     const date = item.querySelector("pubDate")?.textContent || "";
@@ -53,7 +53,7 @@ export const getBlog = createAsyncThunk(GET_BLOG, async () => {
       date,
     };
   });
-  return blogs;
+  return blog;
 });
 
 export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (id: string) => {
