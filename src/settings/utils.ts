@@ -61,3 +61,17 @@ export const getPageFromPath = (pathname: string):string => {
   }
   return newPage;
 }
+
+export const getMetaData = (text: string):{[key:string]:string} => {
+
+  const metaData:{[key:string]:string} = {};
+  const lines = text.split("\n");
+  lines.forEach((line) => {
+    const key = line.split(":")[0]?.replace("<!--", "").trim();
+    const value = line.split(":")[1]?.replace("-->", "").trim();
+    if (key && value) {
+      metaData[key] = value;
+    }
+  });
+  return metaData;
+};
