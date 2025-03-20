@@ -53,3 +53,11 @@ export const useOutsideClick = (ref:any, callback:any) => {
   document.addEventListener("click", handleClick);
   return () => document.removeEventListener("click", handleClick);
 };
+
+export const getPageFromPath = (pathname: string):string => {
+  let newPage = pathname.replace('/', '') ? pathname.replace('/', '') : 'home';
+  if (newPage.indexOf('/') > -1) {
+    newPage = newPage.split('/')[0];
+  }
+  return newPage;
+}
