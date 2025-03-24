@@ -3,7 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const getMetaData = (text) => {
+export const getMetaData = (text) => {
   const metaData = {};
   const lines = text.split("\n");
   lines.forEach((line) => {
