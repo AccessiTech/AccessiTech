@@ -1,12 +1,16 @@
 {
   "name": "@accessitech/homepage",
   "private": false,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "start": "yarn dev",
-    "build": "tsc && vite build && cp docs/index.html docs/404.html && cp CNAME docs/CNAME",
+    "rss": "node ./scripts/rss.js",
+    "sitemap": "node ./scripts/sitemap.js",
+    "pre:build": "yarn rss && yarn sitemap && tsc",
+    "build": "yarn pre:build && vite build && yarn post:build",
+    "post:build": "cp docs/index.html docs/404.html && cp CNAME docs/CNAME",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -15,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
     "react-redux": "^8.1.2",
     "react-router-dom": "^6.15.0",
     "react-social-icons": "^6.22.0",

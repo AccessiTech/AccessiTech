@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>AccessiTech Blog</title>
+    <link>https://accessi.tech/blog</link>
+    <description>My Blog</description>
+    
+        <item>
+          <title>Building a More Accessible Future Through Design and Technology</title>
+          <link>https://accessi.tech/blog/Building-a-More-Accessible-Future-Through-Design-and-Technology</link>
+          <pubDate>2025-03-24</pubDate>
+          <description>Conor, founder of AccessiTech LLC and a disability advocate, shares how lived experience with Psoriatic Arthritis drives his mission to make tech inclusive. Offering audits, mentorship, and open-source tools, he bridges the gap between accessibility theory and real-world solutions. Join the movement for a web that works for all.</description>
+          <category>Disability Advocacy</category><category>Web Accessibility</category>
+          <enclosure url="/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png" type="image/jpeg" length="1234" />
+          <media:content url="/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Dark blue text on yellow background saying, Building a More Accessible Future Through Design and Technology</media:description>
+          <media:thumbnail url="/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+  </channel>
+</rss>
