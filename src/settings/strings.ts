@@ -35,3 +35,19 @@ export const GITHUB_ORG_URL = "https://github.com/AccessiTech";
 export const GITHUB_ISSUES_URL = "https://github.com/AccessiTech/AccessiTech/issues";
 export const GITHUB_DISCUSSIONS_URL = "https://github.com/AccessiTech/AccessiTech/discussions/33";
 export const TWITCH_URL = "https://www.twitch.tv/accessitech";
+export const HOME_URL = "https://accessi.tech";
+export const IMAGES_BASE_URL = HOME_URL + "/assets/images";
+
+// Helmet Strings
+export const HOME_TITLE = "Home";
+export const HOME_DESCRIPTION =
+  "AccessiTech LLC provides accessibility auditing, consulting, training, and content creation services for design technologists, while producing open-source content and tools for the community.";
+export const HOME_CANONICAL = HOME_URL + "/";
+export const BLOG_TITLE = "Blog";
+export const BLOG_DESCRIPTION =
+  "Explore actionable guides, policy breakdowns, and lived-experience stories from Conor—a developer and accessibility advocate with Psoriatic Arthritis. Whether you need WCAG compliance tips, assistive tech reviews, or inclusive design strategies, this blog translates accessibility theory into real-world solutions. Join the movement to build digital spaces that work for every body.";
+export const BLOG_CANONICAL = HOME_URL + "/blog";
+
+export const DEFAULT_SHARE_IMAGE = 'https://www.accessi.tech/assets/images/default.png';
+export const DEFAULT_SHARE_IMAGE_ALT = 'Yellow text on gradient background saying, AccessiTech';
+export const OG_TYPE = 'website';
