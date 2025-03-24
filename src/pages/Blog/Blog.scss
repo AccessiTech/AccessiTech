@@ -4,6 +4,10 @@
 .blog-page {
   background-color: $yellow;
   @include padding($alt-section-padding 0);
+
+  .breadcrumb-row {
+    background-color: $yellow;
+  }
 }
 
 .blog-page,
