@@ -3,11 +3,11 @@
 
 .blog-page {
   background-color: $yellow;
+  @include padding($alt-section-padding 0);
 }
 
 .blog-page,
 .blog-entry-page {
-  @include padding($alt-section-padding 0);
   text-align: left;
 
   a {
@@ -37,7 +37,8 @@
     font-weight: bold;
     text-decoration: underline dotted $pink;
 
-    &:hover {
+    &:hover,
+    &:visited {
       color: $pink;
       text-decoration: underline dotted $pink;
     }

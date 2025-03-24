@@ -42,8 +42,8 @@ export const Blog = () => {
       });
   }, []);
 
-  return (
-    <Row className="content-row">
+  return (<>
+    <Row className="breadcrumb-row">
       <Helmet>
         <title>{`${BLOG_TITLE} | ${ACCESSITECH}`}</title>
         <meta name="description" content={BLOG_DESCRIPTION}/>
@@ -54,16 +54,17 @@ export const Blog = () => {
         <meta name="twitter:title" content={BLOG_TITLE} />
         <meta name="twitter:description" content={BLOG_DESCRIPTION} />
       </Helmet>
-      <nav className="offset-md-2 breadcrumb-container">
-        <Breadcrumb >
+      <Col className="offset-md-2">
+        <Breadcrumb className="breadcrumb-container">
           <Breadcrumb.Item href="/" onClick={(e: any) => {
             e.preventDefault();
             navigate('/')
           }}>Home</Breadcrumb.Item>
           <Breadcrumb.Item active>Blog</Breadcrumb.Item>
         </Breadcrumb>
-      </nav>
-
+      </Col>
+    </Row>
+    <Row className="content-row">
       <main id='main' aria-label="Blog" className="blog-page">
         <Col>
           <Row>
@@ -83,7 +84,7 @@ export const Blog = () => {
         </Col>
       </main>
     </Row>
-  );
+  </>);
 }
 
 export default Blog;

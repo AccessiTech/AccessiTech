@@ -14,12 +14,12 @@ export const BlogEntry = () => {
 
   useEffect(() => {
     if (!entry?.loaded) {
-      store.dispatch(getBlogEntry({id, navigate}));
+      store.dispatch(getBlogEntry({ id, navigate }));
     }
   }, [id, entry, navigate]);
 
-  return (
-    <Row className="content-row">
+  return (<>
+    <Row className="breadcrumb-row">
       <Helmet>
         <title>{`${entry?.title} | ${ACCESSITECH}`}</title>
         <meta name="description" content={entry?.description} />
@@ -34,8 +34,8 @@ export const BlogEntry = () => {
         {entry?.image && <meta name="twitter:image" content={`${IMAGES_BASE_URL}/${entry.image}`} />}
         {entry?.image && <meta name="twitter:image:alt" content={entry.image_alt} />}
       </Helmet>
-      <nav className="offset-md-2 breadcrumb-container">
-        <Breadcrumb>
+      <Col className="offset-md-2">
+        <Breadcrumb className="breadcrumb-container">
           <Breadcrumb.Item href="/" onClick={(e: any) => {
             e.preventDefault();
             navigate('/')
@@ -46,8 +46,9 @@ export const BlogEntry = () => {
           }}>Blog</Breadcrumb.Item>
           <Breadcrumb.Item active>{entry?.title}</Breadcrumb.Item>
         </Breadcrumb>
-      </nav>
-
+      </Col>
+    </Row>
+    <Row className="content-row">
       <main id='main' aria-label="Blog Entry" className="blog-entry-page">
         <Col>
           <Row>
@@ -62,7 +63,7 @@ export const BlogEntry = () => {
         </Col>
       </main>
     </Row>
-  );
+  </>);
 }
 
 export default BlogEntry;

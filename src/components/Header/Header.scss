@@ -15,7 +15,7 @@
     position: relative;
     background-color: $darkBlue;
     
-    a {
+    a.logo-link {
       margin-top: 0;
     }
   }
@@ -30,9 +30,13 @@
     background-repeat: no-repeat;
     background-position-y: center;
     position: relative;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+      font-size: 1.5rem;
+    }
   }
 
-  a {
+  a.logo-link {
     display: inline-block;
     @include padding(1rem);
     margin-top: 36vh;

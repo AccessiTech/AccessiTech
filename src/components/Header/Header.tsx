@@ -29,6 +29,7 @@ function Header() {
       <a
         href={ROOT}
         title={COMPANY_TITLE}
+        className='logo-link'
         onClick={(e: any) => {
           e.preventDefault();
           navigate(ROOT);
