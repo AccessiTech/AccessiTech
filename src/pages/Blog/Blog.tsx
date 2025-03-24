@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Breadcrumb, Col, Row } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import { getBlogEntry, useBlogEntriesArray } from "../../store/blog";
 import store from "../../store/store";
 import './Blog.scss';
 import { getDDMMMYYYY } from "../../settings/utils";
+import { ACCESSITECH, BLOG_CANONICAL, BLOG_DESCRIPTION, BLOG_TITLE } from "../../settings/strings";
 
 export const Blog = () => {
   const navigate = useNavigate();
@@ -42,6 +44,16 @@ export const Blog = () => {
 
   return (
     <Row className="content-row">
+      <Helmet>
+        <title>{`${BLOG_TITLE} | ${ACCESSITECH}`}</title>
+        <meta name="description" content={BLOG_DESCRIPTION}/>
+        <link rel="canonical" href={BLOG_CANONICAL} />
+        <meta property="og:title" content={BLOG_TITLE} />
+        <meta property="og:description" content={BLOG_DESCRIPTION} />
+        <meta property="og:url" content={BLOG_CANONICAL} />
+        <meta name="twitter:title" content={BLOG_TITLE} />
+        <meta name="twitter:description" content={BLOG_DESCRIPTION} />
+      </Helmet>
       <nav className="offset-md-2 breadcrumb-container">
         <Breadcrumb >
           <Breadcrumb.Item href="/" onClick={(e: any) => {

@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
+import { Helmet } from "react-helmet";
 import { getBlogEntry, useBlogEntry } from "../../store/blog";
 import store from "../../store/store";
 import { Row, Col, Breadcrumb } from "react-bootstrap";
+import { ACCESSITECH, BLOG_CANONICAL, IMAGES_BASE_URL } from "../../settings/strings";
 
 export const BlogEntry = () => {
   const navigate = useNavigate();
@@ -18,6 +20,20 @@ export const BlogEntry = () => {
 
   return (
     <Row className="content-row">
+      <Helmet>
+        <title>{`${entry?.title} | ${ACCESSITECH}`}</title>
+        <meta name="description" content={entry?.description} />
+        <link rel="canonical" href={`${BLOG_CANONICAL}/${id}`} />
+        <meta property="og:title" content={entry?.title} />
+        <meta property="og:description" content={entry?.description} />
+        <meta property="og:url" content={`${BLOG_CANONICAL}/${id}`} />
+        {entry?.image && <meta property="og:image" content={`${IMAGES_BASE_URL}/${entry.image}`} />}
+        {entry?.image && <meta property="og:image:alt" content={entry.image_alt} />}
+        <meta name="twitter:title" content={entry?.title} />
+        <meta name="twitter:description" content={entry?.description} />
+        {entry?.image && <meta name="twitter:image" content={`${IMAGES_BASE_URL}/${entry.image}`} />}
+        {entry?.image && <meta name="twitter:image:alt" content={entry.image_alt} />}
+      </Helmet>
       <nav className="offset-md-2 breadcrumb-container">
         <Breadcrumb>
           <Breadcrumb.Item href="/" onClick={(e: any) => {

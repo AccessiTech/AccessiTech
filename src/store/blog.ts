@@ -21,6 +21,8 @@ export interface Blog {
   content: string;
   date: string;
   description?: string;
+  image?: string;
+  image_alt?: string;
 }
 
 export interface BlogState {
@@ -57,6 +59,8 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
   const description = metaData["description"] || "";
   const content = Object.keys(metaData).length ? text.substring(text.indexOf("-->") + 3, text.length) : text;
   const title = metaData["title"] || content.split("\n")[0].replace("# ", "");
+  const image = metaData["image"] || "";
+  const image_alt = metaData["image_alt"] || "";
 
   return {
     loaded: true,
@@ -65,6 +69,8 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
     content,
     date,
     description,
+    image,
+    image_alt,
   } as Blog;
 });
 
