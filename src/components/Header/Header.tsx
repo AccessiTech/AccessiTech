@@ -1,4 +1,4 @@
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { SKIP_TO_MAIN_CONTENT } from '../../pages/Home/Home';
 import { IMAGES_URL } from '../../settings/env';
 import { COMPANY_TITLE, ROOT } from '../../settings/strings';
