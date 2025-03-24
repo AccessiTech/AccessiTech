@@ -35,7 +35,7 @@ function readCNAME(filePath) {
     const filePath = path.join(blogDir, file);
     const fileContent = fs.readFileSync(filePath, { encoding: "utf-8" });
     const fileMetaData = getMetaData(fileContent);
-    const link = `https://${url}/blog/${file}`.replace(".md", "");
+    const link = `/blog/${file}`.replace(".md", "");
     const { date } = fileMetaData;
     pages.push({
       url: link,

@@ -53,7 +53,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8" ?>
           ${categories
             ?.split(",")
             ?.map((category) => `<category>${category.trim()}</category>`)
-            .join("/n")}
+            .join("")}
           <enclosure url="${imageURI}" type="image/jpeg" length="1234" />
           <media:content url="${imageURI}" type="image/jpeg" medium="image" width="300" height="200" />
           <media:description type="plain">${altText}</media:description>
