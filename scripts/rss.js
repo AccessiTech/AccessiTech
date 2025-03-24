@@ -20,28 +20,49 @@ const blogDir = path.join(process.cwd(), 'public/blog');
 const blogFiles = fs.readdirSync(blogDir);
 
 const rss = `<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>AccessiTech Blog</title>
     <link>https://accessi.tech/blog</link>
     <description>My Blog</description>
-    ${blogFiles.map(file => {
-      const filePath = path.join(blogDir, file);
-      const fileContent =
-        fs.readFileSync(filePath, { encoding: 'utf-8' });
-        const link = `https://accessi.tech/blog/${file}`.replace('.md', '');
-      const fileMetaData = getMetaData(fileContent);
-      const { title, date, description } = fileMetaData;
-      return `
+    ${blogFiles
+      .map((file) => {
+        const filePath = path.join(blogDir, file);
+        const fileContent = fs.readFileSync(filePath, { encoding: "utf-8" });
+        const link = `https://accessi.tech/blog/${file}`.replace(".md", "");
+        const fileMetaData = getMetaData(fileContent);
+        const {
+          title,
+          date,
+          description,
+          categories,
+          image,
+          image_alt,
+          image_copyright,
+        } = fileMetaData;
+        const imageURI = `/assets/images/${image || "default.png"}`;
+        const altText =
+          image_alt || "Yellow text on gradient background saying, AccessiTech";
+
+        return `
         <item>
           <title>${title}</title>
           <link>${link}</link>
           <pubDate>${date}</pubDate>
           <description>${description}</description>
+          ${categories
+            ?.split(",")
+            ?.map((category) => `<category>${category.trim()}</category>`)
+            .join("/n")}
+          <enclosure url="${imageURI}" type="image/jpeg" length="1234" />
+          <media:content url="${imageURI}" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">${altText}</media:description>
+          <media:thumbnail url="${imageURI}" />
+          <media:credit>${image_copyright || "AccessiTech LLC"}</media:credit>
         </item>
       `;
-    }
-    ).join('')}
+      })
+      .join("")}
   </channel>
 </rss>`;
 fs.writeFileSync(path.join(process.cwd(), 'public/rss.xml'), rss);
