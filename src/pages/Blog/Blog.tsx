@@ -43,7 +43,7 @@ export const Blog = () => {
   }, []);
 
   return (<>
-    <Row className="breadcrumb-row">
+    <Row className="breadcrumb-row blog">
       <Helmet>
         <title>{`${BLOG_TITLE} | ${ACCESSITECH}`}</title>
         <meta name="description" content={BLOG_DESCRIPTION}/>

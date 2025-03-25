@@ -3,15 +3,14 @@
 
 .blog-page {
   background-color: $yellow;
-  @include padding($alt-section-padding 0);
-
-  .breadcrumb-row {
-    background-color: $yellow;
-  }
+}
+.blog.breadcrumb-row {
+  background-color: $yellow;
 }
 
 .blog-page,
 .blog-entry-page {
+  @include padding(0 0 $alt-section-padding);
   text-align: left;
 
   a {
