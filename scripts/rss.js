@@ -16,7 +16,7 @@ export const getMetaData = (text) => {
   return metaData;
 };
 
-const blogDir = path.join(process.cwd(), 'public/blog');
+const blogDir = path.join(process.cwd(), 'public/data/blog');
 const blogFiles = fs.readdirSync(blogDir);
 
 const rss = `<?xml version="1.0" encoding="UTF-8" ?>

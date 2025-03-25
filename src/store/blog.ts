@@ -37,7 +37,7 @@ export interface GetBlogEntryPayload {
 export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
   { id, navigate }: GetBlogEntryPayload
 ) => {
-  const response = await fetch(`/blog/${id}.md`)
+  const response = await fetch(`/data/blog/${id}.md`)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Failed to fetch blog");

@@ -29,7 +29,7 @@ function readCNAME(filePath) {
       priority: 0.9,
     },
   ];
-  const blogDir = path.join(process.cwd(), "public/blog");
+  const blogDir = path.join(process.cwd(), "public/data/blog");
   const blogFiles = fs.readdirSync(blogDir);
   blogFiles.forEach((file) => {
     const filePath = path.join(blogDir, file);
