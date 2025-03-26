@@ -1,13 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import { StaticRouter } from "react-router-dom/server";
-import { Helmet } from "react-helmet";
 import { APP_ROOT, Home } from "../pages/Home/Home";
 import Blog from "../pages/Blog/Blog";
 import BlogEntry from "../pages/BlogEntry/BlogEntry";
 import { Container, Row, Col } from "react-bootstrap";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import { ACCESSITECH, COMPANY_TITLE, DEFAULT_SHARE_IMAGE, DEFAULT_SHARE_IMAGE_ALT, HOME_CANONICAL, HOME_DESCRIPTION, HOME_TITLE, OG_TYPE } from "../settings/strings";
+// import { ACCESSITECH, COMPANY_TITLE, DEFAULT_SHARE_IMAGE, DEFAULT_SHARE_IMAGE_ALT, HOME_CANONICAL, HOME_DESCRIPTION, HOME_TITLE, OG_TYPE } from "../settings/strings";
 
 export interface AppProps {
   path: string;
@@ -17,7 +16,7 @@ export const App = (props: AppProps) => {
 
   return (
     <StaticRouter location={props.path}>
-      <Helmet>
+      {/* <Helmet>
         <title>{`${ACCESSITECH} | ${HOME_TITLE}`}</title>
         <meta name="description" content={HOME_DESCRIPTION} />
         <link rel="canonical" href={HOME_CANONICAL} />
@@ -35,7 +34,7 @@ export const App = (props: AppProps) => {
         <meta name="twitter:description" content={HOME_DESCRIPTION} />
         <meta name="twitter:image" content={DEFAULT_SHARE_IMAGE} />
         <meta name="twitter:image:alt" content={DEFAULT_SHARE_IMAGE_ALT} />
-      </Helmet>
+      </Helmet> */}
       <Container fluid className="App" aria-label={(APP_ROOT)}>
         <Row className="header-row">
           <Col>
