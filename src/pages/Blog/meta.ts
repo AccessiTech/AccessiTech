@@ -9,3 +9,5 @@ export const metadata = {
   image: DEFAULT_SHARE_IMAGE,
   imageAlt: DEFAULT_SHARE_IMAGE_ALT,
 };
+
+export default metadata;

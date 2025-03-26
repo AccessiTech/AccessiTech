@@ -9,3 +9,5 @@ export const metadata = {
   siteName: COMPANY_TITLE,
   twitterCreator: "@accessiT3ch",
 };
+
+export default metadata;
