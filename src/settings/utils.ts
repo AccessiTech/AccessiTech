@@ -44,6 +44,7 @@ export const useWindowSize = ():number[] => {
 };
 
 export const useOutsideClick = (ref:any, callback:any) => {
+  if (typeof document === "undefined") return;
   const handleClick = (e:any) => {
     if (ref.current && !ref.current.contains(e.target)) {
       callback(e);

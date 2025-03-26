@@ -37,14 +37,14 @@ function A11Y() {
   const onA11yToggle = (e:any) => {
     e.preventDefault();
     if (isA11yOpen) {
-      removeEventListener();
+      if (removeEventListener) removeEventListener();
     }
     store.dispatch(toggleA11y());
   };
 
   const onEscapeKey = (e:any) => {
     if (e.key === ESCAPE && isA11yOpen) {
-      removeEventListener();
+      if (removeEventListener) removeEventListener();
       store.dispatch(toggleA11y());
     }
   };
