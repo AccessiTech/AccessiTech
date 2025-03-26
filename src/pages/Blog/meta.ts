@@ -1,3 +1,5 @@
+import { BLOG_TITLE, BLOG_DESCRIPTION, BLOG_CANONICAL, ACCESSITECH, DEFAULT_SHARE_IMAGE, DEFAULT_SHARE_IMAGE_ALT } from "../../settings/strings";
+
 export const metadata = {
   title: `${BLOG_TITLE} | ${ACCESSITECH}`,
   description: BLOG_DESCRIPTION,
