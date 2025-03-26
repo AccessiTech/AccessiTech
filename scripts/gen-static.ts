@@ -1,5 +1,5 @@
 import { createServer } from "vite";
-import reactPlugin from "@vitejs/plugin-react";
+import reactPlugin from "@vitejs/plugin-react-swc";
 import path from "node:path";
 import fs from "node:fs";
 
