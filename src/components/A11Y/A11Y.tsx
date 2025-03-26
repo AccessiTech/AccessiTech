@@ -3,7 +3,7 @@ import { useRef, useEffect } from 'react';
 import store from '../../store/store';
 import './a11y.scss';
 import { FontOptions } from '../FontOptions/FontOptions';
-import { toggleA11y, toggleSimplified, useIsA11yOpen, useIsSimplified } from '../../store/a11y.ts';
+import { toggleA11y, toggleSimplified, useIsA11yOpen, useIsSimplified } from '../../store/a11y';
 import { useOutsideClick } from '../../settings/utils';
 import { BODY, ESCAPE } from '../../settings/strings';
 

@@ -1,8 +1,8 @@
 // import ReactDOMServer from 'react-dom/server'
 import { Provider } from 'react-redux'
-import App from './App/AppServer.tsx'
+import App from './App/AppServer'
 import './scss/index.scss'
-import { store } from './store/store.ts'
+import { store } from './store/store'
 
 console.log('Hello from server.tsx')
 
