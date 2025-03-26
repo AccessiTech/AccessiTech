@@ -100,9 +100,9 @@ export async function genStatic({ config, urls }) {
     console.log("METADATA", metadata);
 
     // parse the index.html head into an array of strings
-    const headString = indexHtmlContent.match(/<head>[\s\S]*<\/head>/)[0];
+    // const headString = (indexHtmlContent.match(/<head>[\s\S]*<\/head>/) || [])[0];
     // split head string by each tag
-    const head = headString.split(/(?=<\/?[^>]+>)/);
+    // const head = headString?.split(/(?=<\/?[^>]+>)/);
     // console.log("HEAD", head);
     // update the index.html head with new metadata tags
     // const urlHtmlContent = indexHtmlContent.replace(
