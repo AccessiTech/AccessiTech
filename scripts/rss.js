@@ -37,12 +37,12 @@ const rss = `<?xml version="1.0" encoding="UTF-8" ?>
           description,
           categories,
           image,
-          image_alt,
+          imageAlt,
           image_copyright,
         } = fileMetaData;
         const imageURI = `/assets/images/${image || "default.png"}`;
         const altText =
-          image_alt || "Yellow text on gradient background saying, AccessiTech";
+          imageAlt || "Yellow text on gradient background saying, AccessiTech";
 
         return `
         <item>
