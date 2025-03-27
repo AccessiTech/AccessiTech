@@ -4,9 +4,37 @@ import path from "node:path";
 import fs from "node:fs";
 
 import { XMLParser } from "fast-xml-parser";
-import { getMetaData } from "./rss.js";
 
-export const CONFIG = {
+export const getMetaData = (text: string): { [key: string]: string } => {
+  const metaData = {};
+  const lines = text.split("\n");
+  lines.forEach((line) => {
+    const key = line.split(":")[0]?.replace("<!--", "").trim();
+    const value = line.split(":")[1]?.replace("-->", "").trim();
+    if (key && value) {
+      metaData[key] = value;
+    }
+  });
+  return metaData;
+};
+
+export interface ConfigProps {
+  urlSrc: string;
+  dest: string;
+  staticPaths: string[];
+  staticMetaData: string[];
+  pathsBuilder: (items: any[]) => string[];
+  viteServer: {
+    root: string;
+    plugins: any[];
+    server: { middlewareMode: boolean };
+    appType: string;
+  };
+  ssrEntry: string;
+}
+
+// todo: move this to a config file
+export const CONFIG: ConfigProps = {
   urlSrc: "public/rss.xml",
   dest: "docs",
   staticPaths: ["/", "/blog"],
@@ -28,37 +56,44 @@ export const CONFIG = {
   ...process.argv,
 };
 
-export async function genUrls(config) {
-  const RSS = fs.readFileSync(path.resolve(process.cwd(), config.urlSrc), "utf-8");
+// todo: make this configurable
+export async function genUrls(config: ConfigProps) {
+  const RSS = fs.readFileSync(
+    path.resolve(process.cwd(), config.urlSrc),
+    "utf-8"
+  );
   const parser = new XMLParser();
   const rssOjb = parser.parse(RSS);
   const items = rssOjb.rss.channel.item?.length
     ? rssOjb.rss.channel.item
     : [rssOjb.rss.channel.item];
 
-  // const xml = parser.parseFromString(RSS, "text/xml");
-  // const items = xml.querySelectorAll("item");
   const urls = config.staticPaths?.concat(config.pathsBuilder(items)) || [];
-
   return { config, urls };
 }
 
 export async function genStatic({ config, urls }) {
+  // create the Vite server
   const vite = await createServer(config.viteServer).catch((err) => {
     console.error(err);
     throw new Error(err);
   });
   console.log("Vite server created");
 
+  // generate the static pages
   const vitePromises = urls.map(async (url, index) => {
-    console.log("Vite module loading for ", url);
-    const { render } = await vite
+    // load the server entry for the page
+    const { render, renderMetadata } = await vite
       .ssrLoadModule(path.resolve(process.cwd(), config.ssrEntry))
       .catch((err) => {
         console.error(err);
         throw new Error(err);
       });
-    const toBuildPath = (pathPart) => path.join(path.resolve(process.cwd(), config.dest), pathPart);
+    console.log("Vite loaded module  for ", url);
+
+    // load the index.html and render the App
+    const toBuildPath = (pathPart) =>
+      path.join(path.resolve(process.cwd(), config.dest), pathPart);
     const indexHtmlContent = fs
       .readFileSync(toBuildPath("index.html"))
       .toString();
@@ -80,12 +115,14 @@ export async function genStatic({ config, urls }) {
     let metadata;
     const isStatic = typeof config.staticMetaData[index] !== "undefined";
     if (isStatic) {
+      // load the metadata from the static ts file
       const metadataPath = path.resolve(
         process.cwd(),
         config.staticMetaData[index]
       );
       metadata = (await import(metadataPath)).default;
     } else {
+      // load the metadata from the blog post markdown file
       const fileContent = fs.readFileSync(
         path.resolve(
           process.cwd(),
@@ -97,24 +134,83 @@ export async function genStatic({ config, urls }) {
       metadata = getMetaData(fileContent);
     }
 
-    console.log("METADATA", metadata);
+    // define the existing head content of index.html
+    const headEnd = "</head>";
+    const headEndIndex = urlHtmlContent.indexOf(headEnd);
+    const headString = urlHtmlContent.slice(0, headEndIndex).replace(/\n/g, "");
 
-    // parse the index.html head into an array of strings
-    // const headString = (indexHtmlContent.match(/<head>[\s\S]*<\/head>/) || [])[0];
-    // split head string by each tag
-    // const head = headString?.split(/(?=<\/?[^>]+>)/);
-    // console.log("HEAD", head);
-    // update the index.html head with new metadata tags
-    // const urlHtmlContent = indexHtmlContent.replace(
-    //   '<head>',
+    const headStrings = headString
+      .replace(/(?<=>)\s+(?=<)/g, "")
+      .replace(/></g, ">^<")
+      .split("^");
 
+    // render the metadata to a string
+    const metadataString = (await renderMetadata(metadata))
+      .replace("<div>", "")
+      .replace("</div>", "");
+
+    // parse the metadata string into a library
+    const metaTagStrings = metadataString.replace(/></g, ">^<").split("^");
+    const metaTagLib = metaTagStrings.reduce((acc, metaTag) => {
+      if (!metaTag) return acc;
+      const tagType = (metaTag.match(/<(\w+)/) || [])[1];
+      if (tagType === "title") {
+        return { ...acc, title: metaTag };
+      }
+      if (tagType === "link") {
+        return { ...acc, canonical: metaTag };
+      }
+      const tagProperty = (metaTag.match(/(\w+)=/) || [])[1];
+      const tagPropertyValue = (metaTag.match(/"([^"]+)"/) || [])[1];
+      if (!tagProperty || !tagPropertyValue) return acc;
+      return { ...acc, [tagPropertyValue]: metaTag };
+    }, {});
+
+    // Merge new metadata tags onto existing head metadata
+    const newHeadStrings: string[] = [];
+    for (const line of headStrings) {
+      if (line.includes("<title>")) {
+        newHeadStrings.push(metaTagLib.title);
+      } else if (line.includes(`<link rel="canonical"`)) {
+        newHeadStrings.push(metaTagLib.canonical);
+      } else if (line.includes("<meta")) {
+        const tagProperty = (line.match(/(\w+)=/) || [])[1];
+        const tagPropertyValue = (line.match(/"([^"]+)"/) || [])[1];
+        if (!tagProperty || !tagPropertyValue) {
+          newHeadStrings.push(line);
+          continue;
+        }
+        const newTag = metaTagLib[tagPropertyValue];
+        newHeadStrings.push(newTag || line);
+      } else {
+        newHeadStrings.push(line);
+      }
+    }
+
+    // determine which meta tags are not in newHeadStrings and add them to the end
+    const unusedMetaTags = Object.keys(metaTagLib).filter(
+      (key) => !newHeadStrings.join("").includes(key)
+    );
+    for (const key of unusedMetaTags) {
+      newHeadStrings.push(metaTagLib[key]);
+    }
+
+    // rejoin the head strings and the rest of the html content
+    const newHeadString = newHeadStrings.join("");
+    const urlHtmlContentWithMetadata = `${newHeadString}${urlHtmlContent.slice(
+      headEndIndex
+    )}`;
+
+    // write the new html content to the build directory
     if (!fs.existsSync(toBuildPath(url))) {
       fs.mkdirSync(toBuildPath(url));
     }
-    fs.writeFileSync(toBuildPath(url + ".html"), urlHtmlContent);
+    fs.writeFileSync(toBuildPath(url + ".html"), urlHtmlContentWithMetadata);
+
     console.log(`Static page generated for ${url}`);
   });
 
+  // Execute all the promises and close the Vite server
   Promise.all(vitePromises)
     .then(() => {
       console.log("All static pages generated");
@@ -126,7 +222,7 @@ export async function genStatic({ config, urls }) {
     });
 }
 
-((config) =>
+((config: ConfigProps) =>
   genUrls(config)
     .then(genStatic)
     .catch((err) => {
