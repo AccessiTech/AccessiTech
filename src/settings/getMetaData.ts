@@ -1,3 +1,4 @@
+import { COMPANY_TITLE, TWITTER_HANDLE } from "./strings";
 
 export interface MetaDataProps {
   title: string;
@@ -17,8 +18,8 @@ export const getMetaData = ({
   type = "website",
   image = "",
   imageAlt = "",
-  siteName = "",
-  twitterCreator = "",
+  siteName = COMPANY_TITLE,
+  twitterCreator = TWITTER_HANDLE,
 }: MetaDataProps) => ({
   title,
   description,
@@ -31,7 +32,7 @@ export const getMetaData = ({
   "og:description": description,
   "og:url": canonical,
   "twitter:card": image ? "summary_large_image" : "summary",
-  "twitter:site": twitterCreator,
+  "twitter:site": COMPANY_TITLE,
   "twitter:creator": twitterCreator,
   "twitter:title": title,
   "twitter:description": description,
