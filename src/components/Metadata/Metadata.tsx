@@ -28,7 +28,7 @@ export const Metadata = (props:MetaDataProps) => {
     return <div>{metaData}</div>;
   }
 
-  return <Helmet>{metaData}</Helmet>;
+  return <><Helmet>{metaData}</Helmet></>;
 }
 
 export default Metadata;
