@@ -1,7 +1,7 @@
 {
   "name": "@accessitech/homepage",
   "private": false,
-  "version": "2.0.7",
+  "version": "2.0.8",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,7 @@
     "tsc": "tsc",
     "pre:build": "yarn rss && yarn sitemap && tsc",
     "build": "yarn pre:build && vite build && yarn post:build",
-    "post:build": "cp docs/index.html docs/404.html && cp CNAME docs/CNAME",
+    "post:build": "mkdir docs/blog && cp docs/index.html docs/404.html && cp CNAME docs/CNAME && yarn static",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
