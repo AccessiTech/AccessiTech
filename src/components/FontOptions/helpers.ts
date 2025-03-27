@@ -8,7 +8,7 @@ import {
   SANS_SERIF,
   SERIF,
   FontFamily,
-} from "./reducer.ts";
+} from "./reducer";
 
 // Magic Strings
 export const BODY = "body";

@@ -6,7 +6,7 @@ date: 2025-03-24
 keywords: accessible web, disability advocate,inclusive design, accessibility audits, how to make websites accessible
 categories: Disability Advocacy, Web Accessibility
 image: Building-a-More-Accessible-Future-Through-Design-and-Technology.png
-image_alt: Dark blue text on yellow background saying, Building a More Accessible Future Through Design and Technology
+imageAlt: Dark blue text on yellow background saying, Building a More Accessible Future Through Design and Technology
 -->
 
 # Building a More Accessible Future Through Design and Technology

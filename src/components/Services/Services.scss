@@ -9,9 +9,9 @@
     @include padding(2.5rem 0 0);
     
     &.services-header-row {
-      @include padding(5rem 0);
       background-color: $pink;
       color: $darkBlue;
+      @include padding(5rem 0);
 
       a {
         text-decoration: none;
