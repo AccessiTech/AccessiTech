@@ -14,7 +14,7 @@ export const BlogEntry = () => {
 
   useEffect(() => {
     if (!entry?.loaded) {
-      store.dispatch(getBlogEntry({ id, navigate }));
+      store.dispatch(getBlogEntry({ id: id?.replace(/.html/g,'') , navigate }));
     }
   }, [id, entry, navigate]);
 
