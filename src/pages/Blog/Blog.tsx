@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavigateFunction, useNavigate } from "react-router-dom";
 import { Breadcrumb, Col, Row } from "react-bootstrap";
 import { getBlogEntry, useBlogEntriesArray } from "../../store/blog";
 import store from "../../store/store";
@@ -8,39 +8,40 @@ import { getDDMMMYYYY } from "../../settings/utils";
 import Metadata from "../../components/Metadata/Metadata";
 import { metadata } from "./meta";
 
-
-export const Blog = () => {
+const fetchBlogEntries = async (url = `/rss.xml`, navigate?:NavigateFunction) => {
+  const response = await fetch(url).catch((err) => {
+    console.error("Error fetching rss.xml:", err);
+    throw new Error("Failed to fetch rss.xml");
+  });
+  if (!response.ok) {
+    throw new Error("Failed to fetch rss.xml");
+  }
+  const text = await response.text();
+  if (!text) {
+    throw new Error("Failed to parse blogs");
+  }
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(text, "text/xml");
+  const items = xml.querySelectorAll("item");
+  if (!items || !items.length) {
+    throw new Error("Failed to load blogs");
+  }
+  Array.from(items).map(async (item) => {
+    const link = item.querySelector("link")?.textContent || "";
+    const id = link.split("/").pop()?.replace(".md", "") || "";
+    await store.dispatch(getBlogEntry({ id, navigate }));
+  });
+}
+export interface BlogProps {}
+export interface BlogType extends React.FC<BlogProps> {
+  loadData: (url?:string) => Promise<void>;
+}
+export const Blog:BlogType = () => {
   const navigate = useNavigate();
   const blog = useBlogEntriesArray();
 
   useEffect(() => {
-    fetch("/rss.xml")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to fetch rss.xml");
-        }
-        return response.text();
-      })
-      .then((text) => {
-        if (!text) {
-          throw new Error("Failed to parse blogs");
-        }
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(text, "text/xml");
-        const items = xml.querySelectorAll("item");
-        if (!items || !items.length) {
-          throw new Error("Failed to load blogs");
-        }
-        items.forEach((item) => {
-          const link = item.querySelector("link")?.textContent || "";
-          const id = link.split("/").pop()?.replace(".md", "") || "";
-          store.dispatch(getBlogEntry({id, navigate}));
-        })
-      })
-      .catch((e) => {
-        console.error(e);
-        navigate("/");
-      });
+    fetchBlogEntries();
   }, []);
 
   return (<>
@@ -78,5 +79,7 @@ export const Blog = () => {
     </Row>
   </>);
 }
+
+Blog.loadData = fetchBlogEntries;
 
 export default Blog;
