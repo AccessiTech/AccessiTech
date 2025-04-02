@@ -6,6 +6,7 @@ import { NavigateFunction } from "react-router-dom";
 export const blogSliceName = "blog";
 
 export const GET_BLOG_ENTRY = "GET_BLOG_ENTRY";
+export const SET_BLOG_ENTRY = "SET_BLOG_ENTRY";
 
 export enum BlogOrder {
   ASC = "asc",
@@ -32,7 +33,7 @@ export interface BlogState {
 }
 export interface GetBlogEntryPayload {
   id: string;
-  navigate: NavigateFunction;
+  navigate?: NavigateFunction;
 }
 export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
   { id, navigate }: GetBlogEntryPayload
@@ -44,9 +45,13 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
       }
       return response;
     })
-    .catch((e:string) => {
+    .catch((e: string) => {
       console.error(e);
-      navigate("/blog");
+      if (navigate) {
+        navigate("/blog");
+      } else {
+        window.location.href = "/blog";
+      }
     });
   
   const text = await response?.text();
@@ -82,7 +87,15 @@ export const blogInitialState: BlogState = {
 export const blogSlice = createSlice({
   name: blogSliceName,
   initialState: blogInitialState,
-  reducers: {},
+  reducers: {
+    [SET_BLOG_ENTRY]: (state, action) => {
+      const { id, ...entry } = action.payload;
+      state.entries[id] = {
+        ...state.entries[id],
+        ...entry,
+      };
+    }
+  },
   extraReducers: (builder) => {
     builder.addCase(getBlogEntry.fulfilled, (state, action) => {
       state.entries[action.payload.id] = {
@@ -92,6 +105,8 @@ export const blogSlice = createSlice({
     });
   },
 });
+
+export const setBlogEntry = blogSlice.actions[SET_BLOG_ENTRY];
 
 export const useBlog = (): BlogState => {
   return useSelector((state: any) => state[blogSliceName]);

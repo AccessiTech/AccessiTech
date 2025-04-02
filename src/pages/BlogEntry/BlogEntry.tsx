@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, NavigateFunction } from "react-router-dom";
 import { Row, Col, Breadcrumb } from "react-bootstrap";
 import ReactMarkdown from 'react-markdown';
 import { getBlogEntry, useBlogEntry } from "../../store/blog";
@@ -7,16 +7,22 @@ import store from "../../store/store";
 import { ACCESSITECH, BLOG_CANONICAL, DEFAULT_SHARE_IMAGE_ALT, DEFAULT_SHARE_IMAGE, IMAGES_BASE_URL, BLOG_DESCRIPTION } from "../../settings/strings";
 import Metadata from "../../components/Metadata/Metadata";
 
+const fetchBlogEntry = async (id:string, navigate:NavigateFunction) => {
+  await store.dispatch(getBlogEntry({ id: id.replace(/.html/g, ''), navigate }));
+}
+export interface BlogEntryProps {}
+export interface BlogEntryType extends React.FC<BlogEntryProps> {
+  loadData: (url?:string) => Promise<void>;
+}
+
 export const BlogEntry = () => {
   const navigate = useNavigate();
   const id = useParams().id as string;
   const entry = useBlogEntry(id);
 
   useEffect(() => {
-    if (!entry?.loaded) {
-      store.dispatch(getBlogEntry({ id: id?.replace(/.html/g,'') , navigate }));
-    }
-  }, [id, entry, navigate]);
+    fetchBlogEntry(id, navigate);
+  }, [id, navigate]);
 
   const metadata = {
     title: `${ACCESSITECH} | ${entry?.title || "Blog Entry"}`,
@@ -62,5 +68,5 @@ export const BlogEntry = () => {
     </Row>
   </>);
 }
-
+BlogEntry.loadData = fetchBlogEntry;
 export default BlogEntry;

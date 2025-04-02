@@ -1,9 +1,10 @@
-import { createServer } from "vite";
+import { createServer, ViteDevServer } from "vite";
 import reactPlugin from "@vitejs/plugin-react-swc";
 import path from "node:path";
 import fs from "node:fs";
-
 import { XMLParser } from "fast-xml-parser";
+
+import { Blog } from "../src/store/blog"; // todo - remove this dependency
 
 export const getMetaData = (text: string): { [key: string]: string } => {
   const metaData = {};
@@ -27,7 +28,11 @@ export interface ConfigProps {
   viteServer: {
     root: string;
     plugins: any[];
-    server: { middlewareMode: boolean };
+    server: {
+      middlewareMode: boolean;
+      port: number;
+      ssr: boolean;
+    };
     appType: string;
   };
   ssrEntry: string;
@@ -48,7 +53,7 @@ export const CONFIG: ConfigProps = {
   viteServer: {
     root: path.resolve(process.cwd()),
     plugins: [reactPlugin()],
-    server: { middlewareMode: true },
+    server: { middlewareMode: true, port: 3000, ssr: true },
     appType: "custom",
   },
   ssrEntry: "src/server.tsx",
@@ -72,24 +77,67 @@ export async function genUrls(config: ConfigProps) {
   return { config, urls };
 }
 
+export const genEntry = async (url: string) => {
+  const id = url.split("/").pop()?.replace(".md", "") || "";
+  const fileContent = fs.readFileSync(
+    path.resolve(process.cwd(), "public/data/blog", `${id}.md`),
+    { encoding: "utf-8" }
+  );
+  const metaData = getMetaData(fileContent);
+  const content = Object.keys(metaData).length
+    ? fileContent.substring(fileContent.indexOf("-->") + 3, fileContent.length)
+    : fileContent;
+  const description = metaData["description"] || "";
+  const image = metaData["image"] || "";
+  const image_alt = metaData["image_alt"] || "";
+  const title = metaData["title"] || content.split("\n")[0].replace("# ", "");
+  const date = metaData["date"] || "";
+
+  return {
+    loaded: true,
+    id,
+    title,
+    content,
+    date,
+    description,
+    image,
+    image_alt,
+  };
+}
+
 export async function genStatic({ config, urls }) {
+  // pre-load the blog entries
+  // todo - make this configurable
+  const blogEntries: Blog[] = await Promise.all(
+    urls.filter((url:string) => !config.staticPaths.includes(url)).map(genEntry)
+  );
+  console.log("Blog entries loaded");
+
   // create the Vite server
-  const vite = await createServer(config.viteServer).catch((err) => {
-    console.error(err);
-    throw new Error(err);
-  });
-  console.log("Vite server created");
+  const vite: ViteDevServer = await createServer(config.viteServer).catch(
+    (err) => {
+      console.error(err);
+      throw new Error(err);
+    }
+  );
 
   // generate the static pages
-  const vitePromises = urls.map(async (url, index) => {
+  const vitePromises = urls.map(async (url:string, index:number) => {
     // load the server entry for the page
-    const { render, renderMetadata } = await vite
+    const { render, renderMetadata, dispatchEntry } = await vite
       .ssrLoadModule(path.resolve(process.cwd(), config.ssrEntry))
       .catch((err) => {
         console.error(err);
         throw new Error(err);
       });
     console.log("Vite loaded module  for ", url);
+
+    // todo - make this configurable
+    // dispatch the blog entries to the store
+    for (const entry of blogEntries) {
+      await dispatchEntry(entry);
+    }
+    console.log("Blog entries dispatched to store");
 
     // load the index.html and render the App
     const toBuildPath = (pathPart) =>
