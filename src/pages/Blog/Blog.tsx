@@ -29,8 +29,11 @@ const fetchBlogEntries = async (url = `/rss.xml`, navigate?:NavigateFunction) =>
   Array.from(items).map(async (item) => {
     const link = item.querySelector("link")?.textContent || "";
     const id = link.split("/").pop()?.replace(".md", "") || "";
+    if (!id) {
+      return null;
+    }
     await store.dispatch(getBlogEntry({ id, navigate }));
-  });
+  }).filter((item => item !== null));
 }
 export interface BlogProps {}
 export interface BlogType extends React.FC<BlogProps> {
