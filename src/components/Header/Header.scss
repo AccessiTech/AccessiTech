@@ -11,7 +11,8 @@
   z-index: 5;
   width: 100%;
 
-  &.blog {
+  &.blog
+  &.blog.html {
     position: relative;
     background-color: $darkBlue;
     
