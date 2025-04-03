@@ -3,6 +3,9 @@
   "private": false,
   "version": "2.0.14",
   "type": "module",
+  "engines": {
+    "node": "v20.19.0"
+  },
   "scripts": {
     "dev": "vite",
     "start": "yarn dev",
