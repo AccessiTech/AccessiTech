@@ -40,7 +40,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8" ?>
           imageAlt,
           image_copyright,
         } = fileMetaData;
-        const imageURI = `/assets/images/${image || "default.png"}`;
+        const imageURI = `https://www.accessi.tech/assets/images/${image || "default.png"}`;
         const altText =
           imageAlt || "Yellow text on gradient background saying, AccessiTech";
 
