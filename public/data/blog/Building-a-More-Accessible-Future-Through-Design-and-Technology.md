@@ -5,7 +5,7 @@ description: Conor, founder of AccessiTech LLC and a disability advocate, shares
 date: 2025-03-24
 keywords: accessible web, disability advocate,inclusive design, accessibility audits, how to make websites accessible
 categories: Disability Advocacy, Web Accessibility
-image: Building-a-More-Accessible-Future-Through-Design-and-Technology.png
+image: https://www.accessi.tech/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png
 imageAlt: Dark blue text on yellow background saying, Building a More Accessible Future Through Design and Technology
 -->
 
