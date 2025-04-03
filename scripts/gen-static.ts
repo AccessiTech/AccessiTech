@@ -24,6 +24,7 @@ export interface ConfigProps {
   dest: string;
   staticPaths: string[];
   staticMetaData: string[];
+  productionUrlBase: string;
   pathsBuilder: (items: any[]) => string[];
   viteServer: {
     root: string;
@@ -44,6 +45,7 @@ export const CONFIG: ConfigProps = {
   dest: "docs",
   staticPaths: ["/", "/blog"],
   staticMetaData: ["src/App/meta.ts", "src/pages/Blog/meta.ts"],
+  productionUrlBase: "https://accessi.tech",
   pathsBuilder: (items) =>
     items.map((item) => {
       const { link } = item;
@@ -120,10 +122,12 @@ export async function genStatic({ config, urls }) {
       throw new Error(err);
     }
   );
+  console.log("Vite server created");
 
   // generate the static pages
   const vitePromises = urls.map(async (url:string, index:number) => {
     // load the server entry for the page
+    console.log("Loading Vite module for", url, "...");
     const { render, renderMetadata, dispatchEntry } = await vite
       .ssrLoadModule(path.resolve(process.cwd(), config.ssrEntry))
       .catch((err) => {
@@ -160,7 +164,7 @@ export async function genStatic({ config, urls }) {
     );
 
     // get the page metadata
-    let metadata;
+    let metadata:any;
     const isStatic = typeof config.staticMetaData[index] !== "undefined";
     if (isStatic) {
       // load the metadata from the static ts file
@@ -180,6 +184,7 @@ export async function genStatic({ config, urls }) {
         { encoding: "utf-8" }
       );
       metadata = getMetaData(fileContent);
+      metadata.canonical = `${config.productionUrlBase}${url}`;
     }
 
     // define the existing head content of index.html
@@ -213,6 +218,7 @@ export async function genStatic({ config, urls }) {
       if (!tagProperty || !tagPropertyValue) return acc;
       return { ...acc, [tagPropertyValue]: metaTag };
     }, {});
+    console.log("Meta tags parsed", metaTagLib);
 
     // Merge new metadata tags onto existing head metadata
     const newHeadStrings: string[] = [];
