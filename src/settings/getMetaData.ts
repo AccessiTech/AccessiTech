@@ -1,4 +1,4 @@
-import { COMPANY_TITLE, TWITTER_HANDLE } from "./strings";
+import { COMPANY_TITLE, DEFAULT_SHARE_IMAGE_ALT, IMAGES_BASE_URL, TWITTER_HANDLE } from "./strings";
 
 export interface MetaDataProps {
   title: string;
@@ -16,7 +16,7 @@ export const getMetaData = ({
   description,
   canonical,
   type = "website",
-  image = "",
+  image = "default.png",
   imageAlt = "",
   siteName = COMPANY_TITLE,
   twitterCreator = TWITTER_HANDLE,
@@ -25,7 +25,7 @@ export const getMetaData = ({
   description,
   canonical,
   "og:type": type,
-  "og:image": image,
+  "og:image": `${IMAGES_BASE_URL}/${image}`,
   "og:image:alt": imageAlt,
   "og:site_name": siteName,
   "og:title": title,
@@ -36,6 +36,6 @@ export const getMetaData = ({
   "twitter:creator": twitterCreator,
   "twitter:title": title,
   "twitter:description": description,
-  "twitter:image": image,
-  "twitter:image:alt": imageAlt,
+  "twitter:image": `${IMAGES_BASE_URL}/${image}`,
+  "twitter:image:alt": image ? imageAlt : DEFAULT_SHARE_IMAGE_ALT,
 });
