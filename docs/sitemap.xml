@@ -17,7 +17,14 @@
       
         <url>
           <loc>https://www.accessi.tech/blog/Building-a-More-Accessible-Future-Through-Design-and-Technology</loc>
-          <lastmod>2025-04-03T19:25:14.000Z</lastmod>
+          <lastmod>2025-04-07T19:25:59.000Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+        </url>
+      
+        <url>
+          <loc>https://www.accessi.tech/blog/How-AccessiTech-Meets-You-Where-You-Are</loc>
+          <lastmod>2025-04-07T19:25:59.000Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>0.8</priority>
         </url>

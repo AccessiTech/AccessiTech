@@ -18,5 +18,18 @@
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
+        <item>
+          <title>How AccessiTech Meets You Where You Are</title>
+          <link>https://accessi.tech/blog/How-AccessiTech-Meets-You-Where-You-Are</link>
+          <pubDate>2025-04-03</pubDate>
+          <description>Most ‘accessible’ tech fails disabled users. AccessiTech’s services (audits, QA, mentorship) fix that—because compliance isn’t enough. Here’s how we rebuild inclusion.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/How-AccessiTech-Meets-You-Where-You-Are.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/How-AccessiTech-Meets-You-Where-You-Are.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Black text on pink background saying "Accessibility Isn't One-Size-Fits-All How AccessiTech Meets You Where You Are"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/How-AccessiTech-Meets-You-Where-You-Are.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
   </channel>
 </rss>
