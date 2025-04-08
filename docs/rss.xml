@@ -6,6 +6,19 @@
     <description>My Blog</description>
     
         <item>
+          <title>AI for Coding Accessibility</title>
+          <link>https://accessi.tech/blog/AI-for-Coding-Accessibility</link>
+          <pubDate>2025-04-08</pubDate>
+          <description>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels (boilerplate, error fixing), where it fails, and why human judgment still rules.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Yellow text on gradient background saying, AccessiTech</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/default.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
           <title>Building a More Accessible Future Through Design and Technology</title>
           <link>https://accessi.tech/blog/Building-a-More-Accessible-Future-Through-Design-and-Technology</link>
           <pubDate>2025-03-24</pubDate>
