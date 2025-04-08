@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { getMetaData } from "./rss.js";
-import { title } from "process";
 
 function readCNAME(filePath) {
   try {
