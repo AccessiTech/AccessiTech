@@ -41,7 +41,7 @@ function readCNAME(filePath) {
       url: link,
       changefreq: "monthly",
       priority: 0.8,
-      lastmod: date,
+      date,
     });
   });
 
@@ -49,18 +49,20 @@ function readCNAME(filePath) {
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${pages
     .map(
-      (page) => `
-        <url>
-          <loc>https://${url}${page.url}</loc>
-          <lastmod>${
-            page.lastmod
-              ? new Date(Date(page.lastmod)).toISOString()
-              : new Date().toISOString()
-          }</lastmod>
-          <changefreq>${page.changefreq}</changefreq>
-          <priority>${page.priority}</priority>
-        </url>
-      `
+      (page) => {
+        return `
+          <url>
+            <loc>https://${url}${page.url}</loc>
+            <lastmod>${
+              page.date
+                ? new Date(page.date).toISOString()
+                : new Date().toISOString()
+            }</lastmod>
+            <changefreq>${page.changefreq}</changefreq>
+            <priority>${page.priority}</priority>
+          </url>
+        `
+      }
     )
     .join("")}
   </urlset>`;
