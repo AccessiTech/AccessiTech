@@ -74,7 +74,7 @@ function readCNAME(filePath) {
                 ? new Date(page.date).toISOString()
                 : new Date().toISOString()
             }</lastmod>
-            <link rel="enclosure" type="image/png" href="${
+            <xhtml:link rel="enclosure" type="image/png" href="${
               page.image
             }" length="${imageSize}" />
             <image:image>
@@ -85,12 +85,15 @@ function readCNAME(filePath) {
                   : ""
               }
             </image:image>
-            <content type="html">
+            <content type="html" xmlns="http://www.w3.org/1999/xhtml">
               ${page.title ? `<h1>${page.title}</h1>` : ""}
               ${page.description ? `<p>${page.description}</p>` : ""}
               ${
                 page.image
-                  ? `<img src="${page.image}" alt="${page.imageAlt?.replace(/"/g, "'")}"/>`
+                  ? `<img src="${page.image}" alt="${page.imageAlt?.replace(
+                      /"/g,
+                      "'"
+                    )}"/>`
                   : ""
               }
             </content>
