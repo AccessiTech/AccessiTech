@@ -44,6 +44,7 @@ export const App = (props: AppProps) => {
         {/* Main Content Row */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/index.html" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog.html" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogEntry />} />
