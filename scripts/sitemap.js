@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import { getMetaData } from "./rss.js";
 
+const PUBLIC_IMAGE_DIR = "https://www.accessi.tech/assets/images/";
+
 function readCNAME(filePath) {
   try {
     const fileContents = fs.readFileSync(filePath, "utf-8");
@@ -49,18 +51,22 @@ function readCNAME(filePath) {
       url: link,
       changefreq: "monthly",
       priority: 0.8,
-      image: "https://www.accessi.tech/assets/images/" + (fileMetaData.image || "default.png"),
+      image: PUBLIC_IMAGE_DIR + (fileMetaData.image || "default.png"),
       imageAlt: fileMetaData.imageAlt || "Blog post image",
     });
   });
   console.log("blog files", pages);
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8" ?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   ${pages
-    .map(
-      (page) => {
-        return `
+    .map((page) => {
+      // get size of image in bytes
+      const pathToImage = path.resolve(process.cwd(), 'public/assets/images', page.image?.replace(PUBLIC_IMAGE_DIR, ""));
+      const stats = fs.statSync(pathToImage);
+      const imageSize = stats.size;
+
+      return `
           <url>
             <loc>https://${url}${page.url}</loc>
             <lastmod>${
@@ -68,17 +74,31 @@ function readCNAME(filePath) {
                 ? new Date(page.date).toISOString()
                 : new Date().toISOString()
             }</lastmod>
+            <link rel="enclosure" type="image/png" href="${
+              page.image
+            }" length="${imageSize}" />
+            <image:image>
+              <image:loc>${page.image}</image:loc>
+              ${
+                page.imageAlt
+                  ? `<image:caption>${page.imageAlt}</image:caption>`
+                  : ""
+              }
+            </image:image>
             <content type="html">
-              ${page.title ? `<h1>${page.title}</h1>` : ''}
-              ${page.description ? `<p>${page.description}</p>` : ''}
-              ${page.image ? `<img src="${page.image}" alt="${page.imageAlt?.replace(/"/g, "'")}" />` : ''}
+              ${page.title ? `<h1>${page.title}</h1>` : ""}
+              ${page.description ? `<p>${page.description}</p>` : ""}
+              ${
+                page.image
+                  ? `<img src="${page.image}" alt="${page.imageAlt?.replace(/"/g, "'")}"/>`
+                  : ""
+              }
             </content>
             <changefreq>${page.changefreq}</changefreq>
             <priority>${page.priority}</priority>
           </url>
-        `
-      }
-    )
+        `;
+    })
     .join("")}
   </urlset>`;
   fs.writeFileSync(path.resolve(process.cwd(), "public/sitemap.xml"), sitemap);
