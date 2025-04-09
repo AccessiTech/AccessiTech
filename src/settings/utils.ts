@@ -56,7 +56,7 @@ export const useOutsideClick = (ref:any, callback:any) => {
 };
 
 export const getPageFromPath = (pathname: string):string => {
-  let newPage = pathname.replace('/', '') ? pathname.replace('/', '') : 'home';
+  let newPage = pathname.replace('/', '') && pathname !== '/index.html' ? pathname.replace('/', '').replace('.html', '') : 'home';
   if (newPage.indexOf('/') > -1) {
     newPage = newPage.split('/')[0];
   }
