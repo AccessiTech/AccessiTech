@@ -58,11 +58,21 @@ function readCNAME(filePath) {
   console.log("blog files", pages);
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8" ?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    >
   ${pages
     .map((page) => {
       // get size of image in bytes
-      const pathToImage = path.resolve(process.cwd(), 'public/assets/images', page.image?.replace(PUBLIC_IMAGE_DIR, ""));
+      const pathToImage = path.resolve(
+        process.cwd(),
+        "public/assets/images",
+        page.image?.replace(PUBLIC_IMAGE_DIR, "")
+      );
       const stats = fs.statSync(pathToImage);
       const imageSize = stats.size;
 
@@ -85,7 +95,7 @@ function readCNAME(filePath) {
                   : ""
               }
             </image:image>
-            <content type="html" xmlns="http://www.w3.org/1999/xhtml">
+            <content type="html">
               ${page.title ? `<h1>${page.title}</h1>` : ""}
               ${page.description ? `<p>${page.description}</p>` : ""}
               ${
