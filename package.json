@@ -16,7 +16,8 @@
     "sitemap:prod": "node ./scripts/sitemap.js && cp public/sitemap.xml docs/sitemap.xml",
     "tsc": "tsc",
     "pre:build": "yarn rss && yarn sitemap && tsc",
-    "build": "yarn pre:build && vite build && yarn post:build",
+    "build": "tsc && vite build",
+    "build:prod": "yarn pre:build && vite build && yarn post:build",
     "post:build": "mkdir docs/blog && cp docs/index.html docs/404.html && cp CNAME docs/CNAME && yarn static",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
