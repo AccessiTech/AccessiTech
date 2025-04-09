@@ -9,34 +9,24 @@
   
           <url>
             <loc>https://www.accessi.tech/</loc>
-            <lastmod>2025-04-09T21:20:28.332Z</lastmod>
+            <lastmod>2025-04-09T21:23:29.528Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>AccessiTech logo</image:caption>
             </image:image>
-            <content type="html">
-              <h1>AccessiTech - Home</h1>
-              <p>Welcome to AccessiTech, your go-to source for web accessibility solutions.</p>
-              <img src="https://www.accessi.tech/assets/images/default.png" alt="AccessiTech logo"/>
-            </content>
             <changefreq>monthly</changefreq>
             <priority>1</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/blog</loc>
-            <lastmod>2025-04-09T21:20:28.333Z</lastmod>
+            <lastmod>2025-04-09T21:23:29.530Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>AccessiTech logo</image:caption>
             </image:image>
-            <content type="html">
-              <h1>AccessiTech - Blog</h1>
-              <p>Explore my blog for the latest insights on web accessibility.</p>
-              <img src="https://www.accessi.tech/assets/images/default.png" alt="AccessiTech logo"/>
-            </content>
             <changefreq>weekly</changefreq>
             <priority>0.9</priority>
           </url>
@@ -49,11 +39,6 @@
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>Blog post image</image:caption>
             </image:image>
-            <content type="html">
-              <h1>AI for Coding Accessibility</h1>
-              <p>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels (boilerplate, error fixing), where it fails, and why human judgment still rules.</p>
-              <img src="https://www.accessi.tech/assets/images/default.png" alt="Blog post image"/>
-            </content>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
           </url>
@@ -66,11 +51,6 @@
               <image:loc>https://www.accessi.tech/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png</image:loc>
               <image:caption>Dark blue text on yellow background saying, Building a More Accessible Future Through Design and Technology</image:caption>
             </image:image>
-            <content type="html">
-              <h1>Building a More Accessible Future Through Design and Technology</h1>
-              <p>Conor, founder of AccessiTech LLC and a disability advocate, shares how lived experience with Psoriatic Arthritis drives his mission to make tech inclusive. Offering audits, mentorship, and open-source tools, he bridges the gap between accessibility theory and real-world solutions. Join the movement for a web that works for all.</p>
-              <img src="https://www.accessi.tech/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png" alt="Dark blue text on yellow background saying, Building a More Accessible Future Through Design and Technology"/>
-            </content>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
           </url>
@@ -83,11 +63,6 @@
               <image:loc>https://www.accessi.tech/assets/images/How-AccessiTech-Meets-You-Where-You-Are.png</image:loc>
               <image:caption>Black text on pink background saying "Accessibility Isn't One-Size-Fits-All How AccessiTech Meets You Where You Are"</image:caption>
             </image:image>
-            <content type="html">
-              <h1>How AccessiTech Meets You Where You Are</h1>
-              <p>Most ‘accessible’ tech fails disabled users. AccessiTech’s services (audits, QA, mentorship) fix that—because compliance isn’t enough. Here’s how we rebuild inclusion.</p>
-              <img src="https://www.accessi.tech/assets/images/How-AccessiTech-Meets-You-Where-You-Are.png" alt="Black text on pink background saying 'Accessibility Isn't One-Size-Fits-All How AccessiTech Meets You Where You Are'"/>
-            </content>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
           </url>

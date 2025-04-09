@@ -95,18 +95,6 @@ function readCNAME(filePath) {
                   : ""
               }
             </image:image>
-            <content type="html">
-              ${page.title ? `<h1>${page.title}</h1>` : ""}
-              ${page.description ? `<p>${page.description}</p>` : ""}
-              ${
-                page.image
-                  ? `<img src="${page.image}" alt="${page.imageAlt?.replace(
-                      /"/g,
-                      "'"
-                    )}"/>`
-                  : ""
-              }
-            </content>
             <changefreq>${page.changefreq}</changefreq>
             <priority>${page.priority}</priority>
           </url>
