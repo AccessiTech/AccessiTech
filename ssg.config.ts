@@ -31,6 +31,7 @@ export const config: ConfigProps = {
       },
     },
   },
+  replaceIndexHtml: true,
 };
 
 export default config;
