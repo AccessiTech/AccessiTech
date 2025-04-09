@@ -17,7 +17,7 @@ export interface BlogEntryType extends React.FC<BlogEntryProps> {
 
 export const BlogEntry = () => {
   const navigate = useNavigate();
-  const id = useParams().id as string;
+  const id = useParams().id?.replace('.html','') as string;
   const entry = useBlogEntry(id);
 
   useEffect(() => {
