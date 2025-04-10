@@ -9,6 +9,7 @@ import Header from "../components/Header/Header";
 import Metadata from "../components/Metadata/Metadata";
 import { getMetaData } from "../settings/getMetaData";
 import { metadata } from "./meta";
+import NotFound from "../pages/404/404";
 
 export interface AppProps {
   path?: string;
@@ -29,6 +30,7 @@ export const App = (props: AppProps) => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog.html" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogEntry />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         {/* Footer Row */}
         <Row className="footer-row">

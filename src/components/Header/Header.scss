@@ -7,17 +7,17 @@
 }
 
 .main-header {
-  position: absolute;
+  position: relative;
+  background-color: $darkBlue;
   z-index: 5;
   width: 100%;
 
-  &.blog,
-  &.blog.html {
-    position: relative;
-    background-color: $darkBlue;
-    
+  &.home {
+    position: absolute;
+    background-color: transparent;
+
     a.logo-link {
-      margin-top: 0;
+      margin-top: 35vh;
     }
   }
 
@@ -40,14 +40,13 @@
   a.logo-link {
     display: inline-block;
     @include padding(1rem);
-    margin-top: 36vh;
     text-decoration: none;
-
+    
     &:focus,
     &:focus-visible {
       border: none;
       outline: $focus-border;
-
+      
       .simplified-view & {
         display: inline-block;
         outline-color: $darkBlue;

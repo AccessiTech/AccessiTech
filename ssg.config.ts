@@ -4,10 +4,11 @@ export const config: ConfigProps = defineConfig({
   ssrEntry: "src/server.tsx",
   urlSrc: "public/rss.xml",
   dest: "docs",
-  staticPaths: ["/", "/blog"],
+  staticPaths: ["/", "/blog", "/404"],
   staticMetaData: [
     "src/App/meta.ts",
     "src/pages/Blog/meta.ts",
+    "src/App/meta.ts",
   ],
   productionUrlBase: "https://accessi.tech",
   pathsBuilder: (items) =>
