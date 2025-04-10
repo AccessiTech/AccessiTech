@@ -1,15 +1,16 @@
 import { ConfigProps, CONFIG } from "@accessitech/vite-ssg";
 import reactPlugin from "@vitejs/plugin-react-swc";
+import path from "path";
 
 export const config: ConfigProps = {
   ...CONFIG,
-  ssrEntry: process.cwd() + "/src/server.tsx",
-  urlSrc: process.cwd() + "/public/rss.xml",
+  ssrEntry: path.resolve(process.cwd(), "/src/server.tsx"),
+  urlSrc: path.resolve(process.cwd(), "/public/rss.xml"),
   dest: process.cwd() + "/docs",
   staticPaths: ["/", "/blog"],
   staticMetaData: [
-    process.cwd() + "/src/App/meta.ts",
-    process.cwd() + "/src/pages/Blog/meta.ts",
+    path.resolve(process.cwd(), "/src/App/meta.ts"),
+    path.resolve(process.cwd(), "/src/pages/Blog/meta.ts"),
   ],
   productionUrlBase: "https://accessi.tech",
   pathsBuilder: (items) =>
