@@ -3,6 +3,7 @@ import reactPlugin from "@vitejs/plugin-react-swc";
 
 export const config: ConfigProps = {
   ...CONFIG,
+  ssrEntry: process.cwd() + "/src/server.tsx",
   urlSrc: process.cwd() + "/public/rss.xml",
   dest: process.cwd() + "/docs",
   staticPaths: ["/", "/blog"],
