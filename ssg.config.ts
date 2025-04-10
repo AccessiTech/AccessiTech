@@ -1,16 +1,13 @@
-import { ConfigProps, CONFIG } from "@accessitech/vite-ssg";
-import reactPlugin from "@vitejs/plugin-react-swc";
-import path from "path";
+import { ConfigProps, defineConfig } from "@accessitech/vite-ssg";
 
-export const config: ConfigProps = {
-  ...CONFIG,
-  ssrEntry: path.resolve(process.cwd(), "/src/server.tsx"),
-  urlSrc: path.resolve(process.cwd(), "/public/rss.xml"),
-  dest: process.cwd() + "/docs",
+export const config: ConfigProps = defineConfig({
+  ssrEntry: "src/server.tsx",
+  urlSrc: "public/rss.xml",
+  dest: "docs",
   staticPaths: ["/", "/blog"],
   staticMetaData: [
-    path.resolve(process.cwd(), "/src/App/meta.ts"),
-    path.resolve(process.cwd(), "/src/pages/Blog/meta.ts"),
+    "src/App/meta.ts",
+    "src/pages/Blog/meta.ts",
   ],
   productionUrlBase: "https://accessi.tech",
   pathsBuilder: (items) =>
@@ -20,8 +17,6 @@ export const config: ConfigProps = {
       return `/blog/${id}`;
     }),
   viteServer: {
-    ...CONFIG.viteServer,
-    plugins: [reactPlugin()],
     root: process.cwd(),
     css: {
       preprocessorOptions: {
@@ -34,6 +29,6 @@ export const config: ConfigProps = {
     },
   },
   replaceIndexHtml: true,
-};
+});
 
 export default config;
