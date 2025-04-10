@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "start": "yarn dev",
-    "static": "tsx ./scripts/gen-static",
+    "static": "tsx ../vite-ssg/generate",
     "rss": "node ./scripts/rss.js",
     "rss:prod": "node ./scripts/rss.js && cp public/rss.xml docs/rss.xml",
     "sitemap": "node ./scripts/sitemap.js",
