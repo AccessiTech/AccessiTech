@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { StaticRouter } from "react-router-dom/server";
 import { APP_ROOT, Home } from "../pages/Home/Home";
 import Blog from "../pages/Blog/Blog";
 import BlogEntry from "../pages/BlogEntry/BlogEntry";
@@ -9,11 +10,12 @@ import Metadata from "../components/Metadata/Metadata";
 import { getMetaData } from "../settings/getMetaData";
 import { metadata } from "./meta";
 
-export const App = () => {
+export interface AppProps {
+  path?: string;
+}
 
-  return (
-    <BrowserRouter>
-      <Metadata {...getMetaData(metadata)} />
+export const App = (props: AppProps) => {
+  const Content = <>
       <Container fluid className="App" aria-label={(APP_ROOT)}>
         <Row className="header-row">
           <Col>
@@ -35,6 +37,19 @@ export const App = () => {
           </Col>
         </Row>
       </Container>
+    </>;
+
+  if (props.path) {
+    return (
+      <StaticRouter location={props.path}>
+        {Content}
+      </StaticRouter>
+    )
+  }
+  return (
+    <BrowserRouter>
+      <Metadata {...getMetaData(metadata)} />
+      {Content}
     </BrowserRouter>
   )
 }

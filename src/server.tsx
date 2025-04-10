@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux'
-import App from './App/AppServer'
+import App from './App/App'
 import Metadata from './components/Metadata/Metadata'
 import './scss/index.scss'
 import { store } from './store/store'
