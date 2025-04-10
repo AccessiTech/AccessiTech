@@ -48,6 +48,6 @@ export const BLOG_DESCRIPTION =
   "Explore actionable guides, policy breakdowns, and lived-experience stories from Conor—a developer and accessibility advocate with Psoriatic Arthritis. Whether you need WCAG compliance tips, assistive tech reviews, or inclusive design strategies, this blog translates accessibility theory into real-world solutions. Join the movement to build digital spaces that work for every body.";
 export const BLOG_CANONICAL = HOME_URL + "/blog";
 
-export const DEFAULT_SHARE_IMAGE = 'https://www.accessi.tech/assets/images/default.png';
+export const DEFAULT_SHARE_IMAGE = 'default.png';
 export const DEFAULT_SHARE_IMAGE_ALT = 'Yellow text on gradient background saying, AccessiTech';
 export const OG_TYPE = 'website';
