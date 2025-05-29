@@ -90,7 +90,7 @@ We’ll break down WCAG into practical, digestible posts, including:
 * [W3C’s How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG22/quickref/)
 * [a11yproject’s WCAG Checklist](https://www.a11yproject.com/checklist/)
 * [WebAim’s 10 page WCAG Checklist](https://webaim.org/standards/wcag/WCAG2Checklist.pdf)
-*[Full WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
+* [Full WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
 
 Includes:
 
