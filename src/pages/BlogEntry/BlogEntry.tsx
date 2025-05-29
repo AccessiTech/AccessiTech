@@ -2,10 +2,12 @@ import { useEffect } from "react";
 import { useParams, useNavigate, NavigateFunction } from "react-router-dom";
 import { Row, Col, Breadcrumb } from "react-bootstrap";
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from "remark-gfm";
 import { getBlogEntry, useBlogEntry } from "../../store/blog";
 import store from "../../store/store";
 import { ACCESSITECH, BLOG_CANONICAL, DEFAULT_SHARE_IMAGE_ALT, DEFAULT_SHARE_IMAGE, IMAGES_BASE_URL, BLOG_DESCRIPTION } from "../../settings/strings";
 import Metadata from "../../components/Metadata/Metadata";
+import CustomMarkdownTable from "../../components/CustomTable/CustomTable";
 
 const fetchBlogEntry = async (id:string, navigate:NavigateFunction) => {
   await store.dispatch(getBlogEntry({ id: id.replace(/.html/g, ''), navigate }));
@@ -58,7 +60,12 @@ export const BlogEntry = () => {
             <Col xs={12} md={{ span: 8, offset: 2 }}>
               <div>
                 {!entry?.loaded ? <p>Loading...</p> :
-                  <ReactMarkdown>{entry.content}</ReactMarkdown>
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      table: CustomMarkdownTable,
+                    }}
+                  >{entry.content}</ReactMarkdown>
                 }
               </div>
             </Col>
