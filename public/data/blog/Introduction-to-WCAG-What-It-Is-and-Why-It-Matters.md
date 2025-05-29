@@ -5,7 +5,7 @@ description: Learn what WCAG is, why web accessibility matters, and how it impac
 keywords: what is wcag, web accessibility introduction, wcag 2.2 explained, accessibility guidelines website, digital inclusion, wcag vs ada, accessible design principles, website accessibility laws
 date: 2025-05-29
 series: Making the Web Accessible for All
-image: introduction-to-wcag.png
+image: intorduction-to-wcag.png
 imageAlt:Dark blue text on yellow background saying, Introduction to WCAG, What it is and Why it Matters
 --->
 
