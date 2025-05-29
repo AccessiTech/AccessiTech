@@ -44,5 +44,18 @@
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
+        <item>
+          <title>Introduction to WCAG - What It Is and Why It Matters</title>
+          <link>https://accessi.tech/blog/Introduction-to-WCAG-What-It-Is-and-Why-It-Matters</link>
+          <pubDate>2025-05-29</pubDate>
+          <description>Learn what WCAG is, why web accessibility matters, and how it impacts users, laws, and inclusive design practices. Start building accessible websites today.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/intorduction-to-wcag.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/intorduction-to-wcag.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Dark blue text on yellow background saying, Introduction to WCAG, What it is and Why it Matters</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/intorduction-to-wcag.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
   </channel>
 </rss>

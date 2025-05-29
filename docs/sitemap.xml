@@ -67,4 +67,16 @@
             <priority>0.8</priority>
           </url>
         
+          <url>
+            <loc>https://www.accessi.tech/blog/Introduction-to-WCAG-What-It-Is-and-Why-It-Matters</loc>
+            <lastmod>2025-05-29T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/intorduction-to-wcag.png" length="49608" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/intorduction-to-wcag.png</image:loc>
+              <image:caption>Dark blue text on yellow background saying, Introduction to WCAG, What it is and Why it Matters</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
   </urlset>
