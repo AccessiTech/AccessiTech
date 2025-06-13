@@ -63,11 +63,11 @@ All must adapt to small screens and zoom without requiring two-dimensional scrol
 
 [Side-by-side: Web page at desktop width vs. at 320px width, both fully functional]
 
-- Use responsive design with flexible layouts (CSS Grid, Flexbox)
-- Avoid fixed-width containers
-- Test at 320px width and 400% zoom
-- Ensure all content and functionality remain accessible
-- Avoid horizontal scrolling except for parts that require it (e.g., data tables)
+- **Use responsive design** with flexible layouts (CSS Grid, Flexbox)
+- **Avoid fixed-width containers**
+- **Test at 320px width and 400% zoom**
+- **Ensure all content and functionality remain accessible**
+- **Avoid horizontal scrolling** except for parts that require it (e.g., data tables)
 
 For more, see the [W3C's Reflow Techniques](https://www.w3.org/WAI/WCAG22/Techniques/css/C28).
 
