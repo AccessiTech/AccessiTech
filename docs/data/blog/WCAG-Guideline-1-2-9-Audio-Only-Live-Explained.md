@@ -120,6 +120,4 @@ Guideline 1.2.9 is essential for making live audio content accessible to users w
 
 **Next Up:**
 
-We’ll continue breaking down more WCAG guidelines to help you build a more accessible web.
-
 *Accessibility means everyone gets the full story—make your live events count!*

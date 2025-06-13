@@ -117,6 +117,6 @@ Guideline 1.4.6 ensures text is readable for users with severe vision impairment
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.7: Low or No Background Audio—how to make audio content accessible for everyone.
+[Read Guideline 1.4.7: Low or No Background Audio →](WCAG-Guideline-1-4-7-Low-or-No-Background-Audio-Explained.md)
 
 *Accessibility means everyone can read your message—aim for the highest contrast!*

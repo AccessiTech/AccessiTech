@@ -109,6 +109,6 @@ Guideline 5.1.1 ensures that the web remains accessible as new technologies emer
 
 **Next Up:**
 
-We’ll break down Guideline 5.2.1: Platform Accessibility—how to ensure platforms themselves are accessible.
+[WCAG Guideline 5.2.1: Platform Accessibility →](WCAG-Guideline-5-2-1-Platform-Accessibility-Explained.md)
 
-*Accessibility is future-proof—make every new technology inclusive!*
+*Innovation is for everyone—make new tech accessible from the start!*

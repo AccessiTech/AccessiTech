@@ -111,6 +111,6 @@ Guideline 3.3.1 ensures that users can recognize and fix mistakes in forms and i
 
 **Next Up:**
 
-We’ll break down Guideline 3.3.2: Labels or Instructions—how to help users enter information correctly the first time.
+[WCAG Guideline 3.3.2: Labels or Instructions →](WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained.md)
 
 *Clear feedback leads to confident users—make your error messages accessible to all!*

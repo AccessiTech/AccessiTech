@@ -112,6 +112,6 @@ Guideline 3.2.4 ensures that users can recognize and use controls confidently. C
 
 **Next Up:**
 
-We’ll break down Guideline 3.2.5: Change on Request—how to ensure changes only happen when users ask for them.
+[WCAG Guideline 3.2.5: Change on Request →](WCAG-Guideline-3-2-5-Change-on-Request-Explained.md)
 
 *Consistency is clarity—make your controls easy to recognize and use for everyone!*

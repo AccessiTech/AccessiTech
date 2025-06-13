@@ -107,6 +107,14 @@ For more, see the [W3C’s official documentation for 5.2.5 User Input](https://
 
 Guideline 5.2.5 ensures that everyone can interact with new technologies using the input methods that work best for them. Accessibility in input is essential for true inclusion.
 
+---
+
+**Next Up:**
+
+[WCAG Guideline 5.2.6: User Feedback →](WCAG-Guideline-5-2-6-User-Feedback-Explained.md)
+
+*Input for all—make every interaction accessible!*
+
 **End of Guideline 5 Series**
 
 *Accessible input means everyone can participate—make every interaction inclusive!*

@@ -117,6 +117,6 @@ Guideline 2.2.1 ensures users have enough time to complete tasks by allowing the
 
 **Next Up:**
 
-We’ll break down Guideline 2.2.2: Pause, Stop, Hide—how to give users control over moving, blinking, or auto-updating content.
+[WCAG Guideline 2.2.2: Pause, Stop, Hide →](WCAG-Guideline-2-2-2-Pause-Stop-Hide-Explained.md)
 
 *Accessibility means everyone gets enough time—don’t let the clock run out on your users!*

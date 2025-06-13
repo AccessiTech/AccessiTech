@@ -119,6 +119,6 @@ Guideline 1.2.7 is essential for making video content accessible to users who re
 
 **Next Up:**
 
-We’ll break down Guideline 1.2.8: Media Alternative (Prerecorded)—how to provide a full text alternative for synchronized media.
+[Read Guideline 1.2.8: Media Alternative (Prerecorded) →](WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained.md)
 
 *Accessibility means everyone gets the full story—make your videos count!*

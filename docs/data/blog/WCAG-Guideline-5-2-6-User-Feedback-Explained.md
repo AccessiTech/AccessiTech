@@ -107,6 +107,16 @@ For more, see the [W3C’s official documentation for 5.2.6 User Feedback](https
 
 Guideline 5.2.6 ensures that everyone can provide feedback, report issues, or request support on new technologies. Accessible feedback is essential for improvement and inclusion.
 
-**End of Guideline 5 Series**
+---
+
+**Next Up:**
+
+[WCAG Guideline 5.3: Conformance Claims (Optional) →](WCAG-Guideline-5-3-Conformance-Claims-Explained.md)
+
+*Feedback drives progress—make it easy for everyone to be heard!*
+
+---
+
+## **End of Guideline 5 Series**
 
 *Accessible feedback means every voice is heard—make your support channels inclusive!*

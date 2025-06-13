@@ -120,6 +120,6 @@ Guideline 1.2.4 is essential for making live video content accessible to everyon
 
 **Next Up:**
 
-We’ll break down Guideline 1.2.5: Audio Description (Prerecorded)—how to make prerecorded video content accessible for users who are blind or have low vision.
+[Read Guideline 1.2.5: Audio Description (Prerecorded) →](WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained.md)
 
 *Accessibility means everyone gets the full story—make your live events count!*

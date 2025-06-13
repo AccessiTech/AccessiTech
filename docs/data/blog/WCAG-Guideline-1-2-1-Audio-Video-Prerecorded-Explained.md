@@ -119,6 +119,6 @@ Guideline 1.2.1 is essential for making media content accessible to everyone. By
 
 **Next Up:**
 
-We’ll break down Guideline 1.2.2: Captions (Prerecorded)—how to make video content accessible with captions.
+[Read Guideline 1.2.2: Captions (Prerecorded) →](WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained.md)
 
 *Accessibility means everyone gets the full story—make your media count!*

@@ -111,6 +111,6 @@ Guideline 3.2.6 ensures that users can always find help in the same place, makin
 
 **Next Up:**
 
-We’ll break down Guideline 3.3.7: Redundant Entry—how to help users avoid entering the same information multiple times.
+[WCAG Guideline 3.3.7: Redundant Entry →](WCAG-Guideline-3-3-7-Redundant-Entry-Explained.md)
 
 *Consistency builds trust—make help easy to find for everyone!*

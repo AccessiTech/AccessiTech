@@ -112,6 +112,6 @@ Guideline 4.1.1 ensures your code is robust and accessible for all users and tec
 
 **Next Up:**
 
-We’ll break down Guideline 4.1.2: Name, Role, Value—how to make sure user interface components are accessible to assistive technologies.
+[WCAG Guideline 4.1.2: Name, Role, Value →](WCAG-Guideline-4-1-2-Name-Role-Value-Explained.md)
 
 *Robust code is accessible code—validate and future-proof your site!*

@@ -111,6 +111,6 @@ Guideline 3.3.5 ensures that users can get the help they need to complete forms 
 
 **Next Up:**
 
-We’ll break down Guideline 3.3.6: Error Prevention (All)—how to help users avoid mistakes in all types of forms and submissions.
+[WCAG Guideline 3.3.6: Error Prevention (All) →](WCAG-Guideline-3-3-6-Error-Prevention-All-Explained.md)
 
 *Accessible help empowers users—make sure support is always within reach!*

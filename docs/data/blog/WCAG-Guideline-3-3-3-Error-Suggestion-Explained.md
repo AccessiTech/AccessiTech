@@ -110,6 +110,6 @@ Guideline 3.3.3 ensures that users get the help they need to fix mistakes in for
 
 **Next Up:**
 
-We’ll break down Guideline 3.3.4: Error Prevention (Legal, Financial, Data)—how to help users avoid costly mistakes.
+[WCAG Guideline 3.3.4: Error Prevention (Legal, Financial, Data) →](WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained.md)
 
 *Helpful suggestions lead to successful users—make your error messages actionable and accessible!*

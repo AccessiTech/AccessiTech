@@ -119,6 +119,6 @@ Guideline 1.2.6 is essential for making video content accessible to users who re
 
 **Next Up:**
 
-We’ll break down Guideline 1.2.7: Extended Audio Description (Prerecorded)—how to make video content accessible for users who are blind or have low vision.
+[Read Guideline 1.2.7: Extended Audio Description (Prerecorded) →](WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained.md)
 
 *Accessibility means everyone gets the full story—make your videos count!*

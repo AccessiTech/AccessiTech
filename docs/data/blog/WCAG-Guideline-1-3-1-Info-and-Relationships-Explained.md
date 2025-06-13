@@ -122,6 +122,6 @@ Guideline 1.3.1 is essential for making your site usable and understandable for 
 
 **Next Up:**
 
-We’ll break down Guideline 1.3.2: Meaningful Sequence—how to ensure content is presented in a logical order.
+[Read Guideline 1.3.2: Meaningful Sequence →](WCAG-Guideline-1-3-2-Meaningful-Sequence-Explained.md)
 
 *Accessibility means everyone gets the full story—make your structure count!*

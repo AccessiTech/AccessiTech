@@ -111,6 +111,6 @@ Guideline 1.4.7 ensures that speech in audio content is always clear and accessi
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.8: Visual Presentation—how to give users control over how text is displayed.
+[Read Guideline 1.4.8: Visual Presentation →](WCAG-Guideline-1-4-8-Visual-Presentation-Explained.md)
 
 *Accessibility means everyone can hear your message—don’t let background noise get in the way!*

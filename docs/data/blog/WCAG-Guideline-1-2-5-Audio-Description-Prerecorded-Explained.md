@@ -119,6 +119,6 @@ Guideline 1.2.5 is essential for making prerecorded video content accessible to 
 
 **Next Up:**
 
-We’ll break down Guideline 1.2.6: Sign Language (Prerecorded)—how to make video content accessible for users who communicate with sign language.
+[Read Guideline 1.2.6: Sign Language (Prerecorded) →](WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained.md)
 
 *Accessibility means everyone gets the full story—make your videos count!*

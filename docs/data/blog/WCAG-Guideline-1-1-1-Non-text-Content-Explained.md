@@ -131,6 +131,6 @@ Guideline 1.1.1 is the foundation of accessible web content. By providing text a
 
 **Next Up:**
 
-We’ll break down Guideline 1.2.1: Time-based Media—how to make audio and video content accessible.
+[Read Guideline 1.2.1: Audio-only and Video-only (Prerecorded) →](WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained.md)
 
 *Accessibility starts with a single description—make every image count!*

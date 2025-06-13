@@ -112,6 +112,6 @@ Guideline 3.2.5 ensures that users are always in control of when changes happen 
 
 **Next Up:**
 
-We’ll break down Guideline 3.3.1: Error Identification—how to help users recognize and fix mistakes in forms and inputs.
+[WCAG Guideline 3.2.6: Consistent Help →](WCAG-Guideline-3-2-6-Consistent-Help-Explained.md)
 
 *User control is essential—make sure changes only happen when your users want them!*

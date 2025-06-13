@@ -107,6 +107,16 @@ For more, see the [W3C’s official documentation for 5.2.4 User Notifications](
 
 Guideline 5.2.4 ensures that all users are informed of important events and changes, no matter the platform. Accessible notifications are essential for inclusion and awareness.
 
+---
+
+**Next Up:**
+
+[WCAG Guideline 5.2.5: User Input →](WCAG-Guideline-5-2-5-User-Input-Explained.md)
+
+*Keep everyone in the loop—make notifications accessible for all!*
+
+---
+
 **End of Guideline 5 Series**
 
 *Accessible notifications keep everyone informed—make every alert count!*

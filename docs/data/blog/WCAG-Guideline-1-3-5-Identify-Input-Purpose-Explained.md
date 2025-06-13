@@ -122,6 +122,6 @@ Guideline 1.3.5 is essential for making forms easier and more accessible for eve
 
 **Next Up:**
 
-We’ll break down Guideline 1.3.6: Identify Purpose—how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields.
+[Read Guideline 1.3.6: Identify Purpose →](WCAG-Guideline-1-3-6-Identify-Purpose-Explained.md)
 
 *Accessibility means everyone gets the full story—make your forms smarter!*

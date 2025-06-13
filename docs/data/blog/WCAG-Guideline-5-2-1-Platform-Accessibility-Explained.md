@@ -107,6 +107,16 @@ For more, see the [W3C’s official documentation for 5.2.1 Platform Accessibili
 
 Guideline 5.2.1 ensures that platforms themselves are accessible, enabling all content to be inclusive. Build accessibility into every layer of your technology stack.
 
-**End of Guideline 5 Series**
+---
+
+**Next Up:**
+
+[WCAG Guideline 5.2.2: Content Accessibility →](WCAG-Guideline-5-2-2-Content-Accessibility-Explained.md)
+
+*Platforms are the foundation—make sure accessibility is built in!*
+
+---
+
+## **End of Guideline 5 Series**
 
 *Accessible platforms empower everyone—make your technology stack inclusive from the ground up!*

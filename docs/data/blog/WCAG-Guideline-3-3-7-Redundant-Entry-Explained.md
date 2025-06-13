@@ -109,6 +109,6 @@ Guideline 3.3.7 ensures that users don’t have to enter the same information mo
 
 **Next Up:**
 
-We’ll break down Guideline 3.3.8: Accessible Authentication (Minimum)—how to make authentication processes accessible to all users.
+[WCAG Guideline 3.3.8: Accessible Authentication (Minimum) →](WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained.md)
 
 *Efficiency and ease—help users by reducing unnecessary repetition!*

@@ -116,6 +116,6 @@ Guideline 2.2.2 ensures users can control moving, blinking, or auto-updating con
 
 **Next Up:**
 
-We’ll break down Guideline 2.3.1: Three Flashes or Below Threshold—how to avoid content that can trigger seizures.
+[WCAG Guideline 2.2.3: No Timing →](WCAG-Guideline-2-2-3-No-Timing-Explained.md)
 
 *Accessibility means giving users control—don’t let moving content take it away!*

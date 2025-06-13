@@ -107,6 +107,14 @@ For more, see the [W3C’s official documentation for 5.2.2 Content Accessibilit
 
 Guideline 5.2.2 ensures that content delivered via new technologies is accessible to everyone. Use platform features and test with real users to guarantee inclusion.
 
-**End of Guideline 5 Series**
+---
+
+**Next Up:**
+
+[WCAG Guideline 5.2.3: User Preferences →](WCAG-Guideline-5-2-3-User-Preferences-Explained.md)
+
+*Accessible content means everyone can participate—make it universal!*
+
+---
 
 *Accessible content completes the experience—make every platform and every piece of content inclusive!*

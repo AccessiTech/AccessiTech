@@ -102,3 +102,7 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 A Statement of Partial Conformance – Language helps organizations be transparent about accessibility limitations caused by language support gaps. Clearly document which languages are affected, why, and what you’re doing to address these issues. Keep your statement current as technology evolves.
 
 *Accessibility is for everyone—language shouldn’t be a barrier!*
+
+**End of Guideline 5 Series**
+
+*Global inclusion means no one is left behind—keep striving for accessibility in every language!*

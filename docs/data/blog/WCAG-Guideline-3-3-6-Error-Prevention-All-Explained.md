@@ -108,6 +108,10 @@ For more, see the [W3C’s official documentation for 3.3.6 Error Prevention (Al
 
 Guideline 3.3.6 ensures that users are protected from mistakes in all forms and submissions. Safeguards and review steps are essential for accessibility and trust.
 
-**End of Guideline 3 Series**
+---
+
+**Next Up:**
+
+[WCAG Guideline 3.3.7: Redundant Entry →](WCAG-Guideline-3-3-7-Redundant-Entry-Explained.md)
 
 *Protection and review for all—make every form on your site safe and accessible!*

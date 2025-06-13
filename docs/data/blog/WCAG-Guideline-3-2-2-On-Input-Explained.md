@@ -111,6 +111,6 @@ Guideline 3.2.2 ensures that users are in control of what happens when they inte
 
 **Next Up:**
 
-We’ll break down Guideline 3.2.3: Consistent Navigation—how to keep navigation predictable across your site.
+[WCAG Guideline 3.2.3: Consistent Navigation →](WCAG-Guideline-3-2-3-Consistent-Navigation-Explained.md)
 
 *Predictability and control are key—make sure your forms and controls behave as users expect!*

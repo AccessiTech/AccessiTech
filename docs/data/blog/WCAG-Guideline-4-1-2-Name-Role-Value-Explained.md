@@ -110,6 +110,6 @@ Guideline 4.1.2 ensures that all interactive elements are accessible to assistiv
 
 **Next Up:**
 
-We’ll break down Guideline 4.1.3: Status Messages—how to make sure important updates are announced to users of assistive technology.
+[WCAG Guideline 4.1.3: Status Messages →](WCAG-Guideline-4-1-3-Status-Messages-Explained.md)
 
 *Accessible components empower every user—make your UI inclusive!*

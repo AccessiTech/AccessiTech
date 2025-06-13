@@ -114,6 +114,6 @@ Guideline 1.4.5 ensures content is accessible, scalable, and adaptable by using 
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.6: Contrast (Enhanced)—how to make text even more readable for users with low vision.
+[Read Guideline 1.4.6: Contrast (Enhanced) →](WCAG-Guideline-1-4-6-Contrast-Enhanced-Explained.md)
 
 *Accessibility means real text for real people—don’t hide your message in an image!*

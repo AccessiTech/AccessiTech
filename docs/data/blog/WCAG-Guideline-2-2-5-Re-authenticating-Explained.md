@@ -113,6 +113,6 @@ Guideline 2.2.5 ensures users don’t lose their work if they need to log in aga
 
 **Next Up:**
 
-We’ll break down Guideline 2.2.6: Timeouts—how to inform users about timeouts and their impact on data.
+[WCAG Guideline 2.2.6: Timeouts →](WCAG-Guideline-2-2-6-Timeouts-Explained.md)
 
 *Accessibility means users never lose their work—make re-authenticating seamless!*

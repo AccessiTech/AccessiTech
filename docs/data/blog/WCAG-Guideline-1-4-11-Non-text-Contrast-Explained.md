@@ -118,6 +118,6 @@ Guideline 1.4.11 ensures all users can identify and use controls, icons, and gra
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.12: Text Spacing—how to make sure your content is readable with custom spacing.
+[Read Guideline 1.4.12: Text Spacing →](WCAG-Guideline-1-4-12-Text-Spacing-Explained.md)
 
 *Accessibility means every element is visible—don’t let low contrast hide your controls!*

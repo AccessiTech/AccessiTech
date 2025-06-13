@@ -111,6 +111,6 @@ Guideline 2.2.3 ensures users are never limited by time constraints, supporting 
 
 **Next Up:**
 
-We’ll break down Guideline 2.2.4: Interruptions—how to let users control when they are interrupted by messages or updates.
+[WCAG Guideline 2.2.4: Interruptions →](WCAG-Guideline-2-2-4-Interruptions-Explained.md)
 
 *Accessibility means everyone gets enough time—remove the clock for true inclusion!*

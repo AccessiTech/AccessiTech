@@ -121,6 +121,6 @@ Guideline 2.1.4 is essential for preventing accidental or inaccessible keyboard 
 
 **Next Up:**
 
-We’ll break down Guideline 2.2.1: Timing Adjustable—how to ensure users have enough time to read and use content.
+[WCAG Guideline 2.1.3: Keyboard (No Exception) →](WCAG-Guideline-2-1-3-Keyboard-No-Exception-Explained.md)
 
 *Accessibility means giving users control—make your shortcuts work for everyone!*

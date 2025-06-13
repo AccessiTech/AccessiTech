@@ -115,6 +115,6 @@ Guideline 1.4.2 ensures users are not disrupted by unexpected audio and can cont
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.3: Contrast (Minimum)—how to ensure text is readable for everyone.
+[Read Guideline 1.4.3: Contrast (Minimum) →](WCAG-Guideline-1-4-3-Contrast-Minimum-Explained.md)
 
 *Accessibility means giving users control—don’t let audio take it away!*

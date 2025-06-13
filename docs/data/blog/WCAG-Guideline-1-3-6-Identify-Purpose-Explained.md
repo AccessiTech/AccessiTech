@@ -122,6 +122,4 @@ Guideline 1.3.6 is essential for making your site understandable and navigable f
 
 **Next Up:**
 
-We’ll continue breaking down more WCAG guidelines to help you build a more accessible web.
-
-*Accessibility means everyone gets the full story—make your UI clear!*
+*Accessibility means everyone gets the full story—make your UI purposeful!*

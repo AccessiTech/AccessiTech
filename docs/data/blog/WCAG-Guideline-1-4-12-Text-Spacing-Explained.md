@@ -112,6 +112,6 @@ Guideline 1.4.12 ensures your content remains readable and usable when users adj
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.13: Content on Hover or Focus—how to make sure popups and tooltips are accessible.
+[Read Guideline 1.4.13: Content on Hover or Focus →](WCAG-Guideline-1-4-13-Content-on-Hover-or-Focus-Explained.md)
 
 *Accessibility means everyone can read your content—no matter their spacing needs!*

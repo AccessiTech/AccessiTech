@@ -122,6 +122,6 @@ Guideline 2.1.2 is essential for ensuring users never get stuck while navigating
 
 **Next Up:**
 
-We’ll break down Guideline 2.1.4: Character Key Shortcuts—how to ensure keyboard shortcuts don’t interfere with accessibility.
+[WCAG Guideline 2.1.4: Character Key Shortcuts →](WCAG-Guideline-2-1-4-Character-Key-Shortcuts-Explained.md)
 
 *Accessibility means never trapping your users—let them move freely!*

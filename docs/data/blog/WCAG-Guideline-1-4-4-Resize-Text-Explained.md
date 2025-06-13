@@ -115,6 +115,6 @@ Guideline 1.4.4 ensures users can read and interact with content at larger text 
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.5: Images of Text—why real text is always better for accessibility.
+[Read Guideline 1.4.5: Images of Text →](WCAG-Guideline-1-4-5-Images-of-Text-Explained.md)
 
 *Accessibility means everyone can read your content—make sure it scales!*

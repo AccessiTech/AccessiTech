@@ -115,6 +115,6 @@ Guideline 1.4.10 ensures your content works for everyone, on any device or zoom 
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.11: Non-text Contrast—how to make sure all visual elements are distinguishable.
+[Read Guideline 1.4.11: Non-text Contrast →](WCAG-Guideline-1-4-11-Non-text-Contrast-Explained.md)
 
 *Accessibility means your site works everywhere—make it flexible!*

@@ -111,6 +111,6 @@ Guideline 3.3.4 ensures that users are protected from costly or irreversible mis
 
 **Next Up:**
 
-We’ll break down Guideline 3.3.5: Help—how to provide accessible help for users completing forms.
+[WCAG Guideline 3.3.5: Help →](WCAG-Guideline-3-3-5-Help-Explained.md)
 
 *Protection and review are key—make your critical forms safe and accessible for everyone!*

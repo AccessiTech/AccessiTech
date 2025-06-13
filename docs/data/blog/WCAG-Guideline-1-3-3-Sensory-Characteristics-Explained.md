@@ -122,6 +122,6 @@ Guideline 1.3.3 is essential for making your site usable and understandable for 
 
 **Next Up:**
 
-We’ll break down Guideline 1.3.4: Orientation—how to ensure content is not restricted to a single display orientation.
+[Read Guideline 1.3.4: Orientation →](WCAG-Guideline-1-3-4-Orientation-Explained.md)
 
 *Accessibility means everyone gets the full story—make your instructions count!*

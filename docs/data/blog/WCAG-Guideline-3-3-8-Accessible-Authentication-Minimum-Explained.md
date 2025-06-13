@@ -111,6 +111,6 @@ Guideline 3.3.8 ensures that everyone can authenticate without unnecessary cogni
 
 **Next Up:**
 
-We’ll break down Guideline 3.3.9: Accessible Authentication (Enhanced)—how to make authentication even more accessible.
+[WCAG Guideline 3.3.9: Accessible Authentication (Enhanced) →](WCAG-Guideline-3-3-9-Accessible-Authentication-Enhanced-Explained.md)
 
 *Accessibility starts at login—make authentication easy for everyone!*

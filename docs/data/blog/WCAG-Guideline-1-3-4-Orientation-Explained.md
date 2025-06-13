@@ -121,6 +121,6 @@ Guideline 1.3.4 is essential for making your site usable and accessible for ever
 
 **Next Up:**
 
-We’ll break down Guideline 1.3.5: Identify Input Purpose—how to help browsers and assistive tech identify the purpose of input fields.
+[Read Guideline 1.3.5: Identify Input Purpose →](WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained.md)
 
 *Accessibility means everyone gets the full story—make your content flexible!*

@@ -119,6 +119,6 @@ Guideline 1.2.8 is essential for making media content accessible to users who re
 
 **Next Up:**
 
-We’ll break down Guideline 1.2.9: Audio-only (Live)—how to make live audio content accessible.
+[Read Guideline 1.2.9: Audio-only (Live) →](WCAG-Guideline-1-2-9-Audio-Only-Live-Explained.md)
 
 *Accessibility means everyone gets the full story—make your media count!*

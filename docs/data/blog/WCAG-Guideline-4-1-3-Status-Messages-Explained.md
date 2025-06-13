@@ -107,6 +107,8 @@ For more, see the [W3C’s official documentation for 4.1.3 Status Messages](htt
 
 Guideline 4.1.3 ensures that important updates are announced to all users, including those using assistive technology. Use ARIA live regions to make your status messages accessible.
 
-**End of Guideline 4.1 Series**
+**Next Up:**
+
+[WCAG Guideline 5.1.1: General →](WCAG-Guideline-5-1-1-General-Explained.md)
 
 *Accessible updates keep everyone informed—make your status messages count!*

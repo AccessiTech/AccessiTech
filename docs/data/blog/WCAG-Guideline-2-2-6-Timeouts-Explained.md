@@ -113,6 +113,6 @@ Guideline 2.2.6 ensures users are informed about timeouts and their impact, supp
 
 **Next Up:**
 
-We’ll break down Guideline 2.3.1: Three Flashes or Below Threshold—how to avoid content that can trigger seizures.
+[WCAG Guideline 2.3.1: Three Flashes or Below Threshold →](WCAG-Guideline-2-3-1-Three-Flashes-or-Below-Threshold-Explained.md)
 
 *Accessibility means users never lose their work—always warn about timeouts!*

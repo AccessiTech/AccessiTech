@@ -122,6 +122,6 @@ Guideline 2.1.1 is essential for making your site usable by everyone. By ensurin
 
 **Next Up:**
 
-We’ll break down Guideline 2.1.2: No Keyboard Trap—how to ensure users can move focus away from any component using a keyboard.
+[WCAG Guideline 2.1.2: No Keyboard Trap →](WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained.md)
 
 *Accessibility is about giving everyone a way in—make sure the keyboard always works!*

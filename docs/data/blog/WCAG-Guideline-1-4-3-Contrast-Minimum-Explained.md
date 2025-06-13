@@ -118,6 +118,6 @@ Guideline 1.4.3 ensures text is readable for everyone, especially those with low
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.4: Resize Text—how to ensure text remains readable when users zoom or increase font size.
+[Read Guideline 1.4.4: Resize Text →](WCAG-Guideline-1-4-4-Resize-Text-Explained.md)
 
 *Accessibility means everyone can read your message—don’t let poor contrast get in the way!*

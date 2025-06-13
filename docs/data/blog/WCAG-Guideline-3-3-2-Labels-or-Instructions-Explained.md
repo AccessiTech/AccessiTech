@@ -111,6 +111,6 @@ Guideline 3.3.2 ensures that users can enter information correctly the first tim
 
 **Next Up:**
 
-We’ll break down Guideline 3.3.3: Error Suggestion—how to help users fix mistakes with helpful suggestions.
+[WCAG Guideline 3.3.3: Error Suggestion →](WCAG-Guideline-3-3-3-Error-Suggestion-Explained.md)
 
 *Clear guidance leads to confident users—make your forms easy to understand for everyone!*

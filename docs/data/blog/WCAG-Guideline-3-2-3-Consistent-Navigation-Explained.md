@@ -112,6 +112,6 @@ Guideline 3.2.3 ensures that users can rely on your site’s navigation to be pr
 
 **Next Up:**
 
-We’ll break down Guideline 3.2.4: Consistent Identification—how to keep controls and components recognizable across your site.
+[WCAG Guideline 3.2.4: Consistent Identification →](WCAG-Guideline-3-2-4-Consistent-Identification-Explained.md)
 
 *Consistency builds confidence—make your navigation a familiar friend for every user!*

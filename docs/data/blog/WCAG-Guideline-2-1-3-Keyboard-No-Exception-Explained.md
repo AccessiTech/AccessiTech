@@ -122,6 +122,6 @@ Guideline 2.1.3 is about achieving the highest standard of keyboard accessibilit
 
 **Next Up:**
 
-We’ll break down Guideline 2.2.1: Timing Adjustable—how to ensure users have enough time to read and use content.
+[WCAG Guideline 2.2.1: Timing Adjustable →](WCAG-Guideline-2-2-1-Timing-Adjustable-Explained.md)
 
 *Accessibility means no barriers—make sure every feature works for every user!*

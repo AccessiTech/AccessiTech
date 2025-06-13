@@ -119,6 +119,6 @@ Guideline 1.2.3 is essential for making video content accessible to everyone. By
 
 **Next Up:**
 
-We’ll break down Guideline 1.2.4: Captions (Live)—how to make live video content accessible with captions.
+[Read Guideline 1.2.4: Captions (Live) →](WCAG-Guideline-1-2-4-Captions-Live-Explained.md)
 
 *Accessibility means everyone gets the full story—make your videos count!*

@@ -116,6 +116,6 @@ Guideline 1.4.8 ensures users can customize how text is displayed for maximum re
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.9: Images of Text (No Exception)—the strictest standard for using real text.
+[Read Guideline 1.4.9: Images of Text (No Exception) →](WCAG-Guideline-1-4-9-Images-of-Text-No-Exception-Explained.md)
 
 *Accessibility means giving users control—let them read their way!*

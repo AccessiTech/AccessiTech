@@ -111,6 +111,6 @@ Guideline 3.2.1 ensures that users can navigate your site without surprises. Foc
 
 **Next Up:**
 
-We’ll break down Guideline 3.2.2: On Input—how to handle changes triggered by user input.
+[WCAG Guideline 3.2.2: On Input →](WCAG-Guideline-3-2-2-On-Input-Explained.md)
 
 *Predictability is key—let users control what happens when they focus on your content!*

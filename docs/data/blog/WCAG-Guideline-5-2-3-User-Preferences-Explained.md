@@ -107,6 +107,10 @@ For more, see the [W3C’s official documentation for 5.2.3 User Preferences](ht
 
 Guideline 5.2.3 ensures that user preferences for accessibility are respected on all platforms and content. Personalization is key to true inclusion.
 
-**End of Guideline 5 Series**
+---
 
-*Accessibility is personal—let users shape their own experience!*
+**Next Up:**
+
+[WCAG Guideline 5.2.4: User Notifications →](WCAG-Guideline-5-2-4-User-Notifications-Explained.md)
+
+*Personalization is power—let users shape their own experience!*

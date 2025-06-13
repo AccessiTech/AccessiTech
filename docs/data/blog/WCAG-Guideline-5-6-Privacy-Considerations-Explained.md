@@ -102,3 +102,11 @@ Privacy considerations refer to the practices and safeguards that protect users�
 Privacy is a fundamental right for all users, including those with disabilities. By addressing privacy considerations in accessible design, you build trust, comply with laws, and create safer, more inclusive digital experiences.
 
 *Accessibility and privacy go hand in hand—protect both for every user!*
+
+---
+
+**Next Up:**
+
+[WCAG Guideline 5.7: Security Considerations →](WCAG-Guideline-5-7-Security-Considerations-Explained.md)
+
+*Privacy and security go hand in hand—make both accessible!*

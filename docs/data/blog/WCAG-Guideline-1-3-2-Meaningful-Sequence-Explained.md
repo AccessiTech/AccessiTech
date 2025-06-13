@@ -122,6 +122,6 @@ Guideline 1.3.2 is essential for making your site understandable and usable for 
 
 **Next Up:**
 
-We’ll break down Guideline 1.3.3: Sensory Characteristics—how to ensure instructions don’t rely on shape, color, or sound alone.
+[Read Guideline 1.3.3: Sensory Characteristics →](WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained.md)
 
 *Accessibility means everyone gets the full story—make your order count!*

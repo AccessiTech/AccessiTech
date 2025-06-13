@@ -115,6 +115,6 @@ Guideline 1.4.9 ensures all content, including logos and branding, is accessible
 
 **Next Up:**
 
-We’ll break down Guideline 1.4.10: Reflow—how to make sure your content works on any screen size.
+[Read Guideline 1.4.10: Reflow →](WCAG-Guideline-1-4-10-Reflow-Explained.md)
 
 *Accessibility means real text for real people—don’t hide your message in an image!*

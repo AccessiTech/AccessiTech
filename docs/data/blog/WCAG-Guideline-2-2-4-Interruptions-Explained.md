@@ -113,6 +113,6 @@ Guideline 2.2.4 ensures users can control when they are interrupted, supporting 
 
 **Next Up:**
 
-We’ll break down Guideline 2.2.5: Re-authenticating—how to let users continue their work after logging back in.
+[WCAG Guideline 2.2.5: Re-authenticating →](WCAG-Guideline-2-2-5-Re-authenticating-Explained.md)
 
 *Accessibility means users control their experience—don’t let interruptions take over!*
