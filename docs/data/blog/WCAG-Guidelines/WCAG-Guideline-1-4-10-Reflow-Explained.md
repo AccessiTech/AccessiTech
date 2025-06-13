@@ -69,7 +69,7 @@ All must adapt to small screens and zoom without requiring two-dimensional scrol
 - **Ensure all content and functionality remain accessible**
 - **Avoid horizontal scrolling** except for parts that require it (e.g., data tables)
 
-For more, see the [W3C's Reflow Techniques](https://www.w3.org/WAI/WCAG22/Techniques/css/C28).
+For more, see the [W3C’s Reflow Techniques](https://www.w3.org/WAI/WCAG22/Techniques/css/C28).
 
 ---
 
