@@ -9,17 +9,25 @@ imageAlt: Illustration of an image with alt text and a screen reader icon
 
 # **WCAG Guideline 1.1.1: Non-text Content Explained**
 
-**Estimated read time:** 5–6 minutes
+**Estimated read time:** 8–10 minutes
 
 ---
 
-## **What Is Guideline 1.1.1?**
+## **Guideline 1: Perceivable**
+
+The first principle of WCAG, Perceivable, ensures that information and user interface components must be presented to users in ways they can perceive. This means content can’t be invisible to all of a user’s senses—whether they are seeing, hearing, or feeling the content through assistive technology.
+
+## **Guideline 1.1: Text Alternatives**
+
+Guideline 1.1 focuses on providing text alternatives for any non-text content. This allows information conveyed by images, icons, or other media to be accessible to users who may not be able to see or interpret visual content. Text alternatives are the foundation for making web content accessible to everyone, including people using screen readers or other assistive technologies.
+
+## **What Is Guideline 1.1.1 Non-text Content?**
 
 [Illustration: Web page with images and icons, with a speech bubble showing a screen reader reading alt text]
 
 > "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose."
 
-Guideline 1.1.1 (Non-text Content) is the very first requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content).
+Guideline 1.1.1 Non-text Content is the very first requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content).
 
 - Any information conveyed visually—such as images, icons, charts, or other media—must also be available in a text format.
 - Text alternatives ensure that everyone, including people using screen readers or those with slow internet connections, can access your content.
@@ -91,15 +99,15 @@ To avoid these pitfalls, audit your site regularly and use accessibility checker
 
 ---
 
-## **Differences Between A, AA, and AAA in WCAG 2.1**
+## **Differences Between A, AA, and AAA for Guideline 1.1.1 in WCAG 2.2**
 
 [Infographic: Three columns labeled A, AA, AAA with example requirements for each]
 
-- **Level A:** The minimum level of accessibility. Addresses the most basic web accessibility features and removes the most severe barriers for users with disabilities. Examples include providing alt text for all images and ensuring all functionality is available via keyboard.
-- **Level AA:** The mid-range and most commonly required level. Builds on Level A and addresses the biggest and most common barriers for disabled users. Examples include providing sufficient color contrast (at least 4.5:1 for normal text), ensuring resizable text, and providing clear focus indicators.
-- **Level AAA:** The highest level of accessibility. Builds on A and AA and aims for the best possible experience, though not all content can meet AAA. Examples include providing sign language interpretation for videos, a contrast ratio of at least 7:1 for normal text, and no timing on any part of the content.
+- **Level A:** Requires that all non-text content has a text alternative that serves the equivalent purpose (e.g., alt text for images, accessible names for icons and buttons). This is the core requirement for 1.1.1 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 1.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 1.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
-In [WCAG 2.1](https://www.w3.org/TR/WCAG21/), each guideline and success criterion is assigned a conformance level. To meet AA, you must also meet all A criteria; to meet AAA, you must meet all A and AA criteria as well. For a full breakdown, see the [W3C’s list of success criteria by level](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=111%2C112#levels).
+For more, see the [W3C’s official documentation for 1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html).
 
 ---
 
@@ -107,11 +115,11 @@ In [WCAG 2.1](https://www.w3.org/TR/WCAG21/), each guideline and success criteri
 
 [Checklist graphic: Icons for each item (image, icon, chart, video, etc.)]
 
-- [ ] Every image has an appropriate `alt` attribute
-- [ ] Decorative images use `alt=""`
-- [ ] Icons and buttons have accessible names
-- [ ] Complex visuals have detailed descriptions
-- [ ] Audio/video have transcripts or captions
+- Every image has an appropriate `alt` attribute
+- Decorative images use `alt=""`
+- Icons and buttons have accessible names
+- Complex visuals have detailed descriptions
+- Audio/video have transcripts or captions
 
 ---
 
