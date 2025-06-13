@@ -91,6 +91,18 @@ To avoid these pitfalls, audit your site regularly and use accessibility checker
 
 ---
 
+## **Differences Between A, AA, and AAA in WCAG 2.1**
+
+[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+
+- **Level A:** The minimum level of accessibility. Addresses the most basic web accessibility features and removes the most severe barriers for users with disabilities. Examples include providing alt text for all images and ensuring all functionality is available via keyboard.
+- **Level AA:** The mid-range and most commonly required level. Builds on Level A and addresses the biggest and most common barriers for disabled users. Examples include providing sufficient color contrast (at least 4.5:1 for normal text), ensuring resizable text, and providing clear focus indicators.
+- **Level AAA:** The highest level of accessibility. Builds on A and AA and aims for the best possible experience, though not all content can meet AAA. Examples include providing sign language interpretation for videos, a contrast ratio of at least 7:1 for normal text, and no timing on any part of the content.
+
+In [WCAG 2.1](https://www.w3.org/TR/WCAG21/), each guideline and success criterion is assigned a conformance level. To meet AA, you must also meet all A criteria; to meet AAA, you must meet all A and AA criteria as well. For a full breakdown, see the [W3C’s list of success criteria by level](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=111%2C112#levels).
+
+---
+
 ## **Quick Checklist**
 
 [Checklist graphic: Icons for each item (image, icon, chart, video, etc.)]
@@ -100,8 +112,6 @@ To avoid these pitfalls, audit your site regularly and use accessibility checker
 - [ ] Icons and buttons have accessible names
 - [ ] Complex visuals have detailed descriptions
 - [ ] Audio/video have transcripts or captions
-
-A quick checklist can help you ensure your site meets the requirements of Guideline 1.1.1. Use it as part of your content creation and review process. For a more comprehensive list, see the [A11Y Project's checklist](https://www.a11yproject.com/checklist/).
 
 ---
 
