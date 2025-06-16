@@ -6,7 +6,7 @@ keywords: AI coding accessibility, GitHub Copilot chronic pain, accessible IDEs,
 date: 2025-04-08
 image: AI-for-Coding-Accessibility.png
 imageAlt: Yellow text on dark blue background saying, AI for Coding Accessibility, How Tools Like Copilot Help Me Ship Code Despite Chronic Pain
--status: draft
+status: published
 -->
 
 # **AI for Coding Accessibility: How Tools Like Copilot Help Me Ship Code Despite Chronic Pain**

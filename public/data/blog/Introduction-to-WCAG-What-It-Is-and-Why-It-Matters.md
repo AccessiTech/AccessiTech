@@ -7,7 +7,7 @@ date: 2025-05-29
 series: Making the Web Accessible for All
 image: intorduction-to-wcag.png
 imageAlt:Dark blue text on yellow background saying, Introduction to WCAG, What it is and Why it Matters
--status: published
+status: published
 -->
 
 # **Introduction to WCAG: What It Is and Why It Matters**
