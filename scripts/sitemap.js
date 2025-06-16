@@ -28,6 +28,7 @@ function readCNAME(filePath) {
       description: "Welcome to AccessiTech, your go-to source for web accessibility solutions.",
       image: "https://www.accessi.tech/assets/images/default.png",
       imageAlt: "AccessiTech logo",
+      status: 'published',
     },
     {
       url: "/blog",
@@ -37,15 +38,32 @@ function readCNAME(filePath) {
       description: "Explore my blog for the latest insights on web accessibility.",
       image: "https://www.accessi.tech/assets/images/default.png",
       imageAlt: "AccessiTech logo",
+      status: 'published',
     },
   ];
   const blogDir = path.join(process.cwd(), "public/data/blog");
-  const blogFiles = fs.readdirSync(blogDir);
-  blogFiles.forEach((file) => {
-    const filePath = path.join(blogDir, file);
+  // Recursively get all .md files from blogDir and subdirectories
+  function getAllMarkdownFiles(dir) {
+    let results = [];
+    const list = fs.readdirSync(dir);
+    list.forEach((file) => {
+      const filePath = path.join(dir, file);
+      const stat = fs.statSync(filePath);
+      if (stat && stat.isDirectory()) {
+        results = results.concat(getAllMarkdownFiles(filePath));
+      } else if (file.endsWith('.md')) {
+        results.push(filePath);
+      }
+    });
+    return results;
+  }
+  const blogFiles = getAllMarkdownFiles(blogDir);
+  blogFiles.forEach((filePath) => {
     const fileContent = fs.readFileSync(filePath, { encoding: "utf-8" });
+    // Generate the blog link relative to blogDir
+    const relativePath = path.relative(blogDir, filePath).replace(/\\/g, '/');
     const fileMetaData = getMetaData(fileContent);
-    const link = `/blog/${file}`.replace(".md", "");
+    const link = `/blog/${relativePath}`.replace(".md", "");
     pages.push({
       ...fileMetaData,
       url: link,
@@ -68,13 +86,28 @@ function readCNAME(filePath) {
   ${pages
     .map((page) => {
       // get size of image in bytes
-      const pathToImage = path.resolve(
+      if (page.status !== 'published') return;
+      let imagePath = path.resolve(
         process.cwd(),
         "public/assets/images",
         page.image?.replace(PUBLIC_IMAGE_DIR, "")
       );
-      const stats = fs.statSync(pathToImage);
-      const imageSize = stats.size;
+      let imageSize = 0;
+      if (!fs.existsSync(imagePath)) {
+        // Use default image if not found
+        console.warn(`Image not found: ${imagePath}, using default.png`);
+        imagePath = path.resolve(
+          process.cwd(),
+          "public/assets/images/default.png"
+        );
+      }
+      try {
+        const stats = fs.statSync(imagePath);
+        imageSize = stats.size;
+      } catch (e) {
+        console.warn(`Could not stat image: ${imagePath}`);
+        imageSize = 0;
+      }
 
       return `
           <url>
@@ -100,6 +133,7 @@ function readCNAME(filePath) {
           </url>
         `;
     })
+    .filter((page) => page)
     .join("")}
   </urlset>`;
   fs.writeFileSync(path.resolve(process.cwd(), "public/sitemap.xml"), sitemap);
