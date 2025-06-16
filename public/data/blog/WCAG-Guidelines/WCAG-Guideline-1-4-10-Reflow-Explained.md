@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.10 (Reflow)—what it means
 keywords: wcag 1.4.10, reflow, accessibility, web standards, responsive design, mobile accessibility
 image: wcag-1-4-10-reflow.png
 imageAlt: Illustration of a web page reflowing from desktop to mobile
+status: draft
 -->
 
 # **WCAG Guideline 1.4.10: Reflow Explained**

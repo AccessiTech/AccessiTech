@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.11 (Non-text Contrast)—wh
 keywords: wcag 1.4.11, non-text contrast, accessibility, web standards, visual cues, UI elements
 image: wcag-1-4-11-non-text-contrast.png
 imageAlt: Illustration of UI controls with high and low contrast examples
+status: draft
 -->
 
 # **WCAG Guideline 1.4.11: Non-text Contrast Explained**

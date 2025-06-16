@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.2.2 (Content Accessibility)â€
 keywords: wcag 5.2.2, content accessibility, accessibility, web standards, user experience, emerging technologies
 image: wcag-5-2-2-content-accessibility.png
 imageAlt: Illustration of content displayed on a futuristic platform with accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 5.2.2: Content Accessibility Explained**

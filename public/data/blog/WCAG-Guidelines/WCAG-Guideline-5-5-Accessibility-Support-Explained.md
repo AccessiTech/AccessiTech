@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.5 (Accessibility Support)—w
 keywords: wcag 5.5, accessibility support, accessibility, web standards, user experience, emerging technologies
 image: wcag-5-5-accessibility-support.png
 imageAlt: Illustration of a support document or checklist with accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 5.5: Accessibility Support Explained**

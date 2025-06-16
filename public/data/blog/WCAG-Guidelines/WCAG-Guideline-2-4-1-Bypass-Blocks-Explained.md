@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.1 (Bypass Blocks)—what it
 keywords: wcag 2.4.1, bypass blocks, accessibility, web standards, skip links, navigation
 image: wcag-2-4-1-bypass-blocks.png
 imageAlt: Illustration of a skip link button and keyboard navigation
+status: draft
 -->
 
 # **WCAG Guideline 2.4.1: Bypass Blocks Explained**

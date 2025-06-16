@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.6 (Privacy Considerations)—
 keywords: wcag 5.6, privacy, accessibility, web standards, user experience, emerging technologies
 image: wcag-5-6-privacy-considerations.png
 imageAlt: Illustration of a lock, shield, and accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 5.6: Privacy Considerations Explained**

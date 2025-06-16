@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.1.2 (No Keyboard Trap)—what
 keywords: wcag 2.1.2, keyboard trap, focus management, accessibility, web standards, digital inclusion, tab order
 image: wcag-2-1-2-no-keyboard-trap.png
 imageAlt: Illustration of a keyboard focus indicator moving freely between elements
+status: draft
 -->
 
 # **WCAG Guideline 2.1.2: No Keyboard Trap Explained**

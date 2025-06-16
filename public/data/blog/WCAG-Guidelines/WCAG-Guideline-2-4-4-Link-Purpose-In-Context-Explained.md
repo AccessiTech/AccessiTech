@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.4 (Link Purpose In Context)
 keywords: wcag 2.4.4, link purpose, accessibility, web standards, descriptive links, navigation
 image: wcag-2-4-4-link-purpose-in-context.png
 imageAlt: Illustration of a list of links with descriptive text and a screen reader icon
+status: draft
 -->
 
 # **WCAG Guideline 2.4.4: Link Purpose (In Context) Explained**

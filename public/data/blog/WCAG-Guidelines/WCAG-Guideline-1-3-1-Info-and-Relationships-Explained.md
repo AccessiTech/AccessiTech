@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.3.1 (Info and Relationships)â
 keywords: wcag 1.3.1, info and relationships, accessibility, web standards, headings, lists, tables, digital inclusion
 image: wcag-1-3-1-info-relationships.png
 imageAlt: Illustration of a web page with headings, lists, and tables marked up
+status: draft
 -->
 
 # **WCAG Guideline 1.3.1: Info and Relationships Explained**

@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.6 (Consistent Help)—what 
 keywords: wcag 3.2.6, consistent help, accessibility, web standards, user assistance, user experience
 image: wcag-3-2-6-consistent-help.png
 imageAlt: Illustration of a website with a help icon in the same place on every page
+status: draft
 -->
 
 # **WCAG Guideline 3.2.6: Consistent Help Explained**

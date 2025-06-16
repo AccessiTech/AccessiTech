@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.5 (Target Size)—what it m
 keywords: wcag 2.5.5, target size, accessibility, web standards, touch targets, button size
 image: wcag-2-5-5-target-size.png
 imageAlt: Illustration of a finger tapping a large button and a small button
+status: draft
 -->
 
 # **WCAG Guideline 2.5.5: Target Size Explained**

@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.3.1 (Three Flashes or Below T
 keywords: wcag 2.3.1, three flashes, accessibility, web standards, seizures, flashing content
 image: wcag-2-3-1-three-flashes.png
 imageAlt: Illustration of a warning icon and a flashing screen with accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 2.3.1: Three Flashes or Below Threshold Explained**

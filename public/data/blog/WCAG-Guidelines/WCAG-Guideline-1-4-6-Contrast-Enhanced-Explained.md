@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.6 (Contrast Enhanced)—wha
 keywords: wcag 1.4.6, contrast enhanced, accessibility, web standards, color contrast, low vision
 image: wcag-1-4-6-contrast-enhanced.png
 imageAlt: Illustration of text with very high contrast examples
+status: draft
 -->
 
 # **WCAG Guideline 1.4.6: Contrast (Enhanced) Explained**

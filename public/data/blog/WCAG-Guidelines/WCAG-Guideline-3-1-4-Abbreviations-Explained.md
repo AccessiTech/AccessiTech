@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.4 (Abbreviations)—what it
 keywords: wcag 3.1.4, abbreviations, accessibility, web standards, acronyms, user experience
 image: wcag-3-1-4-abbreviations.png
 imageAlt: Illustration of a web page with highlighted abbreviations and a help icon
+status: draft
 -->
 
 # **WCAG Guideline 3.1.4: Abbreviations Explained**

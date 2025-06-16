@@ -7,6 +7,7 @@ date: 2025-04-03
 categories: 
 image: How-AccessiTech-Meets-You-Where-You-Are.png
 imageAlt: Black text on pink background saying "Accessibility Isn't One-Size-Fits-All How AccessiTech Meets You Where You Are"
+status: published
 -->
 
 # **Accessibility Isn’t One-Size-Fits-All: How AccessiTech Meets You Where You Are**  

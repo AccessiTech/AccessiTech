@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.2 (Page Titled)—what it m
 keywords: wcag 2.4.2, page titled, accessibility, web standards, page title, navigation
 image: wcag-2-4-2-page-titled.png
 imageAlt: Illustration of a browser tab with a descriptive page title
+status: draft
 -->
 
 # **WCAG Guideline 2.4.2: Page Titled Explained**

@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.2.5 (Re-authenticating)—wha
 keywords: wcag 2.2.5, re-authenticating, accessibility, web standards, session timeout, user experience
 image: wcag-2-2-5-re-authenticating.png
 imageAlt: Illustration of a login screen with a "continue" button and accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 2.2.5: Re-authenticating Explained**

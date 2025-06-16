@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.2 (Labels or Instructions)â
 keywords: wcag 3.3.2, labels or instructions, accessibility, web standards, form usability, user experience
 image: wcag-3-3-2-labels-or-instructions.png
 imageAlt: Illustration of a form with clear labels and instructions for each field
+status: draft
 -->
 
 # **WCAG Guideline 3.3.2: Labels or Instructions Explained**

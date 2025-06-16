@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what 
 keywords: wcag 3.3.7, redundant entry, accessibility, web standards, user experience, form usability
 image: wcag-3-3-7-redundant-entry.png
 imageAlt: Illustration of a form with auto-filled fields and a user icon
+status: draft
 -->
 
 # **WCAG Guideline 3.3.7: Redundant Entry Explained**

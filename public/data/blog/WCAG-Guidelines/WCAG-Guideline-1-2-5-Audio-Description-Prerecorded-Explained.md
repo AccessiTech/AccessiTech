@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.2.5 (Audio Description, Prere
 keywords: wcag 1.2.5, audio description, accessibility, video accessibility, web standards, digital inclusion
 image: wcag-1-2-5-audio-description-prerecorded.png
 imageAlt: Illustration of a video player with audio description enabled
+status: draft
 -->
 
 # **WCAG Guideline 1.2.5: Audio Description (Prerecorded) Explained**

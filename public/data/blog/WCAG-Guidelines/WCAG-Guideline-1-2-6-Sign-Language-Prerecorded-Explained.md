@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.2.6 (Sign Language, Prerecord
 keywords: wcag 1.2.6, sign language, video accessibility, web standards, digital inclusion, ASL, BSL
 image: wcag-1-2-6-sign-language-prerecorded.png
 imageAlt: Illustration of a video player with a sign language interpreter overlay
+status: draft
 -->
 
 # **WCAG Guideline 1.2.6: Sign Language (Prerecorded) Explained**

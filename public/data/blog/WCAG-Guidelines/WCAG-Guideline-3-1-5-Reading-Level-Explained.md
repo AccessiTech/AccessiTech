@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.5 (Reading Level)—what it
 keywords: wcag 3.1.5, reading level, accessibility, web standards, plain language, user experience
 image: wcag-3-1-5-reading-level.png
 imageAlt: Illustration of a web page with a readability score and plain language icon
+status: draft
 -->
 
 # **WCAG Guideline 3.1.5: Reading Level Explained**

@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.2.2 (Captions, Prerecorded)â€
 keywords: wcag 1.2.2, captions, video accessibility, accessibility, web standards, digital inclusion, subtitles
 image: wcag-1-2-2-captions-prerecorded.png
 imageAlt: Illustration of a video player with captions enabled
+status: draft
 -->
 
 # **WCAG Guideline 1.2.2: Captions (Prerecorded) Explained**

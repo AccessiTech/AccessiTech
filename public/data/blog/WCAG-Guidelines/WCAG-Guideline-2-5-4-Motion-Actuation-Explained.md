@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what
 keywords: wcag 2.5.4, motion actuation, accessibility, web standards, device motion, user input
 image: wcag-2-5-4-motion-actuation.png
 imageAlt: Illustration of a phone being shaken with an alternative button control
+status: draft
 -->
 
 # **WCAG Guideline 2.5.4: Motion Actuation Explained**

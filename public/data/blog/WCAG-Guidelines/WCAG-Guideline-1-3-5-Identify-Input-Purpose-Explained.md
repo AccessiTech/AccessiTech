@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.3.5 (Identify Input Purpose)â
 keywords: wcag 1.3.5, identify input purpose, accessibility, web standards, autofill, input fields, digital inclusion
 image: wcag-1-3-5-identify-input-purpose.png
 imageAlt: Illustration of a form with input fields and autofill icons
+status: draft
 -->
 
 # **WCAG Guideline 1.3.5: Identify Input Purpose Explained**

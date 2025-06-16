@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—wha
 keywords: wcag 3.1.2, language of parts, accessibility, web standards, html lang, screen readers, multilingual content
 image: wcag-3-1-2-language-of-parts.png
 imageAlt: Illustration of a web page with highlighted text in different languages and accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 3.1.2: Language of Parts Explained**

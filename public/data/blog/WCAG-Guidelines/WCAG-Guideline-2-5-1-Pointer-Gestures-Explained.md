@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what
 keywords: wcag 2.5.1, pointer gestures, accessibility, web standards, touch gestures, user input
 image: wcag-2-5-1-pointer-gestures.png
 imageAlt: Illustration of a hand using a touchscreen with simple and complex gestures
+status: draft
 -->
 
 # **WCAG Guideline 2.5.1: Pointer Gestures Explained**

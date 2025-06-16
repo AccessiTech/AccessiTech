@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—
 keywords: wcag 2.5.2, pointer cancellation, accessibility, web standards, touch input, accidental activation
 image: wcag-2-5-2-pointer-cancellation.png
 imageAlt: Illustration of a finger hovering over a button with a cancel icon
+status: draft
 -->
 
 # **WCAG Guideline 2.5.2: Pointer Cancellation Explained**

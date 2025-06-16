@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 4.1.1 (Parsing)—what it means
 keywords: wcag 4.1.1, parsing, accessibility, web standards, code validation, user experience
 image: wcag-4-1-1-parsing.png
 imageAlt: Illustration of HTML code with a checkmark and accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 4.1.1: Parsing Explained**

@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.4 (Error Prevention: Legal,
 keywords: wcag 3.3.4, error prevention, legal, financial, data, accessibility, web standards, user experience
 image: wcag-3-3-4-error-prevention.png
 imageAlt: Illustration of a user reviewing a summary before submitting a legal or financial form
+status: draft
 -->
 
 # **WCAG Guideline 3.3.4: Error Prevention (Legal, Financial, Data) Explained**

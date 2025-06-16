@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 4.1.2 (Name, Role, Value)—wha
 keywords: wcag 4.1.2, name role value, accessibility, web standards, assistive technology, user experience
 image: wcag-4-1-2-name-role-value.png
 imageAlt: Illustration of UI components with labels and accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 4.1.2: Name, Role, Value Explained**

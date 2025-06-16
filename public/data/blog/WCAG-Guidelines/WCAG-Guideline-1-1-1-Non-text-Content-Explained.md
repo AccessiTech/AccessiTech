@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.1.1 (Non-text Content)—what
 keywords: wcag 1.1.1, non-text content, alt text, accessibility, web standards, images, icons, screen readers, digital inclusion
 image: wcag-1-1-1-non-text-content.png
 imageAlt: Illustration of an image with alt text and a screen reader icon
+status: draft
 -->
 
 # **WCAG Guideline 1.1.1: Non-text Content Explained**

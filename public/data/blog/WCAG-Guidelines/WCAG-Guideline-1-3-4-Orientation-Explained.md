@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.3.4 (Orientation)—what it m
 keywords: wcag 1.3.4, orientation, accessibility, web standards, mobile, landscape, portrait, digital inclusion
 image: wcag-1-3-4-orientation.png
 imageAlt: Illustration of a mobile device switching between portrait and landscape
+status: draft
 -->
 
 # **WCAG Guideline 1.3.4: Orientation Explained**

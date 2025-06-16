@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.6.1 (Device Sensors)—what i
 keywords: wcag 2.6.1, device sensors, accessibility, web standards, motion sensors, user input
 image: wcag-2-6-1-device-sensors.png
 imageAlt: Illustration of a phone with motion and orientation sensors and alternative controls
+status: draft
 -->
 
 # **WCAG Guideline 2.6.1: Device Sensors Explained**

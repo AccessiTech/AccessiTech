@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what
 keywords: wcag 1.3.6, identify purpose, accessibility, web standards, autofill, user interface, digital inclusion
 image: wcag-1-3-6-identify-purpose.png
 imageAlt: Illustration of a web page with UI components and purpose icons
+status: draft
 -->
 
 # **WCAG Guideline 1.3.6: Identify Purpose Explained**

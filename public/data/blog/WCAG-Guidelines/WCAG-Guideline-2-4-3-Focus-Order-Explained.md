@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.3 (Focus Order)—what it m
 keywords: wcag 2.4.3, focus order, accessibility, web standards, keyboard navigation, tab order
 image: wcag-2-4-3-focus-order.png
 imageAlt: Illustration of a keyboard tabbing through a logical sequence of page elements
+status: draft
 -->
 
 # **WCAG Guideline 2.4.3: Focus Order Explained**

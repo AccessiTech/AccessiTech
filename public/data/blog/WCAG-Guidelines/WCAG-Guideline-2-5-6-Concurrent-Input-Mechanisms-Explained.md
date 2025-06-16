@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.6 (Concurrent Input Mechani
 keywords: wcag 2.5.6, concurrent input mechanisms, accessibility, web standards, input methods, user control
 image: wcag-2-5-6-concurrent-input-mechanisms.png
 imageAlt: Illustration of a user switching between keyboard, mouse, and touch input
+status: draft
 -->
 
 # **WCAG Guideline 2.5.6: Concurrent Input Mechanisms Explained**

@@ -5,6 +5,7 @@ description: Learn what WCAG conformance levels A, AA, and AAA mean, how they im
 keywords: wcag levels, wcag a aa aaa, accessibility standards, web compliance, digital inclusion, accessibility checklist, wcag explained
 image: wcag-conformance-levels.png
 imageAlt: Three stacked blocks labeled A, AA, AAA representing WCAG levels
+status: draft
 -->
 
 # **WCAG Conformance Levels Explained: A, AA, and AAA**

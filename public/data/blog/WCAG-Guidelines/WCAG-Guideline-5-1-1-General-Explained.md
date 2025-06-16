@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.1.1 (General)—what it means
 keywords: wcag 5.1.1, general, accessibility, web standards, emerging technologies, user experience
 image: wcag-5-1-1-general.png
 imageAlt: Illustration of a web page with a generic accessibility icon and futuristic elements
+status: draft
 -->
 
 # **WCAG Guideline 5.1.1: General Explained**

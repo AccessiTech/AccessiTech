@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.3 (Contrast Minimum)—what
 keywords: wcag 1.4.3, contrast, accessibility, web standards, color contrast, readability
 image: wcag-1-4-3-contrast-minimum.png
 imageAlt: Illustration of text with high and low contrast examples
+status: draft
 -->
 
 # **WCAG Guideline 1.4.3: Contrast (Minimum) Explained**

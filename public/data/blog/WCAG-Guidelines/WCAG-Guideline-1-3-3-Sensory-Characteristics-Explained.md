@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.3.3 (Sensory Characteristics)
 keywords: wcag 1.3.3, sensory characteristics, accessibility, web standards, instructions, color, shape, digital inclusion
 image: wcag-1-3-3-sensory-characteristics.png
 imageAlt: Illustration of instructions using color, shape, and text
+status: draft
 -->
 
 # **WCAG Guideline 1.3.3: Sensory Characteristics Explained**

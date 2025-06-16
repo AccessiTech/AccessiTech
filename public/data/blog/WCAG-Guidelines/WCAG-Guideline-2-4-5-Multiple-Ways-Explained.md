@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it
 keywords: wcag 2.4.5, multiple ways, accessibility, web standards, navigation, site search
 image: wcag-2-4-5-multiple-ways.png
 imageAlt: Illustration of a website with navigation menu, search bar, and sitemap
+status: draft
 -->
 
 # **WCAG Guideline 2.4.5: Multiple Ways Explained**

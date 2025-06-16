@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prere
 keywords: wcag 1.2.8, media alternative, video accessibility, web standards, digital inclusion, full text transcript
 image: wcag-1-2-8-media-alternative-prerecorded.png
 imageAlt: Illustration of a video player and a full text transcript side by side
+status: draft
 -->
 
 # **WCAG Guideline 1.2.8: Media Alternative (Prerecorded) Explained**

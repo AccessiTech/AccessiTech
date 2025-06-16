@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.5 (Help)—what it means, w
 keywords: wcag 3.3.5, help, accessibility, web standards, user assistance, user experience
 image: wcag-3-3-5-help.png
 imageAlt: Illustration of a user accessing help or support while filling out a form
+status: draft
 -->
 
 # **WCAG Guideline 3.3.5: Help Explained**

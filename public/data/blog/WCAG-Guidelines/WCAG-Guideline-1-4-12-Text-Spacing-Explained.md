@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.12 (Text Spacing)—what it
 keywords: wcag 1.4.12, text spacing, accessibility, web standards, readability, user styles
 image: wcag-1-4-12-text-spacing.png
 imageAlt: Illustration of text blocks with different spacing settings
+status: draft
 -->
 
 # **WCAG Guideline 1.4.12: Text Spacing Explained**

@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.3.2 (Meaningful Sequence)—w
 keywords: wcag 1.3.2, meaningful sequence, accessibility, web standards, reading order, digital inclusion
 image: wcag-1-3-2-meaningful-sequence.png
 imageAlt: Illustration of a web page with highlighted reading order arrows
+status: draft
 -->
 
 # **WCAG Guideline 1.3.2: Meaningful Sequence Explained**

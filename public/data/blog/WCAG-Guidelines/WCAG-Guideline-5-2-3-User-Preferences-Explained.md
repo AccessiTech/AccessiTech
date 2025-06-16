@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.2.3 (User Preferences)—what
 keywords: wcag 5.2.3, user preferences, accessibility, web standards, user experience, emerging technologies
 image: wcag-5-2-3-user-preferences.png
 imageAlt: Illustration of a user adjusting accessibility preferences on a futuristic device
+status: draft
 -->
 
 # **WCAG Guideline 5.2.3: User Preferences Explained**

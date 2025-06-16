@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.3 (Consistent Navigation)â€
 keywords: wcag 3.2.3, consistent navigation, accessibility, web standards, navigation menus, user experience
 image: wcag-3-2-3-consistent-navigation.png
 imageAlt: Illustration of a website with a highlighted navigation bar appearing in the same place on every page
+status: draft
 -->
 
 # **WCAG Guideline 3.2.3: Consistent Navigation Explained**

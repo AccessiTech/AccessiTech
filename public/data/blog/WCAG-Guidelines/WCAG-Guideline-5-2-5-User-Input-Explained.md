@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.2.5 (User Input)—what it me
 keywords: wcag 5.2.5, user input, accessibility, web standards, user experience, emerging technologies
 image: wcag-5-2-5-user-input.png
 imageAlt: Illustration of a user entering information on a futuristic device with accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 5.2.5: User Input Explained**

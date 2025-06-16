@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.4 (Statement of Partial Confo
 keywords: wcag 5.4, partial conformance, third party content, accessibility, web standards, user experience
 image: wcag-5-4-partial-conformance.png
 imageAlt: Illustration of a web page with a warning icon and third-party content badge
+status: draft
 -->
 
 # **WCAG Guideline 5.4: Statement of Partial Conformance – Third Party Content Explained**

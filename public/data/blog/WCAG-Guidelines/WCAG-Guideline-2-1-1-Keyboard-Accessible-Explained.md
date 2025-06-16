@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.1.1 (Keyboard Accessible)—w
 keywords: wcag 2.1.1, keyboard accessibility, accessible navigation, web standards, digital inclusion, screen readers, tab order
 image: wcag-2-1-1-keyboard-accessible.png
 imageAlt: Illustration of a keyboard and a web page with focus indicators
+status: draft
 -->
 
 # **WCAG Guideline 2.1.1: Keyboard Accessible Explained**

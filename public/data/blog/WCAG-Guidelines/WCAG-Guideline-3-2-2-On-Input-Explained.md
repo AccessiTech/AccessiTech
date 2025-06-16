@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.2 (On Input)—what it mean
 keywords: wcag 3.2.2, on input, accessibility, web standards, form controls, user experience
 image: wcag-3-2-2-on-input.png
 imageAlt: Illustration of a form with input fields and a submit button, showing predictable behavior
+status: draft
 -->
 
 # **WCAG Guideline 3.2.2: On Input Explained**

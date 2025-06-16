@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.2.3 (Audio Description or Med
 keywords: wcag 1.2.3, audio description, media alternative, accessibility, video accessibility, web standards, digital inclusion
 image: wcag-1-2-3-audio-description-media-alternative.png
 imageAlt: Illustration of a video player with audio description and transcript
+status: draft
 -->
 
 # **WCAG Guideline 1.2.3: Audio Description or Media Alternative (Prerecorded) Explained**

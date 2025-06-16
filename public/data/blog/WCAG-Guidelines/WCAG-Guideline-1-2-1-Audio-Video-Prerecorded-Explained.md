@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.2.1 (Audio-only and Video-onl
 keywords: wcag 1.2.1, audio-only, video-only, accessibility, captions, transcripts, web standards, digital inclusion
 image: wcag-1-2-1-audio-video-prerecorded.png
 imageAlt: Illustration of audio and video icons with transcript and captions
+status: draft
 -->
 
 # **WCAG Guideline 1.2.1: Audio-only and Video-only (Prerecorded) Explained**

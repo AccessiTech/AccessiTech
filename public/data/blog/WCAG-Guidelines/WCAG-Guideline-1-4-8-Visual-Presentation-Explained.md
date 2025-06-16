@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.8 (Visual Presentation)—w
 keywords: wcag 1.4.8, visual presentation, accessibility, web standards, user control, text display
 image: wcag-1-4-8-visual-presentation.png
 imageAlt: Illustration of a settings panel for text size, color, and spacing
+status: draft
 -->
 
 # **WCAG Guideline 1.4.8: Visual Presentation Explained**

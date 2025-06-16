@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.3 (Label in Name)—what it
 keywords: wcag 2.5.3, label in name, accessibility, web standards, speech input, visible label
 image: wcag-2-5-3-label-in-name.png
 imageAlt: Illustration of a button with a visible label and a speech bubble
+status: draft
 -->
 
 # **WCAG Guideline 2.5.3: Label in Name Explained**

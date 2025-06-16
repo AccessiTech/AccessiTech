@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.5 (Images of Text)—what i
 keywords: wcag 1.4.5, images of text, accessibility, web standards, real text, screen readers
 image: wcag-1-4-5-images-of-text.png
 imageAlt: Illustration of a text image with a red X and real text with a green checkmark
+status: draft
 -->
 
 # **WCAG Guideline 1.4.5: Images of Text Explained**

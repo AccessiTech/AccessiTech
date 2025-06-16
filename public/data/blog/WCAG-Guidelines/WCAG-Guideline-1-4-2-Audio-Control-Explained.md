@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.2 (Audio Control)—what it
 keywords: wcag 1.4.2, audio control, accessibility, web standards, autoplay, user experience
 image: wcag-1-4-2-audio-control.png
 imageAlt: Illustration of a speaker icon with a control slider and accessibility symbol
+status: draft
 -->
 
 # **WCAG Guideline 1.4.2: Audio Control Explained**

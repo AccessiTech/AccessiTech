@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.13 (Content on Hover or Foc
 keywords: wcag 1.4.13, content on hover, accessibility, web standards, tooltips, popups
 image: wcag-1-4-13-content-on-hover-or-focus.png
 imageAlt: Illustration of a tooltip appearing on hover and focus with accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 1.4.13: Content on Hover or Focus Explained**

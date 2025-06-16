@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.3.3 (Animation from Interacti
 keywords: wcag 2.3.3, animation from interactions, accessibility, web standards, motion sensitivity, user control
 image: wcag-2-3-3-animation-from-interactions.png
 imageAlt: Illustration of a toggle switch for animations and a user interacting with a UI
+status: draft
 -->
 
 # **WCAG Guideline 2.3.3: Animation from Interactions Explained**

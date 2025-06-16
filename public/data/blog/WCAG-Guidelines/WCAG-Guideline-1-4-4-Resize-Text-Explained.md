@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.4 (Resize Text)—what it m
 keywords: wcag 1.4.4, resize text, accessibility, web standards, zoom, responsive design
 image: wcag-1-4-4-resize-text.png
 imageAlt: Illustration of a magnifying glass over text with accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 1.4.4: Resize Text Explained**

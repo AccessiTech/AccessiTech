@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what 
 keywords: wcag 4.1.3, status messages, accessibility, web standards, aria-live, user experience
 image: wcag-4-1-3-status-messages.png
 imageAlt: Illustration of a web page with a status message and a screen reader icon
+status: draft
 -->
 
 # **WCAG Guideline 4.1.3: Status Messages Explained**

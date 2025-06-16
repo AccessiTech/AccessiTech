@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.3 (Error Suggestion)—what
 keywords: wcag 3.3.3, error suggestion, accessibility, web standards, form validation, user experience
 image: wcag-3-3-3-error-suggestion.png
 imageAlt: Illustration of a form with a helpful error suggestion message
+status: draft
 -->
 
 # **WCAG Guideline 3.3.3: Error Suggestion Explained**

@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.5 (Change on Request)—wha
 keywords: wcag 3.2.5, change on request, accessibility, web standards, user experience, predictable behavior
 image: wcag-3-2-5-change-on-request.png
 imageAlt: Illustration of a user clicking a button to trigger a change, with no automatic changes
+status: draft
 -->
 
 # **WCAG Guideline 3.2.5: Change on Request Explained**

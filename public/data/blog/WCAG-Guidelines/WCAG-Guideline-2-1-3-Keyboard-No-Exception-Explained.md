@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.1.3 (Keyboard, No Exception)â
 keywords: wcag 2.1.3, keyboard accessibility, no exception, web standards, digital inclusion, screen readers, accessible navigation
 image: wcag-2-1-3-keyboard-no-exception.png
 imageAlt: Illustration of a keyboard and a web page with all controls accessible
+status: draft
 -->
 
 # **WCAG Guideline 2.1.3: Keyboard (No Exception) Explained**

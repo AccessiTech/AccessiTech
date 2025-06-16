@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.3 (Unusual Words)—what it
 keywords: wcag 3.1.3, unusual words, accessibility, web standards, jargon, user experience
 image: wcag-3-1-3-unusual-words.png
 imageAlt: Illustration of a web page with highlighted jargon and a help icon
+status: draft
 -->
 
 # **WCAG Guideline 3.1.3: Unusual Words Explained**

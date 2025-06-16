@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.2.2 (Pause, Stop, Hide)—wha
 keywords: wcag 2.2.2, pause stop hide, accessibility, web standards, moving content, user control
 image: wcag-2-2-2-pause-stop-hide.png
 imageAlt: Illustration of a pause button, stop icon, and hide/close icon on moving content
+status: draft
 -->
 
 # **WCAG Guideline 2.2.2: Pause, Stop, Hide Explained**

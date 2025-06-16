@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.2.9 (Audio-only, Live)—what
 keywords: wcag 1.2.9, audio-only live, accessibility, live captions, web standards, digital inclusion
 image: wcag-1-2-9-audio-only-live.png
 imageAlt: Illustration of a live audio stream with real-time captions
+status: draft
 -->
 
 # **WCAG Guideline 1.2.9: Audio-only (Live) Explained**

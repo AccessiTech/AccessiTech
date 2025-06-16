@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.2.6 (Timeouts)—what it mean
 keywords: wcag 2.2.6, timeouts, accessibility, web standards, session timeout, user notification
 image: wcag-2-2-6-timeouts.png
 imageAlt: Illustration of a warning icon and a clock with a timeout message
+status: draft
 -->
 
 # **WCAG Guideline 2.2.6: Timeouts Explained**

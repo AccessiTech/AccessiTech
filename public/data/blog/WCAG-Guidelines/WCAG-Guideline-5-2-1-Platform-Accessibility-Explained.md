@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.2.1 (Platform Accessibility)â
 keywords: wcag 5.2.1, platform accessibility, accessibility, web standards, user experience, emerging technologies
 image: wcag-5-2-1-platform-accessibility.png
 imageAlt: Illustration of a platform interface with accessibility icons and users
+status: draft
 -->
 
 # **WCAG Guideline 5.2.1: Platform Accessibility Explained**

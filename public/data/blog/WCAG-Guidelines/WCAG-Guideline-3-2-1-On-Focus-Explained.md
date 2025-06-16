@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.1 (On Focus)—what it mean
 keywords: wcag 3.2.1, on focus, accessibility, web standards, focus management, user experience
 image: wcag-3-2-1-on-focus.png
 imageAlt: Illustration of a web form field with a focus ring and no unexpected popups
+status: draft
 -->
 
 # **WCAG Guideline 3.2.1: On Focus Explained**

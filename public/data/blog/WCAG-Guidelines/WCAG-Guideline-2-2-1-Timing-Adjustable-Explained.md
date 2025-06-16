@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.2.1 (Timing Adjustable)—wha
 keywords: wcag 2.2.1, timing adjustable, accessibility, web standards, time limits, user control
 image: wcag-2-2-1-timing-adjustable.png
 imageAlt: Illustration of a clock with a pause button and accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 2.2.1: Timing Adjustable Explained**

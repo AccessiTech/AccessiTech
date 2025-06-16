@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.8 (Accessible Authenticatio
 keywords: wcag 3.3.8, accessible authentication, accessibility, web standards, user experience, login
 image: wcag-3-3-8-accessible-authentication-minimum.png
 imageAlt: Illustration of a login form with accessible options and a user icon
+status: draft
 -->
 
 # **WCAG Guideline 3.3.8: Accessible Authentication (Minimum) Explained**

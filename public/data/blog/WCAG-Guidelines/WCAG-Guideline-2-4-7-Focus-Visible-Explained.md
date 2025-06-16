@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.7 (Focus Visible)—what it
 keywords: wcag 2.4.7, focus visible, accessibility, web standards, keyboard navigation, focus indicator
 image: wcag-2-4-7-focus-visible.png
 imageAlt: Illustration of a keyboard user with a visible focus ring on a button
+status: draft
 -->
 
 # **WCAG Guideline 2.4.7: Focus Visible Explained**

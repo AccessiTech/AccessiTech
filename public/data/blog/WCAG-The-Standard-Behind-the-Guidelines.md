@@ -5,6 +5,7 @@ description: Explore the origins, structure, and ongoing evolution of the Web Co
 keywords: wcag, web accessibility standards, w3c, accessibility guidelines, digital inclusion, wcag history, wcag structure, accessibility series
 image: wcag-meta-overview.png
 imageAlt: Abstract illustration of documents and checklists representing web standards
+status: draft
 -->
 
 # **WCAG: The Standard Behind the Guidelines**

@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.4.7 (Low or No Background Aud
 keywords: wcag 1.4.7, background audio, accessibility, web standards, audio clarity, speech
 image: wcag-1-4-7-low-or-no-background-audio.png
 imageAlt: Illustration of a speaker with a background music note and a speech bubble
+status: draft
 -->
 
 # **WCAG Guideline 1.4.7: Low or No Background Audio Explained**

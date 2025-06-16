@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 1.2.7 (Extended Audio Descripti
 keywords: wcag 1.2.7, extended audio description, video accessibility, web standards, digital inclusion, blind users
 image: wcag-1-2-7-extended-audio-description-prerecorded.png
 imageAlt: Illustration of a video player with audio description enabled
+status: draft
 -->
 
 # **WCAG Guideline 1.2.7: Extended Audio Description (Prerecorded) Explained**

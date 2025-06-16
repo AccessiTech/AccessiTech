@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.6 (Pronunciation)—what it
 keywords: wcag 3.1.6, pronunciation, accessibility, web standards, screen readers, user experience
 image: wcag-3-1-6-pronunciation.png
 imageAlt: Illustration of a web page with a speaker icon and phonetic spelling
+status: draft
 -->
 
 # **WCAG Guideline 3.1.6: Pronunciation Explained**

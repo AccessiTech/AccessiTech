@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.1 (Language of Page)—what
 keywords: wcag 3.1.1, language of page, accessibility, web standards, html lang, screen readers
 image: wcag-3-1-1-language-of-page.png
 imageAlt: Illustration of a web page with a language globe and accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 3.1.1: Language of Page Explained**

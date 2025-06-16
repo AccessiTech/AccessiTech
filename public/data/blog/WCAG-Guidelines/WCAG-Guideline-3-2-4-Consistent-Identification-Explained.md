@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.4 (Consistent Identificatio
 keywords: wcag 3.2.4, consistent identification, accessibility, web standards, user interface, user experience
 image: wcag-3-2-4-consistent-identification.png
 imageAlt: Illustration of a website with repeated icons and buttons labeled the same way on every page
+status: draft
 -->
 
 # **WCAG Guideline 3.2.4: Consistent Identification Explained**

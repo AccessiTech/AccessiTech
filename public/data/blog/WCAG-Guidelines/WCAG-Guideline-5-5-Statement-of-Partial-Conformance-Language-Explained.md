@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.5 (Statement of Partial Confo
 keywords: wcag 5.5, partial conformance, language, accessibility, web standards, user experience, emerging technologies
 image: wcag-5-5-partial-conformance-language.png
 imageAlt: Illustration of a globe with language icons and accessibility symbols
+status: draft
 -->
 
 # **WCAG Guideline 5.5: Statement of Partial Conformance – Language Explained**

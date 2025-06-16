@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.6 (Headings and Labels)—w
 keywords: wcag 2.4.6, headings and labels, accessibility, web standards, headings, form labels
 image: wcag-2-4-6-headings-and-labels.png
 imageAlt: Illustration of a web page with clear headings and labeled form fields
+status: draft
 -->
 
 # **WCAG Guideline 2.4.6: Headings and Labels Explained**

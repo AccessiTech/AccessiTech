@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 2.2.4 (Interruptions)—what it
 keywords: wcag 2.2.4, interruptions, accessibility, web standards, notifications, user control
 image: wcag-2-2-4-interruptions.png
 imageAlt: Illustration of a notification with a snooze or dismiss button and accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 2.2.4: Interruptions Explained**

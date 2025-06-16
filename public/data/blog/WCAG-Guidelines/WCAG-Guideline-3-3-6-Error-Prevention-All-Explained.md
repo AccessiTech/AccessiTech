@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.6 (Error Prevention: All)â€
 keywords: wcag 3.3.6, error prevention, accessibility, web standards, user experience, form validation
 image: wcag-3-3-6-error-prevention-all.png
 imageAlt: Illustration of a user reviewing a summary before submitting any form
+status: draft
 -->
 
 # **WCAG Guideline 3.3.6: Error Prevention (All) Explained**

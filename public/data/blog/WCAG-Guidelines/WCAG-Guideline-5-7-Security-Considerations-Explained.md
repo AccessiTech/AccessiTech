@@ -5,6 +5,7 @@ description: A practical guide to WCAG Guideline 5.7 (Security Considerations)â€
 keywords: wcag 5.7, security, accessibility, web standards, user experience, emerging technologies
 image: wcag-5-7-security-considerations.png
 imageAlt: Illustration of a shield, padlock, and accessibility icons
+status: draft
 -->
 
 # **WCAG Guideline 5.7: Security Considerations Explained**

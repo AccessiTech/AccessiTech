@@ -6,6 +6,7 @@ series: Making the Web Accessible for All
 date: 2025-06-12
 image: pour-principles-accessibility.png
 imageAlt: Four colored blocks labeled Perceivable, Operable, Understandable, Robust
+status: published
 -->
 
 # **The Four Principles of Accessibility (POUR)**
