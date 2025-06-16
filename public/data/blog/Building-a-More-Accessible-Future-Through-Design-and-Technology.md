@@ -7,6 +7,7 @@ keywords: accessible web, disability advocate,inclusive design, accessibility au
 categories: Disability Advocacy, Web Accessibility
 image: Building-a-More-Accessible-Future-Through-Design-and-Technology.png
 imageAlt: Dark blue text on yellow background saying, Building a More Accessible Future Through Design and Technology
+status: published
 -->
 
 # Building a More Accessible Future Through Design and Technology
