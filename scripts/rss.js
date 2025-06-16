@@ -16,8 +16,24 @@ export const getMetaData = (text) => {
   return metaData;
 };
 
+// Recursively get all .md files from a directory and its subdirectories
+function getAllMarkdownFiles(dir) {
+  let results = [];
+  const list = fs.readdirSync(dir);
+  list.forEach((file) => {
+    const filePath = path.join(dir, file);
+    const stat = fs.statSync(filePath);
+    if (stat && stat.isDirectory()) {
+      results = results.concat(getAllMarkdownFiles(filePath));
+    } else if (file.endsWith('.md')) {
+      results.push(filePath);
+    }
+  });
+  return results;
+}
+
 const blogDir = path.join(process.cwd(), 'public/data/blog');
-const blogFiles = fs.readdirSync(blogDir);
+const blogFiles = getAllMarkdownFiles(blogDir);
 
 const rss = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
@@ -26,10 +42,11 @@ const rss = `<?xml version="1.0" encoding="UTF-8" ?>
     <link>https://accessi.tech/blog</link>
     <description>My Blog</description>
     ${blogFiles
-      .map((file) => {
-        const filePath = path.join(blogDir, file);
+      .map((filePath) => {
         const fileContent = fs.readFileSync(filePath, { encoding: "utf-8" });
-        const link = `https://accessi.tech/blog/${file}`.replace(".md", "");
+        // Generate the blog link relative to blogDir
+        const relativePath = path.relative(blogDir, filePath).replace(/\\/g, '/');
+        const link = `https://accessi.tech/blog/${relativePath}`.replace(".md", "");
         const fileMetaData = getMetaData(fileContent);
         const {
           title,
@@ -39,7 +56,9 @@ const rss = `<?xml version="1.0" encoding="UTF-8" ?>
           image,
           imageAlt,
           image_copyright,
+          status,
         } = fileMetaData;
+        if (status !== 'published') return;
         const imageURI = `https://www.accessi.tech/assets/images/${image || "default.png"}`;
         const altText =
           imageAlt || "Yellow text on gradient background saying, AccessiTech";
@@ -62,6 +81,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8" ?>
         </item>
       `;
       })
+      .filter((blog) => blog)
       .join("")}
   </channel>
 </rss>`;
