@@ -57,5 +57,18 @@
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
+        <item>
+          <title>The Four Principles of Accessibility (POUR)</title>
+          <link>https://accessi.tech/blog/The-Four-Principles-of-Accessibility-POUR</link>
+          <pubDate>2025-06-12</pubDate>
+          <description>Discover the four foundational principles of web accessibility—Perceivable, Operable, Understandable, and Robust (POUR)—with practical examples and tips for building inclusive digital experiences.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Four colored blocks labeled Perceivable, Operable, Understandable, Robust</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
   </channel>
 </rss>
