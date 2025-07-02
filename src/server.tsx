@@ -34,7 +34,7 @@ export const renderMetadata = async (data: MetaDataProps) => {
 export const fetchMetaData = async (url: string): Promise<{ metaData: { [key: string]: string }, fileContent: string }> => {
   console.log('URL:', url);
   const id = url.split("/").splice(2).join('/') || "";
-  const pathname = url.split("/").splice(1, 1).join() || "";
+  const pathname = url.split("/").slice(1, 2).join('') || "";
   const fileContent = fs.readFileSync(
     path.resolve(process.cwd(), "public/data/", pathname, `${id}.md`),
     { encoding: "utf-8" }
