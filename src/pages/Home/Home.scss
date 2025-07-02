@@ -69,8 +69,10 @@ a.skip-link {
     width: 100%;
   }
 }
-.simplified-view .wcag-cta {
-  margin-top: 2rem !important;
+.simplified-view {
+  .wcag-cta {
+    margin-top: 2rem;
+  }
 }
 .purpose-row {
   background-color: $yellow;
