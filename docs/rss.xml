@@ -57,5 +57,148 @@
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
+        <item>
+          <title>The Four Principles of Accessibility (POUR)</title>
+          <link>https://accessi.tech/blog/The-Four-Principles-of-Accessibility-POUR</link>
+          <pubDate>2025-06-12</pubDate>
+          <description>Discover the four foundational principles of web accessibility—Perceivable, Operable, Understandable, and Robust (POUR)—with practical examples and tips for building inclusive digital experiences.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Four colored blocks labeled Perceivable, Operable, Understandable, Robust</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.1.1 - Non-text Content Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-1-1-Non-text-Content-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.1.1 (Non-text Content)—what it means, why it matters, and how to provide accessible alternatives for images, icons, and more.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-1-1-non-text-content.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-1-1-non-text-content.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of an image with alt text and a screen reader icon</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-1-1-non-text-content.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.2.1 - Audio-only and Video-only (Prerecorded) Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.2.1 (Audio-only and Video-only, Prerecorded)—what it means, why it matters, and how to make media content accessible.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-1-audio-video-prerecorded.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-1-audio-video-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of audio and video icons with transcript and captions</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-1-audio-video-prerecorded.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.2.2 - Captions (Prerecorded) Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.2.2 (Captions, Prerecorded)—what it means, why it matters, and how to make video content accessible with captions.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-2-captions-prerecorded.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-2-captions-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of a video player with captions enabled</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-2-captions-prerecorded.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.2.3 - Audio Description or Media Alternative (Prerecorded) Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-3-audio-description-media-alternative.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-3-audio-description-media-alternative.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of a video player with audio description and transcript</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-3-audio-description-media-alternative.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.2.4 - Captions (Live) Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-4-Captions-Live-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.2.4 (Captions, Live)—what it means, why it matters, and how to make live video content accessible with captions.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-4-captions-live.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-4-captions-live.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of a live video player with captions enabled</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-4-captions-live.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.2.5 - Audio Description (Prerecorded) Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.2.5 (Audio Description, Prerecorded)—what it means, why it matters, and how to make prerecorded video content accessible for users who are blind or have low vision.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-5-audio-description-prerecorded.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-5-audio-description-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of a video player with audio description enabled</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-5-audio-description-prerecorded.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.2.6 - Sign Language (Prerecorded) Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.2.6 (Sign Language, Prerecorded)—what it means, why it matters, and how to make video content accessible with sign language interpretation.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-6-sign-language-prerecorded.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-6-sign-language-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of a video player with a sign language interpreter overlay</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-6-sign-language-prerecorded.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.2.7 -  Extended Audio Description (Prerecorded) Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.2.7 (Extended Audio Description, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-7-extended-audio-description-prerecorded.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-7-extended-audio-description-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of a video player with audio description enabled</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-7-extended-audio-description-prerecorded.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.2.8 - Media Alternative (Prerecorded) Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for synchronized media.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-8-media-alternative-prerecorded.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-8-media-alternative-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of a video player and a full text transcript side by side</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-8-media-alternative-prerecorded.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.2.9 - Audio-only (Live) Explained</title>
+          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-9-Audio-Only-Live-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.2.9 (Audio-only, Live)—what it means, why it matters, and how to make live audio content accessible.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-9-audio-only-live.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-9-audio-only-live.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Illustration of a live audio stream with real-time captions</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-9-audio-only-live.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
   </channel>
 </rss>
