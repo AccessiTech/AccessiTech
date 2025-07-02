@@ -41,7 +41,7 @@ function readCNAME(filePath) {
       status: 'published',
     },
   ];
-  const blogDir = path.join(process.cwd(), "public/data/blog");
+  const blogDir = path.join(process.cwd(), "public/data");
   // Recursively get all .md files from blogDir and subdirectories
   function getAllMarkdownFiles(dir) {
     let results = [];
@@ -63,7 +63,7 @@ function readCNAME(filePath) {
     // Generate the blog link relative to blogDir
     const relativePath = path.relative(blogDir, filePath).replace(/\\/g, '/');
     const fileMetaData = getMetaData(fileContent);
-    const link = `/blog/${relativePath}`.replace(".md", "");
+    const link = `/${relativePath}`.replace(".md", "");
     pages.push({
       ...fileMetaData,
       url: link,

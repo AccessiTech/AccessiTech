@@ -32,7 +32,7 @@ function getAllMarkdownFiles(dir) {
   return results;
 }
 
-const blogDir = path.join(process.cwd(), 'public/data/blog');
+const blogDir = path.join(process.cwd(), 'public/data');
 const blogFiles = getAllMarkdownFiles(blogDir);
 
 const rss = `<?xml version="1.0" encoding="UTF-8" ?>
@@ -46,7 +46,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8" ?>
         const fileContent = fs.readFileSync(filePath, { encoding: "utf-8" });
         // Generate the blog link relative to blogDir
         const relativePath = path.relative(blogDir, filePath).replace(/\\/g, '/');
-        const link = `https://accessi.tech/blog/${relativePath}`.replace(".md", "");
+        const link = `https://accessi.tech/${relativePath}`.replace(".md", "");
         const fileMetaData = getMetaData(fileContent);
         const {
           title,
