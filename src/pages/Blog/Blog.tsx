@@ -8,7 +8,7 @@ import { getDDMMMYYYY } from "../../settings/utils";
 import Metadata from "../../components/Metadata/Metadata";
 import { metadata } from "./meta";
 
-const fetchBlogEntries = async (url = `/rss.xml`, navigate?:NavigateFunction) => {
+const fetchBlogEntries = async (url = `/rss.xml`, navigate?: NavigateFunction) => {
   const response = await fetch(url).catch((err) => {
     console.error("Error fetching rss.xml:", err);
     throw new Error("Failed to fetch rss.xml");
@@ -36,11 +36,11 @@ const fetchBlogEntries = async (url = `/rss.xml`, navigate?:NavigateFunction) =>
     await store.dispatch(getBlogEntry({ id, navigate }));
   }).filter((item => item !== null));
 }
-export interface BlogProps {}
+export interface BlogProps { }
 export interface BlogType extends React.FC<BlogProps> {
-  loadData: (url?:string) => Promise<void>;
+  loadData: (url?: string) => Promise<void>;
 }
-export const Blog:BlogType = () => {
+export const Blog: BlogType = () => {
   const navigate = useNavigate();
   const blog = useBlogEntriesArray();
 
@@ -67,7 +67,9 @@ export const Blog:BlogType = () => {
           <Row>
             <Col xs={12} md={{ span: 8, offset: 2 }}>
               <h2>Blog</h2>
-              {blog.map((blog: any) => (
+              {blog.sort(
+                (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime() || b.title.localeCompare(a.title)
+              ).map((blog: any) => (
                 <article key={`blog-${blog.id}`} className="blog-entry">
                   <Link key={blog.id} to={`/blog/${blog.id}`}>
                     <span>{getDDMMMYYYY(blog.date)}</span>
