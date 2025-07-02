@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, NavigateFunction, useNavigate } from "react-router-dom";
+import { Link, NavigateFunction, useLocation, useNavigate } from "react-router-dom";
 import { Breadcrumb, Col, Row } from "react-bootstrap";
 import { BlogOrder, getBlogEntry, useBlogEntriesArray } from "../../store/blog";
 import store from "../../store/store";
@@ -51,7 +51,8 @@ export interface BlogType extends React.FC<BlogProps> {
 }
 export const Blog: BlogType = () => {
   const navigate = useNavigate();
-  const pathname = window.location.pathname.replace(/\//, '');
+  const location = useLocation();
+  const pathname = location.pathname.replace(/\//, '');
   const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
   const order = pathname === 'wcag' ? BlogOrder.ASC : BlogOrder.DATE_DESC;
   const blog = useBlogEntriesArray({pathname, order});

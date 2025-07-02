@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, useNavigate, NavigateFunction } from "react-router-dom";
+import { useParams, useNavigate, NavigateFunction, useLocation } from "react-router-dom";
 import { Row, Col, Breadcrumb } from "react-bootstrap";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from "remark-gfm";
@@ -24,9 +24,10 @@ export interface BlogEntryType extends React.FC<BlogEntryProps> {
 
 export const BlogEntry = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const id = useParams().id?.replace('.html','') as string;
   const sub = useParams().sub;
-  const pathname = window.location.pathname.split('/')[1] || '';
+  const pathname = location.pathname.split('/')[1] || '';
   const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
   const entry = useBlogEntry(sub ? `${sub}/${id}` : id);
 
