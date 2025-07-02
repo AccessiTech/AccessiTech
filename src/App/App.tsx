@@ -30,7 +30,10 @@ export const App = (props: AppProps) => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog.html" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogEntry />} />
-          <Route path="/blog/:sub/:id" element={<BlogEntry />} />
+          {/* <Route path="/blog/:sub/:id" element={<BlogEntry />} /> */}
+          <Route path="/wcag" element={<Blog />} />
+          <Route path="/wcag.html" element={<Blog />} />
+          <Route path="/wcag/:id" element={<BlogEntry />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* Footer Row */}

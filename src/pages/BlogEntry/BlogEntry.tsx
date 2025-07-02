@@ -9,8 +9,13 @@ import { ACCESSITECH, BLOG_CANONICAL, DEFAULT_SHARE_IMAGE_ALT, DEFAULT_SHARE_IMA
 import Metadata from "../../components/Metadata/Metadata";
 import CustomMarkdownTable from "../../components/CustomTable/CustomTable";
 
-const fetchBlogEntry = async (id:string, navigate:NavigateFunction) => {
-  await store.dispatch(getBlogEntry({ id: id.replace(/.html/g, ''), navigate }));
+export interface FetchBlogEntryProps {
+  id: string;
+  navigate: NavigateFunction;
+  pathname?: string;
+}
+const fetchBlogEntry = async ({id, navigate, pathname}:FetchBlogEntryProps) => {
+  await store.dispatch(getBlogEntry({ id: id.replace(/.html/g, ''), navigate, pathname }));
 }
 export interface BlogEntryProps {}
 export interface BlogEntryType extends React.FC<BlogEntryProps> {
@@ -21,10 +26,12 @@ export const BlogEntry = () => {
   const navigate = useNavigate();
   const id = useParams().id?.replace('.html','') as string;
   const sub = useParams().sub;
+  const pathname = window.location.pathname.split('/')[1] || '';
+  const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
   const entry = useBlogEntry(sub ? `${sub}/${id}` : id);
 
   useEffect(() => {
-    fetchBlogEntry(sub ? `${sub}/${id}` : id, navigate);
+    fetchBlogEntry({id: sub ? `${sub}/${id}` : id, navigate, pathname});
   }, [id, sub, navigate]);
 
   const metadata = {
@@ -46,10 +53,10 @@ export const BlogEntry = () => {
             e.preventDefault();
             navigate('/')
           }}>Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/blog" onClick={(e: any) => {
+          <Breadcrumb.Item href={`/${pathname}`} onClick={(e: any) => {
             e.preventDefault();
-            navigate('/blog')
-          }}>Blog</Breadcrumb.Item>
+            navigate(`/${pathname}`)
+          }}>{pagename}</Breadcrumb.Item>
           <Breadcrumb.Item active>{entry?.title}</Breadcrumb.Item>
         </Breadcrumb>
       </Col>
