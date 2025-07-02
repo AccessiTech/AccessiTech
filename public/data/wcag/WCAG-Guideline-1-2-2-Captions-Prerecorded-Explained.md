@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.2 (Captions, Prerecorded)—what it means, why it matters, and how to make video content accessible with captions.
 keywords: wcag 1.2.2, captions, video accessibility, accessibility, web standards, digital inclusion, subtitles
 image: WCAG-Series-1.2.2.png
-imageAlt: Blue text on yellow background saying, "AccessiTech Blog, Captions (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.2 Explained"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.2 Explained, Captions (Prerecorded)"
 status: published
 date: 2025-07-01
 -->

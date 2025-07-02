@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.5 (Audio Description, Prerecorded)—what it means, why it matters, and how to make prerecorded video content accessible for users who are blind or have low vision.
 keywords: wcag 1.2.5, audio description, accessibility, video accessibility, web standards, digital inclusion
 image: WCAG-Series-1.2.5.png
-imageAlt: Blue text on yellow background saying, "AccessiTech Blog, Audio Description (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.5 Explained"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.5 Explained, Audio Description (Prerecorded)"
 status: published
 date: 2025-07-01
 -->

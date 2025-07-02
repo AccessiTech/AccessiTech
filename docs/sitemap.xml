@@ -9,7 +9,7 @@
   
           <url>
             <loc>https://www.accessi.tech/</loc>
-            <lastmod>2025-07-02T20:30:08.928Z</lastmod>
+            <lastmod>2025-07-02T21:50:53.406Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -21,7 +21,7 @@
         
           <url>
             <loc>https://www.accessi.tech/blog</loc>
-            <lastmod>2025-07-02T20:30:08.929Z</lastmod>
+            <lastmod>2025-07-02T21:50:53.406Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -33,7 +33,7 @@
         
           <url>
             <loc>https://www.accessi.tech/wcag</loc>
-            <lastmod>2025-07-02T20:30:08.929Z</lastmod>
+            <lastmod>2025-07-02T21:50:53.406Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -106,10 +106,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-1-1-Non-text-Content-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png" length="53961" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png" length="46052" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Non-text Content, Web Content Accessibiilty Guiedlines (WCAG) 1.1.1 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.1.1 Explained, Non-text Content"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
@@ -118,10 +118,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.1.png" length="72442" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.1.png" length="60945" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.1.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Audio-only and Video-only (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.1 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.1 Explained, Audio-only and Video-only (Prerecorded)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
@@ -130,10 +130,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.2.png" length="61213" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.2.png" length="54986" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.2.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Captions (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.2 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.2 Explained, Captions (Prerecorded)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
@@ -142,10 +142,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png" length="80126" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png" length="72903" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Audio Description or Media Alternative (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.3 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.3 Explained, Audio Description or Media Alternative (Prerecorded)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
@@ -154,10 +154,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-2-4-Captions-Live-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.4.png" length="59276" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.4.png" length="52232" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.4.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Captions (Live), Web Content Accessibiilty Guiedlines (WCAG) 1.2.4 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.4 Explained, Captions (Live)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
@@ -166,10 +166,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.5.png" length="69126" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.5.png" length="61121" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.5.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Audio Description (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.5 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.5 Explained, Audio Description (Prerecorded)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
@@ -178,10 +178,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.6.png" length="64933" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.6.png" length="57616" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.6.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Sign Language (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.6 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.6 Explained, Sign Language (Prerecorded)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
@@ -190,10 +190,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.7.png" length="70286" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.7.png" length="62879" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.7.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Extended Audio Description (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.7 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.7 Explained, Extended Audio Description (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.7 Explained"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
@@ -202,10 +202,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.8.png" length="66567" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.8.png" length="58889" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.8.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Media Alternative (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.8 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.8 Explained, Media Alternative (Prerecorded)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
@@ -214,10 +214,10 @@
           <url>
             <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-2-9-Audio-Only-Live-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.9.png" length="58324" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.9.png" length="51491" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.9.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Audio Only (Live), Web Content Accessibiilty Guiedlines (WCAG) 1.2.9 Explained"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.9 Explained, Audio Only (Live)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
