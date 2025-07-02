@@ -40,6 +40,16 @@ function readCNAME(filePath) {
       imageAlt: "AccessiTech logo",
       status: 'published',
     },
+    {
+      url: "/wcag",
+      changefreq: "weekly",
+      priority: 0.8,
+      title: "AccessiTech - WCAG Explained",
+      description: "Learn about the Web Content Accessibility Guidelines (WCAG) and how to implement them effectively.",
+      image: "https://www.accessi.tech/assets/images/default.png",
+      imageAlt: "WCAG guidelines",
+      status: 'published',
+    }
   ];
   const blogDir = path.join(process.cwd(), "public/data");
   // Recursively get all .md files from blogDir and subdirectories
