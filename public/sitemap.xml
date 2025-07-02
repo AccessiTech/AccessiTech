@@ -94,10 +94,10 @@
           <url>
             <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-1-1-Non-text-Content-Explained</loc>
             <lastmod>2025-07-01T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-1-1-non-text-content.png" length="289867" />
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png" length="53961" />
             <image:image>
-              <image:loc>https://www.accessi.tech/assets/images/wcag-1-1-1-non-text-content.png</image:loc>
-              <image:caption>Illustration of an image with alt text and a screen reader icon</image:caption>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "AccessiTech Blog, Non-text Content, Web Content Accessibiilty Guiedlines (WCAG) 1.1.1 Explained</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
