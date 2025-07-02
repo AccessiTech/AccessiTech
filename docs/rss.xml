@@ -3,7 +3,7 @@
   <channel>
     <title>AccessiTech Blog</title>
     <link>https://accessi.tech/blog</link>
-    <description>My Blog</description>
+    <description>Explore expert-written articles, tools, and tips to help you build better, more inclusive digital products.</description>
     
         <item>
           <title>AI for Coding Accessibility</title>
@@ -70,9 +70,15 @@
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
+  </channel>
+  <channel>
+    <title>WCAG Explained</title>
+    <link>https://accessi.tech/wcag</link>
+    <description>Learn about the Web Content Accessibility Guidelines (WCAG) and how to implement them effectively.</description>
+    
         <item>
           <title>WCAG Guideline 1.1.1 - Non-text Content Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-1-1-Non-text-Content-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-1-1-Non-text-Content-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.1.1 (Non-text Content)—what it means, why it matters, and how to provide accessible alternatives for images, icons, and more.</description>
           undefined
@@ -85,7 +91,7 @@
       
         <item>
           <title>WCAG Guideline 1.2.1 - Audio-only and Video-only (Prerecorded) Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.1 (Audio-only and Video-only, Prerecorded)—what it means, why it matters, and how to make media content accessible.</description>
           undefined
@@ -98,7 +104,7 @@
       
         <item>
           <title>WCAG Guideline 1.2.2 - Captions (Prerecorded) Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.2 (Captions, Prerecorded)—what it means, why it matters, and how to make video content accessible with captions.</description>
           undefined
@@ -111,7 +117,7 @@
       
         <item>
           <title>WCAG Guideline 1.2.3 - Audio Description or Media Alternative (Prerecorded) Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
           undefined
@@ -124,7 +130,7 @@
       
         <item>
           <title>WCAG Guideline 1.2.4 - Captions (Live) Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-4-Captions-Live-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-4-Captions-Live-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.4 (Captions, Live)—what it means, why it matters, and how to make live video content accessible with captions.</description>
           undefined
@@ -137,7 +143,7 @@
       
         <item>
           <title>WCAG Guideline 1.2.5 - Audio Description (Prerecorded) Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.5 (Audio Description, Prerecorded)—what it means, why it matters, and how to make prerecorded video content accessible for users who are blind or have low vision.</description>
           undefined
@@ -150,7 +156,7 @@
       
         <item>
           <title>WCAG Guideline 1.2.6 - Sign Language (Prerecorded) Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.6 (Sign Language, Prerecorded)—what it means, why it matters, and how to make video content accessible with sign language interpretation.</description>
           undefined
@@ -163,7 +169,7 @@
       
         <item>
           <title>WCAG Guideline 1.2.7 -  Extended Audio Description (Prerecorded) Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.7 (Extended Audio Description, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
           undefined
@@ -176,7 +182,7 @@
       
         <item>
           <title>WCAG Guideline 1.2.8 - Media Alternative (Prerecorded) Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for synchronized media.</description>
           undefined
@@ -189,7 +195,7 @@
       
         <item>
           <title>WCAG Guideline 1.2.9 - Audio-only (Live) Explained</title>
-          <link>https://accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-9-Audio-Only-Live-Explained</link>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-9-Audio-Only-Live-Explained</link>
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.9 (Audio-only, Live)—what it means, why it matters, and how to make live audio content accessible.</description>
           undefined

@@ -1,15 +1,20 @@
 import { useEffect } from "react";
-import { Link, NavigateFunction, useNavigate } from "react-router-dom";
+import { Link, NavigateFunction, useLocation, useNavigate } from "react-router-dom";
 import { Breadcrumb, Col, Row } from "react-bootstrap";
-import { getBlogEntry, useBlogEntriesArray } from "../../store/blog";
+import { BlogOrder, getBlogEntry, useBlogEntriesArray } from "../../store/blog";
 import store from "../../store/store";
 import './Blog.scss';
 import { getDDMMMYYYY } from "../../settings/utils";
 import Metadata from "../../components/Metadata/Metadata";
 import { metadata } from "./meta";
 
-const fetchBlogEntries = async (url = `/rss.xml`, navigate?: NavigateFunction) => {
-  const response = await fetch(url).catch((err) => {
+interface FetchBlogEntriesProps {
+  url?: string;
+  navigate?: NavigateFunction;
+  pathname?: string;
+}
+const fetchBlogEntries = async ({url, navigate, pathname}:FetchBlogEntriesProps) => {
+  const response = await fetch((url || '/rss.xml')).catch((err) => {
     console.error("Error fetching rss.xml:", err);
     throw new Error("Failed to fetch rss.xml");
   });
@@ -28,12 +33,16 @@ const fetchBlogEntries = async (url = `/rss.xml`, navigate?: NavigateFunction) =
   }
   Array.from(items).map(async (item) => {
     const link = item.querySelector("link")?.textContent || "";
-    const id = link.split("/").splice(4).join('/');
+    const path = link.split('/');
+    if (pathname && !path.includes(pathname)) {
+      return null; // Skip if the link does not match the pathname
+    }
+    const id = path.splice(4).join('/');
 
     if (!id) {
       return null;
     }
-    await store.dispatch(getBlogEntry({ id, navigate }));
+    await store.dispatch(getBlogEntry({ id, navigate, pathname }));
   }).filter((item => item !== null));
 }
 export interface BlogProps { }
@@ -42,10 +51,14 @@ export interface BlogType extends React.FC<BlogProps> {
 }
 export const Blog: BlogType = () => {
   const navigate = useNavigate();
-  const blog = useBlogEntriesArray();
+  const location = useLocation();
+  const pathname = location.pathname.replace(/\//, '');
+  const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
+  const order = pathname === 'wcag' ? BlogOrder.ASC : BlogOrder.DATE_DESC;
+  const blog = useBlogEntriesArray({pathname, order});
 
   useEffect(() => {
-    fetchBlogEntries();
+    fetchBlogEntries({pathname});
   }, []);
 
   return (<>
@@ -57,7 +70,7 @@ export const Blog: BlogType = () => {
             e.preventDefault();
             navigate('/')
           }}>Home</Breadcrumb.Item>
-          <Breadcrumb.Item active>Blog</Breadcrumb.Item>
+          <Breadcrumb.Item active>{pagename}</Breadcrumb.Item>
         </Breadcrumb>
       </Col>
     </Row>
@@ -66,12 +79,10 @@ export const Blog: BlogType = () => {
         <Col>
           <Row>
             <Col xs={12} md={{ span: 8, offset: 2 }}>
-              <h2>Blog</h2>
-              {blog.sort(
-                (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime() || b.title.localeCompare(a.title)
-              ).map((blog: any) => (
+              <h2>{pagename}</h2>
+              {blog.map((blog: any) => (
                 <article key={`blog-${blog.id}`} className="blog-entry">
-                  <Link key={blog.id} to={`/blog/${blog.id}`}>
+                  <Link key={blog.id} to={`/${pathname}/${blog.id}`}>
                     <span>{getDDMMMYYYY(blog.date)}</span>
                     <h3>{blog.title}</h3>
                     <p>{blog.description}</p>
@@ -86,6 +97,6 @@ export const Blog: BlogType = () => {
   </>);
 }
 
-Blog.loadData = fetchBlogEntries;
+Blog.loadData = (url?: string) => fetchBlogEntries({ url });
 
 export default Blog;

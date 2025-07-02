@@ -40,8 +40,18 @@ function readCNAME(filePath) {
       imageAlt: "AccessiTech logo",
       status: 'published',
     },
+    {
+      url: "/wcag",
+      changefreq: "weekly",
+      priority: 0.8,
+      title: "AccessiTech - WCAG Explained",
+      description: "Learn about the Web Content Accessibility Guidelines (WCAG) and how to implement them effectively.",
+      image: "https://www.accessi.tech/assets/images/default.png",
+      imageAlt: "WCAG guidelines",
+      status: 'published',
+    }
   ];
-  const blogDir = path.join(process.cwd(), "public/data/blog");
+  const blogDir = path.join(process.cwd(), "public/data");
   // Recursively get all .md files from blogDir and subdirectories
   function getAllMarkdownFiles(dir) {
     let results = [];
@@ -63,7 +73,7 @@ function readCNAME(filePath) {
     // Generate the blog link relative to blogDir
     const relativePath = path.relative(blogDir, filePath).replace(/\\/g, '/');
     const fileMetaData = getMetaData(fileContent);
-    const link = `/blog/${relativePath}`.replace(".md", "");
+    const link = `/${relativePath}`.replace(".md", "");
     pages.push({
       ...fileMetaData,
       url: link,

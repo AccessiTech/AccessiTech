@@ -24,6 +24,7 @@ export interface Blog {
   description?: string;
   image?: string;
   image_alt?: string;
+  pathname?: string; // Optional, used for routing
 }
 
 export interface BlogState {
@@ -34,11 +35,12 @@ export interface BlogState {
 export interface GetBlogEntryPayload {
   id: string;
   navigate?: NavigateFunction;
+  pathname?: string;
 }
 export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
-  { id, navigate }: GetBlogEntryPayload
+  { id, navigate, pathname }: GetBlogEntryPayload
 ) => {
-  const response = await fetch(`/data/blog/${id}.md`)
+  const response = await fetch(`/data/${pathname || 'blog'}/${id}.md`)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Failed to fetch blog");
@@ -77,6 +79,7 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
     description,
     image,
     image_alt,
+    pathname,
   } as Blog;
 });
 
@@ -125,10 +128,14 @@ export const useBlogEntry = (id: string): Blog => {
   return useBlog().entries[id];
 };
 
-export const useBlogEntriesArray = (order: BlogOrder = BlogOrder.DATE_DESC): Blog[] => {
+export interface BlogEntriesArrayProps {
+  order?: BlogOrder;
+  pathname?: string;
+}
+export const useBlogEntriesArray = ({order, pathname}: BlogEntriesArrayProps): Blog[] => {
   const entries = useBlogEntries();
-  return Object.values(entries).sort((a, b) => {
-    switch (order) {
+  return Object.values(entries).filter((entry) => entry.pathname === pathname).sort((a, b) => {
+    switch (order || BlogOrder.DATE_DESC) {
       case BlogOrder.ASC:
         return a.title.localeCompare(b.title);
       case BlogOrder.DESC:
