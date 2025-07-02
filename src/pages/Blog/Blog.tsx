@@ -28,7 +28,8 @@ const fetchBlogEntries = async (url = `/rss.xml`, navigate?:NavigateFunction) =>
   }
   Array.from(items).map(async (item) => {
     const link = item.querySelector("link")?.textContent || "";
-    const id = link.split("/").pop()?.replace(".md", "") || "";
+    const id = link.split("/").splice(4).join('/');
+
     if (!id) {
       return null;
     }

@@ -47,9 +47,10 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
     })
     .catch((e: string) => {
       console.error(e);
-      if (navigate) {
+      // Prevent infinite redirect loop
+      if (navigate && window.location.pathname !== "/blog") {
         navigate("/blog");
-      } else {
+      } else if (window.location.pathname !== "/blog") {
         window.location.href = "/blog";
       }
     });
