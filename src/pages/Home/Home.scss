@@ -62,6 +62,16 @@ a.skip-link {
   }
 }
 
+.cta-row {
+  @include padding($main-section-padding 0);
+
+  .btn {
+    width: 100%;
+  }
+}
+.simplified-view .wcag-cta {
+  margin-top: 2rem !important;
+}
 .purpose-row {
   background-color: $yellow;
   @include padding($main-section-padding 0);
