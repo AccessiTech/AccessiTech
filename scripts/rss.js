@@ -97,6 +97,5 @@ const rss = `<?xml version="1.0" encoding="UTF-8" ?>
     .filter((blog) => blog)
     .join("")}
   </channel>
-</channel>
 </rss>`;
 fs.writeFileSync(path.join(process.cwd(), 'public/rss.xml'), rss);
