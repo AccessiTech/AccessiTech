@@ -20,11 +20,12 @@ export interface BlogEntryType extends React.FC<BlogEntryProps> {
 export const BlogEntry = () => {
   const navigate = useNavigate();
   const id = useParams().id?.replace('.html','') as string;
-  const entry = useBlogEntry(id);
+  const sub = useParams().sub;
+  const entry = useBlogEntry(sub ? `${sub}/${id}` : id);
 
   useEffect(() => {
-    fetchBlogEntry(id, navigate);
-  }, [id, navigate]);
+    fetchBlogEntry(sub ? `${sub}/${id}` : id, navigate);
+  }, [id, sub, navigate]);
 
   const metadata = {
     title: `${ACCESSITECH} | ${entry?.title || "Blog Entry"}`,
