@@ -1,11 +1,12 @@
 <!--
-title: WCAG Guideline 1.2.4: Captions (Live) Explained
+title: WCAG Guideline 1.2.4 - Captions (Live) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.4 (Captions, Live)—what it means, why it matters, and how to make live video content accessible with captions.
 keywords: wcag 1.2.4, captions, live video, accessibility, web standards, digital inclusion, subtitles
 image: wcag-1-2-4-captions-live.png
 imageAlt: Illustration of a live video player with captions enabled
-status: draft
+status: published
+date: 2025-07-01
 -->
 
 # **WCAG Guideline 1.2.4: Captions (Live) Explained**
@@ -24,7 +25,7 @@ Guideline 1.2 focuses on making time-based media—like audio and video—access
 
 ## **What Is Guideline 1.2.4 Captions (Live)?**
 
-[Illustration: Live video player with captions enabled]
+<!-- [Illustration: Live video player with captions enabled] -->
 
 > "Captions are provided for all live audio content in synchronized media."
 
@@ -40,7 +41,7 @@ This ensures everyone can access the information in your live videos, regardless
 
 ## **Why Does It Matter?**
 
-[Infographic: Live video player, captions, user with hearing aid]
+<!-- [Infographic: Live video player, captions, user with hearing aid] -->
 
 - **Inclusivity:** Captions make live video content accessible to users who are deaf or hard of hearing.
 - **Legal Compliance:** This is a Level AA requirement in WCAG 2.2 and referenced in accessibility laws worldwide.
@@ -52,7 +53,7 @@ For more, see [WebAIM's captions guide](https://webaim.org/techniques/captions/)
 
 ## **What Needs Captions?**
 
-[Grid: Live video player, webinar, online event, all with captions icon]
+<!-- [Grid: Live video player, webinar, online event, all with captions icon] -->
 
 - Live video content with audio (webinars, conferences, events)
 - Online courses and live training sessions
@@ -64,8 +65,8 @@ All such media must have accurate, real-time captions.
 
 ## **How to Provide Captions**
 
-[Side-by-side: Live video with captions, live video without captions]
-[Example: Captioning service interface]
+<!-- [Side-by-side: Live video with captions, live video without captions]
+[Example: Captioning service interface] -->
 
 - Use live captioning services or software to create real-time captions
 - Ensure captions are as accurate and timely as possible
@@ -78,7 +79,7 @@ For more, see the [W3C's captions docs](https://www.w3.org/WAI/WCAG22/Understand
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accurate live captions, right side with missing or inaccurate captions]
+<!-- [Do/Don't graphic: Left side with accurate live captions, right side with missing or inaccurate captions] -->
 
 - No captions for live video content
 - Inaccurate or delayed captions
@@ -103,7 +104,7 @@ For more, see the [W3C’s official documentation for 1.2.4 Captions (Live)](htt
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for each item (live video, captions, editor, etc.)]
+<!-- [Checklist graphic: Icons for each item (live video, captions, editor, etc.)] -->
 
 - All live video content with audio has captions
 - Captions are accurate and timely
@@ -115,12 +116,10 @@ For more, see the [W3C’s official documentation for 1.2.4 Captions (Live)](htt
 
 ## **Summary**
 
-[Illustration: User watching a live video with captions enabled]
+<!-- [Illustration: User watching a live video with captions enabled] -->
 
 Guideline 1.2.4 is essential for making live video content accessible to everyone. By providing accurate, real-time captions, you support users with disabilities, improve usability, and meet legal requirements. Make live captioning a standard part of your event planning process.
 
 **Next Up:**
 
-[Read Guideline 1.2.5: Audio Description (Prerecorded) →](WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained.md)
-
-*Accessibility means everyone gets the full story—make your live events count!*
+[Read Guideline 1.2.5: Audio Description (Prerecorded) →](WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained)

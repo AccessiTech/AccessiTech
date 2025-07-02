@@ -1,11 +1,12 @@
 <!--
-title: WCAG Guideline 1.2.9: Audio-only (Live) Explained
+title: WCAG Guideline 1.2.9 - Audio-only (Live) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.9 (Audio-only, Live)—what it means, why it matters, and how to make live audio content accessible.
 keywords: wcag 1.2.9, audio-only live, accessibility, live captions, web standards, digital inclusion
 image: wcag-1-2-9-audio-only-live.png
 imageAlt: Illustration of a live audio stream with real-time captions
-status: draft
+status: published
+date: 2025-07-01
 -->
 
 # **WCAG Guideline 1.2.9: Audio-only (Live) Explained**
@@ -24,7 +25,7 @@ Guideline 1.2 focuses on making time-based media—like audio and video—access
 
 ## **What Is Guideline 1.2.9 Audio-only (Live)?**
 
-[Illustration: Live audio stream with real-time captions]
+<!-- [Illustration: Live audio stream with real-time captions] -->
 
 > "An alternative for time-based media that presents equivalent information for live audio-only content is provided."
 
@@ -40,7 +41,7 @@ This ensures that everyone can participate in live audio events, regardless of h
 
 ## **Why Does It Matter?**
 
-[Infographic: Live audio icon, real-time captions, and user with hearing aid]
+<!-- [Infographic: Live audio icon, real-time captions, and user with hearing aid] -->
 
 - **Inclusivity:** Real-time text alternatives make live audio accessible to users who are deaf or hard of hearing.
 - **Legal Compliance:** This is a Level AAA requirement in WCAG 2.2.
@@ -52,7 +53,7 @@ For more, see [W3C's live audio accessibility docs](https://www.w3.org/WAI/WCAG2
 
 ## **What Needs a Live Audio Alternative?**
 
-[Grid: Live radio, podcast, event, all with captions icon]
+<!-- [Grid: Live radio, podcast, event, all with captions icon] -->
 
 - Live radio broadcasts
 - Live podcasts
@@ -64,8 +65,8 @@ All such content should have a real-time text alternative available.
 
 ## **How to Provide a Live Audio Alternative**
 
-[Side-by-side: Live audio with captions, live audio without]
-[Example: Live event with real-time captioning service]
+<!-- [Side-by-side: Live audio with captions, live audio without]
+[Example: Live event with real-time captioning service] -->
 
 - Use real-time captioning services or software
 - Provide a live transcript or summary as the event happens
@@ -78,7 +79,7 @@ For more, see [W3C's live audio accessibility docs](https://www.w3.org/WAI/WCAG2
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with real-time captions, right side with no captions]
+<!-- [Do/Don't graphic: Left side with real-time captions, right side with no captions] -->
 
 - No real-time text alternative for live audio
 - Captions that are delayed or inaccurate
@@ -91,7 +92,7 @@ Audit your site regularly and use accessibility checkers to ensure all live audi
 
 ## **Differences Between A, AA, and AAA for Guideline 1.2.9 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No requirement for 1.2.9.
 - **Level AA:** No requirement for 1.2.9.
@@ -103,7 +104,7 @@ For more, see the [W3C’s official documentation for 1.2.9 Audio-only (Live)](h
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for each item (live audio, captions, transcript, etc.)]
+<!-- [Checklist graphic: Icons for each item (live audio, captions, transcript, etc.)] -->
 
 - All live audio-only content has a real-time text alternative
 - Captions or transcripts are accurate and timely
@@ -115,10 +116,13 @@ For more, see the [W3C’s official documentation for 1.2.9 Audio-only (Live)](h
 
 ## **Summary**
 
-[Illustration: User reading real-time captions during a live audio event]
+<!-- [Illustration: User reading real-time captions during a live audio event] -->
 
 Guideline 1.2.9 is essential for making live audio content accessible to users who require text alternatives. By providing real-time captions or transcripts, you support users with disabilities, improve usability, and meet AAA requirements. Make live accessibility a standard part of your event planning for maximum inclusion.
 
-**Next Up:**
+_**Next Up:** WCAG Guideline 1.3.1 - Info and Relationships Explained_
 
-*Accessibility means everyone gets the full story—make your live events count!*
+<!-- **Next Up:**
+
+[WCAG Guideline 1.3.1 - Info and Relationships Explained →](WCAG-Guideline-1-3-1-Info-and-Relationships-Explained) -->
+
