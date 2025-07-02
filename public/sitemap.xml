@@ -91,4 +91,124 @@
             <priority>0.8</priority>
           </url>
         
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-1-1-Non-text-Content-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-1-1-non-text-content.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-1-1-non-text-content.png</image:loc>
+              <image:caption>Illustration of an image with alt text and a screen reader icon</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-2-1-audio-video-prerecorded.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-2-1-audio-video-prerecorded.png</image:loc>
+              <image:caption>Illustration of audio and video icons with transcript and captions</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-2-2-captions-prerecorded.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-2-2-captions-prerecorded.png</image:loc>
+              <image:caption>Illustration of a video player with captions enabled</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-2-3-audio-description-media-alternative.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-2-3-audio-description-media-alternative.png</image:loc>
+              <image:caption>Illustration of a video player with audio description and transcript</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-4-Captions-Live-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-2-4-captions-live.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-2-4-captions-live.png</image:loc>
+              <image:caption>Illustration of a live video player with captions enabled</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-2-5-audio-description-prerecorded.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-2-5-audio-description-prerecorded.png</image:loc>
+              <image:caption>Illustration of a video player with audio description enabled</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-2-6-sign-language-prerecorded.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-2-6-sign-language-prerecorded.png</image:loc>
+              <image:caption>Illustration of a video player with a sign language interpreter overlay</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-2-7-extended-audio-description-prerecorded.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-2-7-extended-audio-description-prerecorded.png</image:loc>
+              <image:caption>Illustration of a video player with audio description enabled</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-2-8-media-alternative-prerecorded.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-2-8-media-alternative-prerecorded.png</image:loc>
+              <image:caption>Illustration of a video player and a full text transcript side by side</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/blog/WCAG-Guidelines/WCAG-Guideline-1-2-9-Audio-Only-Live-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/wcag-1-2-9-audio-only-live.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/wcag-1-2-9-audio-only-live.png</image:loc>
+              <image:caption>Illustration of a live audio stream with real-time captions</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
   </urlset>
