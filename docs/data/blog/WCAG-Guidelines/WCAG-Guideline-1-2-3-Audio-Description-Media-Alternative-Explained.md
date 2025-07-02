@@ -3,8 +3,8 @@ title: WCAG Guideline 1.2.3 - Audio Description or Media Alternative (Prerecorde
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.
 keywords: wcag 1.2.3, audio description, media alternative, accessibility, video accessibility, web standards, digital inclusion
-image: wcag-1-2-3-audio-description-media-alternative.png
-imageAlt: Illustration of a video player with audio description and transcript
+image: WCAG-Series-1.2.3.png
+imageAlt: Blue text on yellow background saying, "AccessiTech Blog, Audio Description or Media Alternative (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.3 Explained"
 status: published
 date: 2025-07-01
 -->

@@ -3,8 +3,8 @@ title: WCAG Guideline 1.2.4 - Captions (Live) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.4 (Captions, Live)—what it means, why it matters, and how to make live video content accessible with captions.
 keywords: wcag 1.2.4, captions, live video, accessibility, web standards, digital inclusion, subtitles
-image: wcag-1-2-4-captions-live.png
-imageAlt: Illustration of a live video player with captions enabled
+image: WCAG-Series-1.2.4.png
+imageAlt: Blue text on yellow background saying, "AccessiTech Blog, Captions (Live), Web Content Accessibiilty Guiedlines (WCAG) 1.2.4 Explained"
 status: published
 date: 2025-07-01
 -->

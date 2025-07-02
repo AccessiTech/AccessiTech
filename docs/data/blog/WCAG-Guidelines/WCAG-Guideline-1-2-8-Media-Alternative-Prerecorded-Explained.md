@@ -3,8 +3,8 @@ title: WCAG Guideline 1.2.8 - Media Alternative (Prerecorded) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for synchronized media.
 keywords: wcag 1.2.8, media alternative, video accessibility, web standards, digital inclusion, full text transcript
-image: wcag-1-2-8-media-alternative-prerecorded.png
-imageAlt: Illustration of a video player and a full text transcript side by side
+image: WCAG-Series-1.2.8.png
+imageAlt: Blue text on yellow background saying, "AccessiTech Blog, Media Alternative (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.8 Explained"
 status: published
 date: 2025-07-01
 -->

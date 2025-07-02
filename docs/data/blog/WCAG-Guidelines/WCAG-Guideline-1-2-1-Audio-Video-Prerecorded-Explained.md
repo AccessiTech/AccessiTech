@@ -3,8 +3,8 @@ title: WCAG Guideline 1.2.1 - Audio-only and Video-only (Prerecorded) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.1 (Audio-only and Video-only, Prerecorded)—what it means, why it matters, and how to make media content accessible.
 keywords: wcag 1.2.1, audio-only, video-only, accessibility, captions, transcripts, web standards, digital inclusion
-image: wcag-1-2-1-audio-video-prerecorded.png
-imageAlt: Illustration of audio and video icons with transcript and captions
+image: WCAG-Series-1.2.1.png
+imageAlt: Blue text on yellow background saying, "AccessiTech Blog, Audio-only and Video-only (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.1 Explained"
 status: published
 date: 2025-07-01
 -->

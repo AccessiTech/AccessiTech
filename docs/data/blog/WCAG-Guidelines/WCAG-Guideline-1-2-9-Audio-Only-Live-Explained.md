@@ -3,8 +3,8 @@ title: WCAG Guideline 1.2.9 - Audio-only (Live) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.9 (Audio-only, Live)—what it means, why it matters, and how to make live audio content accessible.
 keywords: wcag 1.2.9, audio-only live, accessibility, live captions, web standards, digital inclusion
-image: wcag-1-2-9-audio-only-live.png
-imageAlt: Illustration of a live audio stream with real-time captions
+image: WCAG-Series-1.2.9.png
+imageAlt: Blue text on yellow background saying, "AccessiTech Blog, Audio Only (Live), Web Content Accessibiilty Guiedlines (WCAG) 1.2.9 Explained"
 status: published
 date: 2025-07-01
 -->

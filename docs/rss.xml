@@ -78,7 +78,7 @@
           undefined
           <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png" type="image/jpeg" length="1234" />
           <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Non-text Content, Web Content Accessibiilty Guiedlines (WCAG) 1.1.1 Explained</media:description>
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Non-text Content, Web Content Accessibiilty Guiedlines (WCAG) 1.1.1 Explained"</media:description>
           <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
@@ -89,10 +89,10 @@
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.1 (Audio-only and Video-only, Prerecorded)—what it means, why it matters, and how to make media content accessible.</description>
           undefined
-          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-1-audio-video-prerecorded.png" type="image/jpeg" length="1234" />
-          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-1-audio-video-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Illustration of audio and video icons with transcript and captions</media:description>
-          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-1-audio-video-prerecorded.png" />
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Audio-only and Video-only (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.1 Explained"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.1.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
@@ -102,10 +102,10 @@
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.2 (Captions, Prerecorded)—what it means, why it matters, and how to make video content accessible with captions.</description>
           undefined
-          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-2-captions-prerecorded.png" type="image/jpeg" length="1234" />
-          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-2-captions-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Illustration of a video player with captions enabled</media:description>
-          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-2-captions-prerecorded.png" />
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Captions (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.2 Explained"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.2.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
@@ -115,10 +115,10 @@
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
           undefined
-          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-3-audio-description-media-alternative.png" type="image/jpeg" length="1234" />
-          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-3-audio-description-media-alternative.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Illustration of a video player with audio description and transcript</media:description>
-          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-3-audio-description-media-alternative.png" />
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Audio Description or Media Alternative (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.3 Explained"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
@@ -128,10 +128,10 @@
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.4 (Captions, Live)—what it means, why it matters, and how to make live video content accessible with captions.</description>
           undefined
-          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-4-captions-live.png" type="image/jpeg" length="1234" />
-          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-4-captions-live.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Illustration of a live video player with captions enabled</media:description>
-          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-4-captions-live.png" />
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Captions (Live), Web Content Accessibiilty Guiedlines (WCAG) 1.2.4 Explained"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.4.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
@@ -141,10 +141,10 @@
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.5 (Audio Description, Prerecorded)—what it means, why it matters, and how to make prerecorded video content accessible for users who are blind or have low vision.</description>
           undefined
-          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-5-audio-description-prerecorded.png" type="image/jpeg" length="1234" />
-          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-5-audio-description-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Illustration of a video player with audio description enabled</media:description>
-          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-5-audio-description-prerecorded.png" />
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Audio Description (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.5 Explained"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.5.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
@@ -154,10 +154,10 @@
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.6 (Sign Language, Prerecorded)—what it means, why it matters, and how to make video content accessible with sign language interpretation.</description>
           undefined
-          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-6-sign-language-prerecorded.png" type="image/jpeg" length="1234" />
-          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-6-sign-language-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Illustration of a video player with a sign language interpreter overlay</media:description>
-          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-6-sign-language-prerecorded.png" />
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Sign Language (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.6 Explained"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.6.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
@@ -167,10 +167,10 @@
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.7 (Extended Audio Description, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
           undefined
-          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-7-extended-audio-description-prerecorded.png" type="image/jpeg" length="1234" />
-          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-7-extended-audio-description-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Illustration of a video player with audio description enabled</media:description>
-          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-7-extended-audio-description-prerecorded.png" />
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.7.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.7.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Extended Audio Description (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.7 Explained"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.7.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
@@ -180,10 +180,10 @@
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for synchronized media.</description>
           undefined
-          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-8-media-alternative-prerecorded.png" type="image/jpeg" length="1234" />
-          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-8-media-alternative-prerecorded.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Illustration of a video player and a full text transcript side by side</media:description>
-          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-8-media-alternative-prerecorded.png" />
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.8.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.8.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Media Alternative (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.8 Explained"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.8.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
@@ -193,10 +193,10 @@
           <pubDate>2025-07-01</pubDate>
           <description>A practical guide to WCAG Guideline 1.2.9 (Audio-only, Live)—what it means, why it matters, and how to make live audio content accessible.</description>
           undefined
-          <enclosure url="https://www.accessi.tech/assets/images/wcag-1-2-9-audio-only-live.png" type="image/jpeg" length="1234" />
-          <media:content url="https://www.accessi.tech/assets/images/wcag-1-2-9-audio-only-live.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Illustration of a live audio stream with real-time captions</media:description>
-          <media:thumbnail url="https://www.accessi.tech/assets/images/wcag-1-2-9-audio-only-live.png" />
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.9.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.9.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "AccessiTech Blog, Audio Only (Live), Web Content Accessibiilty Guiedlines (WCAG) 1.2.9 Explained"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.9.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
