@@ -3,9 +3,10 @@ title: WCAG Guideline 1.3.6: Identify Purpose Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields.
 keywords: wcag 1.3.6, identify purpose, accessibility, web standards, autofill, user interface, digital inclusion
-image: wcag-1-3-6-identify-purpose.png
-imageAlt: Illustration of a web page with UI components and purpose icons
-status: draft
+image: WCAG-Series-1.3.6.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.6 Explained, Identify Input Purpose"
+status: published
+date: 2025-07-01
 -->
 
 # **WCAG Guideline 1.3.6: Identify Purpose Explained**
@@ -24,7 +25,7 @@ Guideline 1.3 focuses on creating content that can be presented in different way
 
 ## **What Is Guideline 1.3.6 Identify Purpose?**
 
-[Illustration: Web page with UI components and purpose icons, browser suggesting component purposes]
+<!-- [Illustration: Web page with UI components and purpose icons, browser suggesting component purposes] -->
 
 > "In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined."
 
@@ -40,7 +41,7 @@ This ensures that users can understand and interact with all parts of your site,
 
 ## **Why Does It Matter?**
 
-[Infographic: UI components with purpose icons, user with cognitive disability]
+<!-- [Infographic: UI components with purpose icons, user with cognitive disability] -->
 
 - **Inclusivity:** Identifying purpose helps users with cognitive disabilities, memory issues, or language barriers.
 - **Legal Compliance:** Identify Purpose is a Level AAA requirement in WCAG 2.2.
@@ -52,7 +53,7 @@ For more, see [W3C's identify purpose docs](https://www.w3.org/WAI/WCAG22/Unders
 
 ## **What Needs Purpose Identified?**
 
-[Grid: Navigation, main, search, banner, all with ARIA landmark icons]
+<!-- [Grid: Navigation, main, search, banner, all with ARIA landmark icons] -->
 
 - Navigation regions (nav)
 - Main content (main)
@@ -66,8 +67,8 @@ All such elements should use ARIA roles, landmarks, or attributes to identify th
 
 ## **How to Identify Purpose**
 
-[Side-by-side code snippets: With and without ARIA landmarks]
-[Example: Web page with all regions marked up]
+<!-- [Side-by-side code snippets: With and without ARIA landmarks] -->
+<!-- [Example: Web page with all regions marked up] -->
 
 - Add ARIA landmarks and roles to UI components and regions
 - Use semantic HTML5 elements (nav, main, aside, etc.)
@@ -80,7 +81,7 @@ For more, see the [MDN ARIA landmarks docs](https://developer.mozilla.org/en-US/
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with ARIA landmarks, right side with missing or incorrect roles]
+<!-- [Do/Don't graphic: Left side with ARIA landmarks, right side with missing or incorrect roles] -->
 
 - Omitting ARIA roles or landmarks on key regions
 - Using incorrect or generic roles
@@ -93,7 +94,7 @@ Audit your site regularly and use accessibility checkers to ensure all purposes 
 
 ## **Differences Between A, AA, and AAA for Guideline 1.3.6 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No requirement for 1.3.6.
 - **Level AA:** No requirement for 1.3.6.
@@ -105,7 +106,7 @@ For more, see the [W3C’s official documentation for 1.3.6 Identify Purpose](ht
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for each item (nav, main, search, banner, etc.)]
+<!-- [Checklist graphic: Icons for each item (nav, main, search, banner, etc.)] -->
 
 - All UI components and regions use ARIA roles or landmarks
 - Semantic HTML5 elements are used where possible
@@ -117,7 +118,7 @@ For more, see the [W3C’s official documentation for 1.3.6 Identify Purpose](ht
 
 ## **Summary**
 
-[Illustration: User navigating a web page with clear regions and roles]
+<!-- [Illustration: User navigating a web page with clear regions and roles] -->
 
 Guideline 1.3.6 is essential for making your site understandable and navigable for everyone. By identifying the purpose of all UI components and regions, you support users with disabilities, improve usability, and meet AAA requirements. Make purpose identification a standard part of your development process.
 

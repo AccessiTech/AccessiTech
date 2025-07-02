@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="canonical" href="https://accessi.tech/wcag/WCAG-Guideline-1-3-6-Identify-Purpose-Explained"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#FDB81E" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#061A32" />
+<meta name="description" content="A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields."/>
+<meta name="og:title" content="WCAG Guideline 1.3.6"/>
+<meta name="og:description" content="A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields."/>
+<meta name="og:url" content="https://accessi.tech/wcag/WCAG-Guideline-1-3-6-Identify-Purpose-Explained"/>
+<meta name="og:type" content="website"/>
+<meta name="og:site_name" content="AccessiTech LLC"/>
+<meta name="og:image" content="https://accessi.tech/assets/images/WCAG-Series-1.3.6.png"/>
+<meta name="og:image:alt" content="Blue text on yellow background saying, &quot;Web Content Accessibiilty Guiedlines (WCAG) 1.3.6 Explained, Identify Input Purpose&quot;"/>
+<meta property="og:image:type" content="image/png" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="AccessiTech LLC"/>
+<meta name="twitter:creator" content="accessiT3ch"/>
+<meta name="twitter:title" content="WCAG Guideline 1.3.6"/>
+<meta name="twitter:description" content="A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields."/>
+<meta name="twitter:image" content="https://accessi.tech/assets/images/WCAG-Series-1.3.6.png"/>
+<meta name="twitter:image:alt" content="Blue text on yellow background saying, &quot;Web Content Accessibiilty Guiedlines (WCAG) 1.3.6 Explained, Identify Input Purpose&quot;"/>
+<meta name="twitter:domain" content="accessi.tech/" />
+<meta name="twitter:url" content="https://www.accessi.tech/" />
+<link rel="apple-touch-icon" href="/logo192.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--      manifest.json provides metadata used when your web app is installed on a      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/    -->
+<link rel="manifest" href="/manifest.json" />
+<!--      Notice the use of  in the tags above.      It will be replaced with the URL of the `public` folder during the build.      Only files inside the `public` folder can be referenced from the HTML.      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will      work correctly both with client-side routing and a non-root public URL.      Learn how to configure a non-root public URL by running `npm run build`.    -->
+<title>WCAG Guideline 1.3.6</title>
+<script type="module" crossorigin src="/assets/index-4d6200f5.js">
+</script>
+<link rel="stylesheet" href="/assets/index-f80000a4.css">  </head>
+  <body>
+    
+    <noscript>
+      <div aria-label="App Root" class="App container-fluid"><div class="header-row row"><div class="col"><header class="main-header wcag" aria-label="Header"><a class="skip-link" href="#main">Skip to main content</a><div class="a11y-container" aria-label="Accessibility Options"><div class="a11y__settings-container"><button class="a11y__settings-toggle" aria-label="Toggle Accessibility Options"><i class="fa fa-cog"></i></button></div></div><a href="/" title="AccessiTech LLC" class="logo-link"><h1 class="logo-container" style="background-image:url(&#x27;/assets/images/TypeLogo_White_HC.svg&#x27;)">AccessiTech LLC</h1></a></header></div></div><div class="breadcrumb-row row"><div><title>AccessiTech | WCAG Guideline 1.3.6</title><meta name="description" content="A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields."/><link rel="canonical" href="https://accessi.tech/blog/WCAG-Guideline-1-3-6-Identify-Purpose-Explained"/><meta name="og:type" content="website"/><meta name="og:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-1.3.6.png"/><meta name="og:image:alt" content="Yellow text on gradient background saying, AccessiTech"/><meta name="og:site_name" content="AccessiTech"/><meta name="og:title" content="AccessiTech | WCAG Guideline 1.3.6"/><meta name="og:description" content="A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields."/><meta name="og:url" content="https://accessi.tech/blog/WCAG-Guideline-1-3-6-Identify-Purpose-Explained"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="AccessiTech LLC"/><meta name="twitter:creator" content="@accessiT3ch"/><meta name="twitter:title" content="AccessiTech | WCAG Guideline 1.3.6"/><meta name="twitter:description" content="A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields."/><meta name="twitter:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-1.3.6.png"/><meta name="twitter:image:alt" content="Yellow text on gradient background saying, AccessiTech"/></div><div class="offset-md-2 col"><nav aria-label="breadcrumb" class="breadcrumb-container"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/wcag">WCAG Explained</a></li><li class="breadcrumb-item active" aria-current="page">WCAG Guideline 1.3.6</li></ol></nav></div></div><div class="content-row row"><main id="main" aria-label="Blog Entry" class="blog-entry-page"><div class="col"><div class="row"><div class="col-md-8 col-12 offset-md-2"><div><h1><strong>WCAG Guideline 1.3.6: Identify Purpose Explained</strong></h1>
+<p><strong>Estimated read time:</strong> 8–10 minutes</p>
+<hr/>
+<h2><strong>Guideline 1: Perceivable</strong></h2>
+<p>The first principle of WCAG, Perceivable, ensures that information and user interface components must be presented to users in ways they can perceive. This means content can’t be invisible to all of a user’s senses—whether they are seeing, hearing, or feeling the content through assistive technology.</p>
+<h2><strong>Guideline 1.3: Adaptable</strong></h2>
+<p>Guideline 1.3 focuses on creating content that can be presented in different ways (for example, simpler layout) without losing information or structure. This is essential for users who rely on assistive technologies or need content in alternative formats.</p>
+<h2><strong>What Is Guideline 1.3.6 Identify Purpose?</strong></h2>
+
+<blockquote>
+<p>&quot;In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined.&quot;</p>
+</blockquote>
+<p>Guideline 1.3.6 is a Level AAA requirement in the <a href="https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose">Web Content Accessibility Guidelines (WCAG)</a>.</p>
+<ul>
+<li>Use ARIA landmarks, roles, and attributes to identify the purpose of UI components, icons, and regions.</li>
+<li>This helps browsers and assistive technologies provide context, navigation, and customization for users.</li>
+<li>Especially helpful for users with cognitive disabilities or those using screen readers and custom interfaces.</li>
+</ul>
+<p>This ensures that users can understand and interact with all parts of your site, not just input fields.</p>
+<hr/>
+<h2><strong>Why Does It Matter?</strong></h2>
+
+<ul>
+<li><strong>Inclusivity:</strong> Identifying purpose helps users with cognitive disabilities, memory issues, or language barriers.</li>
+<li><strong>Legal Compliance:</strong> Identify Purpose is a Level AAA requirement in WCAG 2.2.</li>
+<li><strong>Usability:</strong> Enhanced context and navigation benefit all users.</li>
+</ul>
+<p>For more, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-purpose.html">W3C&#x27;s identify purpose docs</a>.</p>
+<hr/>
+<h2><strong>What Needs Purpose Identified?</strong></h2>
+
+<ul>
+<li>Navigation regions (nav)</li>
+<li>Main content (main)</li>
+<li>Search regions (search)</li>
+<li>Banners, footers, sidebars (banner, contentinfo, complementary)</li>
+<li>Icons and UI components with specific purposes</li>
+</ul>
+<p>All such elements should use ARIA roles, landmarks, or attributes to identify their purpose.</p>
+<hr/>
+<h2><strong>How to Identify Purpose</strong></h2>
+
+
+<ul>
+<li>Add ARIA landmarks and roles to UI components and regions</li>
+<li>Use semantic HTML5 elements (nav, main, aside, etc.)</li>
+<li>Test with browsers and assistive tech for context and navigation</li>
+<li>Document component purposes for developers and designers</li>
+</ul>
+<p>For more, see the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Landmark_roles">MDN ARIA landmarks docs</a>.</p>
+<hr/>
+<h2><strong>Common Mistakes to Avoid</strong></h2>
+
+<ul>
+<li>Omitting ARIA roles or landmarks on key regions</li>
+<li>Using incorrect or generic roles</li>
+<li>Not testing with assistive technology</li>
+<li>Ignoring the needs of users with cognitive disabilities</li>
+</ul>
+<p>Audit your site regularly and use accessibility checkers to ensure all purposes are identified. For more, see <a href="https://www.deque.com/blog/aria-landmarks-accessibility/">Deque&#x27;s ARIA tips</a>.</p>
+<hr/>
+<h2><strong>Differences Between A, AA, and AAA for Guideline 1.3.6 in WCAG 2.2</strong></h2>
+
+<ul>
+<li><strong>Level A:</strong> No requirement for 1.3.6.</li>
+<li><strong>Level AA:</strong> No requirement for 1.3.6.</li>
+<li><strong>Level AAA:</strong> Requires the purpose of UI components, icons, and regions to be programmatically determined. This is the core requirement for 1.3.6 and is mandatory for AAA conformance.</li>
+</ul>
+<p>For more, see the <a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-purpose.html">W3C’s official documentation for 1.3.6 Identify Purpose</a>.</p>
+<hr/>
+<h2><strong>Quick Checklist</strong></h2>
+
+<ul>
+<li>All UI components and regions use ARIA roles or landmarks</li>
+<li>Semantic HTML5 elements are used where possible</li>
+<li>Tested with assistive technology</li>
+<li>Component purposes are documented for devs/designers</li>
+<li>No key region is left unmarked</li>
+</ul>
+<hr/>
+<h2><strong>Summary</strong></h2>
+
+<p>Guideline 1.3.6 is essential for making your site understandable and navigable for everyone. By identifying the purpose of all UI components and regions, you support users with disabilities, improve usability, and meet AAA requirements. Make purpose identification a standard part of your development process.</p>
+<p><strong>Next Up:</strong></p>
+<p><em>Accessibility means everyone gets the full story—make your UI purposeful!</em></p></div></div></div></div></main></div><div class="footer-row row"><div class="col"><section class="footer-section" aria-label="Footer"><h3>Reach Out!</h3><ul aria-label="Contact List"><li><a href="https://www.fiverr.com/accessitech" target="_blank" title="Fiverr at accessiTech">Fiverr at accessiTech</a></li><li><a href="https://www.linkedin.com/company/accessitech/" target="_blank" title="LinkedIn at AccessiTech LLC">LinkedIn at AccessiTech LLC</a></li><li><a href="https://www.reddit.com/user/accessitech" target="_blank" title="Reddit at u/accessiTech">Reddit at u/accessiTech</a></li><li><a href="https://twitter.com/accessiT3ch" target="_blank" title="Twitter at accessiT3ch">Twitter at accessiT3ch</a></li></ul><p aria-label="Reporting an Issue" class="github-issues">Report bugs, request features, and start collaborating via <a href="https://github.com/AccessiTech/AccessiTech/issues" target="_blank" title="GitHub Issues">GitHub Issues</a>!</p><p aria-label="Copyright" class="copyright">© 2025 AccessiTech LLC. All Rights Reserved.</p></section></div></div></div>
+    </noscript>
+    
+    <div id="root"><div aria-label="App Root" class="App container-fluid"><div class="header-row row"><div class="col"><header class="main-header wcag" aria-label="Header"><a class="skip-link" href="#main">Skip to main content</a><div class="a11y-container" aria-label="Accessibility Options"><div class="a11y__settings-container"><button class="a11y__settings-toggle" aria-label="Toggle Accessibility Options"><i class="fa fa-cog"></i></button></div></div><a href="/" title="AccessiTech LLC" class="logo-link"><h1 class="logo-container" style="background-image:url(&#x27;/assets/images/TypeLogo_White_HC.svg&#x27;)">AccessiTech LLC</h1></a></header></div></div><div class="breadcrumb-row row"><div><title>AccessiTech | WCAG Guideline 1.3.6</title><meta name="description" content="A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields."/><link rel="canonical" href="https://accessi.tech/blog/WCAG-Guideline-1-3-6-Identify-Purpose-Explained"/><meta name="og:type" content="website"/><meta name="og:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-1.3.6.png"/><meta name="og:image:alt" content="Yellow text on gradient background saying, AccessiTech"/><meta name="og:site_name" content="AccessiTech"/><meta name="og:title" content="AccessiTech | WCAG Guideline 1.3.6"/><meta name="og:description" content="A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields."/><meta name="og:url" content="https://accessi.tech/blog/WCAG-Guideline-1-3-6-Identify-Purpose-Explained"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="AccessiTech LLC"/><meta name="twitter:creator" content="@accessiT3ch"/><meta name="twitter:title" content="AccessiTech | WCAG Guideline 1.3.6"/><meta name="twitter:description" content="A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields."/><meta name="twitter:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-1.3.6.png"/><meta name="twitter:image:alt" content="Yellow text on gradient background saying, AccessiTech"/></div><div class="offset-md-2 col"><nav aria-label="breadcrumb" class="breadcrumb-container"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/wcag">WCAG Explained</a></li><li class="breadcrumb-item active" aria-current="page">WCAG Guideline 1.3.6</li></ol></nav></div></div><div class="content-row row"><main id="main" aria-label="Blog Entry" class="blog-entry-page"><div class="col"><div class="row"><div class="col-md-8 col-12 offset-md-2"><div><h1><strong>WCAG Guideline 1.3.6: Identify Purpose Explained</strong></h1>
+<p><strong>Estimated read time:</strong> 8–10 minutes</p>
+<hr/>
+<h2><strong>Guideline 1: Perceivable</strong></h2>
+<p>The first principle of WCAG, Perceivable, ensures that information and user interface components must be presented to users in ways they can perceive. This means content can’t be invisible to all of a user’s senses—whether they are seeing, hearing, or feeling the content through assistive technology.</p>
+<h2><strong>Guideline 1.3: Adaptable</strong></h2>
+<p>Guideline 1.3 focuses on creating content that can be presented in different ways (for example, simpler layout) without losing information or structure. This is essential for users who rely on assistive technologies or need content in alternative formats.</p>
+<h2><strong>What Is Guideline 1.3.6 Identify Purpose?</strong></h2>
+
+<blockquote>
+<p>&quot;In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined.&quot;</p>
+</blockquote>
+<p>Guideline 1.3.6 is a Level AAA requirement in the <a href="https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose">Web Content Accessibility Guidelines (WCAG)</a>.</p>
+<ul>
+<li>Use ARIA landmarks, roles, and attributes to identify the purpose of UI components, icons, and regions.</li>
+<li>This helps browsers and assistive technologies provide context, navigation, and customization for users.</li>
+<li>Especially helpful for users with cognitive disabilities or those using screen readers and custom interfaces.</li>
+</ul>
+<p>This ensures that users can understand and interact with all parts of your site, not just input fields.</p>
+<hr/>
+<h2><strong>Why Does It Matter?</strong></h2>
+
+<ul>
+<li><strong>Inclusivity:</strong> Identifying purpose helps users with cognitive disabilities, memory issues, or language barriers.</li>
+<li><strong>Legal Compliance:</strong> Identify Purpose is a Level AAA requirement in WCAG 2.2.</li>
+<li><strong>Usability:</strong> Enhanced context and navigation benefit all users.</li>
+</ul>
+<p>For more, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-purpose.html">W3C&#x27;s identify purpose docs</a>.</p>
+<hr/>
+<h2><strong>What Needs Purpose Identified?</strong></h2>
+
+<ul>
+<li>Navigation regions (nav)</li>
+<li>Main content (main)</li>
+<li>Search regions (search)</li>
+<li>Banners, footers, sidebars (banner, contentinfo, complementary)</li>
+<li>Icons and UI components with specific purposes</li>
+</ul>
+<p>All such elements should use ARIA roles, landmarks, or attributes to identify their purpose.</p>
+<hr/>
+<h2><strong>How to Identify Purpose</strong></h2>
+
+
+<ul>
+<li>Add ARIA landmarks and roles to UI components and regions</li>
+<li>Use semantic HTML5 elements (nav, main, aside, etc.)</li>
+<li>Test with browsers and assistive tech for context and navigation</li>
+<li>Document component purposes for developers and designers</li>
+</ul>
+<p>For more, see the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Landmark_roles">MDN ARIA landmarks docs</a>.</p>
+<hr/>
+<h2><strong>Common Mistakes to Avoid</strong></h2>
+
+<ul>
+<li>Omitting ARIA roles or landmarks on key regions</li>
+<li>Using incorrect or generic roles</li>
+<li>Not testing with assistive technology</li>
+<li>Ignoring the needs of users with cognitive disabilities</li>
+</ul>
+<p>Audit your site regularly and use accessibility checkers to ensure all purposes are identified. For more, see <a href="https://www.deque.com/blog/aria-landmarks-accessibility/">Deque&#x27;s ARIA tips</a>.</p>
+<hr/>
+<h2><strong>Differences Between A, AA, and AAA for Guideline 1.3.6 in WCAG 2.2</strong></h2>
+
+<ul>
+<li><strong>Level A:</strong> No requirement for 1.3.6.</li>
+<li><strong>Level AA:</strong> No requirement for 1.3.6.</li>
+<li><strong>Level AAA:</strong> Requires the purpose of UI components, icons, and regions to be programmatically determined. This is the core requirement for 1.3.6 and is mandatory for AAA conformance.</li>
+</ul>
+<p>For more, see the <a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-purpose.html">W3C’s official documentation for 1.3.6 Identify Purpose</a>.</p>
+<hr/>
+<h2><strong>Quick Checklist</strong></h2>
+
+<ul>
+<li>All UI components and regions use ARIA roles or landmarks</li>
+<li>Semantic HTML5 elements are used where possible</li>
+<li>Tested with assistive technology</li>
+<li>Component purposes are documented for devs/designers</li>
+<li>No key region is left unmarked</li>
+</ul>
+<hr/>
+<h2><strong>Summary</strong></h2>
+
+<p>Guideline 1.3.6 is essential for making your site understandable and navigable for everyone. By identifying the purpose of all UI components and regions, you support users with disabilities, improve usability, and meet AAA requirements. Make purpose identification a standard part of your development process.</p>
+<p><strong>Next Up:</strong></p>
+<p><em>Accessibility means everyone gets the full story—make your UI purposeful!</em></p></div></div></div></div></main></div><div class="footer-row row"><div class="col"><section class="footer-section" aria-label="Footer"><h3>Reach Out!</h3><ul aria-label="Contact List"><li><a href="https://www.fiverr.com/accessitech" target="_blank" title="Fiverr at accessiTech">Fiverr at accessiTech</a></li><li><a href="https://www.linkedin.com/company/accessitech/" target="_blank" title="LinkedIn at AccessiTech LLC">LinkedIn at AccessiTech LLC</a></li><li><a href="https://www.reddit.com/user/accessitech" target="_blank" title="Reddit at u/accessiTech">Reddit at u/accessiTech</a></li><li><a href="https://twitter.com/accessiT3ch" target="_blank" title="Twitter at accessiT3ch">Twitter at accessiT3ch</a></li></ul><p aria-label="Reporting an Issue" class="github-issues">Report bugs, request features, and start collaborating via <a href="https://github.com/AccessiTech/AccessiTech/issues" target="_blank" title="GitHub Issues">GitHub Issues</a>!</p><p aria-label="Copyright" class="copyright">© 2025 AccessiTech LLC. All Rights Reserved.</p></section></div></div></div></div>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KE9W4MCVH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-6KE9W4MCVH');
+    </script>
+  </body>
+</html>

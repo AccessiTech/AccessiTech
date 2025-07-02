@@ -9,7 +9,7 @@
   
           <url>
             <loc>https://www.accessi.tech/</loc>
-            <lastmod>2025-07-02T21:50:53.406Z</lastmod>
+            <lastmod>2025-07-02T22:27:29.811Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -21,7 +21,7 @@
         
           <url>
             <loc>https://www.accessi.tech/blog</loc>
-            <lastmod>2025-07-02T21:50:53.406Z</lastmod>
+            <lastmod>2025-07-02T22:27:29.811Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -33,7 +33,7 @@
         
           <url>
             <loc>https://www.accessi.tech/wcag</loc>
-            <lastmod>2025-07-02T21:50:53.406Z</lastmod>
+            <lastmod>2025-07-02T22:27:29.811Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -218,6 +218,78 @@
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.9.png</image:loc>
               <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.9 Explained, Audio Only (Live)"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-3-1-Info-and-Relationships-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.3.1.png" length="50423" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.3.1.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.1 Explained,  Info and Relationships"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-3-2-Meaningful-Sequence-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.3.2.png" length="52751" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.3.2.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.2 Explained, Meaningful Sequence"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.3.3.png" length="54317" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.3.3.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.3 Explained, Sensory Characteristics"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-3-4-Orientation-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.3.4.png" length="46270" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.3.4.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.4 Explained, Orientation"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.3.5.png" length="51509" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.3.5.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.5 Explained, Identify Input Purpose"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-3-6-Identify-Purpose-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.3.6.png" length="51710" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.3.6.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.6 Explained, Identify Input Purpose"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>

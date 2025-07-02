@@ -120,9 +120,7 @@ For more, see the [W3C’s official documentation for 1.2.9 Audio-only (Live)](h
 
 Guideline 1.2.9 is essential for making live audio content accessible to users who require text alternatives. By providing real-time captions or transcripts, you support users with disabilities, improve usability, and meet AAA requirements. Make live accessibility a standard part of your event planning for maximum inclusion.
 
-_**Next Up:** WCAG Guideline 1.3.1 - Info and Relationships Explained_
+**Next Up:**
 
-<!-- **Next Up:**
-
-[WCAG Guideline 1.3.1 - Info and Relationships Explained →](WCAG-Guideline-1-3-1-Info-and-Relationships-Explained) -->
+[WCAG Guideline 1.3.1 - Info and Relationships Explained →](WCAG-Guideline-1-3-1-Info-and-Relationships-Explained)
 

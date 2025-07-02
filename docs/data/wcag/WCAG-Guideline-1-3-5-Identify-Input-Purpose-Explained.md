@@ -3,9 +3,10 @@ title: WCAG Guideline 1.3.5: Identify Input Purpose Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.3.5 (Identify Input Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of input fields.
 keywords: wcag 1.3.5, identify input purpose, accessibility, web standards, autofill, input fields, digital inclusion
-image: wcag-1-3-5-identify-input-purpose.png
-imageAlt: Illustration of a form with input fields and autofill icons
-status: draft
+image: WCAG-Series-1.3.5.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.5 Explained, Identify Input Purpose"
+status: published
+date: 2025-07-01
 -->
 
 # **WCAG Guideline 1.3.5: Identify Input Purpose Explained**
@@ -24,7 +25,7 @@ Guideline 1.3 focuses on creating content that can be presented in different way
 
 ## **What Is Guideline 1.3.5 Identify Input Purpose?**
 
-[Illustration: Form with input fields and autofill icons, browser suggesting field purposes]
+<!-- [Illustration: Form with input fields and autofill icons, browser suggesting field purposes] -->
 
 > "The purpose of each input field collecting information about the user can be programmatically determined when: The input field serves a purpose identified in the Input Purposes for User Interface Components section; and the content is implemented using technologies with support for identifying the expected meaning for form fields."
 
@@ -40,7 +41,7 @@ This ensures that users can complete forms more easily and accurately, improving
 
 ## **Why Does It Matter?**
 
-[Infographic: Form fields with autofill icons, user with cognitive disability]
+<!-- [Infographic: Form fields with autofill icons, user with cognitive disability] -->
 
 - **Inclusivity:** Identifying input purpose helps users with cognitive disabilities, memory issues, or language barriers.
 - **Legal Compliance:** Identify Input Purpose is a Level AA requirement in WCAG 2.2 and referenced in accessibility laws worldwide.
@@ -52,7 +53,7 @@ For more, see [WebAIM's form accessibility guide](https://webaim.org/techniques/
 
 ## **What Needs Input Purpose Identified?**
 
-[Grid: Name, email, address, phone fields, all with autofill icons]
+<!-- [Grid: Name, email, address, phone fields, all with autofill icons] -->
 
 - Name fields (first, last, full)
 - Email address
@@ -66,8 +67,8 @@ All such fields should use the appropriate autocomplete attribute.
 
 ## **How to Identify Input Purpose**
 
-[Side-by-side code snippets: Input with and without autocomplete]
-[Example: Form with all fields using autocomplete attributes]
+<!-- [Side-by-side code snippets: Input with and without autocomplete] -->
+<!-- [Example: Form with all fields using autocomplete attributes] -->
 
 - Add the autocomplete attribute to input fields (e.g., autocomplete="email")
 - Use correct field types (e.g., type="email", type="tel")
@@ -80,7 +81,7 @@ For more, see the [MDN autocomplete docs](https://developer.mozilla.org/en-US/do
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with autocomplete, right side with missing or incorrect attributes]
+<!-- [Do/Don't graphic: Left side with autocomplete, right side with missing or incorrect attributes] -->
 
 - Omitting autocomplete attributes on supported fields
 - Using incorrect or generic autocomplete values
@@ -93,7 +94,7 @@ Audit your site regularly and use accessibility checkers to ensure all input pur
 
 ## **Differences Between A, AA, and AAA for Guideline 1.3.5 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No requirement for 1.3.5.
 - **Level AA:** Requires input purposes to be programmatically determined for supported fields. This is the core requirement for 1.3.5 and is mandatory for AA conformance.
@@ -105,7 +106,7 @@ For more, see the [W3C’s official documentation for 1.3.5 Identify Input Purpo
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for each item (form, input, autofill, etc.)]
+<!-- [Checklist graphic: Icons for each item (form, input, autofill, etc.)] -->
 
 - All supported input fields use autocomplete attributes
 - Field types match the expected input (email, tel, etc.)
@@ -117,12 +118,10 @@ For more, see the [W3C’s official documentation for 1.3.5 Identify Input Purpo
 
 ## **Summary**
 
-[Illustration: User completing a form with autofill and screen reader support]
+<!-- [Illustration: User completing a form with autofill and screen reader support] -->
 
 Guideline 1.3.5 is essential for making forms easier and more accessible for everyone. By identifying input purposes, you support users with disabilities, improve usability, and meet legal requirements. Make input purpose identification a standard part of your form development process.
 
 **Next Up:**
 
-[Read Guideline 1.3.6: Identify Purpose →](WCAG-Guideline-1-3-6-Identify-Purpose-Explained.md)
-
-*Accessibility means everyone gets the full story—make your forms smarter!*
+[Read Guideline 1.3.6: Identify Purpose →](WCAG-Guideline-1-3-6-Identify-Purpose-Explained)

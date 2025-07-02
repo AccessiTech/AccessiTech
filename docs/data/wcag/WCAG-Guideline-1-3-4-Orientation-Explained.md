@@ -3,9 +3,10 @@ title: WCAG Guideline 1.3.4: Orientation Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.3.4 (Orientation)—what it means, why it matters, and how to ensure content is not restricted to a single display orientation.
 keywords: wcag 1.3.4, orientation, accessibility, web standards, mobile, landscape, portrait, digital inclusion
-image: wcag-1-3-4-orientation.png
-imageAlt: Illustration of a mobile device switching between portrait and landscape
-status: draft
+image: WCAG-Series-1.3.4.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.4 Explained, Orientation"
+status: published
+date: 2025-07-01
 -->
 
 # **WCAG Guideline 1.3.4: Orientation Explained**
@@ -24,7 +25,7 @@ Guideline 1.3 focuses on creating content that can be presented in different way
 
 ## **What Is Guideline 1.3.4 Orientation?**
 
-[Illustration: Mobile device switching between portrait and landscape]
+<!-- [Illustration: Mobile device switching between portrait and landscape] -->
 
 > "Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential."
 
@@ -40,7 +41,7 @@ This ensures that users who use assistive technology, have their device mounted,
 
 ## **Why Does It Matter?**
 
-[Infographic: Device orientation icons, user with mounted tablet]
+<!-- [Infographic: Device orientation icons, user with mounted tablet] -->
 
 - **Inclusivity:** Some users can’t rotate their devices or use assistive tech that requires a specific orientation.
 - **Legal Compliance:** Orientation is a Level AA requirement in WCAG 2.2 and referenced in accessibility laws worldwide.
@@ -52,7 +53,7 @@ For more, see [WebAIM's orientation guide](https://webaim.org/blog/mobile-access
 
 ## **What Needs Orientation Support?**
 
-[Grid: Mobile app, web page, form, all with orientation icons]
+<!-- [Grid: Mobile app, web page, form, all with orientation icons] -->
 
 - Mobile apps and web pages
 - Forms and interactive content
@@ -65,8 +66,8 @@ All such content should be usable in both portrait and landscape unless a specif
 
 ## **How to Support Multiple Orientations**
 
-[Side-by-side: App in portrait and landscape]
-[Example: Responsive design with flexible layouts]
+<!-- [Side-by-side: App in portrait and landscape]
+[Example: Responsive design with flexible layouts] -->
 
 - Use responsive design techniques to support both orientations
 - Avoid CSS or JavaScript that locks orientation
@@ -79,7 +80,7 @@ For more, see the [MDN orientation docs](https://developer.mozilla.org/en-US/doc
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with flexible orientation, right side with locked orientation]
+<!-- [Do/Don't graphic: Left side with flexible orientation, right side with locked orientation] -->
 
 - Locking content to portrait or landscape without a valid reason
 - Features that break or disappear in one orientation
@@ -92,7 +93,7 @@ Audit your site regularly and use accessibility checkers to ensure all content s
 
 ## **Differences Between A, AA, and AAA for Guideline 1.3.4 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No requirement for 1.3.4.
 - **Level AA:** Requires content to support both portrait and landscape orientations unless essential. This is the core requirement for 1.3.4 and is mandatory for AA conformance.
@@ -104,7 +105,7 @@ For more, see the [W3C’s official documentation for 1.3.4 Orientation](https:/
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for each item (mobile, orientation, responsive, etc.)]
+<!-- [Checklist graphic: Icons for each item (mobile, orientation, responsive, etc.)] -->
 
 - Content works in both portrait and landscape
 - No features break in either orientation
@@ -116,12 +117,10 @@ For more, see the [W3C’s official documentation for 1.3.4 Orientation](https:/
 
 ## **Summary**
 
-[Illustration: User switching device orientation and accessing all content]
+<!-- [Illustration: User switching device orientation and accessing all content] -->
 
 Guideline 1.3.4 is essential for making your site usable and accessible for everyone. By supporting both orientations, you support users with disabilities, improve usability, and meet legal requirements. Make orientation flexibility a standard part of your development process.
 
 **Next Up:**
 
-[Read Guideline 1.3.5: Identify Input Purpose →](WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained.md)
-
-*Accessibility means everyone gets the full story—make your content flexible!*
+[Read Guideline 1.3.5: Identify Input Purpose →](WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained)
