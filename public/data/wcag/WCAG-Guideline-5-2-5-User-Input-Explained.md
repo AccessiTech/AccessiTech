@@ -113,6 +113,6 @@ Guideline 5.2.5 is essential for ensuring all users can interact with new platfo
 
 **Next Up:**
 
-[WCAG-Guideline-5-2-6-User-Feedback-Explained](WCAG-Guideline-5-2-6-User-Feedback-Explained)
+[Read Guideline 5.2.6: User Feedback →](WCAG-Guideline-5-2-6-User-Feedback-Explained)
 
 *Accessibility means participation—make every input method work for everyone!*

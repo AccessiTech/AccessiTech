@@ -54,7 +54,7 @@ Keyboard accessibility is about more than just compliance—it's about making yo
 
 ## **What Needs to Be Keyboard Accessible?**
 
-[Grid: Interactive elements—links, buttons, forms, menus—with focus indicators]
+<!-- [Grid: Interactive elements—links, buttons, forms, menus—with focus indicators] -->
 
 - Links and navigation menus
 - Buttons and controls
@@ -68,8 +68,8 @@ All interactive elements must be reachable and usable with the keyboard. This in
 
 ## **How to Ensure Keyboard Accessibility**
 
-[Side-by-side code snippets: Good tab order vs. broken tab order]
-[Example: Custom button with proper keyboard event handling]
+<!-- [Side-by-side code snippets: Good tab order vs. broken tab order]
+[Example: Custom button with proper keyboard event handling] -->
 
 - Use semantic HTML elements (button, a, input) for interactive controls.
 - Ensure a logical tab order (Tab moves forward, Shift+Tab moves back).
@@ -82,7 +82,7 @@ For more, see the [MDN keyboard accessibility docs](https://developer.mozilla.or
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with visible focus, right side with no focus or mouse-only controls]
+<!-- [Do/Don't graphic: Left side with visible focus, right side with no focus or mouse-only controls] -->
 
 - Removing or hiding focus outlines
 - Using non-semantic elements (div, span) for buttons or links
@@ -107,7 +107,7 @@ For more, see the [W3C’s official documentation for 2.1.1 Keyboard Accessible]
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for each item (link, button, form, menu, etc.)]
+<!-- [Checklist graphic: Icons for each item (link, button, form, menu, etc.)] -->
 
 - All functionality is operable via keyboard
 - Tab order is logical and predictable

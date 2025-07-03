@@ -118,6 +118,6 @@ Guideline 1.4.13 ensures all users can access, read, and dismiss popups and tool
 
 **Next Up:**
 
-We’ll continue with Guideline 2.1.1 and beyond, covering more ways to make your site accessible for everyone.
+[Read Guideline 2.1.1: Keyboard Accessible →](WCAG-Guideline-2-1-1-Keyboard-Accessible-Explained)
 
 *Accessibility means everyone can access your content—make your popups work for all!*

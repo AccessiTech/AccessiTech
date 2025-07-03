@@ -118,6 +118,7 @@ Guideline 2.4.7 is essential for helping users navigate your site efficiently. B
 
 **Next Up:**
 
-<!-- No further guideline, so no next up link -->
+[Read Guideline 2.5.1: Pointer Gestures →](WCAG-Guideline-2-5-1-Pointer-Gestures-Explained)
+
 
 *Accessibility means visible navigation—help users see where they are at all times!*

@@ -1,4 +1,4 @@
----
+<!---
 title: 5.2.6 - User Feedback
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.6 (User Feedback)—what it means, why it matters, and how to ensure user feedback mechanisms are accessible on new and emerging platforms.
@@ -8,7 +8,7 @@ image: WCAG-Series-5-2-6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.6 Explained, User Feedback"
 status: published
 date: 2025-07-03
----
+--->
 
 # **WCAG Guideline 5.2.6: User Feedback Explained**
 
@@ -114,12 +114,6 @@ Guideline 5.2.6 ensures that everyone can provide feedback, report issues, or re
 
 **Next Up:**
 
-[WCAG-Guideline-5-3-Conformance-Claims-Explained](WCAG-Guideline-5-3-Conformance-Claims-Explained)
+[Read Guideline 5.3: Conformance Claims (Optional) →](WCAG-Guideline-5-3-Conformance-Claims-Explained)
 
 *Feedback drives progress—make it easy for everyone to be heard!*
-
----
-
-## **End of Guideline 5 Series**
-
-*Accessible feedback means every voice is heard—make your support channels inclusive!*

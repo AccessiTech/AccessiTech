@@ -115,6 +115,6 @@ Guideline 5.2.3 is essential for ensuring all users can customize their experien
 
 **Next Up:**
 
-[WCAG-Guideline-5-2-4-User-Notifications-Explained](WCAG-Guideline-5-2-4-User-Notifications-Explained)
+[Read Guideline 5.2.4: User Notifications →](WCAG-Guideline-5-2-4-User-Notifications-Explained)
 
 *Accessibility means choice—let users tailor your site to their needs!*

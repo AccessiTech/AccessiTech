@@ -114,6 +114,6 @@ Guideline 3.1.5 ensures that your content is readable for the widest possible au
 
 **Next Up:**
 
-We’ll break down Guideline 3.1.6: Pronunciation—how to help users understand how words are spoken.
+[Read Guideline 3.1.6: Pronunciation →](WCAG-Guideline-3-1-6-Pronunciation-Explained)
 
 *Empower your users with clear and accessible content!*

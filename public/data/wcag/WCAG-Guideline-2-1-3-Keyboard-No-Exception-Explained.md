@@ -26,8 +26,6 @@ Guideline 2.1 focuses on making all functionality available from a keyboard. Thi
 
 ## **What Is Guideline 2.1.3 Keyboard (No Exception)?**
 
-[Illustration: Web page with a keyboard focus indicator showing all controls accessible]
-
 > "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes. There are no exceptions."
 
 Guideline 2.1.3 Keyboard (No Exception) is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#keyboard-no-exception).
@@ -54,7 +52,7 @@ Keyboard accessibility with no exceptions is about providing the most robust and
 
 ## **What Needs to Be Keyboard Accessible (No Exception)?**
 
-[Grid: All interactive elements—links, buttons, forms, widgets—with focus indicators]
+<!-- [Grid: All interactive elements—links, buttons, forms, widgets—with focus indicators] -->
 
 - All links and navigation menus
 - All buttons and controls
@@ -68,8 +66,8 @@ Every single interactive element must be fully operable with a keyboard, with no
 
 ## **How to Ensure Keyboard Accessibility (No Exception)**
 
-[Side-by-side code snippets: All controls accessible vs. inaccessible control]
-[Example: Custom widget with full keyboard event support]
+<!-- [Side-by-side code snippets: All controls accessible vs. inaccessible control] -->
+<!-- [Example: Custom widget with full keyboard event support] -->
 
 - Use semantic HTML for all interactive elements
 - Ensure all custom widgets and controls support keyboard events
@@ -82,7 +80,7 @@ For more, see the [MDN keyboard accessibility docs](https://developer.mozilla.or
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with all controls accessible, right side with some controls inaccessible]
+<!-- [Do/Don't graphic: Left side with all controls accessible, right side with some controls inaccessible] -->
 
 - Leaving out keyboard support for custom widgets or controls
 - Relying on mouse-only events for any feature
@@ -107,7 +105,7 @@ For more, see the [W3C’s official documentation for 2.1.3 Keyboard (No Excepti
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for each item (link, button, form, widget, etc.)]
+<!-- [Checklist graphic: Icons for each item (link, button, form, widget, etc.)] -->
 
 - All functionality is operable via keyboard, with no exceptions
 - All custom widgets support keyboard events

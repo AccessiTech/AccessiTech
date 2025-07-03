@@ -114,4 +114,8 @@ For more, see the [W3C’s official documentation for 2.5.6 Concurrent Input Mec
 
 Guideline 2.5.6 is essential for helping users interact with your site. By allowing users to switch between input methods, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make input flexibility a core part of your development process.
 
+**Next Up**
+
+[Read Guideline 2.6.1: Device Sensors →](WCAG-Guideline-2-6-1-Device-Sensors-Explained)
+
 *Accessibility means flexibility—let users interact their way!*

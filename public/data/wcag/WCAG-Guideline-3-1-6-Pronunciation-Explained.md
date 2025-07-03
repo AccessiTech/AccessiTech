@@ -110,6 +110,8 @@ For more, see the [W3C’s official documentation for 3.1.6 Pronunciation](https
 
 Guideline 3.1.6 ensures that users can understand how words are spoken when meaning depends on pronunciation. Provide accessible pronunciation aids for clarity.
 
-**End of Guideline 3.1 Series**
+**Next Up**
+
+[WCAG-Guideline-3-2-2-On-Input-Explained](WCAG-Guideline-3-2-2-On-Input-Explained)
 
 *Clear pronunciation means clear understanding—help every user get the meaning!*

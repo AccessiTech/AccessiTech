@@ -113,6 +113,6 @@ Guideline 5.2.2 is essential for ensuring all users can access your content. By 
 
 **Next Up:**
 
-[WCAG-Guideline-5-2-3-User-Preferences-Explained](WCAG-Guideline-5-2-3-User-Preferences-Explained)
+[Read Guideline 5.2.3: User Preferences →](WCAG-Guideline-5-2-3-User-Preferences-Explained)
 
 *Accessibility means access—make your content available to everyone!*

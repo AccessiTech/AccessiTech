@@ -101,7 +101,7 @@ For more, see the [W3C’s official documentation for 1.4.2 Audio Control](https
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for pause, stop, and volume controls]
+<!-- [Checklist graphic: Icons for pause, stop, and volume controls] -->
 
 - No autoplay audio longer than 3 seconds without controls
 - All audio controls are visible and accessible

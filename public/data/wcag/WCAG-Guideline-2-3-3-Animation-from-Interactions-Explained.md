@@ -116,6 +116,6 @@ Guideline 2.3.3 is essential for preventing discomfort and supporting users with
 
 **Next Up:**
 
-<!-- No further guideline, so no next up link -->
+[Read Guideline 2.4.1: Bypass Blocks →](WCAG-Guideline-2-4-1-Bypass-Blocks-Explained)
 
 *Accessibility means letting users control motion—make your site comfortable for everyone!*

@@ -116,12 +116,8 @@ For more, see [W3C’s guidance on Conformance Claims](https://www.w3.org/WAI/WC
 
 Conformance claims are a valuable (but optional) way to document and communicate your accessibility efforts. Include all required components, add optional details for transparency, and keep your claim up to date.
 
-*Accessibility is a journey—conformance claims help you share your progress!*
-
----
-
 **Next Up:**
 
-[WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained](WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained)
+[Read Guideline 5.4: Statement of Partial Conformance – Third Party Content →](WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained)
 
 *Transparency builds trust—document your accessibility journey!*

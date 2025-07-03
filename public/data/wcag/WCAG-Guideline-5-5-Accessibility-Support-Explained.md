@@ -112,12 +112,8 @@ For more, see the [W3C’s official documentation for 5.5 Accessibility Support]
 
 Guideline 5.5 ensures that accessibility support is not an afterthought. Document, test, and communicate support for all technologies to empower users and developers alike.
 
-*Transparency in accessibility support helps everyone—keep your documentation clear and current!*
-
----
-
 **Next Up:**
 
-[WCAG-Guideline-5-6-Privacy-Considerations-Explained](WCAG-Guideline-5-6-Privacy-Considerations-Explained)
+[Read Guideline 5.6: Privacy Considerations →](WCAG-Guideline-5-6-Privacy-Considerations-Explained)
 
 *Support is key—make accessibility a shared responsibility!*

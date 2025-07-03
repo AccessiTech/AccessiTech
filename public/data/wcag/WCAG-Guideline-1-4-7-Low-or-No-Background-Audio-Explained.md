@@ -40,7 +40,7 @@ Guideline 1.4.7 Low or No Background Audio is a Level AAA requirement in the [We
 
 ## **Why Does It Matter?**
 
-[Infographic: Ear icon, speech bubble, and a warning sign for unclear audio]
+<!-- [Infographic: Ear icon, speech bubble, and a warning sign for unclear audio] -->
 
 - **Clarity:** Background sounds can make speech hard to understand, especially for users with hearing loss.
 - **Inclusivity:** Ensures everyone can access spoken content.

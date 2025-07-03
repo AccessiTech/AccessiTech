@@ -112,6 +112,6 @@ Guideline 5.2.4 is essential for ensuring all users are aware of important event
 
 **Next Up:**
 
-[WCAG-Guideline-5-2-5-User-Input-Explained](WCAG-Guideline-5-2-5-User-Input-Explained)
+[Read Guideline 5.2.5: User Input →](WCAG-Guideline-5-2-5-User-Input-Explained)
 
 *Accessibility means awareness—keep every user informed!*

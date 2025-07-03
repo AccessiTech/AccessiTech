@@ -93,7 +93,7 @@ Audit your site regularly and use accessibility checkers to ensure all live vide
 
 ## **Differences Between A, AA, and AAA for Guideline 1.2.4 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No requirement for 1.2.4.
 - **Level AA:** Requires captions for all live audio content in synchronized media. This is the core requirement for 1.2.4 and is mandatory for AA conformance.

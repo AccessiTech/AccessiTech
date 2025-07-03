@@ -1,4 +1,4 @@
----
+<!---
 title: 5.2.1 - Platform Accessibility
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.1 (Platform Accessibility)—what it means, why it matters, and how to ensure your platform supports accessibility features.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures emerging technology platforms support accessibility features for all users.
----
+--->
 
 # **WCAG Guideline 5.2.1: Platform Accessibility Explained**
 
@@ -113,12 +113,6 @@ Guideline 5.2.1 is essential for ensuring all users can access your platform. By
 
 **Next Up:**
 
-[WCAG-Guideline-5-2-2-Content-Accessibility-Explained](WCAG-Guideline-5-2-2-Content-Accessibility-Explained)
-
-*Accessibility means support—make your platform work for everyone!*
-
----
-
-## **End of Guideline 5 Series**
+[Read Guideline 5.2.2: Content Accessibility →](WCAG-Guideline-5-2-2-Content-Accessibility-Explained)
 
 *Accessible platforms empower everyone—make your technology stack inclusive from the ground up!*
