@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.3.3: Animation from Interactions Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.3.3 (Animation from Interactions)—what it means, why it matters, and how to let users turn off non-essential animations triggered by their actions.
-keywords: wcag 2.3.3, animation from interactions, accessibility, web standards, motion sensitivity, user control
-image: wcag-2-3-3-animation-from-interactions.png
-imageAlt: Illustration of a toggle switch for animations and a user interacting with a UI
-status: draft
+description: A practical guide to WCAG Guideline 2.3.3 (Animation from Interactions)—what it means, why it matters, and how to ensure users can disable non-essential animation triggered by interaction.
+keywords: wcag 2.3.3, animation from interactions, motion, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-3-3.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.3 Explained, Animation from Interactions"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.3.3: Animation from Interactions Explained**
@@ -24,7 +25,7 @@ Guideline 2.3 focuses on preventing content that could trigger seizures or other
 
 ## **What Is Guideline 2.3.3 Animation from Interactions?**
 
-[Illustration: Toggle switch for animations and a user interacting with a UI]
+<!-- [Illustration: User toggling off animation after clicking a button] -->
 
 > "Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed."
 
@@ -38,12 +39,11 @@ Guideline 2.3.3 Animation from Interactions is a Level AAA requirement in the [W
 
 ## **Why Does It Matter?**
 
-[Infographic: User with motion sensitivity, toggle for animations, and warning icon]
+<!-- [Infographic: User with motion sensitivity, toggle switch, and safe animation] -->
 
-- **Accessibility:** Motion can cause discomfort, distraction, or even nausea for some users.
-- **Inclusivity:** Supports users with vestibular disorders or motion sensitivity.
-- **Legal Compliance:** Animation from Interactions is a Level AAA requirement in WCAG 2.2.
-- **Usability:** Improves comfort and focus for all users.
+- **Inclusivity:** Motion animation can cause discomfort or trigger vestibular disorders in some users.
+- **Legal Compliance:** Animation from Interactions is a Level AAA requirement in WCAG 2.1 and 2.2.
+- **Usability:** Prevents discomfort and improves experience for all users.
 
 For more, see [W3C’s guidance on animation from interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html).
 
@@ -51,22 +51,24 @@ For more, see [W3C’s guidance on animation from interactions](https://www.w3.o
 
 ## **What Needs to Support Animation Control?**
 
-[Grid: Parallax effects, smooth scrolling, UI transitions, all with animation toggle]
+<!-- [Grid: Buttons, toggles, sliders, all with animation icons] -->
 
-- Parallax and background motion effects
-- Smooth scrolling and page transitions
-- UI element animations (e.g., buttons, menus)
+- Buttons and toggles
+- Sliders and carousels
+- Any feature with motion animation triggered by interaction
 
 All must provide a way to disable non-essential motion animations.
 
 ---
 
-## **How to Meet Guideline 2.3.3**
+## **How to Make Animation from Interactions Accessible**
 
-[Side-by-side: UI with motion animations vs. UI with animations disabled]
+<!-- [Side-by-side code snippets: Animation enabled/disabled, toggle UI]
+[Example: Settings panel for animation control] -->
 
-- Provide a toggle or respect system settings (e.g., prefers-reduced-motion)
-- Only use essential animations for functionality or information
+- Allow users to disable non-essential motion animation
+- Use safe animation techniques
+- Document animation policies
 - Test with users who are sensitive to motion
 
 For more, see the [W3C's Animation from Interactions Techniques](https://www.w3.org/WAI/WCAG22/Techniques/css/C39).
@@ -75,20 +77,21 @@ For more, see the [W3C's Animation from Interactions Techniques](https://www.w3.
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with animation toggle, right side with forced motion]
+<!-- [Do/Don't graphic: Left side with animation toggle, right side with no control] -->
 
-- No way to disable motion animations
-- Ignoring system settings for reduced motion
-- Using non-essential animations for decoration
+- No way to disable motion animation
+- Animation essential to functionality not documented
+- Not testing with users who are sensitive to motion
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.3.3 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A & AA:** No requirement for disabling motion animations.
-- **Level AAA:** Requires users can disable non-essential motion animations triggered by interaction.
+- **Level A:** Not applicable for this guideline.
+- **Level AA:** Not applicable for this guideline.
+- **Level AAA:** Requires users can disable motion animation triggered by interaction, unless essential. This is the core requirement for 2.3.3 and is mandatory for AAA conformance.
 
 For more, see the [W3C’s official documentation for 2.3.3 Animation from Interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html).
 
@@ -96,23 +99,22 @@ For more, see the [W3C’s official documentation for 2.3.3 Animation from Inter
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for animation toggle, motion, and user]
+<!-- [Checklist graphic: Icons for each item (animation, toggle, safe, etc.)] -->
 
-- Users can disable non-essential motion animations
-- System settings for reduced motion are respected
-- Only essential animations are used
+- Users can disable non-essential motion animation
+- Animation policies are documented
 - Tested with users who are sensitive to motion
 
 ---
 
 ## **Summary**
 
-[Illustration: User toggling off motion animations in a web app]
+<!-- [Illustration: User toggling off animation in a web app] -->
 
-Guideline 2.3.3 ensures users can turn off non-essential motion animations, supporting those with motion sensitivity. Always provide a toggle or respect system settings for reduced motion.
+Guideline 2.3.3 is essential for preventing discomfort and supporting users with motion sensitivity. By allowing users to disable non-essential animation, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make animation control a core part of your development process.
 
 **Next Up:**
 
-We’ll continue with Guideline 2.4.1 and beyond, covering more ways to make your site accessible for everyone.
+<!-- No further guideline, so no next up link -->
 
-*Accessibility means comfort for all—let users control motion on your site!*
+*Accessibility means letting users control motion—make your site comfortable for everyone!*

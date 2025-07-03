@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 3.1.2: Language of Parts Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—what it means, why it matters, and how to ensure language changes within your content are accessible.
-keywords: wcag 3.1.2, language of parts, accessibility, web standards, html lang, screen readers, multilingual content
-image: wcag-3-1-2-language-of-parts.png
-imageAlt: Illustration of a web page with highlighted text in different languages and accessibility icons
-status: draft
+description: A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—what it means, why it matters, and how to ensure the language of each part of a page is programmatically determined.
+keywords: wcag 3.1.2, language of parts, accessibility, web standards, digital inclusion
+image: WCAG-Series-3-1-2.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.2 Explained, Language of Parts"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 3.1.2: Language of Parts Explained**
@@ -24,9 +25,9 @@ Guideline 3.1 focuses on making text content readable and understandable by iden
 
 ## **What Is Guideline 3.1.2 Language of Parts?**
 
-[Illustration: Web page with highlighted phrases in different languages]
+<!-- [Illustration: HTML with multiple lang attributes for different sections] -->
 
-> "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text."
+> "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular."
 
 Guideline 3.1.2 requires that any content in a different language from the main page is marked up with the correct language code.
 
@@ -38,34 +39,34 @@ Guideline 3.1.2 requires that any content in a different language from the main 
 
 ## **Why Does It Matter?**
 
-[Infographic: Screen reader icon, translation icon, and highlighted multilingual text]
+<!-- [Infographic: User with screen reader, language icon, and highlighted text] -->
 
-- **Screen Readers:** Use language markup to pronounce words correctly.
-- **Translation Tools:** Identify and translate only the relevant parts.
-- **User Experience:** Multilingual users get accurate pronunciation and meaning.
+- **Inclusivity:** Correct language settings help screen readers and translation tools.
+- **Legal Compliance:** Language of Parts is a Level AA requirement in WCAG 2.1 and 2.2.
+- **Usability:** Improves comprehension and accessibility for all users.
 
 For more, see [W3C’s guidance on language of parts](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html).
 
 ---
 
-## **What Needs to Declare a Language Change?**
+## **What Needs a Language Attribute?**
 
-[Grid: HTML code with span lang attribute, multilingual text, assistive tech icons]
+<!-- [Grid: Multilingual content, quotes, technical terms, all with language icons] -->
 
-- Any phrase, sentence, or passage in a different language from the page’s default
-- Use the `lang` attribute on elements like `<span lang="fr">Bonjour</span>`
-- Exclude proper names, technical terms, and words that are part of the local vernacular
+- Multilingual content
+- Quotes and technical terms
+- Any content with a different language
 
 ---
 
-## **How to Meet Guideline 3.1.2**
+## **How to Make Language of Parts Accessible**
 
-[Side-by-side: HTML with correct lang attribute on a span vs. missing lang attribute]
+<!-- [Side-by-side code snippets: Correct lang attribute, missing lang attribute]
+[Example: Settings panel for language] -->
 
-- Identify all content in a different language from the page’s default
-- Add the correct `lang` attribute to those elements
-- Use standard language codes (e.g., `fr` for French, `es` for Spanish)
-- Test with screen readers and accessibility tools
+- Use the correct lang attribute for each part
+- Document language conventions
+- Test with screen readers and translation tools
 
 For more, see the [W3C's Language of Parts Techniques](https://www.w3.org/WAI/WCAG22/Techniques/html/H58).
 
@@ -73,21 +74,21 @@ For more, see the [W3C's Language of Parts Techniques](https://www.w3.org/WAI/WC
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with correct lang attribute on foreign phrase, right side missing or incorrect]
+<!-- [Do/Don't graphic: Left side with correct lang, right side with missing lang] -->
 
-- Failing to mark up foreign words or phrases
-- Using incorrect or non-standard language codes
-- Over-marking (e.g., marking up proper names or technical terms unnecessarily)
+- Missing or incorrect lang attribute
+- Not documenting language conventions
+- Not testing with screen readers or translation tools
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.1.2 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level AA:** Requires the language of each passage or phrase in a different language to be programmatically determined.
-- **Level AAA:** No additional requirements for 3.1.2.
-- **Level A:** Not applicable (3.1.2 is a Level AA requirement).
+- **Level A:** Not applicable for this guideline.
+- **Level AA:** Requires the language of each part can be programmatically determined. This is the core requirement for 3.1.2 and is mandatory for AA accessibility.
+- **Level AAA:** For Guideline 3.1.2, there are no additional requirements beyond Level AA in WCAG 2.2. Meeting Level AA for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 3.1.2 Language of Parts](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html).
 
@@ -95,23 +96,22 @@ For more, see the [W3C’s official documentation for 3.1.2 Language of Parts](h
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for code, globe, and highlighted text]
+<!-- [Checklist graphic: Icons for each item (lang, browser, screen reader, etc.)] -->
 
-- All passages in a different language are marked with the correct `lang` attribute
-- Proper names and technical terms are not unnecessarily marked
-- Standard language codes are used
-- Tested with screen readers and accessibility tools
+- The lang attribute is set correctly for each part
+- Language conventions are documented
+- Tested with screen readers and translation tools
 
 ---
 
 ## **Summary**
 
-[Illustration: User with a screen reader and highlighted multilingual text]
+<!-- [Illustration: User reading multilingual content in a web app] -->
 
-Guideline 3.1.2 ensures that users and assistive technologies can identify and interpret language changes within your content. Mark up all foreign phrases and passages for a more accessible, inclusive web.
+Guideline 3.1.2 is essential for helping users understand your site. By setting the correct language for each part, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make language accessibility a core part of your development process.
 
 **Next Up:**
 
-We’ll explore Guideline 3.2.1: On Focus—how to ensure that user focus doesn’t trigger unexpected changes.
+[Read Guideline 3.1.3: Unusual Words →](WCAG-Guideline-3-1-3-Unusual-Words-Explained)
 
-*Accessibility means everyone can understand—make your content speak every language it needs to!*
+*Accessibility means understanding—help users read your content in their language!*

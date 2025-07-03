@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.5.3: Label in Name Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.5.3 (Label in Name)—what it means, why it matters, and how to make sure labels match what users see and say.
-keywords: wcag 2.5.3, label in name, accessibility, web standards, speech input, visible label
-image: wcag-2-5-3-label-in-name.png
-imageAlt: Illustration of a button with a visible label and a speech bubble
-status: draft
+description: A practical guide to WCAG Guideline 2.5.3 (Label in Name)—what it means, why it matters, and how to ensure visible labels match accessible names.
+keywords: wcag 2.5.3, label in name, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-5-3.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.3 Explained, Label in Name"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.5.3: Label in Name Explained**
@@ -24,9 +25,9 @@ Guideline 2.5 focuses on making it easier for users to operate functionality thr
 
 ## **What Is Guideline 2.5.3 Label in Name?**
 
-[Illustration: Button with a visible label and a speech bubble]
+<!-- [Illustration: User activating a button by voice command, label matches visible text] -->
 
-> "For user interface components with labels that include text or images of text, the accessible name contains the text that is presented visually."
+> "For user interface components with labels that include text or images of text, the accessible name contains the visible label text."
 
 Guideline 2.5.3 Label in Name is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name).
 
@@ -38,36 +39,37 @@ Guideline 2.5.3 Label in Name is a Level A requirement in the [Web Content Acces
 
 ## **Why Does It Matter?**
 
-[Infographic: User with speech input, button label, and screen reader icon]
+<!-- [Infographic: User with speech input, matching label and accessible name] -->
 
-- **Accessibility:** Users who speak visible labels expect them to match the accessible name.
-- **Inclusivity:** Supports users with speech input, cognitive, or memory challenges.
-- **Legal Compliance:** Label in Name is a Level A requirement in WCAG 2.2.
-- **Usability:** Prevents confusion and improves efficiency for all users.
+- **Inclusivity:** Matching labels help users who rely on speech input or screen readers.
+- **Legal Compliance:** Label in Name is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Prevents confusion and improves interaction for all users.
 
 For more, see [W3C’s guidance on label in name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html).
 
 ---
 
-## **What Needs to Support Label in Name?**
+## **What Needs Label in Name?**
 
-[Grid: Buttons, links, form fields, all with matching visible and accessible names]
+<!-- [Grid: Buttons, links, form fields, all with matching labels] -->
 
 - Buttons and links
-- Form fields and input controls
-- Custom widgets and controls
+- Form fields
+- Any component with a visible label
 
 All must have accessible names that match the visible label.
 
 ---
 
-## **How to Meet Guideline 2.5.3**
+## **How to Make Label in Name Accessible**
 
-[Side-by-side: Button with matching label and accessible name vs. button with mismatched names]
+<!-- [Side-by-side code snippets: Matching label and name, mismatched label]
+[Example: Settings panel for labels] -->
 
-- Ensure the accessible name includes the visible label text
-- Use `aria-label` or `aria-labelledby` carefully to match visible text
-- Test with screen readers and speech input
+- Ensure accessible names contain visible label text
+- Use ARIA and semantic HTML correctly
+- Document labeling conventions
+- Test with users who use speech input
 
 For more, see the [W3C's Label in Name Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G208).
 
@@ -75,21 +77,22 @@ For more, see the [W3C's Label in Name Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with matching label and name, right side with mismatched names]
+<!-- [Do/Don't graphic: Left side with matching label, right side with mismatched label] -->
 
 - Accessible name does not match visible label
-- Using icons or images without accessible text
-- Not testing with speech input or screen readers
+- Labels not descriptive or missing
+- Not documenting labeling conventions
+- Not testing with users who use speech input
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.5.3 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires accessible name to include visible label text.
-- **Level AA:** No additional requirements for 2.5.3.
-- **Level AAA:** No additional requirements for 2.5.3.
+- **Level A:** Requires accessible names contain visible label text. This is the core requirement for 2.5.3 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 2.5.3, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 2.5.3, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html).
 
@@ -97,22 +100,23 @@ For more, see the [W3C’s official documentation for 2.5.3 Label in Name](https
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for label, speech input, and screen reader]
+<!-- [Checklist graphic: Icons for each item (label, name, match, etc.)] -->
 
-- Accessible name includes visible label text
-- No mismatched labels and names
-- Tested with speech input and screen readers
+- Accessible names contain visible label text
+- ARIA and semantic HTML are used correctly
+- Labeling conventions are documented
+- Tested with users who use speech input
 
 ---
 
 ## **Summary**
 
-[Illustration: User activating a button by speaking its visible label]
+<!-- [Illustration: User activating a button by voice command] -->
 
-Guideline 2.5.3 ensures users can interact with controls using visible labels, supporting speech input and screen readers. Always match accessible names to visible labels and test for accessibility.
+Guideline 2.5.3 is essential for helping users interact with your site. By ensuring visible labels match accessible names, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make label matching a core part of your development process.
 
 **Next Up:**
 
-We’ll break down Guideline 2.5.4: Motion Actuation—how to make sure device motion is never the only way to interact.
+[Read Guideline 2.5.4: Motion Actuation →](WCAG-Guideline-2-5-4-Motion-Actuation-Explained)
 
-*Accessibility means clarity—make labels match what users see and say!*
+*Accessibility means clarity—help users interact with confidence!*

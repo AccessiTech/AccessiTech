@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.2.3: No Timing Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.2.3 (No Timing)—what it means, why it matters, and how to ensure users are not limited by time constraints in web content.
-keywords: wcag 2.2.3, no timing, accessibility, web standards, time limits, user control
-image: wcag-2-2-3-no-timing.png
-imageAlt: Illustration of a clock with a disabled symbol and accessibility icons
-status: draft
+description: A practical guide to WCAG Guideline 2.2.3 (No Timing)—what it means, why it matters, and how to ensure content is accessible without time limits.
+keywords: wcag 2.2.3, no timing, time limits, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-2-3.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.3 Explained, No Timing"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.2.3: No Timing Explained**
@@ -24,7 +25,7 @@ Guideline 2.2 focuses on making sure users have enough time to complete tasks. N
 
 ## **What Is Guideline 2.2.3 No Timing?**
 
-[Illustration: Clock icon with a disabled or "off" symbol]
+<!-- [Illustration: User interacting with content at their own pace] -->
 
 > "Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events."
 
@@ -38,11 +39,11 @@ Guideline 2.2.3 No Timing is a Level AAA requirement in the [Web Content Accessi
 
 ## **Why Does It Matter?**
 
-[Infographic: User with mobility aids, clock with disabled symbol, and warning sign for time limits]
+<!-- [Infographic: User with a clock, relaxed pace, and settings gear] -->
 
-- **Inclusivity:** Some users need more time due to mobility, cognitive, or reading disabilities.
-- **Legal Compliance:** No Timing is a Level AAA requirement in WCAG 2.2.
-- **Usability:** Removes stress and errors for all users, especially in forms and tests.
+- **Inclusivity:** Time limits can exclude users who need more time due to disabilities.
+- **Legal Compliance:** No Timing is a Level AAA requirement in WCAG 2.1 and 2.2.
+- **Usability:** Prevents frustration and loss of access for all users.
 
 For more, see [W3C’s guidance on time limits](https://www.w3.org/WAI/WCAG22/Understanding/no-timing.html).
 
@@ -50,23 +51,24 @@ For more, see [W3C’s guidance on time limits](https://www.w3.org/WAI/WCAG22/Un
 
 ## **What Needs to Support No Timing?**
 
-[Grid: Online forms, quizzes, games, all with no visible timers]
+<!-- [Grid: Forms, quizzes, games, all with no time limit icons] -->
 
-- Online forms and checkouts
-- Quizzes and timed tests
+- Online forms and quizzes
 - Games and interactive activities
+- Any feature with a time limit
 
 All must not impose time limits, unless an exception applies.
 
 ---
 
-## **How to Meet Guideline 2.2.3**
+## **How to Make Content Accessible Without Timing**
 
-[Side-by-side: Form with no timer vs. form with a visible timer]
+<!-- [Side-by-side code snippets: No time limit, relaxed pace]
+[Example: Settings panel for timing] -->
 
-- Remove all time limits from interactive content
-- Only use timing for real-time events or non-interactive media
-- Document any exceptions and why they apply
+- Remove unnecessary time limits
+- Allow users to complete activities at their own pace
+- Document timing policies
 - Test with users who need more time
 
 For more, see the [W3C's No Timing Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G198).
@@ -75,20 +77,22 @@ For more, see the [W3C's No Timing Techniques](https://www.w3.org/WAI/WCAG22/Tec
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with no timer, right side with a countdown clock]
+<!-- [Do/Don't graphic: Left side with no time limit, right side with strict time limit] -->
 
-- Imposing unnecessary time limits on forms or activities
-- Not documenting exceptions
+- Unnecessary time limits
+- No way to adjust or remove time limits
+- Not documenting timing policies
 - Not testing with users who need more time
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.2.3 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A & AA:** Allow users to turn off, adjust, or extend time limits (see 2.2.1).
-- **Level AAA:** No time limits allowed, except for real-time events and non-interactive media.
+- **Level A:** Not applicable for this guideline.
+- **Level AA:** Not applicable for this guideline.
+- **Level AAA:** Requires that timing is not essential for any event or activity, except for non-interactive synchronized media and real-time events. This is the core requirement for 2.2.3 and is mandatory for AAA conformance.
 
 For more, see the [W3C’s official documentation for 2.2.3 No Timing](https://www.w3.org/WAI/WCAG22/Understanding/no-timing.html).
 
@@ -96,22 +100,23 @@ For more, see the [W3C’s official documentation for 2.2.3 No Timing](https://w
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for timer, disabled symbol, and user]
+<!-- [Checklist graphic: Icons for each item (no time limit, settings, etc.)] -->
 
-- No time limits on any interactive content
-- Exceptions are documented
+- No unnecessary time limits
+- Users can complete activities at their own pace
+- Timing policies are documented
 - Tested with users who need more time
 
 ---
 
 ## **Summary**
 
-[Illustration: User completing a form with no time pressure]
+<!-- [Illustration: User enjoying content at their own pace] -->
 
-Guideline 2.2.3 ensures users are never limited by time constraints, supporting the highest level of accessibility. Remove all unnecessary timers and document any exceptions.
+Guideline 2.2.3 is essential for ensuring users are not excluded by time limits. By removing unnecessary timing, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make timing flexibility a core part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 2.2.4: Interruptions →](WCAG-Guideline-2-2-4-Interruptions-Explained.md)
+[Read Guideline 2.2.4: Interruptions →](WCAG-Guideline-2-2-4-Interruptions-Explained)
 
-*Accessibility means everyone gets enough time—remove the clock for true inclusion!*
+*Accessibility means letting users set the pace—make your site stress-free for everyone!*

@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 5.2.5: User Input Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.5 (User Input)—what it means, why it matters, and how to ensure user input is accessible on new and emerging platforms.
 keywords: wcag 5.2.5, user input, accessibility, web standards, user experience, emerging technologies
-image: wcag-5-2-5-user-input.png
-imageAlt: Illustration of a user entering information on a futuristic device with accessibility icons
-status: draft
--->
+image: WCAG-Series-5-2-5.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.5 Explained, User Input"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 5.2.5: User Input Explained**
 
@@ -24,7 +25,7 @@ Guideline 5.2 focuses on making sure that both platforms and the content they de
 
 ## **What Is Guideline 5.2.5 User Input?**
 
-[Illustration: User entering information on a futuristic device with accessibility icons]
+<!-- [Illustration: User entering information on a futuristic device with accessibility icons] -->
 
 > "Platforms and content must ensure that all user input methods (touch, voice, gesture, etc.) are accessible to users with disabilities."
 
@@ -38,33 +39,34 @@ Guideline 5.2.5 requires that all ways users interact with new platforms—wheth
 
 ## **Why Does It Matter?**
 
-[Infographic: Input icon, accessibility settings, and user with assistive tech]
+<!-- [Infographic: User entering information on a futuristic device with accessibility icons] -->
 
-- **All Users:** Need to interact with platforms in ways that work for them
-- **Users with Disabilities:** Rely on accessible input methods
-- **Accessibility:** Empowers everyone to participate fully
+- **All Users:** Need to be able to provide input
+- **Users with Disabilities:** May rely on alternative input methods
+- **Accessibility:** Ensures equal participation
 
 For more, see [W3C’s guidance on User Input](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
 ---
 
-## **What Needs Accessible User Input?**
+## **What Needs Accessible Input?**
 
-[Grid: Touch, voice, gesture, and other input methods on new platforms]
+<!-- [Grid: Touch, voice, gesture, and other input methods] -->
 
-- Touch, voice, and gesture controls
-- Keyboard and alternative input devices
-- Any new or experimental input method
+- Touch input
+- Voice commands
+- Gestures
+- Any method of user input
 
 ---
 
-## **How to Meet Guideline 5.2.5**
+## **How to Ensure Accessible Input**
 
-[Side-by-side: Good example (accessible input options) vs. Bad example (input method not accessible)]
+<!-- [Side-by-side: Good example (accessible input) vs. Bad example (inaccessible input)] -->
 
-- Support multiple input methods and assistive technologies
-- Test input methods with users with disabilities
-- Document input accessibility features and limitations
+- Support all input methods with accessibility in mind
+- Provide alternatives for inaccessible input types
+- Test with users with disabilities
 
 For more, see the [W3C's User Input Techniques](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -72,21 +74,21 @@ For more, see the [W3C's User Input Techniques](https://www.w3.org/WAI/standards
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible input, right side with inaccessible input method]
+<!-- [Do/Don't graphic: Left side with accessible input, right side with inaccessible input] -->
 
-- Requiring only one input method
-- Not supporting assistive technology input
-- Failing to test with users who need alternative input
+- Not supporting alternative input methods
+- Relying only on one type of input
+- Not testing with users with disabilities
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 5.2.5 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires accessible user input for all methods.
-- **Level AA:** No additional requirements for 5.2.5.
-- **Level AAA:** No additional requirements for 5.2.5.
+- **Level A:** Requires accessible input methods for all users. This is the core requirement for 5.2.5 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 5.2.5, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 5.2.5, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 5.2.5 User Input](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -94,28 +96,22 @@ For more, see the [W3C’s official documentation for 5.2.5 User Input](https://
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for input, accessibility, and user]
+<!-- [Checklist graphic: Icons for each item (input, accessibility, testing, etc.)] -->
 
 - All input methods are accessible
-- Multiple input options are supported
-- Tested with assistive technology and real users
+- Alternatives are provided for inaccessible input types
+- Tested with users with disabilities
 
 ---
 
 ## **Summary**
 
-[Illustration: User providing input on a new platform using accessible methods]
+<!-- [Illustration: User entering information on a futuristic device with accessibility icons] -->
 
-Guideline 5.2.5 ensures that everyone can interact with new technologies using the input methods that work best for them. Accessibility in input is essential for true inclusion.
-
----
+Guideline 5.2.5 is essential for ensuring all users can interact with new platforms. By supporting accessible input methods, you support users with disabilities, improve usability, and meet legal requirements. Test your input methods regularly and make accessibility a core part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 5.2.6: User Feedback →](WCAG-Guideline-5-2-6-User-Feedback-Explained.md)
+[WCAG-Guideline-5-2-6-User-Feedback-Explained](WCAG-Guideline-5-2-6-User-Feedback-Explained)
 
-*Input for all—make every interaction accessible!*
-
-**End of Guideline 5 Series**
-
-*Accessible input means everyone can participate—make every interaction inclusive!*
+*Accessibility means participation—make every input method work for everyone!*

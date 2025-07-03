@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 5.2.6: User Feedback Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.6 (User Feedback)—what it means, why it matters, and how to ensure user feedback mechanisms are accessible on new and emerging platforms.
 keywords: wcag 5.2.6, user feedback, accessibility, web standards, user experience, emerging technologies
-image: wcag-5-2-6-user-feedback.png
-imageAlt: Illustration of a user providing feedback on a futuristic device with accessibility icons
-status: draft
--->
+image: WCAG-Series-5-2-6.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.6 Explained, User Feedback"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 5.2.6: User Feedback Explained**
 
@@ -24,7 +25,7 @@ Guideline 5.2 focuses on making sure that both platforms and the content they de
 
 ## **What Is Guideline 5.2.6 User Feedback?**
 
-[Illustration: User providing feedback on a futuristic device with accessibility icons]
+<!-- [Illustration: User providing feedback on a futuristic device with accessibility icons] -->
 
 > "Platforms and content must provide accessible mechanisms for users to give feedback, report issues, or request support."
 
@@ -38,7 +39,7 @@ Guideline 5.2.6 requires that all feedback mechanisms—such as forms, chat, or 
 
 ## **Why Does It Matter?**
 
-[Infographic: Feedback icon, accessibility settings, and user with assistive tech]
+<!-- [Infographic: Feedback icon, accessibility settings, and user with assistive tech] -->
 
 - **All Users:** Need to communicate issues or suggestions
 - **Users with Disabilities:** Rely on accessible feedback options
@@ -50,7 +51,7 @@ For more, see [W3C’s guidance on User Feedback](https://www.w3.org/WAI/standar
 
 ## **What Needs Accessible User Feedback?**
 
-[Grid: Feedback forms, chat, and support channels on new platforms]
+<!-- [Grid: Feedback forms, chat, and support channels on new platforms] -->
 
 - Feedback forms and surveys
 - Live chat and support channels
@@ -60,7 +61,7 @@ For more, see [W3C’s guidance on User Feedback](https://www.w3.org/WAI/standar
 
 ## **How to Meet Guideline 5.2.6**
 
-[Side-by-side: Good example (accessible feedback form) vs. Bad example (inaccessible feedback method)]
+<!-- [Side-by-side: Good example (accessible feedback form) vs. Bad example (inaccessible feedback method)] -->
 
 - Ensure all feedback mechanisms are accessible to screen readers and assistive tech
 - Provide multiple ways to give feedback (form, chat, email)
@@ -72,7 +73,7 @@ For more, see the [W3C's User Feedback Techniques](https://www.w3.org/WAI/standa
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible feedback, right side with inaccessible feedback method]
+<!-- [Do/Don't graphic: Left side with accessible feedback, right side with inaccessible feedback method] -->
 
 - Using inaccessible forms or chat widgets
 - Not providing alternative feedback options
@@ -82,7 +83,7 @@ For more, see the [W3C's User Feedback Techniques](https://www.w3.org/WAI/standa
 
 ## **Differences Between A, AA, and AAA for Guideline 5.2.6 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires accessible user feedback mechanisms.
 - **Level AA:** No additional requirements for 5.2.6.
@@ -94,7 +95,7 @@ For more, see the [W3C’s official documentation for 5.2.6 User Feedback](https
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for feedback, accessibility, and user]
+<!-- [Checklist graphic: Icons for feedback, accessibility, and user] -->
 
 - All feedback mechanisms are accessible
 - Multiple feedback options are provided
@@ -104,7 +105,7 @@ For more, see the [W3C’s official documentation for 5.2.6 User Feedback](https
 
 ## **Summary**
 
-[Illustration: User providing accessible feedback on a new platform]
+<!-- [Illustration: User providing accessible feedback on a new platform] -->
 
 Guideline 5.2.6 ensures that everyone can provide feedback, report issues, or request support on new technologies. Accessible feedback is essential for improvement and inclusion.
 
@@ -112,7 +113,7 @@ Guideline 5.2.6 ensures that everyone can provide feedback, report issues, or re
 
 **Next Up:**
 
-[WCAG Guideline 5.3: Conformance Claims (Optional) →](WCAG-Guideline-5-3-Conformance-Claims-Explained.md)
+[WCAG-Guideline-5-3-Conformance-Claims-Explained](WCAG-Guideline-5-3-Conformance-Claims-Explained)
 
 *Feedback drives progress—make it easy for everyone to be heard!*
 

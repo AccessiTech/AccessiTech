@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 5.7: Security Considerations Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.7 (Security Considerations)—what it means, why it matters, and how to address security in accessible digital experiences.
 keywords: wcag 5.7, security, accessibility, web standards, user experience, emerging technologies
-image: wcag-5-7-security-considerations.png
-imageAlt: Illustration of a shield, padlock, and accessibility icons
-status: draft
--->
+image: WCAG-Series-5-7.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.7 Explained, Security Considerations"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 5.7: Security Considerations Explained**
 
@@ -26,7 +27,7 @@ Guideline 5.7 emphasizes the importance of protecting users from security risks 
 
 ## **What Are Security Considerations in Accessibility?**
 
-[Illustration: Shield and padlock with accessibility icons]
+<!-- [Illustration: Shield and padlock with accessibility icons] -->
 
 Security considerations refer to the practices and safeguards that protect users from threats such as data breaches, unauthorized access, and malicious attacks when using accessible technologies and content.
 
@@ -57,7 +58,7 @@ Security considerations refer to the practices and safeguards that protect users
 
 ## **How to Address Security Considerations**
 
-[Infographic: Security dashboard with accessibility features]
+<!-- [Infographic: Security dashboard with accessibility features] -->
 
 - Conduct security assessments for new features
 - Use security-by-design principles in development
@@ -86,7 +87,7 @@ Security considerations refer to the practices and safeguards that protect users
 
 ## **Quick Checklist**
 
-[Checklist graphic: Shield, padlock, and dashboard icons]
+<!-- [Checklist graphic: Shield, padlock, and dashboard icons] -->
 
 - Security risks in accessible features identified and addressed
 - Authentication is both secure and accessible
@@ -97,7 +98,7 @@ Security considerations refer to the practices and safeguards that protect users
 
 ## **Summary**
 
-[Illustration: User interacting with a secure, accessible website]
+<!-- [Illustration: User interacting with a secure, accessible website] -->
 
 Security is essential for all users, including those with disabilities. By addressing security considerations in accessible design, you protect users, comply with laws, and create safer, more inclusive digital experiences.
 

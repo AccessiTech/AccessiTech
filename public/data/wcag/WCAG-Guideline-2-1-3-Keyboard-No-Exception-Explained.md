@@ -1,11 +1,16 @@
 <!--
-title: WCAG Guideline 2.1.3: Keyboard (No Exception) Explained
+title: WCAG Guidelin## **What Is Guideline 2.1.3 Keyboard (No Exception)?**
+
+<!-- [Illustration: Web page with a keyboard focus indicator showing all controls accessible] -->
+
+> "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, and with no exceptions.".3: Keyboard (No Exception) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.1.3 (Keyboard, No Exception)—what it means, why it matters, and how to ensure all functionality is accessible via keyboard, with no exceptions.
 keywords: wcag 2.1.3, keyboard accessibility, no exception, web standards, digital inclusion, screen readers, accessible navigation
-image: wcag-2-1-3-keyboard-no-exception.png
-imageAlt: Illustration of a keyboard and a web page with all controls accessible
-status: draft
+image: WCAG-Series-2-1-3.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.3 Explained, Keyboard No Exception"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.1.3: Keyboard (No Exception) Explained**
@@ -40,7 +45,7 @@ This ensures the highest level of accessibility for users who rely on keyboard n
 
 ## **Why Does It Matter?**
 
-[Infographic: Keyboard icon, all controls highlighted, and a user navigating a web page]
+<!-- [Infographic: Keyboard icon, all controls highlighted, and a user navigating a web page] -->
 
 - **Inclusivity:** Some users rely exclusively on keyboard navigation for all interactions.
 - **Legal Compliance:** Keyboard (No Exception) is a Level AAA requirement in WCAG 2.2.
@@ -93,7 +98,7 @@ Audit your site regularly and use accessibility checkers to ensure there are no 
 
 ## **Differences Between A, AA, and AAA for Guideline 2.1.3 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires most functionality to be operable through a keyboard interface, but allows some exceptions for certain types of input or controls (see 2.1.1).
 - **Level AA:** For Guideline 2.1.3, there are no additional requirements beyond Level A in WCAG 2.2.
@@ -117,12 +122,12 @@ For more, see the [W3C’s official documentation for 2.1.3 Keyboard (No Excepti
 
 ## **Summary**
 
-[Illustration: User navigating a web page using only a keyboard, with all controls accessible]
+<!-- [Illustration: User navigating a web page using only a keyboard, with all controls accessible] -->
 
 Guideline 2.1.3 is about achieving the highest standard of keyboard accessibility. By ensuring there are no exceptions, you provide a truly inclusive experience for all users. Test your site thoroughly and make keyboard accessibility a non-negotiable part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 2.2.1: Timing Adjustable →](WCAG-Guideline-2-2-1-Timing-Adjustable-Explained.md)
+[Read Guideline 2.1.4: Character Key Shortcuts →](WCAG-Guideline-2-1-4-Character-Key-Shortcuts-Explained)
 
 *Accessibility means no barriers—make sure every feature works for every user!*

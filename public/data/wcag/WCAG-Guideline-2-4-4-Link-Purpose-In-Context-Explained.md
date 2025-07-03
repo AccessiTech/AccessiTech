@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.4.4: Link Purpose (In Context) Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.4.4 (Link Purpose In Context)—what it means, why it matters, and how to ensure every link is clear and meaningful.
-keywords: wcag 2.4.4, link purpose, accessibility, web standards, descriptive links, navigation
-image: wcag-2-4-4-link-purpose-in-context.png
-imageAlt: Illustration of a list of links with descriptive text and a screen reader icon
-status: draft
+description: A practical guide to WCAG Guideline 2.4.4 (Link Purpose, In Context)—what it means, why it matters, and how to ensure every link's purpose is clear from its context.
+keywords: wcag 2.4.4, link purpose, in context, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-4-4.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.4 Explained, Link Purpose (In Context)"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.4.4: Link Purpose (In Context) Explained**
@@ -24,7 +25,7 @@ Guideline 2.4 focuses on making it easier for users to navigate, find content, a
 
 ## **What Is Guideline 2.4.4 Link Purpose (In Context)?**
 
-[Illustration: List of links with descriptive text and a screen reader icon]
+<!-- [Illustration: User reading a link with clear context in a paragraph] -->
 
 > "The purpose of each link can be determined from the link text alone or from the link text together with its context."
 
@@ -38,38 +39,37 @@ Guideline 2.4.4 Link Purpose (In Context) is a Level A requirement in the [Web C
 
 ## **Why Does It Matter?**
 
-[Infographic: Screen reader user, list of links, and descriptive link text]
+<!-- [Infographic: User reading links, context clues, and focus indicator] -->
 
-- **Accessibility:** Screen reader users often navigate by links and need to know their purpose.
-- **Inclusivity:** Supports users with cognitive or memory challenges.
-- **Legal Compliance:** Link Purpose (In Context) is a Level A requirement in WCAG 2.2.
-- **Usability:** Improves navigation and trust for all users.
+- **Inclusivity:** Clear link purpose helps users with screen readers and cognitive disabilities.
+- **Legal Compliance:** Link Purpose (In Context) is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Prevents confusion and improves navigation for all users.
 
 For more, see [W3C’s guidance on link purpose](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html).
 
 ---
 
-## **What Needs to Support Link Purpose?**
+## **What Needs a Clear Link Purpose?**
 
-[Grid: Navigation menus, lists, and inline links, all with descriptive text]
+<!-- [Grid: Navigation, content links, buttons, all with link icons] -->
 
 - Navigation menus
-- Lists of links
-- Inline links in paragraphs
-- Buttons that act as links
+- Content links
+- Buttons and calls to action
 
 All must have clear, descriptive link text or context.
 
 ---
 
-## **How to Meet Guideline 2.4.4**
+## **How to Make Link Purpose Accessible**
 
-[Side-by-side: List of links with "Click here" vs. list with descriptive links]
+<!-- [Side-by-side code snippets: Good link text, bad link text]
+[Example: Settings panel for link text] -->
 
-- Use descriptive link text (e.g., "Download the annual report")
-- Provide context in surrounding text if link text alone isn’t clear
-- Avoid generic links like "here" or "more" without context
-- Test with screen readers and keyboard navigation
+- Use descriptive link text
+- Provide context for ambiguous links
+- Document link text conventions
+- Test with screen reader and keyboard users
 
 For more, see the [W3C's Link Purpose Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G91).
 
@@ -77,21 +77,22 @@ For more, see the [W3C's Link Purpose Techniques](https://www.w3.org/WAI/WCAG22/
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with descriptive links, right side with "Click here"]
+<!-- [Do/Don't graphic: Left side with clear link text, right side with "click here"] -->
 
-- Using vague link text without context
-- Multiple links with the same text but different destinations
-- Not testing with screen readers or keyboard navigation
+- Vague or ambiguous link text
+- No context for links
+- Not documenting link text conventions
+- Not testing with users who rely on link context
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.4.4 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires link purpose is clear from text or context.
-- **Level AA:** No additional requirements for 2.4.4.
-- **Level AAA:** No additional requirements for 2.4.4.
+- **Level A:** Requires link purpose can be determined from link text or context. This is the core requirement for 2.4.4 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 2.4.4, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 2.4.4, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html).
 
@@ -99,22 +100,22 @@ For more, see the [W3C’s official documentation for 2.4.4 Link Purpose (In Con
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for link, descriptive text, and screen reader]
+<!-- [Checklist graphic: Icons for each item (link, context, navigation, etc.)] -->
 
-- All links are descriptive or have clear context
-- No vague or generic link text
-- Tested with screen readers and keyboard navigation
+- All links have clear, descriptive text or context
+- Link text conventions are documented
+- Tested with screen reader and keyboard users
 
 ---
 
 ## **Summary**
 
-[Illustration: User navigating a list of descriptive links]
+<!-- [Illustration: User reading a clear link in a web app] -->
 
-Guideline 2.4.4 ensures every link is clear and meaningful, improving navigation for everyone. Always use descriptive link text and test for accessibility.
+Guideline 2.4.4 is essential for helping users understand and navigate your site. By ensuring every link's purpose is clear, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make link clarity a core part of your development process.
 
 **Next Up:**
 
-We’ll break down Guideline 2.4.5: Multiple Ways—how to provide users with more than one way to find content.
+[Read Guideline 2.4.5: Multiple Ways →](WCAG-Guideline-2-4-5-Multiple-Ways-Explained)
 
-*Accessibility means clarity—make every link count!*
+*Accessibility means clarity—help users know where every link leads!*

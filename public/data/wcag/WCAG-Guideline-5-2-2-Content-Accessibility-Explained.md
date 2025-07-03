@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 5.2.2: Content Accessibility Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 5.2.2 (Content Accessibility)—what it means, why it matters, and how to ensure content on new platforms is accessible to all users.
-keywords: wcag 5.2.2, content accessibility, accessibility, web standards, user experience, emerging technologies
-image: wcag-5-2-2-content-accessibility.png
-imageAlt: Illustration of content displayed on a futuristic platform with accessibility icons
-status: draft
--->
+description: A practical guide to WCAG Guideline 5.2.2 (Content Accessibility)—what it means, why it matters, and how to ensure your content is accessible to all users.
+keywords: wcag 5.2.2, content accessibility, accessibility, web standards, digital inclusion
+image: WCAG-Series-5-2-2.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.2 Explained, Content Accessibility"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 5.2.2: Content Accessibility Explained**
 
@@ -24,9 +25,9 @@ Guideline 5.2 focuses on making sure that both platforms and the content they de
 
 ## **What Is Guideline 5.2.2 Content Accessibility?**
 
-[Illustration: Content displayed on a futuristic platform with accessibility icons]
+<!-- [Illustration: User accessing content with assistive technology] -->
 
-> "Content provided on a platform must be accessible to users with disabilities, using the mechanisms and APIs provided by the platform."
+> "Content must be accessible to users with disabilities, following platform and accessibility guidelines."
 
 Guideline 5.2.2 requires that all content delivered via new or emerging platforms is accessible, leveraging the platform’s accessibility features and APIs.
 
@@ -38,11 +39,11 @@ Guideline 5.2.2 requires that all content delivered via new or emerging platform
 
 ## **Why Does It Matter?**
 
-[Infographic: Content icon, accessibility API, and user with assistive tech]
+<!-- [Infographic: User with screen reader, content icon, and accessibility symbol] -->
 
-- **All Users:** Need accessible content on every platform
-- **Developers:** Must use platform accessibility features
-- **Accessibility:** Ensures inclusion as technology evolves
+- **Inclusivity:** Content accessibility ensures all users can access information and features.
+- **Legal Compliance:** Content Accessibility is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Improves accessibility for all users.
 
 For more, see [W3C’s guidance on Content Accessibility](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -50,21 +51,22 @@ For more, see [W3C’s guidance on Content Accessibility](https://www.w3.org/WAI
 
 ## **What Needs Content Accessibility?**
 
-[Grid: AR/VR content, IoT data, and new web experiences]
+<!-- [Grid: Web pages, documents, media, all with accessibility icons] -->
 
-- Content in AR/VR environments
-- Data and interfaces in IoT systems
-- Any content delivered via new or experimental platforms
+- Web pages and documents
+- Media and interactive content
+- Any information or feature
 
 ---
 
-## **How to Meet Guideline 5.2.2**
+## **How to Ensure Content Accessibility**
 
-[Side-by-side: Good example (accessible content on new platform) vs. Bad example (inaccessible content)]
+<!-- [Side-by-side code snippets: Accessible content, inaccessible content]
+[Example: Settings panel for content accessibility] -->
 
-- Use platform accessibility APIs and features for all content
-- Test content with assistive technology on the platform
-- Document accessibility features and limitations for content
+- Follow content accessibility best practices
+- Document content accessibility policies
+- Test with users with disabilities
 
 For more, see the [W3C's Content Accessibility Techniques](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -72,21 +74,21 @@ For more, see the [W3C's Content Accessibility Techniques](https://www.w3.org/WA
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible content, right side with inaccessible content]
+<!-- [Do/Don't graphic: Left side with accessible content, right side with inaccessible content] -->
 
-- Not using platform accessibility features for content
-- Failing to test content with real users
-- Not documenting accessibility limitations for content
+- Not following content accessibility best practices
+- Not documenting content accessibility policies
+- Not testing with users with disabilities
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 5.2.2 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires content accessibility on new platforms.
-- **Level AA:** No additional requirements for 5.2.2.
-- **Level AAA:** No additional requirements for 5.2.2.
+- **Level A:** Requires content accessibility best practices are followed. This is the core requirement for 5.2.2 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 5.2.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 5.2.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 5.2.2 Content Accessibility](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -94,28 +96,22 @@ For more, see the [W3C’s official documentation for 5.2.2 Content Accessibilit
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for content, accessibility API, and user]
+<!-- [Checklist graphic: Icons for each item (content, accessibility, testing, etc.)] -->
 
-- All content uses platform accessibility features
-- Tested with assistive technology on the platform
-- Accessibility features and limitations documented for content
+- Content accessibility best practices are followed
+- Content accessibility policies are documented
+- Tested with users with disabilities
 
 ---
 
 ## **Summary**
 
-[Illustration: User accessing accessible content on a new platform]
+<!-- [Illustration: User accessing accessible content in a web app] -->
 
-Guideline 5.2.2 ensures that content delivered via new technologies is accessible to everyone. Use platform features and test with real users to guarantee inclusion.
-
----
+Guideline 5.2.2 is essential for ensuring all users can access your content. By following accessibility best practices, you support users with disabilities, improve usability, and meet legal requirements. Test your content regularly and make accessibility a core part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 5.2.3: User Preferences →](WCAG-Guideline-5-2-3-User-Preferences-Explained.md)
+[WCAG-Guideline-5-2-3-User-Preferences-Explained](WCAG-Guideline-5-2-3-User-Preferences-Explained)
 
-*Accessible content means everyone can participate—make it universal!*
-
----
-
-*Accessible content completes the experience—make every platform and every piece of content inclusive!*
+*Accessibility means access—make your content available to everyone!*

@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 5.1.1: General Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 5.1.1 (General)—what it means, why it matters, and how to ensure general accessibility requirements are met for emerging technologies.
-keywords: wcag 5.1.1, general, accessibility, web standards, emerging technologies, user experience
-image: wcag-5-1-1-general.png
-imageAlt: Illustration of a web page with a generic accessibility icon and futuristic elements
-status: draft
+description: A practical guide to WCAG Guideline 5.1.1 (General)—what it means, why it matters, and how to ensure general accessibility requirements are met.
+keywords: wcag 5.1.1, general, accessibility, web standards, digital inclusion
+image: WCAG-Series-5-1-1.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.1.1 Explained, General"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 5.1.1: General Explained**
@@ -24,9 +25,9 @@ Guideline 5.1 focuses on general accessibility requirements for technologies not
 
 ## **What Is Guideline 5.1.1 General?**
 
-[Illustration: Web page with a generic accessibility icon and futuristic elements]
+<!-- [Illustration: User accessing a website with various assistive technologies] -->
 
-> "For content implemented using technologies not addressed in the earlier guidelines, the content is accessible to users with disabilities."
+> "General accessibility requirements apply to all web content and functionality."
 
 Guideline 5.1.1 requires that any new or emerging technology used on the web must be accessible, even if not specifically mentioned in WCAG.
 
@@ -38,33 +39,34 @@ Guideline 5.1.1 requires that any new or emerging technology used on the web mus
 
 ## **Why Does It Matter?**
 
-[Infographic: Accessibility icon, futuristic device, and user with assistive tech]
+<!-- [Infographic: User with screen reader, keyboard, and mouse] -->
 
-- **All Users:** Should benefit from new technologies
-- **Assistive Technology Users:** Need access to emerging platforms
-- **Accessibility:** Keeps the web inclusive as it evolves
+- **Inclusivity:** General requirements ensure all users can access content.
+- **Legal Compliance:** General is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Improves accessibility for all users.
 
 For more, see [W3C’s guidance on Emerging Technologies](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
 ---
 
-## **What Needs to Meet General Accessibility?**
+## **What Needs to Meet General Requirements?**
 
-[Grid: AR/VR devices, IoT interfaces, and new web technologies]
+<!-- [Grid: Web pages, applications, documents, all with accessibility icons] -->
 
-- Augmented and virtual reality content
-- Internet of Things (IoT) interfaces
-- Any new or experimental web technology
+- Web pages and applications
+- Documents and media
+- Any content or functionality
 
 ---
 
-## **How to Meet Guideline 5.1.1**
+## **How to Meet General Accessibility Requirements**
 
-[Side-by-side: Good example (accessible AR/VR interface) vs. Bad example (inaccessible new tech)]
+<!-- [Side-by-side code snippets: Accessible vs. inaccessible content]
+[Example: Settings panel for accessibility] -->
 
-- Apply accessibility best practices to all new technologies
-- Test with users of assistive technology
-- Document accessibility features and limitations
+- Follow accessibility best practices
+- Document accessibility policies
+- Test with users with disabilities
 
 For more, see the [W3C's Emerging Technologies Techniques](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -72,21 +74,21 @@ For more, see the [W3C's Emerging Technologies Techniques](https://www.w3.org/WA
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible new tech, right side with inaccessible device]
+<!-- [Do/Don't graphic: Left side with accessible content, right side with inaccessible content] -->
 
-- Ignoring accessibility in new or experimental tech
-- Not testing with real users
-- Failing to document accessibility limitations
+- Not following accessibility best practices
+- Not documenting accessibility policies
+- Not testing with users with disabilities
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 5.1.1 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires general accessibility for new technologies.
-- **Level AA:** No additional requirements for 5.1.1.
-- **Level AAA:** No additional requirements for 5.1.1.
+- **Level A:** Requires general accessibility requirements are met. This is the core requirement for 5.1.1 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 5.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 5.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 5.1.1 General](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -94,22 +96,22 @@ For more, see the [W3C’s official documentation for 5.1.1 General](https://www
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for accessibility, new tech, and user]
+<!-- [Checklist graphic: Icons for each item (accessibility, best practices, testing, etc.)] -->
 
-- All new technologies are accessible
-- Tested with assistive technology
-- Accessibility features and limitations documented
+- Accessibility best practices are followed
+- Accessibility policies are documented
+- Tested with users with disabilities
 
 ---
 
 ## **Summary**
 
-[Illustration: User interacting with accessible emerging technology]
+<!-- [Illustration: User accessing a website with assistive technology] -->
 
-Guideline 5.1.1 ensures that the web remains accessible as new technologies emerge. Always consider accessibility, even for the newest platforms.
+Guideline 5.1.1 is essential for ensuring all users can access your site. By meeting general accessibility requirements, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make accessibility a core part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 5.2.1: Platform Accessibility →](WCAG-Guideline-5-2-1-Platform-Accessibility-Explained.md)
+[Read Guideline 5.2.1: Platform Accessibility →](WCAG-Guideline-5-2-1-Platform-Accessibility-Explained)
 
-*Innovation is for everyone—make new tech accessible from the start!*
+*Accessibility means inclusion—make your site work for everyone!*

@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 5.6: Privacy Considerations Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.6 (Privacy Considerations)â€”what it means, why it matters, and how to address privacy in accessible digital experiences.
 keywords: wcag 5.6, privacy, accessibility, web standards, user experience, emerging technologies
-image: wcag-5-6-privacy-considerations.png
-imageAlt: Illustration of a lock, shield, and accessibility icons
-status: draft
--->
+image: WCAG-Series-5-6.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.6 Explained, Privacy Considerations"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 5.6: Privacy Considerations Explained**
 
@@ -26,7 +27,7 @@ Guideline 5.6 highlights the importance of protecting user privacy in accessible
 
 ## **What Are Privacy Considerations in Accessibility?**
 
-[Illustration: Lock and shield with accessibility icons]
+<!-- [Illustration: Lock and shield with accessibility icons] -->
 
 Privacy considerations refer to the practices and safeguards that protect usersâ€™ personal information when they interact with accessible technologies and content.
 
@@ -57,7 +58,7 @@ Privacy considerations refer to the practices and safeguards that protect usersâ
 
 ## **How to Address Privacy Considerations**
 
-[Infographic: Privacy settings panel with accessibility features]
+<!-- [Infographic: Privacy settings panel with accessibility features] -->
 
 - Conduct a privacy impact assessment for new features
 - Use privacy-by-design principles in development
@@ -86,7 +87,7 @@ Privacy considerations refer to the practices and safeguards that protect usersâ
 
 ## **Quick Checklist**
 
-[Checklist graphic: Lock, shield, and settings icons]
+<!-- [Checklist graphic: Lock, shield, and settings icons] -->
 
 - Data collection is minimized and justified
 - Privacy notices are clear and accessible
@@ -98,7 +99,7 @@ Privacy considerations refer to the practices and safeguards that protect usersâ
 
 ## **Summary**
 
-[Illustration: User adjusting privacy settings on an accessible website]
+<!-- [Illustration: User adjusting privacy settings on an accessible website] -->
 
 Privacy is a fundamental right for all users, including those with disabilities. By addressing privacy considerations in accessible design, you build trust, comply with laws, and create safer, more inclusive digital experiences.
 
@@ -108,6 +109,6 @@ Privacy is a fundamental right for all users, including those with disabilities.
 
 **Next Up:**
 
-[WCAG Guideline 5.7: Security Considerations â†’](WCAG-Guideline-5-7-Security-Considerations-Explained.md)
+[WCAG-Guideline-5-7-Security-Considerations-Explained](WCAG-Guideline-5-7-Security-Considerations-Explained)
 
 *Privacy and security go hand in handâ€”make both accessible!*

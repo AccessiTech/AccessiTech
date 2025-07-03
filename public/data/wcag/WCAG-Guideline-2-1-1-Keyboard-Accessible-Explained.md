@@ -3,9 +3,10 @@ title: WCAG Guideline 2.1.1: Keyboard Accessible Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.1.1 (Keyboard Accessible)—what it means, why it matters, and how to ensure all functionality is available from a keyboard.
 keywords: wcag 2.1.1, keyboard accessibility, accessible navigation, web standards, digital inclusion, screen readers, tab order
-image: wcag-2-1-1-keyboard-accessible.png
-imageAlt: Illustration of a keyboard and a web page with focus indicators
-status: draft
+image: WCAG-Series-2-1-1.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.1 Explained, Keyboard Accessible"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.1.1: Keyboard Accessible Explained**
@@ -24,7 +25,7 @@ Guideline 2.1 focuses on making all functionality available from a keyboard. Thi
 
 ## **What Is Guideline 2.1.1 Keyboard Accessible?**
 
-[Illustration: Web page with a visible keyboard focus indicator moving through interactive elements]
+<!-- [Illustration: Web page with a visible keyboard focus indicator moving through interactive elements] -->
 
 > "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes."
 
@@ -40,7 +41,7 @@ This means that users who rely on keyboard navigation, including those using scr
 
 ## **Why Does It Matter?**
 
-[Infographic: Keyboard icon, mouse icon crossed out, and a user navigating a web page]
+<!-- [Infographic: Keyboard icon, mouse icon crossed out, and a user navigating a web page] -->
 
 - **Inclusivity:** Many users with mobility impairments, vision loss, or temporary injuries rely on keyboard navigation.
 - **Legal Compliance:** Keyboard accessibility is a Level A requirement and referenced in accessibility laws worldwide.
@@ -93,7 +94,7 @@ Audit your site regularly and use accessibility checkers to catch these issues. 
 
 ## **Differences Between A, AA, and AAA for Guideline 2.1.1 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires all functionality to be operable through a keyboard interface without requiring specific timings for individual keystrokes. This is the core requirement for 2.1.1 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 2.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -117,12 +118,12 @@ For more, see the [W3C’s official documentation for 2.1.1 Keyboard Accessible]
 
 ## **Summary**
 
-[Illustration: User navigating a web page using only a keyboard, with visible focus]
+<!-- [Illustration: User navigating a web page using only a keyboard, with visible focus] -->
 
 Guideline 2.1.1 is essential for making your site usable by everyone. By ensuring all functionality is available from a keyboard, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make keyboard accessibility a core part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 2.1.2: No Keyboard Trap →](WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained.md)
+[Read Guideline 2.1.2: No Keyboard Trap →](WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained)
 
 *Accessibility is about giving everyone a way in—make sure the keyboard always works!*

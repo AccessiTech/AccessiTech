@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.2.2: Pause, Stop, Hide Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.2.2 (Pause, Stop, Hide)—what it means, why it matters, and how to give users control over moving, blinking, or auto-updating content.
-keywords: wcag 2.2.2, pause stop hide, accessibility, web standards, moving content, user control
-image: wcag-2-2-2-pause-stop-hide.png
-imageAlt: Illustration of a pause button, stop icon, and hide/close icon on moving content
-status: draft
+description: A practical guide to WCAG Guideline 2.2.2 (Pause, Stop, Hide)—what it means, why it matters, and how to ensure users can control moving, blinking, or auto-updating content.
+keywords: wcag 2.2.2, pause stop hide, moving content, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-2-2.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.2 Explained, Pause, Stop, Hide"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.2.2: Pause, Stop, Hide Explained**
@@ -24,9 +25,9 @@ Guideline 2.2 focuses on making sure users have enough time and control over con
 
 ## **What Is Guideline 2.2.2 Pause, Stop, Hide?**
 
-[Illustration: Carousel with pause, stop, and hide controls]
+<!-- [Illustration: User pausing a moving banner or animation] -->
 
-> "For any moving, blinking, scrolling, or auto-updating information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, a mechanism is available for the user to pause, stop, or hide it."
+> "For any moving, blinking, scrolling, or auto-updating information, users must be able to pause, stop, or hide it."
 
 Guideline 2.2.2 Pause, Stop, Hide is a requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide).
 
@@ -38,12 +39,11 @@ Guideline 2.2.2 Pause, Stop, Hide is a requirement in the [Web Content Accessibi
 
 ## **Why Does It Matter?**
 
-[Infographic: User with cognitive disabilities, moving content, and control icons]
+<!-- [Infographic: User pausing animation, warning icon, and settings gear] -->
 
-- **Accessibility:** Moving or blinking content can distract or trigger seizures in some users.
-- **Inclusivity:** Ensures everyone can focus on the main content.
-- **Legal Compliance:** Pause, Stop, Hide is a Level A requirement in WCAG 2.2.
-- **Usability:** Improves user experience by giving control over distractions.
+- **Inclusivity:** Moving or blinking content can distract or trigger users with cognitive or neurological disabilities.
+- **Legal Compliance:** Pause, Stop, Hide is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Prevents frustration and improves focus for all users.
 
 For more, see [W3C’s guidance on moving content](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html).
 
@@ -51,24 +51,25 @@ For more, see [W3C’s guidance on moving content](https://www.w3.org/WAI/WCAG22
 
 ## **What Needs to Support Pause, Stop, Hide?**
 
-[Grid: Carousel, news ticker, auto-updating feed, all with visible controls]
+<!-- [Grid: Carousels, banners, tickers, all with pause icons] -->
 
 - Carousels and sliders
-- News tickers and scrolling banners
-- Auto-updating feeds and notifications
-- Any moving, blinking, or scrolling content
+- News tickers and banners
+- Animations and auto-updating content
+- Any moving, blinking, or scrolling information
 
 All must provide a way to pause, stop, or hide the content.
 
 ---
 
-## **How to Meet Guideline 2.2.2**
+## **How to Make Content Pause, Stop, or Hide**
 
-[Side-by-side: Carousel with pause/stop/hide controls vs. carousel with no controls]
+<!-- [Side-by-side code snippets: Pause button, stop animation]
+[Example: Settings panel for animation control] -->
 
-- Add visible controls to pause, stop, or hide moving content
+- Provide visible controls to pause, stop, or hide moving content
 - Ensure controls are keyboard accessible
-- Avoid auto-starting animations unless essential
+- Document all controls and options
 - Test with users who are sensitive to motion
 
 For more, see the [W3C's Pause, Stop, Hide Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G4).
@@ -77,22 +78,22 @@ For more, see the [W3C's Pause, Stop, Hide Techniques](https://www.w3.org/WAI/WC
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible controls, right side with no way to stop moving content]
+<!-- [Do/Don't graphic: Left side with pause button, right side with no controls] -->
 
-- No controls for moving or blinking content
-- Controls that are not keyboard accessible
-- Moving content that cannot be paused or hidden
+- No way to pause or stop moving content
+- Controls not accessible by keyboard
+- Not documenting controls
 - Not testing with users who are sensitive to motion
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.2.2 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires pause, stop, or hide controls for moving, blinking, or auto-updating content.
-- **Level AA:** No additional requirements for 2.2.2.
-- **Level AAA:** No additional requirements for 2.2.2.
+- **Level A:** Requires users can pause, stop, or hide moving, blinking, or auto-updating content. This is the core requirement for 2.2.2 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 2.2.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 2.2.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html).
 
@@ -100,23 +101,23 @@ For more, see the [W3C’s official documentation for 2.2.2 Pause, Stop, Hide](h
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for pause, stop, hide, and moving content]
+<!-- [Checklist graphic: Icons for each item (pause, stop, hide, etc.)] -->
 
-- All moving, blinking, or auto-updating content has controls
+- All moving, blinking, or auto-updating content can be paused, stopped, or hidden
 - Controls are visible and keyboard accessible
-- No essential content is hidden by default
+- All controls are documented for users
 - Tested with users who are sensitive to motion
 
 ---
 
 ## **Summary**
 
-[Illustration: User pausing a carousel on a web page]
+<!-- [Illustration: User pausing a moving banner in a web app] -->
 
-Guideline 2.2.2 ensures users can control moving, blinking, or auto-updating content. Always provide accessible controls and test with users who may be affected by motion.
+Guideline 2.2.2 is essential for preventing distractions and supporting users with cognitive or neurological disabilities. By allowing users to pause, stop, or hide moving content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make content control a core part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 2.2.3: No Timing →](WCAG-Guideline-2-2-3-No-Timing-Explained.md)
+[Read Guideline 2.2.3: No Timing →](WCAG-Guideline-2-2-3-No-Timing-Explained)
 
-*Accessibility means giving users control—don’t let moving content take it away!*
+*Accessibility means giving users control over motion—make your site calm and user-friendly!*

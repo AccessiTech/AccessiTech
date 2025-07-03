@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 5.2.4: User Notifications Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.4 (User Notifications)—what it means, why it matters, and how to ensure notifications on new platforms are accessible to all users.
 keywords: wcag 5.2.4, user notifications, accessibility, web standards, user experience, emerging technologies
-image: wcag-5-2-4-user-notifications.png
-imageAlt: Illustration of a user receiving an accessible notification on a futuristic device
-status: draft
--->
+image: WCAG-Series-5-2-4.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.4 Explained, User Notifications"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 5.2.4: User Notifications Explained**
 
@@ -24,7 +25,7 @@ Guideline 5.2 focuses on making sure that both platforms and the content they de
 
 ## **What Is Guideline 5.2.4 User Notifications?**
 
-[Illustration: User receiving an accessible notification on a futuristic device]
+<!-- [Illustration: User receiving an accessible notification on a futuristic device] -->
 
 > "Platforms and content must provide accessible notifications for important events, updates, or changes, using mechanisms that are perceivable by all users."
 
@@ -38,11 +39,11 @@ Guideline 5.2.4 requires that notifications—such as alerts, updates, or status
 
 ## **Why Does It Matter?**
 
-[Infographic: Notification icon, accessibility settings, and user with assistive tech]
+<!-- [Infographic: User receiving an accessible notification on a futuristic device] -->
 
-- **All Users:** Need to be informed of important updates
-- **Users with Disabilities:** Rely on accessible notifications for awareness
-- **Accessibility:** Prevents missed information and confusion
+- **All Users:** Need to be aware of important events or changes
+- **Users with Disabilities:** May rely on accessible notifications
+- **Accessibility:** Ensures equal access to information
 
 For more, see [W3C’s guidance on User Notifications](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -50,21 +51,21 @@ For more, see [W3C’s guidance on User Notifications](https://www.w3.org/WAI/st
 
 ## **What Needs Accessible Notifications?**
 
-[Grid: AR/VR notifications, IoT alerts, and web platform updates]
+<!-- [Grid: Alerts, updates, and status changes on various devices] -->
 
-- AR/VR and IoT notifications
-- Web and app alerts
-- Any system or content event that notifies users
+- Content notifications
+- System or platform alerts
+- Any important event or update
 
 ---
 
-## **How to Meet Guideline 5.2.4**
+## **How to Ensure Accessible Notifications**
 
-[Side-by-side: Good example (accessible notification) vs. Bad example (silent or visual-only alert)]
+<!-- [Side-by-side: Good example (accessible notification) vs. Bad example (inaccessible notification)] -->
 
-- Use multiple modalities (visual, auditory, haptic) for notifications
-- Ensure notifications are perceivable by all users
-- Test with users of assistive technology
+- Use accessible notification mechanisms (e.g., ARIA live regions)
+- Provide multiple notification options if possible
+- Test with users with disabilities
 
 For more, see the [W3C's User Notifications Techniques](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -72,21 +73,21 @@ For more, see the [W3C's User Notifications Techniques](https://www.w3.org/WAI/s
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible notification, right side with missed alert]
+<!-- [Do/Don't graphic: Left side with accessible notification, right side with inaccessible notification] -->
 
-- Relying only on visual or auditory cues
-- Not providing accessible notification options
-- Failing to test with users who need notifications
+- Not providing accessible notifications
+- Relying only on visual or audio cues
+- Not testing with users with disabilities
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 5.2.4 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires accessible notifications for important events.
-- **Level AA:** No additional requirements for 5.2.4.
-- **Level AAA:** No additional requirements for 5.2.4.
+- **Level A:** Requires accessible notifications for important events. This is the core requirement for 5.2.4 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 5.2.4, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 5.2.4, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 5.2.4 User Notifications](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -94,30 +95,22 @@ For more, see the [W3C’s official documentation for 5.2.4 User Notifications](
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for notification, accessibility, and user]
+<!-- [Checklist graphic: Icons for each item (notification, accessibility, testing, etc.)] -->
 
-- Notifications are perceivable by all users
-- Multiple modalities are used where possible
-- Tested with assistive technology and real users
+- Accessible notifications are provided for all important events
+- Multiple notification options are available if possible
+- Tested with users with disabilities
 
 ---
 
 ## **Summary**
 
-[Illustration: User receiving an accessible notification on a new platform]
+<!-- [Illustration: User receiving an accessible notification on a futuristic device] -->
 
-Guideline 5.2.4 ensures that all users are informed of important events and changes, no matter the platform. Accessible notifications are essential for inclusion and awareness.
-
----
+Guideline 5.2.4 is essential for ensuring all users are aware of important events and updates. By providing accessible notifications, you support users with disabilities, improve usability, and meet legal requirements. Test your notifications regularly and make accessibility a core part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 5.2.5: User Input →](WCAG-Guideline-5-2-5-User-Input-Explained.md)
+[WCAG-Guideline-5-2-5-User-Input-Explained](WCAG-Guideline-5-2-5-User-Input-Explained)
 
-*Keep everyone in the loop—make notifications accessible for all!*
-
----
-
-**End of Guideline 5 Series**
-
-*Accessible notifications keep everyone informed—make every alert count!*
+*Accessibility means awareness—keep every user informed!*

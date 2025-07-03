@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 5.3: Conformance Claims (Optional) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.3 (Conformance Claims)—what they are, why they matter, and how to make and document conformance claims for accessibility.
 keywords: wcag 5.3, conformance claims, accessibility, web standards, user experience, emerging technologies
-image: wcag-5-3-conformance-claims.png
-imageAlt: Illustration of a certificate or checklist with accessibility icons
-status: draft
--->
+image: WCAG-Series-5-3.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.3 Explained, Conformance Claims (Optional)"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 5.3: Conformance Claims (Optional) Explained**
 
@@ -26,7 +27,7 @@ Guideline 5.3 provides a framework for making formal claims about accessibility 
 
 ## **What Is a Conformance Claim?**
 
-[Illustration: Certificate or checklist with accessibility icons]
+<!-- [Illustration: Certificate or checklist with accessibility icons] -->
 
 A conformance claim is a public statement that a web page, site, or application meets the requirements of a specific WCAG version and level. It documents the scope, methods, and results of accessibility evaluation.
 
@@ -47,7 +48,7 @@ To make a valid conformance claim, the following components are required:
 - **Scope of the claim** (entire site, specific pages, etc.)
 - **Accessibility support baseline** (technologies relied upon)
 
-[Infographic: Checklist with required claim components]
+<!-- [Infographic: Checklist with required claim components] -->
 
 ---
 
@@ -61,7 +62,7 @@ Organizations may also include optional information to provide additional contex
 - **Date of last review or update**
 - **Links to detailed accessibility statements or reports**
 
-[Infographic: Optional info icons, such as contact, report, and update date]
+<!-- [Infographic: Optional info icons, such as contact, report, and update date] -->
 
 ---
 
@@ -78,7 +79,7 @@ For more, see [W3C’s guidance on Conformance Claims](https://www.w3.org/WAI/WC
 
 ## **How to Make a Conformance Claim**
 
-[Side-by-side: Good example (clear, complete claim) vs. Bad example (vague or missing info)]
+<!-- [Side-by-side: Good example (clear, complete claim) vs. Bad example (vague or missing info)] -->
 
 - Gather all required information (see above)
 - Clearly state the WCAG version and level
@@ -99,7 +100,7 @@ For more, see [W3C’s guidance on Conformance Claims](https://www.w3.org/WAI/WC
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for certificate, checklist, and contact]
+<!-- [Checklist graphic: Icons for certificate, checklist, and contact] -->
 
 - All required components included
 - Optional info provided for transparency
@@ -110,7 +111,7 @@ For more, see [W3C’s guidance on Conformance Claims](https://www.w3.org/WAI/WC
 
 ## **Summary**
 
-[Illustration: User reviewing a conformance claim certificate]
+<!-- [Illustration: User reviewing a conformance claim certificate] -->
 
 Conformance claims are a valuable (but optional) way to document and communicate your accessibility efforts. Include all required components, add optional details for transparency, and keep your claim up to date.
 
@@ -120,6 +121,6 @@ Conformance claims are a valuable (but optional) way to document and communicate
 
 **Next Up:**
 
-[WCAG Guideline 5.4: Statement of Partial Conformance – Third Party Content →](WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained.md)
+[WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained](WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained)
 
 *Transparency builds trust—document your accessibility journey!*

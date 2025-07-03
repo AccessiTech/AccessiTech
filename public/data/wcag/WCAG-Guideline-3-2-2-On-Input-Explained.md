@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 3.2.2: On Input Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible.
 keywords: wcag 3.2.2, on input, accessibility, web standards, form controls, user experience
-image: wcag-3-2-2-on-input.png
-imageAlt: Illustration of a form with input fields and a submit button, showing predictable behavior
-status: draft
--->
+image: WCAG-Series-3-2-2.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.2 Explained, On Input"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 3.2.2: On Input Explained**
 
@@ -24,7 +25,7 @@ Guideline 3.2 focuses on making web pages behave in ways users expect, especiall
 
 ## **What Is Guideline 3.2.2 On Input?**
 
-[Illustration: Form with input fields and a submit button, no automatic navigation]
+<!-- [Illustration: Form with input fields and a submit button, no automatic navigation] -->
 
 > "Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component."
 
@@ -38,7 +39,7 @@ Guideline 3.2.2 requires that changes in input (like selecting an option or ente
 
 ## **Why Does It Matter?**
 
-[Infographic: Form field, warning icon, and user with assistive tech]
+<!-- [Infographic: Form field, warning icon, and user with assistive tech] -->
 
 - **Keyboard and Screen Reader Users:** May be disoriented by unexpected changes after input
 - **All Users:** Predictable behavior builds trust and usability
@@ -50,7 +51,7 @@ For more, see [W3C’s guidance on On Input](https://www.w3.org/WAI/WCAG22/Under
 
 ## **What Needs to Avoid Changes on Input?**
 
-[Grid: Dropdown menus, radio buttons, checkboxes, and text fields]
+<!-- [Grid: Dropdown menus, radio buttons, checkboxes, and text fields] -->
 
 - All form controls (dropdowns, checkboxes, radio buttons, text fields)
 - Avoid triggering navigation, popups, or content changes on input alone
@@ -60,7 +61,7 @@ For more, see [W3C’s guidance on On Input](https://www.w3.org/WAI/WCAG22/Under
 
 ## **How to Meet Guideline 3.2.2**
 
-[Side-by-side: Good example (submit button required) vs. Bad example (dropdown triggers navigation)]
+<!-- [Side-by-side: Good example (submit button required) vs. Bad example (dropdown triggers navigation)] -->
 
 - Require explicit user action (e.g., clicking a submit button) to trigger changes
 - Warn users if a control will cause a change of context on input
@@ -73,7 +74,7 @@ For more, see the [W3C's On Input Techniques](https://www.w3.org/WAI/WCAG22/Tech
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with submit button, right side with dropdown causing navigation]
+<!-- [Do/Don't graphic: Left side with submit button, right side with dropdown causing navigation] -->
 
 - Triggering navigation or popups when a user changes a form control
 - Failing to warn users about input-triggered changes
@@ -83,7 +84,7 @@ For more, see the [W3C's On Input Techniques](https://www.w3.org/WAI/WCAG22/Tech
 
 ## **Differences Between A, AA, and AAA for Guideline 3.2.2 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires no change of context on input unless users are warned.
 - **Level AA:** No additional requirements for 3.2.2.
@@ -95,7 +96,7 @@ For more, see the [W3C’s official documentation for 3.2.2 On Input](https://ww
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for form, warning, and submit button]
+<!-- [Checklist graphic: Icons for form, warning, and submit button] -->
 
 - No navigation or popups triggered by input alone
 - All changes require explicit user action or clear warning
@@ -106,12 +107,12 @@ For more, see the [W3C’s official documentation for 3.2.2 On Input](https://ww
 
 ## **Summary**
 
-[Illustration: User filling out a form, no unexpected changes]
+<!-- [Illustration: User filling out a form, no unexpected changes] -->
 
 Guideline 3.2.2 ensures that users are in control of what happens when they interact with your forms and controls. Avoid surprises—let users know what to expect.
 
 **Next Up:**
 
-[WCAG Guideline 3.2.3: Consistent Navigation →](WCAG-Guideline-3-2-3-Consistent-Navigation-Explained.md)
+[WCAG-Guideline-3-2-3-Consistent-Navigation-Explained](WCAG-Guideline-3-2-3-Consistent-Navigation-Explained)
 
 *Predictability and control are key—make sure your forms and controls behave as users expect!*

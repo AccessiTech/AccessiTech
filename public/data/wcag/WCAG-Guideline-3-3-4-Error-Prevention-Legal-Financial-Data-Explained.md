@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 3.3.4: Error Prevention (Legal, Financial, Data) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.4 (Error Prevention: Legal, Financial, Data)—what it means, why it matters, and how to help users avoid costly mistakes in critical transactions.
 keywords: wcag 3.3.4, error prevention, legal, financial, data, accessibility, web standards, user experience
-image: wcag-3-3-4-error-prevention.png
-imageAlt: Illustration of a user reviewing a summary before submitting a legal or financial form
-status: draft
--->
+image: WCAG-Series-3-3-4.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.4 Explained, Error Prevention (Legal, Financial, Data)"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 3.3.4: Error Prevention (Legal, Financial, Data) Explained**
 
@@ -24,7 +25,7 @@ Guideline 3.3 focuses on helping users avoid and correct mistakes when entering 
 
 ## **What Is Guideline 3.3.4 Error Prevention (Legal, Financial, Data)?**
 
-[Illustration: User reviewing a summary before submitting a legal or financial form]
+<!-- [Illustration: User reviewing a summary before submitting a legal or financial form] -->
 
 > "For web pages that require the user to submit legal commitments or financial transactions, or modify or delete user-controllable data, at least one of the following is true: submissions are reversible, data is checked for input errors and the user is provided an opportunity to correct them, or a mechanism is available for reviewing, confirming, and correcting information before finalizing the submission."
 
@@ -38,7 +39,7 @@ Guideline 3.3.4 requires extra safeguards for forms and processes involving lega
 
 ## **Why Does It Matter?**
 
-[Infographic: Warning icon, contract, and user with assistive tech]
+<!-- [Infographic: Warning icon, contract, and user with assistive tech] -->
 
 - **All Users:** Need protection from accidental or costly errors
 - **Screen Reader Users:** Benefit from clear review and confirmation steps
@@ -50,7 +51,7 @@ For more, see [W3C’s guidance on Error Prevention (Legal, Financial, Data)](ht
 
 ## **What Needs Error Prevention?**
 
-[Grid: Legal forms, financial transactions, data modification interfaces]
+<!-- [Grid: Legal forms, financial transactions, data modification interfaces] -->
 
 - Legal agreements (contracts, terms acceptance)
 - Financial transactions (purchases, payments)
@@ -60,7 +61,7 @@ For more, see [W3C’s guidance on Error Prevention (Legal, Financial, Data)](ht
 
 ## **How to Meet Guideline 3.3.4**
 
-[Side-by-side: Good example (review and confirm step) vs. Bad example (immediate submission with no review)]
+<!-- [Side-by-side: Good example (review and confirm step) vs. Bad example (immediate submission with no review)] -->
 
 - Make submissions reversible (e.g., undo, cancel)
 - Check for input errors and allow corrections before final submission
@@ -73,7 +74,7 @@ For more, see the [W3C's Error Prevention Techniques](https://www.w3.org/WAI/WCA
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with review step, right side with immediate, irreversible submission]
+<!-- [Do/Don't graphic: Left side with review step, right side with immediate, irreversible submission] -->
 
 - Submitting legal or financial forms without a review or confirmation step
 - Not allowing users to correct errors before finalizing
@@ -83,7 +84,7 @@ For more, see the [W3C's Error Prevention Techniques](https://www.w3.org/WAI/WCA
 
 ## **Differences Between A, AA, and AAA for Guideline 3.3.4 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AA:** Requires error prevention for legal, financial, and data modification forms.
 - **Level AAA:** No additional requirements for 3.3.4.
@@ -95,7 +96,7 @@ For more, see the [W3C’s official documentation for 3.3.4 Error Prevention (Le
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for review, undo, and warning]
+<!-- [Checklist graphic: Icons for review, undo, and warning] -->
 
 - Submissions are reversible or can be canceled
 - Input errors are checked and can be corrected
@@ -106,12 +107,12 @@ For more, see the [W3C’s official documentation for 3.3.4 Error Prevention (Le
 
 ## **Summary**
 
-[Illustration: User reviewing and confirming a critical transaction]
+<!-- [Illustration: User reviewing and confirming a critical transaction] -->
 
 Guideline 3.3.4 ensures that users are protected from costly or irreversible mistakes in legal, financial, or data-related forms. Safeguards and review steps are essential for accessibility and trust.
 
 **Next Up:**
 
-[WCAG Guideline 3.3.5: Help →](WCAG-Guideline-3-3-5-Help-Explained.md)
+[WCAG-Guideline-3-3-5-Help-Explained](WCAG-Guideline-3-3-5-Help-Explained)
 
 *Protection and review are key—make your critical forms safe and accessible for everyone!*

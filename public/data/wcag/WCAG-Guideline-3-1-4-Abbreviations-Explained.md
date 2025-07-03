@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 3.1.4: Abbreviations Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 3.1.4 (Abbreviations)—what it means, why it matters, and how to help users understand shortened forms and acronyms.
-keywords: wcag 3.1.4, abbreviations, accessibility, web standards, acronyms, user experience
-image: wcag-3-1-4-abbreviations.png
-imageAlt: Illustration of a web page with highlighted abbreviations and a help icon
-status: draft
+description: A practical guide to WCAG Guideline 3.1.4 (Abbreviations)—what it means, why it matters, and how to ensure abbreviations are explained or expanded.
+keywords: wcag 3.1.4, abbreviations, accessibility, web standards, digital inclusion
+image: WCAG-Series-3-1-4.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.4 Explained, Abbreviations"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 3.1.4: Abbreviations Explained**
@@ -24,9 +25,9 @@ Guideline 3.1 focuses on making text content readable and understandable by clar
 
 ## **What Is Guideline 3.1.4 Abbreviations?**
 
-[Illustration: Web page with highlighted abbreviations and a help icon]
+<!-- [Illustration: User reading an abbreviation with an expansion or definition] -->
 
-> "A mechanism for identifying the expanded form or meaning of abbreviations is available."
+> "A mechanism is available for identifying the expanded form or meaning of abbreviations."
 
 Guideline 3.1.4 requires that users can access the full meaning of abbreviations, acronyms, and initialisms used in your content.
 
@@ -38,34 +39,35 @@ Guideline 3.1.4 requires that users can access the full meaning of abbreviations
 
 ## **Why Does It Matter?**
 
-[Infographic: Abbreviation icon, question mark, and user with assistive tech]
+<!-- [Infographic: User with dictionary, abbreviation, and expansion] -->
 
-- **All Users:** May not know the meaning of abbreviations
-- **Screen Reader Users:** Need accessible expanded forms
-- **Accessibility:** Improves comprehension and reduces confusion
+- **Inclusivity:** Explaining abbreviations helps users with cognitive disabilities and non-native speakers.
+- **Legal Compliance:** Abbreviations is a Level AAA requirement in WCAG 2.1 and 2.2.
+- **Usability:** Improves comprehension for all users.
 
 For more, see [W3C’s guidance on Abbreviations](https://www.w3.org/WAI/WCAG22/Understanding/abbreviations.html).
 
 ---
 
-## **What Needs to Explain Abbreviations?**
+## **What Needs Abbreviations Explained?**
 
-[Grid: Acronyms, initialisms, and shortened forms]
+<!-- [Grid: Abbreviations, acronyms, initialisms, all with expansion icons] -->
 
-- Acronyms (e.g., NASA, HTML)
-- Initialisms (e.g., WCAG, PDF)
-- Any shortened form that may not be universally understood
+- Abbreviations and acronyms
+- Initialisms
+- Any shortened form of a word or phrase
 
 ---
 
-## **How to Meet Guideline 3.1.4**
+## **How to Make Abbreviations Accessible**
 
-[Side-by-side: Good example (tooltip or expanded form) vs. Bad example (no explanation)]
+<!-- [Side-by-side code snippets: Abbreviation with expansion, abbreviation without expansion]
+[Example: Settings panel for abbreviations] -->
 
-- Provide expanded forms via tooltips, glossaries, or inline explanations
-- Use the `<abbr>` HTML element with a `title` attribute
-- Make sure expanded forms are accessible to screen readers
-- Test with users unfamiliar with the abbreviations
+- Provide expansions for abbreviations
+- Use tooltips, glossaries, or inline explanations
+- Document abbreviation conventions
+- Test with users who may not know the terms
 
 For more, see the [W3C's Abbreviations Techniques](https://www.w3.org/WAI/WCAG22/Techniques/html/H28).
 
@@ -73,21 +75,22 @@ For more, see the [W3C's Abbreviations Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible abbreviation, right side with unexplained acronym]
+<!-- [Do/Don't graphic: Left side with expansion, right side with no expansion] -->
 
-- Using abbreviations without explanation
-- Not providing accessible expanded forms
-- Failing to update glossaries as content changes
+- Not explaining abbreviations or acronyms
+- No glossary or expansions provided
+- Not documenting abbreviation conventions
+- Not testing with users who may not know the terms
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.1.4 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level AAA:** Requires a mechanism for identifying the expanded form of abbreviations.
-- **Level AA:** Not applicable (3.1.4 is a Level AAA requirement).
-- **Level A:** Not applicable (3.1.4 is a Level AAA requirement).
+- **Level A:** Not applicable for this guideline.
+- **Level AA:** Not applicable for this guideline.
+- **Level AAA:** Requires a mechanism for identifying the expanded form of abbreviations. This is the core requirement for 3.1.4 and is mandatory for AAA conformance.
 
 For more, see the [W3C’s official documentation for 3.1.4 Abbreviations](https://www.w3.org/WAI/WCAG22/Understanding/abbreviations.html).
 
@@ -95,22 +98,23 @@ For more, see the [W3C’s official documentation for 3.1.4 Abbreviations](https
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for abbreviation, tooltip, and glossary]
+<!-- [Checklist graphic: Icons for each item (abbreviation, expansion, glossary, etc.)] -->
 
-- Expanded forms provided for all abbreviations and acronyms
-- `<abbr>` element or tooltips are accessible
-- Tested with users unfamiliar with the abbreviations
+- Expansions are provided for abbreviations
+- Tooltips, glossaries, or inline explanations are used
+- Abbreviation conventions are documented
+- Tested with users who may not know the terms
 
 ---
 
 ## **Summary**
 
-[Illustration: User accessing a tooltip or glossary for an abbreviation]
+<!-- [Illustration: User reading an abbreviation expansion in a web app] -->
 
-Guideline 3.1.4 ensures that all users can understand shortened forms and acronyms. Provide accessible expanded forms to make your content clear for everyone.
+Guideline 3.1.4 is essential for helping users understand your site. By explaining abbreviations, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make abbreviation accessibility a core part of your development process.
 
 **Next Up:**
 
-We’ll break down Guideline 3.1.5: Reading Level—how to make your content readable for a wide audience.
+[Read Guideline 3.1.5: Reading Level →](WCAG-Guideline-3-1-5-Reading-Level-Explained)
 
-*Clarity is key—make sure every user can understand your abbreviations!*
+*Accessibility means clarity—help users understand every term!*

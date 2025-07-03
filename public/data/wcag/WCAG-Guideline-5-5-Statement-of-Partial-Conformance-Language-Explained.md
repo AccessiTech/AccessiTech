@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 5.5: Statement of Partial Conformance – Language Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.5 (Statement of Partial Conformance – Language)—what it means, why it matters, and how to document partial conformance due to language limitations.
 keywords: wcag 5.5, partial conformance, language, accessibility, web standards, user experience, emerging technologies
-image: wcag-5-5-partial-conformance-language.png
-imageAlt: Illustration of a globe with language icons and accessibility symbols
-status: draft
--->
+image: WCAG-Series-5-5.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.5 Explained, Statement of Partial Conformance – Language"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 5.5: Statement of Partial Conformance – Language Explained**
 
@@ -26,7 +27,7 @@ Guideline 5.5 addresses situations where full accessibility conformance cannot b
 
 ## **What Is a Statement of Partial Conformance – Language?**
 
-[Illustration: Globe with language icons and accessibility symbols]
+<!-- [Illustration: Globe with language icons and accessibility symbols] -->
 
 A Statement of Partial Conformance – Language is a public declaration that a web page or resource would conform to WCAG, except for issues caused by the lack of accessibility support in a specific language.
 
@@ -56,7 +57,7 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 
 ## **How to Make a Statement of Partial Conformance – Language**
 
-[Infographic: Document with highlighted language sections]
+<!-- [Infographic: Document with highlighted language sections] -->
 
 - Evaluate your content for accessibility in all supported languages
 - If a language lacks accessibility support, document:
@@ -87,7 +88,7 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 
 ## **Quick Checklist**
 
-[Checklist graphic: Globe, language icons, and document]
+<!-- [Checklist graphic: Globe, language icons, and document] -->
 
 - Identified inaccessible content due to language
 - Statement includes affected languages and reasons
@@ -98,12 +99,14 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 
 ## **Summary**
 
-[Illustration: User reading a language accessibility statement on a website]
+<!-- [Illustration: User reading a language accessibility statement on a website] -->
 
 A Statement of Partial Conformance – Language helps organizations be transparent about accessibility limitations caused by language support gaps. Clearly document which languages are affected, why, and what you’re doing to address these issues. Keep your statement current as technology evolves.
 
 *Accessibility is for everyone—language shouldn’t be a barrier!*
 
-**End of Guideline 5 Series**
+---
+
+## **End of Guideline 5 Series**
 
 *Global inclusion means no one is left behind—keep striving for accessibility in every language!*

@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.4.2: Page Titled Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.4.2 (Page Titled)—what it means, why it matters, and how to help users know where they are with clear, descriptive page titles.
-keywords: wcag 2.4.2, page titled, accessibility, web standards, page title, navigation
-image: wcag-2-4-2-page-titled.png
-imageAlt: Illustration of a browser tab with a descriptive page title
-status: draft
+description: A practical guide to WCAG Guideline 2.4.2 (Page Titled)—what it means, why it matters, and how to ensure every web page has a descriptive title.
+keywords: wcag 2.4.2, page titled, document title, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-4-2.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.2 Explained, Page Titled"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.4.2: Page Titled Explained**
@@ -24,7 +25,7 @@ Guideline 2.4 focuses on making it easier for users to navigate, find content, a
 
 ## **What Is Guideline 2.4.2 Page Titled?**
 
-[Illustration: Browser tab with a clear, descriptive page title]
+<!-- [Illustration: Browser tab with a descriptive page title] -->
 
 > "Web pages have titles that describe topic or purpose."
 
@@ -38,36 +39,37 @@ Guideline 2.4.2 Page Titled is a Level A requirement in the [Web Content Accessi
 
 ## **Why Does It Matter?**
 
-[Infographic: Browser tab, screen reader icon, and user with navigation aids]
+<!-- [Infographic: User reading a page title, browser tab, and search result] -->
 
-- **Accessibility:** Clear titles help users orient themselves and navigate efficiently.
-- **Inclusivity:** Supports users with cognitive or memory challenges.
-- **Legal Compliance:** Page Titled is a Level A requirement in WCAG 2.2.
-- **Usability:** Improves SEO and user experience for everyone.
+- **Inclusivity:** Descriptive titles help users identify and navigate between pages.
+- **Legal Compliance:** Page Titled is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Improves navigation and search for all users.
 
 For more, see [W3C’s guidance on page titles](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html).
 
 ---
 
-## **What Needs to Support Page Titles?**
+## **What Needs to Have a Page Title?**
 
-[Grid: Browser tabs, bookmarks, and search results, all with descriptive titles]
+<!-- [Grid: Web pages, documents, browser tabs, all with title icons] -->
 
-- All web pages, including forms, dashboards, and error pages
-- Titles in browser tabs and bookmarks
-- Titles in search engine results
+- All web pages
+- Documents and browser tabs
+- Any content that can be navigated to directly
 
 All must have unique, descriptive titles.
 
 ---
 
-## **How to Meet Guideline 2.4.2**
+## **How to Make Page Titles Accessible**
 
-[Side-by-side: Page with a clear title vs. page with a generic or missing title]
+<!-- [Side-by-side code snippets: Good title, bad title]
+[Example: Settings panel for page titles] -->
 
-- Set a unique, descriptive title for every page (use the <title> element)
-- Update titles dynamically for single-page apps
-- Test with screen readers and browser tabs
+- Use unique, descriptive titles for each page
+- Place important information first
+- Document title conventions
+- Test with users who navigate by title
 
 For more, see the [W3C's Page Titled Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G88).
 
@@ -75,21 +77,22 @@ For more, see the [W3C's Page Titled Techniques](https://www.w3.org/WAI/WCAG22/T
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with descriptive title, right side with "Untitled Page"]
+<!-- [Do/Don't graphic: Left side with good title, right side with generic title] -->
 
-- Missing or generic page titles (e.g., "Home", "Untitled Page")
-- Duplicate titles across multiple pages
-- Not updating titles for dynamic content
+- Generic or duplicate titles
+- Titles that don't describe the page's purpose
+- Not documenting title conventions
+- Not testing with users who navigate by title
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.4.2 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires descriptive titles for all pages.
-- **Level AA:** No additional requirements for 2.4.2.
-- **Level AAA:** No additional requirements for 2.4.2.
+- **Level A:** Requires web pages have titles that describe topic or purpose. This is the core requirement for 2.4.2 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 2.4.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 2.4.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 2.4.2 Page Titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html).
 
@@ -97,22 +100,23 @@ For more, see the [W3C’s official documentation for 2.4.2 Page Titled](https:/
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for browser tab, title, and search result]
+<!-- [Checklist graphic: Icons for each item (title, browser tab, search, etc.)] -->
 
 - Every page has a unique, descriptive title
-- Titles reflect the page’s topic or purpose
-- Tested with screen readers and browser tabs
+- Important information is first in the title
+- Title conventions are documented
+- Tested with users who navigate by title
 
 ---
 
 ## **Summary**
 
-[Illustration: User navigating browser tabs with clear titles]
+<!-- [Illustration: User reading a descriptive page title in a browser tab] -->
 
-Guideline 2.4.2 ensures users always know where they are by providing clear, descriptive page titles. Always set unique titles and test for accessibility.
+Guideline 2.4.2 is essential for helping users identify and navigate your site. By providing descriptive titles for every page, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make page titling a core part of your development process.
 
 **Next Up:**
 
-We’ll break down Guideline 2.4.3: Focus Order—how to ensure users can navigate your site in a logical, predictable order.
+[Read Guideline 2.4.3: Focus Order →](WCAG-Guideline-2-4-3-Focus-Order-Explained)
 
-*Accessibility means clarity—help users know where they are at all times!*
+*Accessibility means clear navigation—help users know where they are at all times!*

@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 5.2.1: Platform Accessibility Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 5.2.1 (Platform Accessibility)—what it means, why it matters, and how to ensure platforms themselves are accessible to users with disabilities.
-keywords: wcag 5.2.1, platform accessibility, accessibility, web standards, user experience, emerging technologies
-image: wcag-5-2-1-platform-accessibility.png
-imageAlt: Illustration of a platform interface with accessibility icons and users
-status: draft
--->
+description: A practical guide to WCAG Guideline 5.2.1 (Platform Accessibility)—what it means, why it matters, and how to ensure your platform supports accessibility features.
+keywords: wcag 5.2.1, platform accessibility, accessibility, web standards, digital inclusion
+image: WCAG-Series-5-2-1.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.1 Explained, Platform Accessibility"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 5.2.1: Platform Accessibility Explained**
 
@@ -24,9 +25,9 @@ Guideline 5.2 focuses on making sure that the platforms themselves (not just the
 
 ## **What Is Guideline 5.2.1 Platform Accessibility?**
 
-[Illustration: Platform interface with accessibility icons and users]
+<!-- [Illustration: User accessing a platform with assistive technology] -->
 
-> "Platforms must provide mechanisms for content to be accessible, including support for assistive technologies and accessibility APIs."
+> "Platforms must support accessibility features and allow content to be accessible to users with disabilities."
 
 Guideline 5.2.1 requires that platforms (such as AR/VR systems, IoT hubs, or new web frameworks) provide the necessary hooks and APIs for content to be accessible.
 
@@ -38,11 +39,11 @@ Guideline 5.2.1 requires that platforms (such as AR/VR systems, IoT hubs, or new
 
 ## **Why Does It Matter?**
 
-[Infographic: Platform icon, accessibility API, and user with assistive tech]
+<!-- [Infographic: User with screen reader, platform icon, and accessibility symbol] -->
 
-- **All Users:** Need accessible platforms to access content
-- **Developers:** Rely on platform support for accessibility features
-- **Accessibility:** Enables inclusive experiences on new technologies
+- **Inclusivity:** Platform accessibility ensures all users can access content and features.
+- **Legal Compliance:** Platform Accessibility is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Improves accessibility for all users.
 
 For more, see [W3C’s guidance on Platform Accessibility](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -50,21 +51,22 @@ For more, see [W3C’s guidance on Platform Accessibility](https://www.w3.org/WA
 
 ## **What Needs Platform Accessibility?**
 
-[Grid: AR/VR platforms, IoT hubs, and new web frameworks]
+<!-- [Grid: Web platforms, applications, devices, all with accessibility icons] -->
 
-- AR/VR systems
-- IoT platforms
-- Any new or experimental web platform
+- Web platforms and applications
+- Devices and operating systems
+- Any environment hosting content
 
 ---
 
-## **How to Meet Guideline 5.2.1**
+## **How to Ensure Platform Accessibility**
 
-[Side-by-side: Good example (platform with accessibility API) vs. Bad example (platform with no accessibility support)]
+<!-- [Side-by-side code snippets: Accessible platform, inaccessible platform]
+[Example: Settings panel for platform accessibility] -->
 
-- Provide accessibility APIs and support for assistive technologies
-- Document accessibility features for developers
-- Test platform accessibility with real users
+- Support accessibility APIs and features
+- Document platform accessibility options
+- Test with users with disabilities
 
 For more, see the [W3C's Platform Accessibility Techniques](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -72,21 +74,21 @@ For more, see the [W3C's Platform Accessibility Techniques](https://www.w3.org/W
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible platform, right side with inaccessible platform]
+<!-- [Do/Don't graphic: Left side with accessible platform, right side with inaccessible platform] -->
 
-- Not providing accessibility APIs or support
-- Failing to document accessibility features
-- Not testing with assistive technology
+- Not supporting accessibility features
+- Not documenting platform accessibility options
+- Not testing with users with disabilities
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 5.2.1 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires platform accessibility support.
-- **Level AA:** No additional requirements for 5.2.1.
-- **Level AAA:** No additional requirements for 5.2.1.
+- **Level A:** Requires platform accessibility features are supported. This is the core requirement for 5.2.1 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 5.2.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 5.2.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 5.2.1 Platform Accessibility](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/).
 
@@ -94,27 +96,25 @@ For more, see the [W3C’s official documentation for 5.2.1 Platform Accessibili
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for platform, accessibility API, and user]
+<!-- [Checklist graphic: Icons for each item (platform, accessibility, testing, etc.)] -->
 
-- Platform provides accessibility APIs and assistive tech support
-- Accessibility features are documented for developers
-- Tested with assistive technology and real users
+- Platform supports accessibility features
+- Accessibility options are documented
+- Tested with users with disabilities
 
 ---
 
 ## **Summary**
 
-[Illustration: User accessing content on an accessible platform]
+<!-- [Illustration: User accessing a platform with assistive technology] -->
 
-Guideline 5.2.1 ensures that platforms themselves are accessible, enabling all content to be inclusive. Build accessibility into every layer of your technology stack.
-
----
+Guideline 5.2.1 is essential for ensuring all users can access your platform. By supporting accessibility features, you support users with disabilities, improve usability, and meet legal requirements. Test your platform regularly and make accessibility a core part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 5.2.2: Content Accessibility →](WCAG-Guideline-5-2-2-Content-Accessibility-Explained.md)
+[WCAG-Guideline-5-2-2-Content-Accessibility-Explained](WCAG-Guideline-5-2-2-Content-Accessibility-Explained)
 
-*Platforms are the foundation—make sure accessibility is built in!*
+*Accessibility means support—make your platform work for everyone!*
 
 ---
 

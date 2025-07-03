@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.5.1: Pointer Gestures Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what it means, why it matters, and how to ensure all pointer gestures are accessible and easy to use.
-keywords: wcag 2.5.1, pointer gestures, accessibility, web standards, touch gestures, user input
-image: wcag-2-5-1-pointer-gestures.png
-imageAlt: Illustration of a hand using a touchscreen with simple and complex gestures
-status: draft
+description: A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what it means, why it matters, and how to ensure all functionality is operable with simple pointer gestures.
+keywords: wcag 2.5.1, pointer gestures, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-5-1.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.1 Explained, Pointer Gestures"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.5.1: Pointer Gestures Explained**
@@ -24,9 +25,9 @@ Guideline 2.5 focuses on making it easier for users to operate functionality thr
 
 ## **What Is Guideline 2.5.1 Pointer Gestures?**
 
-[Illustration: Hand using a touchscreen with simple and complex gestures]
+<!-- [Illustration: User performing a simple tap gesture on a touchscreen] -->
 
-> "All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential."
+> "All functionality that uses multipoint or path-based gestures for operation can also be operated with a single pointer without a path-based gesture."
 
 Guideline 2.5.1 Pointer Gestures is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#pointer-gestures).
 
@@ -38,37 +39,37 @@ Guideline 2.5.1 Pointer Gestures is a Level A requirement in the [Web Content Ac
 
 ## **Why Does It Matter?**
 
-[Infographic: User with mobility aids, touchscreen, and simple gesture icons]
+<!-- [Infographic: User with limited dexterity, tap gesture, and accessibility icon] -->
 
-- **Accessibility:** Complex gestures can be difficult for users with limited dexterity or motor impairments.
-- **Inclusivity:** Supports users who rely on single-finger or single-pointer input.
-- **Legal Compliance:** Pointer Gestures is a Level A requirement in WCAG 2.2.
-- **Usability:** Improves experience for all users, especially on touch devices.
+- **Inclusivity:** Complex gestures can be difficult for users with limited dexterity.
+- **Legal Compliance:** Pointer Gestures is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Ensures all users can operate controls easily.
 
 For more, see [W3C’s guidance on pointer gestures](https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html).
 
 ---
 
-## **What Needs to Support Accessible Gestures?**
+## **What Needs Simple Pointer Gestures?**
 
-[Grid: Sliders, carousels, maps, and custom controls, all operable with simple taps]
+<!-- [Grid: Sliders, carousels, maps, all with tap icons] -->
 
 - Sliders and carousels
-- Maps and zoom controls
-- Custom widgets and controls
+- Maps and drawing tools
+- Any feature using multipoint or path-based gestures
 
 All must be operable with a single tap, click, or equivalent simple gesture.
 
 ---
 
-## **How to Meet Guideline 2.5.1**
+## **How to Make Pointer Gestures Accessible**
 
-[Side-by-side: Slider operable by swipe vs. slider operable by tap/click]
+<!-- [Side-by-side code snippets: Tap gesture, path-based gesture]
+[Example: Settings panel for gesture options] -->
 
-- Provide alternative controls for all path-based or multipoint gestures
-- Allow users to tap, click, or use keyboard to perform actions
-- Avoid requiring complex gestures unless essential
-- Test with users who have limited dexterity
+- Provide alternatives to complex gestures
+- Ensure all functionality is operable with a single tap or click
+- Document gesture options
+- Test with users with limited dexterity
 
 For more, see the [W3C's Pointer Gestures Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G217).
 
@@ -76,21 +77,22 @@ For more, see the [W3C's Pointer Gestures Techniques](https://www.w3.org/WAI/WCA
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with simple tap controls, right side with only complex gestures]
+<!-- [Do/Don't graphic: Left side with simple tap, right side with complex gesture] -->
 
-- Only supporting swipe, pinch, or rotate with no alternative
-- No way to operate controls with a single tap or click
-- Not testing with users who have motor impairments
+- Only supporting complex gestures
+- No alternative for path-based gestures
+- Not documenting gesture options
+- Not testing with users with limited dexterity
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.5.1 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires all gestures can be performed with a single pointer unless essential.
-- **Level AA:** No additional requirements for 2.5.1.
-- **Level AAA:** No additional requirements for 2.5.1.
+- **Level A:** Requires all functionality using multipoint or path-based gestures can also be operated with a single pointer. This is the core requirement for 2.5.1 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 2.5.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 2.5.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 2.5.1 Pointer Gestures](https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html).
 
@@ -98,22 +100,23 @@ For more, see the [W3C’s official documentation for 2.5.1 Pointer Gestures](ht
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for tap, click, and gesture controls]
+<!-- [Checklist graphic: Icons for each item (tap, gesture, accessibility, etc.)] -->
 
-- All gestures can be performed with a single tap or click
-- No essential functionality requires complex gestures
-- Tested with users who have limited dexterity
+- All functionality is operable with a single pointer
+- Alternatives to complex gestures are provided
+- Gesture options are documented
+- Tested with users with limited dexterity
 
 ---
 
 ## **Summary**
 
-[Illustration: User operating a slider with a single tap]
+<!-- [Illustration: User tapping a control on a touchscreen] -->
 
-Guideline 2.5.1 ensures all users can operate web content, regardless of their ability to perform complex gestures. Always provide simple alternatives and test for accessibility.
+Guideline 2.5.1 is essential for ensuring all users can operate your site. By providing alternatives to complex gestures, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make gesture accessibility a core part of your development process.
 
 **Next Up:**
 
-We’ll break down Guideline 2.5.2: Pointer Cancellation—how to prevent accidental actions from pointer input.
+[Read Guideline 2.5.2: Pointer Cancellation →](WCAG-Guideline-2-5-2-Pointer-Cancellation-Explained)
 
-*Accessibility means simplicity—make every gesture easy for everyone!*
+*Accessibility means simple controls—make your site easy for everyone to use!*

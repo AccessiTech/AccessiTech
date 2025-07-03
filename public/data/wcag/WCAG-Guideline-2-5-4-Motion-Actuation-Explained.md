@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.5.4: Motion Actuation Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what it means, why it matters, and how to ensure device motion is never the only way to interact.
-keywords: wcag 2.5.4, motion actuation, accessibility, web standards, device motion, user input
-image: wcag-2-5-4-motion-actuation.png
-imageAlt: Illustration of a phone being shaken with an alternative button control
-status: draft
+description: A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what it means, why it matters, and how to ensure users can operate functionality without device motion.
+keywords: wcag 2.5.4, motion actuation, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-5-4.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.4 Explained, Motion Actuation"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.5.4: Motion Actuation Explained**
@@ -24,9 +25,9 @@ Guideline 2.5 focuses on making it easier for users to operate functionality thr
 
 ## **What Is Guideline 2.5.4 Motion Actuation?**
 
-[Illustration: Phone being shaken with an alternative button control]
+<!-- [Illustration: User operating a feature with a button instead of shaking device] -->
 
-> "Functionality that can be operated by device motion or user motion can also be operated by user interface components, and motion-activated functionality can be disabled to prevent accidental actuation, except where the motion is essential."
+> "Functionality that can be operated by device motion or user motion can also be operated by user interface components, and motion-activated features can be disabled."
 
 Guideline 2.5.4 Motion Actuation is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#motion-actuation).
 
@@ -38,37 +39,37 @@ Guideline 2.5.4 Motion Actuation is a Level A requirement in the [Web Content Ac
 
 ## **Why Does It Matter?**
 
-[Infographic: User with mobility aids, phone, and alternative control icons]
+<!-- [Infographic: User with limited mobility, button press, and device motion] -->
 
-- **Accessibility:** Not all users can perform device motions or may trigger them accidentally.
-- **Inclusivity:** Supports users with limited mobility or those using assistive tech.
-- **Legal Compliance:** Motion Actuation is a Level A requirement in WCAG 2.2.
-- **Usability:** Prevents frustration and accidental actions for all users.
+- **Inclusivity:** Device motion can be difficult or impossible for some users.
+- **Legal Compliance:** Motion Actuation is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Ensures all users can operate features regardless of device motion.
 
 For more, see [W3C’s guidance on motion actuation](https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html).
 
 ---
 
-## **What Needs to Support Motion Actuation?**
+## **What Needs Motion Actuation Alternatives?**
 
-[Grid: Shake-to-undo, tilt-to-scroll, and rotate-to-activate, all with alternative controls]
+<!-- [Grid: Shake to undo, tilt to scroll, all with button alternatives] -->
 
-- Shake-to-undo or shake-to-refresh
-- Tilt-to-scroll or rotate-to-activate
-- Any feature using device motion
+- Shake to undo
+- Tilt to scroll
+- Any feature using device or user motion
 
 All must have alternative controls and allow motion actuation to be disabled.
 
 ---
 
-## **How to Meet Guideline 2.5.4**
+## **How to Make Motion Actuation Accessible**
 
-[Side-by-side: Feature with only motion vs. feature with button alternative]
+<!-- [Side-by-side code snippets: Button alternative, motion activation]
+[Example: Settings panel for motion features] -->
 
-- Provide standard UI controls for all motion-activated features
-- Allow users to disable motion actuation in settings
-- Only require motion when it is essential to the function
-- Test with users who have limited mobility
+- Provide alternatives to motion actuation
+- Allow users to disable motion-activated features
+- Document motion feature options
+- Test with users with limited mobility
 
 For more, see the [W3C's Motion Actuation Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G219).
 
@@ -76,21 +77,22 @@ For more, see the [W3C's Motion Actuation Techniques](https://www.w3.org/WAI/WCA
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with button alternative, right side with only motion]
+<!-- [Do/Don't graphic: Left side with button alternative, right side with only motion] -->
 
-- Only supporting device motion with no alternative
-- No way to disable motion actuation
-- Not testing with users who have mobility impairments
+- Only supporting motion actuation
+- No alternative for device motion
+- Not documenting motion feature options
+- Not testing with users with limited mobility
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.5.4 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires alternative controls and ability to disable motion actuation.
-- **Level AA:** No additional requirements for 2.5.4.
-- **Level AAA:** No additional requirements for 2.5.4.
+- **Level A:** Requires alternatives to motion actuation and ability to disable motion features. This is the core requirement for 2.5.4 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 2.5.4, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 2.5.4, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 2.5.4 Motion Actuation](https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html).
 
@@ -98,23 +100,23 @@ For more, see the [W3C’s official documentation for 2.5.4 Motion Actuation](ht
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for motion, button, and settings]
+<!-- [Checklist graphic: Icons for each item (motion, button, disable, etc.)] -->
 
-- All motion-activated features have alternative controls
-- Users can disable motion actuation
-- Only essential features require motion
-- Tested with users who have limited mobility
+- Alternatives to motion actuation are provided
+- Motion-activated features can be disabled
+- Motion feature options are documented
+- Tested with users with limited mobility
 
 ---
 
 ## **Summary**
 
-[Illustration: User activating a feature with a button instead of shaking the phone]
+<!-- [Illustration: User operating a feature with a button in a web app] -->
 
-Guideline 2.5.4 ensures all users can interact with content, regardless of their ability to perform device motions. Always provide alternatives and allow motion actuation to be disabled.
+Guideline 2.5.4 is essential for ensuring all users can operate your site. By providing alternatives to motion actuation, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make motion accessibility a core part of your development process.
 
 **Next Up:**
 
-We’ll break down Guideline 2.5.5: Target Size—how to make sure interactive elements are easy to tap or click.
+[Read Guideline 2.5.5: Target Size →](WCAG-Guideline-2-5-5-Target-Size-Explained)
 
-*Accessibility means options—never require motion as the only way to interact!*
+*Accessibility means options—help users operate features their way!*

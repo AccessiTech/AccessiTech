@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 3.1.5: Reading Level Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.1.5 (Reading Level)—what it means, why it matters, and how to make your content readable for a wide audience.
 keywords: wcag 3.1.5, reading level, accessibility, web standards, plain language, user experience
-image: wcag-3-1-5-reading-level.png
-imageAlt: Illustration of a web page with a readability score and plain language icon
-status: draft
--->
+image: WCAG-Series-3-1-5.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.5 Explained, Reading Level"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 3.1.5: Reading Level Explained**
 
@@ -24,7 +25,7 @@ Guideline 3.1 focuses on making text content readable and understandable for the
 
 ## **What Is Guideline 3.1.5 Reading Level?**
 
-[Illustration: Web page with a readability score and plain language icon]
+<!-- [Illustration: Web page with a readability score and plain language icon] -->
 
 > "When text requires reading ability more advanced than the lower secondary education level, supplemental content or a version that does not require such ability is available."
 
@@ -38,7 +39,7 @@ Guideline 3.1.5 requires that content be written at a lower secondary education 
 
 ## **Why Does It Matter?**
 
-[Infographic: Reading level icon, plain language, and user with assistive tech]
+<!-- [Infographic: Reading level icon, plain language, and user with assistive tech] -->
 
 - **All Users:** Benefit from clear, simple language
 - **Users with Disabilities:** May struggle with complex vocabulary or sentence structure
@@ -50,7 +51,7 @@ For more, see [W3C’s guidance on Reading Level](https://www.w3.org/WAI/WCAG22/
 
 ## **What Needs to Meet Reading Level?**
 
-[Grid: Instructions, critical information, and complex content]
+<!-- [Grid: Instructions, critical information, and complex content] -->
 
 - Instructions and help content
 - Critical information (warnings, legal, financial)
@@ -60,7 +61,7 @@ For more, see [W3C’s guidance on Reading Level](https://www.w3.org/WAI/WCAG22/
 
 ## **How to Meet Guideline 3.1.5**
 
-[Side-by-side: Good example (plain language) vs. Bad example (complex, technical language)]
+<!-- [Side-by-side: Good example (plain language) vs. Bad example (complex, technical language)] -->
 
 - Write in plain, simple language
 - Provide a simplified version or supplemental content for complex material
@@ -73,7 +74,7 @@ For more, see the [W3C's Reading Level Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with plain language, right side with complex language]
+<!-- [Do/Don't graphic: Left side with plain language, right side with complex language] -->
 
 - Using unnecessarily complex vocabulary or sentence structure
 - Not providing alternatives for complex content
@@ -83,7 +84,7 @@ For more, see the [W3C's Reading Level Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Differences Between A, AA, and AAA for Guideline 3.1.5 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AAA:** Requires content at or below lower secondary reading level, or an alternative.
 - **Level AA:** Not applicable (3.1.5 is a Level AAA requirement).
@@ -95,7 +96,7 @@ For more, see the [W3C’s official documentation for 3.1.5 Reading Level](https
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for reading level, plain language, and alternative content]
+<!-- [Checklist graphic: Icons for reading level, plain language, and alternative content] -->
 
 - Content is at or below lower secondary reading level
 - Alternatives or supplemental content provided for complex material
@@ -106,7 +107,7 @@ For more, see the [W3C’s official documentation for 3.1.5 Reading Level](https
 
 ## **Summary**
 
-[Illustration: User reading content with a plain language icon]
+<!-- [Illustration: User reading content with a plain language icon] -->
 
 Guideline 3.1.5 ensures that your content is readable for the widest possible audience. Use plain language and provide alternatives for complex material.
 
@@ -114,4 +115,4 @@ Guideline 3.1.5 ensures that your content is readable for the widest possible au
 
 We’ll break down Guideline 3.1.6: Pronunciation—how to help users understand how words are spoken.
 
-*Plain language is powerful—make your content accessible to everyone!*
+*Empower your users with clear and accessible content!*

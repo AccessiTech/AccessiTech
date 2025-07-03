@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 3.1.3: Unusual Words Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 3.1.3 (Unusual Words)—what it means, why it matters, and how to help users understand uncommon, jargon, or ambiguous terms.
-keywords: wcag 3.1.3, unusual words, accessibility, web standards, jargon, user experience
-image: wcag-3-1-3-unusual-words.png
-imageAlt: Illustration of a web page with highlighted jargon and a help icon
-status: draft
+description: A practical guide to WCAG Guideline 3.1.3 (Unusual Words)—what it means, why it matters, and how to ensure unusual words are explained or defined.
+keywords: wcag 3.1.3, unusual words, accessibility, web standards, digital inclusion
+image: WCAG-Series-3-1-3.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.3 Explained, Unusual Words"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 3.1.3: Unusual Words Explained**
@@ -24,7 +25,7 @@ Guideline 3.1 focuses on making text content readable and understandable by iden
 
 ## **What Is Guideline 3.1.3 Unusual Words?**
 
-[Illustration: Web page with highlighted jargon and a help icon]
+<!-- [Illustration: User reading a definition for an unusual word] -->
 
 > "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon."
 
@@ -38,34 +39,35 @@ Guideline 3.1.3 requires that users can access definitions for words or phrases 
 
 ## **Why Does It Matter?**
 
-[Infographic: Dictionary icon, question mark, and user with assistive tech]
+<!-- [Infographic: User with dictionary, highlighted word, and definition] -->
 
-- **All Users:** May struggle with jargon or idioms
-- **Screen Reader Users:** Need accessible definitions
-- **Accessibility:** Improves comprehension and reduces confusion
+- **Inclusivity:** Explaining unusual words helps users with cognitive disabilities and non-native speakers.
+- **Legal Compliance:** Unusual Words is a Level AAA requirement in WCAG 2.1 and 2.2.
+- **Usability:** Improves comprehension for all users.
 
 For more, see [W3C’s guidance on Unusual Words](https://www.w3.org/WAI/WCAG22/Understanding/unusual-words.html).
 
 ---
 
-## **What Needs to Explain Unusual Words?**
+## **What Needs Unusual Words Explained?**
 
-[Grid: Jargon, idioms, abbreviations, and technical terms]
+<!-- [Grid: Jargon, idioms, technical terms, all with definition icons] -->
 
-- Jargon and technical terms
-- Idioms and ambiguous phrases
-- Words used in a restricted or non-standard way
+- Jargon and idioms
+- Technical terms
+- Any word used in an unusual or restricted way
 
 ---
 
-## **How to Meet Guideline 3.1.3**
+## **How to Make Unusual Words Accessible**
 
-[Side-by-side: Good example (tooltip or glossary link) vs. Bad example (no explanation)]
+<!-- [Side-by-side code snippets: Word with definition, word without definition]
+[Example: Settings panel for definitions] -->
 
-- Provide definitions via tooltips, glossaries, or inline explanations
-- Link to a glossary for technical terms
-- Use accessible methods for screen readers
-- Test with users unfamiliar with the terms
+- Provide definitions for unusual words
+- Use tooltips, glossaries, or inline explanations
+- Document terminology conventions
+- Test with users who may not know the terms
 
 For more, see the [W3C's Unusual Words Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G62).
 
@@ -73,21 +75,22 @@ For more, see the [W3C's Unusual Words Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible definition, right side with unexplained jargon]
+<!-- [Do/Don't graphic: Left side with definition, right side with no definition] -->
 
-- Using jargon or idioms without explanation
-- Not providing accessible definitions
-- Failing to update glossaries as content changes
+- Not explaining jargon or idioms
+- No glossary or definitions provided
+- Not documenting terminology conventions
+- Not testing with users who may not know the terms
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.1.3 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level AAA:** Requires a mechanism for identifying definitions of unusual words or phrases.
-- **Level AA:** Not applicable (3.1.3 is a Level AAA requirement).
-- **Level A:** Not applicable (3.1.3 is a Level AAA requirement).
+- **Level A:** Not applicable for this guideline.
+- **Level AA:** Not applicable for this guideline.
+- **Level AAA:** Requires a mechanism for identifying definitions of unusual words. This is the core requirement for 3.1.3 and is mandatory for AAA conformance.
 
 For more, see the [W3C’s official documentation for 3.1.3 Unusual Words](https://www.w3.org/WAI/WCAG22/Understanding/unusual-words.html).
 
@@ -95,22 +98,23 @@ For more, see the [W3C’s official documentation for 3.1.3 Unusual Words](https
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for glossary, tooltip, and question mark]
+<!-- [Checklist graphic: Icons for each item (definition, glossary, tooltip, etc.)] -->
 
-- Definitions provided for jargon, idioms, and unusual terms
-- Glossary or tooltips are accessible
-- Tested with users unfamiliar with the terms
+- Definitions are provided for unusual words
+- Tooltips, glossaries, or inline explanations are used
+- Terminology conventions are documented
+- Tested with users who may not know the terms
 
 ---
 
 ## **Summary**
 
-[Illustration: User accessing a glossary or tooltip for a technical term]
+<!-- [Illustration: User reading a definition in a web app] -->
 
-Guideline 3.1.3 ensures that all users can understand uncommon or ambiguous language. Provide accessible definitions to make your content clear for everyone.
+Guideline 3.1.3 is essential for helping users understand your site. By explaining unusual words, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make terminology accessibility a core part of your development process.
 
 **Next Up:**
 
-We’ll break down Guideline 3.1.4: Abbreviations—how to help users understand shortened forms and acronyms.
+[Read Guideline 3.1.4: Abbreviations →](WCAG-Guideline-3-1-4-Abbreviations-Explained)
 
-*Clarity is key—make sure every user can understand your words!*
+*Accessibility means clarity—help users understand every word!*

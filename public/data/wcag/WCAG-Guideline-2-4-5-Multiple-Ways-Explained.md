@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.4.5: Multiple Ways Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it means, why it matters, and how to provide users with more than one way to find content.
-keywords: wcag 2.4.5, multiple ways, accessibility, web standards, navigation, site search
-image: wcag-2-4-5-multiple-ways.png
-imageAlt: Illustration of a website with navigation menu, search bar, and sitemap
-status: draft
+description: A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it means, why it matters, and how to provide more than one way to locate a web page within a set of pages.
+keywords: wcag 2.4.5, multiple ways, navigation, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-4-5.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.5 Explained, Multiple Ways"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.4.5: Multiple Ways Explained**
@@ -24,9 +25,9 @@ Guideline 2.4 focuses on making it easier for users to navigate, find content, a
 
 ## **What Is Guideline 2.4.5 Multiple Ways?**
 
-[Illustration: Website with navigation menu, search bar, and sitemap]
+<!-- [Illustration: User choosing between navigation menu, search, and sitemap] -->
 
-> "More than one way is available to locate a web page within a set of web pages, except where the page is the result of, or a step in, a process."
+> "More than one way is available to locate a web page within a set of web pages."
 
 Guideline 2.4.5 Multiple Ways is a Level AA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways).
 
@@ -38,38 +39,37 @@ Guideline 2.4.5 Multiple Ways is a Level AA requirement in the [Web Content Acce
 
 ## **Why Does It Matter?**
 
-[Infographic: User with navigation aids, search bar, and sitemap]
+<!-- [Infographic: User using search, navigation, and sitemap] -->
 
-- **Accessibility:** Different users prefer different navigation methods.
-- **Inclusivity:** Supports users with cognitive, memory, or navigation challenges.
-- **Legal Compliance:** Multiple Ways is a Level AA requirement in WCAG 2.2.
-- **Usability:** Improves discoverability and user experience for everyone.
+- **Inclusivity:** Multiple navigation options help users with different needs and preferences.
+- **Legal Compliance:** Multiple Ways is a Level AA requirement in WCAG 2.1 and 2.2.
+- **Usability:** Improves discoverability and efficiency for all users.
 
 For more, see [W3C’s guidance on multiple ways](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html).
 
 ---
 
-## **What Needs to Support Multiple Ways?**
+## **What Needs Multiple Ways to Navigate?**
 
-[Grid: Navigation menu, search bar, sitemap, and table of contents]
+<!-- [Grid: Navigation, search, sitemap, all with navigation icons] -->
 
 - Navigation menus
-- Site search
-- Sitemap or table of contents
-- Related links or breadcrumbs
+- Search features
+- Sitemaps and indexes
 
 All must provide at least two ways to find content.
 
 ---
 
-## **How to Meet Guideline 2.4.5**
+## **How to Provide Multiple Ways**
 
-[Side-by-side: Website with only navigation vs. website with navigation and search]
+<!-- [Side-by-side code snippets: Navigation menu, search bar, sitemap]
+[Example: Settings panel for navigation options] -->
 
-- Add a search bar or site map in addition to navigation menus
-- Provide a table of contents for large sites
-- Use breadcrumbs or related links
-- Test with users who have different navigation preferences
+- Offer at least two navigation options
+- Ensure all options are accessible
+- Document navigation features
+- Test with users who rely on different navigation methods
 
 For more, see the [W3C's Multiple Ways Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G125).
 
@@ -77,21 +77,22 @@ For more, see the [W3C's Multiple Ways Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with multiple navigation options, right side with only one]
+<!-- [Do/Don't graphic: Left side with multiple navigation options, right side with only one] -->
 
-- Only providing one way to find content
-- No search or sitemap for large sites
-- Not testing with users who have navigation challenges
+- Only one way to find content
+- Navigation options not accessible
+- Not documenting navigation features
+- Not testing with users who need multiple ways
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.4.5 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** No requirement for multiple ways.
-- **Level AA:** Requires at least two ways to find each page (except process steps).
-- **Level AAA:** No additional requirements for 2.4.5.
+- **Level A:** Not applicable for this guideline.
+- **Level AA:** Requires more than one way to locate a web page. This is the core requirement for 2.4.5 and is mandatory for AA accessibility.
+- **Level AAA:** For Guideline 2.4.5, there are no additional requirements beyond Level AA in WCAG 2.2. Meeting Level AA for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 2.4.5 Multiple Ways](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html).
 
@@ -99,22 +100,23 @@ For more, see the [W3C’s official documentation for 2.4.5 Multiple Ways](https
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for navigation, search, and sitemap]
+<!-- [Checklist graphic: Icons for each item (navigation, search, sitemap, etc.)] -->
 
-- At least two ways to find every page
-- Search, sitemap, or table of contents is available
-- Tested with users who have different navigation needs
+- At least two navigation options are provided
+- All navigation options are accessible
+- Navigation features are documented
+- Tested with users who rely on different navigation methods
 
 ---
 
 ## **Summary**
 
-[Illustration: User finding content using both navigation and search]
+<!-- [Illustration: User choosing between navigation options in a web app] -->
 
-Guideline 2.4.5 ensures users can find content in more than one way, supporting different preferences and needs. Always provide alternative navigation options and test for accessibility.
+Guideline 2.4.5 is essential for helping users find content efficiently. By providing multiple ways to locate pages, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make navigation flexibility a core part of your development process.
 
 **Next Up:**
 
-We’ll break down Guideline 2.4.6: Headings and Labels—how to make your site easier to scan and understand.
+[Read Guideline 2.4.6: Headings and Labels →](WCAG-Guideline-2-4-6-Headings-and-Labels-Explained)
 
-*Accessibility means options—give users more than one way to find what they need!*
+*Accessibility means options—help users find their way, their way!*

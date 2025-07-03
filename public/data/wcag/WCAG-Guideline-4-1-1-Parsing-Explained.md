@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 4.1.1: Parsing Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 4.1.1 (Parsing)—what it means, why it matters, and how to ensure your code is well-formed and accessible.
-keywords: wcag 4.1.1, parsing, accessibility, web standards, code validation, user experience
-image: wcag-4-1-1-parsing.png
-imageAlt: Illustration of HTML code with a checkmark and accessibility icons
-status: draft
--->
+description: A practical guide to WCAG Guideline 4.1.1 (Parsing)—what it means, why it matters, and how to ensure content is correctly parsed by user agents.
+keywords: wcag 4.1.1, parsing, accessibility, web standards, digital inclusion
+image: WCAG-Series-4-1-1.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.1 Explained, Parsing"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 4.1.1: Parsing Explained**
 
@@ -24,9 +25,9 @@ Guideline 4.1 focuses on making sure content can be reliably interpreted by a wi
 
 ## **What Is Guideline 4.1.1 Parsing?**
 
-[Illustration: HTML code with a checkmark and accessibility icons]
+<!-- [Illustration: Code editor showing valid HTML markup] -->
 
-> "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique."
+> "Content is parsed correctly by user agents, ensuring assistive technologies can interpret it."
 
 Guideline 4.1.1 requires that your code is well-formed and free of errors that could confuse browsers or assistive technologies.
 
@@ -38,34 +39,34 @@ Guideline 4.1.1 requires that your code is well-formed and free of errors that c
 
 ## **Why Does It Matter?**
 
-[Infographic: Code validation icon, browser, and assistive tech]
+<!-- [Infographic: User with screen reader, code icon, and browser] -->
 
-- **All Users:** Benefit from content that displays and works as intended
-- **Assistive Technology Users:** Rely on well-formed code for accurate interpretation
-- **Accessibility:** Reduces errors and increases reliability
+- **Inclusivity:** Correct parsing helps assistive technologies interpret content.
+- **Legal Compliance:** Parsing is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Prevents errors and improves accessibility for all users.
 
 For more, see [W3C’s guidance on Parsing](https://www.w3.org/WAI/WCAG22/Understanding/parsing.html).
 
 ---
 
-## **What Needs to Be Well-Formed?**
+## **What Needs to Be Parsed Correctly?**
 
-[Grid: HTML, SVG, and other markup code]
+<!-- [Grid: HTML, CSS, JavaScript, all with code icons] -->
 
-- All HTML, SVG, and XML code
-- Templates and components
-- Any markup used in your site or app
+- HTML markup
+- CSS and JavaScript
+- Any content interpreted by user agents
 
 ---
 
-## **How to Meet Guideline 4.1.1**
+## **How to Ensure Correct Parsing**
 
-[Side-by-side: Good example (valid HTML) vs. Bad example (broken tags, duplicate IDs)]
+<!-- [Side-by-side code snippets: Valid markup, invalid markup]
+[Example: Settings panel for code validation] -->
 
-- Use complete start and end tags
-- Nest elements according to specifications
-- Avoid duplicate attributes and IDs
-- Validate code with automated tools (e.g., W3C Validator)
+- Use valid, well-formed markup
+- Document coding conventions
+- Test with validators and assistive technologies
 
 For more, see the [W3C's Parsing Techniques](https://www.w3.org/WAI/WCAG22/Techniques/html/H88).
 
@@ -73,22 +74,21 @@ For more, see the [W3C's Parsing Techniques](https://www.w3.org/WAI/WCAG22/Techn
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with valid code, right side with broken or invalid code]
+<!-- [Do/Don't graphic: Left side with valid code, right side with invalid code] -->
 
-- Missing or mismatched tags
-- Duplicate attributes or IDs
-- Incorrectly nested elements
-- Not validating code before publishing
+- Invalid or poorly formed markup
+- Not documenting coding conventions
+- Not testing with validators or assistive technologies
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 4.1.1 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires well-formed, valid markup.
-- **Level AA:** No additional requirements for 4.1.1.
-- **Level AAA:** No additional requirements for 4.1.1.
+- **Level A:** Requires content is parsed correctly by user agents. This is the core requirement for 4.1.1 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 4.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 4.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 4.1.1 Parsing](https://www.w3.org/WAI/WCAG22/Understanding/parsing.html).
 
@@ -96,23 +96,22 @@ For more, see the [W3C’s official documentation for 4.1.1 Parsing](https://www
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for code validation, tags, and IDs]
+<!-- [Checklist graphic: Icons for each item (code, validation, screen reader, etc.)] -->
 
-- All markup is well-formed and valid
-- No duplicate attributes or IDs
-- Elements are properly nested
-- Code validated with automated tools
+- All markup is valid and well-formed
+- Coding conventions are documented
+- Tested with validators and assistive technologies
 
 ---
 
 ## **Summary**
 
-[Illustration: User validating HTML code for accessibility]
+<!-- [Illustration: User reading a web page with valid code] -->
 
-Guideline 4.1.1 ensures your code is robust and accessible for all users and technologies. Always validate your markup and fix errors before publishing.
+Guideline 4.1.1 is essential for helping users access your site. By ensuring correct parsing, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make code validation a core part of your development process.
 
 **Next Up:**
 
-[WCAG Guideline 4.1.2: Name, Role, Value →](WCAG-Guideline-4-1-2-Name-Role-Value-Explained.md)
+[WCAG-Guideline-4-1-2-Name-Role-Value-Explained](WCAG-Guideline-4-1-2-Name-Role-Value-Explained)
 
-*Robust code is accessible code—validate and future-proof your site!*
+*Accessibility means clarity—help user agents interpret your content correctly!*

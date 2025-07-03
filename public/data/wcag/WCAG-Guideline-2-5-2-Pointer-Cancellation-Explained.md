@@ -1,11 +1,12 @@
 <!--
 title: WCAG Guideline 2.5.2: Pointer Cancellation Explained
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—what it means, why it matters, and how to prevent accidental actions from pointer input.
-keywords: wcag 2.5.2, pointer cancellation, accessibility, web standards, touch input, accidental activation
-image: wcag-2-5-2-pointer-cancellation.png
-imageAlt: Illustration of a finger hovering over a button with a cancel icon
-status: draft
+description: A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—what it means, why it matters, and how to ensure users can cancel pointer actions before they are completed.
+keywords: wcag 2.5.2, pointer cancellation, accessibility, web standards, digital inclusion
+image: WCAG-Series-2-5-2.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.2 Explained, Pointer Cancellation"
+published: true
+date: 2025-07-03
 -->
 
 # **WCAG Guideline 2.5.2: Pointer Cancellation Explained**
@@ -24,9 +25,9 @@ Guideline 2.5 focuses on making it easier for users to operate functionality thr
 
 ## **What Is Guideline 2.5.2 Pointer Cancellation?**
 
-[Illustration: Finger hovering over a button with a cancel icon]
+<!-- [Illustration: User cancelling a drag-and-drop action with a pointer] -->
 
-> "For functionality that can be operated using a single pointer, at least one of the following is true: the action is not triggered on the down-event, a mechanism is available to abort or undo the action, or a mechanism is available to confirm the action."
+> "For functionality that can be operated using a single pointer, at least one of the following is true: the action is not completed on down-event, the action can be aborted or undone, or up-event is required to complete the action."
 
 Guideline 2.5.2 Pointer Cancellation is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#pointer-cancellation).
 
@@ -38,37 +39,37 @@ Guideline 2.5.2 Pointer Cancellation is a Level A requirement in the [Web Conten
 
 ## **Why Does It Matter?**
 
-[Infographic: User with mobility aids, touch input, and cancel/undo icons]
+<!-- [Infographic: User cancelling an action, pointer icon, and accessibility symbol] -->
 
-- **Accessibility:** Accidental taps or clicks can cause errors for users with limited dexterity.
-- **Inclusivity:** Supports users who need time to adjust or cancel actions.
-- **Legal Compliance:** Pointer Cancellation is a Level A requirement in WCAG 2.2.
-- **Usability:** Reduces frustration and improves confidence for all users.
+- **Inclusivity:** Users may make mistakes or need to cancel actions for various reasons.
+- **Legal Compliance:** Pointer Cancellation is a Level A requirement in WCAG 2.1 and 2.2.
+- **Usability:** Prevents accidental actions and improves user control.
 
 For more, see [W3C’s guidance on pointer cancellation](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation.html).
 
 ---
 
-## **What Needs to Support Pointer Cancellation?**
+## **What Needs Pointer Cancellation?**
 
-[Grid: Buttons, links, drag-and-drop, all with cancel or undo options]
+<!-- [Grid: Drag-and-drop, sliders, buttons, all with cancel icons] -->
 
-- Buttons and links
-- Drag-and-drop interfaces
-- Custom controls and widgets
+- Drag-and-drop features
+- Sliders and buttons
+- Any feature operated by a single pointer
 
 All must allow users to cancel or confirm actions before they are triggered.
 
 ---
 
-## **How to Meet Guideline 2.5.2**
+## **How to Make Pointer Cancellation Accessible**
 
-[Side-by-side: Button activated on up-event vs. button activated on down-event]
+<!-- [Side-by-side code snippets: Cancel action, undo action]
+[Example: Settings panel for pointer actions] -->
 
-- Trigger actions on the up-event (release), not the down-event (press)
-- Provide undo or cancel options for actions
-- Use confirmation dialogs for critical actions
-- Test with users who have limited dexterity
+- Require up-event to complete actions
+- Provide a way to cancel or undo actions
+- Document pointer action conventions
+- Test with users who need to cancel actions
 
 For more, see the [W3C's Pointer Cancellation Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G218).
 
@@ -76,21 +77,22 @@ For more, see the [W3C's Pointer Cancellation Techniques](https://www.w3.org/WAI
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with up-event activation, right side with down-event activation]
+<!-- [Do/Don't graphic: Left side with cancel option, right side with no cancel option] -->
 
-- Triggering actions immediately on touch/click down
+- Completing actions on down-event only
 - No way to cancel or undo actions
-- Not testing with users who have motor impairments
+- Not documenting pointer action conventions
+- Not testing with users who need to cancel actions
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.5.2 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
-- **Level A:** Requires pointer cancellation or confirmation for all single-pointer actions.
-- **Level AA:** No additional requirements for 2.5.2.
-- **Level AAA:** No additional requirements for 2.5.2.
+- **Level A:** Requires pointer actions can be cancelled or require up-event to complete. This is the core requirement for 2.5.2 and is mandatory for basic accessibility.
+- **Level AA:** For Guideline 2.5.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
+- **Level AAA:** For Guideline 2.5.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
 
 For more, see the [W3C’s official documentation for 2.5.2 Pointer Cancellation](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation.html).
 
@@ -98,23 +100,23 @@ For more, see the [W3C’s official documentation for 2.5.2 Pointer Cancellation
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for cancel, undo, and up-event activation]
+<!-- [Checklist graphic: Icons for each item (cancel, pointer, undo, etc.)] -->
 
-- Actions are triggered on up-event, not down-event
-- Undo or cancel options are available
-- Confirmation dialogs for critical actions
-- Tested with users who have limited dexterity
+- Actions are not completed on down-event only
+- Users can cancel or undo actions
+- Pointer action conventions are documented
+- Tested with users who need to cancel actions
 
 ---
 
 ## **Summary**
 
-[Illustration: User tapping a button and having the option to cancel]
+<!-- [Illustration: User cancelling a pointer action in a web app] -->
 
-Guideline 2.5.2 ensures users can prevent accidental actions from pointer input. Always provide ways to cancel, undo, or confirm actions and test for accessibility.
+Guideline 2.5.2 is essential for giving users control and preventing mistakes. By allowing users to cancel or undo pointer actions, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make pointer cancellation a core part of your development process.
 
 **Next Up:**
 
-We’ll break down Guideline 2.5.3: Label in Name—how to make sure labels match what users see and say.
+[Read Guideline 2.5.3: Label in Name →](WCAG-Guideline-2-5-3-Label-in-Name-Explained)
 
-*Accessibility means control—let users confirm before taking action!*
+*Accessibility means control—help users avoid mistakes and recover easily!*

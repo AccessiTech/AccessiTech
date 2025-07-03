@@ -1,12 +1,13 @@
-<!--
+---
 title: WCAG Guideline 3.2.6: Consistent Help Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.6 (Consistent Help)—what it means, why it matters, and how to ensure help mechanisms are consistent across your site.
 keywords: wcag 3.2.6, consistent help, accessibility, web standards, user assistance, user experience
-image: wcag-3-2-6-consistent-help.png
-imageAlt: Illustration of a website with a help icon in the same place on every page
-status: draft
--->
+image: WCAG-Series-3-2-6.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.6 Explained, Consistent Help"
+published: true
+date: 2025-07-03
+---
 
 # **WCAG Guideline 3.2.6: Consistent Help Explained**
 
@@ -24,7 +25,7 @@ Guideline 3.2 focuses on making web pages behave in ways users expect, including
 
 ## **What Is Guideline 3.2.6 Consistent Help?**
 
-[Illustration: Website with a help icon in the same place on every page]
+<!-- [Illustration: Website with a help icon in the same place on every page] -->
 
 > "If a web page contains any mechanisms for help, they occur in the same relative order on each page where they are repeated."
 
@@ -38,7 +39,7 @@ Guideline 3.2.6 requires that help features (like contact info, chat, or FAQs) a
 
 ## **Why Does It Matter?**
 
-[Infographic: Help icon, user with assistive tech, and navigation bar]
+<!-- [Infographic: Help icon, user with assistive tech, and navigation bar] -->
 
 - **All Users:** Benefit from predictable help locations
 - **Screen Reader Users:** Rely on consistent navigation
@@ -50,7 +51,7 @@ For more, see [W3C’s guidance on Consistent Help](https://www.w3.org/WAI/WCAG2
 
 ## **What Needs Consistent Help?**
 
-[Grid: Help icons, contact links, chat buttons, and FAQs]
+<!-- [Grid: Help icons, contact links, chat buttons, and FAQs] -->
 
 - Contact information
 - Live chat or support buttons
@@ -61,7 +62,7 @@ For more, see [W3C’s guidance on Consistent Help](https://www.w3.org/WAI/WCAG2
 
 ## **How to Meet Guideline 3.2.6**
 
-[Side-by-side: Good example (help icon in same place) vs. Bad example (help icon moves between pages)]
+<!-- [Side-by-side: Good example (help icon in same place) vs. Bad example (help icon moves between pages)] -->
 
 - Place help features in the same location and order on every page
 - Use templates or components for help mechanisms
@@ -73,7 +74,7 @@ For more, see the [W3C's Consistent Help Techniques](https://www.w3.org/WAI/WCAG
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with consistent help, right side with help in different places]
+<!-- [Do/Don't graphic: Left side with consistent help, right side with help in different places] -->
 
 - Moving help features between pages
 - Inconsistent labeling or presentation of help
@@ -83,7 +84,7 @@ For more, see the [W3C's Consistent Help Techniques](https://www.w3.org/WAI/WCAG
 
 ## **Differences Between A, AA, and AAA for Guideline 3.2.6 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AAA:** Requires consistent help mechanisms across pages.
 - **Level AA:** Not applicable (3.2.6 is a Level AAA requirement).
@@ -95,7 +96,7 @@ For more, see the [W3C’s official documentation for 3.2.6 Consistent Help](htt
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for help, template, and navigation]
+<!-- [Checklist graphic: Icons for help, template, and navigation] -->
 
 - Help features are in the same place on every page
 - Consistent labeling and presentation
@@ -106,12 +107,12 @@ For more, see the [W3C’s official documentation for 3.2.6 Consistent Help](htt
 
 ## **Summary**
 
-[Illustration: User finding help easily on every page]
+<!-- [Illustration: User finding help easily on every page] -->
 
 Guideline 3.2.6 ensures that users can always find help in the same place, making your site more accessible and user-friendly.
 
 **Next Up:**
 
-[WCAG Guideline 3.3.7: Redundant Entry →](WCAG-Guideline-3-3-7-Redundant-Entry-Explained.md)
+[WCAG-Guideline-3-3-7-Redundant-Entry-Explained](WCAG-Guideline-3-3-7-Redundant-Entry-Explained)
 
 *Consistency builds trust—make help easy to find for everyone!*
