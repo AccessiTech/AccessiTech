@@ -9,7 +9,7 @@
   
           <url>
             <loc>https://www.accessi.tech/</loc>
-            <lastmod>2025-07-02T22:27:29.811Z</lastmod>
+            <lastmod>2025-07-03T01:04:39.298Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -21,7 +21,7 @@
         
           <url>
             <loc>https://www.accessi.tech/blog</loc>
-            <lastmod>2025-07-02T22:27:29.811Z</lastmod>
+            <lastmod>2025-07-03T01:04:39.298Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -33,7 +33,7 @@
         
           <url>
             <loc>https://www.accessi.tech/wcag</loc>
-            <lastmod>2025-07-02T22:27:29.811Z</lastmod>
+            <lastmod>2025-07-03T01:04:39.298Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -290,6 +290,162 @@
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.3.6.png</image:loc>
               <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.6 Explained, Identify Input Purpose"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-1-Use-of-Color-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.1.png" length="45763" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.1.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.1 Explained, Use of Color"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-10-Reflow-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.10.png" length="46823" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.10.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.10 Explained, Reflow"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-11-Non-text-Contrast-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.11.png" length="49309" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.11.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.11 Non-text Contrast"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-12-Text-Spacing-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.12.png" length="50341" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.12.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.12, Text Spacing"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-13-Content-on-Hover-or-Focus-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.13.png" length="52818" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.13.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.13, Content on Hover or Focus"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-2-Audio-Control-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.2.png" length="46937" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.2.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.2 Explained, Audio Control"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-3-Contrast-Minimum-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.3.png" length="52109" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.3.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.3 Explained, Contrast (Minimum)"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-4-Resize-Text-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.4.png" length="46829" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.4.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.4 Explained, Resize Text"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-5-Images-of-Text-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.5.png" length="49576" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.5.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.5 Explained, Images of Text"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-6-Contrast-Enhanced-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.6.png" length="53865" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.6.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.6 Explained, Contrast (Enhanced)"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-7-Low-or-No-Background-Audio-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.7.png" length="56465" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.7.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.7 Explained, Low or No Background Audio"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-8-Visual-Presentation-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.8.png" length="49864" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.8.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.8 Explained, Visual Presentation"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-1-4-9-Images-of-Text-No-Exception-Explained</loc>
+            <lastmod>2025-07-01T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.4.9.png" length="61053" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.4.9.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.9 Explained, Images of Text (No Exception)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>

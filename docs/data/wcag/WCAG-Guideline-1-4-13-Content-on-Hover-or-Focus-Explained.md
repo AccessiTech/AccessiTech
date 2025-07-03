@@ -3,9 +3,10 @@ title: WCAG Guideline 1.4.13: Content on Hover or Focus Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.13 (Content on Hover or Focus)—what it means, why it matters, and how to ensure popups and tooltips are accessible.
 keywords: wcag 1.4.13, content on hover, accessibility, web standards, tooltips, popups
-image: wcag-1-4-13-content-on-hover-or-focus.png
-imageAlt: Illustration of a tooltip appearing on hover and focus with accessibility icons
-status: draft
+image: WCAG-Series-1.4.13.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.13, Content on Hover or Focus"
+status: published
+date: 2025-07-01
 -->
 
 # **WCAG Guideline 1.4.13: Content on Hover or Focus Explained**
@@ -24,7 +25,7 @@ Guideline 1.4 focuses on making content easier to see and hear. Content on Hover
 
 ## **What Is Guideline 1.4.13 Content on Hover or Focus?**
 
-[Illustration: Tooltip appearing on both mouse hover and keyboard focus]
+<!-- [Illustration: Tooltip appearing on both mouse hover and keyboard focus] -->
 
 > "Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true: the content can be dismissed, remains visible while hovered or focused, and is accessible."
 
@@ -38,7 +39,7 @@ Guideline 1.4.13 Content on Hover or Focus is a Level AA requirement in the [Web
 
 ## **Why Does It Matter?**
 
-[Infographic: Keyboard and mouse icons, user with vision and mobility aids]
+<!-- [Infographic: Keyboard and mouse icons, user with vision and mobility aids] -->
 
 - **Accessibility:** Some users rely on keyboard navigation or assistive tech.
 - **Inclusivity:** Ensures everyone can access and dismiss popups.
@@ -49,7 +50,7 @@ Guideline 1.4.13 Content on Hover or Focus is a Level AA requirement in the [Web
 
 ## **What Needs to Support Accessible Popups?**
 
-[Grid: Tooltips, dropdowns, and popups, all accessible by mouse and keyboard]
+<!-- [Grid: Tooltips, dropdowns, and popups, all accessible by mouse and keyboard] -->
 
 - Tooltips and help bubbles
 - Dropdown menus
@@ -62,7 +63,7 @@ All must be accessible, dismissible, and persistent while hovered or focused.
 
 ## **How to Meet Guideline 1.4.13**
 
-[Side-by-side: Tooltip with close button and persistent on focus vs. tooltip that disappears too quickly]
+<!-- [Side-by-side: Tooltip with close button and persistent on focus vs. tooltip that disappears too quickly] -->
 
 - Ensure popups can be dismissed without moving pointer or focus
 - Keep content visible while hovered or focused
@@ -76,7 +77,7 @@ For more, see the [W3C's Content on Hover or Focus Techniques](https://www.w3.or
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with accessible, dismissible popups, right side with popups that disappear or trap focus]
+<!-- [Do/Don't graphic: Left side with accessible, dismissible popups, right side with popups that disappear or trap focus] -->
 
 - Popups that disappear before users can interact
 - No way to dismiss popups with keyboard
@@ -87,7 +88,7 @@ For more, see the [W3C's Content on Hover or Focus Techniques](https://www.w3.or
 
 ## **Differences Between A, AA, and AAA for Guideline 1.4.13 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No specific requirement for content on hover or focus.
 - **Level AA:** Requires popups/tooltips to be dismissible, persistent, and accessible.
@@ -99,7 +100,7 @@ For more, see the [W3C’s official documentation for 1.4.13 Content on Hover or
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for tooltip, close button, keyboard, and mouse]
+<!-- [Checklist graphic: Icons for tooltip, close button, keyboard, and mouse] -->
 
 - All popups/tooltips are dismissible
 - Remain visible while hovered or focused
@@ -110,7 +111,7 @@ For more, see the [W3C’s official documentation for 1.4.13 Content on Hover or
 
 ## **Summary**
 
-[Illustration: User interacting with accessible tooltip using both mouse and keyboard]
+<!-- [Illustration: User interacting with accessible tooltip using both mouse and keyboard] -->
 
 Guideline 1.4.13 ensures all users can access, read, and dismiss popups and tooltips. Always test with keyboard and assistive tech to ensure accessibility.
 

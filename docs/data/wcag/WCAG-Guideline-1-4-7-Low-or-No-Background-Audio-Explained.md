@@ -3,9 +3,10 @@ title: WCAG Guideline 1.4.7: Low or No Background Audio Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.7 (Low or No Background Audio)—what it means, why it matters, and how to ensure audio content is accessible for everyone.
 keywords: wcag 1.4.7, background audio, accessibility, web standards, audio clarity, speech
-image: wcag-1-4-7-low-or-no-background-audio.png
-imageAlt: Illustration of a speaker with a background music note and a speech bubble
-status: draft
+image: WCAG-Series-1.4.7.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.7 Explained, Low or No Background Audio"
+status: published
+date: 2025-07-01
 -->
 
 # **WCAG Guideline 1.4.7: Low or No Background Audio Explained**
@@ -24,7 +25,7 @@ Guideline 1.4 focuses on making content easier to see and hear. For audio, this 
 
 ## **What Is Guideline 1.4.7 Low or No Background Audio?**
 
-[Illustration: Speaker icon with a music note faded behind a clear speech bubble]
+<!-- [Illustration: Speaker icon with a music note faded behind a clear speech bubble] -->
 
 > "For prerecorded audio-only content that contains primarily speech, background sounds are either at least 20 decibels lower than the speech content, can be turned off, or are not present."
 
@@ -49,7 +50,7 @@ Guideline 1.4.7 Low or No Background Audio is a Level AAA requirement in the [We
 
 ## **What Needs to Support Accessible Audio?**
 
-[Grid: Podcast, lecture, and audio player, all with clear speech and minimal background noise]
+<!-- [Grid: Podcast, lecture, and audio player, all with clear speech and minimal background noise] -->
 
 - Podcasts and audio lectures
 - Prerecorded audio-only content
@@ -61,7 +62,7 @@ All must ensure speech is not masked by background sounds.
 
 ## **How to Meet Guideline 1.4.7**
 
-[Side-by-side: Audio waveform with loud background vs. waveform with clear speech and low background]
+<!-- [Side-by-side: Audio waveform with loud background vs. waveform with clear speech and low background] -->
 
 - Mix background audio at least 20 dB lower than speech
 - Provide a version with no background audio
@@ -74,7 +75,7 @@ For more, see the [W3C's Low or No Background Audio Techniques](https://www.w3.o
 
 ## **Common Mistakes to Avoid**
 
-[Do/Don't graphic: Left side with clear speech, right side with loud background music]
+<!-- [Do/Don't graphic: Left side with clear speech, right side with loud background music] -->
 
 - Background music too loud compared to speech
 - No option to turn off background sounds
@@ -84,7 +85,7 @@ For more, see the [W3C's Low or No Background Audio Techniques](https://www.w3.o
 
 ## **Differences Between A, AA, and AAA for Guideline 1.4.7 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A & AA:** No requirement for background audio in speech content.
 - **Level AAA:** Requires background audio to be at least 20 dB lower than speech, removable, or absent.
@@ -95,7 +96,7 @@ For more, see the [W3C’s official documentation for 1.4.7 Low or No Background
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for audio, speech, and background music]
+<!-- [Checklist graphic: Icons for audio, speech, and background music] -->
 
 - Speech is always clear and distinguishable
 - Background audio is at least 20 dB lower than speech
@@ -106,12 +107,12 @@ For more, see the [W3C’s official documentation for 1.4.7 Low or No Background
 
 ## **Summary**
 
-[Illustration: User listening to a podcast with clear speech and no distracting background music]
+<!-- [Illustration: User listening to a podcast with clear speech and no distracting background music] -->
 
 Guideline 1.4.7 ensures that speech in audio content is always clear and accessible. Keep background sounds low or removable to support all users.
 
 **Next Up:**
 
-[Read Guideline 1.4.8: Visual Presentation →](WCAG-Guideline-1-4-8-Visual-Presentation-Explained.md)
+[Read Guideline 1.4.8: Visual Presentation →](WCAG-Guideline-1-4-8-Visual-Presentation-Explained)
 
 *Accessibility means everyone can hear your message—don’t let background noise get in the way!*

@@ -2,10 +2,10 @@
 title: WCAG Guideline 1.4.3: Contrast (Minimum) Explained
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.3 (Contrast Minimum)—what it means, why it matters, and how to ensure text is readable for everyone.
-keywords: wcag 1.4.3, contrast, accessibility, web standards, color contrast, readability
-image: wcag-1-4-3-contrast-minimum.png
-imageAlt: Illustration of text with high and low contrast examples
-status: draft
+image: WCAG-Series-1.4.3.png
+imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.3 Explained, Contrast (Minimum)"
+status: published
+date: 2025-07-01
 -->
 
 # **WCAG Guideline 1.4.3: Contrast (Minimum) Explained**

@@ -284,5 +284,174 @@
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
+        <item>
+          <title>WCAG Guideline 1.4.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-1-Use-of-Color-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.1 (Use of Color)—what it means, why it matters, and how to ensure information is not conveyed by color alone.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.1 Explained, Use of Color"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.10</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-10-Reflow-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.10 (Reflow)—what it means, why it matters, and how to ensure your content works on any screen size.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.10.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.10.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.10 Explained, Reflow"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.10.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.11</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-11-Non-text-Contrast-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.11 (Non-text Contrast)—what it means, why it matters, and how to ensure all visual elements are distinguishable.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.11.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.11.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.11 Non-text Contrast"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.11.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.12</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-12-Text-Spacing-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.12 (Text Spacing)—what it means, why it matters, and how to ensure your content is readable with custom spacing.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.12.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.12.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.12, Text Spacing"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.12.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.13</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-13-Content-on-Hover-or-Focus-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.13 (Content on Hover or Focus)—what it means, why it matters, and how to ensure popups and tooltips are accessible.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.13.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.13.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.13, Content on Hover or Focus"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.13.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-2-Audio-Control-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.2 (Audio Control)—what it means, why it matters, and how to ensure users can control audio that plays automatically.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.2 Explained, Audio Control"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-3-Contrast-Minimum-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.3 (Contrast Minimum)—what it means, why it matters, and how to ensure text is readable for everyone.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.3 Explained, Contrast (Minimum)"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-4-Resize-Text-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.4 (Resize Text)—what it means, why it matters, and how to ensure text remains readable when users zoom or increase font size.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.4 Explained, Resize Text"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-5-Images-of-Text-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.5 (Images of Text)—what it means, why it matters, and how to ensure text is real, not just an image.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.5 Explained, Images of Text"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.6</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-6-Contrast-Enhanced-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.6 (Contrast Enhanced)—what it means, why it matters, and how to ensure text is readable for users with low vision.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.6 Explained, Contrast (Enhanced)"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.6.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.7</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-7-Low-or-No-Background-Audio-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.7 (Low or No Background Audio)—what it means, why it matters, and how to ensure audio content is accessible for everyone.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.7.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.7.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.7 Explained, Low or No Background Audio"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.7.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.8</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-8-Visual-Presentation-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.8 (Visual Presentation)—what it means, why it matters, and how to give users control over how text is displayed.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.8.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.8.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.8 Explained, Visual Presentation"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.8.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 1.4.9</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-9-Images-of-Text-No-Exception-Explained</link>
+          <pubDate>2025-07-01</pubDate>
+          <description>A practical guide to WCAG Guideline 1.4.9 (Images of Text No Exception)—what it means, why it matters, and how to ensure all text is real, not just an image.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.9.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.9.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.9 Explained, Images of Text (No Exception)"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.9.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
   </channel>
 </rss>

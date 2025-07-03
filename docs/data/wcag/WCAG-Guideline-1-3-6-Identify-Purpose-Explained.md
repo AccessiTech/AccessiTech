@@ -124,4 +124,4 @@ Guideline 1.3.6 is essential for making your site understandable and navigable f
 
 **Next Up:**
 
-*Accessibility means everyone gets the full story—make your UI purposeful!*
+[Read Guideline 1.4.1: Use of Color →](WCAG-Guideline-1-4-1-Use-of-Color-Explained)
