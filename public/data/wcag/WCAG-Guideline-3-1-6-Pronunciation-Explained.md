@@ -7,6 +7,7 @@ image: WCAG-Series-3-1-6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.6 Explained, Pronunciation"
 status: published
 date: 2025-07-03
+excerpt: Helps users understand how words are spoken, improving clarity for screen readers and all users.
 ---
 
 # **WCAG Guideline 3.1.6: Pronunciation Explained**

@@ -7,6 +7,7 @@ image: WCAG-Series-2-4-6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.6 Explained, Headings and Labels"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures headings and labels describe the topic or purpose clearly.
 -->
 
 # **WCAG Guideline 2.4.6: Headings and Labels Explained**

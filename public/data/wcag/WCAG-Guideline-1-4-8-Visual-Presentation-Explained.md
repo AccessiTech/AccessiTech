@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.8.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.8 Explained, Visual Presentation"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures users have control over how text is visually presented.
 -->
 
 # **WCAG Guideline 1.4.8: Visual Presentation Explained**

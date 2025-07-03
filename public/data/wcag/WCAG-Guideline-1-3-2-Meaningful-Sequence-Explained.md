@@ -7,6 +7,7 @@ image: WCAG-Series-1.3.2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.2 Explained, Meaningful Sequence"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures content is presented in a logical order for all users.
 -->
 
 # **WCAG Guideline 1.3.2: Meaningful Sequence Explained**

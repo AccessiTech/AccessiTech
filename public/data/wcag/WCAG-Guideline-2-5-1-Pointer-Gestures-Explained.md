@@ -7,6 +7,7 @@ image: WCAG-Series-2-5-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.1 Explained, Pointer Gestures"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures all functionality is operable with simple pointer gestures.
 -->
 
 # **WCAG Guideline 2.5.1: Pointer Gestures Explained**

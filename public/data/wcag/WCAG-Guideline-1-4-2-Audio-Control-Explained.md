@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.2 Explained, Audio Control"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures users can control audio that plays automatically.
 -->
 
 # **WCAG Guideline 1.4.2: Audio Control Explained**

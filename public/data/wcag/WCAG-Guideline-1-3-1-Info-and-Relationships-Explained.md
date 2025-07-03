@@ -7,6 +7,7 @@ image: WCAG-Series-1.3.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.1 Explained,  Info and Relationships"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures information and relationships are programmatically determined or available in text.
 -->
 
 # **WCAG Guideline 1.3.1: Info and Relationships Explained**

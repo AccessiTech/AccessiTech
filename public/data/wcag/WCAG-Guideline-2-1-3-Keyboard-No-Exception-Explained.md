@@ -7,6 +7,7 @@ image: WCAG-Series-2-1-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.3 Explained, Keyboard No Exception"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures all functionality is accessible via keyboard with absolutely no exceptions.
 -->
 
 # **WCAG Guideline 2.1.3: Keyboard (No Exception) Explained**

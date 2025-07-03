@@ -7,6 +7,7 @@ image: WCAG-Series-3-1-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.5 Explained, Reading Level"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures content is readable for a wide audience by considering reading levels.
 ---
 
 # **WCAG Guideline 3.1.5: Reading Level Explained**

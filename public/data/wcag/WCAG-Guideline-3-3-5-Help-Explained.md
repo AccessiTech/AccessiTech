@@ -7,6 +7,7 @@ image: WCAG-Series-3-3-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.5 Explained, Help"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures context-sensitive help is available for users completing forms and complex tasks.
 ---
 
 # **WCAG Guideline 3.3.5: Help Explained**

@@ -7,6 +7,7 @@ image: WCAG-Series-3-3-9.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.9 Explained, Accessible Authentication (Enhanced)"
 status: published
 date: 2025-07-03
+excerpt: Ensures authentication processes are accessible for all users, including those with disabilities.
 ---
 
 # **WCAG Guideline 3.3.9: Accessible Authentication (Enhanced) Explained**

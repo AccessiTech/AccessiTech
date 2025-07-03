@@ -7,6 +7,7 @@ image: WCAG-Series-5-2-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.3 Explained, User Preferences"
 status: published
 date: 2025-07-03
+excerpt: Ensures users can set and save their accessibility preferences for a personalized experience.
 ---
 
 # **WCAG Guideline 5.2.3: User Preferences Explained**

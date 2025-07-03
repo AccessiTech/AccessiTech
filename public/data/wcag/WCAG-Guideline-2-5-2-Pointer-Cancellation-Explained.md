@@ -7,6 +7,7 @@ image: WCAG-Series-2-5-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.2 Explained, Pointer Cancellation"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures users can cancel pointer actions before they are completed, preventing accidental interactions.
 -->
 
 # **WCAG Guideline 2.5.2: Pointer Cancellation Explained**

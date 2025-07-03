@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.11.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.11 Non-text Contrast"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures user interface components and graphical objects have sufficient contrast for visibility.
 -->
 
 # **WCAG Guideline 1.4.11: Non-text Contrast Explained**

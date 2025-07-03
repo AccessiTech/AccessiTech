@@ -7,6 +7,7 @@ image: WCAG-Series-2-1-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.2 Explained, No Keyboard Trap"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures keyboard users can navigate to and away from any component without getting trapped.
 -->
 
 # **WCAG Guideline 2.1.2: No Keyboard Trap Explained**

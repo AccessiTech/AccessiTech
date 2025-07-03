@@ -7,6 +7,7 @@ image: WCAG-Series-5-1-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.1.1 Explained, General"
 status: published
 date: 2025-07-03
+excerpt: This guideline outlines the general requirements for conformance with WCAG standards.
 -->
 
 # **WCAG Guideline 5.1.1: General Explained**

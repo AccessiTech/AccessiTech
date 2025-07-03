@@ -7,6 +7,7 @@ image: WCAG-Series-4-1-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.3 Explained, Status Messages"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures status messages are programmatically determined through role or properties.
 ---
 
 # **WCAG Guideline 4.1.3: Status Messages Explained**

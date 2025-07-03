@@ -7,6 +7,7 @@ image: WCAG-Series-4-1-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.1 Explained, Parsing"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures content is correctly parsed by user agents for accessibility.
 ---
 
 # **WCAG Guideline 4.1.1: Parsing Explained**

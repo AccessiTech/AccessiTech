@@ -7,6 +7,7 @@ image: WCAG-Series-3-1-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.4 Explained, Abbreviations"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures abbreviations are explained or expanded for accessibility.
 -->
 
 # **WCAG Guideline 3.1.4: Abbreviations Explained**

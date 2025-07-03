@@ -7,6 +7,7 @@ image: WCAG-Series-3-1-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.3 Explained, Unusual Words"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures unusual words are explained or defined for clarity.
 -->
 
 # **WCAG Guideline 3.1.3: Unusual Words Explained**

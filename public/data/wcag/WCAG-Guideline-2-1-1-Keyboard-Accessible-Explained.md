@@ -7,6 +7,7 @@ image: WCAG-Series-2-1-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.1 Explained, Keyboard Accessible"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures all functionality is accessible using only a keyboard.
 -->
 
 # **WCAG Guideline 2.1.1: Keyboard Accessible Explained**

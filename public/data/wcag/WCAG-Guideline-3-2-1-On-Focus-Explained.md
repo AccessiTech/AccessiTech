@@ -7,6 +7,7 @@ image: WCAG-Series-3-2-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.1 Explained, On Focus"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures user focus does not trigger unexpected changes.
 ---
 
 # **WCAG Guideline 3.2.1: On Focus Explained**
@@ -116,3 +117,5 @@ Guideline 3.2.1 ensures that users can navigate your site without surprises. Foc
 [WCAG-Guideline-3-2-2-On-Input-Explained](WCAG-Guideline-3-2-2-On-Input-Explained)
 
 *Predictability is key—let users control what happens when they focus on your content!*
+
+<!-- excerpt: This guideline ensures user focus does not trigger unexpected changes. -->

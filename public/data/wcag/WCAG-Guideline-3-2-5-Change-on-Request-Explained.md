@@ -7,6 +7,7 @@ image: WCAG-Series-3-2-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.5 Explained, Change on Request"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures changes in context or content only happen when users request them.
 ---
 
 # **WCAG Guideline 3.2.5: Change on Request Explained**
@@ -117,3 +118,5 @@ Guideline 3.2.5 ensures that users are always in control of when changes happen 
 [WCAG-Guideline-3-2-6-Consistent-Help-Explained](WCAG-Guideline-3-2-6-Consistent-Help-Explained)
 
 *User control is essential—make sure changes only happen when your users want them!*
+
+<!-- excerpt: This guideline ensures changes in context or content only happen when users request them. -->

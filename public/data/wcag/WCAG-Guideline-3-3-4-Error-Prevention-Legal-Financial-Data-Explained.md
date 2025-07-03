@@ -7,6 +7,7 @@ image: WCAG-Series-3-3-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.4 Explained, Error Prevention (Legal, Financial, Data)"
 status: published
 date: 2025-07-03
+excerpt: This guideline helps users avoid costly mistakes in critical transactions.
 ---
 
 # **WCAG Guideline 3.3.4: Error Prevention (Legal, Financial, Data) Explained**

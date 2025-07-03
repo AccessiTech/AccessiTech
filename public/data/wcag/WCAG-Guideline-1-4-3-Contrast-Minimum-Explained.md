@@ -6,6 +6,7 @@ image: WCAG-Series-1.4.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.3 Explained, Contrast (Minimum)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures text is readable against its background for all users.
 -->
 
 # **WCAG Guideline 1.4.3: Contrast (Minimum) Explained**

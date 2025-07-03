@@ -7,6 +7,7 @@ image: WCAG-Series-2-3-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.1 Explained, Three Flashes or Below Threshold"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures content doesn't flash in ways that could trigger seizures or physical discomfort.
 -->
 
 # **WCAG Guideline 2.3.1: Three Flashes or Below Threshold Explained**

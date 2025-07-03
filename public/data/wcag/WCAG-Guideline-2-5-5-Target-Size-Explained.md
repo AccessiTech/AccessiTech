@@ -7,6 +7,7 @@ image: WCAG-Series-2-5-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.5 Explained, Target Size"
 status: published
 date: 2025-07-03
+excerpt: Ensures touch targets are large enough for all users, improving accessibility and usability.
 -->
 
 # **WCAG Guideline 2.5.5: Target Size Explained**

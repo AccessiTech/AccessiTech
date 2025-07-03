@@ -7,6 +7,7 @@ image: WCAG-Series-2-4-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.1 Explained, Bypass Blocks"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures users can skip repetitive content to access main content quickly.
 -->
 
 # **WCAG Guideline 2.4.1: Bypass Blocks Explained**

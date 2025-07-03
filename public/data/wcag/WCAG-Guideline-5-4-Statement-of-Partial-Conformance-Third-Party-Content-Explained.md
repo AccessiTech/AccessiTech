@@ -7,6 +7,7 @@ image: WCAG-Series-5-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.4 Explained, Statement of Partial Conformance – Third Party Content"
 status: published
 date: 2025-07-03
+excerpt: This guideline explains how to document accessibility for third-party content you do not control.
 ---
 
 # **WCAG Guideline 5.4: Statement of Partial Conformance – Third Party Content Explained**

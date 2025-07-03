@@ -7,6 +7,7 @@ image: WCAG-Series-2-2-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.4 Explained, Interruptions"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures users can postpone or suppress interruptions like notifications or alerts.
 -->
 
 # **WCAG Guideline 2.2.4: Interruptions Explained**

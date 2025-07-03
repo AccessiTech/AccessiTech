@@ -7,6 +7,7 @@ image: WCAG-Series-2-5-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.3 Explained, Label in Name"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures visible labels match accessible names for controls.
 -->
 
 # **WCAG Guideline 2.5.3: Label in Name Explained**

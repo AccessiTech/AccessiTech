@@ -7,6 +7,7 @@ image: WCAG-Series-2-4-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.4 Explained, Link Purpose (In Context)"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures every link's purpose is clear from its context.
 -->
 
 # **WCAG Guideline 2.4.4: Link Purpose (In Context) Explained**

@@ -7,6 +7,7 @@ image: WCAG-Series-2-6-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.6.1 Explained, Device Sensors"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures users can operate functionality without relying solely on device sensors.
 -->
 
 # **WCAG Guideline 2.6.1: Device Sensors Explained**

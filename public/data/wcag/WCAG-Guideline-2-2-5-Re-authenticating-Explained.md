@@ -7,6 +7,7 @@ image: WCAG-Series-2-2-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.5 Explained, Re-authenticating"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures users can continue their activities without losing data after re-authentication.
 -->
 
 # **WCAG Guideline 2.2.5: Re-authenticating Explained**

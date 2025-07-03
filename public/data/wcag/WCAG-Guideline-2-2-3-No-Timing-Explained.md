@@ -7,6 +7,7 @@ image: WCAG-Series-2-2-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.3 Explained, No Timing"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures content is accessible without unnecessary time limits.
 -->
 
 # **WCAG Guideline 2.2.3: No Timing Explained**

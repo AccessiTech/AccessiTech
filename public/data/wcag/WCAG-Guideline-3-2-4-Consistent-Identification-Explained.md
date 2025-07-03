@@ -7,6 +7,7 @@ image: WCAG-Series-3-2-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.4 Explained, Consistent Identification"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures controls and components are identified consistently across your site.
 ---
 
 # **WCAG Guideline 3.2.4: Consistent Identification Explained**
@@ -117,3 +118,5 @@ Guideline 3.2.4 ensures that users can recognize and use controls confidently. C
 [WCAG-Guideline-3-2-5-Change-on-Request-Explained](WCAG-Guideline-3-2-5-Change-on-Request-Explained)
 
 *Consistency is clarity—make your controls easy to recognize and use for everyone!*
+
+<!-- excerpt: This guideline ensures controls and components are recognizable across your site. -->

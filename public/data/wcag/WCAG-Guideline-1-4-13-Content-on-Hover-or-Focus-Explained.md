@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.13.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.13, Content on Hover or Focus"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures tooltips and popups are accessible, dismissible, and do not interfere with content.
 -->
 
 # **WCAG Guideline 1.4.13: Content on Hover or Focus Explained**

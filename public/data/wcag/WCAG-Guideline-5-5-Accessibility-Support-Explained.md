@@ -7,6 +7,7 @@ image: WCAG-Series-5-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.5 Explained, Accessibility Support"
 status: published
 date: 2025-07-03
+excerpt: Ensures accessibility support is documented and considered for new and emerging technologies.
 ---
 
 # **WCAG Guideline 5.5: Accessibility Support Explained**

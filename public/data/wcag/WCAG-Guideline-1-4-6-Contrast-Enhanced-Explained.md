@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.6 Explained, Contrast (Enhanced)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures text is readable for users with low vision by enhancing contrast.
 -->
 
 # **WCAG Guideline 1.4.6: Contrast (Enhanced) Explained**

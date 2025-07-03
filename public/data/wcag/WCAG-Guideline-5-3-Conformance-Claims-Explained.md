@@ -7,6 +7,7 @@ image: WCAG-Series-5-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.3 Explained, Conformance Claims (Optional)"
 status: published
 date: 2025-07-03
+excerpt: This guideline explains how to make and document conformance claims for accessibility.
 ---
 
 # **WCAG Guideline 5.3: Conformance Claims (Optional) Explained**

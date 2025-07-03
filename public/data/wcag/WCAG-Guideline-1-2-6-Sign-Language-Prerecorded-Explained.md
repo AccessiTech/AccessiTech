@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.6 Explained, Sign Language (Prerecorded)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures prerecorded video content is accessible with sign language interpretation.
 -->
 
 # **WCAG Guideline 1.2.6: Sign Language (Prerecorded) Explained**

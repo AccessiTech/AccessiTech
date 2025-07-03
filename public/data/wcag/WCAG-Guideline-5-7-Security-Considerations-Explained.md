@@ -2,6 +2,7 @@
 title: 5.7 - Security Considerations
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.7 (Security Considerations)—what it means, why it matters, and how to address security in accessible digital experiences.
+excerpt: This guideline explains how to balance security requirements with accessibility needs, ensuring that security measures don't create barriers for users with disabilities.
 keywords: wcag 5.7, security, accessibility, web standards, user experience, emerging technologies
 image: WCAG-Series-5-7.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.7 Explained, Security Considerations"

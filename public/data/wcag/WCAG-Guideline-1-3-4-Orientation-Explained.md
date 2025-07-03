@@ -7,6 +7,7 @@ image: WCAG-Series-1.3.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.4 Explained, Orientation"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures content is not restricted to a single display orientation.
 -->
 
 # **WCAG Guideline 1.3.4: Orientation Explained**

@@ -7,6 +7,7 @@ image: WCAG-Series-5-2-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.5 Explained, User Input"
 status: published
 date: 2025-07-03
+excerpt: Ensures user input is accessible on new and emerging platforms, supporting all users.
 ---
 
 # **WCAG Guideline 5.2.5: User Input Explained**

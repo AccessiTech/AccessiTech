@@ -7,6 +7,7 @@ image: WCAG-Series-5-2-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.4 Explained, User Notifications"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures notifications in emerging technologies are accessible to all users regardless of disability.
 ---
 
 # **WCAG Guideline 5.2.4: User Notifications Explained**

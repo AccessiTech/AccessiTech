@@ -7,6 +7,7 @@ image: WCAG-Series-2-4-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.2 Explained, Page Titled"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures every web page has a clear and descriptive title.
 -->
 
 # **WCAG Guideline 2.4.2: Page Titled Explained**

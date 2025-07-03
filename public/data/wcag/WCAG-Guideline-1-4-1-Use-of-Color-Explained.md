@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.1 Explained, Use of Color"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures information is not conveyed by color alone.
 -->
 
 # **WCAG Guideline 1.4.1: Use of Color Explained**

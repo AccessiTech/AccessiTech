@@ -7,6 +7,7 @@ image: WCAG-Series-5-2-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.1 Explained, Platform Accessibility"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures emerging technology platforms support accessibility features for all users.
 ---
 
 # **WCAG Guideline 5.2.1: Platform Accessibility Explained**

@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.1 Explained, Audio-only and Video-only (Prerecorded)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures audio-only and video-only content is accessible with captions or transcripts.
 -->
 
 # **WCAG Guideline 1.2.1: Audio-only and Video-only (Prerecorded) Explained**

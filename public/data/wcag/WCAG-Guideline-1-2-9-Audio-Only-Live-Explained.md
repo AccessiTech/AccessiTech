@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.9.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.9 Explained, Audio Only (Live)"
 status: published
 date: 2025-07-01
+excerpt: Ensures live audio content is accessible, for example by providing live captions.
 -->
 
 # **WCAG Guideline 1.2.9: Audio-only (Live) Explained**

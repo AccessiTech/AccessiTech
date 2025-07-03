@@ -7,6 +7,7 @@ image: WCAG-Series-2-4-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.5 Explained, Multiple Ways"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures users have multiple ways to locate content on your site.
 -->
 
 # **WCAG Guideline 2.4.5: Multiple Ways Explained**

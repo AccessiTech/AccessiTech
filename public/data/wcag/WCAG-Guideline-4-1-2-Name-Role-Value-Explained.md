@@ -7,6 +7,7 @@ image: WCAG-Series-4-1-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.2 Explained, Name, Role, Value"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures user interface components have name, role, and value that can be programmatically determined.
 ---
 
 # **WCAG Guideline 4.1.2: Name, Role, Value Explained**

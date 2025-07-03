@@ -7,6 +7,7 @@ image: WCAG-Series-2-5-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.4 Explained, Motion Actuation"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures users can operate functionality without relying on device motion.
 -->
 
 # **WCAG Guideline 2.5.4: Motion Actuation Explained**

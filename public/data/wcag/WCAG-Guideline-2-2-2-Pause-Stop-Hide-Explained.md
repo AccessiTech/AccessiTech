@@ -7,6 +7,7 @@ image: WCAG-Series-2-2-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.2 Explained, Pause, Stop, Hide"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures users can control moving, blinking, or auto-updating content.
 -->
 
 # **WCAG Guideline 2.2.2: Pause, Stop, Hide Explained**

@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.5 Explained, Images of Text"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures text is real and not just an image for accessibility.
 -->
 
 # **WCAG Guideline 1.4.5: Images of Text Explained**

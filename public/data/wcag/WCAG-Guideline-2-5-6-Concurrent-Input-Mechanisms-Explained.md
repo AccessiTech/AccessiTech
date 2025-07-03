@@ -7,6 +7,7 @@ image: WCAG-Series-2-5-6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.6 Explained, Concurrent Input Mechanisms"
 status: published
 date: 2025-07-03
+excerpt: Ensures users can switch between input methods, supporting accessibility for diverse needs.
 -->
 
 # **WCAG Guideline 2.5.6: Concurrent Input Mechanisms Explained**

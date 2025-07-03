@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.4 Explained, Captions (Live)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures live video content is accessible with captions.
 -->
 
 # **WCAG Guideline 1.2.4: Captions (Live) Explained**

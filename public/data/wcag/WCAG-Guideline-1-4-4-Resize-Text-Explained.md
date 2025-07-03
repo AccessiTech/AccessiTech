@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.4 Explained, Resize Text"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures text remains readable when users zoom or increase font size.
 -->
 
 # **WCAG Guideline 1.4.4: Resize Text Explained**
@@ -31,7 +32,7 @@ Guideline 1.4 focuses on making content easier to see and hear. Users with low v
 
 Guideline 1.4.4 Resize Text is a requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#resize-text).
 
-- Users must be able to increase text size up to 200% without losing content or functionality.
+- Users must be able to increase text size to 200% without losing content or functionality.
 - Applies to all text except captions and images of text.
 - Ensures layouts remain usable and readable when zoomed.
 

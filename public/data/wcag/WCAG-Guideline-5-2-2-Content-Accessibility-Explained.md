@@ -7,6 +7,7 @@ image: WCAG-Series-5-2-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.2 Explained, Content Accessibility"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures content remains accessible regardless of the technology platform used to deliver it.
 ---
 
 # **WCAG Guideline 5.2.2: Content Accessibility Explained**

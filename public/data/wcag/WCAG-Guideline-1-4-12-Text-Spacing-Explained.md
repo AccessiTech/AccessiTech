@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.12.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.12, Text Spacing"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures content remains readable when users adjust text spacing for better readability.
 -->
 
 # **WCAG Guideline 1.4.12: Text Spacing Explained**

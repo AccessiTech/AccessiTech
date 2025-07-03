@@ -7,6 +7,7 @@ image: WCAG-Series-2-4-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.3 Explained, Focus Order"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures a logical focus order for keyboard navigation.
 -->
 
 # **WCAG Guideline 2.4.3: Focus Order Explained**

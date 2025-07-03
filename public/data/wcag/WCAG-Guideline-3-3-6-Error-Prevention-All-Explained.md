@@ -7,6 +7,7 @@ image: WCAG-Series-3-3-6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.6 Explained, Error Prevention (All)"
 status: published
 date: 2025-07-03
+excerpt: This guideline helps users avoid mistakes in forms and submissions.
 ---
 
 # **WCAG Guideline 3.3.6: Error Prevention (All) Explained**

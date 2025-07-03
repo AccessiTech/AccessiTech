@@ -7,6 +7,7 @@ image: WCAG-Series-3-1-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.2 Explained, Language of Parts"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures the language of each part of a page is programmatically determined.
 -->
 
 # **WCAG Guideline 3.1.2: Language of Parts Explained**

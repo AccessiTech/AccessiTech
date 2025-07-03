@@ -7,6 +7,7 @@ image: WCAG-Series-3-3-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.2 Explained, Labels or Instructions"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures forms and interactive elements have clear labels and instructions for users.
 ---
 
 # **WCAG Guideline 3.3.2: Labels or Instructions Explained**

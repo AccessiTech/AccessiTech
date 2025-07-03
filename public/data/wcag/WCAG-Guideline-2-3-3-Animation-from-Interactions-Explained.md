@@ -7,6 +7,7 @@ image: WCAG-Series-2-3-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.3 Explained, Animation from Interactions"
 status: published
 date: 2025-07-03
+excerpt: Ensures users can disable non-essential animation triggered by interaction, reducing discomfort or distraction.
 -->
 
 # **WCAG Guideline 2.3.3: Animation from Interactions Explained**

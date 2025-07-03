@@ -7,6 +7,7 @@ image: WCAG-Series-2-2-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.1 Explained, Timing Adjustable"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures users can extend or turn off time limits for accessibility.
 -->
 
 # **WCAG Guideline 2.2.1: Timing Adjustable Explained**

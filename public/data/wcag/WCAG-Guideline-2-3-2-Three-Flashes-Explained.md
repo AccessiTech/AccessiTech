@@ -7,6 +7,7 @@ image: WCAG-Series-2-3-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.2 Explained, Three Flashes"
 status: published
 date: 2025-07-03
+excerpt: This guideline ensures content does not flash more than three times in one second to prevent seizures.
 -->
 
 # **WCAG Guideline 2.3.2: Three Flashes Explained**

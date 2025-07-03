@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.10.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.10 Explained, Reflow"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures content works on any screen size or orientation.
 -->
 
 # **WCAG Guideline 1.4.10: Reflow Explained**

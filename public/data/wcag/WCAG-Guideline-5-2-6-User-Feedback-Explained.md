@@ -2,6 +2,7 @@
 title: 5.2.6 - User Feedback
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.6 (User Feedback)—what it means, why it matters, and how to ensure user feedback mechanisms are accessible on new and emerging platforms.
+excerpt: This guideline ensures that user feedback mechanisms on emerging technologies are accessible to users with disabilities, allowing everyone to report issues and provide suggestions.
 keywords: wcag 5.2.6, user feedback, accessibility, web standards, user experience, emerging technologies
 image: WCAG-Series-5-2-6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.6 Explained, User Feedback"

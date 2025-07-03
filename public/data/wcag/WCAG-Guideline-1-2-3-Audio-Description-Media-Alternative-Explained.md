@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.3 Explained, Audio Description or Media Alternative (Prerecorded)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures video content is accessible for users who are blind or have low vision with audio descriptions or media alternatives.
 -->
 
 # **WCAG Guideline 1.2.3: Audio Description or Media Alternative (Prerecorded) Explained**

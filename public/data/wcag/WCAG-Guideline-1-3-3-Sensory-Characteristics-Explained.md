@@ -7,6 +7,7 @@ image: WCAG-Series-1.3.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.3 Explained, Sensory Characteristics"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures instructions do not rely on shape, color, or sound alone.
 -->
 
 # **WCAG Guideline 1.3.3: Sensory Characteristics Explained**
