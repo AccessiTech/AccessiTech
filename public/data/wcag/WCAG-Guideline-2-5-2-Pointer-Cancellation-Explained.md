@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—
 keywords: wcag 2.5.2, pointer cancellation, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-5-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.2 Explained, Pointer Cancellation"
-published: true
+status: published
 date: 2025-07-03
 -->
 

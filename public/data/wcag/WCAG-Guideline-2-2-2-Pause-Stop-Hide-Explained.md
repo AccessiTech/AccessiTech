@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.2.2 (Pause, Stop, Hide)—wha
 keywords: wcag 2.2.2, pause stop hide, moving content, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-2-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.2 Explained, Pause, Stop, Hide"
-published: true
+status: published
 date: 2025-07-03
 -->
 

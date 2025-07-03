@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.6 (Consistent Help)—what 
 keywords: wcag 3.2.6, consistent help, accessibility, web standards, user assistance, user experience
 image: WCAG-Series-3-2-6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.6 Explained, Consistent Help"
-published: true
+status: published
 date: 2025-07-03
 ---
 

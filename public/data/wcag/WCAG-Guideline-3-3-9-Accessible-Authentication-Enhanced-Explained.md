@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.9 (Accessible Authenticatio
 keywords: wcag 3.3.9, accessible authentication, accessibility, web standards, user experience, login
 image: WCAG-Series-3-3-9.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.9 Explained, Accessible Authentication (Enhanced)"
-published: true
+status: published
 date: 2025-07-03
 ---
 

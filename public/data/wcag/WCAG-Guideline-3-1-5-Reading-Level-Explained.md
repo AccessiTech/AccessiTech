@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.5 (Reading Level)—what it
 keywords: wcag 3.1.5, reading level, accessibility, web standards, plain language, user experience
 image: WCAG-Series-3-1-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.5 Explained, Reading Level"
-published: true
+status: published
 date: 2025-07-03
 ---
 

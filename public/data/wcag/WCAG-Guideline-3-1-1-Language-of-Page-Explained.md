@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.1 (Language of Page)—what
 keywords: wcag 3.1.1, language of page, accessibility, web standards, digital inclusion
 image: WCAG-Series-3-1-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.1 Explained, Language of Page"
-published: true
+status: published
 date: 2025-07-03
 -->
 

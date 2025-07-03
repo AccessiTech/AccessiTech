@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.7 (Focus Visible)—what it
 keywords: wcag 2.4.7, focus visible, keyboard navigation, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-4-7.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.7 Explained, Focus Visible"
-published: true
+status: published
 date: 2025-07-03
 -->
 

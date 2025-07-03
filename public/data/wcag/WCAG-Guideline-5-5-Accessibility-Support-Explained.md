@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 5.5 (Accessibility Support)—w
 keywords: wcag 5.5, accessibility support, accessibility, web standards, user experience, emerging technologies
 image: WCAG-Series-5-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.5 Explained, Accessibility Support"
-published: true
+status: published
 date: 2025-07-03
 ---
 

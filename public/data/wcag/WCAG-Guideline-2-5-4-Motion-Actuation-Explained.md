@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what
 keywords: wcag 2.5.4, motion actuation, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-5-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.4 Explained, Motion Actuation"
-published: true
+status: published
 date: 2025-07-03
 -->
 

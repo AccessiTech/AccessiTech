@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.1.4 (Character Key Shortcuts)
 keywords: wcag 2.1.4, character key shortcuts, keyboard accessibility, web standards, digital inclusion, custom shortcuts
 image: WCAG-Series-2-1-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.4 Explained, Character Key Shortcuts"
-published: true
+status: published
 date: 2025-07-03
 -->
 

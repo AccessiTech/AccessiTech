@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.2 (On Input)—what it mean
 keywords: wcag 3.2.2, on input, accessibility, web standards, form controls, user experience
 image: WCAG-Series-3-2-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.2 Explained, On Input"
-published: true
+status: published
 date: 2025-07-03
 ---
 

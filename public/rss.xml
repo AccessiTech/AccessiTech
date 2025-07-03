@@ -453,5 +453,837 @@
           <media:credit>AccessiTech LLC</media:credit>
         </item>
       
+        <item>
+          <title>WCAG Guideline 2.1.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-1-Keyboard-Accessible-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.1.1 (Keyboard Accessible)—what it means, why it matters, and how to ensure all functionality is available from a keyboard.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.1 Explained, Keyboard Accessible"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.1.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.1.2 (No Keyboard Trap)—what it means, why it matters, and how to ensure users can always move focus away from any component using a keyboard.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.2 Explained, No Keyboard Trap"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guidelin## **What Is Guideline 2.1.3 Keyboard (No Exception)?**</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-3-Keyboard-No-Exception-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.1.3 (Keyboard, No Exception)—what it means, why it matters, and how to ensure all functionality is accessible via keyboard, with no exceptions.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.3 Explained, Keyboard No Exception"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.1.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-4-Character-Key-Shortcuts-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.1.4 (Character Key Shortcuts)—what it means, why it matters, and how to ensure keyboard shortcuts don’t interfere with accessibility.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.4 Explained, Character Key Shortcuts"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-1-4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.2.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-1-Timing-Adjustable-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.2.1 (Timing Adjustable)—what it means, why it matters, and how to ensure users can extend or turn off time limits.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.1 Explained, Timing Adjustable"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.2.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-2-Pause-Stop-Hide-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.2.2 (Pause, Stop, Hide)—what it means, why it matters, and how to ensure users can control moving, blinking, or auto-updating content.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.2 Explained, Pause, Stop, Hide"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.2.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-3-No-Timing-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.2.3 (No Timing)—what it means, why it matters, and how to ensure content is accessible without time limits.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.3 Explained, No Timing"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.2.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-4-Interruptions-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.2.4 (Interruptions)—what it means, why it matters, and how to ensure users can postpone or suppress interruptions.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.4 Explained, Interruptions"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.2.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-5-Re-authenticating-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.2.5 (Re-authenticating)—what it means, why it matters, and how to ensure users can continue activities without losing data after re-authentication.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.5 Explained, Re-authenticating"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.2.6</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-6-Timeouts-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.2.6 (Timeouts)—what it means, why it matters, and how to ensure users are warned about timeouts and can request more time.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.6 Explained, Timeouts"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-2-6.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.3.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-3-1-Three-Flashes-or-Below-Threshold-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.3.1 (Three Flashes or Below Threshold)—what it means, why it matters, and how to avoid content that flashes more than three times in any one second period.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-3-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-3-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.1 Explained, Three Flashes or Below Threshold"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-3-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.3.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-3-2-Three-Flashes-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.3.2 (Three Flashes)—what it means, why it matters, and how to avoid content that flashes more than three times in any one second period.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-3-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-3-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.2 Explained, Three Flashes"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-3-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.3.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-3-3-Animation-from-Interactions-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.3.3 (Animation from Interactions)—what it means, why it matters, and how to ensure users can disable non-essential animation triggered by interaction.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-3-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-3-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.3 Explained, Animation from Interactions"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-3-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.4.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-1-Bypass-Blocks-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.4.1 (Bypass Blocks)—what it means, why it matters, and how to help users skip repetitive content.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.1 Explained, Bypass Blocks"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.4.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-2-Page-Titled-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.4.2 (Page Titled)—what it means, why it matters, and how to ensure every web page has a descriptive title.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.2 Explained, Page Titled"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.4.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-3-Focus-Order-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.4.3 (Focus Order)—what it means, why it matters, and how to ensure a logical focus order for keyboard navigation.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.3 Explained, Focus Order"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.4.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-4-Link-Purpose-In-Context-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.4.4 (Link Purpose, In Context)—what it means, why it matters, and how to ensure every link's purpose is clear from its context.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.4 Explained, Link Purpose (In Context)"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.4.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-5-Multiple-Ways-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it means, why it matters, and how to provide more than one way to locate a web page within a set of pages.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.5 Explained, Multiple Ways"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.4.6</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-6-Headings-and-Labels-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.4.6 (Headings and Labels)—what it means, why it matters, and how to ensure headings and labels describe topic or purpose.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.6 Explained, Headings and Labels"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-6.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.4.7</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-7-Focus-Visible-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.4.7 (Focus Visible)—what it means, why it matters, and how to ensure keyboard focus is always visible.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-7.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-7.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.7 Explained, Focus Visible"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-4-7.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.5.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-1-Pointer-Gestures-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what it means, why it matters, and how to ensure all functionality is operable with simple pointer gestures.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.1 Explained, Pointer Gestures"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.5.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-2-Pointer-Cancellation-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—what it means, why it matters, and how to ensure users can cancel pointer actions before they are completed.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.2 Explained, Pointer Cancellation"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.5.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-3-Label-in-Name-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.5.3 (Label in Name)—what it means, why it matters, and how to ensure visible labels match accessible names.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.3 Explained, Label in Name"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.5.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-4-Motion-Actuation-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what it means, why it matters, and how to ensure users can operate functionality without device motion.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.4 Explained, Motion Actuation"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.5.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-5-Target-Size-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.5.5 (Target Size)—what it means, why it matters, and how to ensure touch targets are large enough for all users.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.5 Explained, Target Size"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.5.6</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-6-Concurrent-Input-Mechanisms-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.5.6 (Concurrent Input Mechanisms)—what it means, why it matters, and how to ensure users can switch between input methods.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.6 Explained, Concurrent Input Mechanisms"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-5-6.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 2.6.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-2-6-1-Device-Sensors-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 2.6.1 (Device Sensors)—what it means, why it matters, and how to ensure users can operate functionality without relying on device sensors.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2-6-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-2-6-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.6.1 Explained, Device Sensors"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-2-6-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.1.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-1-Language-of-Page-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.1.1 (Language of Page)—what it means, why it matters, and how to ensure the default language of each page is programmatically determined.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.1 Explained, Language of Page"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.1.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-2-Language-of-Parts-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—what it means, why it matters, and how to ensure the language of each part of a page is programmatically determined.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.2 Explained, Language of Parts"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.1.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-3-Unusual-Words-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.1.3 (Unusual Words)—what it means, why it matters, and how to ensure unusual words are explained or defined.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.3 Explained, Unusual Words"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.1.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-4-Abbreviations-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.1.4 (Abbreviations)—what it means, why it matters, and how to ensure abbreviations are explained or expanded.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.4 Explained, Abbreviations"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.1.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-5-Reading-Level-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.1.5 (Reading Level)—what it means, why it matters, and how to make your content readable for a wide audience.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.5 Explained, Reading Level"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.1.6</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-6-Pronunciation-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.1.6 (Pronunciation)—what it means, why it matters, and how to help users understand how words are spoken.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.6 Explained, Pronunciation"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-1-6.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.2.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-1-On-Focus-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.2.1 (On Focus)—what it means, why it matters, and how to ensure that user focus does not trigger unexpected changes.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.1 Explained, On Focus"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.2.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-2-On-Input-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.2 Explained, On Input"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.2.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-3-Consistent-Navigation-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.2.3 (Consistent Navigation)—what it means, why it matters, and how to ensure navigation is predictable across your site.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.3 Explained, Consistent Navigation"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.2.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-4-Consistent-Identification-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.2.4 (Consistent Identification)—what it means, why it matters, and how to ensure controls and components are recognizable across your site.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.4 Explained, Consistent Identification"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.2.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-5-Change-on-Request-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.2.5 (Change on Request)—what it means, why it matters, and how to ensure changes only happen when users ask for them.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.5 Explained, Change on Request"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.2.6</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-6-Consistent-Help-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.2.6 (Consistent Help)—what it means, why it matters, and how to ensure help mechanisms are consistent across your site.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.6 Explained, Consistent Help"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-2-6.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.3.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-1-Error-Identification-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.3.1 (Error Identification)—what it means, why it matters, and how to help users recognize and fix mistakes in forms and inputs.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.1 Explained, Error Identification"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.3.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.3.2 (Labels or Instructions)—what it means, why it matters, and how to help users enter information correctly the first time.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.2 Explained, Labels or Instructions"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.3.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-3-Error-Suggestion-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.3.3 (Error Suggestion)—what it means, why it matters, and how to help users fix mistakes with helpful suggestions.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.3 Explained, Error Suggestion"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.3.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.3.4 (Error Prevention</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.4 Explained, Error Prevention (Legal, Financial, Data)"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.3.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-5-Help-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.3.5 (Help)—what it means, why it matters, and how to provide accessible help for users completing forms and complex tasks.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.5 Explained, Help"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.3.6</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-6-Error-Prevention-All-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.3.6 (Error Prevention</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.6 Explained, Error Prevention (All)"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-6.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.3.7</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-7-Redundant-Entry-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what it means, why it matters, and how to help users avoid entering the same information multiple times.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-7.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-7.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.7 Explained, Redundant Entry"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-7.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.3.8</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.3.8 (Accessible Authentication</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-8.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-8.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.8 Explained, Accessible Authentication (Minimum)"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-8.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 3.3.9</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-9-Accessible-Authentication-Enhanced-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 3.3.9 (Accessible Authentication</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-9.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-9.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.9 Explained, Accessible Authentication (Enhanced)"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-3-3-9.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 4.1.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-4-1-1-Parsing-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 4.1.1 (Parsing)—what it means, why it matters, and how to ensure content is correctly parsed by user agents.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-4-1-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-4-1-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.1 Explained, Parsing"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-4-1-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 4.1.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-4-1-2-Name-Role-Value-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 4.1.2 (Name, Role, Value)—what it means, why it matters, and how to ensure user interface components have name, role, and value that can be programmatically determined.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-4-1-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-4-1-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.2 Explained, Name, Role, Value"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-4-1-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 4.1.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-4-1-3-Status-Messages-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what it means, why it matters, and how to ensure status messages are programmatically determined through role or properties.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-4-1-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-4-1-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.3 Explained, Status Messages"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-4-1-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.1.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-1-1-General-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.1.1 (General)—what it means, why it matters, and how to ensure general accessibility requirements are met.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-1-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-1-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.1.1 Explained, General"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-1-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.2.1</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-1-Platform-Accessibility-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.2.1 (Platform Accessibility)—what it means, why it matters, and how to ensure your platform supports accessibility features.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-1.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-1.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.1 Explained, Platform Accessibility"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-1.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.2.2</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-2-Content-Accessibility-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.2.2 (Content Accessibility)—what it means, why it matters, and how to ensure your content is accessible to all users.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-2.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-2.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.2 Explained, Content Accessibility"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-2.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.2.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-3-User-Preferences-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.2.3 (User Preferences)—what it means, why it matters, and how to ensure users can set and save their accessibility preferences.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.3 Explained, User Preferences"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.2.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-4-User-Notifications-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.2.4 (User Notifications)—what it means, why it matters, and how to ensure notifications on new platforms are accessible to all users.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.4 Explained, User Notifications"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.2.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-5-User-Input-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.2.5 (User Input)—what it means, why it matters, and how to ensure user input is accessible on new and emerging platforms.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.5 Explained, User Input"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.2.6</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-6-User-Feedback-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.2.6 (User Feedback)—what it means, why it matters, and how to ensure user feedback mechanisms are accessible on new and emerging platforms.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.6 Explained, User Feedback"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-2-6.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.3</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-3-Conformance-Claims-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.3 (Conformance Claims)—what they are, why they matter, and how to make and document conformance claims for accessibility.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.3 Explained, Conformance Claims (Optional)"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.4</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.4 (Statement of Partial Conformance – Third Party Content)—what it means, why it matters, and how to document accessibility for content you do not control.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-4.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-4.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.4 Explained, Statement of Partial Conformance – Third Party Content"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-4.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-5-Accessibility-Support-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.5 (Accessibility Support)—what it means, why it matters, and how to ensure accessibility support is documented and considered for new and emerging technologies.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.5 Explained, Accessibility Support"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.5</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-5-Statement-of-Partial-Conformance-Language-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.5 (Statement of Partial Conformance – Language)—what it means, why it matters, and how to document partial conformance due to language limitations.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-5.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-5.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.5 Explained, Statement of Partial Conformance – Language"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-5.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.6</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-6-Privacy-Considerations-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.6 (Privacy Considerations)—what it means, why it matters, and how to address privacy in accessible digital experiences.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-6.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-6.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.6 Explained, Privacy Considerations"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-6.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>WCAG Guideline 5.7</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-7-Security-Considerations-Explained</link>
+          <pubDate>2025-07-03</pubDate>
+          <description>A practical guide to WCAG Guideline 5.7 (Security Considerations)—what it means, why it matters, and how to address security in accessible digital experiences.</description>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-7.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-7.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.7 Explained, Security Considerations"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-7.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
   </channel>
 </rss>

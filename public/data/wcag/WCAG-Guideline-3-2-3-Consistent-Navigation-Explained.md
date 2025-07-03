@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.3 (Consistent Navigation)â€
 keywords: wcag 3.2.3, consistent navigation, accessibility, web standards, navigation menus, user experience
 image: WCAG-Series-3-2-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.3 Explained, Consistent Navigation"
-published: true
+status: published
 date: 2025-07-03
 ---
 

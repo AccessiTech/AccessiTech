@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.2.5 (Re-authenticating)—wha
 keywords: wcag 2.2.5, re-authenticating, session, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-2-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.5 Explained, Re-authenticating"
-published: true
+status: published
 date: 2025-07-03
 -->
 

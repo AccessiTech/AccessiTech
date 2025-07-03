@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 5.2.3 (User Preferences)—what
 keywords: wcag 5.2.3, user preferences, accessibility, web standards, digital inclusion
 image: WCAG-Series-5-2-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.3 Explained, User Preferences"
-published: true
+status: published
 date: 2025-07-03
 ---
 

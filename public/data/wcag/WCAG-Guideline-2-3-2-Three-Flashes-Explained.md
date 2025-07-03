@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.3.2 (Three Flashes)—what it
 keywords: wcag 2.3.2, three flashes, seizure, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-3-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.2 Explained, Three Flashes"
-published: true
+status: published
 date: 2025-07-03
 -->
 

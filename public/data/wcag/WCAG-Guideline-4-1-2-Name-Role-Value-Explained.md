@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 4.1.2 (Name, Role, Value)—wha
 keywords: wcag 4.1.2, name role value, accessibility, web standards, digital inclusion
 image: WCAG-Series-4-1-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.2 Explained, Name, Role, Value"
-published: true
+status: published
 date: 2025-07-03
 ---
 

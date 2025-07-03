@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 5.1.1 (General)—what it means
 keywords: wcag 5.1.1, general, accessibility, web standards, digital inclusion
 image: WCAG-Series-5-1-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.1.1 Explained, General"
-published: true
+status: published
 date: 2025-07-03
 -->
 

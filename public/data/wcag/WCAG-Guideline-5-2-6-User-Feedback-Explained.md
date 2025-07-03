@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 5.2.6 (User Feedback)—what it
 keywords: wcag 5.2.6, user feedback, accessibility, web standards, user experience, emerging technologies
 image: WCAG-Series-5-2-6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.6 Explained, User Feedback"
-published: true
+status: published
 date: 2025-07-03
 ---
 

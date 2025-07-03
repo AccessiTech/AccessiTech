@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.6 (Pronunciation)—what it
 keywords: wcag 3.1.6, pronunciation, accessibility, web standards, screen readers, user experience
 image: WCAG-Series-3-1-6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.6 Explained, Pronunciation"
-published: true
+status: published
 date: 2025-07-03
 ---
 

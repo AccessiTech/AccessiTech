@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 5.2.4 (User Notifications)—wh
 keywords: wcag 5.2.4, user notifications, accessibility, web standards, user experience, emerging technologies
 image: WCAG-Series-5-2-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.4 Explained, User Notifications"
-published: true
+status: published
 date: 2025-07-03
 ---
 

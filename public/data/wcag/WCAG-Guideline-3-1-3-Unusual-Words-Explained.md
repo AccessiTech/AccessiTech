@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.3 (Unusual Words)—what it
 keywords: wcag 3.1.3, unusual words, accessibility, web standards, digital inclusion
 image: WCAG-Series-3-1-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.3 Explained, Unusual Words"
-published: true
+status: published
 date: 2025-07-03
 -->
 

@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what
 keywords: wcag 2.5.1, pointer gestures, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-5-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.1 Explained, Pointer Gestures"
-published: true
+status: published
 date: 2025-07-03
 -->
 

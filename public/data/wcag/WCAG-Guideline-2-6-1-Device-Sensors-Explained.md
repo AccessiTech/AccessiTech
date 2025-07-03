@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.6.1 (Device Sensors)—what i
 keywords: wcag 2.6.1, device sensors, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-6-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.6.1 Explained, Device Sensors"
-published: true
+status: published
 date: 2025-07-03
 -->
 

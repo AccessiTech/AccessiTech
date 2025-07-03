@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.5.3 (Label in Name)—what it
 keywords: wcag 2.5.3, label in name, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-5-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.3 Explained, Label in Name"
-published: true
+status: published
 date: 2025-07-03
 -->
 

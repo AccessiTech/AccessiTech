@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.4 (Abbreviations)—what it
 keywords: wcag 3.1.4, abbreviations, accessibility, web standards, digital inclusion
 image: WCAG-Series-3-1-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.4 Explained, Abbreviations"
-published: true
+status: published
 date: 2025-07-03
 -->
 

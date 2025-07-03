@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 5.2.2 (Content Accessibility)â€
 keywords: wcag 5.2.2, content accessibility, accessibility, web standards, digital inclusion
 image: WCAG-Series-5-2-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.2.2 Explained, Content Accessibility"
-published: true
+status: published
 date: 2025-07-03
 ---
 

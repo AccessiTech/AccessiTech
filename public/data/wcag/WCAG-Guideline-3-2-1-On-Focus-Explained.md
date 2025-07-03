@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.1 (On Focus)—what it mean
 keywords: wcag 3.2.1, on focus, accessibility, web standards, focus management, user experience
 image: WCAG-Series-3-2-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.1 Explained, On Focus"
-published: true
+status: published
 date: 2025-07-03
 ---
 

@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.2 (Page Titled)—what it m
 keywords: wcag 2.4.2, page titled, document title, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-4-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.2 Explained, Page Titled"
-published: true
+status: published
 date: 2025-07-03
 -->
 

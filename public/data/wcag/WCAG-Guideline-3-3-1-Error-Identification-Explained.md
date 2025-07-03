@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.1 (Error Identification)—
 keywords: wcag 3.3.1, error identification, accessibility, web standards, form validation, user experience
 image: WCAG-Series-3-3-1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.1 Explained, Error Identification"
-published: true
+status: published
 date: 2025-07-03
 ---
 

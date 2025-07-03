@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.2.5 (Change on Request)—wha
 keywords: wcag 3.2.5, change on request, accessibility, web standards, user experience, predictable behavior
 image: WCAG-Series-3-2-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.5 Explained, Change on Request"
-published: true
+status: published
 date: 2025-07-03
 ---
 

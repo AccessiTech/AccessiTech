@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what 
 keywords: wcag 4.1.3, status messages, accessibility, web standards, digital inclusion
 image: WCAG-Series-4-1-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.3 Explained, Status Messages"
-published: true
+status: published
 date: 2025-07-03
 ---
 

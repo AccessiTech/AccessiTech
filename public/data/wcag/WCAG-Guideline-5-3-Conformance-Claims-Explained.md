@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 5.3 (Conformance Claims)—what
 keywords: wcag 5.3, conformance claims, accessibility, web standards, user experience, emerging technologies
 image: WCAG-Series-5-3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.3 Explained, Conformance Claims (Optional)"
-published: true
+status: published
 date: 2025-07-03
 ---
 

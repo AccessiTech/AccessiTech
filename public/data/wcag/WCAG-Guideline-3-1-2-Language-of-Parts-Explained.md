@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—wha
 keywords: wcag 3.1.2, language of parts, accessibility, web standards, digital inclusion
 image: WCAG-Series-3-1-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.2 Explained, Language of Parts"
-published: true
+status: published
 date: 2025-07-03
 -->
 

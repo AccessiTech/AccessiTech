@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.2 (Labels or Instructions)â
 keywords: wcag 3.3.2, labels or instructions, accessibility, web standards, form usability, user experience
 image: WCAG-Series-3-3-2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.2 Explained, Labels or Instructions"
-published: true
+status: published
 date: 2025-07-03
 ---
 

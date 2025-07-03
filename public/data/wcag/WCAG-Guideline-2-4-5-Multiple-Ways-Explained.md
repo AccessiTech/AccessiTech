@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it
 keywords: wcag 2.4.5, multiple ways, navigation, accessibility, web standards, digital inclusion
 image: WCAG-Series-2-4-5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.5 Explained, Multiple Ways"
-published: true
+status: published
 date: 2025-07-03
 -->
 

@@ -5,7 +5,7 @@ description: A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what 
 keywords: wcag 3.3.7, redundant entry, accessibility, web standards, user experience, form usability
 image: WCAG-Series-3-3-7.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.7 Explained, Redundant Entry"
-published: true
+status: published
 date: 2025-07-03
 ---
 
