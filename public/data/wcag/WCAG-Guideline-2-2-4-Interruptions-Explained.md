@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 2.2.4: Interruptions Explained
+title: 2.2.4 - Interruptions
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.2.4 (Interruptions)—what it means, why it matters, and how to ensure users can postpone or suppress interruptions.
 keywords: wcag 2.2.4, interruptions, notifications, accessibility, web standards, digital inclusion

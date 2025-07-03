@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.1.5: Reading Level Explained
+title: 3.1.5 - Reading Level
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.1.5 (Reading Level)—what it means, why it matters, and how to make your content readable for a wide audience.
 keywords: wcag 3.1.5, reading level, accessibility, web standards, plain language, user experience

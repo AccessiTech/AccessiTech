@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.4.6: Contrast (Enhanced) Explained
+title: 1.4.6 - Contrast (Enhanced)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.6 (Contrast Enhanced)—what it means, why it matters, and how to ensure text is readable for users with low vision.
 keywords: wcag 1.4.6, contrast enhanced, accessibility, web standards, color contrast, low vision

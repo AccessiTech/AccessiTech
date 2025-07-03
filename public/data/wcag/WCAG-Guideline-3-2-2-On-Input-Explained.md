@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.2.2: On Input Explained
+title: 3.2.2 - On Input
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible.
 keywords: wcag 3.2.2, on input, accessibility, web standards, form controls, user experience

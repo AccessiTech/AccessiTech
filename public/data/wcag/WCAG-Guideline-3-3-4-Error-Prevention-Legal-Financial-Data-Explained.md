@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.3.4: Error Prevention (Legal, Financial, Data) Explained
+title: 3.3.4 - Error Prevention (Legal, Financial, Data)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.4 (Error Prevention: Legal, Financial, Data)—what it means, why it matters, and how to help users avoid costly mistakes in critical transactions.
 keywords: wcag 3.3.4, error prevention, legal, financial, data, accessibility, web standards, user experience

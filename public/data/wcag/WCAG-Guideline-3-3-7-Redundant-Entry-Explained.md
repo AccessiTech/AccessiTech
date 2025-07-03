@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.3.7: Redundant Entry Explained
+title: 3.3.7 - Redundant Entry
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what it means, why it matters, and how to help users avoid entering the same information multiple times.
 keywords: wcag 3.3.7, redundant entry, accessibility, web standards, user experience, form usability

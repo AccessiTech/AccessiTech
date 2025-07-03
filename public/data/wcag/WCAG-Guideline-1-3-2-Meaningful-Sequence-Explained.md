@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.3.2: Meaningful Sequence Explained
+title: 1.3.2 - Meaningful Sequence
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.3.2 (Meaningful Sequence)—what it means, why it matters, and how to ensure content is presented in a logical order for all users.
 keywords: wcag 1.3.2, meaningful sequence, accessibility, web standards, reading order, digital inclusion

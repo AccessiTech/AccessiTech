@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.2.1: On Focus Explained
+title: 3.2.1 - On Focus
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.1 (On Focus)—what it means, why it matters, and how to ensure that user focus does not trigger unexpected changes.
 keywords: wcag 3.2.1, on focus, accessibility, web standards, focus management, user experience

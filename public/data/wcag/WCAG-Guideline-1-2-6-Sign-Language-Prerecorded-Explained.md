@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.2.6 - Sign Language (Prerecorded) Explained
+title: 1.2.6 - Sign Language (Prerecorded)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.6 (Sign Language, Prerecorded)—what it means, why it matters, and how to make video content accessible with sign language interpretation.
 keywords: wcag 1.2.6, sign language, video accessibility, web standards, digital inclusion, ASL, BSL

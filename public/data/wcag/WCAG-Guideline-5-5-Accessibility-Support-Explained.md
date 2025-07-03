@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 5.5: Accessibility Support Explained
+title: 5.5 - Accessibility Support
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.5 (Accessibility Support)—what it means, why it matters, and how to ensure accessibility support is documented and considered for new and emerging technologies.
 keywords: wcag 5.5, accessibility support, accessibility, web standards, user experience, emerging technologies

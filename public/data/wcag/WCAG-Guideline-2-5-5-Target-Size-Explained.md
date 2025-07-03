@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 2.5.5: Target Size Explained
+title: 2.5.5 - Target Size
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.5.5 (Target Size)—what it means, why it matters, and how to ensure touch targets are large enough for all users.
 keywords: wcag 2.5.5, target size, touch targets, accessibility, web standards, digital inclusion

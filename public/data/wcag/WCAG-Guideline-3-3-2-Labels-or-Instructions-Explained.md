@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.3.2: Labels or Instructions Explained
+title: 3.3.2 - Labels or Instructions
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.2 (Labels or Instructions)—what it means, why it matters, and how to help users enter information correctly the first time.
 keywords: wcag 3.3.2, labels or instructions, accessibility, web standards, form usability, user experience

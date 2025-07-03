@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.3.1: Error Identification Explained
+title: 3.3.1 - Error Identification
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.1 (Error Identification)—what it means, why it matters, and how to help users recognize and fix mistakes in forms and inputs.
 keywords: wcag 3.3.1, error identification, accessibility, web standards, form validation, user experience

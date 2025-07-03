@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 5.2.5: User Input Explained
+title: 5.2.5 - User Input
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.5 (User Input)—what it means, why it matters, and how to ensure user input is accessible on new and emerging platforms.
 keywords: wcag 5.2.5, user input, accessibility, web standards, user experience, emerging technologies

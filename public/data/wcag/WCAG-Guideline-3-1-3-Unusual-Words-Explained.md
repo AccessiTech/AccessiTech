@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 3.1.3: Unusual Words Explained
+title: 3.1.3 - Unusual Words
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.1.3 (Unusual Words)—what it means, why it matters, and how to ensure unusual words are explained or defined.
 keywords: wcag 3.1.3, unusual words, accessibility, web standards, digital inclusion

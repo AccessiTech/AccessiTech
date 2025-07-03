@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 5.1.1: General Explained
+title: 5.1.1 - General
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.1.1 (General)—what it means, why it matters, and how to ensure general accessibility requirements are met.
 keywords: wcag 5.1.1, general, accessibility, web standards, digital inclusion

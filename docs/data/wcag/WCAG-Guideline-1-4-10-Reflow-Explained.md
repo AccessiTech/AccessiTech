@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.4.10: Reflow Explained
+title: 1.4.10 - Reflow
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.10 (Reflow)—what it means, why it matters, and how to ensure your content works on any screen size.
 keywords: wcag 1.4.10, reflow, accessibility, web standards, responsive design, mobile accessibility

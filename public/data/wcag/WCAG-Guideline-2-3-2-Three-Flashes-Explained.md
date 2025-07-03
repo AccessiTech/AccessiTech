@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 2.3.2: Three Flashes Explained
+title: 2.3.2 - Three Flashes
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.3.2 (Three Flashes)—what it means, why it matters, and how to avoid content that flashes more than three times in any one second period.
 keywords: wcag 2.3.2, three flashes, seizure, accessibility, web standards, digital inclusion

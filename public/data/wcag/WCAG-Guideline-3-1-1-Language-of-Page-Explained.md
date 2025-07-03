@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 3.1.1: Language of Page Explained
+title: 3.1.1 - Language of Page
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.1.1 (Language of Page)—what it means, why it matters, and how to ensure the default language of each page is programmatically determined.
 keywords: wcag 3.1.1, language of page, accessibility, web standards, digital inclusion

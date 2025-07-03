@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.3.6: Error Prevention (All) Explained
+title: 3.3.6 - Error Prevention (All)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.6 (Error Prevention: All)—what it means, why it matters, and how to help users avoid mistakes in all types of forms and submissions.
 keywords: wcag 3.3.6, error prevention, accessibility, web standards, user experience, form validation

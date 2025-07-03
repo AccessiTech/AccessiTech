@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 2.4.3: Focus Order Explained
+title: 2.4.3 - Focus Order
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.4.3 (Focus Order)—what it means, why it matters, and how to ensure a logical focus order for keyboard navigation.
 keywords: wcag 2.4.3, focus order, keyboard navigation, accessibility, web standards, digital inclusion

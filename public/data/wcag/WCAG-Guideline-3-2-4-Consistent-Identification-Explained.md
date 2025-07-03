@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.2.4: Consistent Identification Explained
+title: 3.2.4 - Consistent Identification
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.4 (Consistent Identification)—what it means, why it matters, and how to ensure controls and components are recognizable across your site.
 keywords: wcag 3.2.4, consistent identification, accessibility, web standards, user interface, user experience

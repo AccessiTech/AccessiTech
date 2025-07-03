@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.2.6: Consistent Help Explained
+title: 3.2.6 - Consistent Help
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.6 (Consistent Help)—what it means, why it matters, and how to ensure help mechanisms are consistent across your site.
 keywords: wcag 3.2.6, consistent help, accessibility, web standards, user assistance, user experience

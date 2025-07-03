@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 5.2.1: Platform Accessibility Explained
+title: 5.2.1 - Platform Accessibility
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.1 (Platform Accessibility)—what it means, why it matters, and how to ensure your platform supports accessibility features.
 keywords: wcag 5.2.1, platform accessibility, accessibility, web standards, digital inclusion

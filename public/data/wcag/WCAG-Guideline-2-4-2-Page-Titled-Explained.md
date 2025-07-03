@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 2.4.2: Page Titled Explained
+title: 2.4.2 - Page Titled
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.4.2 (Page Titled)—what it means, why it matters, and how to ensure every web page has a descriptive title.
 keywords: wcag 2.4.2, page titled, document title, accessibility, web standards, digital inclusion

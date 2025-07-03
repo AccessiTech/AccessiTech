@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.4.11: Non-text Contrast Explained
+title: 1.4.11 - Non-text Contrast
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.11 (Non-text Contrast)—what it means, why it matters, and how to ensure all visual elements are distinguishable.
 keywords: wcag 1.4.11, non-text contrast, accessibility, web standards, visual cues, UI elements

@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 5.2.2: Content Accessibility Explained
+title: 5.2.2 - Content Accessibility
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.2 (Content Accessibility)—what it means, why it matters, and how to ensure your content is accessible to all users.
 keywords: wcag 5.2.2, content accessibility, accessibility, web standards, digital inclusion

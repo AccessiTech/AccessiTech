@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 5.2.4: User Notifications Explained
+title: 5.2.4 - User Notifications
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.4 (User Notifications)—what it means, why it matters, and how to ensure notifications on new platforms are accessible to all users.
 keywords: wcag 5.2.4, user notifications, accessibility, web standards, user experience, emerging technologies

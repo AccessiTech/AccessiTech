@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 2.1.1: Keyboard Accessible Explained
+title: 2.1.1 - Keyboard Accessible
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.1.1 (Keyboard Accessible)—what it means, why it matters, and how to ensure all functionality is available from a keyboard.
 keywords: wcag 2.1.1, keyboard accessibility, accessible navigation, web standards, digital inclusion, screen readers, tab order

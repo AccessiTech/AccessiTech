@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 5.3: Conformance Claims (Optional) Explained
+title: 5.3 - Conformance Claims (Optional)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.3 (Conformance Claims)—what they are, why they matter, and how to make and document conformance claims for accessibility.
 keywords: wcag 5.3, conformance claims, accessibility, web standards, user experience, emerging technologies

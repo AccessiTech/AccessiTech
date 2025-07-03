@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.4.7: Low or No Background Audio Explained
+title: 1.4.7 - Low or No Background Audio
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.7 (Low or No Background Audio)—what it means, why it matters, and how to ensure audio content is accessible for everyone.
 keywords: wcag 1.4.7, background audio, accessibility, web standards, audio clarity, speech

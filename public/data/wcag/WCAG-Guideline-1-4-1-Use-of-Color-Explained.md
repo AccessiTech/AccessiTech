@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.4.1: Use of Color Explained
+title: 1.4.1 - Use of Color
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.1 (Use of Color)—what it means, why it matters, and how to ensure information is not conveyed by color alone.
 keywords: wcag 1.4.1, use of color, accessibility, color blindness, web standards, visual impairment

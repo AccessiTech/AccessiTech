@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 2.2.1: Timing Adjustable Explained
+title: 2.2.1 - Timing Adjustable
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.2.1 (Timing Adjustable)—what it means, why it matters, and how to ensure users can extend or turn off time limits.
 keywords: wcag 2.2.1, timing adjustable, time limits, accessibility, web standards, digital inclusion

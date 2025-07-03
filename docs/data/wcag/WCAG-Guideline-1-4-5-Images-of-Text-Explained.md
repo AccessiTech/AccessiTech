@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.4.5: Images of Text Explained
+title: 1.4.5 - Images of Text
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.5 (Images of Text)—what it means, why it matters, and how to ensure text is real, not just an image.
 keywords: wcag 1.4.5, images of text, accessibility, web standards, real text, screen readers

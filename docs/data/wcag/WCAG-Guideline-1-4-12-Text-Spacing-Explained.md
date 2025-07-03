@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.4.12: Text Spacing Explained
+title: 1.4.12 - Text Spacing
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.12 (Text Spacing)—what it means, why it matters, and how to ensure your content is readable with custom spacing.
 keywords: wcag 1.4.12, text spacing, accessibility, web standards, readability, user styles

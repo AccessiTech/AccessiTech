@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 5.6: Privacy Considerations Explained
+title: 5.6 - Privacy Considerations
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.6 (Privacy Considerations)—what it means, why it matters, and how to address privacy in accessible digital experiences.
 keywords: wcag 5.6, privacy, accessibility, web standards, user experience, emerging technologies

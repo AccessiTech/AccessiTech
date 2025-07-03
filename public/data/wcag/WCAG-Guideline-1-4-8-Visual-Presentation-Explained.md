@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.4.8: Visual Presentation Explained
+title: 1.4.8 - Visual Presentation
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.8 (Visual Presentation)—what it means, why it matters, and how to give users control over how text is displayed.
 keywords: wcag 1.4.8, visual presentation, accessibility, web standards, user control, text display

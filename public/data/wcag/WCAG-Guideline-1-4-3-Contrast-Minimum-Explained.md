@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.4.3: Contrast (Minimum) Explained
+title: 1.4.3 - Contrast (Minimum)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.3 (Contrast Minimum)—what it means, why it matters, and how to ensure text is readable for everyone.
 image: WCAG-Series-1.4.3.png

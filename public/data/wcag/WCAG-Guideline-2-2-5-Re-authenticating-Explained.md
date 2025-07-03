@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 2.2.5: Re-authenticating Explained
+title: 2.2.5 - Re-authenticating
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.2.5 (Re-authenticating)—what it means, why it matters, and how to ensure users can continue activities without losing data after re-authentication.
 keywords: wcag 2.2.5, re-authenticating, session, accessibility, web standards, digital inclusion

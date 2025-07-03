@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.3.5: Identify Input Purpose Explained
+title: 1.3.5 - Identify Input Purpose
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.3.5 (Identify Input Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of input fields.
 keywords: wcag 1.3.5, identify input purpose, accessibility, web standards, autofill, input fields, digital inclusion

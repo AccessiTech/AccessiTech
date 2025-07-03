@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 3.3.9: Accessible Authentication (Enhanced) Explained
+title: 3.3.9 - Accessible Authentication (Enhanced)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.9 (Accessible Authentication: Enhanced)—what it means, why it matters, and how to make authentication processes even more accessible.
 keywords: wcag 3.3.9, accessible authentication, accessibility, web standards, user experience, login

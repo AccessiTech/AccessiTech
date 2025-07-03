@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 5.2.3: User Preferences Explained
+title: 5.2.3 - User Preferences
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.2.3 (User Preferences)—what it means, why it matters, and how to ensure users can set and save their accessibility preferences.
 keywords: wcag 5.2.3, user preferences, accessibility, web standards, digital inclusion

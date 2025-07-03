@@ -1,5 +1,5 @@
 ---
-title: WCAG Guideline 4.1.1: Parsing Explained
+title: 4.1.1 - Parsing
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 4.1.1 (Parsing)—what it means, why it matters, and how to ensure content is correctly parsed by user agents.
 keywords: wcag 4.1.1, parsing, accessibility, web standards, digital inclusion

@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.3.4: Orientation Explained
+title: 1.3.4 - Orientation
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.3.4 (Orientation)—what it means, why it matters, and how to ensure content is not restricted to a single display orientation.
 keywords: wcag 1.3.4, orientation, accessibility, web standards, mobile, landscape, portrait, digital inclusion

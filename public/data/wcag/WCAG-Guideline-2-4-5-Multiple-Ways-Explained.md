@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 2.4.5: Multiple Ways Explained
+title: 2.4.5 - Multiple Ways
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it means, why it matters, and how to provide more than one way to locate a web page within a set of pages.
 keywords: wcag 2.4.5, multiple ways, navigation, accessibility, web standards, digital inclusion

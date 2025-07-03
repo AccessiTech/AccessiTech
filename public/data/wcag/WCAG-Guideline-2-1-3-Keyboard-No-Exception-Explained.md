@@ -1,9 +1,5 @@
 <!--
-title: WCAG Guidelin## **What Is Guideline 2.1.3 Keyboard (No Exception)?**
-
-<!-- [Illustration: Web page with a keyboard focus indicator showing all controls accessible] -->
-
-> "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, and with no exceptions.".3: Keyboard (No Exception) Explained
+title: 2.1.3 Keyboard (No Exception)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.1.3 (Keyboard, No Exception)—what it means, why it matters, and how to ensure all functionality is accessible via keyboard, with no exceptions.
 keywords: wcag 2.1.3, keyboard accessibility, no exception, web standards, digital inclusion, screen readers, accessible navigation
