@@ -45,11 +45,14 @@ const fetchBlogEntries = async ({url, navigate, pathname}:FetchBlogEntriesProps)
     await store.dispatch(getBlogEntry({ id, navigate, pathname }));
   }).filter((item => item !== null));
 }
-export interface BlogProps { }
+export interface BlogProps {
+  hideDates?: boolean;
+  hideDescription?: boolean;
+}
 export interface BlogType extends React.FC<BlogProps> {
   loadData: (url?: string) => Promise<void>;
 }
-export const Blog: BlogType = () => {
+export const Blog: BlogType = ({ hideDates, hideDescription }: BlogProps) => {
   const navigate = useNavigate();
   const location = useLocation();
   const pathname = location.pathname.replace(/\//, '');
@@ -83,9 +86,9 @@ export const Blog: BlogType = () => {
               {blog.map((blog: any) => (
                 <article key={`blog-${blog.id}`} className="blog-entry">
                   <Link key={blog.id} to={`/${pathname}/${blog.id}`}>
-                    <span>{getDDMMMYYYY(blog.date)}</span>
+                    {!hideDates && <span>{getDDMMMYYYY(blog.date)}</span>}
                     <h3>{blog.title}</h3>
-                    <p>{blog.description}</p>
+                    {!hideDescription && <p>{blog.description}</p>}
                   </Link>
                 </article>
               ))}
