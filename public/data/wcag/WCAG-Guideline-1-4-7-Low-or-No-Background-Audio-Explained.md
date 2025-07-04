@@ -36,6 +36,8 @@ Guideline 1.4.7 Low or No Background Audio is a Level AAA requirement in the [We
 - Background audio must be at least 20 dB lower than speech, be removable, or not present.
 - Applies to prerecorded audio-only content (e.g., podcasts, lectures).
 
+For more, see [BOIA: How Background Noise Affects Accessibility](https://www.boia.org/blog/how-background-noise-affects-accessibility).
+
 ---
 
 ## **Why Does It Matter?**

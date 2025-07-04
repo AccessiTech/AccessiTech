@@ -35,6 +35,8 @@ Guideline 1.4.3 Contrast (Minimum) is a requirement in the [Web Content Accessib
 - Large text (18pt or 14pt bold) must have a contrast ratio of at least 3:1.
 - Decorative or incidental text, and logos, are exempt.
 
+For more, see the [W3C's Contrast Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G18).
+
 ---
 
 ## **Why Does It Matter?**
@@ -45,8 +47,6 @@ Guideline 1.4.3 Contrast (Minimum) is a requirement in the [Web Content Accessib
 - **Inclusivity:** Ensures content is accessible to a wider audience.
 - **Legal Compliance:** Contrast (Minimum) is a Level AA requirement in WCAG 2.2.
 - **Usability:** Good contrast improves user experience for all.
-
-For more, see [WebAIM’s Contrast Checker](https://webaim.org/resources/contrastchecker/).
 
 ---
 
@@ -74,7 +74,7 @@ All must meet the minimum contrast requirements.
 - Avoid using images of text unless necessary
 - Test in different lighting conditions and with colorblind simulators
 
-For more, see the [W3C's Contrast Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G18).
+My tool of choice: [WebAIM’s Contrast Checker](https://webaim.org/resources/contrastchecker/).
 
 ---
 

@@ -89,7 +89,7 @@ For more, see the [MDN reading order docs](https://developer.mozilla.org/en-US/d
 - Not testing reading order with assistive technology
 - Ignoring the impact of order on meaning
 
-Audit your site regularly and use accessibility checkers to ensure all content is presented in a meaningful sequence. For more, see [Deque's reading order tips](https://www.deque.com/blog/accessible-reading-order/).
+Audit your site regularly and use accessibility checkers to ensure all content is presented in a meaningful sequence. For more, see [BOIA: What Does “Meaningful Sequence” Mean for Web Accessibility?](https://www.boia.org/blog/what-does-meaningful-sequence-mean-for-web-accessibility).
 
 ---
 

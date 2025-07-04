@@ -36,6 +36,8 @@ Guideline 1.4.12 Text Spacing is a Level AA requirement in the [Web Content Acce
 - No loss of content or functionality when these spacing settings are applied.
 - Supports users with dyslexia, low vision, and reading difficulties.
 
+For more, see [Harvard University: Technique – Text spacing](https://accessibility.huit.harvard.edu/technique-text-spacing).
+
 ---
 
 ## **Why Does It Matter?**

@@ -88,7 +88,7 @@ For more, see the [MDN orientation docs](https://developer.mozilla.org/en-US/doc
 - Not testing with assistive technology or mounted devices
 - Ignoring user preferences for orientation
 
-Audit your site regularly and use accessibility checkers to ensure all content supports multiple orientations. For more, see [Deque's mobile accessibility tips](https://www.deque.com/blog/mobile-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all content supports multiple orientations. For more, see the [BBC's Mobile Accessibility Guidelines](https://www.bbc.co.uk/accessibility/forproducts/guides/mobile/).
 
 ---
 

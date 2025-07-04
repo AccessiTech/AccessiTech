@@ -87,7 +87,7 @@ For more, see the [W3C's captions docs](https://www.w3.org/WAI/WCAG22/Understand
 - Captions that are out of sync with audio
 - Hiding captions or making them hard to enable
 
-Audit your site regularly and use accessibility checkers to ensure all video content has proper captions. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all video content has proper captions. For more, see the DCMP's comprehensive [Guidelines and Best Practices for Captioning Educational Video](https://dcmp.org/learn/captioningkey), which covers quality, presentation, and accessibility standards for captions.
 
 ---
 

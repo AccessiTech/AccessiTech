@@ -89,7 +89,7 @@ For more, see the [MDN ARIA landmarks docs](https://developer.mozilla.org/en-US/
 - Not testing with assistive technology
 - Ignoring the needs of users with cognitive disabilities
 
-Audit your site regularly and use accessibility checkers to ensure all purposes are identified. For more, see [Deque's ARIA tips](https://www.deque.com/blog/aria-landmarks-accessibility/).
+Audit your site regularly and use accessibility checkers to ensure all purposes are identified. For more, see the [W3C's ARIA Landmarks documentation](https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/).
 
 ---
 

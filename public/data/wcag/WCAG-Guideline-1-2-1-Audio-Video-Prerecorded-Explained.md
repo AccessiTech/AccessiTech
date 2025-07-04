@@ -86,7 +86,7 @@ For more, see the [W3C's media alternatives docs](https://www.w3.org/WAI/WCAG22/
 - Alternatives that are incomplete or inaccurate
 - Hiding transcripts or descriptions from users
 
-Audit your site regularly and use accessibility checkers to ensure all media has proper alternatives. For more, see [Deque's media accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all media has proper alternatives. For more, see [WebAIM's guide to captions, transcripts, and audio descriptions](https://webaim.org/techniques/captions/), which covers best practices for making audio and video content accessible.
 
 ---
 

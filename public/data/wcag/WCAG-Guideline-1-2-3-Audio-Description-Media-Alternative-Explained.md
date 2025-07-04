@@ -87,7 +87,7 @@ For more, see the [W3C's audio description docs](https://www.w3.org/WAI/WCAG22/U
 - Hiding audio descriptions or transcripts from users
 - Not testing with users who are blind or have low vision
 
-Audit your site regularly and use accessibility checkers to ensure all video content has proper alternatives. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all video content has proper alternatives. For more, see the DCMP's comprehensive [Guidelines and Best Practices for Captioning Educational Video](https://dcmp.org/learn/captioningkey), which also covers audio description and media alternatives for accessibility.
 
 ---
 

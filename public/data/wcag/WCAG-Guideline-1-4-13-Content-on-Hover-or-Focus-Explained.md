@@ -36,6 +36,8 @@ Guideline 1.4.13 Content on Hover or Focus is a Level AA requirement in the [Web
 - Applies to any content that appears on hover or focus, not just tooltips.
 - Ensures all users can access, read, and dismiss popups.
 
+For more, see [Access & Use: Content on hover & focus](https://accessuse.eu/en/Content-hover-focus.html).
+
 ---
 
 ## **Why Does It Matter?**

@@ -36,6 +36,8 @@ Guideline 1.4.5 Images of Text is a requirement in the [Web Content Accessibilit
 - Images of text are allowed only for decoration or when a specific style is essential (e.g., logos).
 - Real text is more accessible, flexible, and adaptable.
 
+For more, see [BOIA: Why is it important for accessibility to use actual text instead of images of text?](https://www.boia.org/blog/why-is-it-important-for-accessibility-to-use-actual-text-instead-of-images-of-text).
+
 ---
 
 ## **Why Does It Matter?**

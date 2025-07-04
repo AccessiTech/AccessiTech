@@ -87,7 +87,7 @@ For more, see the [W3C's audio description docs](https://www.w3.org/WAI/WCAG22/U
 - Hiding audio descriptions from users
 - Not testing with users who are blind or have low vision
 
-Audit your site regularly and use accessibility checkers to ensure all video content has proper audio descriptions. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all video content has proper audio descriptions. For more, see the [FCC's Audio Description requirements](https://www.fcc.gov/audio-description).
 
 ---
 

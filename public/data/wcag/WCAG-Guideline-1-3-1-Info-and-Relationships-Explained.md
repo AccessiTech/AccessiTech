@@ -89,7 +89,7 @@ For more, see the [MDN semantic HTML docs](https://developer.mozilla.org/en-US/d
 - Using tables for layout instead of data
 - Skipping heading levels or using headings for styling only
 
-Audit your site regularly and use accessibility checkers to ensure all information and relationships are programmatically determined. For more, see [Deque's semantic HTML tips](https://www.deque.com/blog/semantic-html5-accessibility/).
+Audit your site regularly and use accessibility checkers to ensure all information and relationships are programmatically determined. For more, see the [W3C's HTML Techniques for WCAG](https://www.w3.org/WAI/WCAG21/Techniques/html/).
 
 ---
 

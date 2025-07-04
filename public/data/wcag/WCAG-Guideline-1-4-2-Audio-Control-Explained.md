@@ -36,6 +36,8 @@ Guideline 1.4.2 Audio Control is a requirement in the [Web Content Accessibility
 - This prevents interference with screen readers and user concentration.
 - Applies to background music, sound effects, and videos with audio.
 
+For more, see [W3C's Media Accessibility User Requirements](https://www.w3.org/TR/media-accessibility-reqs).
+
 ---
 
 ## **Why Does It Matter?**

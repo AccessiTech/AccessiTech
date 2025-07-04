@@ -87,7 +87,7 @@ For more, see [W3C's live audio accessibility docs](https://www.w3.org/WAI/WCAG2
 - Not making the alternative easy to find
 - Not testing with users or assistive technology
 
-Audit your site regularly and use accessibility checkers to ensure all live audio content has proper alternatives. For more, see [Deque's live accessibility tips](https://www.deque.com/blog/live-video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all live audio content has proper alternatives. For more, see [University of Washington's Live Captions accessibility guide](https://www.washington.edu/accessibility/videos/captions-live/).
 
 ---
 

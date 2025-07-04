@@ -36,6 +36,8 @@ Guideline 1.4.8 Visual Presentation is a Level AAA requirement in the [Web Conte
 - Applies to blocks of text, not single words or short labels.
 - Supports users with low vision, dyslexia, and other reading difficulties.
 
+For more, see [Digital.gov: Accessibility for Teams – Visual Design](https://digital.gov/guides/accessibility-for-teams/visual-design).
+
 ---
 
 ## **Why Does It Matter?**

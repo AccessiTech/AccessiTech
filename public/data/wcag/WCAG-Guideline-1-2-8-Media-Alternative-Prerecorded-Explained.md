@@ -86,7 +86,7 @@ For more, see [W3C's media alternative docs](https://www.w3.org/WAI/WCAG22/Under
 - Hiding the transcript from users
 - Not updating the transcript when media changes
 
-Audit your site regularly and use accessibility checkers to ensure all media has proper full text alternatives. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all media has proper full text alternatives. For more, see [University of Washington's guide to transcripts for accessible media](https://www.washington.edu/accessibility/videos/transcripts/).
 
 ---
 

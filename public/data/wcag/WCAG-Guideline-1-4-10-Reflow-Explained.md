@@ -36,6 +36,8 @@ Guideline 1.4.10 Reflow is a Level AA requirement in the [Web Content Accessibil
 - No loss of information or functionality at 320px width (mobile portrait) or 400% zoom.
 - Applies to all content, including navigation, forms, and images.
 
+For more, see [Responsive Web Design: What It Is And How To Use It (Smashing Magazine)](https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/).
+
 ---
 
 ## **Why Does It Matter?**

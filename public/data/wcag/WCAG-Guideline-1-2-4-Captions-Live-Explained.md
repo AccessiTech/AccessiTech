@@ -48,7 +48,7 @@ This ensures everyone can access the information in your live videos, regardless
 - **Legal Compliance:** This is a Level AA requirement in WCAG 2.2 and referenced in accessibility laws worldwide.
 - **Usability:** Captions help all users in noisy or quiet environments, or when audio is muted.
 
-For more, see [WebAIM's captions guide](https://webaim.org/techniques/captions/).
+For more, see [WebAIM's captions guide](https://webaim.org/techniques/captions/) and [University of Washington's Captions Accessibility Checklist](https://www.washington.edu/accesstech/checklist/captions/).
 
 ---
 
@@ -87,7 +87,7 @@ For more, see the [W3C's captions docs](https://www.w3.org/WAI/WCAG22/Understand
 - Captions that are out of sync with audio
 - Hiding captions or making them hard to enable
 
-Audit your site regularly and use accessibility checkers to ensure all live video content has proper captions. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all live video content has proper captions. For more, see the [FCC's guide to Closed Captioning on Television](https://www.fcc.gov/consumers/guides/closed-captioning-television).
 
 ---
 

@@ -89,7 +89,7 @@ For more, see the [MDN instructions docs](https://developer.mozilla.org/en-US/do
 - Not providing alternative cues for charts or graphs
 - Ignoring users with sensory disabilities
 
-Audit your site regularly and use accessibility checkers to ensure all instructions are clear and accessible. For more, see [Deque's instructions tips](https://www.deque.com/blog/accessible-instructions/).
+Audit your site regularly and use accessibility checkers to ensure all instructions are clear and accessible. For more, see [Oregon State University: Sensory Characteristics](https://accessibility.oregonstate.edu/digital-accessibility/sensory).
 
 ---
 

@@ -89,7 +89,7 @@ For more, see the [MDN autocomplete docs](https://developer.mozilla.org/en-US/do
 - Not testing autofill with real browsers and assistive tech
 - Ignoring the needs of users with cognitive disabilities
 
-Audit your site regularly and use accessibility checkers to ensure all input purposes are identified. For more, see [Deque's form accessibility tips](https://www.deque.com/blog/form-autocomplete-accessibility/).
+Audit your site regularly and use accessibility checkers to ensure all input purposes are identified. For more, see the [W3C's HTML Autofill Field Names documentation](https://www.w3.org/WAI/WCAG21/Techniques/html/H98).
 
 ---
 

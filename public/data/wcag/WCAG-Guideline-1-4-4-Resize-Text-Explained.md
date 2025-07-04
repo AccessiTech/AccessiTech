@@ -36,6 +36,8 @@ Guideline 1.4.4 Resize Text is a requirement in the [Web Content Accessibility G
 - Applies to all text except captions and images of text.
 - Ensures layouts remain usable and readable when zoomed.
 
+For more, see the [W3C's Resize Text Techniques](https://www.w3.org/WAI/WCAG22/Techniques/css/C12).
+
 ---
 
 ## **Why Does It Matter?**
@@ -71,8 +73,6 @@ All must remain readable and functional when text is resized.
 - Test your site at 200% zoom in browsers
 - Ensure no content is cut off or overlaps
 - Avoid images of text where possible
-
-For more, see the [W3C's Resize Text Techniques](https://www.w3.org/WAI/WCAG22/Techniques/css/C12).
 
 ---
 

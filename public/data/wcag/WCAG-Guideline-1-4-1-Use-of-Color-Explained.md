@@ -34,6 +34,8 @@ Guideline 1.4.1 Use of Color is a Level A requirement in the [Web Content Access
 - Use text labels, patterns, icons, or other visual cues in addition to color.
 - This helps users with color blindness, low vision, or those using monochrome displays.
 
+For more, see [RNIB's recommendations on colour and contrast for people with sight loss](https://media.rnib.org.uk/documents/Colour_and_contrast_for_people_with_sight_loss_2020.pdf).
+
 ---
 
 ## **Why Does It Matter?**
