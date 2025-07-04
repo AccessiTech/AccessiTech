@@ -27,12 +27,12 @@ export const App = (props: AppProps) => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/index.html" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog.html" element={<Blog />} />
+          <Route path="/blog" element={<Blog hideExcerpt />} />
+          <Route path="/blog.html" element={<Blog hideExcerpt />} />
           <Route path="/blog/:id" element={<BlogEntry />} />
           {/* <Route path="/blog/:sub/:id" element={<BlogEntry />} /> */}
-          <Route path="/wcag" element={<Blog />} />
-          <Route path="/wcag.html" element={<Blog />} />
+          <Route path="/wcag" element={<Blog hideDates hideDescription />} />
+          <Route path="/wcag.html" element={<Blog hideDates hideDescription />} />
           <Route path="/wcag/:id" element={<BlogEntry />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

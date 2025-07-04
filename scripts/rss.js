@@ -50,6 +50,7 @@ const mapFunc = (filePath) => {
     imageAlt,
     image_copyright,
     status,
+    excerpt,
   } = fileMetaData;
   if (status !== 'published') return;
   const imageURI = `https://www.accessi.tech/assets/images/${image || "default.png"}`;
@@ -62,6 +63,7 @@ const mapFunc = (filePath) => {
           <link>${link}</link>
           <pubDate>${date}</pubDate>
           <description>${description}</description>
+          <excerpt>${excerpt || description}</excerpt>
           ${categories
       ?.split(",")
       ?.map((category) => `<category>${category.trim()}</category>`)

@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.2.2 - Captions (Prerecorded) Explained
+title: 1.2.2 - Captions (Prerecorded)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.2 (Captions, Prerecorded)—what it means, why it matters, and how to make video content accessible with captions.
 keywords: wcag 1.2.2, captions, video accessibility, accessibility, web standards, digital inclusion, subtitles
@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.2 Explained, Captions (Prerecorded)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures prerecorded video content is accessible with captions.
 -->
 
 # **WCAG Guideline 1.2.2: Captions (Prerecorded) Explained**
@@ -86,7 +87,7 @@ For more, see the [W3C's captions docs](https://www.w3.org/WAI/WCAG22/Understand
 - Captions that are out of sync with audio
 - Hiding captions or making them hard to enable
 
-Audit your site regularly and use accessibility checkers to ensure all video content has proper captions. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all video content has proper captions. For more, see the DCMP's comprehensive [Guidelines and Best Practices for Captioning Educational Video](https://dcmp.org/learn/captioningkey), which covers quality, presentation, and accessibility standards for captions.
 
 ---
 

@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.2.8 - Media Alternative (Prerecorded) Explained
+title: 1.2.8 - Media Alternative (Prerecorded)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for synchronized media.
 keywords: wcag 1.2.8, media alternative, video accessibility, web standards, digital inclusion, full text transcript
@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.8.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.8 Explained, Media Alternative (Prerecorded)"
 status: published
 date: 2025-07-01
+excerpt: Requires a full text alternative for synchronized media, ensuring accessibility for users who cannot access audio or video content.
 -->
 
 # **WCAG Guideline 1.2.8: Media Alternative (Prerecorded) Explained**
@@ -85,7 +86,7 @@ For more, see [W3C's media alternative docs](https://www.w3.org/WAI/WCAG22/Under
 - Hiding the transcript from users
 - Not updating the transcript when media changes
 
-Audit your site regularly and use accessibility checkers to ensure all media has proper full text alternatives. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all media has proper full text alternatives. For more, see [University of Washington's guide to transcripts for accessible media](https://www.washington.edu/accessibility/videos/transcripts/).
 
 ---
 

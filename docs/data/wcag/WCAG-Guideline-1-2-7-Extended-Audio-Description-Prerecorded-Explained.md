@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.2.7 -  Extended Audio Description (Prerecorded) Explained
+title: 1.2.7 -  Extended Audio Description (Prerecorded)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.7 (Extended Audio Description, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.
 keywords: wcag 1.2.7, extended audio description, video accessibility, web standards, digital inclusion, blind users

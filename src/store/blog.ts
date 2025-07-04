@@ -69,6 +69,7 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
   const title = metaData["title"] || content.split("\n")[0].replace("# ", "");
   const image = metaData["image"] || "";
   const image_alt = metaData["image_alt"] || "";
+  const excerpt = metaData["excerpt"] || "";
 
   return {
     loaded: true,
@@ -80,6 +81,7 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
     image,
     image_alt,
     pathname,
+    excerpt,
   } as Blog;
 });
 

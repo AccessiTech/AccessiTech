@@ -1,0 +1,66 @@
+- Ability Net: https://abilitynet.org.uk/
+- ADLAB project: https://adlabpro.wordpress.com
+- Audio Description Association: https://www.audiodescription.co.uk/
+- BBC Accessibility for Products: https://www.bbc.co.uk/accessibility/forproducts/
+- BBC Accessibility Research and Development: https://www.bbc.co.uk/rd/topics/accessibility
+- BBC Best Practice Guide to Sound Mixing: https://www.bbc.com/editorialguidelines/documents/technicaldeliverystandardsbbcaudiomixguidlines.pdf
+- BBC Guidance on Visually and Hearing Impaired Audiences: https://www.bbc.com/editorialguidelines/guidance/visually-and-hearing-impaired-audiences?source=about_page-------------------------------------#hearingimpairmentguidanceinfull
+- BBC Mobile Accessibility Guidelines: https://www.bbc.co.uk/accessibility/forproducts/guides/mobile/
+- BBC Subtitle Guidelines: https://www.bbc.co.uk/accessibility/forproducts/guides/subtitles/#PRESENTATION
+- British Deaf Association: https://bda.org.uk/
+- British Dyslexia Association Style Guide: https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide
+- British Sign Language Broadcasting Trust: https://www.bslzone.co.uk/about
+- Coimisiún na Meán report: https://www.cnam.ie/wp-content/uploads/2023/06/20230619_Investigating-a-Standardised-Approach-to-Setting-Audio-Description-Dip-Values_vFINAL-1.pdf
+- Committee of Advertising Practice statement: https://www.asa.org.uk/news/audio-description-and-other-access-services.html
+- Communications Consumer Panel: https://www.communicationsconsumerpanel.org.uk/
+- UK Digital Television Group Usability and Accessibility Guidelines: https://dtg.org.uk/resource/u-book-4/
+- FWD-Doc Toolkit: https://www.fwd-doc.org/toolkit
+- EASIT project: https://webs.uab.cat/easit/
+- Galician Observatory for Media Accessibility: https://galmaobservatory.webs.uvigo.es/
+- Enhancing Audio Description: https://enhancingaudiodescription.com/
+- European Blind Union Handbook: https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.euroblind.org%2Fsites%2Fdefault%2Ffiles%2F2023_EBU%2520Handbook%2520for%2520high%2520quality%2520Audio%2520Description%2520on%2520Screen.docx&wdOrigin=BROWSELINK
+- Incorporated Society of British Advertisers Accessible Advertising Guide: https://www.isba.org.uk/knowledge/reframing-accessible-advertising
+- Independent Theatre Council Guidance: https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fmsradio.huji.ac.il%2Fnarration.doc&wdOrigin=BROWSELINK
+- ITU accessibility webpage: https://www.itu.int/en/ITU-T/accessibility/Pages/default.aspx#:~:text=ITU%20works%20to%20increase%20access,and%20providing%20education%20and%20training
+- ITU digital accessibility: https://www.itu.int/en/ITU-D/Digital-Inclusion/Pages/ICT-digital-accessibility/default.aspx
+- ITU paper on accessible audiovisual media: https://www.itu.int/en/ITU-D/Regional-Presence/Europe/Documents/Events/2019/Accessible%20Europe/191107_AVMS%20Accessibility%20in%20Europe%20%28Final%20edition%29.pdf
+- Kruger et al. on subtitle speed: https://www.cambridge.org/core/journals/applied-psycholinguistics/article/abs/why-subtitle-speed-matters-evidence-from-word-skipping-and-rereading/A7DB0CBF5910353143738CF9C1721317
+- Macroblock Ltd and School of Digital Arts object-based broadcasting: https://www.ofcom.org.uk/__data/assets/pdf_file/0026/223973/Object-based-media-report.pdf
+- Mencap guide: https://www.ofcom.org.uk/__data/assets/pdf_file/0022/272821/mencap.pdf
+- Micineinclusivo: https://www.micineinclusivo.com/english
+- Netflix Audio Description Style Guide: https://partnerhelp.netflixstudios.com/hc/en-us/articles/215510667-Audio-Description-Style-Guide-v2-5
+- Netflix English Timed Text style Guide: https://partnerhelp.netflixstudios.com/hc/en-us/articles/217350977-English-Timed-Text-Style-Guide
+- Ofcom Diversity in Broadcasting Hub: https://www.ofcom.org.uk/tv-radio-and-on-demand/information-for-industry/guidance/diversity
+- Ofcom survey on TV viewing among BSL users: https://www.ofcom.org.uk/__data/assets/pdf_file/0022/261283/Survey-on-TV-viewing-among-BSL-users.pdf
+- Penny on audio describing diversity: https://jonathan-penny.medium.com/audio-describing-diversity-or-addressing-the-elephant-in-the-room-5d731c0ea8d3
+- RIDC research report for Ofcom: https://www.ofcom.org.uk/_resources/documents/research-and-data/multi-sector/accessibility-research/audience-expectations-of-access-services-across-tv-and-video-on-demand-services/Audience-expectations-of-access-services-across-TV-and-Video-on-Demand-services-report.pdf
+- Romero-Fresco and Fryer Accessible Filmmaking Guide: https://accessiblefilmmaking.wordpress.com/
+- Romero-Fresco and Dangerfield article: https://www.jatjournal.org/index.php/jat/article/view/228/83
+- RNIB website: https://www.rnib.org.uk/
+- RNIB key statistics about sight loss: https://media.rnib.org.uk/documents/Key_stats_about_sight_loss_2021.pdf
+- RNIB research into AD for different genres: https://www.ofcom.org.uk/__data/assets/pdf_file/0023/272831/rnib.pdf
+- RNIB recommendations on colour and contrast: https://media.rnib.org.uk/documents/Colour_and_contrast_for_people_with_sight_loss_2020.pdf
+- RNID website: https://rnid.org.uk/
+- RNID facts and figures on hearing loss: https://rnid.org.uk/about-us/research-and-policy/facts-and-figures/
+- RNID Subtitle It report: https://rnid.org.uk/wp-content/uploads/2023/06/RNID-Subtitle-It-Report_new-1.pdf
+- Scope website: https://www.scope.org.uk/
+- Scope article on accessible fonts: https://business.scope.org.uk/article/font-accessibility-and-readability-the-basics
+- Scope Big Hack Survey: https://business.scope.org.uk/article/video-on-demand-streaming-and-accessibility-the-big-hack-survey-feedback
+- Sense website: https://www.sense.org.uk/
+- Sense deafblindness statistics: https://www.sense.org.uk/about-us/statistics/deafblindness-statistics-in-the-uk/
+- Screen Skills Access Coordinator Training: https://www.screenskills.com/bookings/screenskills-hetv-access-coordinator-development-programme/
+- Makaton Charity website: https://makaton.org
+- Makaton About Makaton: https://makaton.org/TMC/About_Makaton/TMC/AboutMakaton.aspx?hkey=c8a4263d-78cc-4c30-b135-153eb6ac3118
+- Turn on the Subtitles website: https://turnonthesubtitles.org
+- Turn on the Subtitles children’s subtitling style guide: https://turnonthesubtitles.org/caterpillar
+- Turn on the Subtitles research resources: https://turnonthesubtitles.org/research
+- TV Access Project: https://underlyinghealthcondition.wordpress.com
+- TV Access Project campaign: https://www.screenskills.com/media/5074/2nd-december-underlying-health-condition-report-tv.pdf
+- BBC TV Access Project: https://www.bbc.co.uk/creativediversity/i-hub/home/tv-access-project
+- Channel 4 TV Access Project: https://www.channel4.com/4producers/creative-diversity/tv-access-project
+- ITV TV Access Project: https://www.itv.com/inclusion/articles/broadcasters-back-the-launch-of-tv-access-project
+- STV TV Access Project: https://www.stvplc.tv/social-impact/diversity-and-inclusion
+- UKTV TV Access Project: https://corporate.uktv.co.uk/news/article/broadcasters-back-underlying-health-condition-campaign-to-address-disabled-access-across-tv-industry
+- Unlimited Demystifying Access toolkit: https://weareunlimited.org.uk/wp-content/uploads/2018/08/Demystifying-Access-IPDF-Final-2.pdf
+- W3C Web Content Accessibility Guidelines: https://www.w3.org/WAI/standards-guidelines/wcag
+- W3C Media Accessibility User Requirements: https://www.w3.org/TR/media-accessibility-reqs
