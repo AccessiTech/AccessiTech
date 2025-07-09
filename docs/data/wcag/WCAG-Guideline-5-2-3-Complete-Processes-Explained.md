@@ -1,14 +1,14 @@
-<!---
+<!--
 title: 5.2.3 - Complete Processes
 series: Making the Web Accessible for All
 description: An in-depth explanation of WCAG 2.1 Section 5.2.3, Complete Processes—what it means, why it matters, and how to apply it.
 keywords: wcag 5.2.3, complete processes, accessibility, web standards, conformance, process accessibility
-image: WCAG-Series-5-2-3.png
+image: WCAG-Series-5.2.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.2.3 Explained, Complete Processes"
 status: published
 date: 2025-07-08
 excerpt: This section explains the requirement that all pages in a process must conform to WCAG at the specified level, not just individual pages.
---->
+-->
 
 # **WCAG 2.1 Section 5.2.3: Complete Processes**
 

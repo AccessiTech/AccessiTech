@@ -96,6 +96,10 @@ h6,
   @include font-resize(1rem);
 }
 
+code {
+  color: darken($pink, 15%);
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;

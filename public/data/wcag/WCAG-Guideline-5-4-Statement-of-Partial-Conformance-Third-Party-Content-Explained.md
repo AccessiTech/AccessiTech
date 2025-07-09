@@ -3,7 +3,7 @@ title: 5.4 - Statement of Partial Conformance – Third Party Content
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.4 (Statement of Partial Conformance – Third Party Content)—what it means, why it matters, and how to document accessibility for content you do not control.
 keywords: wcag 5.4, partial conformance, third party content, accessibility, web standards, user experience
-image: WCAG-Series-5-4.png
+image: WCAG-Series-5.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.4 Explained, Statement of Partial Conformance – Third Party Content"
 status: published
 date: 2025-07-03

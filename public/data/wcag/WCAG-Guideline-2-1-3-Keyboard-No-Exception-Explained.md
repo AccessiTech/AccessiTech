@@ -3,7 +3,7 @@ title: 2.1.3 Keyboard (No Exception)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.1.3 (Keyboard, No Exception)—what it means, why it matters, and how to ensure all functionality is accessible via keyboard, with no exceptions.
 keywords: wcag 2.1.3, keyboard accessibility, no exception, web standards, digital inclusion, screen readers, accessible navigation
-image: WCAG-Series-2-1-3.png
+image: WCAG-Series-2.1.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.3 Explained, Keyboard No Exception"
 status: published
 date: 2025-07-03

@@ -1,14 +1,14 @@
-<!---
+<!--
 title: 3.2.3 - Consistent Navigation
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.3 (Consistent Navigation)—what it means, why it matters, and how to ensure navigation is predictable across your site.
 keywords: wcag 3.2.3, consistent navigation, accessibility, web standards, navigation menus, user experience
-image: WCAG-Series-3-2-3.png
+image: WCAG-Series-3.2.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.3 Explained, Consistent Navigation"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures navigation is predictable and consistent across the site.
---->
+-->
 
 # **WCAG Guideline 3.2.3: Consistent Navigation Explained**
 

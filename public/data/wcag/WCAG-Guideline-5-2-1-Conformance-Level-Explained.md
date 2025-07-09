@@ -3,7 +3,7 @@ title: 5.2.1 - Conformance Level
 series: Making the Web Accessible for All
 description: An in-depth explanation of WCAG 2.1 Section 5.2.1, Conformance Level—what it means, why it matters, and how to apply it.
 keywords: wcag 5.2.1, conformance level, accessibility, web standards, level a, level aa, level aaa
-image: WCAG-Series-5-2-1.png
+image: WCAG-Series-5.2.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.2.1 Explained, Conformance Level"
 status: published
 date: 2025-07-08

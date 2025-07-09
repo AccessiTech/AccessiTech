@@ -1,9 +1,9 @@
-<!---
+<!--
 title: 3.3.5 - Help
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.5 (Help)—what it means, why it matters, and how to provide accessible help for users completing forms and complex tasks.
 keywords: wcag 3.3.5, help, accessibility, web standards, user assistance, user experience
-image: WCAG-Series-3-3-5.png
+image: WCAG-Series-3.3.5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.5 Explained, Help"
 status: published
 date: 2025-07-03

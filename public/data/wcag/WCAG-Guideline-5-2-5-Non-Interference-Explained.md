@@ -3,7 +3,7 @@ title: 5.2.5 - Non-Interference
 description: An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply.
 series: Making the Web Accessible for All
 keywords: wcag 5.2.5, non-interference, accessibility, web standards, conformance, user agents
-image: WCAG-Series-5-2-5.png
+image: WCAG-Series-5.2.5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.2.5 Explained, Non-Interference"
 status: published
 date: 2025-07-08

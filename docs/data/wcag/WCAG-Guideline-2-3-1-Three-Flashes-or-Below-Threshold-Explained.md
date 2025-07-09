@@ -3,7 +3,7 @@ title: 2.3.1 - Three Flashes or Below Threshold
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.3.1 (Three Flashes or Below Threshold)—what it means, why it matters, and how to avoid content that flashes more than three times in any one second period.
 keywords: wcag 2.3.1, three flashes, seizure, accessibility, web standards, digital inclusion
-image: WCAG-Series-2-3-1.png
+image: WCAG-Series-2.3.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.1 Explained, Three Flashes or Below Threshold"
 status: published
 date: 2025-07-03

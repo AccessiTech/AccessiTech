@@ -1,14 +1,14 @@
-<!---
+<!--
 title: 3.2.5 - Change on Request
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.5 (Change on Request)—what it means, why it matters, and how to ensure changes only happen when users ask for them.
 keywords: wcag 3.2.5, change on request, accessibility, web standards, user experience, predictable behavior
-image: WCAG-Series-3-2-5.png
+image: WCAG-Series-3.2.5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.2.5 Explained, Change on Request"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures changes in context or content only happen when users request them.
---->
+-->
 
 # **WCAG Guideline 3.2.5: Change on Request Explained**
 

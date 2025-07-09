@@ -8,6 +8,7 @@ import store from "../../store/store";
 import { ACCESSITECH, BLOG_CANONICAL, DEFAULT_SHARE_IMAGE_ALT, DEFAULT_SHARE_IMAGE, IMAGES_BASE_URL, BLOG_DESCRIPTION } from "../../settings/strings";
 import Metadata from "../../components/Metadata/Metadata";
 import CustomMarkdownTable from "../../components/CustomTable/CustomTable";
+import { SITE_HOST } from "../../settings/env";
 
 export interface FetchBlogEntryProps {
   id: string;
@@ -74,6 +75,14 @@ export const BlogEntry = () => {
                     skipHtml={true}
                     components={{
                       table: CustomMarkdownTable,
+                      a: ({href, title, ...props}: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+                        // If the link is external, open in a new tab
+                        if (href && href.startsWith('http') && !href.includes(SITE_HOST)) {
+                          return <a {...props} href={href} title={title} target="_blank" rel="noopener noreferrer" />;
+                        }
+                        // Otherwise, handle internal links normally
+                        return <a {...props} href={href} title={title} />;
+                      }
                     }}
                   >{entry.content}</ReactMarkdown>
                 }
