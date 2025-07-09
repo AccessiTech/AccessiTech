@@ -1,4 +1,4 @@
----
+<!---
 title: 5.5 - Statement of Partial Conformance – Language
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.5 (Statement of Partial Conformance – Language)—what it means, why it matters, and how to document partial conformance due to language limitations.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline explains how to document partial WCAG conformance when language barriers exist.
----
+--->
 
 # **WCAG Guideline 5.5: Statement of Partial Conformance – Language Explained**
 
@@ -108,6 +108,8 @@ A Statement of Partial Conformance – Language helps organizations be transpare
 
 ---
 
-## **End of Guideline 5 Series**
+## **Up Next:**
+
+[Read Guideline 1.1.1: Non-text Content →](WCAG-Guideline-1-1-1-Non-text-Content-Explained)
 
 *Global inclusion means no one is left behind—keep striving for accessibility in every language!*

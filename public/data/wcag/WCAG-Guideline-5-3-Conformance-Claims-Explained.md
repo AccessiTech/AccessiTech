@@ -1,4 +1,4 @@
----
+<!---
 title: 5.3 - Conformance Claims (Optional)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 5.3 (Conformance Claims)—what they are, why they matter, and how to make and document conformance claims for accessibility.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline explains how to make and document conformance claims for accessibility.
----
+--->
 
 # **WCAG Guideline 5.3: Conformance Claims (Optional) Explained**
 

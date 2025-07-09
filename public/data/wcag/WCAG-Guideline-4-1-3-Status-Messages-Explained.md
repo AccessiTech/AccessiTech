@@ -115,6 +115,6 @@ Guideline 4.1.3 is essential for helping users understand changes on your site. 
 
 **Next Up:**
 
-[Read Guideline 5.1.1: General →](WCAG-Guideline-5-1-1-General-Explained)
+[Read Guideline 5.1: Interpreting Normative Requirements →](WCAG-Guideline-5-1-Interpreting-Normative-Requirements-Explained)
 
 *Accessibility means communication—help users stay informed!*
