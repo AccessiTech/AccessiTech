@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.2.3 - Audio Description or Media Alternative (Prerecorded) Explained
+title: 1.2.3 - Audio Description or Media Alternative (Prerecorded)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.
 keywords: wcag 1.2.3, audio description, media alternative, accessibility, video accessibility, web standards, digital inclusion
@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.3 Explained, Audio Description or Media Alternative (Prerecorded)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures video content is accessible for users who are blind or have low vision with audio descriptions or media alternatives.
 -->
 
 # **WCAG Guideline 1.2.3: Audio Description or Media Alternative (Prerecorded) Explained**
@@ -86,7 +87,7 @@ For more, see the [W3C's audio description docs](https://www.w3.org/WAI/WCAG22/U
 - Hiding audio descriptions or transcripts from users
 - Not testing with users who are blind or have low vision
 
-Audit your site regularly and use accessibility checkers to ensure all video content has proper alternatives. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all video content has proper alternatives. For more, see the DCMP's comprehensive [Guidelines and Best Practices for Captioning Educational Video](https://dcmp.org/learn/captioningkey), which also covers audio description and media alternatives for accessibility.
 
 ---
 

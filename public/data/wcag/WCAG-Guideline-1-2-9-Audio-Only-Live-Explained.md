@@ -1,5 +1,5 @@
 <!--
-title: WCAG Guideline 1.2.9 - Audio-only (Live) Explained
+title: 1.2.9 - Audio-only (Live)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.2.9 (Audio-only, Live)—what it means, why it matters, and how to make live audio content accessible.
 keywords: wcag 1.2.9, audio-only live, accessibility, live captions, web standards, digital inclusion
@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.9.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.9 Explained, Audio Only (Live)"
 status: published
 date: 2025-07-01
+excerpt: Ensures live audio content is accessible, for example by providing live captions.
 -->
 
 # **WCAG Guideline 1.2.9: Audio-only (Live) Explained**
@@ -86,7 +87,7 @@ For more, see [W3C's live audio accessibility docs](https://www.w3.org/WAI/WCAG2
 - Not making the alternative easy to find
 - Not testing with users or assistive technology
 
-Audit your site regularly and use accessibility checkers to ensure all live audio content has proper alternatives. For more, see [Deque's live accessibility tips](https://www.deque.com/blog/live-video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all live audio content has proper alternatives. For more, see [University of Washington's Live Captions accessibility guide](https://www.washington.edu/accessibility/videos/captions-live/).
 
 ---
 
@@ -120,9 +121,7 @@ For more, see the [W3C’s official documentation for 1.2.9 Audio-only (Live)](h
 
 Guideline 1.2.9 is essential for making live audio content accessible to users who require text alternatives. By providing real-time captions or transcripts, you support users with disabilities, improve usability, and meet AAA requirements. Make live accessibility a standard part of your event planning for maximum inclusion.
 
-_**Next Up:** WCAG Guideline 1.3.1 - Info and Relationships Explained_
+**Next Up:**
 
-<!-- **Next Up:**
-
-[WCAG Guideline 1.3.1 - Info and Relationships Explained →](WCAG-Guideline-1-3-1-Info-and-Relationships-Explained) -->
+[WCAG Guideline 1.3.1 - Info and Relationships Explained →](WCAG-Guideline-1-3-1-Info-and-Relationships-Explained)
 

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="canonical" href="https://accessi.tech/wcag/WCAG-Guideline-5-2-5-Non-Interference-Explained"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#FDB81E" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#061A32" />
+<meta name="description" content="An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply."/>
+<meta name="og:title" content="5.2.5 - Non-Interference"/>
+<meta name="og:description" content="An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply."/>
+<meta name="og:url" content="https://accessi.tech/wcag/WCAG-Guideline-5-2-5-Non-Interference-Explained"/>
+<meta name="og:type" content="website"/>
+<meta name="og:site_name" content="AccessiTech LLC"/>
+<meta name="og:image" content="https://accessi.tech/assets/images/WCAG-Series-5-2-5.png"/>
+<meta name="og:image:alt" content="Blue text on yellow background saying, &quot;Web Content Accessibility Guidelines (WCAG) 5.2.5 Explained, Non-Interference&quot;"/>
+<meta property="og:image:type" content="image/png" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="AccessiTech LLC"/>
+<meta name="twitter:creator" content="accessiT3ch"/>
+<meta name="twitter:title" content="5.2.5 - Non-Interference"/>
+<meta name="twitter:description" content="An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply."/>
+<meta name="twitter:image" content="https://accessi.tech/assets/images/WCAG-Series-5-2-5.png"/>
+<meta name="twitter:image:alt" content="Blue text on yellow background saying, &quot;Web Content Accessibility Guidelines (WCAG) 5.2.5 Explained, Non-Interference&quot;"/>
+<meta name="twitter:domain" content="accessi.tech/" />
+<meta name="twitter:url" content="https://www.accessi.tech/" />
+<link rel="apple-touch-icon" href="/logo192.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--      manifest.json provides metadata used when your web app is installed on a      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/    -->
+<link rel="manifest" href="/manifest.json" />
+<!--      Notice the use of  in the tags above.      It will be replaced with the URL of the `public` folder during the build.      Only files inside the `public` folder can be referenced from the HTML.      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will      work correctly both with client-side routing and a non-root public URL.      Learn how to configure a non-root public URL by running `npm run build`.    -->
+<title>5.2.5 - Non-Interference</title>
+<script type="module" crossorigin src="/assets/index-45017a53.js">
+</script>
+<link rel="stylesheet" href="/assets/index-f80000a4.css">  </head>
+  <body>
+    
+    <noscript>
+      <div aria-label="App Root" class="App container-fluid"><div class="header-row row"><div class="col"><header class="main-header wcag" aria-label="Header"><a class="skip-link" href="#main">Skip to main content</a><div class="a11y-container" aria-label="Accessibility Options"><div class="a11y__settings-container"><button class="a11y__settings-toggle" aria-label="Toggle Accessibility Options"><i class="fa fa-cog"></i></button></div></div><a href="/" title="AccessiTech LLC" class="logo-link"><h1 class="logo-container" style="background-image:url(&#x27;/assets/images/TypeLogo_White_HC.svg&#x27;)">AccessiTech LLC</h1></a></header></div></div><div class="breadcrumb-row row"><div><title>AccessiTech | 5.2.5 - Non-Interference</title><meta name="description" content="An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply."/><link rel="canonical" href="https://accessi.tech/blog/WCAG-Guideline-5-2-5-Non-Interference-Explained"/><meta name="og:type" content="website"/><meta name="og:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-5-2-5.png"/><meta name="og:image:alt" content="Yellow text on gradient background saying, AccessiTech"/><meta name="og:site_name" content="AccessiTech"/><meta name="og:title" content="AccessiTech | 5.2.5 - Non-Interference"/><meta name="og:description" content="An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply."/><meta name="og:url" content="https://accessi.tech/blog/WCAG-Guideline-5-2-5-Non-Interference-Explained"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="AccessiTech LLC"/><meta name="twitter:creator" content="@accessiT3ch"/><meta name="twitter:title" content="AccessiTech | 5.2.5 - Non-Interference"/><meta name="twitter:description" content="An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply."/><meta name="twitter:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-5-2-5.png"/><meta name="twitter:image:alt" content="Yellow text on gradient background saying, AccessiTech"/></div><div class="offset-md-2 col"><nav aria-label="breadcrumb" class="breadcrumb-container"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/wcag">WCAG Explained</a></li><li class="breadcrumb-item active" aria-current="page">5.2.5 - Non-Interference</li></ol></nav></div></div><div class="content-row row"><main id="main" aria-label="Blog Entry" class="blog-entry-page"><div class="col"><div class="row"><div class="col-md-8 col-12 offset-md-2"><div><h1><strong>WCAG 2.1 Section 5.2.5: Non-Interference</strong></h1>
+<p><strong>Estimated read time:</strong> 4–5 minutes</p>
+<hr/>
+<h2><strong>What Is Non-Interference?</strong></h2>
+<p>Section 5.2.5 of WCAG 2.1 requires that if you use web technologies in a way that is not accessibility supported, or in a way that does not conform to WCAG, those technologies must not block users from accessing the rest of the page. The rest of the page must remain accessible, even if some features are not.</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>Non-accessibility-supported or non-conforming technologies must not prevent users from accessing content or functionality on the page.</li>
+<li>The page must still meet all conformance requirements when unsupported technologies are turned on, turned off, or not supported by the user agent (browser or assistive technology).</li>
+<li>Certain critical success criteria always apply to all content, even if that content is not relied upon for conformance.</li>
+</ul>
+<hr/>
+<h2><strong>Which Success Criteria Always Apply?</strong></h2>
+<p>The following WCAG 2.1 success criteria must be met for all content on the page, including content that is not relied upon for conformance:</p>
+<ul>
+<li><strong>1.4.2 Audio Control</strong> (users must be able to pause, stop, or control audio)</li>
+<li><strong>2.1.2 No Keyboard Trap</strong> (users must be able to move keyboard focus away from any component)</li>
+<li><strong>2.2.2 Pause, Stop, Hide</strong> (users must be able to pause, stop, or hide moving, blinking, scrolling, or auto-updating content)</li>
+<li><strong>2.3.1 Three Flashes or Below Threshold</strong> (content must not flash more than three times in any one second period)</li>
+</ul>
+<hr/>
+<h2><strong>Why Is This Important?</strong></h2>
+<ul>
+<li><strong>User access:</strong> Users must not be locked out of content because of unsupported or non-conforming features.</li>
+<li><strong>Robustness:</strong> The site must work for users regardless of which technologies are enabled or supported.</li>
+<li><strong>Legal compliance:</strong> Conformance requires that non-interference is maintained.</li>
+</ul>
+<hr/>
+<h2><strong>Examples</strong></h2>
+<ul>
+<li><strong>Accessible:</strong> A page uses a video player that is not accessibility supported, but the rest of the page (text, navigation, forms) remains accessible and usable.</li>
+<li><strong>Not accessible:</strong> A custom widget that, if unsupported, blocks access to the main content or navigation.</li>
+<li><strong>Good practice:</strong> If a feature is not supported, users can still access all essential information and functions.</li>
+</ul>
+<hr/>
+<h2><strong>How to Meet This Requirement</strong></h2>
+<ul>
+<li>Ensure that unsupported or non-conforming technologies do not block access to content or functionality.</li>
+<li>Test your site with unsupported technologies turned off or not present.</li>
+<li>Always meet the critical success criteria listed above for all content.</li>
+<li>Provide accessible alternatives for any features that may not be supported.</li>
+</ul>
+<hr/>
+<h2><strong>Summary</strong></h2>
+<p>Non-interference means that your site remains accessible even if some features are not supported or do not conform. Users must always be able to access the main content and functions, and certain critical accessibility requirements must always be met.</p>
+<hr/>
+<h2><strong>References &amp; Further Reading</strong></h2>
+<ul>
+<li><a href="https://www.w3.org/TR/WCAG21/#cc5">WCAG 2.1 Section 5.2.5: Non-Interference</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conformance-requirements">Understanding Conformance Requirements</a></li>
+</ul>
+<hr/>
+<p><strong>Up Next:</strong></p>
+<p><a href="WCAG-Guideline-5-3-1-Conformance-Claims-Explained">Read Guideline 5.3.1: Required Components of a Conformance Claim →</a></p>
+<p><em>Accessibility means no one gets left behind—even if some features don’t work for everyone.</em></p></div></div></div></div></main></div><div class="footer-row row"><div class="col"><section class="footer-section" aria-label="Footer"><h3>Reach Out!</h3><ul aria-label="Contact List"><li><a href="https://www.fiverr.com/accessitech" target="_blank" title="Fiverr at accessiTech">Fiverr at accessiTech</a></li><li><a href="https://www.linkedin.com/company/accessitech/" target="_blank" title="LinkedIn at AccessiTech LLC">LinkedIn at AccessiTech LLC</a></li><li><a href="https://www.reddit.com/user/accessitech" target="_blank" title="Reddit at u/accessiTech">Reddit at u/accessiTech</a></li><li><a href="https://twitter.com/accessiT3ch" target="_blank" title="Twitter at accessiT3ch">Twitter at accessiT3ch</a></li></ul><p aria-label="Reporting an Issue" class="github-issues">Report bugs, request features, and start collaborating via <a href="https://github.com/AccessiTech/AccessiTech/issues" target="_blank" title="GitHub Issues">GitHub Issues</a>!</p><p aria-label="Copyright" class="copyright">© 2025 AccessiTech LLC. All Rights Reserved.</p></section></div></div></div>
+    </noscript>
+    
+    <div id="root"><div aria-label="App Root" class="App container-fluid"><div class="header-row row"><div class="col"><header class="main-header wcag" aria-label="Header"><a class="skip-link" href="#main">Skip to main content</a><div class="a11y-container" aria-label="Accessibility Options"><div class="a11y__settings-container"><button class="a11y__settings-toggle" aria-label="Toggle Accessibility Options"><i class="fa fa-cog"></i></button></div></div><a href="/" title="AccessiTech LLC" class="logo-link"><h1 class="logo-container" style="background-image:url(&#x27;/assets/images/TypeLogo_White_HC.svg&#x27;)">AccessiTech LLC</h1></a></header></div></div><div class="breadcrumb-row row"><div><title>AccessiTech | 5.2.5 - Non-Interference</title><meta name="description" content="An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply."/><link rel="canonical" href="https://accessi.tech/blog/WCAG-Guideline-5-2-5-Non-Interference-Explained"/><meta name="og:type" content="website"/><meta name="og:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-5-2-5.png"/><meta name="og:image:alt" content="Yellow text on gradient background saying, AccessiTech"/><meta name="og:site_name" content="AccessiTech"/><meta name="og:title" content="AccessiTech | 5.2.5 - Non-Interference"/><meta name="og:description" content="An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply."/><meta name="og:url" content="https://accessi.tech/blog/WCAG-Guideline-5-2-5-Non-Interference-Explained"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="AccessiTech LLC"/><meta name="twitter:creator" content="@accessiT3ch"/><meta name="twitter:title" content="AccessiTech | 5.2.5 - Non-Interference"/><meta name="twitter:description" content="An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply."/><meta name="twitter:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-5-2-5.png"/><meta name="twitter:image:alt" content="Yellow text on gradient background saying, AccessiTech"/></div><div class="offset-md-2 col"><nav aria-label="breadcrumb" class="breadcrumb-container"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/wcag">WCAG Explained</a></li><li class="breadcrumb-item active" aria-current="page">5.2.5 - Non-Interference</li></ol></nav></div></div><div class="content-row row"><main id="main" aria-label="Blog Entry" class="blog-entry-page"><div class="col"><div class="row"><div class="col-md-8 col-12 offset-md-2"><div><h1><strong>WCAG 2.1 Section 5.2.5: Non-Interference</strong></h1>
+<p><strong>Estimated read time:</strong> 4–5 minutes</p>
+<hr/>
+<h2><strong>What Is Non-Interference?</strong></h2>
+<p>Section 5.2.5 of WCAG 2.1 requires that if you use web technologies in a way that is not accessibility supported, or in a way that does not conform to WCAG, those technologies must not block users from accessing the rest of the page. The rest of the page must remain accessible, even if some features are not.</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>Non-accessibility-supported or non-conforming technologies must not prevent users from accessing content or functionality on the page.</li>
+<li>The page must still meet all conformance requirements when unsupported technologies are turned on, turned off, or not supported by the user agent (browser or assistive technology).</li>
+<li>Certain critical success criteria always apply to all content, even if that content is not relied upon for conformance.</li>
+</ul>
+<hr/>
+<h2><strong>Which Success Criteria Always Apply?</strong></h2>
+<p>The following WCAG 2.1 success criteria must be met for all content on the page, including content that is not relied upon for conformance:</p>
+<ul>
+<li><strong>1.4.2 Audio Control</strong> (users must be able to pause, stop, or control audio)</li>
+<li><strong>2.1.2 No Keyboard Trap</strong> (users must be able to move keyboard focus away from any component)</li>
+<li><strong>2.2.2 Pause, Stop, Hide</strong> (users must be able to pause, stop, or hide moving, blinking, scrolling, or auto-updating content)</li>
+<li><strong>2.3.1 Three Flashes or Below Threshold</strong> (content must not flash more than three times in any one second period)</li>
+</ul>
+<hr/>
+<h2><strong>Why Is This Important?</strong></h2>
+<ul>
+<li><strong>User access:</strong> Users must not be locked out of content because of unsupported or non-conforming features.</li>
+<li><strong>Robustness:</strong> The site must work for users regardless of which technologies are enabled or supported.</li>
+<li><strong>Legal compliance:</strong> Conformance requires that non-interference is maintained.</li>
+</ul>
+<hr/>
+<h2><strong>Examples</strong></h2>
+<ul>
+<li><strong>Accessible:</strong> A page uses a video player that is not accessibility supported, but the rest of the page (text, navigation, forms) remains accessible and usable.</li>
+<li><strong>Not accessible:</strong> A custom widget that, if unsupported, blocks access to the main content or navigation.</li>
+<li><strong>Good practice:</strong> If a feature is not supported, users can still access all essential information and functions.</li>
+</ul>
+<hr/>
+<h2><strong>How to Meet This Requirement</strong></h2>
+<ul>
+<li>Ensure that unsupported or non-conforming technologies do not block access to content or functionality.</li>
+<li>Test your site with unsupported technologies turned off or not present.</li>
+<li>Always meet the critical success criteria listed above for all content.</li>
+<li>Provide accessible alternatives for any features that may not be supported.</li>
+</ul>
+<hr/>
+<h2><strong>Summary</strong></h2>
+<p>Non-interference means that your site remains accessible even if some features are not supported or do not conform. Users must always be able to access the main content and functions, and certain critical accessibility requirements must always be met.</p>
+<hr/>
+<h2><strong>References &amp; Further Reading</strong></h2>
+<ul>
+<li><a href="https://www.w3.org/TR/WCAG21/#cc5">WCAG 2.1 Section 5.2.5: Non-Interference</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conformance-requirements">Understanding Conformance Requirements</a></li>
+</ul>
+<hr/>
+<p><strong>Up Next:</strong></p>
+<p><a href="WCAG-Guideline-5-3-1-Conformance-Claims-Explained">Read Guideline 5.3.1: Required Components of a Conformance Claim →</a></p>
+<p><em>Accessibility means no one gets left behind—even if some features don’t work for everyone.</em></p></div></div></div></div></main></div><div class="footer-row row"><div class="col"><section class="footer-section" aria-label="Footer"><h3>Reach Out!</h3><ul aria-label="Contact List"><li><a href="https://www.fiverr.com/accessitech" target="_blank" title="Fiverr at accessiTech">Fiverr at accessiTech</a></li><li><a href="https://www.linkedin.com/company/accessitech/" target="_blank" title="LinkedIn at AccessiTech LLC">LinkedIn at AccessiTech LLC</a></li><li><a href="https://www.reddit.com/user/accessitech" target="_blank" title="Reddit at u/accessiTech">Reddit at u/accessiTech</a></li><li><a href="https://twitter.com/accessiT3ch" target="_blank" title="Twitter at accessiT3ch">Twitter at accessiT3ch</a></li></ul><p aria-label="Reporting an Issue" class="github-issues">Report bugs, request features, and start collaborating via <a href="https://github.com/AccessiTech/AccessiTech/issues" target="_blank" title="GitHub Issues">GitHub Issues</a>!</p><p aria-label="Copyright" class="copyright">© 2025 AccessiTech LLC. All Rights Reserved.</p></section></div></div></div></div>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KE9W4MCVH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-6KE9W4MCVH');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="canonical" href="https://accessi.tech/wcag/WCAG-Guideline-3-2-2-On-Input-Explained"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#FDB81E" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#061A32" />
+<meta name="description" content="A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible."/>
+<meta name="og:title" content="3.2.2 - On Input"/>
+<meta name="og:description" content="A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible."/>
+<meta name="og:url" content="https://accessi.tech/wcag/WCAG-Guideline-3-2-2-On-Input-Explained"/>
+<meta name="og:type" content="website"/>
+<meta name="og:site_name" content="AccessiTech LLC"/>
+<meta name="og:image" content="https://accessi.tech/assets/images/WCAG-Series-3-2-2.png"/>
+<meta name="og:image:alt" content="Blue text on yellow background saying, &quot;Web Content Accessibiilty Guiedlines (WCAG) 3.2.2 Explained, On Input&quot;"/>
+<meta property="og:image:type" content="image/png" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="AccessiTech LLC"/>
+<meta name="twitter:creator" content="accessiT3ch"/>
+<meta name="twitter:title" content="3.2.2 - On Input"/>
+<meta name="twitter:description" content="A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible."/>
+<meta name="twitter:image" content="https://accessi.tech/assets/images/WCAG-Series-3-2-2.png"/>
+<meta name="twitter:image:alt" content="Blue text on yellow background saying, &quot;Web Content Accessibiilty Guiedlines (WCAG) 3.2.2 Explained, On Input&quot;"/>
+<meta name="twitter:domain" content="accessi.tech/" />
+<meta name="twitter:url" content="https://www.accessi.tech/" />
+<link rel="apple-touch-icon" href="/logo192.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--      manifest.json provides metadata used when your web app is installed on a      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/    -->
+<link rel="manifest" href="/manifest.json" />
+<!--      Notice the use of  in the tags above.      It will be replaced with the URL of the `public` folder during the build.      Only files inside the `public` folder can be referenced from the HTML.      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will      work correctly both with client-side routing and a non-root public URL.      Learn how to configure a non-root public URL by running `npm run build`.    -->
+<title>3.2.2 - On Input</title>
+<script type="module" crossorigin src="/assets/index-45017a53.js">
+</script>
+<link rel="stylesheet" href="/assets/index-f80000a4.css">  </head>
+  <body>
+    
+    <noscript>
+      <div aria-label="App Root" class="App container-fluid"><div class="header-row row"><div class="col"><header class="main-header wcag" aria-label="Header"><a class="skip-link" href="#main">Skip to main content</a><div class="a11y-container" aria-label="Accessibility Options"><div class="a11y__settings-container"><button class="a11y__settings-toggle" aria-label="Toggle Accessibility Options"><i class="fa fa-cog"></i></button></div></div><a href="/" title="AccessiTech LLC" class="logo-link"><h1 class="logo-container" style="background-image:url(&#x27;/assets/images/TypeLogo_White_HC.svg&#x27;)">AccessiTech LLC</h1></a></header></div></div><div class="breadcrumb-row row"><div><title>AccessiTech | 3.2.2 - On Input</title><meta name="description" content="A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible."/><link rel="canonical" href="https://accessi.tech/blog/WCAG-Guideline-3-2-2-On-Input-Explained"/><meta name="og:type" content="website"/><meta name="og:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-3-2-2.png"/><meta name="og:image:alt" content="Yellow text on gradient background saying, AccessiTech"/><meta name="og:site_name" content="AccessiTech"/><meta name="og:title" content="AccessiTech | 3.2.2 - On Input"/><meta name="og:description" content="A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible."/><meta name="og:url" content="https://accessi.tech/blog/WCAG-Guideline-3-2-2-On-Input-Explained"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="AccessiTech LLC"/><meta name="twitter:creator" content="@accessiT3ch"/><meta name="twitter:title" content="AccessiTech | 3.2.2 - On Input"/><meta name="twitter:description" content="A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible."/><meta name="twitter:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-3-2-2.png"/><meta name="twitter:image:alt" content="Yellow text on gradient background saying, AccessiTech"/></div><div class="offset-md-2 col"><nav aria-label="breadcrumb" class="breadcrumb-container"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/wcag">WCAG Explained</a></li><li class="breadcrumb-item active" aria-current="page">3.2.2 - On Input</li></ol></nav></div></div><div class="content-row row"><main id="main" aria-label="Blog Entry" class="blog-entry-page"><div class="col"><div class="row"><div class="col-md-8 col-12 offset-md-2"><div><h1><strong>WCAG Guideline 3.2.2: On Input Explained</strong></h1>
+<p><strong>Estimated read time:</strong> 5–6 minutes</p>
+<hr/>
+<h2><strong>Guideline 3: Understandable</strong></h2>
+<p>The Understandable principle ensures that web content behaves in ways users expect, especially when interacting with forms and controls.</p>
+<h2><strong>Guideline 3.2: Predictable</strong></h2>
+<p>Guideline 3.2 focuses on making web pages behave in ways users expect, especially when interacting with forms, links, and controls.</p>
+<h2><strong>What Is Guideline 3.2.2 On Input?</strong></h2>
+
+<blockquote>
+<p>&quot;Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.&quot;</p>
+</blockquote>
+<p>Guideline 3.2.2 requires that changes in input (like selecting an option or entering text) do not trigger unexpected actions such as navigation or content changes, unless users are warned in advance.</p>
+<ul>
+<li>Prevents confusion for users, especially those using assistive technology</li>
+<li>Ensures users are in control of their experience</li>
+<li>Applies to all form controls, dropdowns, and interactive widgets</li>
+</ul>
+<p>For more, see <a href="https://blog.equally.ai/developer-guide/wcag-3-2-2-on-input">Equally AI: WCAG 3.2.2 On Input</a>.</p>
+<hr/>
+<h2><strong>Why Does It Matter?</strong></h2>
+
+<ul>
+<li><strong>Keyboard and Screen Reader Users:</strong> May be disoriented by unexpected changes after input</li>
+<li><strong>All Users:</strong> Predictable behavior builds trust and usability</li>
+<li><strong>Accessibility:</strong> Users need to know what will happen before it happens</li>
+</ul>
+<p>For more, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input.html">W3C’s guidance on On Input</a>.</p>
+<hr/>
+<h2><strong>What Needs to Avoid Changes on Input?</strong></h2>
+
+<ul>
+<li>All form controls (dropdowns, checkboxes, radio buttons, text fields)</li>
+<li>Avoid triggering navigation, popups, or content changes on input alone</li>
+<li>If a change is necessary, provide a clear warning or instruction</li>
+</ul>
+<hr/>
+<h2><strong>How to Meet Guideline 3.2.2</strong></h2>
+
+<ul>
+<li>Require explicit user action (e.g., clicking a submit button) to trigger changes</li>
+<li>Warn users if a control will cause a change of context on input</li>
+<li>Test all form controls for unexpected behavior</li>
+<li>Review custom widgets for input-triggered changes</li>
+</ul>
+<p>For more, see the <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G201">W3C&#x27;s On Input Techniques</a>.</p>
+<hr/>
+<h2><strong>Common Mistakes to Avoid</strong></h2>
+
+<ul>
+<li>Triggering navigation or popups when a user changes a form control</li>
+<li>Failing to warn users about input-triggered changes</li>
+<li>Not testing with keyboard and assistive technology</li>
+</ul>
+<hr/>
+<h2><strong>Differences Between A, AA, and AAA for Guideline 3.2.2 in WCAG 2.2</strong></h2>
+
+<ul>
+<li><strong>Level A:</strong> Requires no change of context on input unless users are warned.</li>
+<li><strong>Level AA:</strong> No additional requirements for 3.2.2.</li>
+<li><strong>Level AAA:</strong> No additional requirements for 3.2.2.</li>
+</ul>
+<p>For more, see the <a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input.html">W3C’s official documentation for 3.2.2 On Input</a>.</p>
+<hr/>
+<h2><strong>Quick Checklist</strong></h2>
+
+<ul>
+<li>No navigation or popups triggered by input alone</li>
+<li>All changes require explicit user action or clear warning</li>
+<li>Tested with keyboard and assistive technology</li>
+<li>Custom widgets reviewed for input behavior</li>
+</ul>
+<hr/>
+<h2><strong>Summary</strong></h2>
+
+<p>Guideline 3.2.2 ensures that users are in control of what happens when they interact with your forms and controls. Avoid surprises—let users know what to expect.</p>
+<p><strong>Next Up:</strong></p>
+<p><a href="WCAG-Guideline-3-2-3-Consistent-Navigation-Explained">WCAG-Guideline-3-2-3-Consistent-Navigation-Explained</a></p>
+<p><em>Predictability and control are key—make sure your forms and controls behave as users expect!</em></p></div></div></div></div></main></div><div class="footer-row row"><div class="col"><section class="footer-section" aria-label="Footer"><h3>Reach Out!</h3><ul aria-label="Contact List"><li><a href="https://www.fiverr.com/accessitech" target="_blank" title="Fiverr at accessiTech">Fiverr at accessiTech</a></li><li><a href="https://www.linkedin.com/company/accessitech/" target="_blank" title="LinkedIn at AccessiTech LLC">LinkedIn at AccessiTech LLC</a></li><li><a href="https://www.reddit.com/user/accessitech" target="_blank" title="Reddit at u/accessiTech">Reddit at u/accessiTech</a></li><li><a href="https://twitter.com/accessiT3ch" target="_blank" title="Twitter at accessiT3ch">Twitter at accessiT3ch</a></li></ul><p aria-label="Reporting an Issue" class="github-issues">Report bugs, request features, and start collaborating via <a href="https://github.com/AccessiTech/AccessiTech/issues" target="_blank" title="GitHub Issues">GitHub Issues</a>!</p><p aria-label="Copyright" class="copyright">© 2025 AccessiTech LLC. All Rights Reserved.</p></section></div></div></div>
+    </noscript>
+    
+    <div id="root"><div aria-label="App Root" class="App container-fluid"><div class="header-row row"><div class="col"><header class="main-header wcag" aria-label="Header"><a class="skip-link" href="#main">Skip to main content</a><div class="a11y-container" aria-label="Accessibility Options"><div class="a11y__settings-container"><button class="a11y__settings-toggle" aria-label="Toggle Accessibility Options"><i class="fa fa-cog"></i></button></div></div><a href="/" title="AccessiTech LLC" class="logo-link"><h1 class="logo-container" style="background-image:url(&#x27;/assets/images/TypeLogo_White_HC.svg&#x27;)">AccessiTech LLC</h1></a></header></div></div><div class="breadcrumb-row row"><div><title>AccessiTech | 3.2.2 - On Input</title><meta name="description" content="A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible."/><link rel="canonical" href="https://accessi.tech/blog/WCAG-Guideline-3-2-2-On-Input-Explained"/><meta name="og:type" content="website"/><meta name="og:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-3-2-2.png"/><meta name="og:image:alt" content="Yellow text on gradient background saying, AccessiTech"/><meta name="og:site_name" content="AccessiTech"/><meta name="og:title" content="AccessiTech | 3.2.2 - On Input"/><meta name="og:description" content="A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible."/><meta name="og:url" content="https://accessi.tech/blog/WCAG-Guideline-3-2-2-On-Input-Explained"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="AccessiTech LLC"/><meta name="twitter:creator" content="@accessiT3ch"/><meta name="twitter:title" content="AccessiTech | 3.2.2 - On Input"/><meta name="twitter:description" content="A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible."/><meta name="twitter:image" content="https://accessi.tech/assets/images/https://accessi.tech/assets/images/WCAG-Series-3-2-2.png"/><meta name="twitter:image:alt" content="Yellow text on gradient background saying, AccessiTech"/></div><div class="offset-md-2 col"><nav aria-label="breadcrumb" class="breadcrumb-container"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/wcag">WCAG Explained</a></li><li class="breadcrumb-item active" aria-current="page">3.2.2 - On Input</li></ol></nav></div></div><div class="content-row row"><main id="main" aria-label="Blog Entry" class="blog-entry-page"><div class="col"><div class="row"><div class="col-md-8 col-12 offset-md-2"><div><h1><strong>WCAG Guideline 3.2.2: On Input Explained</strong></h1>
+<p><strong>Estimated read time:</strong> 5–6 minutes</p>
+<hr/>
+<h2><strong>Guideline 3: Understandable</strong></h2>
+<p>The Understandable principle ensures that web content behaves in ways users expect, especially when interacting with forms and controls.</p>
+<h2><strong>Guideline 3.2: Predictable</strong></h2>
+<p>Guideline 3.2 focuses on making web pages behave in ways users expect, especially when interacting with forms, links, and controls.</p>
+<h2><strong>What Is Guideline 3.2.2 On Input?</strong></h2>
+
+<blockquote>
+<p>&quot;Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.&quot;</p>
+</blockquote>
+<p>Guideline 3.2.2 requires that changes in input (like selecting an option or entering text) do not trigger unexpected actions such as navigation or content changes, unless users are warned in advance.</p>
+<ul>
+<li>Prevents confusion for users, especially those using assistive technology</li>
+<li>Ensures users are in control of their experience</li>
+<li>Applies to all form controls, dropdowns, and interactive widgets</li>
+</ul>
+<p>For more, see <a href="https://blog.equally.ai/developer-guide/wcag-3-2-2-on-input">Equally AI: WCAG 3.2.2 On Input</a>.</p>
+<hr/>
+<h2><strong>Why Does It Matter?</strong></h2>
+
+<ul>
+<li><strong>Keyboard and Screen Reader Users:</strong> May be disoriented by unexpected changes after input</li>
+<li><strong>All Users:</strong> Predictable behavior builds trust and usability</li>
+<li><strong>Accessibility:</strong> Users need to know what will happen before it happens</li>
+</ul>
+<p>For more, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input.html">W3C’s guidance on On Input</a>.</p>
+<hr/>
+<h2><strong>What Needs to Avoid Changes on Input?</strong></h2>
+
+<ul>
+<li>All form controls (dropdowns, checkboxes, radio buttons, text fields)</li>
+<li>Avoid triggering navigation, popups, or content changes on input alone</li>
+<li>If a change is necessary, provide a clear warning or instruction</li>
+</ul>
+<hr/>
+<h2><strong>How to Meet Guideline 3.2.2</strong></h2>
+
+<ul>
+<li>Require explicit user action (e.g., clicking a submit button) to trigger changes</li>
+<li>Warn users if a control will cause a change of context on input</li>
+<li>Test all form controls for unexpected behavior</li>
+<li>Review custom widgets for input-triggered changes</li>
+</ul>
+<p>For more, see the <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G201">W3C&#x27;s On Input Techniques</a>.</p>
+<hr/>
+<h2><strong>Common Mistakes to Avoid</strong></h2>
+
+<ul>
+<li>Triggering navigation or popups when a user changes a form control</li>
+<li>Failing to warn users about input-triggered changes</li>
+<li>Not testing with keyboard and assistive technology</li>
+</ul>
+<hr/>
+<h2><strong>Differences Between A, AA, and AAA for Guideline 3.2.2 in WCAG 2.2</strong></h2>
+
+<ul>
+<li><strong>Level A:</strong> Requires no change of context on input unless users are warned.</li>
+<li><strong>Level AA:</strong> No additional requirements for 3.2.2.</li>
+<li><strong>Level AAA:</strong> No additional requirements for 3.2.2.</li>
+</ul>
+<p>For more, see the <a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input.html">W3C’s official documentation for 3.2.2 On Input</a>.</p>
+<hr/>
+<h2><strong>Quick Checklist</strong></h2>
+
+<ul>
+<li>No navigation or popups triggered by input alone</li>
+<li>All changes require explicit user action or clear warning</li>
+<li>Tested with keyboard and assistive technology</li>
+<li>Custom widgets reviewed for input behavior</li>
+</ul>
+<hr/>
+<h2><strong>Summary</strong></h2>
+
+<p>Guideline 3.2.2 ensures that users are in control of what happens when they interact with your forms and controls. Avoid surprises—let users know what to expect.</p>
+<p><strong>Next Up:</strong></p>
+<p><a href="WCAG-Guideline-3-2-3-Consistent-Navigation-Explained">WCAG-Guideline-3-2-3-Consistent-Navigation-Explained</a></p>
+<p><em>Predictability and control are key—make sure your forms and controls behave as users expect!</em></p></div></div></div></div></main></div><div class="footer-row row"><div class="col"><section class="footer-section" aria-label="Footer"><h3>Reach Out!</h3><ul aria-label="Contact List"><li><a href="https://www.fiverr.com/accessitech" target="_blank" title="Fiverr at accessiTech">Fiverr at accessiTech</a></li><li><a href="https://www.linkedin.com/company/accessitech/" target="_blank" title="LinkedIn at AccessiTech LLC">LinkedIn at AccessiTech LLC</a></li><li><a href="https://www.reddit.com/user/accessitech" target="_blank" title="Reddit at u/accessiTech">Reddit at u/accessiTech</a></li><li><a href="https://twitter.com/accessiT3ch" target="_blank" title="Twitter at accessiT3ch">Twitter at accessiT3ch</a></li></ul><p aria-label="Reporting an Issue" class="github-issues">Report bugs, request features, and start collaborating via <a href="https://github.com/AccessiTech/AccessiTech/issues" target="_blank" title="GitHub Issues">GitHub Issues</a>!</p><p aria-label="Copyright" class="copyright">© 2025 AccessiTech LLC. All Rights Reserved.</p></section></div></div></div></div>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KE9W4MCVH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-6KE9W4MCVH');
+    </script>
+  </body>
+</html>
