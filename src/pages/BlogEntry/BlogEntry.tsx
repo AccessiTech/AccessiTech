@@ -74,6 +74,14 @@ export const BlogEntry = () => {
                     skipHtml={true}
                     components={{
                       table: CustomMarkdownTable,
+                      a: ({href, title, ...props}: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+                        // If the link is external, open in a new tab
+                        if (href && href.startsWith('http') && !href.includes(window.location.hostname)) {
+                          return <a {...props} href={href} title={title} target="_blank" rel="noopener noreferrer" />;
+                        }
+                        // Otherwise, handle internal links normally
+                        return <a {...props} href={href} title={title} />;
+                      }
                     }}
                   >{entry.content}</ReactMarkdown>
                 }
