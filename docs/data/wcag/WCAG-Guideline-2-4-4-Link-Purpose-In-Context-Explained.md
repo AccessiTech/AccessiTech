@@ -3,7 +3,7 @@ title: 2.4.4 - Link Purpose (In Context)
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.4.4 (Link Purpose, In Context)—what it means, why it matters, and how to ensure every link's purpose is clear from its context.
 keywords: wcag 2.4.4, link purpose, in context, accessibility, web standards, digital inclusion
-image: WCAG-Series-2-4-4.png
+image: WCAG-Series-2.4.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.4 Explained, Link Purpose (In Context)"
 status: published
 date: 2025-07-03

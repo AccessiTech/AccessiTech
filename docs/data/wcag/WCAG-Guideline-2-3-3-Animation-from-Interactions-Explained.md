@@ -3,7 +3,7 @@ title: 2.3.3 - Animation from Interactions
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.3.3 (Animation from Interactions)—what it means, why it matters, and how to ensure users can disable non-essential animation triggered by interaction.
 keywords: wcag 2.3.3, animation from interactions, motion, accessibility, web standards, digital inclusion
-image: WCAG-Series-2-3-3.png
+image: WCAG-Series-2.3.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.3.3 Explained, Animation from Interactions"
 status: published
 date: 2025-07-03

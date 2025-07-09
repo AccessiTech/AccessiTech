@@ -3,7 +3,7 @@ title: 3.1.4 - Abbreviations
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.1.4 (Abbreviations)—what it means, why it matters, and how to ensure abbreviations are explained or expanded.
 keywords: wcag 3.1.4, abbreviations, accessibility, web standards, digital inclusion
-image: WCAG-Series-3-1-4.png
+image: WCAG-Series-3.1.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.4 Explained, Abbreviations"
 status: published
 date: 2025-07-03

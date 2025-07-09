@@ -3,7 +3,7 @@ title: 5.3.1 - Required Components of a Conformance Claim
 series: Making the Web Accessible for All
 description: A practical guide to WCAG 2.1 Section 5.3.1, which details the required components for making a valid accessibility conformance claim.
 keywords: wcag 5.3.1, conformance claim, accessibility, web standards, required components, documentation
-image: WCAG-Series-5-3.png
+image: WCAG-Series-5.3.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.3.1 Explained, Required Components of a Conformance Claim"
 status: published
 date: 2025-07-08

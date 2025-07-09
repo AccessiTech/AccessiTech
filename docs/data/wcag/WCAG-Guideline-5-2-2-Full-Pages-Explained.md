@@ -3,7 +3,7 @@ title: 5.2.2 - Full Pages
 series: Making the Web Accessible for All
 description: An in-depth explanation of WCAG 2.1 Section 5.2.2, Full Pages—what it means, why it matters, and how to apply it.
 keywords: wcag 5.2.2, full pages, accessibility, web standards, conformance, partial conformance
-image: WCAG-Series-5-2-2.png
+image: WCAG-Series-5.2.2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.2.2 Explained, Full Pages"
 status: published
 date: 2025-07-08

@@ -3,7 +3,7 @@ title: 5.2.4 - Only Accessibility-Supported Ways of Using Technologies
 series: Making the Web Accessible for All
 description: An in-depth explanation of WCAG 2.1 Section 5.2.4, which requires that only accessibility-supported ways of using technologies are relied upon to meet accessibility requirements.
 keywords: wcag 5.2.4, accessibility-supported, web technologies, assistive technology, conformance, accessibility support
-image: WCAG-Series-5-2-4.png
+image: WCAG-Series-5.2.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.2.4 Explained, Only Accessibility-Supported Ways"
 status: published
 date: 2025-07-08
