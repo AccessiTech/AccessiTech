@@ -3,7 +3,7 @@ title: 2.5.1 - Pointer Gestures
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what it means, why it matters, and how to ensure all functionality is operable with simple pointer gestures.
 keywords: wcag 2.5.1, pointer gestures, accessibility, web standards, digital inclusion
-image: WCAG-Series-2-5-1.png
+image: WCAG-Series-2.5.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.1 Explained, Pointer Gestures"
 status: published
 date: 2025-07-03

@@ -3,7 +3,7 @@ title: 5.3.2 - Optional Components of a Conformance Claim
 series: Making the Web Accessible for All
 description: A practical guide to WCAG 2.1 Section 5.3.2, which details the optional components that can enhance a WCAG conformance claim.
 keywords: wcag 5.3.2, conformance claim, accessibility, web standards, optional components, documentation
-image: WCAG-Series-5-3.png
+image: WCAG-Series-5.3.2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.3.2 Explained, Optional Components of a Conformance Claim"
 status: published
 date: 2025-07-08

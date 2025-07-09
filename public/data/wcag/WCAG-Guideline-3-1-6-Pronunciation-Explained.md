@@ -1,14 +1,14 @@
-<!---
+<!--
 title: 3.1.6 - Pronunciation
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.1.6 (Pronunciation)—what it means, why it matters, and how to help users understand how words are spoken.
 keywords: wcag 3.1.6, pronunciation, accessibility, web standards, screen readers, user experience
-image: WCAG-Series-3-1-6.png
+image: WCAG-Series-3.1.6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.6 Explained, Pronunciation"
 status: published
 date: 2025-07-03
 excerpt: Helps users understand how words are spoken, improving clarity for screen readers and all users.
---->
+-->
 
 # **WCAG Guideline 3.1.6: Pronunciation Explained**
 

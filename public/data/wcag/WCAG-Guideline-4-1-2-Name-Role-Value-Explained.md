@@ -3,7 +3,7 @@ title: 4.1.2 - Name, Role, Value
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 4.1.2 (Name, Role, Value)—what it means, why it matters, and how to ensure user interface components have name, role, and value that can be programmatically determined.
 keywords: wcag 4.1.2, name role value, accessibility, web standards, digital inclusion
-image: WCAG-Series-4-1-2.png
+image: WCAG-Series-4.1.2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.2 Explained, Name, Role, Value"
 status: published
 date: 2025-07-03

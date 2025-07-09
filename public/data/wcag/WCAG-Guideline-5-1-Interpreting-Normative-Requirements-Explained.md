@@ -3,7 +3,7 @@ title: 5.1 - Interpreting Normative Requirements
 series: Making the Web Accessible for All
 description: An in-depth explanation of WCAG 2.1 Section 5.1, Interpreting Normative Requirements—what it means, why it matters, and how to apply it.
 keywords: wcag 5.1, normative, informative, accessibility, web standards, conformance
-image: WCAG-Series-5-1-1.png
+image: WCAG-Series-5.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.1 Explained, Interpreting Normative Requirements"
 status: published
 date: 2025-07-08
