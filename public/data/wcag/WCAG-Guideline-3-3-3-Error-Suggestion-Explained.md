@@ -1,4 +1,4 @@
----
+<!---
 title: 3.3.3 - Error Suggestion
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.3 (Error Suggestion)—what it means, why it matters, and how to help users fix mistakes with helpful suggestions.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline helps users fix mistakes with helpful error suggestions.
----
+--->
 
 # **WCAG Guideline 3.3.3: Error Suggestion Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.3.3 requires that when a user makes a mistake in a form or input, an
 - Helps users correct mistakes quickly and easily
 - Essential for users with cognitive, visual, or learning disabilities
 - Applies to all forms, inputs, and user data entry
+
+For more, see [BOIA: Tips for Meeting WCAG’s Requirement for Error Suggestion](https://www.boia.org/blog/tips-for-meeting-wcags-requirement-for-error-suggestion).
 
 ---
 
@@ -114,6 +116,6 @@ Guideline 3.3.3 ensures that users can fix mistakes in forms and inputs with hel
 
 **Next Up:**
 
-[WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained](WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained)
+[Read Guideline 3.3.4: Error Prevention (Legal, Financial, Data) →](WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained)
 
 *Helpful suggestions lead to confident users—make your error messages actionable!*

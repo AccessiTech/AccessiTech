@@ -1,4 +1,4 @@
----
+<!---
 title: 3.3.1 - Error Identification
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.1 (Error Identification)—what it means, why it matters, and how to help users recognize and fix mistakes in forms and inputs.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures errors are clearly identified and described to users.
----
+--->
 
 # **WCAG Guideline 3.3.1: Error Identification Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.3.1 requires that when a user makes a mistake in a form or input, th
 - Helps users recognize and fix mistakes
 - Essential for users with cognitive, visual, or learning disabilities
 - Applies to all forms, inputs, and user data entry
+
+For more, see [AccessGuide: Identify Errors](https://www.accessguide.io/guide/identify-errors).
 
 ---
 
@@ -114,6 +116,6 @@ Guideline 3.3.1 ensures that users can recognize and fix mistakes in forms and i
 
 **Next Up:**
 
-[WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained](WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained)
+[Read Guideline 3.3.2: Labels or Instructions →](WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained)
 
 *Clear feedback leads to confident users—make your error messages accessible to all!*

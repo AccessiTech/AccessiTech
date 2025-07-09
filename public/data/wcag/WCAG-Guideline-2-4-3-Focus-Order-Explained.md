@@ -36,6 +36,10 @@ Guideline 2.4.3 Focus Order is a Level A requirement in the [Web Content Accessi
 - Applies to forms, menus, dialogs, and any focusable content.
 - The focus order should match the visual and logical structure of the page.
 
+This ensures users can navigate your site in a logical, predictable order, supporting accessibility and usability for all.
+
+For more, see [When Reading and Focus Order Matters (Accessibility Weekly, The Admin Bar)](https://theadminbar.com/accessibility-weekly/when-reading-and-focus-order-matters).
+
 ---
 
 ## **Why Does It Matter?**

@@ -38,6 +38,8 @@ Guideline 2.1.2 No Keyboard Trap is a core requirement in the [Web Content Acces
 
 This means that users who rely on keyboard navigation can always escape or move past any part of your site, ensuring a frustration-free experience.
 
+For more, see [Avoid Keyboard Traps to Make Your Site More Accessible (BOIA)](https://www.boia.org/blog/avoid-keyboard-traps-to-make-your-site-more-accessible).
+
 ---
 
 ## **Why Does It Matter?**

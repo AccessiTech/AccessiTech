@@ -36,6 +36,10 @@ Guideline 2.2.1 Timing Adjustable is a requirement in the [Web Content Accessibi
 - Exceptions: time limits that are essential, required for real-time events, or longer than 20 hours.
 - Applies to forms, quizzes, logins, and any interactive content with a timer.
 
+This means users who need more time—due to disability, distraction, or any other reason—aren’t unfairly penalized by time limits.
+
+For more, see [AccessGuide: Time Limits](https://www.accessguide.io/guide/time-limits).
+
 ---
 
 ## **Why Does It Matter?**

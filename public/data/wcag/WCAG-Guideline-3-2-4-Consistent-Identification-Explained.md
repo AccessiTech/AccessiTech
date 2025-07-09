@@ -1,4 +1,4 @@
----
+<!---
 title: 3.2.4 - Consistent Identification
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.4 (Consistent Identification)—what it means, why it matters, and how to ensure controls and components are recognizable across your site.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures controls and components are identified consistently across your site.
----
+--->
 
 # **WCAG Guideline 3.2.4: Consistent Identification Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.2.4 requires that controls, icons, and components that perform the s
 - Helps users learn and recognize controls
 - Essential for users with cognitive and visual disabilities
 - Applies to all repeated controls, icons, and components
+
+For more, see [BOIA: WCAG 3.2.4 Consistent Identification](https://www.boia.org/wcag2/cp/3.2.4).
 
 ---
 

@@ -36,6 +36,10 @@ Guideline 2.5.4 Motion Actuation is a Level A requirement in the [Web Content Ac
 - Users must be able to disable motion actuation to prevent accidental triggers.
 - Exception: motion is essential to the function (e.g., pedometer).
 
+This ensures all users can operate features without relying on device motion, supporting accessibility and usability for everyone.
+
+For more, see [BOIA: Tips for Meeting WCAG Success Criterion 2.5.4 Motion Actuation](https://www.boia.org/blog/tips-for-meeting-wcag-success-criterion-2.5.4-motion-actuation).
+
 ---
 
 ## **Why Does It Matter?**

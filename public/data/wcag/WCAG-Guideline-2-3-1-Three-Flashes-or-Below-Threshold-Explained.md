@@ -36,6 +36,10 @@ Guideline 2.3.1 Three Flashes or Below Threshold is a Level A requirement in the
 - Applies to videos, animations, banners, and any visual content.
 - Protects users with photosensitive epilepsy and similar conditions.
 
+This ensures your content is safe for users with photosensitive epilepsy and meets accessibility requirements.
+
+For more, see [BOIA: WCAG 2.3.1 Three Flashes or Below Threshold](https://www.boia.org/wcag2/cp/2.3.1).
+
 ---
 
 ## **Why Does It Matter?**

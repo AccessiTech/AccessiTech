@@ -36,6 +36,10 @@ Guideline 2.3.3 Animation from Interactions is a Level AAA requirement in the [W
 - Exceptions: animations essential to functionality or information.
 - Applies to parallax effects, smooth scrolling, transitions, and other UI animations.
 
+This ensures users can disable non-essential motion animation and have a comfortable experience.
+
+For more, see [AccessGuide: Moving Content](https://www.accessguide.io/guide/moving-content).
+
 ---
 
 ## **Why Does It Matter?**

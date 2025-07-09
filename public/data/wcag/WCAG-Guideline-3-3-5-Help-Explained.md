@@ -1,4 +1,4 @@
----
+<!---
 title: 3.3.5 - Help
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.5 (Help)—what it means, why it matters, and how to provide accessible help for users completing forms and complex tasks.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures context-sensitive help is available for users completing forms and complex tasks.
----
+--->
 
 # **WCAG Guideline 3.3.5: Help Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.3.5 requires that help is available for users when completing forms 
 - Helps users complete forms and tasks successfully
 - Essential for users with cognitive, visual, or learning disabilities
 - Applies to all forms and complex user interactions
+
+For more, see [W3C: Understanding Help (WCAG 2.1)](https://www.w3.org/WAI/WCAG21/Understanding/help.html).
 
 ---
 
@@ -114,6 +116,6 @@ Guideline 3.3.5 ensures that users can get the help they need to complete forms 
 
 **Next Up:**
 
-[WCAG-Guideline-3-3-6-Error-Prevention-All-Explained](WCAG-Guideline-3-3-6-Error-Prevention-All-Explained)
+[Read Guideline 3.3.6: Error Prevention (All) →](WCAG-Guideline-3-3-6-Error-Prevention-All-Explained)
 
 *Accessible help empowers users—make sure support is always within reach!*

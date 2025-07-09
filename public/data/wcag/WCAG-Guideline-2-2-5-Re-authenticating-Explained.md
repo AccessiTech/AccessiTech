@@ -36,6 +36,10 @@ Guideline 2.2.5 Re-authenticating is a Level AA requirement in the [Web Content 
 - Applies to forms, shopping carts, and any activity interrupted by session timeouts.
 - Supports users who need more time or are interrupted during tasks.
 
+This ensures users can continue their activities without losing data, even if they need to re-authenticate.
+
+For more, see [Accessibility Considerations for Authentication Experiences (CapTech)](https://www.captechconsulting.com/articles/accessibility-considerations-for-authentication-experiences).
+
 ---
 
 ## **Why Does It Matter?**

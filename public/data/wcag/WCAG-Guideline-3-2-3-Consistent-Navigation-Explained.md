@@ -1,4 +1,4 @@
----
+<!---
 title: 3.2.3 - Consistent Navigation
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.3 (Consistent Navigation)—what it means, why it matters, and how to ensure navigation is predictable across your site.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures navigation is predictable and consistent across the site.
----
+--->
 
 # **WCAG Guideline 3.2.3: Consistent Navigation Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.2.3 requires that navigation menus and repeated elements appear in a
 - Helps users learn and predict navigation patterns
 - Essential for users with cognitive and visual disabilities
 - Applies to all repeated navigation, menus, and links
+
+For more, see [Allyant: Understanding the Consistent Navigation Requirement in Web Accessibility](https://allyant.com/blog/understanding-the-consistent-navigation-requirement-in-web-accessibility).
 
 ---
 

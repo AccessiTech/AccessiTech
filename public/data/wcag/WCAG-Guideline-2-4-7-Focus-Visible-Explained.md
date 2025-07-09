@@ -36,6 +36,10 @@ Guideline 2.4.7 Focus Visible is a Level AA requirement in the [Web Content Acce
 - Applies to links, buttons, form fields, menus, and any focusable content.
 - The focus indicator must be clearly visible and not removed by custom styles.
 
+This ensures all users can see which element is focused, supporting navigation and accessibility for everyone.
+
+For more, see [AccessGuide: Focus Indicator](https://www.accessguide.io/guide/focus-indicator).
+
 ---
 
 ## **Why Does It Matter?**

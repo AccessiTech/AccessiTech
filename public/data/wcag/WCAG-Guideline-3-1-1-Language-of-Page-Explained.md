@@ -36,6 +36,8 @@ Guideline 3.1.1 requires that the main language of a web page is specified in th
 - Essential for users who rely on assistive technology
 - Applies to every web page, regardless of content
 
+For more, see [Stanford UIT: Page and Inline Language](https://uit.stanford.edu/accessibility/concepts/page-and-inline-language).
+
 ---
 
 ## **Why Does It Matter?**

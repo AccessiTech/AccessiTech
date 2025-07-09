@@ -36,6 +36,10 @@ Guideline 2.5.1 Pointer Gestures is a Level A requirement in the [Web Content Ac
 - Applies to sliders, carousels, maps, and custom controls.
 - Ensures users with limited dexterity or assistive tech can operate all features.
 
+This ensures all users can operate your site with simple gestures, supporting accessibility and usability for everyone.
+
+For more, see [AccessGuide: Single Pointer Gestures](https://www.accessguide.io/guide/single-pointer-gestures).
+
 ---
 
 ## **Why Does It Matter?**

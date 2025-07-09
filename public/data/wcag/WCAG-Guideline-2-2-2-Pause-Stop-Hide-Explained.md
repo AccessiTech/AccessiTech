@@ -36,6 +36,10 @@ Guideline 2.2.2 Pause, Stop, Hide is a requirement in the [Web Content Accessibi
 - Applies to carousels, news tickers, auto-refreshing feeds, and similar elements.
 - Does not apply to animations that are essential or last less than five seconds.
 
+This ensures users can control moving, blinking, or auto-updating content and aren’t distracted or excluded by motion.
+
+For more, see [Does WCAG Pause, Stop, Hide Apply to Simple Animations? (BOIA)](https://www.boia.org/blog/does-wcag-pause-stop-hide-apply-to-simple-animations).
+
 ---
 
 ## **Why Does It Matter?**

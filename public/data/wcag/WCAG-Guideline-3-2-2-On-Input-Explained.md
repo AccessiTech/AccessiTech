@@ -1,4 +1,4 @@
----
+<!---
 title: 3.2.2 - On Input
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures changing form controls doesn't automatically cause unexpected context changes.
----
+--->
 
 # **WCAG Guideline 3.2.2: On Input Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.2.2 requires that changes in input (like selecting an option or ente
 - Prevents confusion for users, especially those using assistive technology
 - Ensures users are in control of their experience
 - Applies to all form controls, dropdowns, and interactive widgets
+
+For more, see [Equally AI: WCAG 3.2.2 On Input](https://blog.equally.ai/developer-guide/wcag-3-2-2-on-input).
 
 ---
 

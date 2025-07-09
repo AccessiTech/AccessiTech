@@ -87,7 +87,7 @@ For more, see the [MDN keyboard accessibility docs](https://developer.mozilla.or
 - Not testing all features for keyboard accessibility
 - Assuming some controls are "okay" to be mouse-only
 
-Audit your site regularly and use accessibility checkers to ensure there are no exceptions. For more, see [Deque's keyboard accessibility tips](https://www.deque.com/blog/keyboard-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure there are no exceptions.
 
 ---
 

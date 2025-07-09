@@ -1,4 +1,4 @@
----
+<!---
 title: 3.3.2 - Labels or Instructions
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.2 (Labels or Instructions)—what it means, why it matters, and how to help users enter information correctly the first time.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures forms and interactive elements have clear labels and instructions for users.
----
+--->
 
 # **WCAG Guideline 3.3.2: Labels or Instructions Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.3.2 requires that all form fields and inputs have clear labels or in
 - Helps users understand what information is required
 - Essential for users with cognitive, visual, or learning disabilities
 - Applies to all forms, inputs, and user data entry
+
+For more, see [Harvard: Provide Accessible Labels and Instructions](https://accessibility.huit.harvard.edu/provide-accessible-labels-and-instructions).
 
 ---
 
@@ -114,6 +116,6 @@ Guideline 3.3.2 ensures that users can enter information correctly the first tim
 
 **Next Up:**
 
-[WCAG-Guideline-3-3-3-Error-Suggestion-Explained](WCAG-Guideline-3-3-3-Error-Suggestion-Explained)
+[Read Guideline 3.3.3: Error Suggestion →](WCAG-Guideline-3-3-3-Error-Suggestion-Explained)
 
 *Clear guidance leads to confident users—make your forms easy to understand for everyone!*

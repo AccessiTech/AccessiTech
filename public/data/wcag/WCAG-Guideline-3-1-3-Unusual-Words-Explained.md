@@ -36,6 +36,8 @@ Guideline 3.1.3 requires that users can access definitions for words or phrases 
 - Essential for users with cognitive or learning disabilities
 - Applies to all web content with specialized or uncommon language
 
+For more, see [AccessGuide: Unusual Words](https://www.accessguide.io/guide/unusual-words).
+
 ---
 
 ## **Why Does It Matter?**

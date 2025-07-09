@@ -1,4 +1,4 @@
----
+<!---
 title: 3.2.5 - Change on Request
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.5 (Change on Request)—what it means, why it matters, and how to ensure changes only happen when users ask for them.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures changes in context or content only happen when users request them.
----
+--->
 
 # **WCAG Guideline 3.2.5: Change on Request Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.2.5 requires that changes in context (like navigation, popups, or co
 - Gives users control over their experience
 - Prevents confusion and disorientation
 - Applies to all changes of context (navigation, popups, content updates)
+
+For more, see [AccessGuide: Change of Context](https://www.accessguide.io/guide/change-context).
 
 ---
 
@@ -118,5 +120,3 @@ Guideline 3.2.5 ensures that users are always in control of when changes happen 
 [WCAG-Guideline-3-2-6-Consistent-Help-Explained](WCAG-Guideline-3-2-6-Consistent-Help-Explained)
 
 *User control is essential—make sure changes only happen when your users want them!*
-
-<!-- excerpt: This guideline ensures changes in context or content only happen when users request them. -->

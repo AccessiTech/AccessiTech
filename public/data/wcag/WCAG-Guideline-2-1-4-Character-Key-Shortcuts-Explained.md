@@ -38,6 +38,8 @@ Guideline 2.1.4 Character Key Shortcuts is a requirement in the [Web Content Acc
 
 This means that users who rely on speech input, screen readers, or keyboard navigation are not disrupted by accidental or inaccessible shortcuts.
 
+For more, see [AccessGuide: Character Key Shortcuts](https://www.accessguide.io/guide/character-key-shortcuts).
+
 ---
 
 ## **Why Does It Matter?**
@@ -88,7 +90,7 @@ For more, see the [MDN keyboard accessibility docs](https://developer.mozilla.or
 - Not documenting or exposing shortcut settings
 - Not testing with assistive technology
 
-Audit your site regularly and use accessibility checkers to catch these issues. For more, see [Deque's keyboard accessibility tips](https://www.deque.com/blog/keyboard-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to catch these issues.
 
 ---
 

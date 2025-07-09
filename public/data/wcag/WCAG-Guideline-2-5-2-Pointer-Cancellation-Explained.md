@@ -36,6 +36,10 @@ Guideline 2.5.2 Pointer Cancellation is a Level A requirement in the [Web Conten
 - Applies to buttons, links, drag-and-drop, and custom controls.
 - Prevents accidental activations, especially for users with motor impairments.
 
+This ensures users can cancel or confirm pointer actions, supporting accessibility and usability for everyone.
+
+For more, see [MNIT: WCAG 2.1 Pointer Cancellation](https://mn.gov/mnit/media/blog/?id=38-640722).
+
 ---
 
 ## **Why Does It Matter?**

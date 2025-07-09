@@ -36,6 +36,10 @@ Guideline 2.2.3 No Timing is a Level AAA requirement in the [Web Content Accessi
 - Exceptions: real-time events and non-interactive synchronized media (like live video).
 - Applies to forms, quizzes, games, and any interactive content.
 
+This ensures users can complete activities at their own pace, without being rushed or excluded by time limits.
+
+For more, see [Web Accessibility Doesn’t Have a Deadline (BOIA)](https://www.boia.org/blog/web-accessibility-doesnt-have-a-deadline).
+
 ---
 
 ## **Why Does It Matter?**

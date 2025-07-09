@@ -38,6 +38,8 @@ Guideline 2.1.1 Keyboard Accessible is a core requirement in the [Web Content Ac
 
 This means that users who rely on keyboard navigation, including those using screen readers or alternative input devices, can fully access your site. Keyboard accessibility is essential for compliance and usability.
 
+For more, see [Keyboard Accessibility: A Fundamental Component of Digital Accessibility (Mass.gov)](https://www.mass.gov/news/keyboard-accessibility-a-fundamental-component-of-digital-accessibility).
+
 ---
 
 ## **Why Does It Matter?**

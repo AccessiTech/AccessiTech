@@ -36,6 +36,10 @@ Guideline 2.2.4 Interruptions is a Level AAA requirement in the [Web Content Acc
 - Exceptions: emergency messages (e.g., fire alarms, critical system alerts).
 - Applies to popups, notifications, chat messages, and system alerts.
 
+This ensures users can control when they are interrupted, supporting focus and accessibility for all.
+
+For more, see [W3C: Minimal Interruptions Pattern](https://www.w3.org/WAI/WCAG2/supplemental/patterns/o5p01-minimal-interruptions/).
+
 ---
 
 ## **Why Does It Matter?**

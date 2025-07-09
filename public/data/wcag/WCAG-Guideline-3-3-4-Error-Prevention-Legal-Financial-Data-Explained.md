@@ -1,14 +1,14 @@
----
+<!---
 title: 3.3.4 - Error Prevention (Legal, Financial, Data)
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 3.3.4 (Error Prevention: Legal, Financial, Data)—what it means, why it matters, and how to help users avoid costly mistakes in critical transactions.
+description: A practical guide to WCAG Guideline 3.3.4 (Error Prevention - Legal, Financial, Data)—what it means, why it matters, and how to help users avoid costly mistakes in critical transactions.
 keywords: wcag 3.3.4, error prevention, legal, financial, data, accessibility, web standards, user experience
 image: WCAG-Series-3-3-4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.4 Explained, Error Prevention (Legal, Financial, Data)"
 status: published
 date: 2025-07-03
 excerpt: This guideline helps users avoid costly mistakes in critical transactions.
----
+--->
 
 # **WCAG Guideline 3.3.4: Error Prevention (Legal, Financial, Data) Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.3.4 requires extra safeguards for forms and processes involving lega
 - Helps users avoid costly or irreversible mistakes
 - Essential for legal agreements, purchases, and data management
 - Applies to all legal, financial, and data modification forms
+
+For more, see [AccessGuide: Legal, Financial, and Data Errors](https://www.accessguide.io/guide/legal-financial-errors).
 
 ---
 
@@ -114,6 +116,6 @@ Guideline 3.3.4 ensures that users are protected from costly or irreversible mis
 
 **Next Up:**
 
-[WCAG-Guideline-3-3-5-Help-Explained](WCAG-Guideline-3-3-5-Help-Explained)
+[Read Guideline 3.3.5: Help →](WCAG-Guideline-3-3-5-Help-Explained)
 
 *Protection and review are key—make your critical forms safe and accessible for everyone!*

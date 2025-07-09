@@ -36,6 +36,10 @@ Guideline 2.4.6 Headings and Labels is a Level AA requirement in the [Web Conten
 - Applies to page headings, section titles, and form field labels.
 - Helps users scan, understand, and navigate content efficiently.
 
+This ensures all headings and labels are clear and meaningful, supporting navigation and comprehension for all users.
+
+For more, see [Why Using Correct Headlines is Vital to Your Website (BrandExtract)](https://www.brandextract.com/Insights/Articles/Why-Using-Correct-Headlines-is-Vital-to-Your-Website).
+
 ---
 
 ## **Why Does It Matter?**

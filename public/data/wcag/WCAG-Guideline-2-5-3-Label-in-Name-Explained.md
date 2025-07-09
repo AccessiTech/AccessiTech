@@ -36,6 +36,10 @@ Guideline 2.5.3 Label in Name is a Level A requirement in the [Web Content Acces
 - Applies to buttons, links, form fields, and any labeled UI component.
 - Supports users who use speech input or screen readers.
 
+This ensures all components have accessible names that match visible labels, supporting clarity and usability for everyone.
+
+For more, see [Harvard University: Technique – Label in Name](https://accessibility.huit.harvard.edu/technique-label-name).
+
 ---
 
 ## **Why Does It Matter?**

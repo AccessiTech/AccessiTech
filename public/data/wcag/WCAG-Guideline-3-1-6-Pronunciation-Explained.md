@@ -1,4 +1,4 @@
----
+<!---
 title: 3.1.6 - Pronunciation
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.1.6 (Pronunciation)—what it means, why it matters, and how to help users understand how words are spoken.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: Helps users understand how words are spoken, improving clarity for screen readers and all users.
----
+--->
 
 # **WCAG Guideline 3.1.6: Pronunciation Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.1.6 requires that users can access the correct pronunciation of word
 - Helps users understand ambiguous or unfamiliar words
 - Essential for users with cognitive, learning, or language disabilities
 - Applies to all web content where pronunciation affects meaning
+
+For more, see [AccessGuide: Pronunciation & Ambiguous Words](https://www.accessguide.io/guide/pronunciation-ambiguous-words).
 
 ---
 
@@ -112,6 +114,6 @@ Guideline 3.1.6 ensures that users can understand how words are spoken when mean
 
 **Next Up**
 
-[WCAG-Guideline-3-2-2-On-Input-Explained](WCAG-Guideline-3-2-2-On-Input-Explained)
+[Read Guideline 3.2.1: On Focus →](WCAG-Guideline-3-2-1-On-Focus-Explained)
 
 *Clear pronunciation means clear understanding—help every user get the meaning!*

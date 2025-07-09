@@ -36,6 +36,10 @@ Guideline 2.4.5 Multiple Ways is a Level AA requirement in the [Web Content Acce
 - Exception: pages that are steps in a process (e.g., checkout, forms).
 - Applies to all websites with multiple pages.
 
+This ensures users have more than one way to find content, supporting accessibility and usability for all.
+
+For more, see [BOIA: Tips for Meeting WCAG’s Requirement for Multiple Ways](https://www.boia.org/blog/tips-for-meeting-wcags-requirement-for-multiple-ways).
+
 ---
 
 ## **Why Does It Matter?**

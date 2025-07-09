@@ -1,4 +1,4 @@
----
+<!---
 title: 3.2.6 - Consistent Help
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.6 (Consistent Help)—what it means, why it matters, and how to ensure help mechanisms are consistent across your site.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures help mechanisms are consistently located throughout a website.
----
+--->
 
 # **WCAG Guideline 3.2.6: Consistent Help Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.2.6 requires that help features (like contact info, chat, or FAQs) a
 - Helps users find help quickly and easily
 - Essential for users with cognitive or learning disabilities
 - Applies to all repeated help mechanisms
+
+For more, see [BOIA: Consistent Help – Tips for Meeting WCAG Success Criterion 3.2.6](https://www.boia.org/blog/consistent-help-tips-for-meeting-wcag-success-criterion-3-2-6).
 
 ---
 
@@ -114,6 +116,6 @@ Guideline 3.2.6 ensures that users can always find help in the same place, makin
 
 **Next Up:**
 
-[WCAG-Guideline-3-3-7-Redundant-Entry-Explained](WCAG-Guideline-3-3-7-Redundant-Entry-Explained)
+[Read Guideline 3.3.1: Error Identification →](WCAG-Guideline-3-3-1-Error-Identification-Explained)
 
 *Consistency builds trust—make help easy to find for everyone!*

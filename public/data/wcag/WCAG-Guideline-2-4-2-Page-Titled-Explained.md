@@ -36,6 +36,10 @@ Guideline 2.4.2 Page Titled is a Level A requirement in the [Web Content Accessi
 - Helps users, especially those using screen readers, know where they are.
 - Titles appear in browser tabs, bookmarks, and search results.
 
+This ensures every page is clearly identified, supporting navigation and accessibility for all users.
+
+For more, see [WebAIM: Page Titles](https://webaim.org/techniques/pagetitle/).
+
 ---
 
 ## **Why Does It Matter?**

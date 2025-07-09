@@ -1,14 +1,14 @@
----
+<!---
 title: 3.3.9 - Accessible Authentication (Enhanced)
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 3.3.9 (Accessible Authentication: Enhanced)—what it means, why it matters, and how to make authentication processes even more accessible.
+description: A practical guide to WCAG Guideline 3.3.9 (Accessible Authentication (Enhanced)—what it means, why it matters, and how to make authentication processes even more accessible.
 keywords: wcag 3.3.9, accessible authentication, accessibility, web standards, user experience, login
 image: WCAG-Series-3-3-9.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.9 Explained, Accessible Authentication (Enhanced)"
 status: published
 date: 2025-07-03
 excerpt: Ensures authentication processes are accessible for all users, including those with disabilities.
----
+--->
 
 # **WCAG Guideline 3.3.9: Accessible Authentication (Enhanced) Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.3.9 builds on 3.3.8 by requiring that authentication does not depend
 - Helps users with cognitive, memory, or motor disabilities
 - Essential for fully accessible login and authentication
 - Applies to all authentication steps and methods
+
+For more, see [Wuhcag: Accessible Authentication (Enhanced)](https://www.wuhcag.com/accessible-authentication-enhanced/).
 
 ---
 
@@ -113,6 +115,6 @@ Guideline 3.3.9 ensures that everyone can authenticate without cognitive or tran
 
 **Next Up:**
 
-[WCAG-Guideline-4-1-1-Parsing-Explained](WCAG-Guideline-4-1-1-Parsing-Explained)
+[Read Guideline 4.1.1: Parsing →](WCAG-Guideline-4-1-1-Parsing-Explained)
 
 *Accessibility means everyone can log in—remove barriers from your authentication process!*

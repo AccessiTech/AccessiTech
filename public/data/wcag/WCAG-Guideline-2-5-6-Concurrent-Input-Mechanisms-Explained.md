@@ -36,6 +36,10 @@ Guideline 2.5.6 Concurrent Input Mechanisms is a Level AAA requirement in the [W
 - Applies to all web content and applications.
 - Exception: restriction is essential for security or function.
 
+This ensures users can switch between input methods as needed, supporting accessibility and flexibility for everyone.
+
+For more, see [Accessible Web: What are Concurrent Input Mechanisms?](https://accessibleweb.com/question-answer/in-web-accessibility-what-are-concurrent-input-mechanisms/).
+
 ---
 
 ## **Why Does It Matter?**

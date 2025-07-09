@@ -1,4 +1,4 @@
----
+<!---
 title: 3.3.7 - Redundant Entry
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what it means, why it matters, and how to help users avoid entering the same information multiple times.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users don't have to re-enter information they've already provided.
----
+--->
 
 # **WCAG Guideline 3.3.7: Redundant Entry Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.3.7 requires that users are not forced to re-enter the same informat
 - Helps users complete forms more efficiently
 - Essential for users with cognitive, mobility, or learning disabilities
 - Applies to all multi-step forms and processes
+
+For more, see [BOIA: What is Redundant Entry and How Does It Affect Accessibility?](https://www.boia.org/blog/what-is-redundant-entry-and-how-does-it-affect-accessibility).
 
 ---
 
@@ -112,6 +114,6 @@ Guideline 3.3.7 ensures that users don’t have to enter the same information mo
 
 **Next Up:**
 
-[WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained](WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained)
+[Read Guideline 3.3.8: Accessible Authentication (Minimum) →](WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained)
 
 *Efficiency and ease—help users by reducing unnecessary repetition!*

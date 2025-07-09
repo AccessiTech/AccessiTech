@@ -36,6 +36,8 @@ Guideline 3.1.4 requires that users can access the full meaning of abbreviations
 - Essential for users with cognitive or learning disabilities
 - Applies to all web content with abbreviations or acronyms
 
+For more, see [BOIA: Web Accessibility Tips – Using Abbreviations and Acronyms](https://www.boia.org/blog/web-accessibility-tips-using-abbreviations-and-acronyms).
+
 ---
 
 ## **Why Does It Matter?**

@@ -1,4 +1,4 @@
----
+<!---
 title: 3.1.5 - Reading Level
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.1.5 (Reading Level)—what it means, why it matters, and how to make your content readable for a wide audience.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures content is readable for a wide audience by considering reading levels.
----
+--->
 
 # **WCAG Guideline 3.1.5: Reading Level Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.1.5 requires that content be written at a lower secondary education 
 - Helps users with cognitive, learning, or language disabilities
 - Essential for making content accessible to a wide audience
 - Applies to all web content, especially instructions and critical information
+
+For more, see [UC Berkeley: What is Plain Language?](https://dap.berkeley.edu/learn/concepts/what-plain-language).
 
 ---
 

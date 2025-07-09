@@ -1,4 +1,4 @@
----
+<!---
 title: 3.2.1 - On Focus
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.2.1 (On Focus)—what it means, why it matters, and how to ensure that user focus does not trigger unexpected changes.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures user focus does not trigger unexpected changes.
----
+--->
 
 # **WCAG Guideline 3.2.1: On Focus Explained**
 
@@ -35,6 +35,8 @@ Guideline 3.2.1 requires that simply focusing on an element (e.g., by tabbing to
 - Prevents confusion for keyboard and assistive technology users
 - Ensures predictable navigation and interaction
 - Applies to all interactive elements (links, buttons, form fields, etc.)
+
+For more, see [W3C’s guidance on On Focus](https://www.w3.org/WAI/WCAG22/Understanding/on-focus.html) and [BOIA: WCAG 2.1.1 On Focus](https://www.boia.org/wcag2/cp/3.2.1).
 
 ---
 

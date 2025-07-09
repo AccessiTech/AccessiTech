@@ -1,4 +1,4 @@
----
+<!---
 title: 4.1.3 - Status Messages
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what it means, why it matters, and how to ensure status messages are programmatically determined through role or properties.
@@ -8,7 +8,7 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures status messages are programmatically determined through role or properties.
----
+--->
 
 # **WCAG Guideline 4.1.3: Status Messages Explained**
 
@@ -35,6 +35,8 @@ Guideline 4.1.3 requires that important status messages (like form errors, confi
 - Ensures users are aware of important updates
 - Essential for users with visual or cognitive disabilities
 - Applies to all status messages, alerts, and notifications
+
+For more, see [Harvard: Status Messages](https://accessibility.huit.harvard.edu/technique-status-messages).
 
 ---
 

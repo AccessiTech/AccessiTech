@@ -36,6 +36,10 @@ Guideline 2.3.2 Three Flashes is a Level AAA requirement in the [Web Content Acc
 - Applies to videos, animations, banners, and any visual content.
 - This is the strictest standard for flashing content.
 
+This ensures your content is safe for users with photosensitive epilepsy and meets the strictest accessibility requirements.
+
+For more, see [W3C: Understanding 2.3.2 Three Flashes](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes.html).
+
 ---
 
 ## **Why Does It Matter?**

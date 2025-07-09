@@ -36,6 +36,8 @@ Guideline 3.1.2 requires that any content in a different language from the main 
 - Essential for multilingual websites and content
 - Applies to all passages, phrases, or words in a different language
 
+For more, see [BOIA: WCAG Success Criteria 3.1.1 and 3.1.2 – Language of Page and Parts](https://www.boia.org/blog/wcag-success-criteria-3.1.1-and-3.1.2-language-of-page-and-parts).
+
 ---
 
 ## **Why Does It Matter?**

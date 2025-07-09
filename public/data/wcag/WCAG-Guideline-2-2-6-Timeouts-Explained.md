@@ -36,6 +36,10 @@ Guideline 2.2.6 Timeouts is a Level AAA requirement in the [Web Content Accessib
 - Exception: if data is preserved for more than 20 hours of inactivity, no warning is required.
 - Applies to forms, applications, and any activity with a timeout.
 
+This ensures users are warned about timeouts and can request more time, preventing data loss and frustration.
+
+For more, see [Stanford UIT: Session Timeout Accessibility](https://uit.stanford.edu/accessibility/testing/session-timeout).
+
 ---
 
 ## **Why Does It Matter?**

@@ -36,6 +36,10 @@ Guideline 2.4.4 Link Purpose (In Context) is a Level A requirement in the [Web C
 - Applies to navigation menus, lists, buttons, and inline links.
 - Avoids vague links like "Click here" or "Read more" without context.
 
+This ensures every link is clear and meaningful, supporting navigation and accessibility for all users.
+
+For more, see [UC Berkeley: Accessible Links](https://dap.berkeley.edu/web-a11y-basics/links).
+
 ---
 
 ## **Why Does It Matter?**

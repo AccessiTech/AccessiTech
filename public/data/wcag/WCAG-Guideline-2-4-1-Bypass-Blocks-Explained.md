@@ -36,6 +36,10 @@ Guideline 2.4.1 Bypass Blocks is a Level A requirement in the [Web Content Acces
 - Applies to navigation menus, banners, and repeated page elements.
 - Commonly implemented with "Skip to main content" links or ARIA landmarks.
 
+This ensures users can efficiently skip repeated navigation and access main content quickly.
+
+For more, see [Duke University: Bypass Blocks](https://web.accessibility.duke.edu/bypass-blocks/).
+
 ---
 
 ## **Why Does It Matter?**

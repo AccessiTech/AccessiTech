@@ -36,6 +36,10 @@ Guideline 2.5.5 Target Size is a Level AAA requirement in the [Web Content Acces
 - Exceptions: duplicate targets, inline links, browser controls, or essential small targets.
 - Ensures users with limited dexterity or large fingers can easily activate controls.
 
+This ensures all interactive elements are large enough for everyone to use comfortably and accurately.
+
+For more, see [AccessGuide: Large Target Size](https://www.accessguide.io/guide/large-target-size).
+
 ---
 
 ## **Why Does It Matter?**

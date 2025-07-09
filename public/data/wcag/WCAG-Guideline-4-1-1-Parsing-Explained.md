@@ -1,4 +1,4 @@
----
+<!---
 title: 4.1.1 - Parsing
 series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 4.1.1 (Parsing)—what it means, why it matters, and how to ensure content is correctly parsed by user agents.
@@ -8,11 +8,15 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures content is correctly parsed by user agents for accessibility.
----
+--->
 
 # **WCAG Guideline 4.1.1: Parsing Explained**
 
 **Estimated read time:** 5–6 minutes
+
+---
+
+_**Notice:** WCAG Guideline 4.1.1 (Parsing) is being removed in the upcoming WCAG 2.2 update. For more details, see [Deque: WCAG 2.2 Removes 4.1.1 Parsing and How axe-core is Impacted](https://www.deque.com/blog/wcag-2-2-removes-4-1-1-parsing-and-how-axe-core-is-impacted/)._
 
 ---
 
@@ -35,6 +39,8 @@ Guideline 4.1.1 requires that your code is well-formed and free of errors that c
 - Ensures content is interpreted correctly by all user agents
 - Essential for accessibility and future compatibility
 - Applies to all markup languages (HTML, SVG, etc.)
+
+For more, see [BOIA: Tips for Meeting WCAG Success Criterion 4.1.1 Parsing](https://www.boia.org/blog/tips-for-meeting-wcag-success-criterion-4.1.1-parsing).
 
 ---
 
@@ -113,6 +119,6 @@ Guideline 4.1.1 is essential for helping users access your site. By ensuring cor
 
 **Next Up:**
 
-[WCAG-Guideline-4-1-2-Name-Role-Value-Explained](WCAG-Guideline-4-1-2-Name-Role-Value-Explained)
+[Read Guideline 4.1.2: Name, Role, Value →](WCAG-Guideline-4-1-2-Name-Role-Value-Explained)
 
 *Accessibility means clarity—help user agents interpret your content correctly!*
