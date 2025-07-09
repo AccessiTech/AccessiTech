@@ -7,6 +7,7 @@ image: WCAG-Series-1.3.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.3 Explained, Sensory Characteristics"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures instructions do not rely on shape, color, or sound alone.
 -->
 
 # **WCAG Guideline 1.3.3: Sensory Characteristics Explained**
@@ -88,7 +89,7 @@ For more, see the [MDN instructions docs](https://developer.mozilla.org/en-US/do
 - Not providing alternative cues for charts or graphs
 - Ignoring users with sensory disabilities
 
-Audit your site regularly and use accessibility checkers to ensure all instructions are clear and accessible. For more, see [Deque's instructions tips](https://www.deque.com/blog/accessible-instructions/).
+Audit your site regularly and use accessibility checkers to ensure all instructions are clear and accessible. For more, see [Oregon State University: Sensory Characteristics](https://accessibility.oregonstate.edu/digital-accessibility/sensory).
 
 ---
 

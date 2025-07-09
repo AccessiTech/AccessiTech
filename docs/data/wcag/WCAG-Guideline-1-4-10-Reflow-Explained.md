@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.10.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.10 Explained, Reflow"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures content works on any screen size or orientation.
 -->
 
 # **WCAG Guideline 1.4.10: Reflow Explained**
@@ -34,6 +35,8 @@ Guideline 1.4.10 Reflow is a Level AA requirement in the [Web Content Accessibil
 - Content must adapt to small screens and zoom without horizontal scrolling.
 - No loss of information or functionality at 320px width (mobile portrait) or 400% zoom.
 - Applies to all content, including navigation, forms, and images.
+
+For more, see [Responsive Web Design: What It Is And How To Use It (Smashing Magazine)](https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/).
 
 ---
 

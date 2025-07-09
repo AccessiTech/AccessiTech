@@ -7,6 +7,7 @@ image: WCAG-Series-1.3.6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.6 Explained, Identify Input Purpose"
 status: published
 date: 2025-07-01
+excerpt: Helps browsers and assistive technologies identify the purpose of user interface components, enhancing accessibility.
 -->
 
 # **WCAG Guideline 1.3.6: Identify Purpose Explained**
@@ -88,7 +89,7 @@ For more, see the [MDN ARIA landmarks docs](https://developer.mozilla.org/en-US/
 - Not testing with assistive technology
 - Ignoring the needs of users with cognitive disabilities
 
-Audit your site regularly and use accessibility checkers to ensure all purposes are identified. For more, see [Deque's ARIA tips](https://www.deque.com/blog/aria-landmarks-accessibility/).
+Audit your site regularly and use accessibility checkers to ensure all purposes are identified. For more, see the [W3C's ARIA Landmarks documentation](https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/).
 
 ---
 

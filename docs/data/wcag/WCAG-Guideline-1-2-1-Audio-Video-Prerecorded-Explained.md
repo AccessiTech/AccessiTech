@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.1 Explained, Audio-only and Video-only (Prerecorded)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures audio-only and video-only content is accessible with captions or transcripts.
 -->
 
 # **WCAG Guideline 1.2.1: Audio-only and Video-only (Prerecorded) Explained**
@@ -85,7 +86,7 @@ For more, see the [W3C's media alternatives docs](https://www.w3.org/WAI/WCAG22/
 - Alternatives that are incomplete or inaccurate
 - Hiding transcripts or descriptions from users
 
-Audit your site regularly and use accessibility checkers to ensure all media has proper alternatives. For more, see [Deque's media accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all media has proper alternatives. For more, see [WebAIM's guide to captions, transcripts, and audio descriptions](https://webaim.org/techniques/captions/), which covers best practices for making audio and video content accessible.
 
 ---
 

@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.5.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.5 Explained, Images of Text"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures text is real and not just an image for accessibility.
 -->
 
 # **WCAG Guideline 1.4.5: Images of Text Explained**
@@ -34,6 +35,8 @@ Guideline 1.4.5 Images of Text is a requirement in the [Web Content Accessibilit
 - Use real text instead of images of text whenever possible.
 - Images of text are allowed only for decoration or when a specific style is essential (e.g., logos).
 - Real text is more accessible, flexible, and adaptable.
+
+For more, see [BOIA: Why is it important for accessibility to use actual text instead of images of text?](https://www.boia.org/blog/why-is-it-important-for-accessibility-to-use-actual-text-instead-of-images-of-text).
 
 ---
 

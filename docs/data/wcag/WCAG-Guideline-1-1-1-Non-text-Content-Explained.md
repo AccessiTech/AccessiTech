@@ -7,6 +7,7 @@ image: WCAG-Series-1.1.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.1.1 Explained, Non-text Content"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures accessible alternatives for images, icons, and other non-text content.
 -->
 
 # **WCAG Guideline 1.1.1: Non-text Content Explained**
@@ -97,7 +98,7 @@ Accessible text alternatives should be concise but meaningful. Avoid phrases lik
 
 It's easy to overlook some non-text elements or to use unhelpful alt text. Common mistakes include leaving out alt attributes on meaningful images, using file names or generic terms like "image" as alt text, or providing overly detailed descriptions for decorative images. Icons and background images that convey information are also frequently forgotten.
 
-To avoid these pitfalls, audit your site regularly and use accessibility checkers to catch missing or incorrect alt text. Remember, the goal is to make your content clear and usable for everyone, not just to pass a checklist. For more tips, see [Deque's guide to alt text mistakes](https://www.deque.com/blog/great-alt-text-introduction/).
+To avoid these pitfalls, audit your site regularly and use accessibility checkers to catch missing or incorrect alt text. Remember, the goal is to make your content clear and usable for everyone, not just to pass a checklist.
 
 ---
 

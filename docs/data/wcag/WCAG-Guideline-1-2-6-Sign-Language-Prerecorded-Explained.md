@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.6 Explained, Sign Language (Prerecorded)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures prerecorded video content is accessible with sign language interpretation.
 -->
 
 # **WCAG Guideline 1.2.6: Sign Language (Prerecorded) Explained**
@@ -85,7 +86,7 @@ For more, see [W3C's sign language docs](https://www.w3.org/WAI/WCAG22/Understan
 - Not making the sign language option easy to find
 - Using unqualified interpreters
 
-Audit your site regularly and use accessibility checkers to ensure all video content has proper sign language interpretation. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all video content has proper sign language interpretation. For more, see [ADA.gov's Effective Communication guidance](https://www.ada.gov/resources/effective-communication/).
 
 ---
 

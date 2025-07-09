@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.2 Explained, Audio Control"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures users can control audio that plays automatically.
 -->
 
 # **WCAG Guideline 1.4.2: Audio Control Explained**
@@ -34,6 +35,8 @@ Guideline 1.4.2 Audio Control is a requirement in the [Web Content Accessibility
 - Users must be able to pause, stop, or control the volume of any audio that plays automatically for more than 3 seconds.
 - This prevents interference with screen readers and user concentration.
 - Applies to background music, sound effects, and videos with audio.
+
+For more, see [W3C's Media Accessibility User Requirements](https://www.w3.org/TR/media-accessibility-reqs).
 
 ---
 
@@ -100,7 +103,7 @@ For more, see the [W3C’s official documentation for 1.4.2 Audio Control](https
 
 ## **Quick Checklist**
 
-[Checklist graphic: Icons for pause, stop, and volume controls]
+<!-- [Checklist graphic: Icons for pause, stop, and volume controls] -->
 
 - No autoplay audio longer than 3 seconds without controls
 - All audio controls are visible and accessible

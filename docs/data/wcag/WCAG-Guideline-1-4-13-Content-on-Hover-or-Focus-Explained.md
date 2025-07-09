@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.13.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.13, Content on Hover or Focus"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures tooltips and popups are accessible, dismissible, and do not interfere with content.
 -->
 
 # **WCAG Guideline 1.4.13: Content on Hover or Focus Explained**
@@ -34,6 +35,8 @@ Guideline 1.4.13 Content on Hover or Focus is a Level AA requirement in the [Web
 - Additional content (tooltips, popups) must be dismissible, hoverable, and persistent while focused.
 - Applies to any content that appears on hover or focus, not just tooltips.
 - Ensures all users can access, read, and dismiss popups.
+
+For more, see [Access & Use: Content on hover & focus](https://accessuse.eu/en/Content-hover-focus.html).
 
 ---
 
@@ -117,6 +120,6 @@ Guideline 1.4.13 ensures all users can access, read, and dismiss popups and tool
 
 **Next Up:**
 
-We’ll continue with Guideline 2.1.1 and beyond, covering more ways to make your site accessible for everyone.
+[Read Guideline 2.1.1: Keyboard Accessible →](WCAG-Guideline-2-1-1-Keyboard-Accessible-Explained)
 
 *Accessibility means everyone can access your content—make your popups work for all!*

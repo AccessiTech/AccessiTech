@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.4 Explained, Captions (Live)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures live video content is accessible with captions.
 -->
 
 # **WCAG Guideline 1.2.4: Captions (Live) Explained**
@@ -47,7 +48,7 @@ This ensures everyone can access the information in your live videos, regardless
 - **Legal Compliance:** This is a Level AA requirement in WCAG 2.2 and referenced in accessibility laws worldwide.
 - **Usability:** Captions help all users in noisy or quiet environments, or when audio is muted.
 
-For more, see [WebAIM's captions guide](https://webaim.org/techniques/captions/).
+For more, see [WebAIM's captions guide](https://webaim.org/techniques/captions/) and [University of Washington's Captions Accessibility Checklist](https://www.washington.edu/accesstech/checklist/captions/).
 
 ---
 
@@ -86,13 +87,13 @@ For more, see the [W3C's captions docs](https://www.w3.org/WAI/WCAG22/Understand
 - Captions that are out of sync with audio
 - Hiding captions or making them hard to enable
 
-Audit your site regularly and use accessibility checkers to ensure all live video content has proper captions. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all live video content has proper captions. For more, see the [FCC's guide to Closed Captioning on Television](https://www.fcc.gov/consumers/guides/closed-captioning-television).
 
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 1.2.4 in WCAG 2.2**
 
-[Infographic: Three columns labeled A, AA, AAA with example requirements for each]
+<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No requirement for 1.2.4.
 - **Level AA:** Requires captions for all live audio content in synchronized media. This is the core requirement for 1.2.4 and is mandatory for AA conformance.

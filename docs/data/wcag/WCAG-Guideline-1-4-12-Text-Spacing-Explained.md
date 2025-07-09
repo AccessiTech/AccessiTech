@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.12.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.12, Text Spacing"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures content remains readable when users adjust text spacing for better readability.
 -->
 
 # **WCAG Guideline 1.4.12: Text Spacing Explained**
@@ -34,6 +35,8 @@ Guideline 1.4.12 Text Spacing is a Level AA requirement in the [Web Content Acce
 - Users must be able to adjust line, paragraph, letter, and word spacing without breaking the layout.
 - No loss of content or functionality when these spacing settings are applied.
 - Supports users with dyslexia, low vision, and reading difficulties.
+
+For more, see [Harvard University: Technique – Text spacing](https://accessibility.huit.harvard.edu/technique-text-spacing).
 
 ---
 

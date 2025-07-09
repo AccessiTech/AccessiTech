@@ -1286,15 +1286,29 @@
         </item>
       
         <item>
-          <title>5.3 - Conformance Claims (Optional)</title>
-          <link>https://accessi.tech/wcag/WCAG-Guideline-5-3-Conformance-Claims-Explained</link>
-          <pubDate>2025-07-03</pubDate>
-          <description>A practical guide to WCAG Guideline 5.3 (Conformance Claims)—what they are, why they matter, and how to make and document conformance claims for accessibility.</description>
-          <excerpt>This guideline explains how to make and document conformance claims for accessibility.</excerpt>
+          <title>5.3.1 - Required Components of a Conformance Claim</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-3-1-Conformance-Claims-Explained</link>
+          <pubDate>2025-07-08</pubDate>
+          <description>A practical guide to WCAG 2.1 Section 5.3.1, which details the required components for making a valid accessibility conformance claim.</description>
+          <excerpt>This section explains the specific required components for a valid WCAG 2.1 conformance claim, including what must be included and best practices.</excerpt>
           undefined
           <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" type="image/jpeg" length="1234" />
           <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" type="image/jpeg" medium="image" width="300" height="200" />
-          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.3 Explained, Conformance Claims (Optional)"</media:description>
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.3.1 Explained, Required Components of a Conformance Claim"</media:description>
+          <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" />
+          <media:credit>AccessiTech LLC</media:credit>
+        </item>
+      
+        <item>
+          <title>5.3.2 - Optional Components of a Conformance Claim</title>
+          <link>https://accessi.tech/wcag/WCAG-Guideline-5-3-2-Conformance-Claims-Explained</link>
+          <pubDate>2025-07-08</pubDate>
+          <description>A practical guide to WCAG 2.1 Section 5.3.2, which details the optional components that can enhance a WCAG conformance claim.</description>
+          <excerpt>This section explains the optional components you can include in a WCAG 2.1 conformance claim to provide more context and transparency.</excerpt>
+          undefined
+          <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" type="image/jpeg" length="1234" />
+          <media:content url="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" type="image/jpeg" medium="image" width="300" height="200" />
+          <media:description type="plain">Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.3.2 Explained, Optional Components of a Conformance Claim"</media:description>
           <media:thumbnail url="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" />
           <media:credit>AccessiTech LLC</media:credit>
         </item>

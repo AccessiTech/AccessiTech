@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.6 Explained, Contrast (Enhanced)"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures text is readable for users with low vision by enhancing contrast.
 -->
 
 # **WCAG Guideline 1.4.6: Contrast (Enhanced) Explained**
@@ -35,6 +36,8 @@ Guideline 1.4.6 Contrast (Enhanced) is a Level AAA requirement in the [Web Conte
 - Large text (18pt or 14pt bold) must have a contrast ratio of at least 4.5:1.
 - Decorative or incidental text, and logos, are exempt.
 
+For more, see [CSUN: Enhancing Digital Content Visibility with Color Contrast](https://news.csun.edu/accessibility/enhancing-digital-content-visibility-with-color-contrast/).
+
 ---
 
 ## **Why Does It Matter?**
@@ -46,7 +49,7 @@ Guideline 1.4.6 Contrast (Enhanced) is a Level AAA requirement in the [Web Conte
 - **Legal Compliance:** Contrast (Enhanced) is a Level AAA requirement in WCAG 2.2.
 - **Usability:** High contrast improves readability for everyone, especially in bright or low-light conditions.
 
-For more, see [WebAIM’s Contrast Checker](https://webaim.org/resources/contrastchecker/).
+For more, see the [W3C's Contrast Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G17).
 
 ---
 
@@ -74,7 +77,7 @@ All must meet the enhanced contrast requirements for Level AAA.
 - Avoid using images of text unless necessary
 - Test in different lighting conditions and with colorblind simulators
 
-For more, see the [W3C's Contrast Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G17).
+For more, see [WebAIM’s Contrast Checker](https://webaim.org/resources/contrastchecker/).
 
 ---
 

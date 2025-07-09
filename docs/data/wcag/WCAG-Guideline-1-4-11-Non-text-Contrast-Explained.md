@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.11.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.11 Non-text Contrast"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures user interface components and graphical objects have sufficient contrast for visibility.
 -->
 
 # **WCAG Guideline 1.4.11: Non-text Contrast Explained**
@@ -34,6 +35,9 @@ Guideline 1.4.11 Non-text Contrast is a Level AA requirement in the [Web Content
 - UI components (buttons, form fields, controls) must have a 3:1 contrast ratio with adjacent colors.
 - Graphical objects (icons, charts, focus indicators) must also meet this contrast ratio.
 - Ensures all users can identify and use interactive elements.
+
+
+For more, see [Harvard University: Technique – Non-text contrast](https://accessibility.huit.harvard.edu/technique-non-text-contrast#:~:text=Non%2Dtext%20contrast-,%E2%9C%8E%20Technique%3A%20Non%2Dtext%20contrast,contrast%20ratio%20of%203%3A1.).
 
 ---
 

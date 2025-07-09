@@ -7,6 +7,7 @@ image: WCAG-Series-1.2.7.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.7 Explained, Extended Audio Description (Prerecorded), Web Content Accessibiilty Guiedlines (WCAG) 1.2.7 Explained"
 status: published
 date: 2025-07-01
+excerpt: Requires extended audio descriptions for prerecorded video, aiding users who are blind or have low vision.
 -->
 
 # **WCAG Guideline 1.2.7: Extended Audio Description (Prerecorded) Explained**
@@ -85,7 +86,7 @@ For more, see [W3C's audio description docs](https://www.w3.org/WAI/WCAG22/Under
 - Not making the audio description option easy to find
 - Using unqualified narrators
 
-Audit your site regularly and use accessibility checkers to ensure all video content has proper extended audio description. For more, see [Deque's video accessibility tips](https://www.deque.com/blog/video-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all video content has proper extended audio description. For more, see the [Netflix Audio Description Style Guide v2.5](https://partnerhelp.netflixstudios.com/hc/en-us/articles/215510667-Audio-Description-Style-Guide-v2-5).
 
 ---
 

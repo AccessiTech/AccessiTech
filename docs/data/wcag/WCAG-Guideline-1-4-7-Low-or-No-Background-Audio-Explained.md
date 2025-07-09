@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.7.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.7 Explained, Low or No Background Audio"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures speech audio is clear and not obscured by background sounds.
 -->
 
 # **WCAG Guideline 1.4.7: Low or No Background Audio Explained**
@@ -35,11 +36,13 @@ Guideline 1.4.7 Low or No Background Audio is a Level AAA requirement in the [We
 - Background audio must be at least 20 dB lower than speech, be removable, or not present.
 - Applies to prerecorded audio-only content (e.g., podcasts, lectures).
 
+For more, see [BOIA: How Background Noise Affects Accessibility](https://www.boia.org/blog/how-background-noise-affects-accessibility).
+
 ---
 
 ## **Why Does It Matter?**
 
-[Infographic: Ear icon, speech bubble, and a warning sign for unclear audio]
+<!-- [Infographic: Ear icon, speech bubble, and a warning sign for unclear audio] -->
 
 - **Clarity:** Background sounds can make speech hard to understand, especially for users with hearing loss.
 - **Inclusivity:** Ensures everyone can access spoken content.

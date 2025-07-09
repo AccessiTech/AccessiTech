@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.1 Explained, Use of Color"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures information is not conveyed by color alone.
 -->
 
 # **WCAG Guideline 1.4.1: Use of Color Explained**
@@ -32,6 +33,8 @@ Guideline 1.4.1 Use of Color is a Level A requirement in the [Web Content Access
 - Do not rely on color alone to communicate important information or actions.
 - Use text labels, patterns, icons, or other visual cues in addition to color.
 - This helps users with color blindness, low vision, or those using monochrome displays.
+
+For more, see [RNIB's recommendations on colour and contrast for people with sight loss](https://media.rnib.org.uk/documents/Colour_and_contrast_for_people_with_sight_loss_2020.pdf).
 
 ---
 

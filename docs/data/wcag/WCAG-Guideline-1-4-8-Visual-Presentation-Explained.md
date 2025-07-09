@@ -7,6 +7,7 @@ image: WCAG-Series-1.4.8.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.8 Explained, Visual Presentation"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures users have control over how text is visually presented.
 -->
 
 # **WCAG Guideline 1.4.8: Visual Presentation Explained**
@@ -34,6 +35,8 @@ Guideline 1.4.8 Visual Presentation is a Level AAA requirement in the [Web Conte
 - Users must be able to control text color, background, width, spacing, and resizing.
 - Applies to blocks of text, not single words or short labels.
 - Supports users with low vision, dyslexia, and other reading difficulties.
+
+For more, see [Digital.gov: Accessibility for Teams – Visual Design](https://digital.gov/guides/accessibility-for-teams/visual-design).
 
 ---
 

@@ -7,6 +7,7 @@ image: WCAG-Series-1.3.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.4 Explained, Orientation"
 status: published
 date: 2025-07-01
+excerpt: This guideline ensures content is not restricted to a single display orientation.
 -->
 
 # **WCAG Guideline 1.3.4: Orientation Explained**
@@ -87,7 +88,7 @@ For more, see the [MDN orientation docs](https://developer.mozilla.org/en-US/doc
 - Not testing with assistive technology or mounted devices
 - Ignoring user preferences for orientation
 
-Audit your site regularly and use accessibility checkers to ensure all content supports multiple orientations. For more, see [Deque's mobile accessibility tips](https://www.deque.com/blog/mobile-accessibility-tips/).
+Audit your site regularly and use accessibility checkers to ensure all content supports multiple orientations. For more, see the [BBC's Mobile Accessibility Guidelines](https://www.bbc.co.uk/accessibility/forproducts/guides/mobile/).
 
 ---
 
