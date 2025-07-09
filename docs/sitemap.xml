@@ -9,7 +9,7 @@
   
           <url>
             <loc>https://www.accessi.tech/</loc>
-            <lastmod>2025-07-09T01:05:42.825Z</lastmod>
+            <lastmod>2025-07-09T02:44:48.506Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -21,7 +21,7 @@
         
           <url>
             <loc>https://www.accessi.tech/blog</loc>
-            <lastmod>2025-07-09T01:05:42.825Z</lastmod>
+            <lastmod>2025-07-09T02:44:48.507Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -33,7 +33,7 @@
         
           <url>
             <loc>https://www.accessi.tech/wcag</loc>
-            <lastmod>2025-07-09T01:05:42.825Z</lastmod>
+            <lastmod>2025-07-09T02:44:48.507Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -1136,12 +1136,24 @@
           </url>
         
           <url>
-            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-5-3-Conformance-Claims-Explained</loc>
-            <lastmod>2025-07-03T00:00:00.000Z</lastmod>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-5-3-1-Conformance-Claims-Explained</loc>
+            <lastmod>2025-07-08T00:00:00.000Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-5-3.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.3 Explained, Conformance Claims (Optional)"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.3.1 Explained, Required Components of a Conformance Claim"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/wcag/WCAG-Guideline-5-3-2-Conformance-Claims-Explained</loc>
+            <lastmod>2025-07-08T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-5-3.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-5-3.png</image:loc>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 5.3.2 Explained, Optional Components of a Conformance Claim"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>

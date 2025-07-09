@@ -74,8 +74,8 @@ Non-interference means that your site remains accessible even if some features a
 
 ---
 
-**Next Up:**
+**Up Next:**
 
-[Read Guideline 5.3: Conformance Claims →](WCAG-Guideline-5-3-Conformance-Claims-Explained)
+[Read Guideline 5.3.1: Required Components of a Conformance Claim →](WCAG-Guideline-5-3-1-Conformance-Claims-Explained)
 
 *Accessibility means no one gets left behind—even if some features don’t work for everyone.*
