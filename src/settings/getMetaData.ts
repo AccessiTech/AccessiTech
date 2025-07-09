@@ -38,4 +38,5 @@ export const getMetaData = ({
   "twitter:description": description,
   "twitter:image": `${IMAGES_BASE_URL}/${image}`,
   "twitter:image:alt": image ? imageAlt : DEFAULT_SHARE_IMAGE_ALT,
+  "twitter:url": canonical,
 });
