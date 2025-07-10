@@ -8,8 +8,7 @@
   background-color: $yellow;
 }
 
-.blog-page,
-.blog-entry-page {
+.blog-page {
   @include padding(0 0 $alt-section-padding);
   text-align: left;
 
@@ -32,7 +31,7 @@
   }
 }
 
-.blog-entry-page {
+.blog-entry-page, .blog-entry-links-row {
   h1 {
     @include font-resize(2rem);
     @include margin(1rem 0 1.75rem);

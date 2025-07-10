@@ -25,6 +25,9 @@ export interface Blog {
   image?: string;
   image_alt?: string;
   pathname?: string; // Optional, used for routing
+  next?: { url: string, title: string }; // Optional, used for next blog entry link
+  previous?: { url: string, title: string }; // Optional, used for previous blog entry link
+  excerpt?: string; // Optional, used for blog entry excerpt
 }
 
 export interface BlogState {
@@ -72,6 +75,8 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
   const image = metaData["image"] || "";
   const image_alt = metaData["image_alt"] || "";
   const excerpt = metaData["excerpt"] || "";
+  const nextStr = metaData["next"] || "";
+  const previousStr = metaData["previous"] || "";
 
   return {
     loaded: true,
@@ -84,6 +89,8 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
     image_alt,
     pathname,
     excerpt,
+    next: nextStr ? { url: nextStr.split(',')[0], title: nextStr.split(',')[1] || "Next" } : undefined,
+    previous: previousStr ? { url: previousStr.split(',')[0], title: previousStr.split(',')[1] || "Previous" } : undefined,
   } as Blog;
 });
 

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, useNavigate, NavigateFunction, useLocation } from "react-router-dom";
+import { useParams, useNavigate, NavigateFunction, useLocation, Link } from "react-router-dom";
 import { Row, Col, Breadcrumb } from "react-bootstrap";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from "remark-gfm";
@@ -17,25 +17,25 @@ export interface FetchBlogEntryProps {
   navigate: NavigateFunction;
   pathname?: string;
 }
-const fetchBlogEntry = async ({id, navigate, pathname}:FetchBlogEntryProps) => {
+const fetchBlogEntry = async ({ id, navigate, pathname }: FetchBlogEntryProps) => {
   await store.dispatch(getBlogEntry({ id: id.replace(/.html/g, ''), navigate, pathname }));
 }
-export interface BlogEntryProps {}
+export interface BlogEntryProps { }
 export interface BlogEntryType extends React.FC<BlogEntryProps> {
-  loadData: (url?:string) => Promise<void>;
+  loadData: (url?: string) => Promise<void>;
 }
 
 export const BlogEntry = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const id = useParams().id?.replace('.html','') as string;
+  const id = useParams().id?.replace('.html', '') as string;
   const sub = useParams().sub;
   const pathname = location.pathname.split('/')[1] || '';
   const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
   const entry = useBlogEntry(sub ? `${sub}/${id}` : id);
 
   useEffect(() => {
-    fetchBlogEntry({id: sub ? `${sub}/${id}` : id, navigate, pathname});
+    fetchBlogEntry({ id: sub ? `${sub}/${id}` : id, navigate, pathname });
   }, [id, sub, navigate]);
 
   const metadata = {
@@ -85,6 +85,25 @@ export const BlogEntry = () => {
           </Row>
         </Col>
       </main>
+    </Row>
+
+    <Row className="blog-entry-links-row" as="nav">
+      {/* previous column */}
+      {entry?.previous && (
+        <Col md={{ offset: 2, span: 4 }}>
+          <Link to={`${entry.previous.url}`} className="previous-link">
+            ← Previous: {entry.previous.title}
+          </Link>
+        </Col>
+      )}
+      {/* next column */}
+      {entry?.next && (
+        <Col md={{ span: 4 }}>
+          <Link to={`${entry.next.url}`} className="next-link">
+            Next: {entry.next.title} →
+          </Link>
+        </Col>
+      )}
     </Row>
   </>);
 }
