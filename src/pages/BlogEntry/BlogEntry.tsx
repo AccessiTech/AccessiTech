@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, useNavigate, NavigateFunction, useLocation } from "react-router-dom";
+import { useParams, useNavigate, NavigateFunction, useLocation, Link } from "react-router-dom";
 import { Row, Col, Breadcrumb } from "react-bootstrap";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from "remark-gfm";
@@ -72,7 +72,6 @@ export const BlogEntry = () => {
                 {!entry?.loaded ? <p>Loading...</p> :
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
-                    skipHtml={true}
                     components={{
                       table: CustomMarkdownTable,
                       a: ({href, title, ...props}: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
@@ -84,7 +83,7 @@ export const BlogEntry = () => {
                         return <a {...props} href={href} title={title} />;
                       }
                     }}
-                  >{entry.content}</ReactMarkdown>
+                  >{entry.content.replace(/<!--.*?-->/g, '')}</ReactMarkdown>
                 }
               </div>
             </Col>
