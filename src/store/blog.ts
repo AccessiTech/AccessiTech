@@ -50,10 +50,12 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
     .catch((e: string) => {
       console.error(e);
       // Prevent infinite redirect loop
-      if (navigate && window.location.pathname !== "/blog") {
-        navigate("/blog");
-      } else if (window.location.pathname !== "/blog") {
-        window.location.href = "/blog";
+      if (navigate && window.location.pathname !== `/${pathname || 'blog'}`) {
+        // Use replace: true so the 404 page is replaced in history
+        navigate(`/${pathname || 'blog'}`, { replace: true });
+      } else if (window.location.pathname !== `/${pathname || 'blog'}`) {
+        // Use location.replace for hard redirects
+        window.location.replace(`/${pathname || 'blog'}`);
       }
     });
   
