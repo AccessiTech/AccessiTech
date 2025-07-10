@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures changes in context or content only happen when users request them.
+previous: /wcag/WCAG-Guideline-3-2-4-Consistent-Identification-Explained, Guideline 3.2.4 - Consistent Identification
+next: /wcag/WCAG-Guideline-3-2-6-Consistent-Help-Explained, Guideline 3.2.6 - Consistent Help
 -->
 
 # **WCAG Guideline 3.2.5: Change on Request Explained**
@@ -115,8 +117,5 @@ For more, see the [W3C’s official documentation for 3.2.5 Change on Request](h
 
 Guideline 3.2.5 ensures that users are always in control of when changes happen on your site. Avoid surprises—let users decide when to trigger changes.
 
-**Next Up:**
 
-[WCAG-Guideline-3-2-6-Consistent-Help-Explained](WCAG-Guideline-3-2-6-Consistent-Help-Explained)
-
-*User control is essential—make sure changes only happen when your users want them!*
+*User control is essential—make sure changes only happen when your users want them!* 

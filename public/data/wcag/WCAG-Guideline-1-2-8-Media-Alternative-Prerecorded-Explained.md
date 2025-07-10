@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: Requires a full text alternative for synchronized media, ensuring accessibility for users who cannot access audio or video content.
+next: /wcag/WCAG-Guideline-1-2-9-Audio-Only-Live-Explained, Guideline 1.2.9 - Audio-only (Live)
+previous: /wcag/WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained, Guideline 1.2.7 - Extended Audio Description (Prerecorded)
 -->
 
 # **WCAG Guideline 1.2.8: Media Alternative (Prerecorded) Explained**
@@ -119,7 +121,3 @@ For more, see the [W3C’s official documentation for 1.2.8 Media Alternative (P
 <!-- [Illustration: User reading a full text transcript while watching a video] -->
 
 Guideline 1.2.8 is essential for making media content accessible to users who require text alternatives. By providing a full text transcript, you support users with disabilities, improve usability, and meet AAA requirements. Make full text alternatives a standard part of your media production process for maximum inclusion.
-
-**Next Up:**
-
-[Read Guideline 1.2.9: Audio-only (Live) →](WCAG-Guideline-1-2-9-Audio-Only-Live-Explained)

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures content is readable for a wide audience by considering reading levels.
+previous: /wcag/WCAG-Guideline-3-1-4-Abbreviations-Explained, Guideline 3.1.4 - Abbreviations
+next: /wcag/WCAG-Guideline-3-1-6-Pronunciation-Explained, Guideline 3.1.6 - Pronunciation
 -->
 
 # **WCAG Guideline 3.1.5: Reading Level Explained**
@@ -114,8 +116,5 @@ For more, see the [W3C’s official documentation for 3.1.5 Reading Level](https
 
 Guideline 3.1.5 ensures that your content is readable for the widest possible audience. Use plain language and provide alternatives for complex material.
 
-**Next Up:**
 
-[Read Guideline 3.1.6: Pronunciation →](WCAG-Guideline-3-1-6-Pronunciation-Explained)
-
-*Empower your users with clear and accessible content!*
+*Empower your users with clear and accessible content!* 

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures unusual words are explained or defined for clarity.
+previous: /wcag/WCAG-Guideline-3-1-2-Language-of-Parts-Explained, Guideline 3.1.2 - Language of Parts
+next: /wcag/WCAG-Guideline-3-1-4-Abbreviations-Explained, Guideline 3.1.4 - Abbreviations
 -->
 
 # **WCAG Guideline 3.1.3: Unusual Words Explained**
@@ -116,8 +118,5 @@ For more, see the [W3C’s official documentation for 3.1.3 Unusual Words](https
 
 Guideline 3.1.3 is essential for helping users understand your site. By explaining unusual words, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make terminology accessibility a core part of your development process.
 
-**Next Up:**
 
-[Read Guideline 3.1.4: Abbreviations →](WCAG-Guideline-3-1-4-Abbreviations-Explained)
-
-*Accessibility means clarity—help users understand every word!*
+*Accessibility means clarity—help users understand every word!* 

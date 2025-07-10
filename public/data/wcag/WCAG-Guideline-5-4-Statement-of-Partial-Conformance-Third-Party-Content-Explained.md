@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline explains how to document accessibility for third-party content you do not control.
+previous: /wcag/WCAG-Guideline-5-3-2-Conformance-Claims-Explained, Guideline 5.3.2 - Optional Components of a Conformance Claim
+next: /wcag/WCAG-Guideline-5-5-Statement-of-Partial-Conformance-Language-Explained, Guideline 5.5 - Statement of Partial Conformance: Language
 --->
 
 # **WCAG Guideline 5.4: Statement of Partial Conformance – Third Party Content Explained**
@@ -84,8 +86,5 @@ For more, see [W3C’s guidance on Partial Conformance](https://www.w3.org/WAI/W
 
 Guideline 5.4 allows you to be transparent about accessibility when you include third-party content you cannot control. Use a clear, honest statement to help users understand your site’s accessibility status.
 
-**Next Up:**
-
-[Read Guideline 5.5: Statement of Partial Conformance – Language →](WCAG-Guideline-5-5-Statement-of-Partial-Conformance-Language-Explained)
 
 *Partial conformance is honest—show your commitment to accessibility!*

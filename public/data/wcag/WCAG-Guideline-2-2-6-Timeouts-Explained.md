@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users are warned about timeouts and can request more time.
+next: /wcag/WCAG-Guideline-2-3-1-Three-Flashes-or-Below-Threshold-Explained, Guideline 2.3.1 - Three Flashes or Below Threshold
+previous: /wcag/WCAG-Guideline-2-2-5-Re-authenticating-Explained, Guideline 2.2.5 - Re-authenticating
 -->
 
 # **WCAG Guideline 2.2.6: Timeouts Explained**
@@ -122,6 +124,3 @@ Guideline 2.2.6 is essential for preventing data loss and supporting users who n
 
 **Up Next**
 
-[Read Guideline 2.3.1: Three Flashes or Below Threshold →](WCAG-Guideline-2-3-1-Three-Flashes-or-Below-Threshold-Explained)
-
-*Accessibility means giving users a fair chance—make your site patient and user-friendly!*

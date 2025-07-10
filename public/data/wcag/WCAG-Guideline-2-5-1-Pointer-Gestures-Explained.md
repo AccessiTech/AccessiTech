@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures all functionality is operable with simple pointer gestures.
+next: /wcag/WCAG-Guideline-2-5-2-Pointer-Cancellation-Explained, Guideline 2.5.2 - Pointer Cancellation
+previous: /wcag/WCAG-Guideline-2-4-7-Focus-Visible-Explained, Guideline 2.4.7 - Focus Visible
 -->
 
 # **WCAG Guideline 2.5.1: Pointer Gestures Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.5.1 Pointer Gestures](ht
 
 Guideline 2.5.1 is essential for ensuring all users can operate your site. By providing alternatives to complex gestures, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make gesture accessibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.5.2: Pointer Cancellation →](WCAG-Guideline-2-5-2-Pointer-Cancellation-Explained)
-
-*Accessibility means simple controls—make your site easy for everyone to use!*

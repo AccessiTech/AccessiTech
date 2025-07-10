@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures content works on any screen size or orientation.
+next: /wcag/WCAG-Guideline-1-4-11-Non-text-Contrast-Explained, Guideline 1.4.11 - Non-text Contrast
+previous: /wcag/WCAG-Guideline-1-4-9-Images-of-Text-No-Exception-Explained, Guideline 1.4.9 - Images of Text (No Exception)
 -->
 
 # **WCAG Guideline 1.4.10: Reflow Explained**
@@ -117,9 +119,5 @@ For more, see the [W3C’s official documentation for 1.4.10 Reflow](https://www
 <!-- [Illustration: User viewing a web page on desktop and mobile, both fully functional] -->
 
 Guideline 1.4.10 ensures your content works for everyone, on any device or zoom level. Use responsive design and always test at small sizes.
-
-**Next Up:**
-
-[Read Guideline 1.4.11: Non-text Contrast →](WCAG-Guideline-1-4-11-Non-text-Contrast-Explained)
 
 *Accessibility means your site works everywhere—make it flexible!*

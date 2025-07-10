@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures audio-only and video-only content is accessible with captions or transcripts.
+next: /wcag/WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained, Guideline 1.2.2 - Captions (Prerecorded)
+previous: /wcag/WCAG-Guideline-1-1-1-Non-text-Content-Explained, Guideline 1.1.1 - Non-text Content
 -->
 
 # **WCAG Guideline 1.2.1: Audio-only and Video-only (Prerecorded) Explained**
@@ -119,7 +121,3 @@ For more, see the [W3C’s official documentation for 1.2.1 Audio-only and Video
 <!-- [Illustration: User reading a transcript while listening to a podcast] -->
 
 Guideline 1.2.1 is essential for making media content accessible to everyone. By providing transcripts and descriptions, you support users with disabilities, improve usability, and meet legal requirements. Make media alternatives a standard part of your content process.
-
-**Next Up:**
-
-[Read Guideline 1.2.2: Captions (Prerecorded) →](WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained)

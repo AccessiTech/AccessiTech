@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures abbreviations are explained or expanded for accessibility.
+previous: /wcag/WCAG-Guideline-3-1-3-Unusual-Words-Explained, Guideline 3.1.3 - Unusual Words
+next: /wcag/WCAG-Guideline-3-1-5-Reading-Level-Explained, Guideline 3.1.5 - Reading Level
 -->
 
 # **WCAG Guideline 3.1.4: Abbreviations Explained**
@@ -116,8 +118,5 @@ For more, see the [W3C’s official documentation for 3.1.4 Abbreviations](https
 
 Guideline 3.1.4 is essential for helping users understand your site. By explaining abbreviations, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make abbreviation accessibility a core part of your development process.
 
-**Next Up:**
 
-[Read Guideline 3.1.5: Reading Level →](WCAG-Guideline-3-1-5-Reading-Level-Explained)
-
-*Accessibility means clarity—help users understand every term!*
+*Accessibility means clarity—help users understand every term!* 

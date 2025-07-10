@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can cancel pointer actions before they are completed, preventing accidental interactions.
+next: /wcag/WCAG-Guideline-2-5-3-Label-in-Name-Explained, Guideline 2.5.3 - Label in Name
+previous: /wcag/WCAG-Guideline-2-5-1-Pointer-Gestures-Explained, Guideline 2.5.1 - Pointer Gestures
 -->
 
 # **WCAG Guideline 2.5.2: Pointer Cancellation Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.5.2 Pointer Cancellation
 
 Guideline 2.5.2 is essential for giving users control and preventing mistakes. By allowing users to cancel or undo pointer actions, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make pointer cancellation a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.5.3: Label in Name →](WCAG-Guideline-2-5-3-Label-in-Name-Explained)
-
-*Accessibility means control—help users avoid mistakes and recover easily!*

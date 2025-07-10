@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures text remains readable when users zoom or increase font size.
+next: /wcag/WCAG-Guideline-1-4-5-Images-of-Text-Explained, Guideline 1.4.5 - Images of Text
+previous: /wcag/WCAG-Guideline-1-4-3-Contrast-Minimum-Explained, Guideline 1.4.3 - Contrast (Minimum)
 -->
 
 # **WCAG Guideline 1.4.4: Resize Text Explained**
@@ -115,9 +117,5 @@ For more, see the [W3C’s official documentation for 1.4.4 Resize Text](https:/
 <!-- [Illustration: User zooming in on a web page with all content still visible] -->
 
 Guideline 1.4.4 ensures users can read and interact with content at larger text sizes. Use relative units and test your site at 200% zoom to ensure accessibility.
-
-**Next Up:**
-
-[Read Guideline 1.4.5: Images of Text →](WCAG-Guideline-1-4-5-Images-of-Text-Explained)
 
 *Accessibility means everyone can read your content—make sure it scales!*

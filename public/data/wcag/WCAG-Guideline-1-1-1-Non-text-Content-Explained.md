@@ -132,6 +132,4 @@ For more, see the [W3C’s official documentation for 1.1.1 Non-text Content](ht
 
 Guideline 1.1.1 is the foundation of accessible web content. By providing text alternatives for all non-text content, you make your site usable for everyone. This small step can have a huge impact on digital inclusion, search engine optimization, and legal compliance. Start with your most important images and work your way through your site—every improvement counts.
 
-**Next Up:**
-
 [Read Guideline 1.2.1: Audio-only and Video-only (Prerecorded) →](WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained)

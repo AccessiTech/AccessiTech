@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures content is presented in a logical order for all users.
+next: /wcag/WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained, Guideline 1.3.3 - Sensory Characteristics
+previous: /wcag/WCAG-Guideline-1-3-1-Info-and-Relationships-Explained, Guideline 1.3.1 - Info and Relationships
 -->
 
 # **WCAG Guideline 1.3.2: Meaningful Sequence Explained**
@@ -122,7 +124,3 @@ For more, see the [W3C’s official documentation for 1.3.2 Meaningful Sequence]
 <!-- [Illustration: User following a logical reading order with a screen reader] -->
 
 Guideline 1.3.2 is essential for making your site understandable and usable for everyone. By ensuring a meaningful sequence, you support users with disabilities, improve usability, and meet legal requirements. Make logical order a standard part of your development process.
-
-**Next Up:**
-
-[Read Guideline 1.3.3: Sensory Characteristics →](WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained)

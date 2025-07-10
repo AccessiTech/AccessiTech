@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures a logical focus order for keyboard navigation.
+next: /wcag/WCAG-Guideline-2-4-4-Link-Purpose-In-Context-Explained, Guideline 2.4.4 - Link Purpose (In Context)
+previous: /wcag/WCAG-Guideline-2-4-2-Page-Titled-Explained, Guideline 2.4.2 - Page Titled
 -->
 
 # **WCAG Guideline 2.4.3: Focus Order Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.4.3 Focus Order](https:/
 
 Guideline 2.4.3 is essential for helping users navigate your site efficiently. By ensuring a logical focus order, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make focus order a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.4.4: Link Purpose (In Context) →](WCAG-Guideline-2-4-4-Link-Purpose-In-Context-Explained)
-
-*Accessibility means logical navigation—help users move through your site with confidence!*

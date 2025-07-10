@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures video content is accessible for users who are blind or have low vision with audio descriptions or media alternatives.
+next: /wcag/WCAG-Guideline-1-2-4-Captions-Live-Explained, Guideline 1.2.4 - Captions (Live)
+previous: /wcag/WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained, Guideline 1.2.2 - Captions (Prerecorded)
 -->
 
 # **WCAG Guideline 1.2.3: Audio Description or Media Alternative (Prerecorded) Explained**
@@ -119,7 +121,3 @@ For more, see the [W3C’s official documentation for 1.2.3 Audio Description or
 <!-- [Illustration: User listening to an audio description while watching a video] -->
 
 Guideline 1.2.3 is essential for making video content accessible to everyone. By providing audio descriptions or media alternatives, you support users with disabilities, improve usability, and meet legal requirements. Make these alternatives a standard part of your video production process.
-
-**Next Up:**
-
-[Read Guideline 1.2.4: Captions (Live) →](WCAG-Guideline-1-2-4-Captions-Live-Explained)

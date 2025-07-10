@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures visible labels match accessible names for controls.
+next: /wcag/WCAG-Guideline-2-5-4-Motion-Actuation-Explained, Guideline 2.5.4 - Motion Actuation
+previous: /wcag/WCAG-Guideline-2-5-2-Pointer-Cancellation-Explained, Guideline 2.5.2 - Pointer Cancellation
 -->
 
 # **WCAG Guideline 2.5.3: Label in Name Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.5.3 Label in Name](https
 
 Guideline 2.5.3 is essential for helping users interact with your site. By ensuring visible labels match accessible names, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make label matching a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.5.4: Motion Actuation →](WCAG-Guideline-2-5-4-Motion-Actuation-Explained)
-
-*Accessibility means clarity—help users interact with confidence!*

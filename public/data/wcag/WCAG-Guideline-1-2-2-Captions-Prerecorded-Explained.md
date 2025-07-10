@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures prerecorded video content is accessible with captions.
+next: /wcag/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained, Guideline 1.2.3 - Audio Description or Media Alternative (Prerecorded)
+previous: /wcag/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained, Guideline 1.2.1 - Audio-only and Video-only (Prerecorded)
 -->
 
 # **WCAG Guideline 1.2.2: Captions (Prerecorded) Explained**
@@ -120,8 +122,4 @@ For more, see the [W3C’s official documentation for 1.2.2 Captions (Prerecorde
 <!-- [Illustration: User watching a video with captions enabled] -->
 
 Guideline 1.2.2 is essential for making video content accessible to everyone. By providing accurate captions, you support users with disabilities, improve usability, and meet legal requirements. Make captioning a standard part of your video production process.
-
-**Next Up:**
-
-[Read Guideline 1.2.3: Audio Description or Media Alternative (Prerecorded) →](WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained)
 

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can continue their activities without losing data after re-authentication.
+next: /wcag/WCAG-Guideline-2-2-6-Timeouts-Explained, Guideline 2.2.6 - Timeouts
+previous: /wcag/WCAG-Guideline-2-2-4-Interruptions-Explained, Guideline 2.2.4 - Interruptions
 -->
 
 # **WCAG Guideline 2.2.5: Re-authenticating Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.2.5 Re-authenticating](h
 
 Guideline 2.2.5 is essential for preventing data loss and supporting users who need more time. By preserving user data during re-authentication, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make session management a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.2.6: Timeouts →](WCAG-Guideline-2-2-6-Timeouts-Explained)
-
-*Accessibility means letting users pick up where they left off—make your site forgiving and user-friendly!*

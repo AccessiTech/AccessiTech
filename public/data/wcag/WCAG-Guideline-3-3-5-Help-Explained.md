@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures context-sensitive help is available for users completing forms and complex tasks.
+previous: /wcag/WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained, Guideline 3.3.4 - Error Prevention (Legal, Financial, Data)
+next: /wcag/WCAG-Guideline-3-3-6-Error-Prevention-All-Explained, Guideline 3.3.6 - Error Prevention (All)
 --->
 
 # **WCAG Guideline 3.3.5: Help Explained**
@@ -114,8 +116,5 @@ For more, see the [W3C’s official documentation for 3.3.5 Help](https://www.w3
 
 Guideline 3.3.5 ensures that users can get the help they need to complete forms and complex tasks. Accessible help features reduce errors and improve user confidence.
 
-**Next Up:**
 
-[Read Guideline 3.3.6: Error Prevention (All) →](WCAG-Guideline-3-3-6-Error-Prevention-All-Explained)
-
-*Accessible help empowers users—make sure support is always within reach!*
+*Accessible help empowers users—make sure support is always within reach!* 

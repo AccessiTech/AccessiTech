@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures help mechanisms are consistently located throughout a website.
+previous: /wcag/WCAG-Guideline-3-2-5-Change-on-Request-Explained, Guideline 3.2.5 - Change on Request
+next: /wcag/WCAG-Guideline-3-3-1-Error-Identification-Explained, Guideline 3.3.1 - Error Identification
 -->
 
 # **WCAG Guideline 3.2.6: Consistent Help Explained**
@@ -114,8 +116,5 @@ For more, see the [W3C’s official documentation for 3.2.6 Consistent Help](htt
 
 Guideline 3.2.6 ensures that users can always find help in the same place, making your site more accessible and user-friendly.
 
-**Next Up:**
 
-[Read Guideline 3.3.1: Error Identification →](WCAG-Guideline-3-3-1-Error-Identification-Explained)
-
-*Consistency builds trust—make help easy to find for everyone!*
+*Consistency builds trust—make help easy to find for everyone!* 

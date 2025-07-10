@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures tooltips and popups are accessible, dismissible, and do not interfere with content.
+next: /wcag/WCAG-Guideline-2-1-1-Keyboard-Accessible-Explained, Guideline 2.1.1 - Keyboard Accessible
+previous: /wcag/WCAG-Guideline-1-4-12-Text-Spacing-Explained, Guideline 1.4.12 - Text Spacing
 -->
 
 # **WCAG Guideline 1.4.13: Content on Hover or Focus Explained**
@@ -117,9 +119,5 @@ For more, see the [W3C’s official documentation for 1.4.13 Content on Hover or
 <!-- [Illustration: User interacting with accessible tooltip using both mouse and keyboard] -->
 
 Guideline 1.4.13 ensures all users can access, read, and dismiss popups and tooltips. Always test with keyboard and assistive tech to ensure accessibility.
-
-**Next Up:**
-
-[Read Guideline 2.1.1: Keyboard Accessible →](WCAG-Guideline-2-1-1-Keyboard-Accessible-Explained)
 
 *Accessibility means everyone can access your content—make your popups work for all!*

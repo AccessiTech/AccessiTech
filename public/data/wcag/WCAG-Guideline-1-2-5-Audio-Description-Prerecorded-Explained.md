@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures prerecorded video content is accessible with audio descriptions.
+next: /wcag/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained, Guideline 1.2.6 - Sign Language (Prerecorded)
+previous: /wcag/WCAG-Guideline-1-2-4-Captions-Live-Explained, Guideline 1.2.4 - Captions (Live)
 -->
 
 # **WCAG Guideline 1.2.5: Audio Description (Prerecorded) Explained**
@@ -119,7 +121,3 @@ For more, see the [W3C’s official documentation for 1.2.5 Audio Description (P
 <!-- [Illustration: User listening to an audio description while watching a video] -->
 
 Guideline 1.2.5 is essential for making prerecorded video content accessible to everyone. By providing accurate audio descriptions, you support users with disabilities, improve usability, and meet legal requirements. Make audio description a standard part of your video production process.
-
-**Next Up:**
-
-[Read Guideline 1.2.6: Sign Language (Prerecorded) →](WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained)

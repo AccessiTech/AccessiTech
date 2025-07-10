@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures information and relationships are programmatically determined or available in text.
+next: /wcag/WCAG-Guideline-1-3-2-Meaningful-Sequence-Explained, Guideline 1.3.2 - Meaningful Sequence
+previous: /wcag/WCAG-Guideline-1-2-9-Audio-Only-Live-Explained, Guideline 1.2.9 - Audio-only (Live)
 -->
 
 # **WCAG Guideline 1.3.1: Info and Relationships Explained**
@@ -122,7 +124,3 @@ For more, see the [W3C’s official documentation for 1.3.1 Info and Relationshi
 <!-- [Illustration: User navigating a well-structured web page with a screen reader] -->
 
 Guideline 1.3.1 is essential for making your site usable and understandable for everyone. By using semantic HTML and ensuring relationships are programmatically determined, you support users with disabilities, improve usability, and meet legal requirements. Make semantic structure a standard part of your development process.
-
-**Next Up:**
-
-[Read Guideline 1.3.2: Meaningful Sequence →](WCAG-Guideline-1-3-2-Meaningful-Sequence-Explained)

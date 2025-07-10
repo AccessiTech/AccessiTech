@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures information is not conveyed by color alone.
+next: /wcag/WCAG-Guideline-1-4-2-Audio-Control-Explained, Guideline 1.4.2 - Audio Control
+previous: /wcag/WCAG-Guideline-1-3-6-Identify-Purpose-Explained, Guideline 1.3.6 - Identify Purpose
 -->
 
 # **WCAG Guideline 1.4.1: Use of Color Explained**
@@ -63,9 +65,3 @@ For more, see [RNIB's recommendations on colour and contrast for people with sig
 - Status indicators
 
 All must provide clear, accessible cues beyond color alone.
-
----
-
-**Next Up:**
-
-[Read Guideline 1.4.2: Audio Control →](WCAG-Guideline-1-4-2-Audio-Control-Explained)

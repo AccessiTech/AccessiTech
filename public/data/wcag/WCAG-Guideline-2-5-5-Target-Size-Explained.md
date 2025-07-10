@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: Ensures touch targets are large enough for all users, improving accessibility and usability.
+next: /wcag/WCAG-Guideline-2-5-6-Concurrent-Input-Mechanisms-Explained, Guideline 2.5.6 - Concurrent Input Mechanisms
+previous: /wcag/WCAG-Guideline-2-5-4-Motion-Actuation-Explained, Guideline 2.5.4 - Motion Actuation
 -->
 
 # **WCAG Guideline 2.5.5: Target Size Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.5.5 Target Size](https:/
 
 Guideline 2.5.5 is essential for helping users interact with your site. By ensuring large touch targets, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make target size a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.5.6: Concurrent Input Mechanisms →](WCAG-Guideline-2-5-6-Concurrent-Input-Mechanisms-Explained)
-
-*Accessibility means easy interaction—make your site touch-friendly for everyone!*

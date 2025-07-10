@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures forms and interactive elements have clear labels and instructions for users.
+previous: /wcag/WCAG-Guideline-3-3-1-Error-Identification-Explained, Guideline 3.3.1 - Error Identification
+next: /wcag/WCAG-Guideline-3-3-3-Error-Suggestion-Explained, Guideline 3.3.3 - Error Suggestion
 -->
 
 # **WCAG Guideline 3.3.2: Labels or Instructions Explained**
@@ -114,8 +116,5 @@ For more, see the [W3C’s official documentation for 3.3.2 Labels or Instructio
 
 Guideline 3.3.2 ensures that users can enter information correctly the first time. Clear labels and instructions are essential for accessible, user-friendly forms.
 
-**Next Up:**
 
-[Read Guideline 3.3.3: Error Suggestion →](WCAG-Guideline-3-3-3-Error-Suggestion-Explained)
-
-*Clear guidance leads to confident users—make your forms easy to understand for everyone!*
+*Clear guidance leads to confident users—make your forms easy to understand for everyone!* 

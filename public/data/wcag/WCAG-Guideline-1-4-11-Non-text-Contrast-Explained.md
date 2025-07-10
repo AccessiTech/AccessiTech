@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures user interface components and graphical objects have sufficient contrast for visibility.
+next: /wcag/WCAG-Guideline-1-4-12-Text-Spacing-Explained, Guideline 1.4.12 - Text Spacing
+previous: /wcag/WCAG-Guideline-1-4-10-Reflow-Explained, Guideline 1.4.10 - Reflow
 -->
 
 # **WCAG Guideline 1.4.11: Non-text Contrast Explained**
@@ -121,9 +123,5 @@ For more, see the [W3C’s official documentation for 1.4.11 Non-text Contrast](
 <!-- [Illustration: User interacting with high-contrast UI controls on a web page] -->
 
 Guideline 1.4.11 ensures all users can identify and use controls, icons, and graphics. Use contrast checkers and always test your designs for accessibility.
-
-**Next Up:**
-
-[Read Guideline 1.4.12: Text Spacing →](WCAG-Guideline-1-4-12-Text-Spacing-Explained)
 
 *Accessibility means every element is visible—don’t let low contrast hide your controls!*

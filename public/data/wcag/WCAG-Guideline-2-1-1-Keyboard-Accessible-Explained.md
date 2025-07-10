@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures all functionality is accessible using only a keyboard.
+next: /wcag/WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained, Guideline 2.1.2 - No Keyboard Trap
+previous: /wcag/WCAG-Guideline-1-4-13-Content-on-Hover-or-Focus-Explained, Guideline 1.4.13 - Content on Hover or Focus
 -->
 
 # **WCAG Guideline 2.1.1: Keyboard Accessible Explained**
@@ -124,9 +126,5 @@ For more, see the [W3C’s official documentation for 2.1.1 Keyboard Accessible]
 <!-- [Illustration: User navigating a web page using only a keyboard, with visible focus] -->
 
 Guideline 2.1.1 is essential for making your site usable by everyone. By ensuring all functionality is available from a keyboard, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make keyboard accessibility a core part of your development process.
-
-**Next Up:**
-
-[Read Guideline 2.1.2: No Keyboard Trap →](WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained)
 
 *Accessibility is about giving everyone a way in—make sure the keyboard always works!*

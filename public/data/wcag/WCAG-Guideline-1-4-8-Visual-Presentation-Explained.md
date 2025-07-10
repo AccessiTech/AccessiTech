@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures users have control over how text is visually presented.
+next: /wcag/WCAG-Guideline-1-4-9-Images-of-Text-No-Exception-Explained, Guideline 1.4.9 - Images of Text (No Exception)
+previous: /wcag/WCAG-Guideline-1-4-7-Low-or-No-Background-Audio-Explained, Guideline 1.4.7 - Low or No Background Audio
 -->
 
 # **WCAG Guideline 1.4.8: Visual Presentation Explained**
@@ -118,9 +120,5 @@ For more, see the [W3C’s official documentation for 1.4.8 Visual Presentation]
 <!-- [Illustration: User adjusting text settings for comfort and readability] -->
 
 Guideline 1.4.8 ensures users can customize how text is displayed for maximum readability and comfort. Provide controls and use flexible CSS to support all users.
-
-**Next Up:**
-
-[Read Guideline 1.4.9: Images of Text (No Exception) →](WCAG-Guideline-1-4-9-Images-of-Text-No-Exception-Explained)
 
 *Accessibility means giving users control—let them read their way!*

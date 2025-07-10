@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: Ensures authentication processes are accessible for all users, including those with disabilities.
+previous: /wcag/WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained, Guideline 3.3.8 - Accessible Authentication (Minimum)
+next: /wcag/WCAG-Guideline-4-1-1-Parsing-Explained, Guideline 4.1.1 - Parsing
 -->
 
 # **WCAG Guideline 3.3.9: Accessible Authentication (Enhanced) Explained**
@@ -113,8 +115,5 @@ For more, see the [W3C’s official documentation for 3.3.9 Accessible Authentic
 
 Guideline 3.3.9 ensures that everyone can authenticate without cognitive or transcription barriers. Provide accessible alternatives for all authentication steps.
 
-**Next Up:**
 
-[Read Guideline 4.1.1: Parsing →](WCAG-Guideline-4-1-1-Parsing-Explained)
-
-*Accessibility means everyone can log in—remove barriers from your authentication process!*
+*Accessibility means everyone can log in—remove barriers from your authentication process!* 

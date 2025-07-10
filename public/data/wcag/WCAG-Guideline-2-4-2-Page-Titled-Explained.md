@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures every web page has a clear and descriptive title.
+next: /wcag/WCAG-Guideline-2-4-3-Focus-Order-Explained, Guideline 2.4.3 - Focus Order
+previous: /wcag/WCAG-Guideline-2-4-1-Bypass-Blocks-Explained, Guideline 2.4.1 - Bypass Blocks
 -->
 
 # **WCAG Guideline 2.4.2: Page Titled Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.4.2 Page Titled](https:/
 
 Guideline 2.4.2 is essential for helping users identify and navigate your site. By providing descriptive titles for every page, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make page titling a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.4.3: Focus Order →](WCAG-Guideline-2-4-3-Focus-Order-Explained)
-
-*Accessibility means clear navigation—help users know where they are at all times!*

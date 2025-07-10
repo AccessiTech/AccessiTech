@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures text is real and not just an image for accessibility.
+next: /wcag/WCAG-Guideline-1-4-6-Contrast-Enhanced-Explained, Guideline 1.4.6 - Contrast (Enhanced)
+previous: /wcag/WCAG-Guideline-1-4-4-Resize-Text-Explained, Guideline 1.4.4 - Resize Text
 -->
 
 # **WCAG Guideline 1.4.5: Images of Text Explained**
@@ -116,9 +118,5 @@ For more, see the [W3C’s official documentation for 1.4.5 Images of Text](http
 <!-- [Illustration: User selecting and resizing real text on a web page] -->
 
 Guideline 1.4.5 ensures content is accessible, scalable, and adaptable by using real text instead of images. Use CSS for styling and only use images of text when absolutely necessary.
-
-**Next Up:**
-
-[Read Guideline 1.4.6: Contrast (Enhanced) →](WCAG-Guideline-1-4-6-Contrast-Enhanced-Explained)
 
 *Accessibility means real text for real people—don’t hide your message in an image!*

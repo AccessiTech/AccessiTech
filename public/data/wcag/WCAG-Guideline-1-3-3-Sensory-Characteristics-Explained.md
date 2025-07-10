@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures instructions do not rely on shape, color, or sound alone.
+next: /wcag/WCAG-Guideline-1-3-4-Orientation-Explained, Guideline 1.3.4 - Orientation
+previous: /wcag/WCAG-Guideline-1-3-2-Meaningful-Sequence-Explained, Guideline 1.3.2 - Meaningful Sequence
 -->
 
 # **WCAG Guideline 1.3.3: Sensory Characteristics Explained**
@@ -122,7 +124,3 @@ For more, see the [W3C’s official documentation for 1.3.3 Sensory Characterist
 <!-- [Illustration: User following instructions with both text and color cues] -->
 
 Guideline 1.3.3 is essential for making your site usable and understandable for everyone. By providing instructions that don’t rely solely on sensory characteristics, you support users with disabilities, improve usability, and meet legal requirements. Make accessible instructions a standard part of your development process.
-
-**Next Up:**
-
-[Read Guideline 1.3.4: Orientation →](WCAG-Guideline-1-3-4-Orientation-Explained)

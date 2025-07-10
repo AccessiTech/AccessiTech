@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users have multiple ways to locate content on your site.
+next: /wcag/WCAG-Guideline-2-4-6-Headings-and-Labels-Explained, Guideline 2.4.6 - Headings and Labels
+previous: /wcag/WCAG-Guideline-2-4-4-Link-Purpose-In-Context-Explained, Guideline 2.4.4 - Link Purpose (In Context)
 -->
 
 # **WCAG Guideline 2.4.5: Multiple Ways Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.4.5 Multiple Ways](https
 
 Guideline 2.4.5 is essential for helping users find content efficiently. By providing multiple ways to locate pages, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make navigation flexibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.4.6: Headings and Labels →](WCAG-Guideline-2-4-6-Headings-and-Labels-Explained)
-
-*Accessibility means options—help users find their way, their way!*

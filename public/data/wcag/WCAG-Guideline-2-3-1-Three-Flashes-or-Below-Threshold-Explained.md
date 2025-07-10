@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures content doesn't flash in ways that could trigger seizures or physical discomfort.
+next: /wcag/WCAG-Guideline-2-3-2-Three-Flashes-Explained, Guideline 2.3.2 - Three Flashes
+previous: /wcag/WCAG-Guideline-2-2-6-Timeouts-Explained, Guideline 2.2.6 - Timeouts
 -->
 
 # **WCAG Guideline 2.3.1: Three Flashes or Below Threshold Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.3.1 Three Flashes or Bel
 
 Guideline 2.3.1 is essential for preventing seizures and supporting users with photosensitive epilepsy. By avoiding flashing content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make safe animation a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.3.2: Three Flashes →](WCAG-Guideline-2-3-2-Three-Flashes-Explained)
-
-*Accessibility means keeping everyone safe—make your site seizure-friendly!*

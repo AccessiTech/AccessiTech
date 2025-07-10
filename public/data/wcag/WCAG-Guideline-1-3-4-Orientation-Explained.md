@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures content is not restricted to a single display orientation.
+next: /wcag/WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained, Guideline 1.3.5 - Identify Input Purpose
+previous: /wcag/WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained, Guideline 1.3.3 - Sensory Characteristics
 -->
 
 # **WCAG Guideline 1.3.4: Orientation Explained**
@@ -121,7 +123,3 @@ For more, see the [W3C’s official documentation for 1.3.4 Orientation](https:/
 <!-- [Illustration: User switching device orientation and accessing all content] -->
 
 Guideline 1.3.4 is essential for making your site usable and accessible for everyone. By supporting both orientations, you support users with disabilities, improve usability, and meet legal requirements. Make orientation flexibility a standard part of your development process.
-
-**Next Up:**
-
-[Read Guideline 1.3.5: Identify Input Purpose →](WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained)

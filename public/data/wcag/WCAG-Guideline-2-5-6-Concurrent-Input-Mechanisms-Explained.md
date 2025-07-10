@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: Ensures users can switch between input methods, supporting accessibility for diverse needs.
+next: /wcag/WCAG-Guideline-2-6-1-Device-Sensors-Explained, Guideline 2.6.1 - Device Sensors
+previous: /wcag/WCAG-Guideline-2-5-5-Target-Size-Explained, Guideline 2.5.5 - Target Size
 -->
 
 # **WCAG Guideline 2.5.6: Concurrent Input Mechanisms Explained**
@@ -120,6 +122,3 @@ Guideline 2.5.6 is essential for helping users interact with your site. By allow
 
 **Next Up**
 
-[Read Guideline 2.6.1: Device Sensors →](WCAG-Guideline-2-6-1-Device-Sensors-Explained)
-
-*Accessibility means flexibility—let users interact their way!*

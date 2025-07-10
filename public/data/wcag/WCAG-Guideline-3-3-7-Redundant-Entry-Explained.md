@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users don't have to re-enter information they've already provided.
+previous: /wcag/WCAG-Guideline-3-3-6-Error-Prevention-All-Explained, Guideline 3.3.6 - Error Prevention (All)
+next: /wcag/WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained, Guideline 3.3.8 - Accessible Authentication (Minimum)
 -->
 
 # **WCAG Guideline 3.3.7: Redundant Entry Explained**
@@ -112,8 +114,5 @@ For more, see the [W3C’s official documentation for 3.3.7 Redundant Entry](htt
 
 Guideline 3.3.7 ensures that users don’t have to enter the same information more than once in a process. Reduce repetition for a smoother, more accessible experience.
 
-**Next Up:**
 
-[Read Guideline 3.3.8: Accessible Authentication (Minimum) →](WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained)
-
-*Efficiency and ease—help users by reducing unnecessary repetition!*
+*Efficiency and ease—help users by reducing unnecessary repetition!* 

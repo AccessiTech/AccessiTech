@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can control moving, blinking, or auto-updating content.
+next: /wcag/WCAG-Guideline-2-2-3-No-Timing-Explained, Guideline 2.2.3 - No Timing
+previous: /wcag/WCAG-Guideline-2-2-1-Timing-Adjustable-Explained, Guideline 2.2.1 - Timing Adjustable
 -->
 
 # **WCAG Guideline 2.2.2: Pause, Stop, Hide Explained**
@@ -121,8 +123,3 @@ For more, see the [W3C’s official documentation for 2.2.2 Pause, Stop, Hide](h
 
 Guideline 2.2.2 is essential for preventing distractions and supporting users with cognitive or neurological disabilities. By allowing users to pause, stop, or hide moving content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make content control a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.2.3: No Timing →](WCAG-Guideline-2-2-3-No-Timing-Explained)
-
-*Accessibility means giving users control over motion—make your site calm and user-friendly!*

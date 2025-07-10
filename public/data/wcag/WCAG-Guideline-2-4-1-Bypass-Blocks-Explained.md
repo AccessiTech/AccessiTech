@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can skip repetitive content to access main content quickly.
+next: /wcag/WCAG-Guideline-2-4-2-Page-Titled-Explained, Guideline 2.4.2 - Page Titled
+previous: /wcag/WCAG-Guideline-2-3-3-Animation-from-Interactions-Explained, Guideline 2.3.3 - Animation from Interactions
 -->
 
 # **WCAG Guideline 2.4.1: Bypass Blocks Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.4.1 Bypass Blocks](https
 
 Guideline 2.4.1 is essential for helping users efficiently navigate your site. By providing skip links and mechanisms to bypass repeated content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make bypassing blocks a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.4.2: Page Titled →](WCAG-Guideline-2-4-2-Page-Titled-Explained)
-
-*Accessibility means making navigation easy—help users get where they need to go!*

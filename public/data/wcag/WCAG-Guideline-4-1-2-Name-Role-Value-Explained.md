@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures user interface components have name, role, and value that can be programmatically determined.
+previous: /wcag/WCAG-Guideline-4-1-1-Parsing-Explained, Guideline 4.1.1 - Parsing
+next: /wcag/WCAG-Guideline-4-1-3-Status-Messages-Explained, Guideline 4.1.3 - Status Messages
 --->
 
 # **WCAG Guideline 4.1.2: Name, Role, Value Explained**
@@ -113,8 +115,5 @@ For more, see the [W3C’s official documentation for 4.1.2 Name, Role, Value](h
 
 Guideline 4.1.2 is essential for helping users interact with your site. By ensuring name, role, and value are programmatically determined, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make ARIA accessibility a core part of your development process.
 
-**Next Up:**
 
-[Read Guideline 4.1.3: Status Messages →](WCAG-Guideline-4-1-3-Status-Messages-Explained)
-
-*Accessibility means clarity—help assistive technologies interpret your UI!*
+*Accessibility means clarity—help assistive technologies interpret your UI!* 

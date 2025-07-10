@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures keyboard focus is always visible for users.
+next: /wcag/WCAG-Guideline-2-5-1-Pointer-Gestures-Explained, Guideline 2.5.1 - Pointer Gestures
+previous: /wcag/WCAG-Guideline-2-4-6-Headings-and-Labels-Explained, Guideline 2.4.6 - Headings and Labels
 -->
 
 # **WCAG Guideline 2.4.7: Focus Visible Explained**
@@ -120,9 +122,3 @@ For more, see the [W3C’s official documentation for 2.4.7 Focus Visible](https
 
 Guideline 2.4.7 is essential for helping users navigate your site efficiently. By ensuring visible focus, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make focus visibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.5.1: Pointer Gestures →](WCAG-Guideline-2-5-1-Pointer-Gestures-Explained)
-
-
-*Accessibility means visible navigation—help users see where they are at all times!*

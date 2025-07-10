@@ -7,6 +7,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures text is readable against its background for all users.
+next: /wcag/WCAG-Guideline-1-4-4-Resize-Text-Explained, Guideline 1.4.4 - Resize Text
+previous: /wcag/WCAG-Guideline-1-4-2-Audio-Control-Explained, Guideline 1.4.2 - Audio Control
 -->
 
 # **WCAG Guideline 1.4.3: Contrast (Minimum) Explained**
@@ -117,9 +119,5 @@ For more, see the [W3C’s official documentation for 1.4.3 Contrast (Minimum)](
 <!-- [Illustration: User reading high-contrast text on a web page] -->
 
 Guideline 1.4.3 ensures text is readable for everyone, especially those with low vision. Use contrast checkers and always test your designs for accessibility.
-
-**Next Up:**
-
-[Read Guideline 1.4.4: Resize Text →](WCAG-Guideline-1-4-4-Resize-Text-Explained)
 
 *Accessibility means everyone can read your message—don’t let poor contrast get in the way!*

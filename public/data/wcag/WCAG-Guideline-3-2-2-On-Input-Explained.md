@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures changing form controls doesn't automatically cause unexpected context changes.
+previous: /wcag/WCAG-Guideline-3-2-1-On-Focus-Explained, Guideline 3.2.1 - On Focus
+next: /wcag/WCAG-Guideline-3-2-3-Consistent-Navigation-Explained, Guideline 3.2.3 - Consistent Navigation
 -->
 
 # **WCAG Guideline 3.2.2: On Input Explained**
@@ -114,8 +116,5 @@ For more, see the [W3C’s official documentation for 3.2.2 On Input](https://ww
 
 Guideline 3.2.2 ensures that users are in control of what happens when they interact with your forms and controls. Avoid surprises—let users know what to expect.
 
-**Next Up:**
 
-[WCAG-Guideline-3-2-3-Consistent-Navigation-Explained](WCAG-Guideline-3-2-3-Consistent-Navigation-Explained)
-
-*Predictability and control are key—make sure your forms and controls behave as users expect!*
+*Predictability and control are key—make sure your forms and controls behave as users expect!* 

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: Requires extended audio descriptions for prerecorded video, aiding users who are blind or have low vision.
+next: /wcag/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained, Guideline 1.2.8 - Media Alternative (Prerecorded)
+previous: /wcag/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained, Guideline 1.2.6 - Sign Language (Prerecorded)
 -->
 
 # **WCAG Guideline 1.2.7: Extended Audio Description (Prerecorded) Explained**
@@ -119,7 +121,3 @@ For more, see the [W3C’s official documentation for 1.2.7 Extended Audio Descr
 <!-- [Illustration: User listening to extended audio description while watching a video] -->
 
 Guideline 1.2.7 is essential for making video content accessible to users who rely on audio description. By providing extended audio description, you support users with disabilities, improve usability, and meet AAA requirements. Make audio description a standard part of your video production process for maximum inclusion.
-
-**Next Up:**
-
-[Read Guideline 1.2.8: Media Alternative (Prerecorded) →](WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained)

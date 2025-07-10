@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures content does not flash more than three times in one second to prevent seizures.
+next: /wcag/WCAG-Guideline-2-3-3-Animation-from-Interactions-Explained, Guideline 2.3.3 - Animation from Interactions
+previous: /wcag/WCAG-Guideline-2-3-1-Three-Flashes-or-Below-Threshold-Explained, Guideline 2.3.1 - Three Flashes or Below Threshold
 -->
 
 # **WCAG Guideline 2.3.2: Three Flashes Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.3.2 Three Flashes](https
 
 Guideline 2.3.2 is essential for preventing seizures and supporting users with photosensitive epilepsy. By avoiding flashing content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make safe animation a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.3.3: Animation from Interactions →](WCAG-Guideline-2-3-3-Animation-from-Interactions-Explained)
-
-*Accessibility means keeping everyone safe—make your site seizure-friendly!*

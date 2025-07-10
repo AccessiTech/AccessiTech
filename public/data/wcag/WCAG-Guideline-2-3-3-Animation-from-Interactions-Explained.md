@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: Ensures users can disable non-essential animation triggered by interaction, reducing discomfort or distraction.
+next: /wcag/WCAG-Guideline-2-4-1-Bypass-Blocks-Explained, Guideline 2.4.1 - Bypass Blocks
+previous: /wcag/WCAG-Guideline-2-3-2-Three-Flashes-Explained, Guideline 2.3.2 - Three Flashes
 -->
 
 # **WCAG Guideline 2.3.3: Animation from Interactions Explained**
@@ -118,8 +120,3 @@ For more, see the [W3C’s official documentation for 2.3.3 Animation from Inter
 
 Guideline 2.3.3 is essential for preventing discomfort and supporting users with motion sensitivity. By allowing users to disable non-essential animation, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make animation control a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.4.1: Bypass Blocks →](WCAG-Guideline-2-4-1-Bypass-Blocks-Explained)
-
-*Accessibility means letting users control motion—make your site comfortable for everyone!*

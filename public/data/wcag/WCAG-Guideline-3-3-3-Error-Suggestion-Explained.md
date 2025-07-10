@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline helps users fix mistakes with helpful error suggestions.
+previous: /wcag/WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained, Guideline 3.3.2 - Labels or Instructions
+next: /wcag/WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained, Guideline 3.3.4 - Error Prevention (Legal, Financial, Data)
 --->
 
 # **WCAG Guideline 3.3.3: Error Suggestion Explained**
@@ -114,8 +116,5 @@ For more, see the [W3C’s official documentation for 3.3.3 Error Suggestion](ht
 
 Guideline 3.3.3 ensures that users can fix mistakes in forms and inputs with helpful, accessible suggestions.
 
-**Next Up:**
 
-[Read Guideline 3.3.4: Error Prevention (Legal, Financial, Data) →](WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained)
-
-*Helpful suggestions lead to confident users—make your error messages actionable!*
+*Helpful suggestions lead to confident users—make your error messages actionable!* 

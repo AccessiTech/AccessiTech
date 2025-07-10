@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures all functionality is accessible via keyboard with absolutely no exceptions.
+next: /wcag/WCAG-Guideline-2-1-4-Character-Key-Shortcuts-Explained, Guideline 2.1.4 - Character Key Shortcuts
+previous: /wcag/WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained, Guideline 2.1.2 - No Keyboard Trap
 -->
 
 # **WCAG Guideline 2.1.3: Keyboard (No Exception) Explained**
@@ -121,8 +123,3 @@ For more, see the [W3C’s official documentation for 2.1.3 Keyboard (No Excepti
 
 Guideline 2.1.3 is about achieving the highest standard of keyboard accessibility. By ensuring there are no exceptions, you provide a truly inclusive experience for all users. Test your site thoroughly and make keyboard accessibility a non-negotiable part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.1.4: Character Key Shortcuts →](WCAG-Guideline-2-1-4-Character-Key-Shortcuts-Explained)
-
-*Accessibility means no barriers—make sure every feature works for every user!*

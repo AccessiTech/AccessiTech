@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures navigation is predictable and consistent across the site.
+previous: /wcag/WCAG-Guideline-3-2-2-On-Input-Explained, Guideline 3.2.2 - On Input
+next: /wcag/WCAG-Guideline-3-2-4-Consistent-Identification-Explained, Guideline 3.2.4 - Consistent Identification
 -->
 
 # **WCAG Guideline 3.2.3: Consistent Navigation Explained**
@@ -115,8 +117,5 @@ For more, see the [W3C’s official documentation for 3.2.3 Consistent Navigatio
 
 Guideline 3.2.3 ensures that users can rely on your site’s navigation to be predictable and familiar. Consistency is key to accessibility and usability.
 
-**Next Up:**
 
-[WCAG-Guideline-3-2-4-Consistent-Identification-Explained](WCAG-Guideline-3-2-4-Consistent-Identification-Explained)
-
-*Consistency builds confidence—make your navigation a familiar friend for every user!*
+*Consistency builds confidence—make your navigation a familiar friend for every user!* 

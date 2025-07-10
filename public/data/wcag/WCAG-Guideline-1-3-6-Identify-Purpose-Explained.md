@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: Helps browsers and assistive technologies identify the purpose of user interface components, enhancing accessibility.
+next: /wcag/WCAG-Guideline-1-4-1-Use-of-Color-Explained, Guideline 1.4.1 - Use of Color
+previous: /wcag/WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained, Guideline 1.3.5 - Identify Input Purpose
 -->
 
 # **WCAG Guideline 1.3.6: Identify Purpose Explained**
@@ -122,7 +124,3 @@ For more, see the [W3C’s official documentation for 1.3.6 Identify Purpose](ht
 <!-- [Illustration: User navigating a web page with clear regions and roles] -->
 
 Guideline 1.3.6 is essential for making your site understandable and navigable for everyone. By identifying the purpose of all UI components and regions, you support users with disabilities, improve usability, and meet AAA requirements. Make purpose identification a standard part of your development process.
-
-**Next Up:**
-
-[Read Guideline 1.4.1: Use of Color →](WCAG-Guideline-1-4-1-Use-of-Color-Explained)

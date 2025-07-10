@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures authentication processes are accessible without requiring cognitive function tests.
+previous: /wcag/WCAG-Guideline-3-3-7-Redundant-Entry-Explained, Guideline 3.3.7 - Redundant Entry
+next: /wcag/WCAG-Guideline-3-3-9-Accessible-Authentication-Enhanced-Explained, Guideline 3.3.9 - Accessible Authentication (Enhanced)
 -->
 
 # **WCAG Guideline 3.3.8: Accessible Authentication (Minimum) Explained**
@@ -114,8 +116,5 @@ For more, see the [W3C’s official documentation for 3.3.8 Accessible Authentic
 
 Guideline 3.3.8 ensures that everyone can authenticate without unnecessary cognitive barriers. Provide accessible alternatives for all authentication steps.
 
-**Next Up:**
 
-[Read Guideline 3.3.9: Accessible Authentication (Enhanced) →](WCAG-Guideline-3-3-9-Accessible-Authentication-Enhanced-Explained)
-
-*Accessibility starts at login—make authentication easy for everyone!*
+*Accessibility starts at login—make authentication easy for everyone!* 

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures all text is real and not just an image.
+next: /wcag/WCAG-Guideline-1-4-10-Reflow-Explained, Guideline 1.4.10 - Reflow
+previous: /wcag/WCAG-Guideline-1-4-8-Visual-Presentation-Explained, Guideline 1.4.8 - Visual Presentation
 -->
 
 # **WCAG Guideline 1.4.9: Images of Text (No Exception) Explained**
@@ -115,9 +117,5 @@ For more, see the [W3C’s official documentation for 1.4.9 Images of Text (No E
 <!-- [Illustration: User selecting and resizing real text on a web page] -->
 
 Guideline 1.4.9 ensures all content, including logos and branding, is accessible, scalable, and adaptable by using real text instead of images. Use CSS for styling and only use images of text for decoration.
-
-**Next Up:**
-
-[Read Guideline 1.4.10: Reflow →](WCAG-Guideline-1-4-10-Reflow-Explained)
 
 *Accessibility means real text for real people—don’t hide your message in an image!*

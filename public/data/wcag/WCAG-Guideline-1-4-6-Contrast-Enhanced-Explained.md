@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures text is readable for users with low vision by enhancing contrast.
+next: /wcag/WCAG-Guideline-1-4-7-Low-or-No-Background-Audio-Explained, Guideline 1.4.7 - Low or No Background Audio
+previous: /wcag/WCAG-Guideline-1-4-5-Images-of-Text-Explained, Guideline 1.4.5 - Images of Text
 -->
 
 # **WCAG Guideline 1.4.6: Contrast (Enhanced) Explained**
@@ -119,9 +121,5 @@ For more, see the [W3C’s official documentation for 1.4.6 Contrast (Enhanced)]
 <!-- [Illustration: User reading very high-contrast text on a web page] -->
 
 Guideline 1.4.6 ensures text is readable for users with severe vision impairments. Use contrast checkers and always test your designs for the highest level of accessibility.
-
-**Next Up:**
-
-[Read Guideline 1.4.7: Low or No Background Audio →](WCAG-Guideline-1-4-7-Low-or-No-Background-Audio-Explained)
 
 *Accessibility means everyone can read your message—aim for the highest contrast!*

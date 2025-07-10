@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures user focus does not trigger unexpected changes.
+previous: /wcag/WCAG-Guideline-3-1-6-Pronunciation-Explained, Guideline 3.1.6 - Pronunciation
+next: /wcag/WCAG-Guideline-3-2-2-On-Input-Explained, Guideline 3.2.2 - On Input
 -->
 
 # **WCAG Guideline 3.2.1: On Focus Explained**
@@ -114,10 +116,7 @@ For more, see the [W3C’s official documentation for 3.2.1 On Focus](https://ww
 
 Guideline 3.2.1 ensures that users can navigate your site without surprises. Focus should never trigger context changes—keep interactions predictable and accessible.
 
-**Next Up:**
 
-[WCAG-Guideline-3-2-2-On-Input-Explained](WCAG-Guideline-3-2-2-On-Input-Explained)
-
-*Predictability is key—let users control what happens when they focus on your content!*
+*Predictability is key—let users control what happens when they focus on your content!* 
 
 <!-- excerpt: This guideline ensures user focus does not trigger unexpected changes. -->

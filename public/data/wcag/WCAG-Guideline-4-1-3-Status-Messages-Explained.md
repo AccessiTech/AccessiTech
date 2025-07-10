@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures status messages are programmatically determined through role or properties.
+previous: /wcag/WCAG-Guideline-4-1-2-Name-Role-Value-Explained, Guideline 4.1.2 - Name, Role, Value
+next: /wcag/WCAG-Guideline-5-1-Interpreting-Normative-Requirements-Explained, Guideline 5.1 - Interpreting Normative Requirements
 --->
 
 # **WCAG Guideline 4.1.3: Status Messages Explained**
@@ -113,8 +115,5 @@ For more, see the [W3C’s official documentation for 4.1.3 Status Messages](htt
 
 Guideline 4.1.3 is essential for helping users understand changes on your site. By making status messages accessible, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make status message accessibility a core part of your development process.
 
-**Next Up:**
 
-[Read Guideline 5.1: Interpreting Normative Requirements →](WCAG-Guideline-5-1-Interpreting-Normative-Requirements-Explained)
-
-*Accessibility means communication—help users stay informed!*
+*Accessibility means communication—help users stay informed!* 

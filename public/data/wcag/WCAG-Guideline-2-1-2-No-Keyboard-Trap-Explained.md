@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures keyboard users can navigate to and away from any component without getting trapped.
+next: /wcag/WCAG-Guideline-2-1-3-Keyboard-No-Exception-Explained, Guideline 2.1.3 - Keyboard (No Exception)
+previous: /wcag/WCAG-Guideline-2-1-1-Keyboard-Accessible-Explained, Guideline 2.1.1 - Keyboard Accessible
 -->
 
 # **WCAG Guideline 2.1.2: No Keyboard Trap Explained**
@@ -124,9 +126,5 @@ For more, see the [W3C’s official documentation for 2.1.2 No Keyboard Trap](ht
 <!-- [Illustration: User navigating a modal and moving focus out with the keyboard] -->
 
 Guideline 2.1.2 is essential for ensuring users never get stuck while navigating your site. By preventing keyboard traps, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make keyboard navigation a core part of your development process.
-
-**Next Up:**
-
-[Read Guideline 2.1.3: Keyboard No Exception →](WCAG-Guideline-2-1-3-Keyboard-No-Exception-Explained)
 
 *Accessibility means never trapping your users—let them move freely!*

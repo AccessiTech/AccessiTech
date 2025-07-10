@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can operate functionality without relying on device motion.
+next: /wcag/WCAG-Guideline-2-5-5-Target-Size-Explained, Guideline 2.5.5 - Target Size
+previous: /wcag/WCAG-Guideline-2-5-3-Label-in-Name-Explained, Guideline 2.5.3 - Label in Name
 -->
 
 # **WCAG Guideline 2.5.4: Motion Actuation Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.5.4 Motion Actuation](ht
 
 Guideline 2.5.4 is essential for ensuring all users can operate your site. By providing alternatives to motion actuation, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make motion accessibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.5.5: Target Size →](WCAG-Guideline-2-5-5-Target-Size-Explained)
-
-*Accessibility means options—help users operate features their way!*

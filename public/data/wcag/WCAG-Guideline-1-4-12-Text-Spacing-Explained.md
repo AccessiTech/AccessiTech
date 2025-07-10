@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures content remains readable when users adjust text spacing for better readability.
+next: /wcag/WCAG-Guideline-1-4-13-Content-on-Hover-or-Focus-Explained, Guideline 1.4.13 - Content on Hover or Focus
+previous: /wcag/WCAG-Guideline-1-4-11-Non-text-Contrast-Explained, Guideline 1.4.11 - Non-text Contrast
 -->
 
 # **WCAG Guideline 1.4.12: Text Spacing Explained**
@@ -114,9 +116,5 @@ For more, see the [W3C’s official documentation for 1.4.12 Text Spacing](https
 <!-- [Illustration: User reading a web page with custom text spacing applied] -->
 
 Guideline 1.4.12 ensures your content remains readable and usable when users adjust spacing. Use flexible CSS and always test with user stylesheets.
-
-**Next Up:**
-
-[Read Guideline 1.4.13: Content on Hover or Focus →](WCAG-Guideline-1-4-13-Content-on-Hover-or-Focus-Explained)
 
 *Accessibility means everyone can read your content—no matter their spacing needs!*

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures content is accessible without unnecessary time limits.
+next: /wcag/WCAG-Guideline-2-2-4-Interruptions-Explained, Guideline 2.2.4 - Interruptions
+previous: /wcag/WCAG-Guideline-2-2-2-Pause-Stop-Hide-Explained, Guideline 2.2.2 - Pause, Stop, Hide
 -->
 
 # **WCAG Guideline 2.2.3: No Timing Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.2.3 No Timing](https://w
 
 Guideline 2.2.3 is essential for ensuring users are not excluded by time limits. By removing unnecessary timing, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make timing flexibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.2.4: Interruptions →](WCAG-Guideline-2-2-4-Interruptions-Explained)
-
-*Accessibility means letting users set the pace—make your site stress-free for everyone!*

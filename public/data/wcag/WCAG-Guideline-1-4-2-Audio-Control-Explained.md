@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures users can control audio that plays automatically.
+next: /wcag/WCAG-Guideline-1-4-3-Contrast-Minimum-Explained, Guideline 1.4.3 - Contrast (Minimum)
+previous: /wcag/WCAG-Guideline-1-4-1-Use-of-Color-Explained, Guideline 1.4.1 - Use of Color
 -->
 
 # **WCAG Guideline 1.4.2: Audio Control Explained**
@@ -117,7 +119,3 @@ For more, see the [W3C’s official documentation for 1.4.2 Audio Control](https
 <!-- [Illustration: User pausing audio on a web page with accessible controls] -->
 
 Guideline 1.4.2 ensures users are not disrupted by unexpected audio and can control their experience. Always provide accessible controls for any audio that plays automatically.
-
-**Next Up:**
-
-[Read Guideline 1.4.3: Contrast (Minimum) →](WCAG-Guideline-1-4-3-Contrast-Minimum-Explained)

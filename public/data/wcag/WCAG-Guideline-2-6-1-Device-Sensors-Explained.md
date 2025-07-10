@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can operate functionality without relying solely on device sensors.
+next: /wcag/WCAG-Guideline-3-1-1-Language-of-Page-Explained, Guideline 3.1.1 - Language of Page
+previous: /wcag/WCAG-Guideline-2-5-6-Concurrent-Input-Mechanisms-Explained, Guideline 2.5.6 - Concurrent Input Mechanisms
 -->
 
 # **WCAG Guideline 2.6.1: Device Sensors Explained**
@@ -118,6 +120,3 @@ Guideline 2.6.1 is essential for ensuring all users can operate your site. By pr
 
 **Next Up**
 
-[Read Guideline 3.1.1: Language of Page →](WCAG-Guideline-3-1-1-Language-of-Page-Explained)
-
-*Accessibility means options—help users operate features their way!*

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline explains how to document partial WCAG conformance when language barriers exist.
+previous: /wcag/WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained, Guideline 5.4 - Statement of Partial Conformance – Third Party Content
+next: /wcag/WCAG-Guideline-1-1-1-Non-text-Content-Explained, Guideline 1.1.1 - Non-text Content
 --->
 
 # **WCAG Guideline 5.5: Statement of Partial Conformance – Language Explained**
@@ -108,8 +110,5 @@ A Statement of Partial Conformance – Language helps organizations be transpare
 
 ---
 
-## **Up Next:**
-
-[Read Guideline 1.1.1: Non-text Content →](WCAG-Guideline-1-1-1-Non-text-Content-Explained)
 
 *Global inclusion means no one is left behind—keep striving for accessibility in every language!*

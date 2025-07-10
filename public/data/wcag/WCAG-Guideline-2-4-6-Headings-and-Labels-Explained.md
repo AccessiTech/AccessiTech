@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures headings and labels describe the topic or purpose clearly.
+next: /wcag/WCAG-Guideline-2-4-7-Focus-Visible-Explained, Guideline 2.4.7 - Focus Visible
+previous: /wcag/WCAG-Guideline-2-4-5-Multiple-Ways-Explained, Guideline 2.4.5 - Multiple Ways
 -->
 
 # **WCAG Guideline 2.4.6: Headings and Labels Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.4.6 Headings and Labels]
 
 Guideline 2.4.6 is essential for helping users understand and navigate your site. By providing clear headings and labels, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make headings and labels a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.4.7: Focus Visible →](WCAG-Guideline-2-4-7-Focus-Visible-Explained)
-
-*Accessibility means clarity—help users know where they are and what to do!*

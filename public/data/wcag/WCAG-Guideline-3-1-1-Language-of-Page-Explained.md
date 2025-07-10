@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures the default language of each page is programmatically determined.
+next: /wcag/WCAG-Guideline-3-1-2-Language-of-Parts-Explained, Guideline 3.1.2 - Language of Parts
+previous: /wcag/WCAG-Guideline-2-6-1-Device-Sensors-Explained, Guideline 2.6.1 - Device Sensors
 -->
 
 # **WCAG Guideline 3.1.1: Language of Page Explained**
@@ -113,8 +115,3 @@ For more, see the [W3C’s official documentation for 3.1.1 Language of Page](ht
 
 Guideline 3.1.1 is essential for helping users understand your site. By setting the correct language, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make language accessibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 3.1.2: Language of Parts →](WCAG-Guideline-3-1-2-Language-of-Parts-Explained)
-
-*Accessibility means understanding—help users read your content in their language!*

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: Helps browsers and assistive technologies identify the purpose of input fields, improving usability and accessibility.
+next: /wcag/WCAG-Guideline-1-3-6-Identify-Purpose-Explained, Guideline 1.3.6 - Identify Purpose
+previous: /wcag/WCAG-Guideline-1-3-4-Orientation-Explained, Guideline 1.3.4 - Orientation
 -->
 
 # **WCAG Guideline 1.3.5: Identify Input Purpose Explained**
@@ -122,7 +124,3 @@ For more, see the [W3C’s official documentation for 1.3.5 Identify Input Purpo
 <!-- [Illustration: User completing a form with autofill and screen reader support] -->
 
 Guideline 1.3.5 is essential for making forms easier and more accessible for everyone. By identifying input purposes, you support users with disabilities, improve usability, and meet legal requirements. Make input purpose identification a standard part of your form development process.
-
-**Next Up:**
-
-[Read Guideline 1.3.6: Identify Purpose →](WCAG-Guideline-1-3-6-Identify-Purpose-Explained)

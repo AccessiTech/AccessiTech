@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: Ensures live audio content is accessible, for example by providing live captions.
+next: /wcag/WCAG-Guideline-1-3-1-Info-and-Relationships-Explained, Guideline 1.3.1 - Info and Relationships
+previous: /wcag/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained, Guideline 1.2.8 - Media Alternative (Prerecorded)
 -->
 
 # **WCAG Guideline 1.2.9: Audio-only (Live) Explained**
@@ -120,8 +122,4 @@ For more, see the [W3C’s official documentation for 1.2.9 Audio-only (Live)](h
 <!-- [Illustration: User reading real-time captions during a live audio event] -->
 
 Guideline 1.2.9 is essential for making live audio content accessible to users who require text alternatives. By providing real-time captions or transcripts, you support users with disabilities, improve usability, and meet AAA requirements. Make live accessibility a standard part of your event planning for maximum inclusion.
-
-**Next Up:**
-
-[WCAG Guideline 1.3.1 - Info and Relationships Explained →](WCAG-Guideline-1-3-1-Info-and-Relationships-Explained)
 

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures prerecorded video content is accessible with sign language interpretation.
+next: /wcag/WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained, Guideline 1.2.7 - Extended Audio Description (Prerecorded)
+previous: /wcag/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained, Guideline 1.2.5 - Audio Description (Prerecorded)
 -->
 
 # **WCAG Guideline 1.2.6: Sign Language (Prerecorded) Explained**
@@ -119,7 +121,3 @@ For more, see the [W3C’s official documentation for 1.2.6 Sign Language (Prere
 <!-- [Illustration: User watching a video with sign language interpretation] -->
 
 Guideline 1.2.6 is essential for making video content accessible to users who rely on sign language. By providing sign language interpretation, you support users with disabilities, improve usability, and meet AAA requirements. Make sign language a standard part of your video production process for maximum inclusion.
-
-**Next Up:**
-
-[Read Guideline 1.2.7: Extended Audio Description (Prerecorded) →](WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained)

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline helps users avoid mistakes in forms and submissions.
+previous: /wcag/WCAG-Guideline-3-3-5-Help-Explained, Guideline 3.3.5 - Help
+next: /wcag/WCAG-Guideline-3-3-7-Redundant-Entry-Explained, Guideline 3.3.7 - Redundant Entry
 -->
 
 # **WCAG Guideline 3.3.6: Error Prevention (All) Explained**
@@ -115,8 +117,5 @@ Guideline 3.3.6 ensures that users are protected from mistakes in all forms and 
 
 ---
 
-**Next Up:**
 
-[Read Guideline 3.3.7: Redundant Entry →](WCAG-Guideline-3-3-7-Redundant-Entry-Explained)
-
-*Protection and review for all—make every form on your site safe and accessible!*
+*Protection and review for all—make every form on your site safe and accessible!* 

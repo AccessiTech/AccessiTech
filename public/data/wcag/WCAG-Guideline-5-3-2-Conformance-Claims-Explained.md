@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guid
 status: published
 date: 2025-07-08
 excerpt: This section explains the optional components you can include in a WCAG 2.1 conformance claim to provide more context and transparency.
+previous: /wcag/WCAG-Guideline-5-3-1-Conformance-Claims-Explained, Guideline 5.3.1 - Required Components of a Conformance Claim
+next: /wcag/WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained, Guideline 5.4 - Statement of Partial Conformance – Third Party Content
 --->
 
 # **WCAG 2.1 Section 5.3.2: Optional Components of a Conformance Claim**
@@ -63,8 +65,5 @@ Including optional components in your WCAG 2.1 conformance claim provides greate
 
 ---
 
-**Next Up:**
-
-[Read Guideline 5.4: Statement of Partial Conformance – Third Party Content →](WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained)
 
 *Transparency builds trust—go beyond the minimum in your accessibility claims!*

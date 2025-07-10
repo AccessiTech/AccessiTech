@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can extend or turn off time limits for accessibility.
+next: /wcag/WCAG-Guideline-2-2-2-Pause-Stop-Hide-Explained, Guideline 2.2.2 - Pause, Stop, Hide
+previous: /wcag/WCAG-Guideline-2-1-4-Character-Key-Shortcuts-Explained, Guideline 2.1.4 - Character Key Shortcuts
 -->
 
 # **WCAG Guideline 2.2.1: Timing Adjustable Explained**
@@ -121,8 +123,3 @@ For more, see the [W3C’s official documentation for 2.2.1 Timing Adjustable](h
 
 Guideline 2.2.1 is essential for preventing users from being timed out unfairly. By allowing users to turn off, adjust, or extend time limits, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make timing accessibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.2.2: Pause, Stop, Hide →](WCAG-Guideline-2-2-2-Pause-Stop-Hide-Explained)
-
-*Accessibility means giving users the time they need—make your site flexible for everyone!*

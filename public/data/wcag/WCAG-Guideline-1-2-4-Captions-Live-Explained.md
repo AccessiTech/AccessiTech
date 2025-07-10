@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures live video content is accessible with captions.
+next: /wcag/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained, Guideline 1.2.5 - Audio Description (Prerecorded)
+previous: /wcag/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained, Guideline 1.2.3 - Audio Description or Media Alternative (Prerecorded)
 -->
 
 # **WCAG Guideline 1.2.4: Captions (Live) Explained**
@@ -120,7 +122,3 @@ For more, see the [W3C’s official documentation for 1.2.4 Captions (Live)](htt
 <!-- [Illustration: User watching a live video with captions enabled] -->
 
 Guideline 1.2.4 is essential for making live video content accessible to everyone. By providing accurate, real-time captions, you support users with disabilities, improve usability, and meet legal requirements. Make live captioning a standard part of your event planning process.
-
-**Next Up:**
-
-[Read Guideline 1.2.5: Audio Description (Prerecorded) →](WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained)

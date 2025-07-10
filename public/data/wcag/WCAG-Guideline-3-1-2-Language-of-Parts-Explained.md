@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures the language of each part of a page is programmatically determined.
+next: /wcag/WCAG-Guideline-3-1-3-Unusual-Words-Explained, Guideline 3.1.3 - Unusual Words
+previous: /wcag/WCAG-Guideline-3-1-1-Language-of-Page-Explained, Guideline 3.1.1 - Language of Page
 -->
 
 # **WCAG Guideline 3.1.2: Language of Parts Explained**
@@ -113,8 +115,3 @@ For more, see the [W3C’s official documentation for 3.1.2 Language of Parts](h
 
 Guideline 3.1.2 is essential for helping users understand your site. By setting the correct language for each part, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make language accessibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 3.1.3: Unusual Words →](WCAG-Guideline-3-1-3-Unusual-Words-Explained)
-
-*Accessibility means understanding—help users read your content in their language!*

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures keyboard shortcuts can be turned off, remapped, or only activated when a specific element has focus.
+next: /wcag/WCAG-Guideline-2-2-1-Timing-Adjustable-Explained, Guideline 2.2.1 - Timing Adjustable
+previous: /wcag/WCAG-Guideline-2-1-3-Keyboard-No-Exception-Explained, Guideline 2.1.3 - Keyboard (No Exception)
 -->
 
 # **WCAG Guideline 2.1.4: Character Key Shortcuts Explained**
@@ -122,10 +124,6 @@ For more, see the [W3C’s official documentation for 2.1.4 Character Key Shortc
 
 <!-- [Illustration: User customizing keyboard shortcuts in a web app] -->
 
+
 Guideline 2.1.4 is essential for preventing accidental or inaccessible keyboard shortcuts. By allowing users to turn off, remap, or limit shortcuts, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make shortcut accessibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.2.1: Timing Adjustable →](WCAG-Guideline-2-2-1-Timing-Adjustable-Explained)
-
-*Accessibility means giving users control—make your shortcuts work for everyone!*

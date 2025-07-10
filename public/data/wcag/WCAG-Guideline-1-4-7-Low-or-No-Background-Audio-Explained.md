@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures speech audio is clear and not obscured by background sounds.
+next: /wcag/WCAG-Guideline-1-4-8-Visual-Presentation-Explained, Guideline 1.4.8 - Visual Presentation
+previous: /wcag/WCAG-Guideline-1-4-6-Contrast-Enhanced-Explained, Guideline 1.4.6 - Contrast (Enhanced)
 -->
 
 # **WCAG Guideline 1.4.7: Low or No Background Audio Explained**
@@ -113,9 +115,5 @@ For more, see the [W3C’s official documentation for 1.4.7 Low or No Background
 <!-- [Illustration: User listening to a podcast with clear speech and no distracting background music] -->
 
 Guideline 1.4.7 ensures that speech in audio content is always clear and accessible. Keep background sounds low or removable to support all users.
-
-**Next Up:**
-
-[Read Guideline 1.4.8: Visual Presentation →](WCAG-Guideline-1-4-8-Visual-Presentation-Explained)
 
 *Accessibility means everyone can hear your message—don’t let background noise get in the way!*

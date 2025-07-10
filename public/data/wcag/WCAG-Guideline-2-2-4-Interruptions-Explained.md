@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can postpone or suppress interruptions like notifications or alerts.
+next: /wcag/WCAG-Guideline-2-2-5-Re-authenticating-Explained, Guideline 2.2.5 - Re-authenticating
+previous: /wcag/WCAG-Guideline-2-2-3-No-Timing-Explained, Guideline 2.2.3 - No Timing
 -->
 
 # **WCAG Guideline 2.2.4: Interruptions Explained**
@@ -120,8 +122,3 @@ For more, see the [W3C’s official documentation for 2.2.4 Interruptions](https
 
 Guideline 2.2.4 is essential for preventing distractions and supporting users with cognitive or neurological disabilities. By allowing users to postpone or suppress interruptions, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make interruption control a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.2.5: Re-authenticating →](WCAG-Guideline-2-2-5-Re-authenticating-Explained)
-
-*Accessibility means letting users stay focused—make your site interruption-friendly!*

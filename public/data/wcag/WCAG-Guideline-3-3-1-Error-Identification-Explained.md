@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures errors are clearly identified and described to users.
+previous: /wcag/WCAG-Guideline-3-2-6-Consistent-Help-Explained, Guideline 3.2.6 - Consistent Help
+next: /wcag/WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained, Guideline 3.3.2 - Labels or Instructions
 -->
 
 # **WCAG Guideline 3.3.1: Error Identification Explained**
@@ -114,8 +116,5 @@ For more, see the [W3C’s official documentation for 3.3.1 Error Identification
 
 Guideline 3.3.1 ensures that users can recognize and fix mistakes in forms and inputs. Clear, accessible error messages are essential for a positive user experience.
 
-**Next Up:**
 
-[Read Guideline 3.3.2: Labels or Instructions →](WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained)
-
-*Clear feedback leads to confident users—make your error messages accessible to all!*
+*Clear feedback leads to confident users—make your error messages accessible to all!* 
