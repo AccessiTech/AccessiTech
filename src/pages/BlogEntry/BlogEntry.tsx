@@ -7,9 +7,10 @@ import { getBlogEntry, useBlogEntry } from "../../store/blog";
 import store from "../../store/store";
 import { ACCESSITECH, BLOG_CANONICAL, DEFAULT_SHARE_IMAGE_ALT, DEFAULT_SHARE_IMAGE, IMAGES_BASE_URL, BLOG_DESCRIPTION } from "../../settings/strings";
 import Metadata from "../../components/Metadata/Metadata";
-import CustomMarkdownTable from "../../components/CustomTable/CustomTable";
-import { SITE_HOST } from "../../settings/env";
+import CustomMarkdownTable, { tableDirective } from "../../components/CustomTable/CustomTable";
+import remarkDirective from "remark-directive";
 import { CustomMarkdownLink } from "../../components/CustomLink/CustomLink";
+import './BlogEntry.css';
 
 export interface FetchBlogEntryProps {
   id: string;
@@ -72,7 +73,7 @@ export const BlogEntry = () => {
               <div>
                 {!entry?.loaded ? <p>Loading...</p> :
                   <ReactMarkdown
-                    remarkPlugins={[remarkGfm]}
+                    remarkPlugins={[remarkGfm, remarkDirective, tableDirective]}
                     components={{
                       table: CustomMarkdownTable,
                       a: CustomMarkdownLink,
