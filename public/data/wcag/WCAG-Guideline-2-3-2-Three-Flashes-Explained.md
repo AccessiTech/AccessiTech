@@ -28,8 +28,6 @@ Guideline 2.3 focuses on preventing content that could trigger seizures or other
 
 ## **What Is Guideline 2.3.2 Three Flashes?**
 
-<!-- [Illustration: Warning icon and a screen with a flashing animation crossed out] -->
-
 > "Web pages do not contain anything that flashes more than three times in any one second period."
 
 Guideline 2.3.2 Three Flashes is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes).
@@ -46,8 +44,6 @@ For more, see [W3C: Understanding 2.3.2 Three Flashes](https://www.w3.org/WAI/WC
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with epilepsy, warning icon, and safe animation] -->
-
 - **Inclusivity:** Flashing content can trigger seizures in people with photosensitive epilepsy.
 - **Legal Compliance:** Three Flashes is a Level AAA requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents discomfort and health risks for all users.
@@ -58,8 +54,6 @@ For more, see [W3C’s guidance on flashing content](https://www.w3.org/WAI/WCAG
 
 ## **What Needs to Avoid Flashing?**
 
-<!-- [Grid: Videos, animations, games, all with no flash icons] -->
-
 - Videos and animations
 - Games and interactive content
 - Any feature with flashing or strobing effects
@@ -69,9 +63,6 @@ All must avoid more than three flashes per second, with no exceptions.
 ---
 
 ## **How to Avoid Flashing Content**
-
-<!-- [Side-by-side code snippets: Safe animation, unsafe animation]
-[Example: Settings panel for animation control] -->
 
 - Avoid content that flashes more than three times per second
 - Use safe animation techniques
@@ -84,8 +75,6 @@ For more, see the [W3C's Three Flashes Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with safe animation, right side with unsafe animation] -->
-
 - Content that flashes more than three times per second
 - No warning about flashing content
 - Not documenting animation policies
@@ -94,8 +83,6 @@ For more, see the [W3C's Three Flashes Techniques](https://www.w3.org/WAI/WCAG22
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.3.2 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Not applicable for this guideline.
 - **Level AA:** Not applicable for this guideline.
@@ -107,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.3.2 Three Flashes](https
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (no flash, warning, safe animation, etc.)] -->
-
 - No content flashes more than three times per second
 - All animations are safe for users with epilepsy
 - Animation policies are documented
@@ -117,8 +102,6 @@ For more, see the [W3C’s official documentation for 2.3.2 Three Flashes](https
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User enjoying safe animation on a web app] -->
 
 Guideline 2.3.2 is essential for preventing seizures and supporting users with photosensitive epilepsy. By avoiding flashing content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make safe animation a core part of your development process.
 

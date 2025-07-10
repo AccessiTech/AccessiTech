@@ -28,8 +28,6 @@ Guideline 2.5 focuses on making it easier for users to operate functionality thr
 
 ## **What Is Guideline 2.5.5 Target Size?**
 
-<!-- [Illustration: User tapping a large button on a touchscreen] -->
-
 > "The size of the target for pointer inputs is at least 44 by 44 CSS pixels except where the target is duplicated, inline, or essential."
 
 Guideline 2.5.5 Target Size is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#target-size).
@@ -46,8 +44,6 @@ For more, see [AccessGuide: Large Target Size](https://www.accessguide.io/guide/
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with large finger, touch target, and accessibility icon] -->
-
 - **Inclusivity:** Small targets are hard to hit for users with limited dexterity or larger fingers.
 - **Legal Compliance:** Target Size is a Level AAA requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents accidental taps and improves user experience.
@@ -58,8 +54,6 @@ For more, see [W3C’s guidance on target size](https://www.w3.org/WAI/WCAG22/Un
 
 ## **What Needs Large Target Sizes?**
 
-<!-- [Grid: Buttons, links, form fields, all with large touch icons] -->
-
 - Buttons and links
 - Form fields
 - Any interactive element
@@ -69,9 +63,6 @@ All must have a minimum target size of 44x44 CSS pixels, unless an exception app
 ---
 
 ## **How to Make Target Size Accessible**
-
-<!-- [Side-by-side code snippets: Large target, small target]
-[Example: Settings panel for target size] -->
 
 - Ensure targets are at least 44x44 CSS pixels
 - Provide sufficient spacing between targets
@@ -84,8 +75,6 @@ For more, see the [W3C's Target Size Techniques](https://www.w3.org/WAI/WCAG22/T
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with large target, right side with small target] -->
-
 - Targets smaller than 44x44 CSS pixels
 - Targets too close together
 - Not documenting target size conventions
@@ -94,8 +83,6 @@ For more, see the [W3C's Target Size Techniques](https://www.w3.org/WAI/WCAG22/T
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.5.5 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Not applicable for this guideline.
 - **Level AA:** Not applicable for this guideline.
@@ -107,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.5.5 Target Size](https:/
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (target, size, spacing, etc.)] -->
-
 - All targets are at least 44x44 CSS pixels
 - Sufficient spacing between targets
 - Target size conventions are documented
@@ -117,8 +102,6 @@ For more, see the [W3C’s official documentation for 2.5.5 Target Size](https:/
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User tapping a large button in a web app] -->
 
 Guideline 2.5.5 is essential for helping users interact with your site. By ensuring large touch targets, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make target size a core part of your development process.
 

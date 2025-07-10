@@ -28,8 +28,6 @@ Guideline 2.2 focuses on making sure users have enough time to complete tasks. N
 
 ## **What Is Guideline 2.2.3 No Timing?**
 
-<!-- [Illustration: User interacting with content at their own pace] -->
-
 > "Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events."
 
 Guideline 2.2.3 No Timing is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#no-timing).
@@ -46,8 +44,6 @@ For more, see [Web Accessibility Doesn’t Have a Deadline (BOIA)](https://www.b
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with a clock, relaxed pace, and settings gear] -->
-
 - **Inclusivity:** Time limits can exclude users who need more time due to disabilities.
 - **Legal Compliance:** No Timing is a Level AAA requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents frustration and loss of access for all users.
@@ -58,8 +54,6 @@ For more, see [W3C’s guidance on time limits](https://www.w3.org/WAI/WCAG22/Un
 
 ## **What Needs to Support No Timing?**
 
-<!-- [Grid: Forms, quizzes, games, all with no time limit icons] -->
-
 - Online forms and quizzes
 - Games and interactive activities
 - Any feature with a time limit
@@ -69,9 +63,6 @@ All must not impose time limits, unless an exception applies.
 ---
 
 ## **How to Make Content Accessible Without Timing**
-
-<!-- [Side-by-side code snippets: No time limit, relaxed pace]
-[Example: Settings panel for timing] -->
 
 - Remove unnecessary time limits
 - Allow users to complete activities at their own pace
@@ -84,8 +75,6 @@ For more, see the [W3C's No Timing Techniques](https://www.w3.org/WAI/WCAG22/Tec
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with no time limit, right side with strict time limit] -->
-
 - Unnecessary time limits
 - No way to adjust or remove time limits
 - Not documenting timing policies
@@ -94,8 +83,6 @@ For more, see the [W3C's No Timing Techniques](https://www.w3.org/WAI/WCAG22/Tec
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.2.3 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Not applicable for this guideline.
 - **Level AA:** Not applicable for this guideline.
@@ -107,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.2.3 No Timing](https://w
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (no time limit, settings, etc.)] -->
-
 - No unnecessary time limits
 - Users can complete activities at their own pace
 - Timing policies are documented
@@ -117,8 +102,6 @@ For more, see the [W3C’s official documentation for 2.2.3 No Timing](https://w
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User enjoying content at their own pace] -->
 
 Guideline 2.2.3 is essential for ensuring users are not excluded by time limits. By removing unnecessary timing, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make timing flexibility a core part of your development process.
 

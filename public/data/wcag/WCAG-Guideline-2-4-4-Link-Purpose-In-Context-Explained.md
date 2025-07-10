@@ -28,8 +28,6 @@ Guideline 2.4 focuses on making it easier for users to navigate, find content, a
 
 ## **What Is Guideline 2.4.4 Link Purpose (In Context)?**
 
-<!-- [Illustration: User reading a link with clear context in a paragraph] -->
-
 > "The purpose of each link can be determined from the link text alone or from the link text together with its context."
 
 Guideline 2.4.4 Link Purpose (In Context) is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context).
@@ -46,8 +44,6 @@ For more, see [UC Berkeley: Accessible Links](https://dap.berkeley.edu/web-a11y-
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User reading links, context clues, and focus indicator] -->
-
 - **Inclusivity:** Clear link purpose helps users with screen readers and cognitive disabilities.
 - **Legal Compliance:** Link Purpose (In Context) is a Level A requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents confusion and improves navigation for all users.
@@ -58,8 +54,6 @@ For more, see [W3C’s guidance on link purpose](https://www.w3.org/WAI/WCAG22/U
 
 ## **What Needs a Clear Link Purpose?**
 
-<!-- [Grid: Navigation, content links, buttons, all with link icons] -->
-
 - Navigation menus
 - Content links
 - Buttons and calls to action
@@ -69,9 +63,6 @@ All must have clear, descriptive link text or context.
 ---
 
 ## **How to Make Link Purpose Accessible**
-
-<!-- [Side-by-side code snippets: Good link text, bad link text]
-[Example: Settings panel for link text] -->
 
 - Use descriptive link text
 - Provide context for ambiguous links
@@ -84,8 +75,6 @@ For more, see the [W3C's Link Purpose Techniques](https://www.w3.org/WAI/WCAG22/
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with clear link text, right side with "click here"] -->
-
 - Vague or ambiguous link text
 - No context for links
 - Not documenting link text conventions
@@ -94,8 +83,6 @@ For more, see the [W3C's Link Purpose Techniques](https://www.w3.org/WAI/WCAG22/
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.4.4 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires link purpose can be determined from link text or context. This is the core requirement for 2.4.4 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 2.4.4, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -107,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.4.4 Link Purpose (In Con
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (link, context, navigation, etc.)] -->
-
 - All links have clear, descriptive text or context
 - Link text conventions are documented
 - Tested with screen reader and keyboard users
@@ -116,8 +101,6 @@ For more, see the [W3C’s official documentation for 2.4.4 Link Purpose (In Con
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User reading a clear link in a web app] -->
 
 Guideline 2.4.4 is essential for helping users understand and navigate your site. By ensuring every link's purpose is clear, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make link clarity a core part of your development process.
 

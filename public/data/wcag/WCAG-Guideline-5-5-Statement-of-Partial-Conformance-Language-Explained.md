@@ -30,8 +30,6 @@ Guideline 5.5 addresses situations where full accessibility conformance cannot b
 
 ## **What Is a Statement of Partial Conformance – Language?**
 
-<!-- [Illustration: Globe with language icons and accessibility symbols] -->
-
 A Statement of Partial Conformance – Language is a public declaration that a web page or resource would conform to WCAG, except for issues caused by the lack of accessibility support in a specific language.
 
 - Used when some content is inaccessible solely because of language limitations
@@ -59,8 +57,6 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 ---
 
 ## **How to Make a Statement of Partial Conformance – Language**
-
-<!-- [Infographic: Document with highlighted language sections] -->
 
 - Evaluate your content for accessibility in all supported languages
 - If a language lacks accessibility support, document:
@@ -91,8 +87,6 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Globe, language icons, and document] -->
-
 - Identified inaccessible content due to language
 - Statement includes affected languages and reasons
 - Scope and limitations are clear
@@ -101,8 +95,6 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User reading a language accessibility statement on a website] -->
 
 A Statement of Partial Conformance – Language helps organizations be transparent about accessibility limitations caused by language support gaps. Clearly document which languages are affected, why, and what you’re doing to address these issues. Keep your statement current as technology evolves.
 

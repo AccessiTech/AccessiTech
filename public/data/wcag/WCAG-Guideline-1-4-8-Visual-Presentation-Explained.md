@@ -28,8 +28,6 @@ Guideline 1.4 focuses on making content easier to see and hear. Visual Presentat
 
 ## **What Is Guideline 1.4.8 Visual Presentation?**
 
-<!-- [Illustration: Settings panel with sliders for text size, color, and line spacing] -->
-
 > "For the visual presentation of blocks of text, a mechanism is available to achieve the following: foreground and background colors can be selected by the user; width is no more than 80 characters; text is not justified; line spacing is at least 1.5 within paragraphs; spacing between paragraphs is at least 1.5 times the line spacing; and text can be resized without assistive technology up to 200%."
 
 Guideline 1.4.8 Visual Presentation is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#visual-presentation).
@@ -44,8 +42,6 @@ For more, see [Digital.gov: Accessibility for Teams – Visual Design](https://d
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User adjusting text settings, icons for vision and reading disabilities] -->
-
 - **Accessibility:** Customizable text helps users with low vision or dyslexia.
 - **Inclusivity:** Supports a wide range of reading preferences and needs.
 - **Legal Compliance:** Visual Presentation is a Level AAA requirement in WCAG 2.2.
@@ -54,8 +50,6 @@ For more, see [Digital.gov: Accessibility for Teams – Visual Design](https://d
 ---
 
 ## **What Needs to Support Visual Presentation?**
-
-<!-- [Grid: Paragraphs, articles, and forms, all with adjustable text settings] -->
 
 - Paragraphs and articles
 - Forms and instructions
@@ -66,8 +60,6 @@ All must allow user control over visual presentation.
 ---
 
 ## **How to Meet Guideline 1.4.8**
-
-<!-- [Side-by-side: Text block with default settings vs. text block with user-customized settings] -->
 
 - Provide controls for users to change text and background colors
 - Limit line length to 80 characters (40 for CJK languages)
@@ -82,8 +74,6 @@ For more, see the [W3C's Visual Presentation Techniques](https://www.w3.org/WAI/
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with customizable, readable text, right side with justified, cramped, or unchangeable text] -->
-
 - No way for users to change text or background color
 - Lines of text longer than 80 characters
 - Fully justified text
@@ -94,8 +84,6 @@ For more, see the [W3C's Visual Presentation Techniques](https://www.w3.org/WAI/
 
 ## **Differences Between A, AA, and AAA for Guideline 1.4.8 in WCAG 2.2**
 
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
-
 - **Level A & AA:** No requirement for user control over visual presentation.
 - **Level AAA:** Requires user control over color, width, spacing, and resizing for blocks of text.
 
@@ -104,8 +92,6 @@ For more, see the [W3C’s official documentation for 1.4.8 Visual Presentation]
 ---
 
 ## **Quick Checklist**
-
-<!-- [Checklist graphic: Icons for color picker, line length, spacing, and resize] -->
 
 - Users can change text and background colors
 - Line length is limited to 80 characters
@@ -116,8 +102,6 @@ For more, see the [W3C’s official documentation for 1.4.8 Visual Presentation]
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User adjusting text settings for comfort and readability] -->
 
 Guideline 1.4.8 ensures users can customize how text is displayed for maximum readability and comfort. Provide controls and use flexible CSS to support all users.
 

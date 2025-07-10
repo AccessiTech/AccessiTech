@@ -28,8 +28,6 @@ Guideline 1.3 focuses on creating content that can be presented in different way
 
 ## **What Is Guideline 1.3.6 Identify Purpose?**
 
-<!-- [Illustration: Web page with UI components and purpose icons, browser suggesting component purposes] -->
-
 > "In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined."
 
 Guideline 1.3.6 is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose).
@@ -44,8 +42,6 @@ This ensures that users can understand and interact with all parts of your site,
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: UI components with purpose icons, user with cognitive disability] -->
-
 - **Inclusivity:** Identifying purpose helps users with cognitive disabilities, memory issues, or language barriers.
 - **Legal Compliance:** Identify Purpose is a Level AAA requirement in WCAG 2.2.
 - **Usability:** Enhanced context and navigation benefit all users.
@@ -55,8 +51,6 @@ For more, see [W3C's identify purpose docs](https://www.w3.org/WAI/WCAG22/Unders
 ---
 
 ## **What Needs Purpose Identified?**
-
-<!-- [Grid: Navigation, main, search, banner, all with ARIA landmark icons] -->
 
 - Navigation regions (nav)
 - Main content (main)
@@ -70,9 +64,6 @@ All such elements should use ARIA roles, landmarks, or attributes to identify th
 
 ## **How to Identify Purpose**
 
-<!-- [Side-by-side code snippets: With and without ARIA landmarks] -->
-<!-- [Example: Web page with all regions marked up] -->
-
 - Add ARIA landmarks and roles to UI components and regions
 - Use semantic HTML5 elements (nav, main, aside, etc.)
 - Test with browsers and assistive tech for context and navigation
@@ -83,8 +74,6 @@ For more, see the [MDN ARIA landmarks docs](https://developer.mozilla.org/en-US/
 ---
 
 ## **Common Mistakes to Avoid**
-
-<!-- [Do/Don't graphic: Left side with ARIA landmarks, right side with missing or incorrect roles] -->
 
 - Omitting ARIA roles or landmarks on key regions
 - Using incorrect or generic roles
@@ -97,8 +86,6 @@ Audit your site regularly and use accessibility checkers to ensure all purposes 
 
 ## **Differences Between A, AA, and AAA for Guideline 1.3.6 in WCAG 2.2**
 
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
-
 - **Level A:** No requirement for 1.3.6.
 - **Level AA:** No requirement for 1.3.6.
 - **Level AAA:** Requires the purpose of UI components, icons, and regions to be programmatically determined. This is the core requirement for 1.3.6 and is mandatory for AAA conformance.
@@ -109,8 +96,6 @@ For more, see the [W3C’s official documentation for 1.3.6 Identify Purpose](ht
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (nav, main, search, banner, etc.)] -->
-
 - All UI components and regions use ARIA roles or landmarks
 - Semantic HTML5 elements are used where possible
 - Tested with assistive technology
@@ -120,7 +105,5 @@ For more, see the [W3C’s official documentation for 1.3.6 Identify Purpose](ht
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User navigating a web page with clear regions and roles] -->
 
 Guideline 1.3.6 is essential for making your site understandable and navigable for everyone. By identifying the purpose of all UI components and regions, you support users with disabilities, improve usability, and meet AAA requirements. Make purpose identification a standard part of your development process.

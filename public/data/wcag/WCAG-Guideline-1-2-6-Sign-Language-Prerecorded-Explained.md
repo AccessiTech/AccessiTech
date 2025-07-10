@@ -28,8 +28,6 @@ Guideline 1.2 focuses on making time-based media—like audio and video—access
 
 ## **What Is Guideline 1.2.6 Sign Language (Prerecorded)?**
 
-<!-- [Illustration: Video player with a sign language interpreter overlay] -->
-
 > "Sign language interpretation is provided for all prerecorded audio content in synchronized media."
 
 Guideline 1.2.6 is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#sign-language-prerecorded).
@@ -44,8 +42,6 @@ This ensures that users who rely on sign language can fully understand your vide
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Video player, sign language interpreter, and user with hearing aid] -->
-
 - **Inclusivity:** Sign language interpretation provides access for users who are deaf and use sign language.
 - **Legal Compliance:** This is a Level AAA requirement in WCAG 2.2.
 - **Usability:** Enhances understanding for users who prefer sign language over written captions.
@@ -56,8 +52,6 @@ For more, see [W3C's sign language docs](https://www.w3.org/WAI/WCAG22/Understan
 
 ## **What Needs Sign Language Interpretation?**
 
-<!-- [Grid: Video player, webinar, online course, all with sign language overlay] -->
-
 - Prerecorded video content with audio (webinars, tutorials, online courses)
 - Any synchronized media with spoken content
 
@@ -66,9 +60,6 @@ All such media should have sign language interpretation available.
 ---
 
 ## **How to Provide Sign Language Interpretation**
-
-<!-- [Side-by-side: Video with sign language overlay, video without]
-[Example: Video player with sign language toggle] -->
 
 - Record or embed a sign language interpreter in the video
 - Offer a separate sign language track or overlay
@@ -81,8 +72,6 @@ For more, see [W3C's sign language docs](https://www.w3.org/WAI/WCAG22/Understan
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with clear sign language overlay, right side with missing or unclear interpretation] -->
-
 - No sign language interpretation for video content
 - Interpretation that is out of sync or hard to see
 - Not making the sign language option easy to find
@@ -94,8 +83,6 @@ Audit your site regularly and use accessibility checkers to ensure all video con
 
 ## **Differences Between A, AA, and AAA for Guideline 1.2.6 in WCAG 2.2**
 
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
-
 - **Level A:** No requirement for 1.2.6.
 - **Level AA:** No requirement for 1.2.6.
 - **Level AAA:** Requires sign language interpretation for all prerecorded audio content in synchronized media. This is the core requirement for 1.2.6 and is mandatory for AAA conformance.
@@ -106,8 +93,6 @@ For more, see the [W3C’s official documentation for 1.2.6 Sign Language (Prere
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (video, sign language, interpreter, etc.)] -->
-
 - All prerecorded video content with audio has sign language interpretation
 - Interpretation is accurate and synchronized
 - Sign language option is easy to enable and view
@@ -117,7 +102,5 @@ For more, see the [W3C’s official documentation for 1.2.6 Sign Language (Prere
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User watching a video with sign language interpretation] -->
 
 Guideline 1.2.6 is essential for making video content accessible to users who rely on sign language. By providing sign language interpretation, you support users with disabilities, improve usability, and meet AAA requirements. Make sign language a standard part of your video production process for maximum inclusion.

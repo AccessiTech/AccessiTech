@@ -28,8 +28,6 @@ Guideline 1.4 focuses on making content easier to see and hear. Non-text Contras
 
 ## **What Is Guideline 1.4.11 Non-text Contrast?**
 
-<!-- [Illustration: UI controls (buttons, sliders, checkboxes) with high and low contrast examples] -->
-
 > "The visual presentation of user interface components and graphical objects has a contrast ratio of at least 3:1 against adjacent colors."
 
 Guideline 1.4.11 Non-text Contrast is a Level AA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast).
@@ -45,8 +43,6 @@ For more, see [Harvard University: Technique – Non-text contrast](https://acce
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: UI elements with and without sufficient contrast, icons for vision accessibility] -->
-
 - **Accessibility:** Low contrast makes controls and icons hard to see, especially for users with low vision.
 - **Inclusivity:** Ensures everyone can use interactive elements.
 - **Legal Compliance:** Non-text Contrast is a Level AA requirement in WCAG 2.2.
@@ -57,8 +53,6 @@ For more, see [WebAIM’s Non-text Contrast Checker](https://webaim.org/resource
 ---
 
 ## **What Needs to Support Non-text Contrast?**
-
-<!-- [Grid: Buttons, sliders, checkboxes, icons, and charts, all with high contrast examples] -->
 
 - Buttons and controls
 - Form fields and input borders
@@ -72,8 +66,6 @@ All must meet the minimum 3:1 contrast ratio with adjacent colors.
 
 ## **How to Meet Guideline 1.4.11**
 
-<!-- [Side-by-side: Button with sufficient contrast vs. button with low contrast] -->
-
 - Use a contrast ratio checker for UI elements and graphics
 - Ensure all controls and icons have at least 3:1 contrast
 - Test focus indicators and active states
@@ -86,8 +78,6 @@ For more, see the [W3C's Non-text Contrast Techniques](https://www.w3.org/WAI/WC
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with visible, high-contrast controls, right side with faint, low-contrast controls] -->
-
 - UI controls with borders or backgrounds that blend into the page
 - Icons or charts with insufficient contrast
 - Focus indicators that are hard to see
@@ -96,8 +86,6 @@ For more, see the [W3C's Non-text Contrast Techniques](https://www.w3.org/WAI/WC
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 1.4.11 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No specific requirement for non-text contrast.
 - **Level AA:** Requires 3:1 contrast for UI components and graphical objects.
@@ -109,8 +97,6 @@ For more, see the [W3C’s official documentation for 1.4.11 Non-text Contrast](
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for buttons, sliders, icons, and contrast checker] -->
-
 - All UI components have at least 3:1 contrast
 - All graphical objects meet 3:1 contrast
 - Focus indicators are visible
@@ -119,8 +105,6 @@ For more, see the [W3C’s official documentation for 1.4.11 Non-text Contrast](
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User interacting with high-contrast UI controls on a web page] -->
 
 Guideline 1.4.11 ensures all users can identify and use controls, icons, and graphics. Use contrast checkers and always test your designs for accessibility.
 

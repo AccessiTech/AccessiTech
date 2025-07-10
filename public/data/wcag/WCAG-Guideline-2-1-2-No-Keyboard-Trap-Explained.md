@@ -28,8 +28,6 @@ Guideline 2.1 focuses on making all functionality available from a keyboard. Thi
 
 ## **What Is Guideline 2.1.2 No Keyboard Trap?**
 
-<!-- [Illustration: Web page with a visible keyboard focus indicator moving freely between interactive elements] -->
-
 > "If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface."
 
 Guideline 2.1.2 No Keyboard Trap is a core requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#no-keyboard-trap).
@@ -46,8 +44,6 @@ For more, see [Avoid Keyboard Traps to Make Your Site More Accessible (BOIA)](ht
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Keyboard focus indicator moving in and out of a modal or widget] -->
-
 - **Inclusivity:** Keyboard traps can make parts of your site unusable for people with disabilities.
 - **Legal Compliance:** No Keyboard Trap is a Level A requirement and referenced in accessibility laws worldwide.
 - **Usability:** Prevents user frustration and abandonment due to inaccessible navigation.
@@ -57,8 +53,6 @@ Keyboard traps are a common barrier for users with disabilities. Ensuring users 
 ---
 
 ## **What Needs to Avoid Keyboard Traps?**
-
-<!-- [Grid: Modals, dialogs, custom widgets, embedded content—all with focus indicators] -->
 
 - Modals and dialogs
 - Custom widgets (e.g., sliders, accordions)
@@ -72,9 +66,6 @@ All interactive elements must allow users to move focus away using only the keyb
 
 ## **How to Prevent Keyboard Traps**
 
-<!-- [Side-by-side code snippets: Good focus management vs. trapped focus]
-[Example: Modal dialog with Escape key support] -->
-
 - Ensure all components can be exited with Tab, Shift+Tab, or Escape.
 - Use proper focus management in modals and dialogs.
 - Test custom widgets for keyboard navigation in and out.
@@ -85,8 +76,6 @@ For more, see the [MDN focus management docs](https://developer.mozilla.org/en-U
 ---
 
 ## **Common Mistakes to Avoid**
-
-<!-- [Do/Don't graphic: Left side with free focus movement, right side with trapped focus] -->
 
 - Modals or dialogs that trap focus and can't be exited
 - Custom widgets that don't allow focus to move away
@@ -99,8 +88,6 @@ Audit your site regularly and use accessibility checkers to catch these issues. 
 
 ## **Differences Between A, AA, and AAA for Guideline 2.1.2 in WCAG 2.2**
 
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
-
 - **Level A:** Requires that focus can always be moved away from any component using only the keyboard. This is the core requirement for 2.1.2 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 2.1.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
 - **Level AAA:** For Guideline 2.1.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
@@ -111,8 +98,6 @@ For more, see the [W3C’s official documentation for 2.1.2 No Keyboard Trap](ht
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (modal, widget, menu, etc.)] -->
-
 - All components can be exited with keyboard
 - No focus is trapped in any element
 - Modals and dialogs support Escape or Tab to exit
@@ -122,8 +107,6 @@ For more, see the [W3C’s official documentation for 2.1.2 No Keyboard Trap](ht
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User navigating a modal and moving focus out with the keyboard] -->
 
 Guideline 2.1.2 is essential for ensuring users never get stuck while navigating your site. By preventing keyboard traps, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make keyboard navigation a core part of your development process.
 

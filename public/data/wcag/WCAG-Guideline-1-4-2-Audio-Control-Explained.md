@@ -28,8 +28,6 @@ Guideline 1.4 focuses on making content easier to see and hear. Audio that plays
 
 ## **What Is Guideline 1.4.2 Audio Control?**
 
-<!-- [Illustration: Speaker icon with a visible mute button and volume slider] -->
-
 > "If any audio on a web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume."
 
 Guideline 1.4.2 Audio Control is a requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#audio-control).
@@ -44,8 +42,6 @@ For more, see [W3C's Media Accessibility User Requirements](https://www.w3.org/T
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with headphones, screen reader icon, and a warning sign for autoplay audio] -->
-
 - **Disruption:** Autoplay audio can disrupt users, especially those using screen readers.
 - **Control:** Users need to control their environment, especially in public or shared spaces.
 - **Accessibility:** Some users are sensitive to unexpected sounds or cannot easily find audio controls.
@@ -54,8 +50,6 @@ For more, see [W3C's Media Accessibility User Requirements](https://www.w3.org/T
 ---
 
 ## **What Needs to Support Accessible Audio Control?**
-
-<!-- [Grid: Video player, background music, sound effects, all with visible controls] -->
 
 - Video and audio players
 - Background music or sound effects
@@ -66,8 +60,6 @@ All must provide clear, accessible controls to pause, stop, or adjust volume.
 ---
 
 ## **How to Meet Guideline 1.4.2**
-
-<!-- [Side-by-side: Autoplaying audio with no controls vs. audio with pause/stop/volume controls] -->
 
 - Avoid autoplaying audio longer than 3 seconds
 - Provide visible pause, stop, or volume controls
@@ -81,8 +73,6 @@ For more, see the [W3C's Audio Control Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with accessible controls, right side with hidden or no controls] -->
-
 - Autoplaying audio with no way to pause or stop
 - Controls that are not keyboard accessible
 - Relying on system volume only
@@ -92,8 +82,6 @@ For more, see the [W3C's Audio Control Techniques](https://www.w3.org/WAI/WCAG22
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 1.4.2 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires pause, stop, or independent volume control for audio longer than 3 seconds.
 - **Level AA:** No additional requirements for 1.4.2, but related requirements for contrast and visual presentation apply elsewhere.
@@ -105,8 +93,6 @@ For more, see the [W3C’s official documentation for 1.4.2 Audio Control](https
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for pause, stop, and volume controls] -->
-
 - No autoplay audio longer than 3 seconds without controls
 - All audio controls are visible and accessible
 - Controls work with keyboard and assistive tech
@@ -115,7 +101,5 @@ For more, see the [W3C’s official documentation for 1.4.2 Audio Control](https
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User pausing audio on a web page with accessible controls] -->
 
 Guideline 1.4.2 ensures users are not disrupted by unexpected audio and can control their experience. Always provide accessible controls for any audio that plays automatically.

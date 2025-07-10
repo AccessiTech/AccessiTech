@@ -28,8 +28,6 @@ Guideline 2.4 focuses on making it easier for users to navigate, find content, a
 
 ## **What Is Guideline 2.4.7 Focus Visible?**
 
-<!-- [Illustration: User tabbing through a web page with a visible focus indicator] -->
-
 > "Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible."
 
 Guideline 2.4.7 Focus Visible is a Level AA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#focus-visible).
@@ -46,8 +44,6 @@ For more, see [AccessGuide: Focus Indicator](https://www.accessguide.io/guide/fo
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Focus indicator, keyboard user, and highlighted element] -->
-
 - **Inclusivity:** Visible focus is essential for keyboard and assistive technology users.
 - **Legal Compliance:** Focus Visible is a Level AA requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents confusion and improves navigation for all users.
@@ -58,8 +54,6 @@ For more, see [W3C’s guidance on focus visible](https://www.w3.org/WAI/WCAG22/
 
 ## **What Needs a Visible Focus?**
 
-<!-- [Grid: Forms, navigation, interactive elements, all with focus icons] -->
-
 - Forms and input fields
 - Navigation menus
 - Interactive elements
@@ -69,9 +63,6 @@ All must have a visible focus indicator when navigated to by keyboard.
 ---
 
 ## **How to Make Focus Visible Accessible**
-
-<!-- [Side-by-side code snippets: Visible focus, no focus]
-[Example: Settings panel for focus indicator] -->
 
 - Ensure focus indicator is always visible
 - Use high-contrast, easily seen styles
@@ -84,8 +75,6 @@ For more, see the [W3C's Focus Visible Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with visible focus, right side with no focus] -->
-
 - Focus indicator not visible or too subtle
 - Focus indicator hidden by custom styles
 - Not documenting focus indicator conventions
@@ -94,8 +83,6 @@ For more, see the [W3C's Focus Visible Techniques](https://www.w3.org/WAI/WCAG22
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.4.7 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Not applicable for this guideline.
 - **Level AA:** Requires visible focus indicator for all keyboard operable UI. This is the core requirement for 2.4.7 and is mandatory for AA accessibility.
@@ -107,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.4.7 Focus Visible](https
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (focus, indicator, navigation, etc.)] -->
-
 - Focus indicator is always visible
 - High-contrast, easily seen styles are used
 - Focus indicator conventions are documented
@@ -117,8 +102,6 @@ For more, see the [W3C’s official documentation for 2.4.7 Focus Visible](https
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User tabbing through a web page with a visible focus indicator] -->
 
 Guideline 2.4.7 is essential for helping users navigate your site efficiently. By ensuring visible focus, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make focus visibility a core part of your development process.
 

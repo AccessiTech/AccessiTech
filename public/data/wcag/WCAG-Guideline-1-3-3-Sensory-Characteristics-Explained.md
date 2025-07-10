@@ -28,8 +28,6 @@ Guideline 1.3 focuses on creating content that can be presented in different way
 
 ## **What Is Guideline 1.3.3 Sensory Characteristics?**
 
-<!-- [Illustration: Instructions using color, shape, and text to identify elements] -->
-
 > "Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, color, size, visual location, orientation, or sound."
 
 Guideline 1.3.3 is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#sensory-characteristics).
@@ -44,8 +42,6 @@ This ensures that everyone, including users with visual, auditory, or cognitive 
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Instructions with and without sensory cues, user with color blindness] -->
-
 - **Inclusivity:** Users with color blindness, low vision, or hearing loss may not perceive sensory cues.
 - **Legal Compliance:** Sensory Characteristics is a Level A requirement in WCAG 2.2 and referenced in accessibility laws worldwide.
 - **Usability:** Clear instructions help all users, especially in complex interfaces.
@@ -55,8 +51,6 @@ For more, see [WebAIM's instructions and cues guide](https://webaim.org/techniqu
 ---
 
 ## **What Needs Clear Instructions?**
-
-<!-- [Grid: Forms, buttons, charts, all with text and icon labels] -->
 
 - Forms and input fields
 - Buttons and controls
@@ -70,9 +64,6 @@ All such elements should be identified by more than just color, shape, or positi
 
 ## **How to Provide Accessible Instructions**
 
-<!-- [Side-by-side: Good vs. bad instructions using color/shape only]
-[Example: Form with both color and text labels] -->
-
 - Use text labels in addition to color, shape, or sound
 - Reference elements by name or label, not just position or appearance
 - Provide icons or patterns for color-coded information
@@ -83,8 +74,6 @@ For more, see the [MDN instructions docs](https://developer.mozilla.org/en-US/do
 ---
 
 ## **Common Mistakes to Avoid**
-
-<!-- [Do/Don't graphic: Left side with text and icon labels, right side with color-only instructions] -->
 
 - Instructions that say “click the green button” without a label
 - Relying on color or shape alone to identify elements
@@ -97,8 +86,6 @@ Audit your site regularly and use accessibility checkers to ensure all instructi
 
 ## **Differences Between A, AA, and AAA for Guideline 1.3.3 in WCAG 2.2**
 
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
-
 - **Level A:** Requires instructions not rely solely on sensory characteristics. This is the core requirement for 1.3.3 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 1.3.3, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
 - **Level AAA:** For Guideline 1.3.3, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
@@ -109,8 +96,6 @@ For more, see the [W3C’s official documentation for 1.3.3 Sensory Characterist
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (form, button, chart, etc.)] -->
-
 - All instructions use text labels, not just color or shape
 - Elements referenced by name or label
 - Color-coded info has icons or patterns
@@ -120,7 +105,5 @@ For more, see the [W3C’s official documentation for 1.3.3 Sensory Characterist
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User following instructions with both text and color cues] -->
 
 Guideline 1.3.3 is essential for making your site usable and understandable for everyone. By providing instructions that don’t rely solely on sensory characteristics, you support users with disabilities, improve usability, and meet legal requirements. Make accessible instructions a standard part of your development process.

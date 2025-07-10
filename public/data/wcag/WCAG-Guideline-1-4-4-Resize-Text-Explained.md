@@ -28,8 +28,6 @@ Guideline 1.4 focuses on making content easier to see and hear. Users with low v
 
 ## **What Is Guideline 1.4.4 Resize Text?**
 
-<!-- [Illustration: Magnifying glass over enlarged text, with a responsive web page] -->
-
 > "Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality."
 
 Guideline 1.4.4 Resize Text is a requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#resize-text).
@@ -44,8 +42,6 @@ For more, see the [W3C's Resize Text Techniques](https://www.w3.org/WAI/WCAG22/T
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with glasses, zoom icon, and a warning sign for unreadable text] -->
-
 - **Readability:** Many users need larger text to read comfortably.
 - **Inclusivity:** Supports users with low vision or reading difficulties.
 - **Legal Compliance:** Resize Text is a Level AA requirement in WCAG 2.2.
@@ -54,8 +50,6 @@ For more, see the [W3C's Resize Text Techniques](https://www.w3.org/WAI/WCAG22/T
 ---
 
 ## **What Needs to Support Accessible Text Resizing?**
-
-<!-- [Grid: Paragraphs, buttons, menus, and forms, all shown at 200% size] -->
 
 - Body text and headings
 - Buttons and links
@@ -68,8 +62,6 @@ All must remain readable and functional when text is resized.
 
 ## **How to Meet Guideline 1.4.4**
 
-<!-- [Side-by-side: Web page at normal size vs. at 200% zoom, both fully functional] -->
-
 - Use relative units (em, rem, %) for font sizes and layout
 - Avoid fixed pixel heights/widths for containers
 - Test your site at 200% zoom in browsers
@@ -80,8 +72,6 @@ All must remain readable and functional when text is resized.
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with readable, resizable text, right side with overlapping or cut-off text] -->
-
 - Using fixed pixel sizes for text or containers
 - Content that disappears or overlaps when zoomed
 - Images of text that do not scale
@@ -90,8 +80,6 @@ All must remain readable and functional when text is resized.
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 1.4.4 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No specific requirement for resizing text.
 - **Level AA:** Requires text can be resized up to 200% without loss of content or functionality.
@@ -103,8 +91,6 @@ For more, see the [W3C’s official documentation for 1.4.4 Resize Text](https:/
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for text, zoom, and responsive design] -->
-
 - All text can be resized up to 200%
 - No loss of content or functionality when zoomed
 - No fixed pixel sizes for text or containers
@@ -113,8 +99,6 @@ For more, see the [W3C’s official documentation for 1.4.4 Resize Text](https:/
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User zooming in on a web page with all content still visible] -->
 
 Guideline 1.4.4 ensures users can read and interact with content at larger text sizes. Use relative units and test your site at 200% zoom to ensure accessibility.
 

@@ -28,8 +28,6 @@ Guideline 2.2 focuses on making sure users have enough time to complete tasks. T
 
 ## **What Is Guideline 2.2.1 Timing Adjustable?**
 
-<!-- [Illustration: Clock with adjustable time and a user extending a session] -->
-
 > "For each time limit that is set by the content, at least one of the following is true: the user can turn off, adjust, or extend the time limit."
 
 Guideline 2.2.1 Timing Adjustable is a requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable).
@@ -46,8 +44,6 @@ For more, see [AccessGuide: Time Limits](https://www.accessguide.io/guide/time-l
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User extending a session, clock, and warning icon] -->
-
 - **Inclusivity:** Time limits can exclude users who need more time due to disabilities.
 - **Legal Compliance:** Timing Adjustable is a Level A requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents frustration and loss of work for all users.
@@ -57,8 +53,6 @@ For more, see [W3C’s guidance on time limits](https://www.w3.org/WAI/WCAG22/Un
 ---
 
 ## **What Needs to Support Timing Adjustments?**
-
-<!-- [Grid: Forms, quizzes, checkout, all with time limit icons] -->
 
 - Online forms and quizzes
 - Shopping carts and checkouts
@@ -71,9 +65,6 @@ All must provide a way to turn off, adjust, or extend the time limit, unless an 
 
 ## **How to Make Timing Adjustable**
 
-<!-- [Side-by-side code snippets: Session extension, warning dialog]
-[Example: Settings panel for time limits] -->
-
 - Allow users to turn off or extend time limits
 - Provide clear warnings before time expires
 - Document all time limits and extension options
@@ -85,8 +76,6 @@ For more, see the [W3C's Timing Adjustable Techniques](https://www.w3.org/WAI/WC
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with extendable time, right side with fixed time] -->
-
 - Fixed time limits with no way to extend
 - No warning before time expires
 - Not documenting time limits
@@ -95,8 +84,6 @@ For more, see the [W3C's Timing Adjustable Techniques](https://www.w3.org/WAI/WC
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.2.1 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires users can turn off, adjust, or extend time limits. This is the core requirement for 2.2.1 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 2.2.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -108,8 +95,6 @@ For more, see the [W3C’s official documentation for 2.2.1 Timing Adjustable](h
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (clock, warning, settings, etc.)] -->
-
 - All time limits can be turned off, adjusted, or extended
 - Clear warnings are provided before time expires
 - All time limits are documented for users
@@ -118,8 +103,6 @@ For more, see the [W3C’s official documentation for 2.2.1 Timing Adjustable](h
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User extending a session on a web app] -->
 
 Guideline 2.2.1 is essential for preventing users from being timed out unfairly. By allowing users to turn off, adjust, or extend time limits, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make timing accessibility a core part of your development process.
 

@@ -28,8 +28,6 @@ Guideline 3.1 focuses on making text content readable and understandable by iden
 
 ## **What Is Guideline 3.1.1 Language of Page?**
 
-<!-- [Illustration: Browser showing a language attribute in the HTML tag] -->
-
 > "The default human language of each web page can be programmatically determined."
 
 Guideline 3.1.1 requires that the main language of a web page is specified in the code, usually with the `lang` attribute in HTML.
@@ -44,8 +42,6 @@ For more, see [Stanford UIT: Page and Inline Language](https://uit.stanford.edu/
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with screen reader, language icon, and browser] -->
-
 - **Inclusivity:** Correct language settings help screen readers and translation tools.
 - **Legal Compliance:** Language of Page is a Level A requirement in WCAG 2.1 and 2.2.
 - **Usability:** Improves comprehension and accessibility for all users.
@@ -56,8 +52,6 @@ For more, see [W3C’s guidance on language of page](https://www.w3.org/WAI/WCAG
 
 ## **What Needs a Language Attribute?**
 
-<!-- [Grid: Web pages, documents, browser tabs, all with language icons] -->
-
 - All web pages
 - Documents and browser tabs
 - Any content that can be navigated to directly
@@ -65,9 +59,6 @@ For more, see [W3C’s guidance on language of page](https://www.w3.org/WAI/WCAG
 ---
 
 ## **How to Make Language of Page Accessible**
-
-<!-- [Side-by-side code snippets: Correct lang attribute, missing lang attribute]
-[Example: Settings panel for language] -->
 
 - Use the correct lang attribute in the HTML tag
 - Document language conventions
@@ -79,8 +70,6 @@ For more, see the [W3C's Language of Page Techniques](https://www.w3.org/WAI/WCA
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with correct lang, right side with missing lang] -->
-
 - Missing or incorrect lang attribute
 - Not documenting language conventions
 - Not testing with screen readers or translation tools
@@ -88,8 +77,6 @@ For more, see the [W3C's Language of Page Techniques](https://www.w3.org/WAI/WCA
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.1.1 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires the default language of each page can be programmatically determined. This is the core requirement for 3.1.1 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 3.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -101,8 +88,6 @@ For more, see the [W3C’s official documentation for 3.1.1 Language of Page](ht
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (lang, browser, screen reader, etc.)] -->
-
 - The lang attribute is set correctly on every page
 - Language conventions are documented
 - Tested with screen readers and translation tools
@@ -110,8 +95,6 @@ For more, see the [W3C’s official documentation for 3.1.1 Language of Page](ht
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User reading a web page in their language] -->
 
 Guideline 3.1.1 is essential for helping users understand your site. By setting the correct language, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make language accessibility a core part of your development process.
 

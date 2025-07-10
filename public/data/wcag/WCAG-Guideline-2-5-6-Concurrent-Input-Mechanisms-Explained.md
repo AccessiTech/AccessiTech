@@ -28,8 +28,6 @@ Guideline 2.5 focuses on making it easier for users to operate functionality thr
 
 ## **What Is Guideline 2.5.6 Concurrent Input Mechanisms?**
 
-<!-- [Illustration: User switching between touch, keyboard, and mouse inputs] -->
-
 > "Web content does not restrict use of input modalities available on a platform except where necessary."
 
 Guideline 2.5.6 Concurrent Input Mechanisms is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#concurrent-input-mechanisms).
@@ -46,8 +44,6 @@ For more, see [Accessible Web: What are Concurrent Input Mechanisms?](https://ac
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User using multiple input methods, accessibility icon] -->
-
 - **Inclusivity:** Users may need to switch between input methods for accessibility or convenience.
 - **Legal Compliance:** Concurrent Input Mechanisms is a Level AAA requirement in WCAG 2.1 and 2.2.
 - **Usability:** Improves flexibility and user experience for all users.
@@ -58,8 +54,6 @@ For more, see [W3C’s guidance on concurrent input mechanisms](https://www.w3.o
 
 ## **What Needs Concurrent Input Mechanisms?**
 
-<!-- [Grid: Touch, keyboard, mouse, all with input icons] -->
-
 - Touch interfaces
 - Keyboard and mouse inputs
 - Any feature supporting multiple input methods
@@ -69,9 +63,6 @@ All must allow users to switch between input methods at any time.
 ---
 
 ## **How to Make Concurrent Input Mechanisms Accessible**
-
-<!-- [Side-by-side code snippets: Switching input methods, input options]
-[Example: Settings panel for input methods] -->
 
 - Allow users to switch between input methods
 - Do not restrict input modalities unless necessary
@@ -84,8 +75,6 @@ For more, see the [W3C's Concurrent Input Mechanisms Techniques](https://www.w3.
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with multiple input options, right side with only one] -->
-
 - Restricting input to a single method
 - Not documenting input method options
 - Not testing with users who use multiple input devices
@@ -93,8 +82,6 @@ For more, see the [W3C's Concurrent Input Mechanisms Techniques](https://www.w3.
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.5.6 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Not applicable for this guideline.
 - **Level AA:** Not applicable for this guideline.
@@ -106,8 +93,6 @@ For more, see the [W3C’s official documentation for 2.5.6 Concurrent Input Mec
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (input, switch, flexibility, etc.)] -->
-
 - Users can switch between input methods
 - Input method options are documented
 - Tested with users who use multiple input methods
@@ -115,8 +100,6 @@ For more, see the [W3C’s official documentation for 2.5.6 Concurrent Input Mec
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User switching input methods in a web app] -->
 
 Guideline 2.5.6 is essential for helping users interact with your site. By allowing users to switch between input methods, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make input flexibility a core part of your development process.
 

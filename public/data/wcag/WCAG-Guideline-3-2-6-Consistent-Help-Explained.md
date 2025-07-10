@@ -28,8 +28,6 @@ Guideline 3.2 focuses on making web pages behave in ways users expect, including
 
 ## **What Is Guideline 3.2.6 Consistent Help?**
 
-<!-- [Illustration: Website with a help icon in the same place on every page] -->
-
 > "If a web page contains any mechanisms for help, they occur in the same relative order on each page where they are repeated."
 
 Guideline 3.2.6 requires that help features (like contact info, chat, or FAQs) are consistently located and presented across your site.
@@ -44,8 +42,6 @@ For more, see [BOIA: Consistent Help – Tips for Meeting WCAG Success Criterion
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Help icon, user with assistive tech, and navigation bar] -->
-
 - **All Users:** Benefit from predictable help locations
 - **Screen Reader Users:** Rely on consistent navigation
 - **Accessibility:** Reduces confusion and increases confidence
@@ -56,8 +52,6 @@ For more, see [W3C’s guidance on Consistent Help](https://www.w3.org/WAI/WCAG2
 
 ## **What Needs Consistent Help?**
 
-<!-- [Grid: Help icons, contact links, chat buttons, and FAQs] -->
-
 - Contact information
 - Live chat or support buttons
 - Help links or FAQs
@@ -66,8 +60,6 @@ For more, see [W3C’s guidance on Consistent Help](https://www.w3.org/WAI/WCAG2
 ---
 
 ## **How to Meet Guideline 3.2.6**
-
-<!-- [Side-by-side: Good example (help icon in same place) vs. Bad example (help icon moves between pages)] -->
 
 - Place help features in the same location and order on every page
 - Use templates or components for help mechanisms
@@ -79,8 +71,6 @@ For more, see the [W3C's Consistent Help Techniques](https://www.w3.org/WAI/WCAG
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with consistent help, right side with help in different places] -->
-
 - Moving help features between pages
 - Inconsistent labeling or presentation of help
 - Not using templates for repeated help mechanisms
@@ -88,8 +78,6 @@ For more, see the [W3C's Consistent Help Techniques](https://www.w3.org/WAI/WCAG
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.2.6 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AAA:** Requires consistent help mechanisms across pages.
 - **Level AA:** Not applicable (3.2.6 is a Level AAA requirement).
@@ -101,8 +89,6 @@ For more, see the [W3C’s official documentation for 3.2.6 Consistent Help](htt
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for help, template, and navigation] -->
-
 - Help features are in the same place on every page
 - Consistent labeling and presentation
 - Templates or components used for help mechanisms
@@ -111,8 +97,6 @@ For more, see the [W3C’s official documentation for 3.2.6 Consistent Help](htt
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User finding help easily on every page] -->
 
 Guideline 3.2.6 ensures that users can always find help in the same place, making your site more accessible and user-friendly.
 

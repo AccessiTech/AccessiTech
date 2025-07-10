@@ -32,8 +32,6 @@ Guideline 4.1 focuses on making sure content can be reliably interpreted by a wi
 
 ## **What Is Guideline 4.1.1 Parsing?**
 
-<!-- [Illustration: Code editor showing valid HTML markup] -->
-
 > "Content is parsed correctly by user agents, ensuring assistive technologies can interpret it."
 
 Guideline 4.1.1 requires that your code is well-formed and free of errors that could confuse browsers or assistive technologies.
@@ -48,8 +46,6 @@ For more, see [BOIA: Tips for Meeting WCAG Success Criterion 4.1.1 Parsing](http
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with screen reader, code icon, and browser] -->
-
 - **Inclusivity:** Correct parsing helps assistive technologies interpret content.
 - **Legal Compliance:** Parsing is a Level A requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents errors and improves accessibility for all users.
@@ -60,8 +56,6 @@ For more, see [W3C’s guidance on Parsing](https://www.w3.org/WAI/WCAG22/Unders
 
 ## **What Needs to Be Parsed Correctly?**
 
-<!-- [Grid: HTML, CSS, JavaScript, all with code icons] -->
-
 - HTML markup
 - CSS and JavaScript
 - Any content interpreted by user agents
@@ -69,9 +63,6 @@ For more, see [W3C’s guidance on Parsing](https://www.w3.org/WAI/WCAG22/Unders
 ---
 
 ## **How to Ensure Correct Parsing**
-
-<!-- [Side-by-side code snippets: Valid markup, invalid markup]
-[Example: Settings panel for code validation] -->
 
 - Use valid, well-formed markup
 - Document coding conventions
@@ -83,8 +74,6 @@ For more, see the [W3C's Parsing Techniques](https://www.w3.org/WAI/WCAG22/Techn
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with valid code, right side with invalid code] -->
-
 - Invalid or poorly formed markup
 - Not documenting coding conventions
 - Not testing with validators or assistive technologies
@@ -92,8 +81,6 @@ For more, see the [W3C's Parsing Techniques](https://www.w3.org/WAI/WCAG22/Techn
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 4.1.1 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires content is parsed correctly by user agents. This is the core requirement for 4.1.1 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 4.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -105,8 +92,6 @@ For more, see the [W3C’s official documentation for 4.1.1 Parsing](https://www
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (code, validation, screen reader, etc.)] -->
-
 - All markup is valid and well-formed
 - Coding conventions are documented
 - Tested with validators and assistive technologies
@@ -114,8 +99,6 @@ For more, see the [W3C’s official documentation for 4.1.1 Parsing](https://www
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User reading a web page with valid code] -->
 
 Guideline 4.1.1 is essential for helping users access your site. By ensuring correct parsing, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make code validation a core part of your development process.
 

@@ -28,8 +28,6 @@ Guideline 3.1 focuses on making text content readable and understandable for the
 
 ## **What Is Guideline 3.1.5 Reading Level?**
 
-<!-- [Illustration: Web page with a readability score and plain language icon] -->
-
 > "When text requires reading ability more advanced than the lower secondary education level, supplemental content or a version that does not require such ability is available."
 
 Guideline 3.1.5 requires that content be written at a lower secondary education reading level, or that an alternative is provided for more complex content.
@@ -44,8 +42,6 @@ For more, see [UC Berkeley: What is Plain Language?](https://dap.berkeley.edu/le
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Reading level icon, plain language, and user with assistive tech] -->
-
 - **All Users:** Benefit from clear, simple language
 - **Users with Disabilities:** May struggle with complex vocabulary or sentence structure
 - **Accessibility:** Improves comprehension and usability
@@ -56,8 +52,6 @@ For more, see [W3C’s guidance on Reading Level](https://www.w3.org/WAI/WCAG22/
 
 ## **What Needs to Meet Reading Level?**
 
-<!-- [Grid: Instructions, critical information, and complex content] -->
-
 - Instructions and help content
 - Critical information (warnings, legal, financial)
 - Any content above lower secondary reading level
@@ -65,8 +59,6 @@ For more, see [W3C’s guidance on Reading Level](https://www.w3.org/WAI/WCAG22/
 ---
 
 ## **How to Meet Guideline 3.1.5**
-
-<!-- [Side-by-side: Good example (plain language) vs. Bad example (complex, technical language)] -->
 
 - Write in plain, simple language
 - Provide a simplified version or supplemental content for complex material
@@ -79,8 +71,6 @@ For more, see the [W3C's Reading Level Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with plain language, right side with complex language] -->
-
 - Using unnecessarily complex vocabulary or sentence structure
 - Not providing alternatives for complex content
 - Failing to check reading level with tools
@@ -88,8 +78,6 @@ For more, see the [W3C's Reading Level Techniques](https://www.w3.org/WAI/WCAG22
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.1.5 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AAA:** Requires content at or below lower secondary reading level, or an alternative.
 - **Level AA:** Not applicable (3.1.5 is a Level AAA requirement).
@@ -101,8 +89,6 @@ For more, see the [W3C’s official documentation for 3.1.5 Reading Level](https
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for reading level, plain language, and alternative content] -->
-
 - Content is at or below lower secondary reading level
 - Alternatives or supplemental content provided for complex material
 - Readability checked with tools
@@ -111,8 +97,6 @@ For more, see the [W3C’s official documentation for 3.1.5 Reading Level](https
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User reading content with a plain language icon] -->
 
 Guideline 3.1.5 ensures that your content is readable for the widest possible audience. Use plain language and provide alternatives for complex material.
 

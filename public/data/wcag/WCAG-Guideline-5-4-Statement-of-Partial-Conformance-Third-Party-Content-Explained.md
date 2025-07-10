@@ -30,8 +30,6 @@ Guideline 5.4 provides a way to document accessibility when your web page includ
 
 ## **What Is a Statement of Partial Conformance?**
 
-<!-- [Illustration: Web page with a warning icon and third-party content badge] -->
-
 A statement of partial conformance is a public note that a web page would conform to WCAG except for specific third-party content that is outside your control.
 
 - Used when you cannot make all content accessible
@@ -52,8 +50,6 @@ For more, see [W3C’s guidance on Partial Conformance](https://www.w3.org/WAI/W
 
 ## **How to Make a Statement of Partial Conformance**
 
-<!-- [Side-by-side: Good example (clear statement with details) vs. Bad example (no mention of third-party content)] -->
-
 - Clearly state that the page would conform except for specific third-party content
 - Identify the third-party content and its source
 - Explain why you cannot make it accessible
@@ -71,8 +67,6 @@ For more, see [W3C’s guidance on Partial Conformance](https://www.w3.org/WAI/W
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for warning, third-party badge, and contact] -->
-
 - Statement is clear and specific about third-party content
 - Third-party sources are identified
 - Users are informed about accessibility limitations
@@ -81,8 +75,6 @@ For more, see [W3C’s guidance on Partial Conformance](https://www.w3.org/WAI/W
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User reading a partial conformance statement on a web page] -->
 
 Guideline 5.4 allows you to be transparent about accessibility when you include third-party content you cannot control. Use a clear, honest statement to help users understand your site’s accessibility status.
 

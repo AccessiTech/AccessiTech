@@ -28,8 +28,6 @@ Guideline 3.3 focuses on helping users avoid and correct mistakes when entering 
 
 ## **What Is Guideline 3.3.1 Error Identification?**
 
-<!-- [Illustration: Form with a highlighted error message and accessible feedback] -->
-
 > "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text."
 
 Guideline 3.3.1 requires that when a user makes a mistake in a form or input, the error is clearly identified and described in text.
@@ -44,8 +42,6 @@ For more, see [AccessGuide: Identify Errors](https://www.accessguide.io/guide/id
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Error icon, form field, and user with assistive tech] -->
-
 - **All Users:** Need clear feedback to correct mistakes
 - **Screen Reader Users:** Rely on text descriptions of errors
 - **Accessibility:** Reduces frustration and improves success rates
@@ -56,8 +52,6 @@ For more, see [W3C’s guidance on Error Identification](https://www.w3.org/WAI/
 
 ## **What Needs to Identify Errors?**
 
-<!-- [Grid: Form fields, error messages, and validation feedback] -->
-
 - All forms and input fields
 - Any user data entry that can be validated
 - Error messages must be clear, specific, and in text
@@ -65,8 +59,6 @@ For more, see [W3C’s guidance on Error Identification](https://www.w3.org/WAI/
 ---
 
 ## **How to Meet Guideline 3.3.1**
-
-<!-- [Side-by-side: Good example (clear error message next to field) vs. Bad example (no error message or only color)] -->
 
 - Provide a text error message describing the problem
 - Identify the specific field or item in error
@@ -79,8 +71,6 @@ For more, see the [W3C's Error Identification Techniques](https://www.w3.org/WAI
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with clear text error, right side with only color or icon] -->
-
 - Using only color or icons to indicate errors
 - Not describing the error in text
 - Failing to identify the specific field in error
@@ -88,8 +78,6 @@ For more, see the [W3C's Error Identification Techniques](https://www.w3.org/WAI
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.3.1 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires error identification and description in text.
 - **Level AA:** No additional requirements for 3.3.1.
@@ -101,8 +89,6 @@ For more, see the [W3C’s official documentation for 3.3.1 Error Identification
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for error, form, and text message] -->
-
 - All input errors are identified in text
 - Error messages are clear and specific
 - The field in error is clearly indicated
@@ -111,8 +97,6 @@ For more, see the [W3C’s official documentation for 3.3.1 Error Identification
 ---
 
 ## **Summary**
-
-<!-- [Illustration: User correcting a form error with clear feedback] -->
 
 Guideline 3.3.1 ensures that users can recognize and fix mistakes in forms and inputs. Clear, accessible error messages are essential for a positive user experience.
 
