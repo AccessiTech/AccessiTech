@@ -11,6 +11,7 @@ import CustomMarkdownTable, { tableDirective } from "../../components/CustomTabl
 import remarkDirective from "remark-directive";
 import { CustomMarkdownLink } from "../../components/CustomLink/CustomLink";
 import './BlogEntry.css';
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 export interface FetchBlogEntryProps {
   id: string;
@@ -25,6 +26,19 @@ export interface BlogEntryType extends React.FC<BlogEntryProps> {
   loadData: (url?: string) => Promise<void>;
 }
 
+export const getChildText = (node: any):string => {
+  if (!node || !node.children || node.children.length === 0) return '';
+  const child = node.children[0];
+  if (typeof child === 'string') return child;
+  if (child && typeof child === 'object' && 'value' in child) {
+    return (child as { value: string }).value;
+  }
+  if (child && typeof child === 'object' && 'children' in child) {
+    return getChildText(child);
+  }
+  throw new Error("Unexpected node structure");
+}
+
 export const BlogEntry = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -37,6 +51,20 @@ export const BlogEntry = () => {
   useEffect(() => {
     fetchBlogEntry({ id: sub ? `${sub}/${id}` : id, navigate, pathname });
   }, [id, sub, navigate]);
+
+  useEffect(() => {
+    if (entry?.loaded && window) {
+      const anchorId = window.location.hash.substring(1);
+      if (anchorId) {
+        const element = document.getElementById(anchorId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.warn(`Element with ID ${anchorId} not found.`);
+        }
+      }
+    }
+  }, [entry?.loaded]);
 
   const metadata = {
     title: `${ACCESSITECH} | ${entry?.title || "Blog Entry"}`,
@@ -77,6 +105,17 @@ export const BlogEntry = () => {
                     components={{
                       table: CustomMarkdownTable,
                       a: CustomMarkdownLink,
+                      h2: ({ node }) => {
+                        // Safely extract text from node.children[0]
+                        const titleText = getChildText(node);
+                        return (
+                          <SectionHeader
+                            title={titleText}
+                            id={titleText.toLowerCase().replace(/\s+/g, '-')}
+                            use="h2"
+                          />
+                        );
+                      },
                     }}
                   >{entry.content.replace(/<!--.*?-->/g, '')}</ReactMarkdown>
                 }
