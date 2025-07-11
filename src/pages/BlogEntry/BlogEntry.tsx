@@ -80,8 +80,8 @@ export const BlogEntry = () => {
   return (<>
     <HeaderRow />
     <Row className="breadcrumb-row">
-      <Metadata {...metadata} />
       <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+      <Metadata {...metadata} />
         <Breadcrumb className="breadcrumb-container">
           <Breadcrumb.Item href="/" onClick={(e: any) => {
             e.preventDefault();

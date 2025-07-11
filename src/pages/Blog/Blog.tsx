@@ -71,8 +71,8 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
   return (<>
     <HeaderRow />
     <Row className="breadcrumb-row blog">
-      <Metadata {...pageMetadata} />
       <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+        <Metadata {...pageMetadata} />
         <Breadcrumb className="breadcrumb-container">
           <Breadcrumb.Item href="/" onClick={(e: any) => {
             e.preventDefault();

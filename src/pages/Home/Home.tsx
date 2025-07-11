@@ -7,6 +7,8 @@ import './Home.scss';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { HomeHeaderRow } from '../../components/Header/Header';
+import Metadata from '../../components/Metadata/Metadata';
+import metadata from '../../App/meta';
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
@@ -29,6 +31,7 @@ export const Home = () => {
         style={splashRowStyle}
       >
         <Col>
+          <Metadata {...metadata} />
           {/* <Header /> */}
           <h2>{(TAGLINE)}</h2>
           <SplashSocials />
