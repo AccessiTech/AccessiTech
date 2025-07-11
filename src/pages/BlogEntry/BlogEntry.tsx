@@ -12,6 +12,7 @@ import remarkDirective from "remark-directive";
 import { CustomMarkdownLink } from "../../components/CustomLink/CustomLink";
 import './BlogEntry.css';
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
+import Header from "../../components/Header/Header";
 
 export interface FetchBlogEntryProps {
   id: string;
@@ -26,7 +27,7 @@ export interface BlogEntryType extends React.FC<BlogEntryProps> {
   loadData: (url?: string) => Promise<void>;
 }
 
-export const getChildText = (node: any):string => {
+export const getChildText = (node: any): string => {
   if (!node || !node.children || node.children.length === 0) return '';
   const child = node.children[0];
   if (typeof child === 'string') return child;
@@ -77,6 +78,11 @@ export const BlogEntry = () => {
   };
 
   return (<>
+    <Row className="header-row">
+      <Col md={{ span: 8, offset: 2 }}>
+        <Header />
+      </Col>
+    </Row>
     <Row className="breadcrumb-row">
       <Metadata {...metadata} />
       <Col className="offset-md-2">

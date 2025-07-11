@@ -6,6 +6,7 @@ import Services from '../../components/Services/Services';
 import './Home.scss';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import Header from '../../components/Header/Header';
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
@@ -21,66 +22,71 @@ export const Home = () => {
   const navigate = useNavigate();
   return (
     <>
-    {/* Splash Row */}
-    <Row
-      className="splash-row"
-      style={splashRowStyle}
-    >
-      <Col>
-        {/* <Header /> */}
-        <h2>{(TAGLINE)}</h2>
-        <SplashSocials />
-      </Col>
-    </Row>
-
-    {/* Main Rows */}
-    <main id='main' aria-label={(ABOUT_ACCESSITECH)}>
-
-      
-      <Row className="cta-row">
-        <Col xs={12} md={{ span: 5, offset: 1 }} className="blog-cta">
-
-          <h3>Accessibility, done right.</h3>
-          <p>Explore expert-written articles, tools, and tips to help you build better, more inclusive digital products.</p>
-          <Button
-            href="/blog"
-            variant="primary"
-            size="lg"
-            onClick={(e:any) => {
-              e.preventDefault();
-              navigate('/blog')
-            }}
-          >Browse the Blog</Button>
-
+      <Row className="header-row">
+        <Col>
+          <Header />
         </Col>
-        <Col xs={12} md={{ span: 5 }} className="wcag-cta mt-5 mt-md-0">
-
-          <h3>WCAG, made simple.</h3>
-          <p>Get clear, jargon-free explanations of the Web Content Accessibility Guidelines (WCAG) — one principle at a time.</p>
-          <Button
-            href="/wcag"
-            variant="primary"
-            size='lg'
-            onClick={(e:any) => {
-              e.preventDefault();
-              navigate('/wcag')
-            }}
-          >Start the Series</Button>
+      </Row>
+      {/* Splash Row */}
+      <Row
+        className="splash-row"
+        style={splashRowStyle}
+      >
+        <Col>
+          {/* <Header /> */}
+          <h2>{(TAGLINE)}</h2>
+          <SplashSocials />
         </Col>
       </Row>
 
-      <Services />
+      {/* Main Rows */}
+      <main id='main' aria-label={(ABOUT_ACCESSITECH)}>
 
-      <Row className="about-row">
-        <Col xs={12} md={{ span: 8, offset: 2 }}>
-          <blockquote>
-            <p>{(VISION_P3)}</p>
-          </blockquote>
-        </Col>
-      </Row>
-    </main>
-  </>
-);
+
+        <Row className="cta-row">
+          <Col xs={12} md={{ span: 5, offset: 1 }} className="blog-cta">
+
+            <h3>Accessibility, done right.</h3>
+            <p>Explore expert-written articles, tools, and tips to help you build better, more inclusive digital products.</p>
+            <Button
+              href="/blog"
+              variant="primary"
+              size="lg"
+              onClick={(e: any) => {
+                e.preventDefault();
+                navigate('/blog')
+              }}
+            >Browse the Blog</Button>
+
+          </Col>
+          <Col xs={12} md={{ span: 5 }} className="wcag-cta mt-5 mt-md-0">
+
+            <h3>WCAG, made simple.</h3>
+            <p>Get clear, jargon-free explanations of the Web Content Accessibility Guidelines (WCAG) — one principle at a time.</p>
+            <Button
+              href="/wcag"
+              variant="primary"
+              size='lg'
+              onClick={(e: any) => {
+                e.preventDefault();
+                navigate('/wcag')
+              }}
+            >Start the Series</Button>
+          </Col>
+        </Row>
+
+        <Services />
+
+        <Row className="about-row">
+          <Col xs={12} md={{ span: 8, offset: 2 }}>
+            <blockquote>
+              <p>{(VISION_P3)}</p>
+            </blockquote>
+          </Col>
+        </Row>
+      </main>
+    </>
+  );
 }
 
 export default Home;

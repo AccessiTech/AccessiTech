@@ -18,11 +18,6 @@ export interface AppProps {
 export const App = (props: AppProps) => {
   const Content = <>
       <Container fluid className="App" aria-label={(APP_ROOT)}>
-        <Row className="header-row">
-          <Col>
-            <Header />
-          </Col>
-        </Row>
         {/* Main Content Row */}
         <Routes>
           <Route path="/" element={<Home />} />
