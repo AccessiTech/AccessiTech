@@ -112,7 +112,29 @@ export const BlogEntry = () => {
                           <SectionHeader
                             title={titleText}
                             id={titleText.toLowerCase().replace(/\s+/g, '-')}
-                            use="h2"
+                            use={"h2"}
+                          />
+                        );
+                      },
+                      h3: ({ node }) => {
+                        // Safely extract text from node.children[0]
+                        const titleText = getChildText(node);
+                        return (
+                          <SectionHeader
+                            title={titleText}
+                            id={titleText.toLowerCase().replace(/\s+/g, '-')}
+                            use={"h3"}
+                          />
+                        );
+                      },
+                      h4: ({ node }) => {
+                        // Safely extract text from node.children[0]
+                        const titleText = getChildText(node);
+                        return (
+                          <SectionHeader
+                            title={titleText}
+                            id={titleText.toLowerCase().replace(/\s+/g, '-')}
+                            use={"h4"}
                           />
                         );
                       },
