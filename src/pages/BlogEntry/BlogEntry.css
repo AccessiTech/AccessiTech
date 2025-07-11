@@ -90,3 +90,7 @@
     color: #e40374;
     box-shadow:  0 0 0 2px #e40374 inset;
 }
+
+.simplified-view sup > .fa.fa-external-link-alt {
+    display: none;
+}
