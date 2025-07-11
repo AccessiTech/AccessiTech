@@ -4,6 +4,7 @@
 .blog-page {
   background-color: $yellow;
 }
+
 .blog.breadcrumb-row {
   background-color: $yellow;
 }
@@ -26,20 +27,30 @@
     padding-left: 2rem;
   }
 
+  hr {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1.5rem 0 0;
+    opacity: 1;
+  }
+
   .blog-entry {
     @include margin(1.5rem 0);
   }
 }
 
-.blog-entry-page, .blog-entry-links-row {
+.blog-entry-page,
+.blog-entry-links-row {
   h1 {
     @include font-resize(2rem);
     @include margin(1rem 0 1.75rem);
   }
+
   h2 {
     @include font-resize(1.5rem);
     @include margin(1.75rem 0 1rem);
   }
+
   a {
     font-weight: bold;
     text-decoration: underline dotted $pink;
