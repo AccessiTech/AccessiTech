@@ -1,14 +1,14 @@
 import { JSX } from "react";
 import { ExtraProps } from "react-markdown";
 import { SITE_HOST } from "../../settings/env";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useMatch } from "react-router-dom";
 
 // LinkProps extends the default link props and react-markdown's ExtraProps
 export type LinkProps = JSX.IntrinsicElements['a'] & ExtraProps;
 
 export const CustomMarkdownLink = ({ href, title, ...props }: LinkProps) => {
-  const location = useLocation();
-  const pathname = location.pathname.split('/')[1] || '';
+  const match = useMatch("/:base/*");
+  const basePath = match?.params.base || '';
 
   // If the link is external, open in a new tab
   if (href && href.startsWith('http') && !href.includes(SITE_HOST)) {
