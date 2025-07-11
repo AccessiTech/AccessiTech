@@ -68,7 +68,7 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
 
   return (<>
     <Row className="header-row">
-      <Col md={{ span: 8, offset: 2 }}>
+      <Col xs={{ span: 11 }} md={{ span: 8, offset: 2 }}>
         <Header />
       </Col>
     </Row>

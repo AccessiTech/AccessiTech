@@ -5,7 +5,6 @@ import Blog from "../pages/Blog/Blog";
 import BlogEntry from "../pages/BlogEntry/BlogEntry";
 import { Container, Row, Col } from "react-bootstrap";
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
 import Metadata from "../components/Metadata/Metadata";
 import { getMetaData } from "../settings/getMetaData";
 import { metadata } from "./meta";
