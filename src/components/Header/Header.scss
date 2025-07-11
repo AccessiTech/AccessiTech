@@ -1,23 +1,27 @@
 @import "bootstrap/scss/bootstrap.scss";
 
 .header-row {
+  background-color: $darkBlue;
   .col {
     @include padding(0);
   }
+  
 }
 
 .main-header {
   position: relative;
-  background-color: $darkBlue;
   z-index: 5;
   width: 100%;
+  text-align: left;
 
   &.home {
     position: absolute;
     background-color: transparent;
+    text-align: center;
 
     a.logo-link {
       margin-top: 16vh;
+      @include padding(1rem);
     }
   }
 
@@ -39,7 +43,7 @@
 
   a.logo-link {
     display: inline-block;
-    @include padding(1rem);
+    @include padding(1rem 0);
     text-decoration: none;
     
     &:focus,
