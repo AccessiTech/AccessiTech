@@ -144,22 +144,28 @@ export interface BlogEntriesArrayProps {
   order?: BlogOrder;
   pathname?: string;
 }
+import { useMemo } from "react";
+
 export const useBlogEntriesArray = ({order, pathname}: BlogEntriesArrayProps): Blog[] => {
   const entries = useBlogEntries();
-  return Object.values(entries).filter((entry) => entry.pathname === pathname).sort((a, b) => {
-    switch (order || BlogOrder.DATE_DESC) {
-      case BlogOrder.ASC:
-        return a.title.localeCompare(b.title);
-      case BlogOrder.DESC:
-        return b.title.localeCompare(a.title);
-      case BlogOrder.DATE_ASC:
-        return a.date.localeCompare(b.date);
-      case BlogOrder.DATE_DESC:
-        return b.date.localeCompare(a.date);
-      case BlogOrder.NATURAL:
-        return naturalGuidelineSort(a.title, b.title);
-      default:
-        return 0;
-    }
-  });
+  return useMemo(() => {
+    return Object.values(entries)
+      .filter((entry) => entry.pathname === pathname)
+      .sort((a, b) => {
+        switch (order || BlogOrder.DATE_DESC) {
+          case BlogOrder.ASC:
+            return a.title.localeCompare(b.title);
+          case BlogOrder.DESC:
+            return b.title.localeCompare(a.title);
+          case BlogOrder.DATE_ASC:
+            return a.date.localeCompare(b.date);
+          case BlogOrder.DATE_DESC:
+            return b.date.localeCompare(a.date);
+          case BlogOrder.NATURAL:
+            return naturalGuidelineSort(a.title, b.title);
+          default:
+            return 0;
+        }
+      });
+  }, [entries, order, pathname]);
 };
