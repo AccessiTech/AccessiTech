@@ -99,5 +99,5 @@ export function naturalGuidelineSort(a: string, b: string): number {
     const bNum = bParts[i] ?? 0;
     if (aNum !== bNum) return aNum - bNum;
   }
-  return 0;
+  return a.localeCompare(b);
 }
