@@ -1,7 +1,7 @@
 {
   "name": "@accessitech/homepage",
   "private": false,
-  "version": "2.3.1",
+  "version": "2.3.2",
   "type": "module",
   "engines": {
     "node": ">=v20.19.0"
