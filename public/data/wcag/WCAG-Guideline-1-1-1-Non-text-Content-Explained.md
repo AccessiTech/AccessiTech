@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures accessible alternatives for images, icons, and other non-text content.
+previous: /blog/The-Four-Principles-of-Accessibility-POUR, The Four Principles of Accessibility (POUR)
+next: /wcag/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained, Guideline 1.2.1 - Audio-only and Video-only (Prerecorded)
 -->
 
 # **WCAG Guideline 1.1.1: Non-text Content Explained**
