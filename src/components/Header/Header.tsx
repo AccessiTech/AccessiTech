@@ -46,20 +46,20 @@ function Header() {
   )
 }
 
-export const HeaderRow = () => (
+export const GenericHeaderRow = ({ colProps }: { colProps: object }) => (
   <Row className="header-row">
-    <Col xs={11} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+    <Col {...colProps}>
       <Header />
     </Col>
   </Row>
 );
 
+export const HeaderRow = () => (
+  <GenericHeaderRow colProps={{ xs: 11, sm: { span: 10, offset: 1 }, lg: { span: 8, offset: 2 } }} />
+);
+
 export const HomeHeaderRow = () => (
-  <Row className="header-row">
-    <Col>
-      <Header />
-    </Col>
-  </Row>
+  <GenericHeaderRow colProps={{}} />
 );
 
 export default Header;
