@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures authentication processes are accessible without requiring cognitive function tests.
+previous: /wcag/WCAG-Guideline-3-3-7-Redundant-Entry-Explained, Guideline 3.3.7 - Redundant Entry
+next: /wcag/WCAG-Guideline-3-3-9-Accessible-Authentication-Enhanced-Explained, Guideline 3.3.9 - Accessible Authentication (Enhanced)
 -->
 
 # **WCAG Guideline 3.3.8: Accessible Authentication (Minimum) Explained**
@@ -26,8 +28,6 @@ Guideline 3.3 focuses on helping users avoid and correct mistakes when entering 
 
 ## **What Is Guideline 3.3.8 Accessible Authentication (Minimum)?**
 
-<!-- [Illustration: Login form with accessible options and a user icon] -->
-
 > "For each step in an authentication process, at least one method is available that does not rely on a cognitive function test, unless an alternative is provided."
 
 Guideline 3.3.8 requires that authentication (like logging in) does not depend solely on cognitive function tests (e.g., puzzles, remembering passwords), unless an accessible alternative is available.
@@ -42,8 +42,6 @@ For more, see [BOIA: Does Accessible Authentication Mean Less Security?](https:/
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Login icon, user with assistive tech, and accessible options] -->
-
 - **All Users:** May struggle with memory or cognitive tests
 - **Users with Disabilities:** Need alternatives to puzzles or password recall
 - **Accessibility:** Ensures everyone can log in or authenticate
@@ -54,8 +52,6 @@ For more, see [W3C’s guidance on Accessible Authentication (Minimum)](https://
 
 ## **What Needs Accessible Authentication?**
 
-<!-- [Grid: Login forms, two-factor authentication, and alternative methods] -->
-
 - Login and authentication forms
 - Two-factor authentication
 - Any step requiring user authentication
@@ -63,8 +59,6 @@ For more, see [W3C’s guidance on Accessible Authentication (Minimum)](https://
 ---
 
 ## **How to Meet Guideline 3.3.8**
-
-<!-- [Side-by-side: Good example (password manager, copy-paste allowed) vs. Bad example (puzzle or memory test)] -->
 
 - Allow use of password managers and copy-paste
 - Provide alternatives to cognitive function tests (e.g., email link, biometric)
@@ -77,8 +71,6 @@ For more, see the [W3C's Accessible Authentication Techniques](https://www.w3.or
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with accessible login, right side with puzzle or memory test] -->
-
 - Requiring only cognitive function tests for authentication
 - Blocking password managers or copy-paste
 - Not providing accessible alternatives
@@ -86,8 +78,6 @@ For more, see the [W3C's Accessible Authentication Techniques](https://www.w3.or
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.3.8 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AA:** Requires accessible authentication methods (minimum).
 - **Level AAA:** No additional requirements for 3.3.8.
@@ -99,8 +89,6 @@ For more, see the [W3C’s official documentation for 3.3.8 Accessible Authentic
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for login, accessible option, and user] -->
-
 - Authentication does not rely solely on cognitive function tests
 - Alternatives are provided for all authentication steps
 - Password managers and copy-paste are allowed
@@ -110,12 +98,7 @@ For more, see the [W3C’s official documentation for 3.3.8 Accessible Authentic
 
 ## **Summary**
 
-<!-- [Illustration: User logging in with accessible options] -->
-
 Guideline 3.3.8 ensures that everyone can authenticate without unnecessary cognitive barriers. Provide accessible alternatives for all authentication steps.
 
-**Next Up:**
 
-[Read Guideline 3.3.9: Accessible Authentication (Enhanced) →](WCAG-Guideline-3-3-9-Accessible-Authentication-Enhanced-Explained)
-
-*Accessibility starts at login—make authentication easy for everyone!*
+*Accessibility starts at login—make authentication easy for everyone!* 

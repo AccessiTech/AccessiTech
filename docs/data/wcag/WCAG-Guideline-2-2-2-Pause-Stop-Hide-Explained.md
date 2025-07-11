@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can control moving, blinking, or auto-updating content.
+next: /wcag/WCAG-Guideline-2-2-3-No-Timing-Explained, Guideline 2.2.3 - No Timing
+previous: /wcag/WCAG-Guideline-2-2-1-Timing-Adjustable-Explained, Guideline 2.2.1 - Timing Adjustable
 -->
 
 # **WCAG Guideline 2.2.2: Pause, Stop, Hide Explained**
@@ -26,8 +28,6 @@ Guideline 2.2 focuses on making sure users have enough time and control over con
 
 ## **What Is Guideline 2.2.2 Pause, Stop, Hide?**
 
-<!-- [Illustration: User pausing a moving banner or animation] -->
-
 > "For any moving, blinking, scrolling, or auto-updating information, users must be able to pause, stop, or hide it."
 
 Guideline 2.2.2 Pause, Stop, Hide is a requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide).
@@ -44,8 +44,6 @@ For more, see [Does WCAG Pause, Stop, Hide Apply to Simple Animations? (BOIA)](h
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User pausing animation, warning icon, and settings gear] -->
-
 - **Inclusivity:** Moving or blinking content can distract or trigger users with cognitive or neurological disabilities.
 - **Legal Compliance:** Pause, Stop, Hide is a Level A requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents frustration and improves focus for all users.
@@ -55,8 +53,6 @@ For more, see [W3C’s guidance on moving content](https://www.w3.org/WAI/WCAG22
 ---
 
 ## **What Needs to Support Pause, Stop, Hide?**
-
-<!-- [Grid: Carousels, banners, tickers, all with pause icons] -->
 
 - Carousels and sliders
 - News tickers and banners
@@ -69,9 +65,6 @@ All must provide a way to pause, stop, or hide the content.
 
 ## **How to Make Content Pause, Stop, or Hide**
 
-<!-- [Side-by-side code snippets: Pause button, stop animation]
-[Example: Settings panel for animation control] -->
-
 - Provide visible controls to pause, stop, or hide moving content
 - Ensure controls are keyboard accessible
 - Document all controls and options
@@ -83,8 +76,6 @@ For more, see the [W3C's Pause, Stop, Hide Techniques](https://www.w3.org/WAI/WC
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with pause button, right side with no controls] -->
-
 - No way to pause or stop moving content
 - Controls not accessible by keyboard
 - Not documenting controls
@@ -93,8 +84,6 @@ For more, see the [W3C's Pause, Stop, Hide Techniques](https://www.w3.org/WAI/WC
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.2.2 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires users can pause, stop, or hide moving, blinking, or auto-updating content. This is the core requirement for 2.2.2 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 2.2.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -106,8 +95,6 @@ For more, see the [W3C’s official documentation for 2.2.2 Pause, Stop, Hide](h
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (pause, stop, hide, etc.)] -->
-
 - All moving, blinking, or auto-updating content can be paused, stopped, or hidden
 - Controls are visible and keyboard accessible
 - All controls are documented for users
@@ -117,12 +104,5 @@ For more, see the [W3C’s official documentation for 2.2.2 Pause, Stop, Hide](h
 
 ## **Summary**
 
-<!-- [Illustration: User pausing a moving banner in a web app] -->
-
 Guideline 2.2.2 is essential for preventing distractions and supporting users with cognitive or neurological disabilities. By allowing users to pause, stop, or hide moving content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make content control a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.2.3: No Timing →](WCAG-Guideline-2-2-3-No-Timing-Explained)
-
-*Accessibility means giving users control over motion—make your site calm and user-friendly!*

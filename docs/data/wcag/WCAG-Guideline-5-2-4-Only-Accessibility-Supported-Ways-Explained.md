@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guid
 status: published
 date: 2025-07-08
 excerpt: This section explains the requirement that only accessibility-supported ways of using technologies can be relied upon to meet WCAG, and what to do if a feature is not accessibility supported.
+previous: /wcag/WCAG-Guideline-5-2-3-Complete-Processes-Explained, Guideline 5.2.3 - Complete Processes
+next: /wcag/WCAG-Guideline-5-2-5-Non-Interference-Explained, Guideline 5.2.5 - Non-Interference
 --->
 
 # **WCAG 2.1 Section 5.2.4: Only Accessibility-Supported Ways of Using Technologies**
@@ -64,8 +66,5 @@ You can only claim WCAG conformance if you use technologies in ways that are acc
 
 ---
 
-## **Next Up:**
-
-[Read Guideline 5.2.5: Non-Interference →](WCAG-Guideline-5-2-5-Non-Interference-Explained)
 
 *Accessibility means using technologies in ways everyone can access.*

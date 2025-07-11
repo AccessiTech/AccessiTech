@@ -8,6 +8,7 @@ categories: Disability Advocacy, Web Accessibility
 image: Building-a-More-Accessible-Future-Through-Design-and-Technology.png
 imageAlt: Dark blue text on yellow background saying, Building a More Accessible Future Through Design and Technology
 status: published
+next: /blog/How-AccessiTech-Meets-You-Where-You-Are, Accessibility Isn’t One-Size-Fits-All - How AccessiTech Meets You Where You Are
 -->
 
 # Building a More Accessible Future Through Design and Technology

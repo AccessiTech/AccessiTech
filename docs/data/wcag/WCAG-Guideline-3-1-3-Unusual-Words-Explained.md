@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures unusual words are explained or defined for clarity.
+previous: /wcag/WCAG-Guideline-3-1-2-Language-of-Parts-Explained, Guideline 3.1.2 - Language of Parts
+next: /wcag/WCAG-Guideline-3-1-4-Abbreviations-Explained, Guideline 3.1.4 - Abbreviations
 -->
 
 # **WCAG Guideline 3.1.3: Unusual Words Explained**
@@ -26,8 +28,6 @@ Guideline 3.1 focuses on making text content readable and understandable by iden
 
 ## **What Is Guideline 3.1.3 Unusual Words?**
 
-<!-- [Illustration: User reading a definition for an unusual word] -->
-
 > "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon."
 
 Guideline 3.1.3 requires that users can access definitions for words or phrases that are used in an unusual, technical, or restricted way.
@@ -42,8 +42,6 @@ For more, see [AccessGuide: Unusual Words](https://www.accessguide.io/guide/unus
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with dictionary, highlighted word, and definition] -->
-
 - **Inclusivity:** Explaining unusual words helps users with cognitive disabilities and non-native speakers.
 - **Legal Compliance:** Unusual Words is a Level AAA requirement in WCAG 2.1 and 2.2.
 - **Usability:** Improves comprehension for all users.
@@ -54,8 +52,6 @@ For more, see [W3C’s guidance on Unusual Words](https://www.w3.org/WAI/WCAG22/
 
 ## **What Needs Unusual Words Explained?**
 
-<!-- [Grid: Jargon, idioms, technical terms, all with definition icons] -->
-
 - Jargon and idioms
 - Technical terms
 - Any word used in an unusual or restricted way
@@ -63,9 +59,6 @@ For more, see [W3C’s guidance on Unusual Words](https://www.w3.org/WAI/WCAG22/
 ---
 
 ## **How to Make Unusual Words Accessible**
-
-<!-- [Side-by-side code snippets: Word with definition, word without definition]
-[Example: Settings panel for definitions] -->
 
 - Provide definitions for unusual words
 - Use tooltips, glossaries, or inline explanations
@@ -78,8 +71,6 @@ For more, see the [W3C's Unusual Words Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with definition, right side with no definition] -->
-
 - Not explaining jargon or idioms
 - No glossary or definitions provided
 - Not documenting terminology conventions
@@ -88,8 +79,6 @@ For more, see the [W3C's Unusual Words Techniques](https://www.w3.org/WAI/WCAG22
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.1.3 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Not applicable for this guideline.
 - **Level AA:** Not applicable for this guideline.
@@ -101,8 +90,6 @@ For more, see the [W3C’s official documentation for 3.1.3 Unusual Words](https
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (definition, glossary, tooltip, etc.)] -->
-
 - Definitions are provided for unusual words
 - Tooltips, glossaries, or inline explanations are used
 - Terminology conventions are documented
@@ -112,12 +99,7 @@ For more, see the [W3C’s official documentation for 3.1.3 Unusual Words](https
 
 ## **Summary**
 
-<!-- [Illustration: User reading a definition in a web app] -->
-
 Guideline 3.1.3 is essential for helping users understand your site. By explaining unusual words, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make terminology accessibility a core part of your development process.
 
-**Next Up:**
 
-[Read Guideline 3.1.4: Abbreviations →](WCAG-Guideline-3-1-4-Abbreviations-Explained)
-
-*Accessibility means clarity—help users understand every word!*
+*Accessibility means clarity—help users understand every word!* 

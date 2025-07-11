@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline helps users fix mistakes with helpful error suggestions.
+previous: /wcag/WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained, Guideline 3.3.2 - Labels or Instructions
+next: /wcag/WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained, Guideline 3.3.4 - Error Prevention (Legal, Financial, Data)
 --->
 
 # **WCAG Guideline 3.3.3: Error Suggestion Explained**
@@ -26,8 +28,6 @@ Guideline 3.3 focuses on helping users avoid and correct mistakes when entering 
 
 ## **What Is Guideline 3.3.3 Error Suggestion?**
 
-<!-- [Illustration: Form with a helpful error suggestion message] -->
-
 > "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user."
 
 Guideline 3.3.3 requires that when a user makes a mistake in a form or input, and the system knows how to fix it, a helpful suggestion is provided.
@@ -42,8 +42,6 @@ For more, see [BOIA: Tips for Meeting WCAG’s Requirement for Error Suggestion]
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Form with a helpful error suggestion message] -->
-
 - **All Users:** Need clear feedback to correct mistakes
 - **Screen Reader Users:** Rely on text descriptions of errors and suggestions
 - **Accessibility:** Reduces frustration and improves success rates
@@ -54,8 +52,6 @@ For more, see [W3C’s guidance on Error Suggestion](https://www.w3.org/WAI/WCAG
 
 ## **What Needs Error Suggestions?**
 
-<!-- [Grid: Form fields, error messages, and suggestions] -->
-
 - All forms and input fields
 - Any user data entry that can be validated
 - Suggestions must be clear, specific, and in text
@@ -63,8 +59,6 @@ For more, see [W3C’s guidance on Error Suggestion](https://www.w3.org/WAI/WCAG
 ---
 
 ## **How to Meet Guideline 3.3.3**
-
-<!-- [Side-by-side: Good example (clear suggestion next to field) vs. Bad example (no suggestion or only color)] -->
 
 - Provide a text suggestion describing how to fix the problem
 - Identify the specific field or item in error
@@ -77,8 +71,6 @@ For more, see the [W3C's Error Suggestion Techniques](https://www.w3.org/WAI/WCA
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with clear text suggestion, right side with only color or icon] -->
-
 - Using only color or icons to indicate suggestions
 - Not describing the suggestion in text
 - Failing to identify the specific field in error
@@ -86,8 +78,6 @@ For more, see the [W3C's Error Suggestion Techniques](https://www.w3.org/WAI/WCA
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.3.3 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires error suggestions in text when known.
 - **Level AA:** No additional requirements for 3.3.3.
@@ -99,8 +89,6 @@ For more, see the [W3C’s official documentation for 3.3.3 Error Suggestion](ht
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for suggestion, form, and text message] -->
-
 - All input errors have suggestions in text when known
 - Suggestions are clear and specific
 - The field in error is clearly indicated
@@ -110,12 +98,7 @@ For more, see the [W3C’s official documentation for 3.3.3 Error Suggestion](ht
 
 ## **Summary**
 
-<!-- [Illustration: User correcting a form error with helpful suggestion] -->
-
 Guideline 3.3.3 ensures that users can fix mistakes in forms and inputs with helpful, accessible suggestions.
 
-**Next Up:**
 
-[Read Guideline 3.3.4: Error Prevention (Legal, Financial, Data) →](WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained)
-
-*Helpful suggestions lead to confident users—make your error messages actionable!*
+*Helpful suggestions lead to confident users—make your error messages actionable!* 

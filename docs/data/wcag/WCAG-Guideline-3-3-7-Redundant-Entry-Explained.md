@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users don't have to re-enter information they've already provided.
+previous: /wcag/WCAG-Guideline-3-3-6-Error-Prevention-All-Explained, Guideline 3.3.6 - Error Prevention (All)
+next: /wcag/WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained, Guideline 3.3.8 - Accessible Authentication (Minimum)
 -->
 
 # **WCAG Guideline 3.3.7: Redundant Entry Explained**
@@ -26,8 +28,6 @@ Guideline 3.3 focuses on helping users avoid and correct mistakes when entering 
 
 ## **What Is Guideline 3.3.7 Redundant Entry?**
 
-<!-- [Illustration: Form with auto-filled fields and a user icon] -->
-
 > "Information previously entered by or provided to the user is either auto-populated or available for the user to select."
 
 Guideline 3.3.7 requires that users are not forced to re-enter the same information multiple times in a single process.
@@ -42,8 +42,6 @@ For more, see [BOIA: What is Redundant Entry and How Does It Affect Accessibilit
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Auto-fill icon, user with assistive tech, and form fields] -->
-
 - **All Users:** Benefit from reduced repetition and effort
 - **Users with Disabilities:** May find repeated entry especially challenging
 - **Accessibility:** Improves efficiency and reduces frustration
@@ -54,8 +52,6 @@ For more, see [W3C’s guidance on Redundant Entry](https://www.w3.org/WAI/WCAG2
 
 ## **What Needs to Avoid Redundant Entry?**
 
-<!-- [Grid: Multi-step forms, checkout processes, and registration flows] -->
-
 - Multi-step forms (e.g., checkout, registration)
 - Any process requiring repeated information
 - Auto-populate or allow selection of previously entered data
@@ -63,8 +59,6 @@ For more, see [W3C’s guidance on Redundant Entry](https://www.w3.org/WAI/WCAG2
 ---
 
 ## **How to Meet Guideline 3.3.7**
-
-<!-- [Side-by-side: Good example (auto-filled fields) vs. Bad example (user re-entering info)] -->
 
 - Auto-populate fields with previously entered information
 - Allow users to select from previously provided data
@@ -76,8 +70,6 @@ For more, see the [W3C's Redundant Entry Techniques](https://www.w3.org/WAI/WCAG
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with auto-filled fields, right side with repeated entry] -->
-
 - Forcing users to re-enter the same information
 - Not providing auto-fill or selection options
 - Failing to test multi-step forms for redundancy
@@ -85,8 +77,6 @@ For more, see the [W3C's Redundant Entry Techniques](https://www.w3.org/WAI/WCAG
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.3.7 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AA:** Requires redundant entry to be avoided in multi-step processes.
 - **Level AAA:** No additional requirements for 3.3.7.
@@ -98,8 +88,6 @@ For more, see the [W3C’s official documentation for 3.3.7 Redundant Entry](htt
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for auto-fill, user, and form fields] -->
-
 - Fields are auto-populated or selectable if previously entered
 - No repeated entry required in multi-step forms
 - Tested for redundancy with assistive technology
@@ -108,12 +96,7 @@ For more, see the [W3C’s official documentation for 3.3.7 Redundant Entry](htt
 
 ## **Summary**
 
-<!-- [Illustration: User completing a form with auto-filled fields] -->
-
 Guideline 3.3.7 ensures that users don’t have to enter the same information more than once in a process. Reduce repetition for a smoother, more accessible experience.
 
-**Next Up:**
 
-[Read Guideline 3.3.8: Accessible Authentication (Minimum) →](WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained)
-
-*Efficiency and ease—help users by reducing unnecessary repetition!*
+*Efficiency and ease—help users by reducing unnecessary repetition!* 

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guid
 status: published
 date: 2025-07-08
 excerpt: This section explains the requirement that all pages in a process must conform to WCAG at the specified level, not just individual pages.
+previous: /wcag/WCAG-Guideline-5-2-2-Full-Pages-Explained, Guideline 5.2.2 - Full Pages
+next: /wcag/WCAG-Guideline-5-2-4-Only-Accessibility-Supported-Ways-Explained, Guideline 5.2.4 - Only Accessibility-Supported Ways of Using Technologies
 -->
 
 # **WCAG 2.1 Section 5.2.3: Complete Processes**
@@ -56,8 +58,5 @@ A "process" is a series of user actions where each action is required to complet
 
 ---
 
-**Next Up:**
-
-[Read Guideline 5.2.4: Only Accessibility-Supported Ways of Using Technologies →](WCAG-Guideline-5-2-4-Only-Accessibility-Supported-Ways-Explained)
 
 *Accessibility is a journey—every step in a process must be accessible for everyone.*

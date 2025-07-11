@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guid
 status: published
 date: 2025-07-08
 excerpt: This section explains the requirement that WCAG conformance applies to full web pages only, not just parts, and what counts as a full page.
+previous: /wcag/WCAG-Guideline-5-2-1-Conformance-Level-Explained, Guideline 5.2.1 - Conformance Level
+next: /wcag/WCAG-Guideline-5-2-3-Complete-Processes-Explained, Guideline 5.2.3 - Complete Processes
 --->
 
 # **WCAG 2.1 Section 5.2.2: Full Pages**
@@ -56,8 +58,5 @@ A "full page" includes each variation of the page that is automatically presente
 
 ---
 
-**Next Up:**
-
-[Read Guideline 5.2.3: Complete Processes →](WCAG-Guideline-5-2-3-Complete-Processes-Explained)
 
 *Conformance to WCAG means making the entire experience accessible—not just part of it.*

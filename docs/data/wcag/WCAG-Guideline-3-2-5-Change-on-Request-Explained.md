@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures changes in context or content only happen when users request them.
+previous: /wcag/WCAG-Guideline-3-2-4-Consistent-Identification-Explained, Guideline 3.2.4 - Consistent Identification
+next: /wcag/WCAG-Guideline-3-2-6-Consistent-Help-Explained, Guideline 3.2.6 - Consistent Help
 -->
 
 # **WCAG Guideline 3.2.5: Change on Request Explained**
@@ -26,8 +28,6 @@ Guideline 3.2 focuses on making web pages behave in ways users expect, especiall
 
 ## **What Is Guideline 3.2.5 Change on Request?**
 
-<!-- [Illustration: User clicking a button to trigger a change, no automatic changes] -->
-
 > "Changes of context are initiated only by user request or a mechanism is available to turn off such changes."
 
 Guideline 3.2.5 requires that changes in context (like navigation, popups, or content updates) only happen when the user requests them, or users can turn off automatic changes.
@@ -42,8 +42,6 @@ For more, see [AccessGuide: Change of Context](https://www.accessguide.io/guide/
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with assistive tech, warning icon, and control button] -->
-
 - **Keyboard and Screen Reader Users:** Need to control when changes happen
 - **All Users:** Predictable behavior builds trust and usability
 - **Accessibility:** Surprises can disorient or frustrate users
@@ -54,8 +52,6 @@ For more, see [W3C’s guidance on Change on Request](https://www.w3.org/WAI/WCA
 
 ## **What Needs to Change Only on Request?**
 
-<!-- [Grid: Navigation, popups, content updates, and form submissions] -->
-
 - Navigation to new pages or sections
 - Opening popups or dialogs
 - Updating content or context
@@ -64,8 +60,6 @@ For more, see [W3C’s guidance on Change on Request](https://www.w3.org/WAI/WCA
 ---
 
 ## **How to Meet Guideline 3.2.5**
-
-<!-- [Side-by-side: Good example (user clicks to trigger change) vs. Bad example (automatic navigation)] -->
 
 - Require explicit user action (click, tap, Enter) to trigger changes
 - Provide a mechanism to turn off automatic changes if needed
@@ -78,8 +72,6 @@ For more, see the [W3C's Change on Request Techniques](https://www.w3.org/WAI/WC
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with user-initiated change, right side with automatic change] -->
-
 - Triggering navigation or popups automatically without user action
 - Failing to provide a way to turn off automatic changes
 - Not testing with keyboard and assistive technology
@@ -87,8 +79,6 @@ For more, see the [W3C's Change on Request Techniques](https://www.w3.org/WAI/WC
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.2.5 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AAA:** Requires changes of context only on user request or a way to turn off automatic changes.
 - **Level AA:** Not applicable (3.2.5 is a Level AAA requirement).
@@ -100,8 +90,6 @@ For more, see the [W3C’s official documentation for 3.2.5 Change on Request](h
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for button, warning, and user] -->
-
 - All changes of context require explicit user action
 - Mechanism available to turn off automatic changes (if present)
 - Tested with keyboard and assistive technology
@@ -111,12 +99,7 @@ For more, see the [W3C’s official documentation for 3.2.5 Change on Request](h
 
 ## **Summary**
 
-<!-- [Illustration: User in control of changes on a website] -->
-
 Guideline 3.2.5 ensures that users are always in control of when changes happen on your site. Avoid surprises—let users decide when to trigger changes.
 
-**Next Up:**
 
-[WCAG-Guideline-3-2-6-Consistent-Help-Explained](WCAG-Guideline-3-2-6-Consistent-Help-Explained)
-
-*User control is essential—make sure changes only happen when your users want them!*
+*User control is essential—make sure changes only happen when your users want them!* 

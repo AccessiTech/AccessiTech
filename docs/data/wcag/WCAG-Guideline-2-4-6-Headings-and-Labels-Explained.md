@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures headings and labels describe the topic or purpose clearly.
+next: /wcag/WCAG-Guideline-2-4-7-Focus-Visible-Explained, Guideline 2.4.7 - Focus Visible
+previous: /wcag/WCAG-Guideline-2-4-5-Multiple-Ways-Explained, Guideline 2.4.5 - Multiple Ways
 -->
 
 # **WCAG Guideline 2.4.6: Headings and Labels Explained**
@@ -26,8 +28,6 @@ Guideline 2.4 focuses on making it easier for users to navigate, find content, a
 
 ## **What Is Guideline 2.4.6 Headings and Labels?**
 
-<!-- [Illustration: User reading a heading and label on a form] -->
-
 > "Headings and labels describe topic or purpose."
 
 Guideline 2.4.6 Headings and Labels is a Level AA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels).
@@ -44,8 +44,6 @@ For more, see [Why Using Correct Headlines is Vital to Your Website (BrandExtrac
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User reading headings, labels, and focus indicator] -->
-
 - **Inclusivity:** Clear headings and labels help users with screen readers and cognitive disabilities.
 - **Legal Compliance:** Headings and Labels is a Level AA requirement in WCAG 2.1 and 2.2.
 - **Usability:** Improves comprehension and navigation for all users.
@@ -56,8 +54,6 @@ For more, see [W3C’s guidance on headings and labels](https://www.w3.org/WAI/W
 
 ## **What Needs Clear Headings and Labels?**
 
-<!-- [Grid: Forms, sections, navigation, all with heading and label icons] -->
-
 - Forms and input fields
 - Page sections and navigation
 - Any content that benefits from a heading or label
@@ -67,9 +63,6 @@ All must have descriptive headings and labels.
 ---
 
 ## **How to Make Headings and Labels Accessible**
-
-<!-- [Side-by-side code snippets: Good heading, bad heading]
-[Example: Settings panel for headings and labels] -->
 
 - Use descriptive headings and labels
 - Place important information first
@@ -82,8 +75,6 @@ For more, see the [W3C's Headings and Labels Techniques](https://www.w3.org/WAI/
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with clear heading, right side with vague heading] -->
-
 - Vague or missing headings and labels
 - Headings and labels that don't describe topic or purpose
 - Not documenting heading and label conventions
@@ -92,8 +83,6 @@ For more, see the [W3C's Headings and Labels Techniques](https://www.w3.org/WAI/
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.4.6 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Not applicable for this guideline.
 - **Level AA:** Requires headings and labels describe topic or purpose. This is the core requirement for 2.4.6 and is mandatory for AA accessibility.
@@ -105,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.4.6 Headings and Labels]
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (heading, label, section, etc.)] -->
-
 - All headings and labels are descriptive
 - Important information is first
 - Heading and label conventions are documented
@@ -116,12 +103,5 @@ For more, see the [W3C’s official documentation for 2.4.6 Headings and Labels]
 
 ## **Summary**
 
-<!-- [Illustration: User reading a heading and label in a web app] -->
-
 Guideline 2.4.6 is essential for helping users understand and navigate your site. By providing clear headings and labels, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make headings and labels a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.4.7: Focus Visible →](WCAG-Guideline-2-4-7-Focus-Visible-Explained)
-
-*Accessibility means clarity—help users know where they are and what to do!*

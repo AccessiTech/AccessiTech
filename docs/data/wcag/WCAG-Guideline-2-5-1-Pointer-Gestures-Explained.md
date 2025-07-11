@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures all functionality is operable with simple pointer gestures.
+next: /wcag/WCAG-Guideline-2-5-2-Pointer-Cancellation-Explained, Guideline 2.5.2 - Pointer Cancellation
+previous: /wcag/WCAG-Guideline-2-4-7-Focus-Visible-Explained, Guideline 2.4.7 - Focus Visible
 -->
 
 # **WCAG Guideline 2.5.1: Pointer Gestures Explained**
@@ -26,8 +28,6 @@ Guideline 2.5 focuses on making it easier for users to operate functionality thr
 
 ## **What Is Guideline 2.5.1 Pointer Gestures?**
 
-<!-- [Illustration: User performing a simple tap gesture on a touchscreen] -->
-
 > "All functionality that uses multipoint or path-based gestures for operation can also be operated with a single pointer without a path-based gesture."
 
 Guideline 2.5.1 Pointer Gestures is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#pointer-gestures).
@@ -44,8 +44,6 @@ For more, see [AccessGuide: Single Pointer Gestures](https://www.accessguide.io/
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with limited dexterity, tap gesture, and accessibility icon] -->
-
 - **Inclusivity:** Complex gestures can be difficult for users with limited dexterity.
 - **Legal Compliance:** Pointer Gestures is a Level A requirement in WCAG 2.1 and 2.2.
 - **Usability:** Ensures all users can operate controls easily.
@@ -56,8 +54,6 @@ For more, see [W3C’s guidance on pointer gestures](https://www.w3.org/WAI/WCAG
 
 ## **What Needs Simple Pointer Gestures?**
 
-<!-- [Grid: Sliders, carousels, maps, all with tap icons] -->
-
 - Sliders and carousels
 - Maps and drawing tools
 - Any feature using multipoint or path-based gestures
@@ -67,9 +63,6 @@ All must be operable with a single tap, click, or equivalent simple gesture.
 ---
 
 ## **How to Make Pointer Gestures Accessible**
-
-<!-- [Side-by-side code snippets: Tap gesture, path-based gesture]
-[Example: Settings panel for gesture options] -->
 
 - Provide alternatives to complex gestures
 - Ensure all functionality is operable with a single tap or click
@@ -82,8 +75,6 @@ For more, see the [W3C's Pointer Gestures Techniques](https://www.w3.org/WAI/WCA
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with simple tap, right side with complex gesture] -->
-
 - Only supporting complex gestures
 - No alternative for path-based gestures
 - Not documenting gesture options
@@ -92,8 +83,6 @@ For more, see the [W3C's Pointer Gestures Techniques](https://www.w3.org/WAI/WCA
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.5.1 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires all functionality using multipoint or path-based gestures can also be operated with a single pointer. This is the core requirement for 2.5.1 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 2.5.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -105,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.5.1 Pointer Gestures](ht
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (tap, gesture, accessibility, etc.)] -->
-
 - All functionality is operable with a single pointer
 - Alternatives to complex gestures are provided
 - Gesture options are documented
@@ -116,12 +103,5 @@ For more, see the [W3C’s official documentation for 2.5.1 Pointer Gestures](ht
 
 ## **Summary**
 
-<!-- [Illustration: User tapping a control on a touchscreen] -->
-
 Guideline 2.5.1 is essential for ensuring all users can operate your site. By providing alternatives to complex gestures, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make gesture accessibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.5.2: Pointer Cancellation →](WCAG-Guideline-2-5-2-Pointer-Cancellation-Explained)
-
-*Accessibility means simple controls—make your site easy for everyone to use!*
