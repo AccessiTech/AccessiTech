@@ -23,7 +23,8 @@ export const CustomMarkdownLink = ({ href, title, ...props }: LinkProps) => {
   }
   // Otherwise, handle internal links normally
   if (href) {
-    return <Link {...props} to={`/${pathname}/${href}`}/>;
+    const isAbsolutePath = href.startsWith('/');
+    return <Link {...props} to={isAbsolutePath ? href : `/${pathname}/${href}`}/>;
   }
 
   // if no href, return a span
