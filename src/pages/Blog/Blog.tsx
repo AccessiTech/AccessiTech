@@ -63,7 +63,7 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
   const blog = useBlogEntriesArray({pathname, order});
 
   useEffect(() => {
-    fetchBlogEntries({pathname});
+    fetchBlogEntries({pathname, navigate});
   }, [pathname]);
 
   return (<>
