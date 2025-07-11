@@ -58,7 +58,7 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
   const location = useLocation();
   const pathname = location.pathname.replace(/\//, '');
   const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
-  const order = pathname === 'wcag' ? BlogOrder.ASC : BlogOrder.DATE_DESC;
+  const order = pathname === 'wcag' ? BlogOrder.NATURAL : BlogOrder.DATE_DESC;
   const blog = useBlogEntriesArray({pathname, order});
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
-import { getMetaData } from "../settings/utils";
+import { getMetaData, naturalGuidelineSort } from "../settings/utils";
 import { NavigateFunction } from "react-router-dom";
 
 export const blogSliceName = "blog";
@@ -13,6 +13,7 @@ export enum BlogOrder {
   DESC = "desc",
   DATE_ASC = "date_asc",
   DATE_DESC = "date_desc",
+  NATURAL = "natural",
 }
 
 export interface Blog {
@@ -155,6 +156,9 @@ export const useBlogEntriesArray = ({order, pathname}: BlogEntriesArrayProps): B
         return a.date.localeCompare(b.date);
       case BlogOrder.DATE_DESC:
         return b.date.localeCompare(a.date);
+      case BlogOrder.NATURAL:
+        console.log("Natural sort for blog entries");
+        return naturalGuidelineSort(a.title, b.title);
     }
   });
 };
