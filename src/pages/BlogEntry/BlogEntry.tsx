@@ -101,6 +101,7 @@ export const BlogEntry = () => {
               <div>
                 {!entry?.loaded ? <p>Loading...</p> :
                   <ReactMarkdown
+                    skipHtml={true}
                     remarkPlugins={[remarkGfm, remarkDirective, tableDirective]}
                     components={{
                       table: CustomMarkdownTable,
