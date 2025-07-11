@@ -6,7 +6,7 @@ import Services from '../../components/Services/Services';
 import './Home.scss';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import Header from '../../components/Header/Header';
+import { HomeHeaderRow } from '../../components/Header/Header';
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
@@ -22,11 +22,7 @@ export const Home = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Row className="header-row">
-        <Col>
-          <Header />
-        </Col>
-      </Row>
+      <HomeHeaderRow />
       {/* Splash Row */}
       <Row
         className="splash-row"

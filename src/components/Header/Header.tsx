@@ -6,6 +6,7 @@ import A11Y from '../A11Y/A11Y';
 import './Header.scss';
 import { useEffect, useState } from 'react';
 import { getPageFromPath } from '../../settings/utils';
+import { Row, Col } from 'react-bootstrap';
 
 export const HEADER = 'Header';
 
@@ -36,7 +37,7 @@ function Header() {
           <ul>
             {/* <li><Link to="/">Home</Link></li> */}
             <li><Link to="/blog" className={pathname === '/blog' ? 'active' : ''}>Blog</Link></li>
-            <li><Link to="/wcag" className={pathname === '/wcag' ? 'active' : ''}>WCAG</Link></li>
+            <li><Link to="/wcag" className={pathname === '/wcag' ? 'active' : ''}>WCAG Explained</Link></li>
           </ul>
         </nav>
       )}
@@ -44,5 +45,21 @@ function Header() {
     </header>
   )
 }
+
+export const HeaderRow = () => (
+  <Row className="header-row">
+    <Col xs={11} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+      <Header />
+    </Col>
+  </Row>
+);
+
+export const HomeHeaderRow = () => (
+  <Row className="header-row">
+    <Col>
+      <Header />
+    </Col>
+  </Row>
+);
 
 export default Header;

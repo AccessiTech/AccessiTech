@@ -1,13 +1,9 @@
 import { Row, Col } from "react-bootstrap";
-import Header from "../../components/Header/Header";
+import { HeaderRow } from "../../components/Header/Header";
 
 export const NotFound = () => {
   return (<>
-    <Row className="header-row">
-      <Col md={{ span: 8, offset: 2 }}>
-        <Header />
-      </Col>
-    </Row>
+    <HeaderRow />
     <Row className="content-row">
       <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <main id="main" aria-label="Page Not Found" className="not-found-page">
