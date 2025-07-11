@@ -5,7 +5,6 @@ import Blog from "../pages/Blog/Blog";
 import BlogEntry from "../pages/BlogEntry/BlogEntry";
 import { Container, Row, Col } from "react-bootstrap";
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
 import Metadata from "../components/Metadata/Metadata";
 import { getMetaData } from "../settings/getMetaData";
 import { metadata } from "./meta";
@@ -18,11 +17,6 @@ export interface AppProps {
 export const App = (props: AppProps) => {
   const Content = <>
       <Container fluid className="App" aria-label={(APP_ROOT)}>
-        <Row className="header-row">
-          <Col>
-            <Header />
-          </Col>
-        </Row>
         {/* Main Content Row */}
         <Routes>
           <Route path="/" element={<Home />} />

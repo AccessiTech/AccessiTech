@@ -7,12 +7,13 @@
 }
 
 .splash-row {
-  height: 100vh;
+  height: 50vh;
+  min-height: 20rem;
   background-size: cover;
   background-position: center;
 
   h2 {
-    margin-top: calc(36vh + 1rem + 4rem);
+    margin-top: calc(16vh + 1rem + 4rem);
     color: $white;
     font-style: italic;
     font-weight: 300;

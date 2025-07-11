@@ -7,6 +7,7 @@ import './Blog.scss';
 import { getDDMMMYYYY } from "../../settings/utils";
 import Metadata from "../../components/Metadata/Metadata";
 import { metadata } from "./meta";
+import Header from "../../components/Header/Header";
 
 interface FetchBlogEntriesProps {
   url?: string;
@@ -62,10 +63,15 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
   const blog = useBlogEntriesArray({pathname, order});
 
   useEffect(() => {
-    fetchBlogEntries({pathname});
-  }, []);
+    fetchBlogEntries({pathname, navigate});
+  }, [pathname]);
 
   return (<>
+    <Row className="header-row">
+      <Col xs={{ span: 11 }} md={{ span: 8, offset: 2 }}>
+        <Header />
+      </Col>
+    </Row>
     <Row className="breadcrumb-row blog">
       <Metadata {...metadata} />
       <Col className="offset-md-2">
