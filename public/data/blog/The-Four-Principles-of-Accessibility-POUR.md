@@ -19,7 +19,7 @@ previous: /blog/Introduction-to-WCAG-What-It-Is-and-Why-It-Matters, Introduction
 
 ## **Introduction: Why POUR Matters**
 
-Welcome back to our series on web accessibility! In our [last post](./Introduction-to-WCAG-What-It-Is-and-Why-It-Matters.md), we explored what WCAG is and why it’s essential for everyone. Now, let’s break down the heart of WCAG: the four principles that make digital content accessible to all.
+Welcome back to our series on web accessibility! In our [last post](/blog/Introduction-to-WCAG-What-It-Is-and-Why-It-Matters), we explored what WCAG is and why it’s essential for everyone. Now, let’s break down the heart of WCAG: the four principles that make digital content accessible to all.
 
 These principles—**Perceivable, Operable, Understandable, and Robust** (POUR)—are the foundation of accessible design. If your website or app meets these, you’re well on your way to true inclusivity.
 
