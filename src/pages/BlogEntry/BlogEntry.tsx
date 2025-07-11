@@ -36,7 +36,7 @@ export const getChildText = (node: any):string => {
   if (child && typeof child === 'object' && 'children' in child) {
     return getChildText(child);
   }
-  throw new Error("Unexpected node structure");
+  return '';
 }
 
 export const BlogEntry = () => {
