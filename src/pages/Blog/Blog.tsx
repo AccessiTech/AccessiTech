@@ -64,7 +64,7 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
 
   useEffect(() => {
     fetchBlogEntries({pathname});
-  }, []);
+  }, [pathname]);
 
   return (<>
     <Row className="header-row">
