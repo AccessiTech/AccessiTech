@@ -117,7 +117,7 @@ export const BlogEntry = () => {
                         );
                       },
                     }}
-                  >{entry.content.replace(/<!--.*?-->/g, '')}</ReactMarkdown>
+                  >{entry.content}</ReactMarkdown>
                 }
               </div>
             </Col>
