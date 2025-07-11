@@ -44,7 +44,11 @@ const fetchBlogEntries = async ({url, navigate, pathname}:FetchBlogEntriesProps)
     if (!id) {
       return null;
     }
-    await store.dispatch(getBlogEntry({ id, navigate, pathname }));
+    // Always check the latest state before dispatching
+    const latestState = store.getState();
+    if (!latestState.blog?.entries?.[id]) {
+      await store.dispatch(getBlogEntry({ id, navigate, pathname }));
+    }
   }).filter((item => item !== null));
 }
 export interface BlogProps {
