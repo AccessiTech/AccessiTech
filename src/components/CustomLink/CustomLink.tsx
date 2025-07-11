@@ -13,12 +13,13 @@ export const CustomMarkdownLink = ({ href, title, ...props }: LinkProps) => {
   // If the link is external, open in a new tab
   if (href && href.startsWith('http') && !href.includes(SITE_HOST)) {
     // append a font-awesome icon to the children[0] if it is a string
+    let enhancedChildren = props.children;
     if (props.children && typeof props.children === 'string') {
-      props.children = (<>
+      enhancedChildren = (<>
         {props.children} <sup><i className="fa fa-external-link-alt" aria-hidden="true"></i></sup>
       </>);
     }
-    return <a {...props} href={href} title="External Link" target="_blank" rel="noopener noreferrer" />;
+    return <a {...props} href={href} title="External Link" target="_blank" rel="noopener noreferrer" children={enhancedChildren} />;
   }
   // Otherwise, handle internal links normally
   if (href) {
