@@ -85,3 +85,19 @@ export const getDDMMMYYYY = (date: string):string => {
   };
   return new Date(date).toLocaleDateString('en-UK', options);
 }
+
+// Natural sort for WCAG guideline numbers like "1.4.10", "1.4.2", etc.
+export function naturalGuidelineSort(a: string, b: string): number {
+  // Extract the leading number sequence (e.g., "1.4.10" from "1.4.10 - Reflow")
+  const aMatch = a.match(/^([\d.]+)/);
+  const bMatch = b.match(/^([\d.]+)/);
+  const aParts = aMatch ? aMatch[1].split('.').map(Number) : [];
+  const bParts = bMatch ? bMatch[1].split('.').map(Number) : [];
+  const len = Math.max(aParts.length, bParts.length);
+  for (let i = 0; i < len; i++) {
+    const aNum = aParts[i] ?? 0;
+    const bNum = bParts[i] ?? 0;
+    if (aNum !== bNum) return aNum - bNum;
+  }
+  return a.localeCompare(b);
+}
