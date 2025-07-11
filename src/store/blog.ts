@@ -157,7 +157,6 @@ export const useBlogEntriesArray = ({order, pathname}: BlogEntriesArrayProps): B
       case BlogOrder.DATE_DESC:
         return b.date.localeCompare(a.date);
       case BlogOrder.NATURAL:
-        console.log("Natural sort for blog entries");
         return naturalGuidelineSort(a.title, b.title);
     }
   });
