@@ -8,6 +8,8 @@ series: Making the Web Accessible for All
 image: intorduction-to-wcag.png
 imageAlt:Dark blue text on yellow background saying, Introduction to WCAG, What it is and Why it Matters
 status: published
+next: /blog/The-Four-Principles-of-Accessibility-POUR, The Four Principles of Accessibility (POUR)
+previous: /blog/AI-for-Coding-Accessibility, AI for Coding Accessibility - How Tools Like Copilot Help Me Ship Code Despite Chronic Pain
 -->
 
 # **Introduction to WCAG: What It Is and Why It Matters**
@@ -114,8 +116,3 @@ Includes:
 9. Missing page language -> Set the page's lang attribute (e.g., `<html lang="en">` ).
 10. ARIA misuse -> Only use ARIA roles when necessary and correctly.
 
----
-
-## **Next Up: The Four Principles of Accessibility (POUR)**
-
-*We’ll explore what it means for content to be Perceivable, Operable, Understandable, and Robust.*

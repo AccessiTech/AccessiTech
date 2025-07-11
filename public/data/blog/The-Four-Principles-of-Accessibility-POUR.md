@@ -7,6 +7,8 @@ date: 2025-06-12
 image: pour-principles-accessibility.png
 imageAlt: Four colored blocks labeled Perceivable, Operable, Understandable, Robust
 status: published
+next: /wcag/WCAG-Guideline-1-1-1-Non-text-Content-Explained, Guideline 1.1.1 - Non-text Content
+previous: /blog/Introduction-to-WCAG-What-It-Is-and-Why-It-Matters, Introduction to WCAG - What It Is and Why It Matters
 -->
 
 # **The Four Principles of Accessibility (POUR)**

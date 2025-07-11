@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures all functionality is accessible using only a keyboard.
+next: /wcag/WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained, Guideline 2.1.2 - No Keyboard Trap
+previous: /wcag/WCAG-Guideline-1-4-13-Content-on-Hover-or-Focus-Explained, Guideline 1.4.13 - Content on Hover or Focus
 -->
 
 # **WCAG Guideline 2.1.1: Keyboard Accessible Explained**
@@ -26,8 +28,6 @@ Guideline 2.1 focuses on making all functionality available from a keyboard. Thi
 
 ## **What Is Guideline 2.1.1 Keyboard Accessible?**
 
-<!-- [Illustration: Web page with a visible keyboard focus indicator moving through interactive elements] -->
-
 > "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes."
 
 Guideline 2.1.1 Keyboard Accessible is a core requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#keyboard).
@@ -44,8 +44,6 @@ For more, see [Keyboard Accessibility: A Fundamental Component of Digital Access
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Keyboard icon, mouse icon crossed out, and a user navigating a web page] -->
-
 - **Inclusivity:** Many users with mobility impairments, vision loss, or temporary injuries rely on keyboard navigation.
 - **Legal Compliance:** Keyboard accessibility is a Level A requirement and referenced in accessibility laws worldwide.
 - **Usability:** Good keyboard support benefits power users and those on devices without a mouse.
@@ -55,8 +53,6 @@ Keyboard accessibility is about more than just compliance—it's about making yo
 ---
 
 ## **What Needs to Be Keyboard Accessible?**
-
-<!-- [Grid: Interactive elements—links, buttons, forms, menus—with focus indicators] -->
 
 - Links and navigation menus
 - Buttons and controls
@@ -70,9 +66,6 @@ All interactive elements must be reachable and usable with the keyboard. This in
 
 ## **How to Ensure Keyboard Accessibility**
 
-<!-- [Side-by-side code snippets: Good tab order vs. broken tab order]
-[Example: Custom button with proper keyboard event handling] -->
-
 - Use semantic HTML elements (button, a, input) for interactive controls.
 - Ensure a logical tab order (Tab moves forward, Shift+Tab moves back).
 - Provide visible focus indicators for all interactive elements.
@@ -83,8 +76,6 @@ For more, see the [MDN keyboard accessibility docs](https://developer.mozilla.or
 ---
 
 ## **Common Mistakes to Avoid**
-
-<!-- [Do/Don't graphic: Left side with visible focus, right side with no focus or mouse-only controls] -->
 
 - Removing or hiding focus outlines
 - Using non-semantic elements (div, span) for buttons or links
@@ -97,8 +88,6 @@ Audit your site regularly and use accessibility checkers to catch these issues. 
 
 ## **Differences Between A, AA, and AAA for Guideline 2.1.1 in WCAG 2.2**
 
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
-
 - **Level A:** Requires all functionality to be operable through a keyboard interface without requiring specific timings for individual keystrokes. This is the core requirement for 2.1.1 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 2.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
 - **Level AAA:** For Guideline 2.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
@@ -108,8 +97,6 @@ For more, see the [W3C’s official documentation for 2.1.1 Keyboard Accessible]
 ---
 
 ## **Quick Checklist**
-
-<!-- [Checklist graphic: Icons for each item (link, button, form, menu, etc.)] -->
 
 - All functionality is operable via keyboard
 - Tab order is logical and predictable
@@ -121,12 +108,6 @@ For more, see the [W3C’s official documentation for 2.1.1 Keyboard Accessible]
 
 ## **Summary**
 
-<!-- [Illustration: User navigating a web page using only a keyboard, with visible focus] -->
-
 Guideline 2.1.1 is essential for making your site usable by everyone. By ensuring all functionality is available from a keyboard, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make keyboard accessibility a core part of your development process.
-
-**Next Up:**
-
-[Read Guideline 2.1.2: No Keyboard Trap →](WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained)
 
 *Accessibility is about giving everyone a way in—make sure the keyboard always works!*

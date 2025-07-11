@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures prerecorded video content is accessible with captions.
+next: /wcag/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained, Guideline 1.2.3 - Audio Description or Media Alternative (Prerecorded)
+previous: /wcag/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained, Guideline 1.2.1 - Audio-only and Video-only (Prerecorded)
 -->
 
 # **WCAG Guideline 1.2.2: Captions (Prerecorded) Explained**
@@ -26,8 +28,6 @@ Guideline 1.2 focuses on making time-based media—like audio and video—access
 
 ## **What Is Guideline 1.2.2 Captions (Prerecorded)?**
 
-<!-- [Illustration: Video player with captions enabled] -->
-
 > "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such."
 
 Guideline 1.2.2 is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#captions-prerecorded).
@@ -42,8 +42,6 @@ This ensures everyone can access the information in your videos, regardless of h
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Video player, captions, user with hearing aid] -->
-
 - **Inclusivity:** Captions make video content accessible to users who are deaf or hard of hearing.
 - **Legal Compliance:** This is a Level A requirement in WCAG 2.2 and referenced in accessibility laws worldwide.
 - **Usability:** Captions help all users in noisy or quiet environments, or when audio is muted.
@@ -54,8 +52,6 @@ For more, see [WebAIM's captions guide](https://webaim.org/techniques/captions/)
 
 ## **What Needs Captions?**
 
-<!-- [Grid: Video player, webinar, online course, all with captions icon] -->
-
 - Prerecorded video content with audio (webinars, tutorials, interviews)
 - Online courses and training videos
 - Marketing and promotional videos
@@ -65,9 +61,6 @@ All such media must have accurate, synchronized captions.
 ---
 
 ## **How to Provide Captions**
-
-<!-- [Side-by-side: Video with captions, video without captions] -->
-<!-- [Example: Caption editor interface] -->
 
 - Use captioning tools or services to create accurate captions
 - Ensure captions are synchronized with the audio
@@ -80,8 +73,6 @@ For more, see the [W3C's captions docs](https://www.w3.org/WAI/WCAG22/Understand
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with accurate captions, right side with missing or inaccurate captions] -->
-
 - No captions for video content
 - Inaccurate or incomplete captions
 - Captions that are out of sync with audio
@@ -93,8 +84,6 @@ Audit your site regularly and use accessibility checkers to ensure all video con
 
 ## **Differences Between A, AA, and AAA for Guideline 1.2.2 in WCAG 2.2**
 
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
-
 - **Level A:** Requires captions for all prerecorded audio content in synchronized media. This is the core requirement for 1.2.2 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 1.2.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
 - **Level AAA:** For Guideline 1.2.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
@@ -104,8 +93,6 @@ For more, see the [W3C’s official documentation for 1.2.2 Captions (Prerecorde
 ---
 
 ## **Quick Checklist**
-
-<!-- [Checklist graphic: Icons for each item (video, captions, editor, etc.)] -->
 
 - All prerecorded video content with audio has captions
 - Captions are accurate and complete
@@ -117,11 +104,5 @@ For more, see the [W3C’s official documentation for 1.2.2 Captions (Prerecorde
 
 ## **Summary**
 
-<!-- [Illustration: User watching a video with captions enabled] -->
-
 Guideline 1.2.2 is essential for making video content accessible to everyone. By providing accurate captions, you support users with disabilities, improve usability, and meet legal requirements. Make captioning a standard part of your video production process.
-
-**Next Up:**
-
-[Read Guideline 1.2.3: Audio Description or Media Alternative (Prerecorded) →](WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained)
 

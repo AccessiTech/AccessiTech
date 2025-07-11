@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures accessible alternatives for images, icons, and other non-text content.
+previous: /blog/The-Four-Principles-of-Accessibility-POUR, The Four Principles of Accessibility (POUR)
+next: /wcag/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained, Guideline 1.2.1 - Audio-only and Video-only (Prerecorded)
 -->
 
 # **WCAG Guideline 1.1.1: Non-text Content Explained**
@@ -26,8 +28,6 @@ Guideline 1.1 focuses on providing text alternatives for any non-text content. T
 
 ## **What Is Guideline 1.1.1 Non-text Content?**
 
-<!-- [Illustration: Web page with images and icons, with a speech bubble showing a screen reader reading alt text] -->
-
 > "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose."
 
 Guideline 1.1.1 Non-text Content is the very first requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content).
@@ -42,8 +42,6 @@ This means that if you have a button with a magnifying glass icon, a screen read
 
 ## **Why Does It Matter?**
 
-<!-- [Venn diagram or infographic: Overlap between accessibility, SEO, and legal compliance] -->
-
 - **Inclusivity:** People who are blind or have low vision rely on text alternatives to access visual information.
 - **SEO & Usability:** Good alt text helps search engines and users when images fail to load.
 - **Legal Compliance:** This is a Level A requirement—essential for meeting accessibility laws.
@@ -55,8 +53,6 @@ From a business perspective, good alt text can improve your site's SEO, as searc
 ---
 
 ## **What Needs a Text Alternative?**
-
-<!-- [Grid: Different media types (image, icon, chart, video, CAPTCHA) with checkmarks and alt text labels] -->
 
 - Images (photos, illustrations, infographics)
 - Icons and buttons
@@ -73,9 +69,6 @@ Some elements, like decorative images, don't need a description—these should u
 
 ## **How to Provide Text Alternatives**
 
-<!-- [Side-by-side code snippets: Good alt text vs. missing/poor alt text] -->
-<!-- [Example: Chart with a callout showing a detailed text description] -->
-
 - Use the `alt` attribute for images: `<img src="logo.png" alt="Company logo">`
 - For decorative images, use `alt=""` so screen readers skip them.
 - Describe the function, not just the appearance (e.g., “Search” for a magnifying glass icon).
@@ -88,8 +81,6 @@ Accessible text alternatives should be concise but meaningful. Avoid phrases lik
 ---
 
 ## **Common Mistakes to Avoid**
-
-<!-- [Do/Don't graphic: Left side with correct alt text, right side with common mistakes (e.g., alt="image123.jpg")] -->
 
 - Missing or empty `alt` on meaningful images
 - Using file names or generic text like “image” as alt text
@@ -104,8 +95,6 @@ To avoid these pitfalls, audit your site regularly and use accessibility checker
 
 ## **Differences Between A, AA, and AAA for Guideline 1.1.1 in WCAG 2.2**
 
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
-
 - **Level A:** Requires that all non-text content has a text alternative that serves the equivalent purpose (e.g., alt text for images, accessible names for icons and buttons). This is the core requirement for 1.1.1 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 1.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
 - **Level AAA:** For Guideline 1.1.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AAA.
@@ -115,8 +104,6 @@ For more, see the [W3C’s official documentation for 1.1.1 Non-text Content](ht
 ---
 
 ## **Quick Checklist**
-
-<!-- [Checklist graphic: Icons for each item (image, icon, chart, video, etc.)] -->
 
 - Every image has an appropriate `alt` attribute
 - Decorative images use `alt=""`
@@ -128,10 +115,6 @@ For more, see the [W3C’s official documentation for 1.1.1 Non-text Content](ht
 
 ## **Summary**
 
-<!-- [Illustration: Diverse group of users (including a person using a screen reader) happily browsing a website] -->
-
 Guideline 1.1.1 is the foundation of accessible web content. By providing text alternatives for all non-text content, you make your site usable for everyone. This small step can have a huge impact on digital inclusion, search engine optimization, and legal compliance. Start with your most important images and work your way through your site—every improvement counts.
-
-**Next Up:**
 
 [Read Guideline 1.2.1: Audio-only and Video-only (Prerecorded) →](WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained)

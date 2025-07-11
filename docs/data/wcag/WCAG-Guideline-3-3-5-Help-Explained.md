@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures context-sensitive help is available for users completing forms and complex tasks.
+previous: /wcag/WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained, Guideline 3.3.4 - Error Prevention (Legal, Financial, Data)
+next: /wcag/WCAG-Guideline-3-3-6-Error-Prevention-All-Explained, Guideline 3.3.6 - Error Prevention (All)
 --->
 
 # **WCAG Guideline 3.3.5: Help Explained**
@@ -26,8 +28,6 @@ Guideline 3.3 focuses on helping users avoid and correct mistakes when entering 
 
 ## **What Is Guideline 3.3.5 Help?**
 
-<!-- [Illustration: User accessing help or support while filling out a form] -->
-
 > "Context-sensitive help is available."
 
 Guideline 3.3.5 requires that help is available for users when completing forms or complex tasks, especially when the information required is not obvious.
@@ -42,8 +42,6 @@ For more, see [W3C: Understanding Help (WCAG 2.1)](https://www.w3.org/WAI/WCAG21
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Help icon, user with assistive tech, and form field] -->
-
 - **All Users:** May need assistance to complete unfamiliar or complex forms
 - **Screen Reader Users:** Benefit from accessible help content
 - **Accessibility:** Reduces errors and increases user confidence
@@ -54,8 +52,6 @@ For more, see [W3C’s guidance on Help](https://www.w3.org/WAI/WCAG22/Understan
 
 ## **What Needs Help?**
 
-<!-- [Grid: Forms, help icons, tooltips, and support links] -->
-
 - All forms, especially those with complex or non-obvious requirements
 - Provide help via tooltips, instructions, FAQs, or support links
 - Help must be accessible to all users
@@ -63,8 +59,6 @@ For more, see [W3C’s guidance on Help](https://www.w3.org/WAI/WCAG22/Understan
 ---
 
 ## **How to Meet Guideline 3.3.5**
-
-<!-- [Side-by-side: Good example (help icon with accessible tooltip) vs. Bad example (no help available)] -->
 
 - Add help icons or links next to complex fields
 - Provide clear instructions or examples
@@ -77,8 +71,6 @@ For more, see the [W3C's Help Techniques](https://www.w3.org/WAI/WCAG22/Techniqu
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with accessible help, right side with no help or inaccessible help] -->
-
 - Not providing help for complex or unfamiliar forms
 - Using inaccessible help features (e.g., tooltips not readable by screen readers)
 - Failing to update help content as forms change
@@ -86,8 +78,6 @@ For more, see the [W3C's Help Techniques](https://www.w3.org/WAI/WCAG22/Techniqu
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.3.5 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AAA:** Requires context-sensitive help for forms and complex tasks.
 - **Level AA:** Not applicable (3.3.5 is a Level AAA requirement).
@@ -99,8 +89,6 @@ For more, see the [W3C’s official documentation for 3.3.5 Help](https://www.w3
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for help, tooltip, and support] -->
-
 - Help is available for all complex or unfamiliar forms
 - Help features are accessible to screen readers
 - Instructions and examples are clear and up to date
@@ -110,12 +98,7 @@ For more, see the [W3C’s official documentation for 3.3.5 Help](https://www.w3
 
 ## **Summary**
 
-<!-- [Illustration: User accessing help while completing a form] -->
-
 Guideline 3.3.5 ensures that users can get the help they need to complete forms and complex tasks. Accessible help features reduce errors and improve user confidence.
 
-**Next Up:**
 
-[Read Guideline 3.3.6: Error Prevention (All) →](WCAG-Guideline-3-3-6-Error-Prevention-All-Explained)
-
-*Accessible help empowers users—make sure support is always within reach!*
+*Accessible help empowers users—make sure support is always within reach!* 

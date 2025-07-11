@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guid
 status: published
 date: 2025-07-08
 excerpt: This section explains how to interpret normative requirements in WCAG 2.1, including the difference between normative and informative content, and the meaning of key terms like MUST, SHOULD, and MAY.
+previous: /wcag/WCAG-Guideline-4-1-3-Status-Messages-Explained, Guideline 4.1.3 - Status Messages
+next: /wcag/WCAG-Guideline-5-2-1-Conformance-Level-Explained, Guideline 5.2.1 - Conformance Level
 -->
 
 # **WCAG 2.1 Section 5.1: Interpreting Normative Requirements**
@@ -70,8 +72,5 @@ Understanding the difference between normative and informative content—and the
 
 ---
 
-**Next Up:**
-
-[Read Guideline 5.2.1: Conformance Level →](WCAG-Guideline-5-2-1-Conformance-Level-Explained)
 
 *Understanding normative requirements is essential for anyone working with web accessibility standards. By following the normative rules and using informative content for guidance, you can ensure your digital content is truly accessible and compliant.*

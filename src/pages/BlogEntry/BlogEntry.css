@@ -1,0 +1,96 @@
+.blog-entry-links-row {
+    margin-top: 20px;
+}
+
+.blog-entry-page {
+    margin: 0;
+    text-align: left;
+}
+
+.blog-entry-page a {
+    text-decoration: none;
+    color: #e40374;
+}
+.blog-entry-page a:visited {
+    text-decoration: none;
+    color: #061A32;
+}
+.blog-entry-page a:hover {
+  text-decoration: underline dotted #e40374;
+}
+
+.blog-entry-page ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+.blog-entry-page hr {
+    border: 0;
+    border-top: 1px solid #666;
+    margin: 3rem 0 2.5rem;
+    opacity: 1;
+}
+
+.blog-entry-page .section-anchor {
+    display: flex;
+}
+
+.blog-entry-page .blog-entry {
+    margin: 1.5rem 0;
+}
+
+.row.blog-entry-links-row {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+.blog-entry-links-row > div {
+    text-align: left;
+}
+.blog-entry-links-row a {
+    display: inline-block;
+    color: #e40374;
+}
+.blog-entry-page a.section-anchor {
+    color: #061A32;
+}
+.blog-entry-page a.section-anchor h2,
+.blog-entry-page a.section-anchor h3,
+.blog-entry-page a.section-anchor h4 {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.blog-entry-page a.section-anchor:hover > h2,
+.blog-entry-page a.section-anchor:focus > h2,
+.blog-entry-page a.section-anchor:focus-visible > h2,
+.blog-entry-page a.section-anchor:focus-within > h2,
+.blog-entry-page a.section-anchor:hover > h3,
+.blog-entry-page a.section-anchor:focus > h3,
+.blog-entry-page a.section-anchor:focus-visible > h3,
+.blog-entry-page a.section-anchor:focus-within > h3,
+.blog-entry-page a.section-anchor:hover > h4,
+.blog-entry-page a.section-anchor:focus > h4,
+.blog-entry-page a.section-anchor:focus-visible > h4,
+.blog-entry-page a.section-anchor:focus-within > h4 {
+    color: #e40374;
+    border-bottom: none;
+    padding-bottom: 0.5rem;
+}
+
+.blog-entry-page a.section-anchor > button {
+    top: -0.5rem;
+    bottom: unset;
+}
+
+.blog-entry-page a.section-anchor > button:hover,
+.blog-entry-page a.section-anchor > button:focus,
+.blog-entry-page a.section-anchor > button:focus-visible,
+.blog-entry-page a.section-anchor > button:focus-within {
+    color: #e40374;
+    box-shadow:  0 0 0 2px #e40374 inset;
+}
+
+.simplified-view sup > .fa.fa-external-link-alt {
+    display: none;
+}

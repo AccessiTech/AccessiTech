@@ -8,6 +8,8 @@ categories:
 image: How-AccessiTech-Meets-You-Where-You-Are.png
 imageAlt: Black text on pink background saying "Accessibility Isn't One-Size-Fits-All How AccessiTech Meets You Where You Are"
 status: published
+next: /blog/AI-for-Coding-Accessibility, AI for Coding Accessibility - How Tools Like Copilot Help Me Ship Code Despite Chronic Pain
+previous: /blog/Building-a-More-Accessible-Future-Through-Design-and-Technology, Building a More Accessible Future Through Design and Technology
 -->
 
 # **Accessibility Isn’t One-Size-Fits-All: How AccessiTech Meets You Where You Are**  

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guid
 status: published
 date: 2025-07-08
 excerpt: This section explains the requirement that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply.
+previous: /wcag/WCAG-Guideline-5-2-4-Only-Accessibility-Supported-Ways-Explained, Guideline 5.2.4 - Only Accessibility-Supported Ways of Using Technologies
+next: /wcag/WCAG-Guideline-5-3-1-Conformance-Claims-Explained, Guideline 5.3.1 - Required Components of a Conformance Claim
 --->
 
 # **WCAG 2.1 Section 5.2.5: Non-Interference**
@@ -74,8 +76,5 @@ Non-interference means that your site remains accessible even if some features a
 
 ---
 
-**Up Next:**
-
-[Read Guideline 5.3.1: Required Components of a Conformance Claim →](WCAG-Guideline-5-3-1-Conformance-Claims-Explained)
 
 *Accessibility means no one gets left behind—even if some features don’t work for everyone.*

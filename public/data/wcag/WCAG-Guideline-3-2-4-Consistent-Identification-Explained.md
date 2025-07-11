@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures controls and components are identified consistently across your site.
+previous: /wcag/WCAG-Guideline-3-2-3-Consistent-Navigation-Explained, Guideline 3.2.3 - Consistent Navigation
+next: /wcag/WCAG-Guideline-3-2-5-Change-on-Request-Explained, Guideline 3.2.5 - Change on Request
 -->
 
 # **WCAG Guideline 3.2.4: Consistent Identification Explained**
@@ -26,8 +28,6 @@ Guideline 3.2 focuses on making web pages behave in ways users expect, especiall
 
 ## **What Is Guideline 3.2.4 Consistent Identification?**
 
-<!-- [Illustration: Website with repeated icons and buttons labeled the same way on every page] -->
-
 > "Components that have the same functionality within a set of Web pages are identified consistently."
 
 Guideline 3.2.4 requires that controls, icons, and components that perform the same function are labeled and identified the same way across your site.
@@ -42,8 +42,6 @@ For more, see [BOIA: WCAG 3.2.4 Consistent Identification](https://www.boia.org/
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Repeated button, icon, and user with cognitive accessibility icon] -->
-
 - **Cognitive Disabilities:** Consistency reduces confusion and cognitive load
 - **Screen Reader Users:** Predictable labels aid navigation
 - **All Users:** Familiarity improves usability and trust
@@ -54,8 +52,6 @@ For more, see [W3C’s guidance on Consistent Identification](https://www.w3.org
 
 ## **What Needs to Be Consistently Identified?**
 
-<!-- [Grid: Buttons, icons, links, and form controls] -->
-
 - Buttons with the same function (e.g., "Submit", "Search")
 - Icons representing the same action (e.g., print, download)
 - Links to the same destination
@@ -64,8 +60,6 @@ For more, see [W3C’s guidance on Consistent Identification](https://www.w3.org
 ---
 
 ## **How to Meet Guideline 3.2.4**
-
-<!-- [Side-by-side: Good example (same label and icon for same function) vs. Bad example (different labels/icons for same function)] -->
 
 - Use the same text, icon, and label for controls with the same function
 - Avoid using different labels or icons for the same action
@@ -78,8 +72,6 @@ For more, see the [W3C's Consistent Identification Techniques](https://www.w3.or
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with consistent button labels, right side with different labels for same function] -->
-
 - Using different labels or icons for the same function
 - Changing the identification of controls between pages
 - Not using templates or shared components for controls
@@ -87,8 +79,6 @@ For more, see the [W3C's Consistent Identification Techniques](https://www.w3.or
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.2.4 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level AA:** Requires consistent identification of controls and components.
 - **Level AAA:** No additional requirements for 3.2.4.
@@ -100,8 +90,6 @@ For more, see the [W3C’s official documentation for 3.2.4 Consistent Identific
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for button, label, and template] -->
-
 - Controls with the same function have the same label and icon
 - Repeated components are identified consistently across the site
 - Templates or components are used for controls
@@ -111,14 +99,7 @@ For more, see the [W3C’s official documentation for 3.2.4 Consistent Identific
 
 ## **Summary**
 
-<!-- [Illustration: User interacting with consistent controls across a website] -->
-
 Guideline 3.2.4 ensures that users can recognize and use controls confidently. Consistent identification is key to accessibility and usability.
 
-**Next Up:**
 
-[WCAG-Guideline-3-2-5-Change-on-Request-Explained](WCAG-Guideline-3-2-5-Change-on-Request-Explained)
-
-*Consistency is clarity—make your controls easy to recognize and use for everyone!*
-
-<!-- excerpt: This guideline ensures controls and components are recognizable across your site. -->
+*Consistency is clarity—make your controls easy to recognize and use for everyone!* 

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, useNavigate, NavigateFunction, useLocation } from "react-router-dom";
+import { useParams, useNavigate, NavigateFunction, useLocation, Link } from "react-router-dom";
 import { Row, Col, Breadcrumb } from "react-bootstrap";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from "remark-gfm";
@@ -7,34 +7,64 @@ import { getBlogEntry, useBlogEntry } from "../../store/blog";
 import store from "../../store/store";
 import { ACCESSITECH, BLOG_CANONICAL, DEFAULT_SHARE_IMAGE_ALT, DEFAULT_SHARE_IMAGE, IMAGES_BASE_URL, BLOG_DESCRIPTION } from "../../settings/strings";
 import Metadata from "../../components/Metadata/Metadata";
-import CustomMarkdownTable from "../../components/CustomTable/CustomTable";
-import { SITE_HOST } from "../../settings/env";
+import CustomMarkdownTable, { tableDirective } from "../../components/CustomTable/CustomTable";
+import remarkDirective from "remark-directive";
+import { CustomMarkdownLink } from "../../components/CustomLink/CustomLink";
+import './BlogEntry.css';
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 export interface FetchBlogEntryProps {
   id: string;
   navigate: NavigateFunction;
   pathname?: string;
 }
-const fetchBlogEntry = async ({id, navigate, pathname}:FetchBlogEntryProps) => {
+const fetchBlogEntry = async ({ id, navigate, pathname }: FetchBlogEntryProps) => {
   await store.dispatch(getBlogEntry({ id: id.replace(/.html/g, ''), navigate, pathname }));
 }
-export interface BlogEntryProps {}
+export interface BlogEntryProps { }
 export interface BlogEntryType extends React.FC<BlogEntryProps> {
-  loadData: (url?:string) => Promise<void>;
+  loadData: (url?: string) => Promise<void>;
+}
+
+export const getChildText = (node: any):string => {
+  if (!node || !node.children || node.children.length === 0) return '';
+  const child = node.children[0];
+  if (typeof child === 'string') return child;
+  if (child && typeof child === 'object' && 'value' in child) {
+    return (child as { value: string }).value;
+  }
+  if (child && typeof child === 'object' && 'children' in child) {
+    return getChildText(child);
+  }
+  return '';
 }
 
 export const BlogEntry = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const id = useParams().id?.replace('.html','') as string;
+  const id = useParams().id?.replace('.html', '') as string;
   const sub = useParams().sub;
   const pathname = location.pathname.split('/')[1] || '';
   const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
   const entry = useBlogEntry(sub ? `${sub}/${id}` : id);
 
   useEffect(() => {
-    fetchBlogEntry({id: sub ? `${sub}/${id}` : id, navigate, pathname});
+    fetchBlogEntry({ id: sub ? `${sub}/${id}` : id, navigate, pathname });
   }, [id, sub, navigate]);
+
+  useEffect(() => {
+    if (entry?.loaded && window) {
+      const anchorId = window.location.hash.substring(1);
+      if (anchorId) {
+        const element = document.getElementById(anchorId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.warn(`Element with ID ${anchorId} not found.`);
+        }
+      }
+    }
+  }, [entry?.loaded]);
 
   const metadata = {
     title: `${ACCESSITECH} | ${entry?.title || "Blog Entry"}`,
@@ -71,18 +101,44 @@ export const BlogEntry = () => {
               <div>
                 {!entry?.loaded ? <p>Loading...</p> :
                   <ReactMarkdown
-                    remarkPlugins={[remarkGfm]}
                     skipHtml={true}
+                    remarkPlugins={[remarkGfm, remarkDirective, tableDirective]}
                     components={{
                       table: CustomMarkdownTable,
-                      a: ({href, title, ...props}: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
-                        // If the link is external, open in a new tab
-                        if (href && href.startsWith('http') && !href.includes(SITE_HOST)) {
-                          return <a {...props} href={href} title={title} target="_blank" rel="noopener noreferrer" />;
-                        }
-                        // Otherwise, handle internal links normally
-                        return <a {...props} href={href} title={title} />;
-                      }
+                      a: CustomMarkdownLink,
+                      h2: ({ node }) => {
+                        // Safely extract text from node.children[0]
+                        const titleText = getChildText(node);
+                        return (
+                          <SectionHeader
+                            title={titleText}
+                            id={titleText.toLowerCase().replace(/\s+/g, '-')}
+                            use={"h2"}
+                          />
+                        );
+                      },
+                      h3: ({ node }) => {
+                        // Safely extract text from node.children[0]
+                        const titleText = getChildText(node);
+                        return (
+                          <SectionHeader
+                            title={titleText}
+                            id={titleText.toLowerCase().replace(/\s+/g, '-')}
+                            use={"h3"}
+                          />
+                        );
+                      },
+                      h4: ({ node }) => {
+                        // Safely extract text from node.children[0]
+                        const titleText = getChildText(node);
+                        return (
+                          <SectionHeader
+                            title={titleText}
+                            id={titleText.toLowerCase().replace(/\s+/g, '-')}
+                            use={"h4"}
+                          />
+                        );
+                      },
                     }}
                   >{entry.content}</ReactMarkdown>
                 }
@@ -91,6 +147,25 @@ export const BlogEntry = () => {
           </Row>
         </Col>
       </main>
+    </Row>
+
+    <Row className="blog-entry-links-row" as="nav">
+      {/* previous column */}
+      {entry?.previous && (
+        <Col md={{ offset: 2, span: 4 }}>
+          <Link to={`${entry.previous.url}`} className="previous-link">
+            ← Previous: {entry.previous.title}
+          </Link>
+        </Col>
+      )}
+      {/* next column */}
+      {entry?.next && (
+        <Col md={{ span: 4, offset: typeof entry.previous === 'undefined' ? 2 : 0 }}>
+          <Link to={`${entry.next.url}`} className="next-link">
+            Next: {entry.next.title} →
+          </Link>
+        </Col>
+      )}
     </Row>
   </>);
 }

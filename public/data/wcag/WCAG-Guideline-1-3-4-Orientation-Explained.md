@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures content is not restricted to a single display orientation.
+next: /wcag/WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained, Guideline 1.3.5 - Identify Input Purpose
+previous: /wcag/WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained, Guideline 1.3.3 - Sensory Characteristics
 -->
 
 # **WCAG Guideline 1.3.4: Orientation Explained**
@@ -26,8 +28,6 @@ Guideline 1.3 focuses on creating content that can be presented in different way
 
 ## **What Is Guideline 1.3.4 Orientation?**
 
-<!-- [Illustration: Mobile device switching between portrait and landscape] -->
-
 > "Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential."
 
 Guideline 1.3.4 is a Level AA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#orientation).
@@ -42,8 +42,6 @@ This ensures that users who use assistive technology, have their device mounted,
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Device orientation icons, user with mounted tablet] -->
-
 - **Inclusivity:** Some users can’t rotate their devices or use assistive tech that requires a specific orientation.
 - **Legal Compliance:** Orientation is a Level AA requirement in WCAG 2.2 and referenced in accessibility laws worldwide.
 - **Usability:** Supporting both orientations improves the experience for all users, especially on mobile.
@@ -53,8 +51,6 @@ For more, see [WebAIM's orientation guide](https://webaim.org/blog/mobile-access
 ---
 
 ## **What Needs Orientation Support?**
-
-<!-- [Grid: Mobile app, web page, form, all with orientation icons] -->
 
 - Mobile apps and web pages
 - Forms and interactive content
@@ -67,9 +63,6 @@ All such content should be usable in both portrait and landscape unless a specif
 
 ## **How to Support Multiple Orientations**
 
-<!-- [Side-by-side: App in portrait and landscape]
-[Example: Responsive design with flexible layouts] -->
-
 - Use responsive design techniques to support both orientations
 - Avoid CSS or JavaScript that locks orientation
 - Test all features in both portrait and landscape
@@ -80,8 +73,6 @@ For more, see the [MDN orientation docs](https://developer.mozilla.org/en-US/doc
 ---
 
 ## **Common Mistakes to Avoid**
-
-<!-- [Do/Don't graphic: Left side with flexible orientation, right side with locked orientation] -->
 
 - Locking content to portrait or landscape without a valid reason
 - Features that break or disappear in one orientation
@@ -94,8 +85,6 @@ Audit your site regularly and use accessibility checkers to ensure all content s
 
 ## **Differences Between A, AA, and AAA for Guideline 1.3.4 in WCAG 2.2**
 
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
-
 - **Level A:** No requirement for 1.3.4.
 - **Level AA:** Requires content to support both portrait and landscape orientations unless essential. This is the core requirement for 1.3.4 and is mandatory for AA conformance.
 - **Level AAA:** For Guideline 1.3.4, there are no additional requirements beyond Level AA in WCAG 2.2. Meeting Level AA for this guideline also satisfies Level AAA.
@@ -105,8 +94,6 @@ For more, see the [W3C’s official documentation for 1.3.4 Orientation](https:/
 ---
 
 ## **Quick Checklist**
-
-<!-- [Checklist graphic: Icons for each item (mobile, orientation, responsive, etc.)] -->
 
 - Content works in both portrait and landscape
 - No features break in either orientation
@@ -118,10 +105,4 @@ For more, see the [W3C’s official documentation for 1.3.4 Orientation](https:/
 
 ## **Summary**
 
-<!-- [Illustration: User switching device orientation and accessing all content] -->
-
 Guideline 1.3.4 is essential for making your site usable and accessible for everyone. By supporting both orientations, you support users with disabilities, improve usability, and meet legal requirements. Make orientation flexibility a standard part of your development process.
-
-**Next Up:**
-
-[Read Guideline 1.3.5: Identify Input Purpose →](WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained)

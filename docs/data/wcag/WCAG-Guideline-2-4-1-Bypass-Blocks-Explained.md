@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can skip repetitive content to access main content quickly.
+next: /wcag/WCAG-Guideline-2-4-2-Page-Titled-Explained, Guideline 2.4.2 - Page Titled
+previous: /wcag/WCAG-Guideline-2-3-3-Animation-from-Interactions-Explained, Guideline 2.3.3 - Animation from Interactions
 -->
 
 # **WCAG Guideline 2.4.1: Bypass Blocks Explained**
@@ -26,8 +28,6 @@ Guideline 2.4 focuses on making it easier for users to navigate, find content, a
 
 ## **What Is Guideline 2.4.1 Bypass Blocks?**
 
-<!-- [Illustration: User activating a skip link to bypass navigation] -->
-
 > "A mechanism is available to bypass blocks of content that are repeated on multiple web pages."
 
 Guideline 2.4.1 Bypass Blocks is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks).
@@ -44,8 +44,6 @@ For more, see [Duke University: Bypass Blocks](https://web.accessibility.duke.ed
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User skipping navigation, focus indicator, and main content] -->
-
 - **Inclusivity:** Repetitive navigation can be a barrier for keyboard and screen reader users.
 - **Legal Compliance:** Bypass Blocks is a Level A requirement in WCAG 2.1 and 2.2.
 - **Usability:** Improves efficiency and reduces frustration for all users.
@@ -56,8 +54,6 @@ For more, see [W3C’s guidance on skip links](https://www.w3.org/WAI/WCAG22/Und
 
 ## **What Needs to Support Bypass Blocks?**
 
-<!-- [Grid: Navigation menus, sidebars, headers, all with skip icons] -->
-
 - Navigation menus
 - Sidebars and headers
 - Any repeated content blocks
@@ -67,9 +63,6 @@ All must provide a way to bypass repeated content.
 ---
 
 ## **How to Make Bypass Blocks Accessible**
-
-<!-- [Side-by-side code snippets: Skip link, no skip link]
-[Example: Settings panel for skip links] -->
 
 - Provide visible skip links
 - Ensure skip links are keyboard accessible
@@ -82,8 +75,6 @@ For more, see the [W3C's Bypass Blocks Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with skip link, right side with no skip link] -->
-
 - No skip links for repeated content
 - Skip links not accessible by keyboard
 - Not documenting skip link usage
@@ -92,8 +83,6 @@ For more, see the [W3C's Bypass Blocks Techniques](https://www.w3.org/WAI/WCAG22
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.4.1 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires a mechanism to bypass repeated blocks of content. This is the core requirement for 2.4.1 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 2.4.1, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -105,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.4.1 Bypass Blocks](https
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (skip, navigation, main content, etc.)] -->
-
 - Skip links are provided for repeated content
 - Skip links are keyboard accessible
 - Skip link usage is documented
@@ -116,12 +103,5 @@ For more, see the [W3C’s official documentation for 2.4.1 Bypass Blocks](https
 
 ## **Summary**
 
-<!-- [Illustration: User using a skip link in a web app] -->
-
 Guideline 2.4.1 is essential for helping users efficiently navigate your site. By providing skip links and mechanisms to bypass repeated content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make bypassing blocks a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.4.2: Page Titled →](WCAG-Guideline-2-4-2-Page-Titled-Explained)
-
-*Accessibility means making navigation easy—help users get where they need to go!*

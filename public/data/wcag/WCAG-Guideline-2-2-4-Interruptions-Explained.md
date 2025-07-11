@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can postpone or suppress interruptions like notifications or alerts.
+next: /wcag/WCAG-Guideline-2-2-5-Re-authenticating-Explained, Guideline 2.2.5 - Re-authenticating
+previous: /wcag/WCAG-Guideline-2-2-3-No-Timing-Explained, Guideline 2.2.3 - No Timing
 -->
 
 # **WCAG Guideline 2.2.4: Interruptions Explained**
@@ -26,8 +28,6 @@ Guideline 2.2 focuses on making sure users have enough time and control over the
 
 ## **What Is Guideline 2.2.4 Interruptions?**
 
-<!-- [Illustration: User postponing a notification or interruption] -->
-
 > "Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency."
 
 Guideline 2.2.4 Interruptions is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#interruptions).
@@ -44,8 +44,6 @@ For more, see [W3C: Minimal Interruptions Pattern](https://www.w3.org/WAI/WCAG2/
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User postponing notification, warning icon, and settings gear] -->
-
 - **Inclusivity:** Interruptions can distract or disrupt users with cognitive or neurological disabilities.
 - **Legal Compliance:** Interruptions is a Level AAA requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents frustration and improves focus for all users.
@@ -56,8 +54,6 @@ For more, see [W3C’s guidance on interruptions](https://www.w3.org/WAI/WCAG22/
 
 ## **What Needs to Support Interruptions?**
 
-<!-- [Grid: Notifications, pop-ups, alerts, all with postpone icons] -->
-
 - Notifications and alerts
 - Pop-ups and modals
 - Any feature that interrupts the user
@@ -67,9 +63,6 @@ All must provide a way to postpone or suppress interruptions, except for emergen
 ---
 
 ## **How to Make Interruptions Accessible**
-
-<!-- [Side-by-side code snippets: Postpone button, suppress notification]
-[Example: Settings panel for interruptions] -->
 
 - Provide visible controls to postpone or suppress interruptions
 - Ensure controls are keyboard accessible
@@ -82,8 +75,6 @@ For more, see the [W3C's Interruptions Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with postpone button, right side with no controls] -->
-
 - No way to postpone or suppress interruptions
 - Controls not accessible by keyboard
 - Not documenting controls
@@ -92,8 +83,6 @@ For more, see the [W3C's Interruptions Techniques](https://www.w3.org/WAI/WCAG22
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.2.4 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Not applicable for this guideline.
 - **Level AA:** Not applicable for this guideline.
@@ -105,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.2.4 Interruptions](https
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (postpone, suppress, settings, etc.)] -->
-
 - All interruptions can be postponed or suppressed
 - Controls are visible and keyboard accessible
 - All controls are documented for users
@@ -116,12 +103,5 @@ For more, see the [W3C’s official documentation for 2.2.4 Interruptions](https
 
 ## **Summary**
 
-<!-- [Illustration: User postponing a notification in a web app] -->
-
 Guideline 2.2.4 is essential for preventing distractions and supporting users with cognitive or neurological disabilities. By allowing users to postpone or suppress interruptions, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make interruption control a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.2.5: Re-authenticating →](WCAG-Guideline-2-2-5-Re-authenticating-Explained)
-
-*Accessibility means letting users stay focused—make your site interruption-friendly!*

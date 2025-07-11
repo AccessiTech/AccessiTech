@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures all text is real and not just an image.
+next: /wcag/WCAG-Guideline-1-4-10-Reflow-Explained, Guideline 1.4.10 - Reflow
+previous: /wcag/WCAG-Guideline-1-4-8-Visual-Presentation-Explained, Guideline 1.4.8 - Visual Presentation
 -->
 
 # **WCAG Guideline 1.4.9: Images of Text (No Exception) Explained**
@@ -26,8 +28,6 @@ Guideline 1.4 focuses on making content easier to see and hear. Real text is alw
 
 ## **What Is Guideline 1.4.9 Images of Text (No Exception)?**
 
-<!-- [Illustration: Side-by-side of a text image (unselectable) and real text (selectable, resizable)] -->
-
 > "Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed."
 
 Guideline 1.4.9 Images of Text (No Exception) is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#images-of-text-no-exception).
@@ -40,8 +40,6 @@ Guideline 1.4.9 Images of Text (No Exception) is a Level AAA requirement in the 
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Screen reader icon, zoom icon, and a warning sign for images of text] -->
-
 - **Accessibility:** Screen readers and assistive tech can’t read images of text.
 - **Scalability:** Real text can be resized and styled by users.
 - **Legal Compliance:** Images of Text (No Exception) is a Level AAA requirement in WCAG 2.2.
@@ -50,8 +48,6 @@ Guideline 1.4.9 Images of Text (No Exception) is a Level AAA requirement in the 
 ---
 
 ## **What Needs to Support Accessible Text?**
-
-<!-- [Grid: Headings, buttons, labels, banners, and logos, all shown as real text] -->
 
 - Headings and body text
 - Buttons and links
@@ -65,8 +61,6 @@ All should use real text, not images, unless a specific style is essential.
 
 ## **How to Meet Guideline 1.4.9**
 
-<!-- [Side-by-side: Banner with image of text vs. banner with real text styled with CSS] -->
-
 - Use HTML and CSS to style all text, including logos and branding
 - Only use images of text for pure decoration
 - Provide alt text for any images of text that remain
@@ -78,8 +72,6 @@ For more, see the [W3C's Images of Text Techniques](https://www.w3.org/WAI/WCAG2
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with selectable, styled text, right side with unselectable image of text] -->
-
 - Using images for headings, buttons, navigation, or logos
 - No alt text for images of text
 - Relying on images for important information
@@ -88,8 +80,6 @@ For more, see the [W3C's Images of Text Techniques](https://www.w3.org/WAI/WCAG2
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 1.4.9 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No specific requirement for images of text.
 - **Level AA:** Requires real text except for decoration or essential presentation (see 1.4.5).
@@ -101,8 +91,6 @@ For more, see the [W3C’s official documentation for 1.4.9 Images of Text (No E
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for text, CSS, and screen reader] -->
-
 - All content uses real text, not images
 - Images of text only for pure decoration
 - Alt text for any images of text
@@ -112,12 +100,6 @@ For more, see the [W3C’s official documentation for 1.4.9 Images of Text (No E
 
 ## **Summary**
 
-<!-- [Illustration: User selecting and resizing real text on a web page] -->
-
 Guideline 1.4.9 ensures all content, including logos and branding, is accessible, scalable, and adaptable by using real text instead of images. Use CSS for styling and only use images of text for decoration.
-
-**Next Up:**
-
-[Read Guideline 1.4.10: Reflow →](WCAG-Guideline-1-4-10-Reflow-Explained)
 
 *Accessibility means real text for real people—don’t hide your message in an image!*

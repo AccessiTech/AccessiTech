@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline explains how to document partial WCAG conformance when language barriers exist.
+previous: /wcag/WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained, Guideline 5.4 - Statement of Partial Conformance – Third Party Content
+next: /wcag/WCAG-Guideline-1-1-1-Non-text-Content-Explained, Guideline 1.1.1 - Non-text Content
 --->
 
 # **WCAG Guideline 5.5: Statement of Partial Conformance – Language Explained**
@@ -27,8 +29,6 @@ Guideline 5.5 addresses situations where full accessibility conformance cannot b
 ---
 
 ## **What Is a Statement of Partial Conformance – Language?**
-
-<!-- [Illustration: Globe with language icons and accessibility symbols] -->
 
 A Statement of Partial Conformance – Language is a public declaration that a web page or resource would conform to WCAG, except for issues caused by the lack of accessibility support in a specific language.
 
@@ -57,8 +57,6 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 ---
 
 ## **How to Make a Statement of Partial Conformance – Language**
-
-<!-- [Infographic: Document with highlighted language sections] -->
 
 - Evaluate your content for accessibility in all supported languages
 - If a language lacks accessibility support, document:
@@ -89,8 +87,6 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Globe, language icons, and document] -->
-
 - Identified inaccessible content due to language
 - Statement includes affected languages and reasons
 - Scope and limitations are clear
@@ -100,16 +96,11 @@ A Statement of Partial Conformance – Language is a public declaration that a w
 
 ## **Summary**
 
-<!-- [Illustration: User reading a language accessibility statement on a website] -->
-
 A Statement of Partial Conformance – Language helps organizations be transparent about accessibility limitations caused by language support gaps. Clearly document which languages are affected, why, and what you’re doing to address these issues. Keep your statement current as technology evolves.
 
 *Accessibility is for everyone—language shouldn’t be a barrier!*
 
 ---
 
-## **Up Next:**
-
-[Read Guideline 1.1.1: Non-text Content →](WCAG-Guideline-1-1-1-Non-text-Content-Explained)
 
 *Global inclusion means no one is left behind—keep striving for accessibility in every language!*

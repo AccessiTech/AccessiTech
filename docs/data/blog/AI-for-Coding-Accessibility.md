@@ -7,6 +7,8 @@ date: 2025-04-08
 image: AI-for-Coding-Accessibility.png
 imageAlt: Yellow text on dark blue background saying, AI for Coding Accessibility, How Tools Like Copilot Help Me Ship Code Despite Chronic Pain
 status: published
+next: /blog/Introduction-to-WCAG-What-It-Is-and-Why-It-Matters, Introduction to WCAG - What It Is and Why It Matters
+previous: /blog/How-AccessiTech-Meets-You-Where-You-Are, Accessibility Isn’t One-Size-Fits-All - How AccessiTech Meets You Where You Are
 -->
 
 # **AI for Coding Accessibility: How Tools Like Copilot Help Me Ship Code Despite Chronic Pain**

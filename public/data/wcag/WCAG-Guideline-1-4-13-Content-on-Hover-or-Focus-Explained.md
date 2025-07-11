@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures tooltips and popups are accessible, dismissible, and do not interfere with content.
+next: /wcag/WCAG-Guideline-2-1-1-Keyboard-Accessible-Explained, Guideline 2.1.1 - Keyboard Accessible
+previous: /wcag/WCAG-Guideline-1-4-12-Text-Spacing-Explained, Guideline 1.4.12 - Text Spacing
 -->
 
 # **WCAG Guideline 1.4.13: Content on Hover or Focus Explained**
@@ -26,8 +28,6 @@ Guideline 1.4 focuses on making content easier to see and hear. Content on Hover
 
 ## **What Is Guideline 1.4.13 Content on Hover or Focus?**
 
-<!-- [Illustration: Tooltip appearing on both mouse hover and keyboard focus] -->
-
 > "Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true: the content can be dismissed, remains visible while hovered or focused, and is accessible."
 
 Guideline 1.4.13 Content on Hover or Focus is a Level AA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus).
@@ -42,8 +42,6 @@ For more, see [Access & Use: Content on hover & focus](https://accessuse.eu/en/C
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: Keyboard and mouse icons, user with vision and mobility aids] -->
-
 - **Accessibility:** Some users rely on keyboard navigation or assistive tech.
 - **Inclusivity:** Ensures everyone can access and dismiss popups.
 - **Legal Compliance:** Content on Hover or Focus is a Level AA requirement in WCAG 2.2.
@@ -52,8 +50,6 @@ For more, see [Access & Use: Content on hover & focus](https://accessuse.eu/en/C
 ---
 
 ## **What Needs to Support Accessible Popups?**
-
-<!-- [Grid: Tooltips, dropdowns, and popups, all accessible by mouse and keyboard] -->
 
 - Tooltips and help bubbles
 - Dropdown menus
@@ -65,8 +61,6 @@ All must be accessible, dismissible, and persistent while hovered or focused.
 ---
 
 ## **How to Meet Guideline 1.4.13**
-
-<!-- [Side-by-side: Tooltip with close button and persistent on focus vs. tooltip that disappears too quickly] -->
 
 - Ensure popups can be dismissed without moving pointer or focus
 - Keep content visible while hovered or focused
@@ -80,8 +74,6 @@ For more, see the [W3C's Content on Hover or Focus Techniques](https://www.w3.or
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with accessible, dismissible popups, right side with popups that disappear or trap focus] -->
-
 - Popups that disappear before users can interact
 - No way to dismiss popups with keyboard
 - Popups that trap focus or block content
@@ -90,8 +82,6 @@ For more, see the [W3C's Content on Hover or Focus Techniques](https://www.w3.or
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 1.4.13 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** No specific requirement for content on hover or focus.
 - **Level AA:** Requires popups/tooltips to be dismissible, persistent, and accessible.
@@ -103,8 +93,6 @@ For more, see the [W3C’s official documentation for 1.4.13 Content on Hover or
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for tooltip, close button, keyboard, and mouse] -->
-
 - All popups/tooltips are dismissible
 - Remain visible while hovered or focused
 - Accessible by keyboard and screen reader
@@ -114,12 +102,6 @@ For more, see the [W3C’s official documentation for 1.4.13 Content on Hover or
 
 ## **Summary**
 
-<!-- [Illustration: User interacting with accessible tooltip using both mouse and keyboard] -->
-
 Guideline 1.4.13 ensures all users can access, read, and dismiss popups and tooltips. Always test with keyboard and assistive tech to ensure accessibility.
-
-**Next Up:**
-
-[Read Guideline 2.1.1: Keyboard Accessible →](WCAG-Guideline-2-1-1-Keyboard-Accessible-Explained)
 
 *Accessibility means everyone can access your content—make your popups work for all!*

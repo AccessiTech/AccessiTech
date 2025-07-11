@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures abbreviations are explained or expanded for accessibility.
+previous: /wcag/WCAG-Guideline-3-1-3-Unusual-Words-Explained, Guideline 3.1.3 - Unusual Words
+next: /wcag/WCAG-Guideline-3-1-5-Reading-Level-Explained, Guideline 3.1.5 - Reading Level
 -->
 
 # **WCAG Guideline 3.1.4: Abbreviations Explained**
@@ -26,8 +28,6 @@ Guideline 3.1 focuses on making text content readable and understandable by clar
 
 ## **What Is Guideline 3.1.4 Abbreviations?**
 
-<!-- [Illustration: User reading an abbreviation with an expansion or definition] -->
-
 > "A mechanism is available for identifying the expanded form or meaning of abbreviations."
 
 Guideline 3.1.4 requires that users can access the full meaning of abbreviations, acronyms, and initialisms used in your content.
@@ -42,8 +42,6 @@ For more, see [BOIA: Web Accessibility Tips – Using Abbreviations and Acronyms
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with dictionary, abbreviation, and expansion] -->
-
 - **Inclusivity:** Explaining abbreviations helps users with cognitive disabilities and non-native speakers.
 - **Legal Compliance:** Abbreviations is a Level AAA requirement in WCAG 2.1 and 2.2.
 - **Usability:** Improves comprehension for all users.
@@ -54,8 +52,6 @@ For more, see [W3C’s guidance on Abbreviations](https://www.w3.org/WAI/WCAG22/
 
 ## **What Needs Abbreviations Explained?**
 
-<!-- [Grid: Abbreviations, acronyms, initialisms, all with expansion icons] -->
-
 - Abbreviations and acronyms
 - Initialisms
 - Any shortened form of a word or phrase
@@ -63,9 +59,6 @@ For more, see [W3C’s guidance on Abbreviations](https://www.w3.org/WAI/WCAG22/
 ---
 
 ## **How to Make Abbreviations Accessible**
-
-<!-- [Side-by-side code snippets: Abbreviation with expansion, abbreviation without expansion]
-[Example: Settings panel for abbreviations] -->
 
 - Provide expansions for abbreviations
 - Use tooltips, glossaries, or inline explanations
@@ -78,8 +71,6 @@ For more, see the [W3C's Abbreviations Techniques](https://www.w3.org/WAI/WCAG22
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with expansion, right side with no expansion] -->
-
 - Not explaining abbreviations or acronyms
 - No glossary or expansions provided
 - Not documenting abbreviation conventions
@@ -88,8 +79,6 @@ For more, see the [W3C's Abbreviations Techniques](https://www.w3.org/WAI/WCAG22
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 3.1.4 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Not applicable for this guideline.
 - **Level AA:** Not applicable for this guideline.
@@ -101,8 +90,6 @@ For more, see the [W3C’s official documentation for 3.1.4 Abbreviations](https
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (abbreviation, expansion, glossary, etc.)] -->
-
 - Expansions are provided for abbreviations
 - Tooltips, glossaries, or inline explanations are used
 - Abbreviation conventions are documented
@@ -112,12 +99,7 @@ For more, see the [W3C’s official documentation for 3.1.4 Abbreviations](https
 
 ## **Summary**
 
-<!-- [Illustration: User reading an abbreviation expansion in a web app] -->
-
 Guideline 3.1.4 is essential for helping users understand your site. By explaining abbreviations, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make abbreviation accessibility a core part of your development process.
 
-**Next Up:**
 
-[Read Guideline 3.1.5: Reading Level →](WCAG-Guideline-3-1-5-Reading-Level-Explained)
-
-*Accessibility means clarity—help users understand every term!*
+*Accessibility means clarity—help users understand every term!* 

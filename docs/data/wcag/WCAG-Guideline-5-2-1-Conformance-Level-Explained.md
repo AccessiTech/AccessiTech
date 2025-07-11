@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guid
 status: published
 date: 2025-07-08
 excerpt: This section explains the three levels of WCAG 2.1 conformance (A, AA, AAA), what each means, and how to achieve and claim conformance.
+previous: /wcag/WCAG-Guideline-5-1-Interpreting-Normative-Requirements-Explained, Guideline 5.1 - Interpreting Normative Requirements
+next: /wcag/WCAG-Guideline-5-2-2-Full-Pages-Explained, Guideline 5.2.2 - Full Pages
 --->
 
 # **WCAG 2.1 Section 5.2.1: Conformance Level**
@@ -56,8 +58,5 @@ Understanding conformance levels helps organizations:
 
 ---
 
-**Next Up:**
-
-[Read Guideline 5.2.2: Full Pages →](WCAG-Guideline-5-2-2-Full-Pages-Explained)
 
 *Conformance levels help you measure and communicate your progress toward true web accessibility.*

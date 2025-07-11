@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures user interface components have name, role, and value that can be programmatically determined.
+previous: /wcag/WCAG-Guideline-4-1-1-Parsing-Explained, Guideline 4.1.1 - Parsing
+next: /wcag/WCAG-Guideline-4-1-3-Status-Messages-Explained, Guideline 4.1.3 - Status Messages
 --->
 
 # **WCAG Guideline 4.1.2: Name, Role, Value Explained**
@@ -26,8 +28,6 @@ Guideline 4.1 focuses on making sure content can be reliably interpreted by a wi
 
 ## **What Is Guideline 4.1.2 Name, Role, Value?**
 
-<!-- [Illustration: Code showing ARIA attributes for a button] -->
-
 > "For all user interface components, the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes is available to user agents."
 
 Guideline 4.1.2 requires that all interactive elements are accessible to assistive technologies by exposing their name, role, and value.
@@ -42,8 +42,6 @@ For more, see [AFB: The Most Frequent Accessibility Issue](https://www.afb.org/b
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with screen reader, ARIA icon, and button] -->
-
 - **Inclusivity:** Name, role, and value help assistive technologies interpret UI components.
 - **Legal Compliance:** Name, Role, Value is a Level A requirement in WCAG 2.1 and 2.2.
 - **Usability:** Prevents errors and improves accessibility for all users.
@@ -54,8 +52,6 @@ For more, see [W3C’s guidance on Name, Role, Value](https://www.w3.org/WAI/WCA
 
 ## **What Needs Name, Role, Value?**
 
-<!-- [Grid: Buttons, forms, widgets, all with ARIA icons] -->
-
 - Buttons and forms
 - Widgets and custom controls
 - Any interactive component
@@ -63,9 +59,6 @@ For more, see [W3C’s guidance on Name, Role, Value](https://www.w3.org/WAI/WCA
 ---
 
 ## **How to Ensure Name, Role, Value Accessibility**
-
-<!-- [Side-by-side code snippets: ARIA attributes, missing attributes]
-[Example: Settings panel for ARIA roles] -->
 
 - Use ARIA attributes correctly
 - Document ARIA usage
@@ -77,8 +70,6 @@ For more, see the [W3C's Name, Role, Value Techniques](https://www.w3.org/WAI/WC
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with correct ARIA, right side with missing ARIA] -->
-
 - Missing or incorrect ARIA attributes
 - Not documenting ARIA usage
 - Not testing with screen readers or assistive technologies
@@ -86,8 +77,6 @@ For more, see the [W3C's Name, Role, Value Techniques](https://www.w3.org/WAI/WC
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 4.1.2 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires name, role, and value can be programmatically determined. This is the core requirement for 4.1.2 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 4.1.2, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -99,8 +88,6 @@ For more, see the [W3C’s official documentation for 4.1.2 Name, Role, Value](h
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (ARIA, button, screen reader, etc.)] -->
-
 - All UI components have name, role, and value
 - ARIA usage is documented
 - Tested with screen readers and assistive technologies
@@ -109,12 +96,7 @@ For more, see the [W3C’s official documentation for 4.1.2 Name, Role, Value](h
 
 ## **Summary**
 
-<!-- [Illustration: User interacting with a button using assistive technology] -->
-
 Guideline 4.1.2 is essential for helping users interact with your site. By ensuring name, role, and value are programmatically determined, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make ARIA accessibility a core part of your development process.
 
-**Next Up:**
 
-[Read Guideline 4.1.3: Status Messages →](WCAG-Guideline-4-1-3-Status-Messages-Explained)
-
-*Accessibility means clarity—help assistive technologies interpret your UI!*
+*Accessibility means clarity—help assistive technologies interpret your UI!* 

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guie
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can operate functionality without relying on device motion.
+next: /wcag/WCAG-Guideline-2-5-5-Target-Size-Explained, Guideline 2.5.5 - Target Size
+previous: /wcag/WCAG-Guideline-2-5-3-Label-in-Name-Explained, Guideline 2.5.3 - Label in Name
 -->
 
 # **WCAG Guideline 2.5.4: Motion Actuation Explained**
@@ -26,8 +28,6 @@ Guideline 2.5 focuses on making it easier for users to operate functionality thr
 
 ## **What Is Guideline 2.5.4 Motion Actuation?**
 
-<!-- [Illustration: User operating a feature with a button instead of shaking device] -->
-
 > "Functionality that can be operated by device motion or user motion can also be operated by user interface components, and motion-activated features can be disabled."
 
 Guideline 2.5.4 Motion Actuation is a Level A requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#motion-actuation).
@@ -44,8 +44,6 @@ For more, see [BOIA: Tips for Meeting WCAG Success Criterion 2.5.4 Motion Actuat
 
 ## **Why Does It Matter?**
 
-<!-- [Infographic: User with limited mobility, button press, and device motion] -->
-
 - **Inclusivity:** Device motion can be difficult or impossible for some users.
 - **Legal Compliance:** Motion Actuation is a Level A requirement in WCAG 2.1 and 2.2.
 - **Usability:** Ensures all users can operate features regardless of device motion.
@@ -56,8 +54,6 @@ For more, see [W3C’s guidance on motion actuation](https://www.w3.org/WAI/WCAG
 
 ## **What Needs Motion Actuation Alternatives?**
 
-<!-- [Grid: Shake to undo, tilt to scroll, all with button alternatives] -->
-
 - Shake to undo
 - Tilt to scroll
 - Any feature using device or user motion
@@ -67,9 +63,6 @@ All must have alternative controls and allow motion actuation to be disabled.
 ---
 
 ## **How to Make Motion Actuation Accessible**
-
-<!-- [Side-by-side code snippets: Button alternative, motion activation]
-[Example: Settings panel for motion features] -->
 
 - Provide alternatives to motion actuation
 - Allow users to disable motion-activated features
@@ -82,8 +75,6 @@ For more, see the [W3C's Motion Actuation Techniques](https://www.w3.org/WAI/WCA
 
 ## **Common Mistakes to Avoid**
 
-<!-- [Do/Don't graphic: Left side with button alternative, right side with only motion] -->
-
 - Only supporting motion actuation
 - No alternative for device motion
 - Not documenting motion feature options
@@ -92,8 +83,6 @@ For more, see the [W3C's Motion Actuation Techniques](https://www.w3.org/WAI/WCA
 ---
 
 ## **Differences Between A, AA, and AAA for Guideline 2.5.4 in WCAG 2.2**
-
-<!-- [Infographic: Three columns labeled A, AA, AAA with example requirements for each] -->
 
 - **Level A:** Requires alternatives to motion actuation and ability to disable motion features. This is the core requirement for 2.5.4 and is mandatory for basic accessibility.
 - **Level AA:** For Guideline 2.5.4, there are no additional requirements beyond Level A in WCAG 2.2. Meeting Level A for this guideline also satisfies Level AA.
@@ -105,8 +94,6 @@ For more, see the [W3C’s official documentation for 2.5.4 Motion Actuation](ht
 
 ## **Quick Checklist**
 
-<!-- [Checklist graphic: Icons for each item (motion, button, disable, etc.)] -->
-
 - Alternatives to motion actuation are provided
 - Motion-activated features can be disabled
 - Motion feature options are documented
@@ -116,12 +103,5 @@ For more, see the [W3C’s official documentation for 2.5.4 Motion Actuation](ht
 
 ## **Summary**
 
-<!-- [Illustration: User operating a feature with a button in a web app] -->
-
 Guideline 2.5.4 is essential for ensuring all users can operate your site. By providing alternatives to motion actuation, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make motion accessibility a core part of your development process.
 
-**Next Up:**
-
-[Read Guideline 2.5.5: Target Size →](WCAG-Guideline-2-5-5-Target-Size-Explained)
-
-*Accessibility means options—help users operate features their way!*

@@ -8,6 +8,8 @@ imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guid
 status: published
 date: 2025-07-08
 excerpt: This section explains the specific required components for a valid WCAG 2.1 conformance claim, including what must be included and best practices.
+previous: /wcag/WCAG-Guideline-5-2-5-Non-Interference-Explained, Guideline 5.2.5 - Non-Interference
+next: /wcag/WCAG-Guideline-5-3-2-Statement-of-Partial-Conformance-Language-Explained, Guideline 5.3.2 - Statement of Partial Conformance: Language
 --->
 
 # **WCAG 2.1 Section 5.3.1: Required Components of a Conformance Claim**
@@ -61,8 +63,5 @@ A valid WCAG 2.1 conformance claim must include the date, guidelines version and
 
 ---
 
-**Next Up:**
-
-[Read Guideline 5.4: Statement of Partial Conformance – Third Party Content →](WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained)
 
 *Transparency builds trust—document your accessibility journey!*
