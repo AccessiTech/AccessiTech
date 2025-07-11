@@ -7,7 +7,8 @@ import './Blog.scss';
 import { getDDMMMYYYY } from "../../settings/utils";
 import Metadata from "../../components/Metadata/Metadata";
 import { metadata } from "./meta";
-import Header from "../../components/Header/Header";
+import { metadata as wcagMetadata } from "./wcag-meta";
+import { HeaderRow } from "../../components/Header/Header";
 
 interface FetchBlogEntriesProps {
   url?: string;
@@ -61,20 +62,17 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
   const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
   const order = pathname === 'wcag' ? BlogOrder.NATURAL : BlogOrder.DATE_DESC;
   const blog = useBlogEntriesArray({pathname, order});
+  const pageMetadata = pathname === 'wcag' ? wcagMetadata : metadata;
 
   useEffect(() => {
     fetchBlogEntries({pathname, navigate});
   }, [pathname]);
 
   return (<>
-    <Row className="header-row">
-      <Col xs={{ span: 11 }} md={{ span: 8, offset: 2 }}>
-        <Header />
-      </Col>
-    </Row>
+    <HeaderRow />
     <Row className="breadcrumb-row blog">
-      <Metadata {...metadata} />
-      <Col className="offset-md-2">
+      <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+        <Metadata {...pageMetadata} />
         <Breadcrumb className="breadcrumb-container">
           <Breadcrumb.Item href="/" onClick={(e: any) => {
             e.preventDefault();
@@ -88,8 +86,10 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
       <main id='main' aria-label="Blog" className="blog-page">
         <Col>
           <Row>
-            <Col xs={12} md={{ span: 8, offset: 2 }}>
+            <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
               <h2>{pagename}</h2>
+              <p>{pageMetadata.pageBlurb}</p>
+              <hr />
               {blog.map((blog: any) => (
                 <article key={`blog-${blog.id}`} className="blog-entry">
                   <Link key={blog.id} to={`/${pathname}/${blog.id}`}>

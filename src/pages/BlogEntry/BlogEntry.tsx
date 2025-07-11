@@ -12,7 +12,7 @@ import remarkDirective from "remark-directive";
 import { CustomMarkdownLink } from "../../components/CustomLink/CustomLink";
 import './BlogEntry.css';
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
-import Header from "../../components/Header/Header";
+import { HeaderRow } from "../../components/Header/Header";
 
 export interface FetchBlogEntryProps {
   id: string;
@@ -78,14 +78,10 @@ export const BlogEntry = () => {
   };
 
   return (<>
-    <Row className="header-row">
-      <Col xs={{ span: 11 }} md={{ span: 8, offset: 2 }}>
-        <Header />
-      </Col>
-    </Row>
+    <HeaderRow />
     <Row className="breadcrumb-row">
+      <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
       <Metadata {...metadata} />
-      <Col className="offset-md-2">
         <Breadcrumb className="breadcrumb-container">
           <Breadcrumb.Item href="/" onClick={(e: any) => {
             e.preventDefault();
@@ -103,7 +99,7 @@ export const BlogEntry = () => {
       <main id='main' aria-label="Blog Entry" className="blog-entry-page">
         <Col>
           <Row>
-            <Col xs={12} md={{ span: 8, offset: 2 }}>
+            <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
               <div>
                 {!entry?.loaded ? <p>Loading...</p> :
                   <ReactMarkdown
