@@ -14,7 +14,6 @@ export const CustomMarkdownLink = ({ href, title, ...props }: LinkProps) => {
   if (href && href.startsWith('http') && !href.includes(SITE_HOST)) {
     // append a font-awesome icon to the children[0] if it is a string
     if (props.children && typeof props.children === 'string') {
-      console.log('Appending external link icon');
       props.children = (<>
         {props.children} <sup><i className="fa fa-external-link-alt" aria-hidden="true"></i></sup>
       </>);
