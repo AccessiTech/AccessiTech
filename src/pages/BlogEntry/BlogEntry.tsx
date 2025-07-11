@@ -137,7 +137,7 @@ export const BlogEntry = () => {
       )}
       {/* next column */}
       {entry?.next && (
-        <Col md={{ span: 4 }}>
+        <Col md={{ span: 4, offset: typeof entry.previous === 'undefined' ? 2 : 0 }}>
           <Link to={`${entry.next.url}`} className="next-link">
             Next: {entry.next.title} →
           </Link>
