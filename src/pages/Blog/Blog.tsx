@@ -15,20 +15,32 @@ interface FetchBlogEntriesProps {
   navigate?: NavigateFunction;
   pathname?: string;
 }
+let rssCache: { text: string, parsed: Document } | null = null;
+
 const fetchBlogEntries = async ({url, navigate, pathname}:FetchBlogEntriesProps) => {
-  const response = await fetch((url || '/rss.xml')).catch((err) => {
-    console.error("Error fetching rss.xml:", err);
-    throw new Error("Failed to fetch rss.xml");
-  });
-  if (!response.ok) {
-    throw new Error("Failed to fetch rss.xml");
+  let text: string;
+  let xml: Document;
+
+  if (rssCache) {
+    text = rssCache.text;
+    xml = rssCache.parsed;
+  } else {
+    const response = await fetch((url || '/rss.xml')).catch((err) => {
+      console.error("Error fetching rss.xml:", err);
+      throw new Error("Failed to fetch rss.xml");
+    });
+    if (!response.ok) {
+      throw new Error("Failed to fetch rss.xml");
+    }
+    text = await response.text();
+    if (!text) {
+      throw new Error("Failed to parse blogs");
+    }
+    const parser = new DOMParser();
+    xml = parser.parseFromString(text, "text/xml");
+    rssCache = { text, parsed: xml };
   }
-  const text = await response.text();
-  if (!text) {
-    throw new Error("Failed to parse blogs");
-  }
-  const parser = new DOMParser();
-  const xml = parser.parseFromString(text, "text/xml");
+
   const items = xml.querySelectorAll("item");
   if (!items || !items.length) {
     throw new Error("Failed to load blogs");

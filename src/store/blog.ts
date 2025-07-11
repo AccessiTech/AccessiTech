@@ -44,26 +44,36 @@ export interface GetBlogEntryPayload {
 export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
   { id, navigate, pathname }: GetBlogEntryPayload
 ) => {
-  const response = await fetch(`/data/${pathname || 'blog'}/${id}.md`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to fetch blog");
-      }
-      return response;
-    })
-    .catch((e: string) => {
-      console.error(e);
-      // Prevent infinite redirect loop
-      if (navigate && window.location.pathname !== `/${pathname || 'blog'}`) {
-        // Use replace: true so the 404 page is replaced in history
-        navigate(`/${pathname || 'blog'}`, { replace: true });
-      } else if (window.location.pathname !== `/${pathname || 'blog'}`) {
-        // Use location.replace for hard redirects
-        window.location.replace(`/${pathname || 'blog'}`);
-      }
-    });
-  
-  const text = await response?.text();
+  // In-memory cache for markdown blog entries
+  const mdCache: { [key: string]: string } = {};
+  const cacheKey = `${pathname || 'blog'}/${id}`;
+  let text: string | undefined;
+  if (mdCache[cacheKey]) {
+    text = mdCache[cacheKey];
+  } else {
+    const response = await fetch(`/data/${pathname || 'blog'}/${id}.md`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch blog");
+        }
+        return response;
+      })
+      .catch((e: string) => {
+        console.error(e);
+        // Prevent infinite redirect loop
+        if (navigate && window.location.pathname !== `/${pathname || 'blog'}`) {
+          // Use replace: true so the 404 page is replaced in history
+          navigate(`/${pathname || 'blog'}`, { replace: true });
+        } else if (window.location.pathname !== `/${pathname || 'blog'}`) {
+          // Use location.replace for hard redirects
+          window.location.replace(`/${pathname || 'blog'}`);
+        }
+      });
+    text = await response?.text();
+    if (text) {
+      mdCache[cacheKey] = text;
+    }
+  }
   if (!text) {
     throw new Error("Failed to parse blog");
   }
