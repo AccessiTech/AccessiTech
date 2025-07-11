@@ -32,7 +32,7 @@ function Header() {
         <h1 className="logo-container" style={headerStyle}>{COMPANY_TITLE}</h1>
       </Link>
       {pathname !== '/' && (
-        <nav className="header-nav">
+        <nav className="header-nav" aria-label="Main navigation">
           <ul>
             {/* <li><Link to="/">Home</Link></li> */}
             <li><Link to="/blog" className={pathname === '/blog' ? 'active' : ''}>Blog</Link></li>
