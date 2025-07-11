@@ -158,6 +158,8 @@ export const useBlogEntriesArray = ({order, pathname}: BlogEntriesArrayProps): B
         return b.date.localeCompare(a.date);
       case BlogOrder.NATURAL:
         return naturalGuidelineSort(a.title, b.title);
+      default:
+        return 0;
     }
   });
 };
