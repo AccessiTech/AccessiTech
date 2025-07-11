@@ -1,10 +1,7 @@
 @import "bootstrap/scss/bootstrap.scss";
 
 .splash-social-buttons {
-  position: absolute;
-  bottom: rfs-value($alt-section-padding);
-  left: 0;
-  right: 0;
+  margin-top: 2rem;
 
   .simplified-view & {
     position: relative;
