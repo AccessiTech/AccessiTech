@@ -6,7 +6,12 @@
   "engines": {
     "node": ">=v20.19.0"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,jsx,ts,tsx,json,css,scss,md,html}": "prettier --write"
+  },
   "scripts": {
+    "prepare": "husky install",
     "dev": "vite",
     "start": "yarn dev",
     "static": "tsx ../vite-ssg/generate",
@@ -26,6 +31,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "coverage:badge": "yarn test:coverage && node scripts/update-coverage-badge.js",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\"",
     "format:all": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,scss,md,html}\" --ignore-path .prettierignore"
@@ -67,10 +73,12 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "fast-xml-parser": "^5.0.9",
+    "husky": "^9.1.7",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.0.4",
     "jest-environment-jsdom": "^30.0.4",
     "jest-watch-typeahead": "^3.0.1",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.6.2",
     "react-bootstrap": "^2.8.0",
     "sass": "^1.86.3",
