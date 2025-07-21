@@ -1,11 +1,10 @@
-
 a.section-anchor {
   h2,
   h3,
   h4 {
     display: inline-block;
     margin-bottom: 1rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
   button {
     position: relative;
@@ -13,7 +12,9 @@ a.section-anchor {
     font-size: 1rem;
     left: 1rem;
     bottom: 0.25rem;
-    transition: opacity 0.5s, box-shadow 0.5s;
+    transition:
+      opacity 0.5s,
+      box-shadow 0.5s;
     opacity: 0;
     box-shadow: 0 0 0 2px transparent;
     padding: 0.5rem;

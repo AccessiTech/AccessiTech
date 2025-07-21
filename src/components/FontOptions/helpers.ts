@@ -16,7 +16,7 @@ export const BODY = "body";
 /** On Font Options Toggle
  * @param {Event} e
  */
-export const onFontOptionsToggle = (e:any) => {
+export const onFontOptionsToggle = (e: any) => {
   e.preventDefault();
   store.dispatch(toggleFontOptions());
 };
@@ -25,14 +25,14 @@ export const onFontOptionsToggle = (e:any) => {
  * @param {Event} e
  * @param {Number} fontSize
  */
-export const onFontSizeChange = (e:any) => {
+export const onFontSizeChange = (e: any) => {
   e.preventDefault();
   const newFontSize = Number(e.target.value).toFixed(1);
   const body = document.querySelector(BODY);
   if (body) {
     for (let i = 0.5; i <= 5; i += 0.1) {
       body.classList.remove(
-        getFontSizeClass((Math.round(i * 10) / 10).toFixed(1))
+        getFontSizeClass((Math.round(i * 10) / 10).toFixed(1)),
       );
     }
     body.classList.add(getFontSizeClass(newFontSize));
@@ -44,7 +44,7 @@ export const onFontSizeChange = (e:any) => {
  * @param {object} e event
  * @param {string} fontFamily font family
  */
-export const onFontFamilyChange = (e:any) => {
+export const onFontFamilyChange = (e: any) => {
   e.preventDefault();
   const body = document.querySelector(BODY);
   const fontFamilyClass = getFontFamilyClass(e.target.value);
@@ -68,9 +68,9 @@ export const onFontFamilyChange = (e:any) => {
  * @returns {function} debounced function
  * @example const debouncedFunction = debounce(() => { console.log('hello'); }, 1000);
  */
-export const debounce = (fn:any, delay:number) => {
+export const debounce = (fn: any, delay: number) => {
   let timer: NodeJS.Timeout;
-  return (...args:any[]) => {
+  return (...args: any[]) => {
     clearTimeout(timer);
     timer = setTimeout(() => {
       fn(...args);
@@ -82,7 +82,7 @@ export const debounce = (fn:any, delay:number) => {
  * @param {string} fontSize font size in rem
  * @returns {string} font size class
  */
-export const getFontSizeClass = (fontSize: string):string => {
+export const getFontSizeClass = (fontSize: string): string => {
   const string = fontSize.toString().replace(".", "-");
   return `font-size-${string}`;
 };
@@ -92,6 +92,6 @@ export const getFontSizeClass = (fontSize: string):string => {
  * @returns {string} font family class
  * @example const fontFamilyClass = getFontFamilyClass('sans-serif');
  */
-export const getFontFamilyClass = (fontFamily:FontFamily):string => {
+export const getFontFamilyClass = (fontFamily: FontFamily): string => {
   return `font-family-${fontFamily}`;
 };

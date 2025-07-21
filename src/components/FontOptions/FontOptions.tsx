@@ -20,7 +20,8 @@ export const namespace = "fontOptions/";
 // Display Strings!
 export const FONT_OPTIONS_TOGGLE_LABEL = "Toggle Font Options Menu";
 export const FONT_OPTIONS_TITLE = "Font Options";
-export const FONT_OPTIONS_DESCRIPTION = "Change the font size and family of the page";
+export const FONT_OPTIONS_DESCRIPTION =
+  "Change the font size and family of the page";
 export const FONT_SIZE_LABEL = "Font Size";
 export const FONT_OPTIONS_FAMILY_LABEL = "Font Family";
 export const FONT_OPTIONS_SIZE_INPUT_LABEL = "Font Size Range Input";
@@ -39,14 +40,14 @@ export interface FontOptionsProps {
 /** Font Options
  * @returns {object} font options component
  **/
-export const FontOptions = (props:FontOptionsProps) => {
+export const FontOptions = (props: FontOptionsProps) => {
   const dispatch = useDispatch();
   const isOpen = useIsOpen();
-  const fontSize:string = Number(useFontSize() || 1).toFixed(1);
+  const fontSize: string = Number(useFontSize() || 1).toFixed(1);
   const fontFamily = useFontFamily();
   const { onClose } = props || {};
 
-  const onEscapeKey = (e:any) => {
+  const onEscapeKey = (e: any) => {
     if (e.key === ESCAPE) {
       if (isOpen) {
         dispatch(toggleFontOptions());
@@ -63,9 +64,7 @@ export const FontOptions = (props:FontOptionsProps) => {
 
         <div className="font-options__row">
           <div className="flex-row flex-space-between">
-            <label htmlFor="font-options__font-size">
-              {FONT_SIZE_LABEL}:
-            </label>
+            <label htmlFor="font-options__font-size">{FONT_SIZE_LABEL}:</label>
             <span className="font-options__font-size-value">{fontSize}x</span>
           </div>
 
@@ -137,6 +136,6 @@ export const FontOptions = (props:FontOptionsProps) => {
       {isOpen && formElement}
     </div>
   );
-}
+};
 
 export default FontOptions;

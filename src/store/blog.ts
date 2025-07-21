@@ -26,8 +26,8 @@ export interface Blog {
   image?: string;
   image_alt?: string;
   pathname?: string; // Optional, used for routing
-  next?: { url: string, title: string }; // Optional, used for next blog entry link
-  previous?: { url: string, title: string }; // Optional, used for previous blog entry link
+  next?: { url: string; title: string }; // Optional, used for next blog entry link
+  previous?: { url: string; title: string }; // Optional, used for previous blog entry link
   excerpt?: string; // Optional, used for blog entry excerpt
 }
 
@@ -41,69 +41,82 @@ export interface GetBlogEntryPayload {
   navigate?: NavigateFunction;
   pathname?: string;
 }
-export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
-  { id, navigate, pathname }: GetBlogEntryPayload
-) => {
-  // In-memory cache for markdown blog entries
-  const mdCache: { [key: string]: string } = {};
-  const cacheKey = `${pathname || 'blog'}/${id}`;
-  let text: string | undefined;
-  if (mdCache[cacheKey]) {
-    text = mdCache[cacheKey];
-  } else {
-    const response = await fetch(`/data/${pathname || 'blog'}/${id}.md`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to fetch blog");
-        }
-        return response;
-      })
-      .catch((e: string) => {
-        console.error(e);
-        // Prevent infinite redirect loop
-        if (navigate && window.location.pathname !== `/${pathname || 'blog'}`) {
-          // Use replace: true so the 404 page is replaced in history
-          navigate(`/${pathname || 'blog'}`, { replace: true });
-        } else if (window.location.pathname !== `/${pathname || 'blog'}`) {
-          // Use location.replace for hard redirects
-          window.location.replace(`/${pathname || 'blog'}`);
-        }
-      });
-    text = await response?.text();
-    if (text) {
-      mdCache[cacheKey] = text;
+export const getBlogEntry = createAsyncThunk(
+  GET_BLOG_ENTRY,
+  async ({ id, navigate, pathname }: GetBlogEntryPayload) => {
+    // In-memory cache for markdown blog entries
+    const mdCache: { [key: string]: string } = {};
+    const cacheKey = `${pathname || "blog"}/${id}`;
+    let text: string | undefined;
+    if (mdCache[cacheKey]) {
+      text = mdCache[cacheKey];
+    } else {
+      const response = await fetch(`/data/${pathname || "blog"}/${id}.md`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Failed to fetch blog");
+          }
+          return response;
+        })
+        .catch((e: string) => {
+          console.error(e);
+          // Prevent infinite redirect loop
+          if (
+            navigate &&
+            window.location.pathname !== `/${pathname || "blog"}`
+          ) {
+            // Use replace: true so the 404 page is replaced in history
+            navigate(`/${pathname || "blog"}`, { replace: true });
+          } else if (window.location.pathname !== `/${pathname || "blog"}`) {
+            // Use location.replace for hard redirects
+            window.location.replace(`/${pathname || "blog"}`);
+          }
+        });
+      text = await response?.text();
+      if (text) {
+        mdCache[cacheKey] = text;
+      }
     }
-  }
-  if (!text) {
-    throw new Error("Failed to parse blog");
-  }
+    if (!text) {
+      throw new Error("Failed to parse blog");
+    }
 
-  const metaData = getMetaData(text);
-  const date = metaData["date"] || "";
-  const description = metaData["description"] || "";
-  const content = Object.keys(metaData).length ? text.substring(text.indexOf("-->") + 3, text.length) : text;
-  const title = metaData["title"] || content.split("\n")[0].replace("# ", "");
-  const image = metaData["image"] || "";
-  const image_alt = metaData["image_alt"] || "";
-  const excerpt = metaData["excerpt"] || "";
-  const nextStr = metaData["next"] || "";
-  const previousStr = metaData["previous"] || "";
+    const metaData = getMetaData(text);
+    const date = metaData["date"] || "";
+    const description = metaData["description"] || "";
+    const content = Object.keys(metaData).length
+      ? text.substring(text.indexOf("-->") + 3, text.length)
+      : text;
+    const title = metaData["title"] || content.split("\n")[0].replace("# ", "");
+    const image = metaData["image"] || "";
+    const image_alt = metaData["image_alt"] || "";
+    const excerpt = metaData["excerpt"] || "";
+    const nextStr = metaData["next"] || "";
+    const previousStr = metaData["previous"] || "";
 
-  return {
-    loaded: true,
-    id,
-    title,
-    content,
-    date,
-    description,
-    image,
-    image_alt,
-    pathname,
-    excerpt,
-    next: nextStr ? { url: nextStr.split(',')[0], title: nextStr.split(',')[1] || "Next" } : undefined,
-    previous: previousStr ? { url: previousStr.split(',')[0], title: previousStr.split(',')[1] || "Previous" } : undefined,
-  } as Blog;
-});
+    return {
+      loaded: true,
+      id,
+      title,
+      content,
+      date,
+      description,
+      image,
+      image_alt,
+      pathname,
+      excerpt,
+      next: nextStr
+        ? { url: nextStr.split(",")[0], title: nextStr.split(",")[1] || "Next" }
+        : undefined,
+      previous: previousStr
+        ? {
+            url: previousStr.split(",")[0],
+            title: previousStr.split(",")[1] || "Previous",
+          }
+        : undefined,
+    } as Blog;
+  },
+);
 
 export const blogInitialState: BlogState = {
   isLoading: false,
@@ -120,7 +133,7 @@ export const blogSlice = createSlice({
         ...state.entries[id],
         ...entry,
       };
-    }
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(getBlogEntry.fulfilled, (state, action) => {
@@ -156,7 +169,10 @@ export interface BlogEntriesArrayProps {
 }
 import { useMemo } from "react";
 
-export const useBlogEntriesArray = ({order, pathname}: BlogEntriesArrayProps): Blog[] => {
+export const useBlogEntriesArray = ({
+  order,
+  pathname,
+}: BlogEntriesArrayProps): Blog[] => {
   const entries = useBlogEntries();
   return useMemo(() => {
     return Object.values(entries)

@@ -5,10 +5,11 @@ import { useState, useLayoutEffect } from "react";
  * @returns {number} the width of the window
  */
 export const getViewportWidth = (): number => {
-  return Math.max(window.innerWidth,
-      document.documentElement.clientWidth,
-      document.body.clientWidth,
-      0,
+  return Math.max(
+    window.innerWidth,
+    document.documentElement.clientWidth,
+    document.body.clientWidth,
+    0,
   );
 };
 
@@ -16,12 +17,12 @@ export const getViewportWidth = (): number => {
  * Get Viewport Height
  * @returns {number} the height of the window
  */
-export const getViewportHeight = ():number => {
+export const getViewportHeight = (): number => {
   return Math.max(
     window.innerHeight,
-      document.documentElement.clientHeight,
-      document.body.clientHeight,
-      0,
+    document.documentElement.clientHeight,
+    document.body.clientHeight,
+    0,
   );
 };
 
@@ -30,7 +31,7 @@ export const getViewportHeight = ():number => {
  * src - https://stackoverflow.com/a/19014495
  * @returns {[number, number]} - [width, height]
  */
-export const useWindowSize = ():number[] => {
+export const useWindowSize = (): number[] => {
   const [size, setSize] = useState([0, 0]);
   useLayoutEffect(() => {
     function updateSize() {
@@ -43,9 +44,9 @@ export const useWindowSize = ():number[] => {
   return size;
 };
 
-export const useOutsideClick = (ref:any, callback:any) => {
+export const useOutsideClick = (ref: any, callback: any) => {
   if (typeof document === "undefined") return;
-  const handleClick = (e:any) => {
+  const handleClick = (e: any) => {
     if (ref.current && !ref.current.contains(e.target)) {
       callback(e);
       document.removeEventListener("click", handleClick);
@@ -55,17 +56,19 @@ export const useOutsideClick = (ref:any, callback:any) => {
   return () => document.removeEventListener("click", handleClick);
 };
 
-export const getPageFromPath = (pathname: string):string => {
-  let newPage = pathname.replace('/', '') && pathname !== '/index.html' ? pathname.replace('/', '').replace('.html', '') : 'home';
-  if (newPage.indexOf('/') > -1) {
-    newPage = newPage.split('/')[0];
+export const getPageFromPath = (pathname: string): string => {
+  let newPage =
+    pathname.replace("/", "") && pathname !== "/index.html"
+      ? pathname.replace("/", "").replace(".html", "")
+      : "home";
+  if (newPage.indexOf("/") > -1) {
+    newPage = newPage.split("/")[0];
   }
   return newPage;
-}
+};
 
-export const getMetaData = (text: string):{[key:string]:string} => {
-
-  const metaData:{[key:string]:string} = {};
+export const getMetaData = (text: string): { [key: string]: string } => {
+  const metaData: { [key: string]: string } = {};
   const lines = text.split("\n");
   lines.forEach((line) => {
     const key = line.split(":")[0]?.replace("<!--", "").trim();
@@ -77,22 +80,22 @@ export const getMetaData = (text: string):{[key:string]:string} => {
   return metaData;
 };
 
-export const getDDMMMYYYY = (date: string):string => {
-  const options:any = {
+export const getDDMMMYYYY = (date: string): string => {
+  const options: any = {
     year: "numeric",
     month: "short",
     day: "numeric",
   };
-  return new Date(date).toLocaleDateString('en-UK', options);
-}
+  return new Date(date).toLocaleDateString("en-UK", options);
+};
 
 // Natural sort for WCAG guideline numbers like "1.4.10", "1.4.2", etc.
 export function naturalGuidelineSort(a: string, b: string): number {
   // Extract the leading number sequence (e.g., "1.4.10" from "1.4.10 - Reflow")
   const aMatch = a.match(/^([\d.]+)/);
   const bMatch = b.match(/^([\d.]+)/);
-  const aParts = aMatch ? aMatch[1].split('.').map(Number) : [];
-  const bParts = bMatch ? bMatch[1].split('.').map(Number) : [];
+  const aParts = aMatch ? aMatch[1].split(".").map(Number) : [];
+  const bParts = bMatch ? bMatch[1].split(".").map(Number) : [];
   const len = Math.max(aParts.length, bParts.length);
   for (let i = 0; i < len; i++) {
     const aNum = aParts[i] ?? 0;

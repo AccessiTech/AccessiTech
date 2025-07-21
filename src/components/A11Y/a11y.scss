@@ -37,7 +37,6 @@
       border: solid white;
       border-width: 0 1px;
 
-
       li {
         list-style: none;
       }
@@ -54,7 +53,7 @@
       line-height: 2.25rem;
       opacity: 0.9;
     }
-  
+
     .language-select {
       background-color: transparent;
       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiAxNic+CiAgPHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPSdibGFjaycgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBzdHJva2Utd2lkdGg9JzUnIGQ9J00yIDVsNiA2IDYtNicvPgogIDxwYXRoIGZpbGw9J25vbmUnIHN0cm9rZT0nd2hpdGUnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcgc3Ryb2tlLXdpZHRoPScyJyBkPSdNMiA1bDYgNiA2LTYnLz4KPC9zdmc+);
@@ -63,7 +62,7 @@
       box-shadow: $no-box-shadow;
       cursor: pointer;
       @include hc-text-shadow;
-  
+
       &:hover,
       &:focus-visible {
         box-shadow: $hc-focus-box-shadow;
@@ -81,7 +80,7 @@
   .simplified-view-container {
     text-align: center;
     position: relative;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 
     .font-options-toggle,
     .simplified-view-toggle {
@@ -94,7 +93,7 @@
       min-width: 36px;
       cursor: pointer;
       @include hc-text-shadow;
-  
+
       &.isOpen {
         border: $unfocus-border;
       }

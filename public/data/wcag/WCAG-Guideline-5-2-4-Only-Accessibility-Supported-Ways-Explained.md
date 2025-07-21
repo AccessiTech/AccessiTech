@@ -23,6 +23,7 @@ next: /wcag/WCAG-Guideline-5-2-5-Non-Interference-Explained, Guideline 5.2.5 - N
 Section 5.2.4 of WCAG 2.1 requires that you can only rely on ways of using web technologies that are supported by both user agents (like browsers) and assistive technologies (like screen readers) to meet accessibility requirements. If a feature or method is not accessibility supported, you cannot rely on it to satisfy WCAG success criteria.
 
 **Key points:**
+
 - You must use technologies in ways that work with assistive technologies and mainstream browsers.
 - If you use a feature that is not accessibility supported, you must provide an alternative that is accessibility supported.
 - "Accessibility supported" means the feature has been tested and works with assistive technologies in the human language(s) of your content.
@@ -61,10 +62,10 @@ You can only claim WCAG conformance if you use technologies in ways that are acc
 ---
 
 ## **References & Further Reading**
+
 - [WCAG 2.1 Section 5.2.4: Only Accessibility-Supported Ways of Using Technologies](https://www.w3.org/TR/WCAG21/#cc4)
 - [Understanding Accessibility Support](https://www.w3.org/WAI/WCAG21/Understanding/conformance#accessibility-support)
 
 ---
 
-
-*Accessibility means using technologies in ways everyone can access.*
+_Accessibility means using technologies in ways everyone can access._

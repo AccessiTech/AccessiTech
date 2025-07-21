@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.4.7 Focus Visible](https
 ## **Summary**
 
 Guideline 2.4.7 is essential for helping users navigate your site efficiently. By ensuring visible focus, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make focus visibility a core part of your development process.
-

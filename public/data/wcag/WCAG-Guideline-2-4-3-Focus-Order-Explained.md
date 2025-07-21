@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.4.3 Focus Order](https:/
 ## **Summary**
 
 Guideline 2.4.3 is essential for helping users navigate your site efficiently. By ensuring a logical focus order, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make focus order a core part of your development process.
-

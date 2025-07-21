@@ -1,14 +1,14 @@
-import fs from 'fs';
-import path from 'path';
-import { Provider } from 'react-redux'
-import App from './App/App'
-import Metadata from './components/Metadata/Metadata'
-import './scss/index.scss'
-import { store } from './store/store'
-import { MetaDataProps } from './settings/getMetaData'
-import { Blog, setBlogEntry } from './store/blog'
+import fs from "fs";
+import path from "path";
+import { Provider } from "react-redux";
+import App from "./App/App";
+import Metadata from "./components/Metadata/Metadata";
+import "./scss/index.scss";
+import { store } from "./store/store";
+import { MetaDataProps } from "./settings/getMetaData";
+import { Blog, setBlogEntry } from "./store/blog";
 
-console.log('Hello from server.tsx')
+console.log("Hello from server.tsx");
 
 export const preload = async (url: string) => {
   const entry = await genEntry(url);
@@ -16,28 +16,32 @@ export const preload = async (url: string) => {
 };
 
 export const render = async (path: string) => {
-  const ReactDOMServer = (await import('react-dom/server')).default;
-  const component = (<Provider store={store}>
-    <App path={path} />
-  </Provider>);
+  const ReactDOMServer = (await import("react-dom/server")).default;
+  const component = (
+    <Provider store={store}>
+      <App path={path} />
+    </Provider>
+  );
   const staticMarkup = ReactDOMServer.renderToStaticMarkup(component);
   return staticMarkup;
-}
+};
 
 export const renderMetadata = async (data: MetaDataProps) => {
-  const ReactDOMServer = (await import('react-dom/server')).default;
-  const component = (<Metadata {...data} />);
+  const ReactDOMServer = (await import("react-dom/server")).default;
+  const component = <Metadata {...data} />;
   const staticMarkup = ReactDOMServer.renderToStaticMarkup(component);
   return staticMarkup;
-}
+};
 
-export const fetchMetaData = async (url: string): Promise<{ metaData: { [key: string]: string }, fileContent: string }> => {
-  console.log('URL:', url);
-  const id = url.split("/").splice(2).join('/') || "";
-  const pathname = url.split("/").slice(1, 2).join('') || "";
+export const fetchMetaData = async (
+  url: string,
+): Promise<{ metaData: { [key: string]: string }; fileContent: string }> => {
+  console.log("URL:", url);
+  const id = url.split("/").splice(2).join("/") || "";
+  const pathname = url.split("/").slice(1, 2).join("") || "";
   const fileContent = fs.readFileSync(
     path.resolve(process.cwd(), "public/data/", pathname, `${id}.md`),
-    { encoding: "utf-8" }
+    { encoding: "utf-8" },
   );
   const metaData = parseMetaData(fileContent);
   return { metaData, fileContent };
@@ -65,7 +69,7 @@ export const genEntry = async (url: string): Promise<Blog> => {
     image,
     image_alt,
   };
-}
+};
 
 export const parseMetaData = (text: string): { [key: string]: string } => {
   const metaData: { [key: string]: string } = {};

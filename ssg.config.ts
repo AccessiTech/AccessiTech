@@ -15,8 +15,8 @@ export const config: ConfigProps = defineConfig({
   pathsBuilder: (items) =>
     items.map((item) => {
       const { link } = item;
-      const id = link.split("/").splice(4).join('/') || "";
-      const pathname = link.split("/").slice(3,-1);
+      const id = link.split("/").splice(4).join("/") || "";
+      const pathname = link.split("/").slice(3, -1);
       return `/${pathname}/${id}`;
     }),
   viteServer: {

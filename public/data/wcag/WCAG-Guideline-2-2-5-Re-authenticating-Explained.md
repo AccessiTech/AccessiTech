@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.2.5 Re-authenticating](h
 ## **Summary**
 
 Guideline 2.2.5 is essential for preventing data loss and supporting users who need more time. By preserving user data during re-authentication, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make session management a core part of your development process.
-

@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.5.2 Pointer Cancellation
 ## **Summary**
 
 Guideline 2.5.2 is essential for giving users control and preventing mistakes. By allowing users to cancel or undo pointer actions, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make pointer cancellation a core part of your development process.
-

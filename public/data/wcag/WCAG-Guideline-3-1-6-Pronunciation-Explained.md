@@ -100,5 +100,4 @@ Guideline 3.1.6 ensures that users can understand how words are spoken when mean
 
 **Next Up**
 
-
-*Clear pronunciation means clear understanding—help every user get the meaning!* 
+_Clear pronunciation means clear understanding—help every user get the meaning!_

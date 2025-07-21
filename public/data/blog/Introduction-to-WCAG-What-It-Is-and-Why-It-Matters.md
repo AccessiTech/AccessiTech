@@ -1,4 +1,3 @@
-
 <!--
 title: Introduction to WCAG - What It Is and Why It Matters
 description: Learn what WCAG is, why web accessibility matters, and how it impacts users, laws, and inclusive design practices. Start building accessible websites today.
@@ -44,14 +43,15 @@ WCAG (pronounced "Wuh-KAG") is a set of internationally recognized guidelines fo
 > **Accessibility is not just for “them”—it’s for all of us.**
 
 ![A Venn diagram with three overlapping circles labeled: "Disability", "Situational", "Environmental". At the intersection: "Need for Accessibility."](/assets/images/venn-diagram-accessibility.png)
-> *This shows how accessibility supports everyone—from permanent disabilities to temporary or situational limitations.*
+
+> _This shows how accessibility supports everyone—from permanent disabilities to temporary or situational limitations._
 
 **WCAG helps:**
 
-* People with permanent disabilities (blindness, deafness, mobility impairments)
-* People using devices with limited functionality (e.g., phones in bright light)
-* Older adults with cognitive or motor challenges
-* Users on slow or unstable internet connections
+- People with permanent disabilities (blindness, deafness, mobility impairments)
+- People using devices with limited functionality (e.g., phones in bright light)
+- Older adults with cognitive or motor challenges
+- Users on slow or unstable internet connections
 
 ---
 
@@ -66,7 +66,8 @@ Depending on your region, **web accessibility might be required by law**:
 | Canada | AODA             | WCAG 2.0 AA (growing toward 2.1/2.2) |
 
 ![A gavel beside a computer screen with an alert: “Non-compliant website – Accessibility lawsuit filed”](/assets/images/gavel-warning.jpg)
-> *Increasingly, organizations face legal risk when accessibility is ignored.*
+
+> _Increasingly, organizations face legal risk when accessibility is ignored._
 
 ---
 
@@ -90,16 +91,16 @@ We’ll break down WCAG into practical, digestible posts, including:
 
 ## **WCAG References and Checklists**
 
-* [W3C’s How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG22/quickref/)
-* [a11yproject’s WCAG Checklist](https://www.a11yproject.com/checklist/)
-* [WebAim’s 10 page WCAG Checklist](https://webaim.org/standards/wcag/WCAG2Checklist.pdf)
-* [Full WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
+- [W3C’s How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG22/quickref/)
+- [a11yproject’s WCAG Checklist](https://www.a11yproject.com/checklist/)
+- [WebAim’s 10 page WCAG Checklist](https://webaim.org/standards/wcag/WCAG2Checklist.pdf)
+- [Full WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
 
 Includes:
 
-* Key terms and definitions
-* Links to free tools for testing accessibility
-* Comprehensive guides to meeting accessibility standards
+- Key terms and definitions
+- Links to free tools for testing accessibility
+- Comprehensive guides to meeting accessibility standards
 
 ---
 
@@ -115,4 +116,3 @@ Includes:
 8. Video without captions -> Provide accurate closed captions for all videos.
 9. Missing page language -> Set the page's lang attribute (e.g., `<html lang="en">` ).
 10. ARIA misuse -> Only use ARIA roles when necessary and correctly.
-

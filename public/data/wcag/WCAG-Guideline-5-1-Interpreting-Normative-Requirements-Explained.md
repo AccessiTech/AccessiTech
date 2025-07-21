@@ -59,6 +59,7 @@ These keywords are used throughout WCAG to clarify what is required, what is rec
 ## **Why Does This Matter?**
 
 Understanding the difference between normative and informative content—and the meaning of key terms—ensures you:
+
 - Know exactly what is required for accessibility conformance
 - Can distinguish between rules and helpful advice
 - Avoid common mistakes when making or evaluating conformance claims
@@ -66,11 +67,11 @@ Understanding the difference between normative and informative content—and the
 ---
 
 ## **References & Further Reading**
+
 - [WCAG 2.1 Section 5.1: Interpreting Normative Requirements](https://www.w3.org/TR/WCAG21/#interpreting-normative-requirements)
 - [RFC 2119: Key words for use in RFCs to Indicate Requirement Levels](https://www.rfc-editor.org/rfc/rfc2119)
 - [WCAG 2.1 Full Specification](https://www.w3.org/TR/WCAG21/)
 
 ---
 
-
-*Understanding normative requirements is essential for anyone working with web accessibility standards. By following the normative rules and using informative content for guidance, you can ensure your digital content is truly accessible and compliant.*
+_Understanding normative requirements is essential for anyone working with web accessibility standards. By following the normative rules and using informative content for guidance, you can ensure your digital content is truly accessible and compliant._

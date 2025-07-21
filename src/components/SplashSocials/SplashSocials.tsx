@@ -25,15 +25,17 @@ export const GITHUB_LABEL = "AccessiTech on GitHub";
 export const FIVERR_LABEL = "AccessiTech on Fiverr";
 
 function SplashSocials() {
-  const isSimplifiedView = useIsSimplified()
-  const [iconColor, setIconColor] = useState(isSimplifiedView ? DARK_BLUE : WHITE)
+  const isSimplifiedView = useIsSimplified();
+  const [iconColor, setIconColor] = useState(
+    isSimplifiedView ? DARK_BLUE : WHITE,
+  );
   useEffect(() => {
     setIconColor(isSimplifiedView ? DARK_BLUE : WHITE);
   }, [isSimplifiedView]);
   return (
     <section
       className="splash-social-buttons"
-      aria-label={(SOCIAL_MEDIA_BUTTONS)}
+      aria-label={SOCIAL_MEDIA_BUTTONS}
     >
       <ul>
         {/* <li>
@@ -56,7 +58,7 @@ function SplashSocials() {
       </li>*/}
         <li>
           <SocialIcon
-            label={(FIVERR_LABEL)}
+            label={FIVERR_LABEL}
             network="facebook"
             url={FIVERR_URL}
             fgColor={iconColor}
@@ -66,7 +68,7 @@ function SplashSocials() {
         </li>
         <li>
           <SocialIcon
-            label={(LINKEDIN_LABEL)}
+            label={LINKEDIN_LABEL}
             url={LINKEDIN_URL}
             fgColor={iconColor}
             bgColor={TRANSPARENT}
@@ -75,7 +77,7 @@ function SplashSocials() {
         </li>
         <li>
           <SocialIcon
-            label={(GITHUB_LABEL)}
+            label={GITHUB_LABEL}
             url={GITHUB_ORG_URL}
             fgColor={iconColor}
             bgColor={TRANSPARENT}
@@ -84,7 +86,7 @@ function SplashSocials() {
         </li>
         <li>
           <SocialIcon
-            label={(REDDIT_LABEL)}
+            label={REDDIT_LABEL}
             url={REDDIT_URL}
             fgColor={iconColor}
             bgColor={TRANSPARENT}
@@ -93,7 +95,7 @@ function SplashSocials() {
         </li>
         <li>
           <SocialIcon
-            label={(TWITTER_LABEL)}
+            label={TWITTER_LABEL}
             url={TWITTER_URL}
             fgColor={iconColor}
             bgColor={TRANSPARENT}

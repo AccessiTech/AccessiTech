@@ -101,4 +101,4 @@ For more, see the [W3C’s official documentation for 1.4.12 Text Spacing](https
 
 Guideline 1.4.12 ensures your content remains readable and usable when users adjust spacing. Use flexible CSS and always test with user stylesheets.
 
-*Accessibility means everyone can read your content—no matter their spacing needs!*
+_Accessibility means everyone can read your content—no matter their spacing needs!_

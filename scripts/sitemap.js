@@ -25,31 +25,34 @@ function readCNAME(filePath) {
       changefreq: "monthly",
       priority: 1,
       title: "AccessiTech - Home",
-      description: "Welcome to AccessiTech, your go-to source for web accessibility solutions.",
+      description:
+        "Welcome to AccessiTech, your go-to source for web accessibility solutions.",
       image: "https://www.accessi.tech/assets/images/default.png",
       imageAlt: "AccessiTech logo",
-      status: 'published',
+      status: "published",
     },
     {
       url: "/blog",
       changefreq: "weekly",
       priority: 0.9,
       title: "AccessiTech - Blog",
-      description: "Explore my blog for the latest insights on web accessibility.",
+      description:
+        "Explore my blog for the latest insights on web accessibility.",
       image: "https://www.accessi.tech/assets/images/default.png",
       imageAlt: "AccessiTech logo",
-      status: 'published',
+      status: "published",
     },
     {
       url: "/wcag",
       changefreq: "weekly",
       priority: 0.8,
       title: "AccessiTech - WCAG Explained",
-      description: "Learn about the Web Content Accessibility Guidelines (WCAG) and how to implement them effectively.",
+      description:
+        "Learn about the Web Content Accessibility Guidelines (WCAG) and how to implement them effectively.",
       image: "https://www.accessi.tech/assets/images/default.png",
       imageAlt: "WCAG guidelines",
-      status: 'published',
-    }
+      status: "published",
+    },
   ];
   const blogDir = path.join(process.cwd(), "public/data");
   // Recursively get all .md files from blogDir and subdirectories
@@ -61,7 +64,7 @@ function readCNAME(filePath) {
       const stat = fs.statSync(filePath);
       if (stat && stat.isDirectory()) {
         results = results.concat(getAllMarkdownFiles(filePath));
-      } else if (file.endsWith('.md')) {
+      } else if (file.endsWith(".md")) {
         results.push(filePath);
       }
     });
@@ -71,7 +74,7 @@ function readCNAME(filePath) {
   blogFiles.forEach((filePath) => {
     const fileContent = fs.readFileSync(filePath, { encoding: "utf-8" });
     // Generate the blog link relative to blogDir
-    const relativePath = path.relative(blogDir, filePath).replace(/\\/g, '/');
+    const relativePath = path.relative(blogDir, filePath).replace(/\\/g, "/");
     const fileMetaData = getMetaData(fileContent);
     const link = `/${relativePath}`.replace(".md", "");
     pages.push({
@@ -96,11 +99,11 @@ function readCNAME(filePath) {
   ${pages
     .map((page) => {
       // get size of image in bytes
-      if (page.status !== 'published') return;
+      if (page.status !== "published") return;
       let imagePath = path.resolve(
         process.cwd(),
         "public/assets/images",
-        page.image?.replace(PUBLIC_IMAGE_DIR, "")
+        page.image?.replace(PUBLIC_IMAGE_DIR, ""),
       );
       let imageSize = 0;
       if (!fs.existsSync(imagePath)) {
@@ -108,7 +111,7 @@ function readCNAME(filePath) {
         console.warn(`Image not found: ${imagePath}, using default.png`);
         imagePath = path.resolve(
           process.cwd(),
-          "public/assets/images/default.png"
+          "public/assets/images/default.png",
         );
       }
       try {

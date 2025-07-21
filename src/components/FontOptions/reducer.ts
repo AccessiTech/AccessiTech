@@ -54,8 +54,8 @@ export const setFontFamily = fontOptionsSlice.actions[SET_FONT_FAMILY_ACTION];
  * @returns {boolean} true if font options are open
  * @example const isOpen = useIsOpen();
  */
-export const useIsOpen = ():boolean => {
-  const slice = useSelector((state:any) => state[fontOptionsSliceName]);
+export const useIsOpen = (): boolean => {
+  const slice = useSelector((state: any) => state[fontOptionsSliceName]);
   return (slice && slice.isOpen) || false;
 };
 
@@ -63,8 +63,8 @@ export const useIsOpen = ():boolean => {
  * @returns {number} font size in rem
  * @example const fontSize = useFontSize();
  */
-export const useFontSize = ():number => {
-  const slice = useSelector((state:any) => state[fontOptionsSliceName]);
+export const useFontSize = (): number => {
+  const slice = useSelector((state: any) => state[fontOptionsSliceName]);
   return (slice && slice.fontSize) || 1;
 };
 
@@ -72,7 +72,7 @@ export const useFontSize = ():number => {
  * @returns {FontFamily} font family
  * @example const fontFamily = useFontFamily();
  */
-export const useFontFamily = ():FontFamily => {
-  const slice = useSelector((state:any) => state[fontOptionsSliceName]);
+export const useFontFamily = (): FontFamily => {
+  const slice = useSelector((state: any) => state[fontOptionsSliceName]);
   return (slice && slice.fontFamily) || SANS_SERIF;
 };

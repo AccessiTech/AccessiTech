@@ -105,4 +105,3 @@ For more, see the [W3C’s official documentation for 1.2.2 Captions (Prerecorde
 ## **Summary**
 
 Guideline 1.2.2 is essential for making video content accessible to everyone. By providing accurate captions, you support users with disabilities, improve usability, and meet legal requirements. Make captioning a standard part of your video production process.
-

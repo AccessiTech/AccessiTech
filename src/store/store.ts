@@ -1,4 +1,3 @@
-
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import {
   persistReducer,
@@ -12,7 +11,10 @@ import {
 } from "reduxjs-toolkit-persist";
 import { PersistConfig, Persistor } from "reduxjs-toolkit-persist/lib/types";
 import storage from "reduxjs-toolkit-persist/lib/storage";
-import { fontOptionsSlice, fontOptionsSliceName } from "../components/FontOptions/reducer";
+import {
+  fontOptionsSlice,
+  fontOptionsSliceName,
+} from "../components/FontOptions/reducer";
 import { a11ySlice, a11ySliceName } from "./a11y";
 import { blogSlice, blogSliceName } from "./blog";
 
@@ -39,6 +41,6 @@ export const store = configureStore({
     }),
 });
 
-export const persistor:Persistor = persistStore(store);
+export const persistor: Persistor = persistStore(store);
 
 export default store;

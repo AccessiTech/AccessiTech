@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.3.1 Three Flashes or Bel
 ## **Summary**
 
 Guideline 2.3.1 is essential for preventing seizures and supporting users with photosensitive epilepsy. By avoiding flashing content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make safe animation a core part of your development process.
-

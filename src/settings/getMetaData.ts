@@ -1,4 +1,9 @@
-import { COMPANY_TITLE, DEFAULT_SHARE_IMAGE_ALT, IMAGES_BASE_URL, TWITTER_HANDLE } from "./strings";
+import {
+  COMPANY_TITLE,
+  DEFAULT_SHARE_IMAGE_ALT,
+  IMAGES_BASE_URL,
+  TWITTER_HANDLE,
+} from "./strings";
 
 export interface MetaDataProps {
   title: string;

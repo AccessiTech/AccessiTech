@@ -1,4 +1,3 @@
-
 <!--
 title: Building a More Accessible Future Through Design and Technology
 description: Conor, founder of AccessiTech LLC and a disability advocate, shares how lived experience with Psoriatic Arthritis drives his mission to make tech inclusive. Offering audits, mentorship, and open-source tools, he bridges the gap between accessibility theory and real-world solutions. Join the movement for a web that works for all.

@@ -100,4 +100,4 @@ For more, see the [W3C’s official documentation for 1.4.7 Low or No Background
 
 Guideline 1.4.7 ensures that speech in audio content is always clear and accessible. Keep background sounds low or removable to support all users.
 
-*Accessibility means everyone can hear your message—don’t let background noise get in the way!*
+_Accessibility means everyone can hear your message—don’t let background noise get in the way!_

@@ -4,10 +4,10 @@
 
 #services-row {
   text-align: left;
-  
+
   .row {
     @include padding(2.5rem 0 0);
-    
+
     &.services-header-row {
       background-color: $pink;
       color: $darkBlue;
@@ -59,7 +59,6 @@
           border: none;
           color: $yellow;
           box-shadow: $sv-unfocus-box-shadow;
-          
 
           &:hover,
           &:focus,

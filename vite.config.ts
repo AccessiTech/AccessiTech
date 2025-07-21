@@ -1,5 +1,5 @@
-import { defineConfig, PluginOption } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig, PluginOption } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
 function BlogHotReload() {
   return {

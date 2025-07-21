@@ -4,6 +4,7 @@ import { visit } from "unist-util-visit";
 import type { Plugin } from "unified";
 import type { Root } from "mdast";
 
+// Move to a separate file later to resolve fast refresh warning
 // Plugin to support custom table directives in markdown, e.g. :::table[type=footer] ... :::
 export const tableDirective: Plugin<[], Root> = () => (tree: Root) => {
   // Traverse the markdown AST
@@ -21,7 +22,9 @@ export const tableDirective: Plugin<[], Root> = () => (tree: Root) => {
       let tableNode = node.children.find((n: any) => n.type === "table");
       // If no attribute, try to extract type from a paragraph child (e.g. 'type=footer')
       if (!tableType) {
-        const paraIdx = node.children.findIndex((n: any) => n.type === "paragraph");
+        const paraIdx = node.children.findIndex(
+          (n: any) => n.type === "paragraph",
+        );
         if (paraIdx !== -1) {
           const para = node.children[paraIdx];
           if (
@@ -42,12 +45,14 @@ export const tableDirective: Plugin<[], Root> = () => (tree: Root) => {
       }
       if (tableNode) {
         // Encode the tableType as a className for reliable access in React
-        const typeClass = tableType ? `table-type-${tableType}` : "table-type-default";
+        const typeClass = tableType
+          ? `table-type-${tableType}`
+          : "table-type-default";
         tableNode.data = tableNode.data || {};
         tableNode.data.hProperties = tableNode.data.hProperties || {};
         tableNode.data.hProperties.className = [
           ...(tableNode.data.hProperties.className || []),
-          typeClass
+          typeClass,
         ];
         // Deep clone the table node to avoid mutating the original AST
         parent.children[index] = JSON.parse(JSON.stringify(tableNode));
@@ -60,36 +65,40 @@ export const tableDirective: Plugin<[], Root> = () => (tree: Root) => {
 };
 
 // TableProps extends the default table props and react-markdown's ExtraProps
-export type TableProps = JSX.IntrinsicElements['table'] & ExtraProps
+export type TableProps = JSX.IntrinsicElements["table"] & ExtraProps;
 
 // CustomMarkdownTable renders a table with a class based on the tableType
-export const CustomMarkdownTable = ({ children, node, ...props }: TableProps) => {
+export const CustomMarkdownTable = ({
+  children,
+  node,
+  ...props
+}: TableProps) => {
   // Extract tableType from the className property (set by the plugin)
   const className = (node as any)?.properties?.className || "";
-  const match = typeof className === "string"
-    ? className.match(/table-type-(\w+)/)
-    : Array.isArray(className)
-      ? className.join(" ").match(/table-type-(\w+)/)
-      : null;
+  const match =
+    typeof className === "string"
+      ? className.match(/table-type-(\w+)/)
+      : Array.isArray(className)
+        ? className.join(" ").match(/table-type-(\w+)/)
+        : null;
   const tableType = match ? match[1] : "default";
   // Render a special footer table if type is 'footer'
   if (tableType === "footer") {
     const tableProps = {
       ...props,
-      className: `entry-footer-links-table ${className}`
-    }
-    return (
-      <table {...tableProps}>
-        {children}
-      </table>
-    );
+      className: `entry-footer-links-table ${className}`,
+    };
+    return <table {...tableProps}>{children}</table>;
   }
   // Otherwise, render a default styled table
   return (
-    <table className={`table table-striped table-bordered table-hover ${className}`} {...props}>
+    <table
+      className={`table table-striped table-bordered table-hover ${className}`}
+      {...props}
+    >
       {children}
     </table>
   );
-}
+};
 
 export default CustomMarkdownTable;

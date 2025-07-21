@@ -101,5 +101,4 @@ For more, see the [W3C’s official documentation for 3.1.3 Unusual Words](https
 
 Guideline 3.1.3 is essential for helping users understand your site. By explaining unusual words, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make terminology accessibility a core part of your development process.
 
-
-*Accessibility means clarity—help users understand every word!* 
+_Accessibility means clarity—help users understand every word!_

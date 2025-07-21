@@ -7,7 +7,7 @@ export interface A11yState {
 }
 
 // Initial State
-export const a11yInitialState:A11yState = {
+export const a11yInitialState: A11yState = {
   isOpen: false,
   isSimplified: false,
 };
@@ -37,12 +37,12 @@ export const toggleSimplified =
   a11ySlice.actions[TOGGLE_A11Y_SIMPLIFIED_ACTION];
 
 // Hooks
-export const useIsA11yOpen = ():boolean => {
-  const slice:A11yState = useSelector((state:any) => state[a11ySliceName]);
+export const useIsA11yOpen = (): boolean => {
+  const slice: A11yState = useSelector((state: any) => state[a11ySliceName]);
   return (slice && slice.isOpen) || false;
 };
 
-export const useIsSimplified = ():boolean => {
-  const slice:A11yState = useSelector((state:any) => state[a11ySliceName]);
+export const useIsSimplified = (): boolean => {
+  const slice: A11yState = useSelector((state: any) => state[a11ySliceName]);
   return (slice && slice.isSimplified) || false;
 };

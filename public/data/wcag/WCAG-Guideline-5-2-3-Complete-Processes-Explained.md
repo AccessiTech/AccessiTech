@@ -23,6 +23,7 @@ next: /wcag/WCAG-Guideline-5-2-4-Only-Accessibility-Supported-Ways-Explained, Gu
 Section 5.2.3 of WCAG 2.1 states that when a web page is part of a series of pages presenting a process (a sequence of steps needed to complete an activity), **all pages in the process must conform at the specified level**. If any page in the process does not conform, then none of the pages in the process can be considered conformant at that level.
 
 A "process" is a series of user actions where each action is required to complete an activity. Examples include:
+
 - Online shopping checkout (cart → shipping → payment → confirmation)
 - Account registration (form → verification → confirmation)
 - Multi-step surveys or applications
@@ -53,10 +54,10 @@ A "process" is a series of user actions where each action is required to complet
 ---
 
 ## **References & Further Reading**
+
 - [WCAG 2.1 Section 5.2.3: Complete Processes](https://www.w3.org/TR/WCAG21/#cc3)
 - [Understanding Conformance Requirements](https://www.w3.org/WAI/WCAG21/Understanding/conformance#conformance-requirements)
 
 ---
 
-
-*Accessibility is a journey—every step in a process must be accessible for everyone.*
+_Accessibility is a journey—every step in a process must be accessible for everyone._

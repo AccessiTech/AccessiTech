@@ -30,11 +30,13 @@ These principles—**Perceivable, Operable, Understandable, and Robust** (POUR)�
 **Definition:** Users must be able to perceive the information being presented (it can’t be invisible to all their senses).
 
 **Examples:**
+
 - Provide text alternatives (alt text) for images so screen readers can describe them.
 - Offer captions and transcripts for audio and video content.
 - Use sufficient color contrast for text and backgrounds.
 
 **Quick Tips:**
+
 - Don’t rely on color alone to convey meaning.
 - Structure content with headings and lists for clarity.
 - Make sure all non-text content has a text equivalent.
@@ -46,11 +48,13 @@ These principles—**Perceivable, Operable, Understandable, and Robust** (POUR)�
 **Definition:** Users must be able to operate the interface (the interface cannot require interaction that a user cannot perform).
 
 **Examples:**
+
 - All functionality is available via keyboard (not just mouse).
 - Provide clear focus indicators for interactive elements.
 - Avoid content that flashes rapidly (to prevent seizures).
 
 **Quick Tips:**
+
 - Test your site with only a keyboard—can you access everything?
 - Ensure navigation is consistent and logical.
 - Give users enough time to read and use content.
@@ -62,11 +66,13 @@ These principles—**Perceivable, Operable, Understandable, and Robust** (POUR)�
 **Definition:** Users must be able to understand the information and how to use the interface.
 
 **Examples:**
+
 - Use clear, simple language and instructions.
 - Label form fields and buttons meaningfully.
 - Provide helpful error messages and guidance.
 
 **Quick Tips:**
+
 - Avoid jargon and unexplained abbreviations.
 - Keep navigation and layout predictable.
 - Make error messages specific and actionable.
@@ -78,11 +84,13 @@ These principles—**Perceivable, Operable, Understandable, and Robust** (POUR)�
 **Definition:** Content must be robust enough to be interpreted reliably by a wide variety of user agents, including assistive technologies.
 
 **Examples:**
+
 - Use valid, semantic HTML.
 - Ensure ARIA roles and attributes are used correctly.
 - Test with different browsers and assistive tech (like screen readers).
 
 **Quick Tips:**
+
 - Regularly validate your code for errors.
 - Stay updated with evolving web standards.
 - Avoid relying on features that only work in one browser or device.
@@ -97,4 +105,4 @@ When you design with POUR in mind, you’re not just checking boxes—you’re m
 
 In our next post, we’ll demystify the WCAG conformance levels (A, AA, AAA) and what they mean for your projects.
 
-*Let’s keep building a more accessible web—one principle at a time!*
+_Let’s keep building a more accessible web—one principle at a time!_

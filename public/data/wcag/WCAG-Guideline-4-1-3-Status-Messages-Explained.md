@@ -98,5 +98,4 @@ For more, see the [W3C’s official documentation for 4.1.3 Status Messages](htt
 
 Guideline 4.1.3 is essential for helping users understand changes on your site. By making status messages accessible, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make status message accessibility a core part of your development process.
 
-
-*Accessibility means communication—help users stay informed!* 
+_Accessibility means communication—help users stay informed!_

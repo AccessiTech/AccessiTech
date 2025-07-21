@@ -1,15 +1,19 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
-import store from '../../store/store';
-import './a11y.scss';
-import { FontOptions } from '../FontOptions/FontOptions';
-import { toggleA11y, toggleSimplified, useIsA11yOpen, useIsSimplified } from '../../store/a11y';
-import { useOutsideClick } from '../../settings/utils';
-import { BODY, ESCAPE } from '../../settings/strings';
+import store from "../../store/store";
+import "./a11y.scss";
+import { FontOptions } from "../FontOptions/FontOptions";
+import {
+  toggleA11y,
+  toggleSimplified,
+  useIsA11yOpen,
+  useIsSimplified,
+} from "../../store/a11y";
+import { useOutsideClick } from "../../settings/utils";
+import { BODY, ESCAPE } from "../../settings/strings";
 
-
-export const namespace = 'a11y/'
-export const SIMPLIFIED_VIEW = 'simplified-view';
+export const namespace = "a11y/";
+export const SIMPLIFIED_VIEW = "simplified-view";
 export const TOGGLE_SIMPLIFIED_VIEW = "Toggle Simplified View";
 
 function A11Y() {
@@ -34,7 +38,7 @@ function A11Y() {
     }
   });
 
-  const onA11yToggle = (e:any) => {
+  const onA11yToggle = (e: any) => {
     e.preventDefault();
     if (isA11yOpen) {
       if (removeEventListener) removeEventListener();
@@ -42,7 +46,7 @@ function A11Y() {
     store.dispatch(toggleA11y());
   };
 
-  const onEscapeKey = (e:any) => {
+  const onEscapeKey = (e: any) => {
     if (e.key === ESCAPE && isA11yOpen) {
       if (removeEventListener) removeEventListener();
       store.dispatch(toggleA11y());
@@ -55,7 +59,7 @@ function A11Y() {
       aria-label="Accessibility Options"
       ref={i18nSelectRef}
     >
-      <div className={`${isA11yOpen ? 'isOpen ' : ''}a11y__settings-container`}>
+      <div className={`${isA11yOpen ? "isOpen " : ""}a11y__settings-container`}>
         <button
           className="a11y__settings-toggle"
           onClick={onA11yToggle}
@@ -67,16 +71,20 @@ function A11Y() {
         {isA11yOpen && (
           <menu className="a11y__settings">
             <li>
-              <div className='simplified-view-container'>
+              <div className="simplified-view-container">
                 <button
                   className="simplified-view-toggle"
                   onClick={() => store.dispatch(toggleSimplified())}
                   onKeyDown={onEscapeKey}
                   aria-label={TOGGLE_SIMPLIFIED_VIEW}
-                ><i className="fa fa-bolt-lightning" /></button>
+                >
+                  <i className="fa fa-bolt-lightning" />
+                </button>
               </div>
             </li>
-            <li><FontOptions onClose={onEscapeKey} /></li>
+            <li>
+              <FontOptions onClose={onEscapeKey} />
+            </li>
           </menu>
         )}
         {isA11yOpen && (
@@ -89,7 +97,6 @@ function A11Y() {
             <i className="fa-solid fa-xmark" />
           </button>
         )}
-
       </div>
     </div>
   );

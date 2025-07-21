@@ -110,4 +110,4 @@ For more, see the [W3C’s official documentation for 2.1.1 Keyboard Accessible]
 
 Guideline 2.1.1 is essential for making your site usable by everyone. By ensuring all functionality is available from a keyboard, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make keyboard accessibility a core part of your development process.
 
-*Accessibility is about giving everyone a way in—make sure the keyboard always works!*
+_Accessibility is about giving everyone a way in—make sure the keyboard always works!_

@@ -97,4 +97,3 @@ For more, see the [W3C’s official documentation for 3.1.2 Language of Parts](h
 ## **Summary**
 
 Guideline 3.1.2 is essential for helping users understand your site. By setting the correct language for each part, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make language accessibility a core part of your development process.
-

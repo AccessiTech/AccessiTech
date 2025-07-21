@@ -15,8 +15,9 @@ export interface AppProps {
 }
 
 export const App = (props: AppProps) => {
-  const Content = <>
-      <Container fluid className="App" aria-label={(APP_ROOT)}>
+  const Content = (
+    <>
+      <Container fluid className="App" aria-label={APP_ROOT}>
         {/* Main Content Row */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,7 +27,10 @@ export const App = (props: AppProps) => {
           <Route path="/blog/:id" element={<BlogEntry />} />
           {/* <Route path="/blog/:sub/:id" element={<BlogEntry />} /> */}
           <Route path="/wcag" element={<Blog hideDates hideDescription />} />
-          <Route path="/wcag.html" element={<Blog hideDates hideDescription />} />
+          <Route
+            path="/wcag.html"
+            element={<Blog hideDates hideDescription />}
+          />
           <Route path="/wcag/:id" element={<BlogEntry />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -37,21 +41,18 @@ export const App = (props: AppProps) => {
           </Col>
         </Row>
       </Container>
-    </>;
+    </>
+  );
 
   if (props.path) {
-    return (
-      <StaticRouter location={props.path}>
-        {Content}
-      </StaticRouter>
-    )
+    return <StaticRouter location={props.path}>{Content}</StaticRouter>;
   }
   return (
     <BrowserRouter>
       <Metadata {...getMetaData(metadata)} />
       {Content}
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;
