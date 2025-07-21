@@ -1,6 +1,152 @@
 # AccessiTech
 
-This repository hosts a real simple website and is the accessitech homepage.
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue.svg)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-4.3.4-purple.svg)](https://vitejs.dev/)
+[![Jest](https://img.shields.io/badge/Jest-29.7.0-red.svg)](https://jestjs.io/)
+[![Prettier](https://img.shields.io/badge/Prettier-3.2.5-ff69b4.svg)](https://prettier.io/)
+[![License](https://img.shields.io/github/license/AccessiTech/AccessiTech.svg)](LICENSE)
+[![WCAG 2.1 AA](https://img.shields.io/badge/WCAG_2.1-AA-green.svg)](https://www.w3.org/WAI/WCAG21/quickref/)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Faccessitech.github.io%2FAccessiTech%2F)](https://accessitech.github.io/AccessiTech/)
+[![Last Update](https://img.shields.io/github/last-commit/AccessiTech/AccessiTech.svg)](https://github.com/AccessiTech/AccessiTech/commits/main)
+
+This repository hosts the AccessiTech homepage website, built with modern web technologies to provide an accessible and responsive user experience.
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js v20.19.0+
+- Yarn package manager
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/AccessiTech/AccessiTech.git
+   cd AccessiTech
+   ```
+
+2. Install dependencies
+   ```bash
+   yarn install
+   ```
+
+3. Start the development server
+   ```bash
+   yarn dev
+   ```
+
+4. Open your browser to http://localhost:5173 to see the application
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18 with TypeScript
+- **State Management**: Redux Toolkit
+- **Styling**: SCSS and Bootstrap
+- **Routing**: React Router
+- **Build Tool**: Vite
+- **Static Site Generation**: Custom SSG implementation
+- **Testing**: Jest and React Testing Library
+- **Code Quality**: ESLint, Prettier
+
+## 📂 Project Structure
+
+```
+AccessiTech/
+├── docs/               # Generated static site output
+├── public/             # Static assets
+│   └── data/           # Blog and WCAG data
+├── scripts/            # Build scripts (RSS, sitemap)
+├── src/
+│   ├── App/            # Main application components
+│   ├── assets/         # Images and other assets
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Page components
+│   ├── scss/           # Global styles
+│   ├── settings/       # App configuration
+│   └── store/          # Redux store setup and slices
+└── ...config files     # Various configuration files
+```
+
+## 🧪 Testing
+
+Run tests with:
+
+```bash
+yarn test
+```
+
+Run tests in watch mode during development:
+
+```bash
+yarn test:watch
+```
+
+Generate test coverage report:
+
+```bash
+yarn test:coverage
+```
+
+## 🧹 Code Formatting
+
+Format your code with Prettier:
+
+```bash
+yarn format
+```
+
+Check if your code is formatted properly:
+
+```bash
+yarn format:check
+```
+
+Format all files in the codebase:
+
+```bash
+yarn format:all
+```
+
+## 🔄 Development Workflow
+
+1. Create a feature branch from `main`
+2. Make your changes
+3. Run tests and ensure they pass
+4. Format your code
+5. Submit a pull request
+
+## 🏗️ Building for Production
+
+Generate a production build:
+
+```bash
+yarn build:prod
+```
+
+This will:
+1. Generate RSS feed and sitemap
+2. Build the application with Vite
+3. Run the static site generator
+4. Output to the `docs/` directory
+
+## ♿ Accessibility Features
+
+Our commitment to accessibility includes:
+
+- **Semantic HTML**: Properly structured heading hierarchy and semantic elements
+- **ARIA Labels**: Additional context for screen readers where needed
+- **Keyboard Navigation**: Full keyboard support with visible focus indicators
+- **Color Contrast**: WCAG 2.1 AA compliant color contrast ratios
+- **Responsive Design**: Fully responsive layout with zoom support
+- **Alternative Text**: All images include descriptive alt text
+- **Screen Reader Support**: Tested with popular screen readers
+- **Focus Management**: Proper focus handling for interactive elements
+- **Reduced Motion**: Respects user preferences for reduced motion
+- **Flexible Text**: Support for text resizing without breaking layouts
+
+For more details about our accessibility features or to report accessibility issues, please see our [Accessibility Statement](ACCESSIBILITY.md).
 
 ### Connect with Me!
 
