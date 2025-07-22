@@ -9,11 +9,26 @@ import '@testing-library/jest-dom';
 
 // Import reducers from their correct locations
 import { fontOptionsSlice } from '../../components/FontOptions/reducer';
-import { a11ySlice } from '../../store/a11y';
+import { a11ySlice, a11yInitialState } from '../../store/a11y';
 import { blogSlice } from '../../store/blog';
 
-// Import the main store configuration
-import { store } from '../../store';
+// Create a test store function that resets state each time
+function createTestStore() {
+  return configureStore({
+    reducer: {
+      font: fontOptionsSlice.reducer,
+      a11y: a11ySlice.reducer,
+      blog: blogSlice.reducer,
+    },
+    preloadedState: {
+      a11y: a11yInitialState,
+    },
+    middleware: getDefaultMiddleware =>
+      getDefaultMiddleware({
+        serializableCheck: false,
+      }),
+  });
+}
 
 // Extend Jest matchers
 expect.extend(toHaveNoViolations);
@@ -26,9 +41,12 @@ export function renderWithProviders(
   ui: React.ReactElement,
   options?: Omit<RenderOptions, 'wrapper'>
 ) {
+  // Create a fresh store for each test
+  const testStore = createTestStore();
+
   const Wrapper = ({ children }: { children: React.ReactNode }) => {
     return (
-      <Provider store={store}>
+      <Provider store={testStore}>
         <Router>{children}</Router>
       </Provider>
     );
@@ -36,7 +54,7 @@ export function renderWithProviders(
 
   return {
     ...render(ui, { wrapper: Wrapper, ...options }),
-    store,
+    store: testStore,
   };
 }
 
@@ -79,4 +97,4 @@ export async function testKeyboardNavigation(
 
 // Export types for test utilities
 export type RenderWithProvidersReturn = ReturnType<typeof renderWithProviders>;
-export type TestStore = typeof store;
+export type TestStore = ReturnType<typeof createTestStore>;
