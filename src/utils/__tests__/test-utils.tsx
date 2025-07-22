@@ -1,3 +1,27 @@
+// FontOptions-specific test store (matches app state shape for FontOptions tests)
+export function createFontOptionsTestStore(preloadedState = {}) {
+  return configureStore({
+    reducer: {
+      fontOptions: fontOptionsSlice.reducer,
+      a11y: a11ySlice.reducer,
+      blog: blogSlice.reducer,
+    },
+    preloadedState: {
+      a11y: a11yInitialState,
+      ...preloadedState,
+    },
+  });
+}
+
+export function renderFontOptionsWithProviders(
+  ui: React.ReactElement,
+  { preloadedState = {}, store = createFontOptionsTestStore(preloadedState), ...renderOptions } = {}
+) {
+  function Wrapper({ children }: { children: React.ReactNode }) {
+    return <Provider store={store}>{children}</Provider>;
+  }
+  return { store, ...render(ui, { wrapper: Wrapper, ...renderOptions }) };
+}
 import { render, RenderOptions } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
