@@ -81,12 +81,15 @@ export const getMetaData = (text: string): { [key: string]: string } => {
 };
 
 export const getDDMMMYYYY = (date: string): string => {
+  // Parse as local date (YYYY-MM-DD)
+  const [year, month, day] = date.split('-').map(Number);
+  const d = new Date(year, month - 1, day);
   const options: any = {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
   };
-  return new Date(date).toLocaleDateString('en-UK', options);
+  return d.toLocaleDateString('en-US', options);
 };
 
 // Natural sort for WCAG guideline numbers like "1.4.10", "1.4.2", etc.
