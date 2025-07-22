@@ -11,29 +11,34 @@ AccessiTech aims to conform to WCAG 2.1 Level AA standards. We regularly test an
 Our website includes the following accessibility features:
 
 ### Semantic HTML
+
 - Proper heading hierarchy (h1-h6)
 - ARIA landmarks for major page sections
 - Semantic HTML5 elements (nav, main, article, etc.)
 
 ### Keyboard Navigation
+
 - All interactive elements are keyboard accessible
 - Visible focus indicators
 - Skip-to-main content links
 - Logical tab order
 
 ### Visual Design
+
 - High contrast color schemes
 - Resizable text without loss of functionality
 - No content that relies solely on color to convey meaning
 - Responsive design that adapts to different zoom levels
 
 ### Media
+
 - Alt text for all meaningful images
 - Captions for video content
 - Transcripts for audio content
 - No auto-playing media
 
 ### Forms and Interactive Elements
+
 - Clear labels and instructions
 - Error identification and suggestions
 - Multiple ways to interact with components
@@ -42,6 +47,7 @@ Our website includes the following accessibility features:
 ## Testing and Development
 
 Our accessibility testing process includes:
+
 1. Automated testing using accessibility tools
 2. Manual keyboard navigation testing
 3. Screen reader testing

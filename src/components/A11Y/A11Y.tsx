@@ -1,20 +1,15 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect } from 'react';
 
-import store from "../../store/store";
-import "./a11y.scss";
-import { FontOptions } from "../FontOptions/FontOptions";
-import {
-  toggleA11y,
-  toggleSimplified,
-  useIsA11yOpen,
-  useIsSimplified,
-} from "../../store/a11y";
-import { useOutsideClick } from "../../settings/utils";
-import { BODY, ESCAPE } from "../../settings/strings";
+import store from '../../store/store';
+import './a11y.scss';
+import { FontOptions } from '../FontOptions/FontOptions';
+import { toggleA11y, toggleSimplified, useIsA11yOpen, useIsSimplified } from '../../store/a11y';
+import { useOutsideClick } from '../../settings/utils';
+import { BODY, ESCAPE } from '../../settings/strings';
 
-export const namespace = "a11y/";
-export const SIMPLIFIED_VIEW = "simplified-view";
-export const TOGGLE_SIMPLIFIED_VIEW = "Toggle Simplified View";
+export const namespace = 'a11y/';
+export const SIMPLIFIED_VIEW = 'simplified-view';
+export const TOGGLE_SIMPLIFIED_VIEW = 'Toggle Simplified View';
 
 function A11Y() {
   const i18nSelectRef = useRef(null);
@@ -54,12 +49,8 @@ function A11Y() {
   };
 
   return (
-    <div
-      className="a11y-container"
-      aria-label="Accessibility Options"
-      ref={i18nSelectRef}
-    >
-      <div className={`${isA11yOpen ? "isOpen " : ""}a11y__settings-container`}>
+    <div className="a11y-container" aria-label="Accessibility Options" ref={i18nSelectRef}>
+      <div className={`${isA11yOpen ? 'isOpen ' : ''}a11y__settings-container`}>
         <button
           className="a11y__settings-toggle"
           onClick={onA11yToggle}

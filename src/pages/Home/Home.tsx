@@ -1,25 +1,25 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import SplashSocials from "../../components/SplashSocials/SplashSocials";
-import { SPLASH_BG } from "../../settings/strings";
-import Services from "../../components/Services/Services";
-import "./Home.scss";
-import { Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
-import { HomeHeaderRow } from "../../components/Header/Header";
-import Metadata from "../../components/Metadata/Metadata";
-import metadata from "../../App/meta";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import SplashSocials from '../../components/SplashSocials/SplashSocials';
+import { SPLASH_BG } from '../../settings/strings';
+import Services from '../../components/Services/Services';
+import './Home.scss';
+import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import { HomeHeaderRow } from '../../components/Header/Header';
+import Metadata from '../../components/Metadata/Metadata';
+import metadata from '../../App/meta';
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
 };
 
-export const APP_ROOT = "App Root";
-export const SKIP_TO_MAIN_CONTENT = "Skip to main content";
-export const ABOUT_ACCESSITECH = "About AccessiTech";
-export const TAGLINE = "Accessibility for Design Technologists";
+export const APP_ROOT = 'App Root';
+export const SKIP_TO_MAIN_CONTENT = 'Skip to main content';
+export const ABOUT_ACCESSITECH = 'About AccessiTech';
+export const TAGLINE = 'Accessibility for Design Technologists';
 export const VISION_P3 =
-  "AccessiTech LLC is a social enterprise that aims to eliminate barriers for disabled design technologists and promote emergent technologies that improve digital accessibility, inclusion, and equity for all.";
+  'AccessiTech LLC is a social enterprise that aims to eliminate barriers for disabled design technologists and promote emergent technologies that improve digital accessibility, inclusion, and equity for all.';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -42,8 +42,8 @@ export const Home = () => {
           <Col xs={12} md={{ span: 5, offset: 1 }} className="blog-cta">
             <h3>Accessibility, done right.</h3>
             <p>
-              Explore expert-written articles, tools, and tips to help you build
-              better, more inclusive digital products.
+              Explore expert-written articles, tools, and tips to help you build better, more
+              inclusive digital products.
             </p>
             <Button
               href="/blog"
@@ -51,7 +51,7 @@ export const Home = () => {
               size="lg"
               onClick={(e: any) => {
                 e.preventDefault();
-                navigate("/blog");
+                navigate('/blog');
               }}
             >
               Browse the Blog
@@ -60,8 +60,8 @@ export const Home = () => {
           <Col xs={12} md={{ span: 5 }} className="wcag-cta mt-5 mt-md-0">
             <h3>WCAG, made simple.</h3>
             <p>
-              Get clear, jargon-free explanations of the Web Content
-              Accessibility Guidelines (WCAG) — one principle at a time.
+              Get clear, jargon-free explanations of the Web Content Accessibility Guidelines (WCAG)
+              — one principle at a time.
             </p>
             <Button
               href="/wcag"
@@ -69,7 +69,7 @@ export const Home = () => {
               size="lg"
               onClick={(e: any) => {
                 e.preventDefault();
-                navigate("/wcag");
+                navigate('/wcag');
               }}
             >
               Start the Series

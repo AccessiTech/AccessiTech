@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from 'react';
 
 /**
  * Get Viewport Width
@@ -9,7 +9,7 @@ export const getViewportWidth = (): number => {
     window.innerWidth,
     document.documentElement.clientWidth,
     document.body.clientWidth,
-    0,
+    0
   );
 };
 
@@ -22,7 +22,7 @@ export const getViewportHeight = (): number => {
     window.innerHeight,
     document.documentElement.clientHeight,
     document.body.clientHeight,
-    0,
+    0
   );
 };
 
@@ -37,42 +37,42 @@ export const useWindowSize = (): number[] => {
     function updateSize() {
       setSize([getViewportWidth(), getViewportHeight()]);
     }
-    window.addEventListener("resize", updateSize);
+    window.addEventListener('resize', updateSize);
     updateSize();
-    return () => window.removeEventListener("resize", updateSize);
+    return () => window.removeEventListener('resize', updateSize);
   }, []);
   return size;
 };
 
 export const useOutsideClick = (ref: any, callback: any) => {
-  if (typeof document === "undefined") return;
+  if (typeof document === 'undefined') return;
   const handleClick = (e: any) => {
     if (ref.current && !ref.current.contains(e.target)) {
       callback(e);
-      document.removeEventListener("click", handleClick);
+      document.removeEventListener('click', handleClick);
     }
   };
-  document.addEventListener("click", handleClick);
-  return () => document.removeEventListener("click", handleClick);
+  document.addEventListener('click', handleClick);
+  return () => document.removeEventListener('click', handleClick);
 };
 
 export const getPageFromPath = (pathname: string): string => {
   let newPage =
-    pathname.replace("/", "") && pathname !== "/index.html"
-      ? pathname.replace("/", "").replace(".html", "")
-      : "home";
-  if (newPage.indexOf("/") > -1) {
-    newPage = newPage.split("/")[0];
+    pathname.replace('/', '') && pathname !== '/index.html'
+      ? pathname.replace('/', '').replace('.html', '')
+      : 'home';
+  if (newPage.indexOf('/') > -1) {
+    newPage = newPage.split('/')[0];
   }
   return newPage;
 };
 
 export const getMetaData = (text: string): { [key: string]: string } => {
   const metaData: { [key: string]: string } = {};
-  const lines = text.split("\n");
-  lines.forEach((line) => {
-    const key = line.split(":")[0]?.replace("<!--", "").trim();
-    const value = line.split(":")[1]?.replace("-->", "").trim();
+  const lines = text.split('\n');
+  lines.forEach(line => {
+    const key = line.split(':')[0]?.replace('<!--', '').trim();
+    const value = line.split(':')[1]?.replace('-->', '').trim();
     if (key && value) {
       metaData[key] = value;
     }
@@ -82,11 +82,11 @@ export const getMetaData = (text: string): { [key: string]: string } => {
 
 export const getDDMMMYYYY = (date: string): string => {
   const options: any = {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
   };
-  return new Date(date).toLocaleDateString("en-UK", options);
+  return new Date(date).toLocaleDateString('en-UK', options);
 };
 
 // Natural sort for WCAG guideline numbers like "1.4.10", "1.4.2", etc.
@@ -94,8 +94,8 @@ export function naturalGuidelineSort(a: string, b: string): number {
   // Extract the leading number sequence (e.g., "1.4.10" from "1.4.10 - Reflow")
   const aMatch = a.match(/^([\d.]+)/);
   const bMatch = b.match(/^([\d.]+)/);
-  const aParts = aMatch ? aMatch[1].split(".").map(Number) : [];
-  const bParts = bMatch ? bMatch[1].split(".").map(Number) : [];
+  const aParts = aMatch ? aMatch[1].split('.').map(Number) : [];
+  const bParts = bMatch ? bMatch[1].split('.').map(Number) : [];
   const len = Math.max(aParts.length, bParts.length);
   for (let i = 0; i < len; i++) {
     const aNum = aParts[i] ?? 0;

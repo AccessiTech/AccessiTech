@@ -1,19 +1,14 @@
-import { useEffect } from "react";
-import {
-  Link,
-  NavigateFunction,
-  useLocation,
-  useNavigate,
-} from "react-router-dom";
-import { Breadcrumb, Col, Row } from "react-bootstrap";
-import { BlogOrder, getBlogEntry, useBlogEntriesArray } from "../../store/blog";
-import store from "../../store/store";
-import "./Blog.scss";
-import { getDDMMMYYYY } from "../../settings/utils";
-import Metadata from "../../components/Metadata/Metadata";
-import { metadata } from "./meta";
-import { metadata as wcagMetadata } from "./wcag-meta";
-import { HeaderRow } from "../../components/Header/Header";
+import { useEffect } from 'react';
+import { Link, NavigateFunction, useLocation, useNavigate } from 'react-router-dom';
+import { Breadcrumb, Col, Row } from 'react-bootstrap';
+import { BlogOrder, getBlogEntry, useBlogEntriesArray } from '../../store/blog';
+import store from '../../store/store';
+import './Blog.scss';
+import { getDDMMMYYYY } from '../../settings/utils';
+import Metadata from '../../components/Metadata/Metadata';
+import { metadata } from './meta';
+import { metadata as wcagMetadata } from './wcag-meta';
+import { HeaderRow } from '../../components/Header/Header';
 
 interface FetchBlogEntriesProps {
   url?: string;
@@ -22,11 +17,7 @@ interface FetchBlogEntriesProps {
 }
 let rssCache: { text: string; parsed: Document } | null = null;
 
-const fetchBlogEntries = async ({
-  url,
-  navigate,
-  pathname,
-}: FetchBlogEntriesProps) => {
+const fetchBlogEntries = async ({ url, navigate, pathname }: FetchBlogEntriesProps) => {
   let text: string;
   let xml: Document;
 
@@ -34,34 +25,34 @@ const fetchBlogEntries = async ({
     text = rssCache.text;
     xml = rssCache.parsed;
   } else {
-    const response = await fetch(url || "/rss.xml").catch((err) => {
-      console.error("Error fetching rss.xml:", err);
-      throw new Error("Failed to fetch rss.xml");
+    const response = await fetch(url || '/rss.xml').catch(err => {
+      console.error('Error fetching rss.xml:', err);
+      throw new Error('Failed to fetch rss.xml');
     });
     if (!response.ok) {
-      throw new Error("Failed to fetch rss.xml");
+      throw new Error('Failed to fetch rss.xml');
     }
     text = await response.text();
     if (!text) {
-      throw new Error("Failed to parse blogs");
+      throw new Error('Failed to parse blogs');
     }
     const parser = new DOMParser();
-    xml = parser.parseFromString(text, "text/xml");
+    xml = parser.parseFromString(text, 'text/xml');
     rssCache = { text, parsed: xml };
   }
 
-  const items = xml.querySelectorAll("item");
+  const items = xml.querySelectorAll('item');
   if (!items || !items.length) {
-    throw new Error("Failed to load blogs");
+    throw new Error('Failed to load blogs');
   }
   Array.from(items)
-    .map(async (item) => {
-      const link = item.querySelector("link")?.textContent || "";
-      const path = link.split("/");
+    .map(async item => {
+      const link = item.querySelector('link')?.textContent || '';
+      const path = link.split('/');
       if (pathname && !path.includes(pathname)) {
         return null; // Skip if the link does not match the pathname
       }
-      const id = path.splice(4).join("/");
+      const id = path.splice(4).join('/');
 
       if (!id) {
         return null;
@@ -72,7 +63,7 @@ const fetchBlogEntries = async ({
         await store.dispatch(getBlogEntry({ id, navigate, pathname }));
       }
     })
-    .filter((item) => item !== null);
+    .filter(item => item !== null);
 };
 export interface BlogProps {
   hideDates?: boolean;
@@ -82,18 +73,14 @@ export interface BlogProps {
 export interface BlogType extends React.FC<BlogProps> {
   loadData: (url?: string) => Promise<void>;
 }
-export const Blog: BlogType = ({
-  hideDates,
-  hideDescription,
-  hideExcerpt,
-}: BlogProps) => {
+export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: BlogProps) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const pathname = location.pathname.replace(/\//, "");
-  const pagename = pathname === "wcag" ? "WCAG Explained" : "Blog";
-  const order = pathname === "wcag" ? BlogOrder.NATURAL : BlogOrder.DATE_DESC;
+  const pathname = location.pathname.replace(/\//, '');
+  const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
+  const order = pathname === 'wcag' ? BlogOrder.NATURAL : BlogOrder.DATE_DESC;
   const blog = useBlogEntriesArray({ pathname, order });
-  const pageMetadata = pathname === "wcag" ? wcagMetadata : metadata;
+  const pageMetadata = pathname === 'wcag' ? wcagMetadata : metadata;
 
   useEffect(() => {
     fetchBlogEntries({ pathname, navigate });
@@ -110,7 +97,7 @@ export const Blog: BlogType = ({
               href="/"
               onClick={(e: any) => {
                 e.preventDefault();
-                navigate("/");
+                navigate('/');
               }}
             >
               Home
@@ -123,11 +110,7 @@ export const Blog: BlogType = ({
         <main id="main" aria-label="Blog" className="blog-page">
           <Col>
             <Row>
-              <Col
-                xs={12}
-                sm={{ span: 10, offset: 1 }}
-                lg={{ span: 8, offset: 2 }}
-              >
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
                 <h2>{pagename}</h2>
                 <p>{pageMetadata.pageBlurb}</p>
                 <hr />

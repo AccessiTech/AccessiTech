@@ -1,14 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { StaticRouter } from "react-router-dom/server";
-import { APP_ROOT, Home } from "../pages/Home/Home";
-import Blog from "../pages/Blog/Blog";
-import BlogEntry from "../pages/BlogEntry/BlogEntry";
-import { Container, Row, Col } from "react-bootstrap";
-import Footer from "../components/Footer/Footer";
-import Metadata from "../components/Metadata/Metadata";
-import { getMetaData } from "../settings/getMetaData";
-import { metadata } from "./meta";
-import NotFound from "../pages/404/404";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { StaticRouter } from 'react-router-dom/server';
+import { APP_ROOT, Home } from '../pages/Home/Home';
+import Blog from '../pages/Blog/Blog';
+import BlogEntry from '../pages/BlogEntry/BlogEntry';
+import { Container, Row, Col } from 'react-bootstrap';
+import Footer from '../components/Footer/Footer';
+import Metadata from '../components/Metadata/Metadata';
+import { getMetaData } from '../settings/getMetaData';
+import { metadata } from './meta';
+import NotFound from '../pages/404/404';
 
 export interface AppProps {
   path?: string;
@@ -27,10 +27,7 @@ export const App = (props: AppProps) => {
           <Route path="/blog/:id" element={<BlogEntry />} />
           {/* <Route path="/blog/:sub/:id" element={<BlogEntry />} /> */}
           <Route path="/wcag" element={<Blog hideDates hideDescription />} />
-          <Route
-            path="/wcag.html"
-            element={<Blog hideDates hideDescription />}
-          />
+          <Route path="/wcag.html" element={<Blog hideDates hideDescription />} />
           <Route path="/wcag/:id" element={<BlogEntry />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

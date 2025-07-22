@@ -1,4 +1,4 @@
-import store from "../../store/store";
+import store from '../../store/store';
 
 import {
   setFontFamily,
@@ -8,10 +8,10 @@ import {
   SANS_SERIF,
   SERIF,
   FontFamily,
-} from "./reducer";
+} from './reducer';
 
 // Magic Strings
-export const BODY = "body";
+export const BODY = 'body';
 
 /** On Font Options Toggle
  * @param {Event} e
@@ -31,9 +31,7 @@ export const onFontSizeChange = (e: any) => {
   const body = document.querySelector(BODY);
   if (body) {
     for (let i = 0.5; i <= 5; i += 0.1) {
-      body.classList.remove(
-        getFontSizeClass((Math.round(i * 10) / 10).toFixed(1)),
-      );
+      body.classList.remove(getFontSizeClass((Math.round(i * 10) / 10).toFixed(1)));
     }
     body.classList.add(getFontSizeClass(newFontSize));
   }
@@ -83,7 +81,7 @@ export const debounce = (fn: any, delay: number) => {
  * @returns {string} font size class
  */
 export const getFontSizeClass = (fontSize: string): string => {
-  const string = fontSize.toString().replace(".", "-");
+  const string = fontSize.toString().replace('.', '-');
   return `font-size-${string}`;
 };
 

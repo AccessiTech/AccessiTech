@@ -1,5 +1,5 @@
-import { Button, Col, Row } from "react-bootstrap";
-import SectionHeader from "../SectionHeader/SectionHeader";
+import { Button, Col, Row } from 'react-bootstrap';
+import SectionHeader from '../SectionHeader/SectionHeader';
 import {
   // FIVERR_AUDIT_URL,
   FIVERR_MENTORSHIP_URL,
@@ -7,43 +7,43 @@ import {
   GITHUB_DISCUSSIONS_URL,
   GMAIL_URL,
   TARGET_BLANK,
-} from "../../settings/strings";
+} from '../../settings/strings';
 import {
   PURPOSE_PIC_SIZES,
   PURPOSE_PIC_SRCSET,
   PURPOSE_PIC_URL_1024,
-} from "../../settings/settings";
-import "./Services.scss";
+} from '../../settings/settings';
+import './Services.scss';
 
-export const CLICK_TO_COPY = "click to copy link";
-export const COPY_SUCCESS_MESSAGE = "Copied!";
-export const COPY_FAIL_MESSAGE = "Unable to copy to clipboard";
-export const SERVICES_HEADER = "Services";
+export const CLICK_TO_COPY = 'click to copy link';
+export const COPY_SUCCESS_MESSAGE = 'Copied!';
+export const COPY_FAIL_MESSAGE = 'Unable to copy to clipboard';
+export const SERVICES_HEADER = 'Services';
 export const SERVICES_P1 =
-  "As a design technologist with over 10 years of professional experience across multiple industries I offer independent mentorship through various platforms as I continue to produce software for digital accessibility.";
+  'As a design technologist with over 10 years of professional experience across multiple industries I offer independent mentorship through various platforms as I continue to produce software for digital accessibility.';
 export const SERVICES_P2 =
-  "As an accessibility consultant I offer a wide range of services throughout the product lifecycle, including but not limited to: Accessibility Audits, Design Research, Project Management, and Full-Stack Engineering.";
-export const PURPOSE_PIC_ALT = "Image Credit: Urupong from Ghetty Images";
-export const CONSULTATION_HEADER = "Consultation";
+  'As an accessibility consultant I offer a wide range of services throughout the product lifecycle, including but not limited to: Accessibility Audits, Design Research, Project Management, and Full-Stack Engineering.';
+export const PURPOSE_PIC_ALT = 'Image Credit: Urupong from Ghetty Images';
+export const CONSULTATION_HEADER = 'Consultation';
 export const CONSULTATION_P3 =
-  "As an Accessibility Consultant I audit designs and software for accessibility compliance, offer project management services, and ensure the shipping of robust and accessible software.";
-export const CONSULTATION_CTA = "Contact me about consultation";
-export const CONSULTATION_EMAIL_SUBJECT = "subject=Consultation Request";
-export const QA_HEADER = "Quality Assurance";
+  'As an Accessibility Consultant I audit designs and software for accessibility compliance, offer project management services, and ensure the shipping of robust and accessible software.';
+export const CONSULTATION_CTA = 'Contact me about consultation';
+export const CONSULTATION_EMAIL_SUBJECT = 'subject=Consultation Request';
+export const QA_HEADER = 'Quality Assurance';
 export const QA_P1 =
-  "As a QA Engineer, I have spent my career testing, triaging, and debugging software at every stage of the product life cycle, including: test planning, end-to-end quality assurance, unit/integration testing, user/usability testing, and more.";
-export const QA_CTA = "Let me test your code";
-export const QA_EMAIL_SUBJECT = "subject=Quality Assurance Request";
-export const MENTORSHIP_HEADER = "Web Mentorship";
+  'As a QA Engineer, I have spent my career testing, triaging, and debugging software at every stage of the product life cycle, including: test planning, end-to-end quality assurance, unit/integration testing, user/usability testing, and more.';
+export const QA_CTA = 'Let me test your code';
+export const QA_EMAIL_SUBJECT = 'subject=Quality Assurance Request';
+export const MENTORSHIP_HEADER = 'Web Mentorship';
 export const MENTORSHIP_P3 =
-  "As I am able to write less code, I am excited to offer mentorship in web design and development, helping overcome the steep learning curve of coding, dispelling myths and worries, and promoting their capacity to learn while instilling best practices of the field.";
-export const MENTORSHIP_CTA = "Learn more about the web";
-export const MENTORSHIP_EMAIL_SUBJECT = "subject=Mentorship Request";
-export const PRODUCTION_HEADER = "Software Production";
+  'As I am able to write less code, I am excited to offer mentorship in web design and development, helping overcome the steep learning curve of coding, dispelling myths and worries, and promoting their capacity to learn while instilling best practices of the field.';
+export const MENTORSHIP_CTA = 'Learn more about the web';
+export const MENTORSHIP_EMAIL_SUBJECT = 'subject=Mentorship Request';
+export const PRODUCTION_HEADER = 'Software Production';
 export const PRODUCTION_P4 =
-  "I believe that free, modular, and robust open-source software is crucial for creating an accessible web for both users and developers alike. AccessiTech proudly produces and promotes such software to counter ableism in ICT communities today.";
-export const PRODUCTION_CTA = "Join the conversation";
-export const PRODUCTION_EMAIL_SUBJECT = "subject=Software Production Request";
+  'I believe that free, modular, and robust open-source software is crucial for creating an accessible web for both users and developers alike. AccessiTech proudly produces and promotes such software to counter ableism in ICT communities today.';
+export const PRODUCTION_CTA = 'Join the conversation';
+export const PRODUCTION_EMAIL_SUBJECT = 'subject=Software Production Request';
 
 const Services = () => {
   return (
@@ -80,12 +80,7 @@ const Services = () => {
       </Row>
 
       <Row className="services-row">
-        <Col
-          className="consultation-col"
-          sm={12}
-          md={{ span: 10, offset: 1 }}
-          lg={5}
-        >
+        <Col className="consultation-col" sm={12} md={{ span: 10, offset: 1 }} lg={5}>
           <article>
             <div>
               <SectionHeader
@@ -108,12 +103,7 @@ const Services = () => {
             </Button>
           </article>
         </Col>
-        <Col
-          className="qa-col"
-          sm={12}
-          md={{ span: 10, offset: 1 }}
-          lg={{ span: 5, offset: 0 }}
-        >
+        <Col className="qa-col" sm={12} md={{ span: 10, offset: 1 }} lg={{ span: 5, offset: 0 }}>
           <article>
             <div>
               <SectionHeader
@@ -126,12 +116,7 @@ const Services = () => {
               />
               <p>{QA_P1}</p>
             </div>
-            <Button
-              size="lg"
-              target={TARGET_BLANK}
-              href={FIVERR_QA_URL}
-              title={QA_CTA}
-            >
+            <Button size="lg" target={TARGET_BLANK} href={FIVERR_QA_URL} title={QA_CTA}>
               {QA_CTA}
             </Button>
           </article>

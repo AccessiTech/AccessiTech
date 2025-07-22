@@ -5,21 +5,20 @@ import {
   REDDIT_URL,
   TARGET_BLANK,
   TWITTER_URL,
-} from "../../settings/strings";
-import "./Footer.scss";
+} from '../../settings/strings';
+import './Footer.scss';
 
-export const CONTACT_LIST = "Contact List";
-export const REPORTING_AN_ISSUE = "Reporting an Issue";
-export const FOOTER = "Footer";
-export const REACH_OUT_HEADER = "Reach Out!";
-export const FOOTER_FIVERR = "Fiverr at accessiTech";
-export const FOOTER_LINKEDIN = "LinkedIn at AccessiTech LLC";
-export const FOOTER_REDDIT = "Reddit at u/accessiTech";
-export const FOOTER_TWITTER = "Twitter at accessiT3ch";
-export const ISSUES_P1 =
-  "Report bugs, request features, and start collaborating via ";
-export const GITHUB_ISSUES = "GitHub Issues";
-export const COPYRIGHT = "Copyright";
+export const CONTACT_LIST = 'Contact List';
+export const REPORTING_AN_ISSUE = 'Reporting an Issue';
+export const FOOTER = 'Footer';
+export const REACH_OUT_HEADER = 'Reach Out!';
+export const FOOTER_FIVERR = 'Fiverr at accessiTech';
+export const FOOTER_LINKEDIN = 'LinkedIn at AccessiTech LLC';
+export const FOOTER_REDDIT = 'Reddit at u/accessiTech';
+export const FOOTER_TWITTER = 'Twitter at accessiT3ch';
+export const ISSUES_P1 = 'Report bugs, request features, and start collaborating via ';
+export const GITHUB_ISSUES = 'GitHub Issues';
+export const COPYRIGHT = 'Copyright';
 export const COPYRIGHT_P1 = `© ${new Date().getFullYear()} AccessiTech LLC. All Rights Reserved.`;
 
 function Footer() {

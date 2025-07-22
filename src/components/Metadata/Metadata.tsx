@@ -1,5 +1,5 @@
-import { Helmet } from "react-helmet";
-import { getMetaData } from "../../settings/getMetaData";
+import { Helmet } from 'react-helmet';
+import { getMetaData } from '../../settings/getMetaData';
 
 export interface MetaDataProps {
   title: string;
@@ -15,15 +15,15 @@ export interface MetaDataProps {
 export const Metadata = (props: MetaDataProps) => {
   const metaData = Object.entries(getMetaData(props)).map(([key, value]) => {
     switch (key) {
-      case "title":
+      case 'title':
         return <title key={key}>{value}</title>;
-      case "canonical":
+      case 'canonical':
         return <link key={key} rel="canonical" href={value} />;
       default:
         return <meta key={key} name={key} content={value} />;
     }
   });
-  if (typeof document === "undefined") {
+  if (typeof document === 'undefined') {
     return <div>{metaData}</div>;
   }
 
