@@ -3,7 +3,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-4.3.4-purple.svg)](https://vitejs.dev/)
-[![Jest](https://img.shields.io/badge/Jest-29.7.0-red.svg)](https://jestjs.io/)
+[![Vitest](https://img.shields.io/badge/Vitest-latest-green.svg)](https://vitest.dev/)
 [![Prettier](https://img.shields.io/badge/Prettier-3.2.5-ff69b4.svg)](https://prettier.io/)
 [![License](https://img.shields.io/github/license/AccessiTech/AccessiTech.svg)](LICENSE)
 [![WCAG 2.1 AA](https://img.shields.io/badge/WCAG_2.1-AA-green.svg)](https://www.w3.org/WAI/WCAG21/quickref/)
@@ -22,17 +22,20 @@ This repository hosts the AccessiTech homepage website, built with modern web te
 ### Installation
 
 1. Clone the repository
+
    ```bash
    git clone https://github.com/AccessiTech/AccessiTech.git
    cd AccessiTech
    ```
 
 2. Install dependencies
+
    ```bash
    yarn install
    ```
 
 3. Start the development server
+
    ```bash
    yarn dev
    ```
@@ -47,7 +50,7 @@ This repository hosts the AccessiTech homepage website, built with modern web te
 - **Routing**: React Router
 - **Build Tool**: Vite
 - **Static Site Generation**: Custom SSG implementation
-- **Testing**: Jest and React Testing Library
+- **Testing**: Vitest and React Testing Library
 - **Code Quality**: ESLint, Prettier
 
 ## 📂 Project Structure
@@ -126,6 +129,7 @@ yarn build:prod
 ```
 
 This will:
+
 1. Generate RSS feed and sitemap
 2. Build the application with Vite
 3. Run the static site generator
