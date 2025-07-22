@@ -8,7 +8,14 @@ import {
   useFontSize,
   useIsOpen,
 } from './reducer';
-import { onFontFamilyChange, onFontOptionsToggle, onFontSizeChange, debounce } from './helpers';
+import {
+  onFontFamilyChange,
+  onFontSizeChange,
+  debounce,
+  getFontSizeClass,
+  getFontFamilyClass,
+} from './helpers';
+import { setFontSize, setFontFamily } from './reducer';
 
 export const namespace = 'fontOptions/';
 
@@ -51,6 +58,39 @@ export const FontOptions = (props: FontOptionsProps) => {
     }
   };
 
+  // Redux action handlers (useDispatch)
+
+  const handleToggle = (e: any) => {
+    e.preventDefault();
+    dispatch(toggleFontOptions());
+  };
+
+  const handleFontSizeChange = debounce((e: any) => {
+    const newFontSize = onFontSizeChange(e);
+    // Update body class for font size
+    const body = document.querySelector('body');
+    if (body) {
+      for (let i = 0.5; i <= 5; i += 0.1) {
+        body.classList.remove(getFontSizeClass((Math.round(i * 10) / 10).toFixed(1)));
+      }
+      body.classList.add(getFontSizeClass(newFontSize));
+    }
+    dispatch(setFontSize(newFontSize));
+  }, 250);
+
+  const handleFontFamilyChange = (e: any) => {
+    const fontFamilyClass = onFontFamilyChange(e);
+    // Update body class for font family
+    const body = document.querySelector('body');
+    if (body) {
+      body.classList.remove(getFontFamilyClass('serif'));
+      body.classList.remove(getFontFamilyClass('sans-serif'));
+      body.classList.remove(getFontFamilyClass('monospace'));
+      body.classList.add(fontFamilyClass);
+    }
+    dispatch(setFontFamily(fontFamilyClass));
+  };
+
   const formElement = (
     <form id={`${namespace}form`} className="font-options">
       <fieldset>
@@ -71,7 +111,7 @@ export const FontOptions = (props: FontOptionsProps) => {
             max="5"
             step={0.1}
             defaultValue={fontSize}
-            onChange={e => debounce(onFontSizeChange(e), 250)}
+            onChange={handleFontSizeChange}
             onKeyDown={onEscapeKey}
           />
         </div>
@@ -85,7 +125,7 @@ export const FontOptions = (props: FontOptionsProps) => {
               name="font-options__font-family"
               aria-label={FONT_FAMILY_SELECT_LABEL}
               defaultValue={fontFamily}
-              onChange={onFontFamilyChange}
+              onChange={handleFontFamilyChange}
               onKeyDown={onEscapeKey}
             >
               <option value={SANS_SERIF}>{SANS_SERIF_DISPLAY}</option>
@@ -119,7 +159,7 @@ export const FontOptions = (props: FontOptionsProps) => {
     <div className="font-options-container">
       <button
         className={`${isOpen ? 'isOpen ' : ''}font-options-toggle`}
-        onClick={onFontOptionsToggle}
+        onClick={handleToggle}
         aria-label={FONT_OPTIONS_TOGGLE_LABEL}
         onKeyDown={onEscapeKey}
       >
