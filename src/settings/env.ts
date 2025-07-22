@@ -10,7 +10,7 @@ const defaultEnv = {
 
 // For Vite runtime, use import.meta.env
 // For testing, use the default values
-export const env = import.meta?.env || defaultEnv;
+export const env = typeof import.meta !== 'undefined' ? import.meta.env : defaultEnv;
 export const PUBLIC_URL = env?.VITE_PUBLIC_URL || '';
 export const ASSETS_URL = `${PUBLIC_URL}/assets`;
 export const IMAGES_URL = `${ASSETS_URL}/images`;
