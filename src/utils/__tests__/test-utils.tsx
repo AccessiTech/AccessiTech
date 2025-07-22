@@ -12,18 +12,8 @@ import { fontOptionsSlice } from '../../components/FontOptions/reducer';
 import { a11ySlice } from '../../store/a11y';
 import { blogSlice } from '../../store/blog';
 
-// Configure test store
-const store = configureStore({
-  reducer: {
-    font: fontOptionsSlice.reducer,
-    a11y: a11ySlice.reducer,
-    blog: blogSlice.reducer,
-  },
-  middleware: getDefaultMiddleware =>
-    getDefaultMiddleware({
-      serializableCheck: false,
-    }),
-});
+// Import the main store configuration
+import { store } from '../../store';
 
 // Extend Jest matchers
 expect.extend(toHaveNoViolations);

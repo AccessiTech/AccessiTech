@@ -28,8 +28,7 @@ export default defineConfig({
       scss: {
         api: 'modern-compiler',
         quietDeps: true,
-        additionalData:
-          process.env.NODE_ENV === 'test' ? '' : `@import "./src/scss/variables.scss";`,
+        additionalData: `@import "./src/scss/variables.scss";`,
       },
     },
   },
