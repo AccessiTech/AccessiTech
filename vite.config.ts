@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import { defineConfig, PluginOption } from 'vite';
+import { defineConfig, mergeConfig, PluginOption } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
 function BlogHotReload() {
@@ -20,8 +20,8 @@ function BlogHotReload() {
   } as PluginOption;
 }
 
-// https://vitejs.dev/config/
-export default defineConfig({
+// Basic Vite configuration
+const viteConfig = defineConfig({
   plugins: [react(), BlogHotReload()],
   css: {
     preprocessorOptions: {
@@ -37,6 +37,10 @@ export default defineConfig({
     outDir: 'docs',
     emptyOutDir: true,
   },
+});
+
+// Vitest configuration
+const vitestConfig = {
   test: {
     globals: true,
     environment: 'jsdom',
@@ -46,7 +50,7 @@ export default defineConfig({
       inline: true, // Inline all dependencies for testing
     },
     coverage: {
-      provider: 'v8',
+      provider: 'istanbul', // Changed from 'v8' to 'istanbul'
       reporter: ['text', 'json-summary', 'json', 'html', 'lcov'],
       reportsDirectory: './coverage',
       exclude: [
@@ -69,4 +73,7 @@ export default defineConfig({
       statements: 10,
     },
   },
-});
+};
+
+// Merge configurations and export
+export default mergeConfig(viteConfig, vitestConfig);
