@@ -23,7 +23,7 @@ describe('FontOptions', () => {
     const toggleBtn = screen.getByRole('button', { name: /toggle font options menu/i });
     fireEvent.click(toggleBtn);
     // Debug output
-    // eslint-disable-next-line no-console
+
     console.log(container.innerHTML);
     expect(screen.getByRole('group', { name: /font options/i })).toBeInTheDocument();
     expect(screen.getByLabelText(/font size range input/i)).toBeInTheDocument();
