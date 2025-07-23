@@ -94,6 +94,11 @@ const vitestConfig = {
         'src/vite-env.d.ts',
         'src/main.tsx',
         'src/**/*.stories.{ts,tsx}',
+        '**/*.config.ts',
+        'docs/assets/index-**.js',
+        'src/__tests__/**',
+        'src/utils/__tests__/**',
+        'src/server.tsx',
       ],
       // Temporarily reduce thresholds while implementing more tests
       branches: 10,
