@@ -25,6 +25,7 @@
     "build:prod": "yarn pre:build && vite build && yarn post:build",
     "prod:build": "build:prod",
     "post:build": "mkdir docs/blog && cp CNAME docs/CNAME && yarn static",
+    "lint:fix": "eslint . --ext ts,tsx --fix --report-unused-disable-directives",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives",
     "lint:strict": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
