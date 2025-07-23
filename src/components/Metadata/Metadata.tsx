@@ -24,10 +24,10 @@ export const Metadata = (props: MetaDataProps) => {
     }
   });
   if (typeof document === 'undefined') {
-    return <div>{metaData}</div>;
+    return <div data-testid="metadata">{metaData}</div>;
   }
 
-  return <Helmet>{metaData}</Helmet>;
+  return <Helmet data-testid="metadata">{metaData}</Helmet>;
 };
 
 export default Metadata;

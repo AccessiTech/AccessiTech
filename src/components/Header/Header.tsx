@@ -55,7 +55,7 @@ function Header() {
 }
 
 export const GenericHeaderRow = ({ colProps }: { colProps: object }) => (
-  <Row className="header-row">
+  <Row className="header-row" data-testid="header-row">
     <Col {...colProps}>
       <Header />
     </Col>
