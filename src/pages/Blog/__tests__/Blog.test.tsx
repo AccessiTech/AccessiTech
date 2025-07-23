@@ -4,29 +4,11 @@ vi.mock('react-helmet', () => ({
 }));
 import { vi, beforeEach, afterEach, describe, it } from 'vitest';
 
-// --- HOISTED MOCKS ---
-vi.mock('../Blog.scss', () => ({}));
-
-// --- HOISTED MOCK: Metadata ---
-vi.mock('../../components/Metadata/Metadata', () => ({
-  __esModule: true,
-  default: (props: any) => {
-    // Debug: log when the mock is used and what props are passed
-    // eslint-disable-next-line no-console
-    console.log('MOCK Metadata used', props);
-    return <div data-testid="metadata" />;
-  },
-}));
+// Only mock Header if needed for test isolation
 vi.mock('../../components/Header/Header', () => ({
   __esModule: true,
-  HeaderRow: () => {
-    console.log('MOCK HeaderRow used');
-    return <div className="header-row" data-testid="header-row" />;
-  },
+  HeaderRow: () => <div className="header-row" data-testid="header-row" />,
   default: () => <div data-testid="header-row-default" />,
-}));
-vi.mock('../../settings/utils', () => ({
-  getDDMMMYYYY: (date: string) => `Formatted(${date})`,
 }));
 
 import type { Blog as BlogType } from '../../../store/blog';
@@ -86,7 +68,6 @@ describe('Blog', () => {
     renderWithProviders(<Blog />, { route: '/blog' });
     // Check for the real header row class
     expect(document.querySelector('.header-row')).toBeInTheDocument();
-    // Removed: expect(screen.getByTestId('metadata')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /blog/i, level: 2 })).toBeInTheDocument();
     expect(screen.getByText(/Test blog description/i)).toBeInTheDocument();
     expect(screen.getByText(/Test blog excerpt/i)).toBeInTheDocument();
@@ -123,7 +104,6 @@ describe('Blog', () => {
     renderWithProviders(<Blog />);
     // The heading for WCAG variant
     expect(screen.getByRole('heading', { name: /WCAG Explained/i })).toBeInTheDocument();
-    // Removed: expect(screen.getByTestId('metadata')).toBeInTheDocument();
   });
 
   it('shows no articles if no blog entries are returned', async () => {
