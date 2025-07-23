@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.4.6 Headings and Labels]
 ## **Summary**
 
 Guideline 2.4.6 is essential for helping users understand and navigate your site. By providing clear headings and labels, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make headings and labels a core part of your development process.
-

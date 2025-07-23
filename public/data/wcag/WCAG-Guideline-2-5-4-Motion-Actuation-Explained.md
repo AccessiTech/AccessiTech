@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.5.4 Motion Actuation](ht
 ## **Summary**
 
 Guideline 2.5.4 is essential for ensuring all users can operate your site. By providing alternatives to motion actuation, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make motion accessibility a core part of your development process.
-

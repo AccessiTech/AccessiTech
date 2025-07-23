@@ -102,4 +102,3 @@ For more, see the [W3C’s official documentation for 2.6.1 Device Sensors](http
 Guideline 2.6.1 is essential for ensuring all users can operate your site. By providing alternatives to device sensors, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make sensor accessibility a core part of your development process.
 
 **Next Up**
-

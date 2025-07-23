@@ -104,4 +104,4 @@ For more, see the [W3C’s official documentation for 1.4.10 Reflow](https://www
 
 Guideline 1.4.10 ensures your content works for everyone, on any device or zoom level. Use responsive design and always test at small sizes.
 
-*Accessibility means your site works everywhere—make it flexible!*
+_Accessibility means your site works everywhere—make it flexible!_

@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.3.4 Error Prevention (Le
 
 Guideline 3.3.4 ensures that users are protected from costly or irreversible mistakes in legal, financial, or data-related forms. Safeguards and review steps are essential for accessibility and trust.
 
-
-*Protection and review are key—make your critical forms safe and accessible for everyone!* 
+_Protection and review are key—make your critical forms safe and accessible for everyone!_

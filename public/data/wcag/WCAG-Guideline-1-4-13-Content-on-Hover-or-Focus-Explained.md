@@ -104,4 +104,4 @@ For more, see the [W3C’s official documentation for 1.4.13 Content on Hover or
 
 Guideline 1.4.13 ensures all users can access, read, and dismiss popups and tooltips. Always test with keyboard and assistive tech to ensure accessibility.
 
-*Accessibility means everyone can access your content—make your popups work for all!*
+_Accessibility means everyone can access your content—make your popups work for all!_

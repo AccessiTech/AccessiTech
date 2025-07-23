@@ -78,5 +78,4 @@ For more, see [W3C’s guidance on Partial Conformance](https://www.w3.org/WAI/W
 
 Guideline 5.4 allows you to be transparent about accessibility when you include third-party content you cannot control. Use a clear, honest statement to help users understand your site’s accessibility status.
 
-
-*Partial conformance is honest—show your commitment to accessibility!*
+_Partial conformance is honest—show your commitment to accessibility!_

@@ -45,6 +45,7 @@ A conforming alternate version is a version of the content that meets the requir
 ## **Why Does This Matter?**
 
 Understanding conformance levels helps organizations:
+
 - Set realistic accessibility goals
 - Make accurate conformance claims
 - Improve accessibility for all users
@@ -52,11 +53,11 @@ Understanding conformance levels helps organizations:
 ---
 
 ## **References & Further Reading**
+
 - [WCAG 2.1 Section 5.2.1: Conformance Level](https://www.w3.org/TR/WCAG21/#cc1)
 - [WCAG 2.1 Full Specification](https://www.w3.org/TR/WCAG21/)
 - [Understanding Conformance Requirements](https://www.w3.org/WAI/WCAG21/Understanding/conformance)
 
 ---
 
-
-*Conformance levels help you measure and communicate your progress toward true web accessibility.*
+_Conformance levels help you measure and communicate your progress toward true web accessibility._

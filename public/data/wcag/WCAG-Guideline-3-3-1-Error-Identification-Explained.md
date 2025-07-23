@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.3.1 Error Identification
 
 Guideline 3.3.1 ensures that users can recognize and fix mistakes in forms and inputs. Clear, accessible error messages are essential for a positive user experience.
 
-
-*Clear feedback leads to confident users—make your error messages accessible to all!* 
+_Clear feedback leads to confident users—make your error messages accessible to all!_

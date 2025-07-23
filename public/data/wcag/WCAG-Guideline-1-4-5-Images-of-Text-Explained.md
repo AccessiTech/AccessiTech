@@ -103,4 +103,4 @@ For more, see the [W3C’s official documentation for 1.4.5 Images of Text](http
 
 Guideline 1.4.5 ensures content is accessible, scalable, and adaptable by using real text instead of images. Use CSS for styling and only use images of text when absolutely necessary.
 
-*Accessibility means real text for real people—don’t hide your message in an image!*
+_Accessibility means real text for real people—don’t hide your message in an image!_

@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.4.5 Multiple Ways](https
 ## **Summary**
 
 Guideline 2.4.5 is essential for helping users find content efficiently. By providing multiple ways to locate pages, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make navigation flexibility a core part of your development process.
-

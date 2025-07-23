@@ -101,5 +101,4 @@ For more, see the [W3C’s official documentation for 3.2.4 Consistent Identific
 
 Guideline 3.2.4 ensures that users can recognize and use controls confidently. Consistent identification is key to accessibility and usability.
 
-
-*Consistency is clarity—make your controls easy to recognize and use for everyone!* 
+_Consistency is clarity—make your controls easy to recognize and use for everyone!_

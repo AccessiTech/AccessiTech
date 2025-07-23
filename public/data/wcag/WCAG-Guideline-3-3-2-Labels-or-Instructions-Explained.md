@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.3.2 Labels or Instructio
 
 Guideline 3.3.2 ensures that users can enter information correctly the first time. Clear labels and instructions are essential for accessible, user-friendly forms.
 
-
-*Clear guidance leads to confident users—make your forms easy to understand for everyone!* 
+_Clear guidance leads to confident users—make your forms easy to understand for everyone!_

@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.3.3 Error Suggestion](ht
 
 Guideline 3.3.3 ensures that users can fix mistakes in forms and inputs with helpful, accessible suggestions.
 
-
-*Helpful suggestions lead to confident users—make your error messages actionable!* 
+_Helpful suggestions lead to confident users—make your error messages actionable!_

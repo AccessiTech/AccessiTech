@@ -36,7 +36,6 @@ Guideline 1.4.11 Non-text Contrast is a Level AA requirement in the [Web Content
 - Graphical objects (icons, charts, focus indicators) must also meet this contrast ratio.
 - Ensures all users can identify and use interactive elements.
 
-
 For more, see [Harvard University: Technique – Non-text contrast](https://accessibility.huit.harvard.edu/technique-non-text-contrast#:~:text=Non%2Dtext%20contrast-,%E2%9C%8E%20Technique%3A%20Non%2Dtext%20contrast,contrast%20ratio%20of%203%3A1.).
 
 ---
@@ -108,4 +107,4 @@ For more, see the [W3C’s official documentation for 1.4.11 Non-text Contrast](
 
 Guideline 1.4.11 ensures all users can identify and use controls, icons, and graphics. Use contrast checkers and always test your designs for accessibility.
 
-*Accessibility means every element is visible—don’t let low contrast hide your controls!*
+_Accessibility means every element is visible—don’t let low contrast hide your controls!_

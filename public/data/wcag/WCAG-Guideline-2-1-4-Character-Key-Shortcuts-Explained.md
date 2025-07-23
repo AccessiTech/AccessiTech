@@ -107,6 +107,4 @@ For more, see the [W3C’s official documentation for 2.1.4 Character Key Shortc
 
 ## **Summary**
 
-
 Guideline 2.1.4 is essential for preventing accidental or inaccessible keyboard shortcuts. By allowing users to turn off, remap, or limit shortcuts, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make shortcut accessibility a core part of your development process.
-

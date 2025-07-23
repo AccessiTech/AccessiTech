@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.1.5 Reading Level](https
 
 Guideline 3.1.5 ensures that your content is readable for the widest possible audience. Use plain language and provide alternatives for complex material.
 
-
-*Empower your users with clear and accessible content!* 
+_Empower your users with clear and accessible content!_

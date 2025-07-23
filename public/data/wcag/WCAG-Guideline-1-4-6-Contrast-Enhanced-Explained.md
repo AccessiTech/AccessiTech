@@ -106,4 +106,4 @@ For more, see the [W3C’s official documentation for 1.4.6 Contrast (Enhanced)]
 
 Guideline 1.4.6 ensures text is readable for users with severe vision impairments. Use contrast checkers and always test your designs for the highest level of accessibility.
 
-*Accessibility means everyone can read your message—aim for the highest contrast!*
+_Accessibility means everyone can read your message—aim for the highest contrast!_

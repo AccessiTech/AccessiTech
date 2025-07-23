@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { useSelector } from "react-redux";
+import { createSlice } from '@reduxjs/toolkit';
+import { useSelector } from 'react-redux';
 
-export const SANS_SERIF = "sans-serif";
-export const SERIF = "serif";
-export const MONOSPACE = "monospace";
+export const SANS_SERIF = 'sans-serif';
+export const SERIF = 'serif';
+export const MONOSPACE = 'monospace';
 
 export type FontFamily = typeof SANS_SERIF | typeof SERIF | typeof MONOSPACE;
 export interface FontOptionsState {
@@ -20,17 +20,17 @@ export const fontOptionsInitialState = {
 };
 
 // Magical Strings!
-export const fontOptionsSliceName = "fontOptions";
-export const TOGGLE_FONT_OPTIONS_ACTION = "TOGGLE_FONT_OPTIONS_ACTION";
-export const SET_FONT_SIZE_ACTION = "SET_FONT_SIZE_ACTION";
-export const SET_FONT_FAMILY_ACTION = "SET_FONT_FAMILY_ACTION";
+export const fontOptionsSliceName = 'fontOptions';
+export const TOGGLE_FONT_OPTIONS_ACTION = 'TOGGLE_FONT_OPTIONS_ACTION';
+export const SET_FONT_SIZE_ACTION = 'SET_FONT_SIZE_ACTION';
+export const SET_FONT_FAMILY_ACTION = 'SET_FONT_FAMILY_ACTION';
 
 // THE FONT OPTIONS SLICE REDUCER
 export const fontOptionsSlice = createSlice({
   name: fontOptionsSliceName,
   initialState: fontOptionsInitialState,
   reducers: {
-    [TOGGLE_FONT_OPTIONS_ACTION]: (state) => {
+    [TOGGLE_FONT_OPTIONS_ACTION]: state => {
       state.isOpen = !state.isOpen;
     },
     [SET_FONT_SIZE_ACTION]: (state, action) => {
@@ -43,8 +43,7 @@ export const fontOptionsSlice = createSlice({
 });
 
 // Action Creators
-export const toggleFontOptions =
-  fontOptionsSlice.actions[TOGGLE_FONT_OPTIONS_ACTION];
+export const toggleFontOptions = fontOptionsSlice.actions[TOGGLE_FONT_OPTIONS_ACTION];
 export const setFontSize = fontOptionsSlice.actions[SET_FONT_SIZE_ACTION];
 export const setFontFamily = fontOptionsSlice.actions[SET_FONT_FAMILY_ACTION];
 
@@ -54,8 +53,8 @@ export const setFontFamily = fontOptionsSlice.actions[SET_FONT_FAMILY_ACTION];
  * @returns {boolean} true if font options are open
  * @example const isOpen = useIsOpen();
  */
-export const useIsOpen = ():boolean => {
-  const slice = useSelector((state:any) => state[fontOptionsSliceName]);
+export const useIsOpen = (): boolean => {
+  const slice = useSelector((state: any) => state[fontOptionsSliceName]);
   return (slice && slice.isOpen) || false;
 };
 
@@ -63,8 +62,8 @@ export const useIsOpen = ():boolean => {
  * @returns {number} font size in rem
  * @example const fontSize = useFontSize();
  */
-export const useFontSize = ():number => {
-  const slice = useSelector((state:any) => state[fontOptionsSliceName]);
+export const useFontSize = (): number => {
+  const slice = useSelector((state: any) => state[fontOptionsSliceName]);
   return (slice && slice.fontSize) || 1;
 };
 
@@ -72,7 +71,7 @@ export const useFontSize = ():number => {
  * @returns {FontFamily} font family
  * @example const fontFamily = useFontFamily();
  */
-export const useFontFamily = ():FontFamily => {
-  const slice = useSelector((state:any) => state[fontOptionsSliceName]);
+export const useFontFamily = (): FontFamily => {
+  const slice = useSelector((state: any) => state[fontOptionsSliceName]);
   return (slice && slice.fontFamily) || SANS_SERIF;
 };

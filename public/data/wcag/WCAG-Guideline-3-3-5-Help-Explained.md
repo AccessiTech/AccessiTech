@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.3.5 Help](https://www.w3
 
 Guideline 3.3.5 ensures that users can get the help they need to complete forms and complex tasks. Accessible help features reduce errors and improve user confidence.
 
-
-*Accessible help empowers users—make sure support is always within reach!* 
+_Accessible help empowers users—make sure support is always within reach!_

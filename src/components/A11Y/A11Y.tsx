@@ -7,10 +7,9 @@ import { toggleA11y, toggleSimplified, useIsA11yOpen, useIsSimplified } from '..
 import { useOutsideClick } from '../../settings/utils';
 import { BODY, ESCAPE } from '../../settings/strings';
 
-
-export const namespace = 'a11y/'
+export const namespace = 'a11y/';
 export const SIMPLIFIED_VIEW = 'simplified-view';
-export const TOGGLE_SIMPLIFIED_VIEW = "Toggle Simplified View";
+export const TOGGLE_SIMPLIFIED_VIEW = 'Toggle Simplified View';
 
 function A11Y() {
   const i18nSelectRef = useRef(null);
@@ -34,7 +33,7 @@ function A11Y() {
     }
   });
 
-  const onA11yToggle = (e:any) => {
+  const onA11yToggle = (e: any) => {
     e.preventDefault();
     if (isA11yOpen) {
       if (removeEventListener) removeEventListener();
@@ -42,7 +41,7 @@ function A11Y() {
     store.dispatch(toggleA11y());
   };
 
-  const onEscapeKey = (e:any) => {
+  const onEscapeKey = (e: any) => {
     if (e.key === ESCAPE && isA11yOpen) {
       if (removeEventListener) removeEventListener();
       store.dispatch(toggleA11y());
@@ -50,11 +49,7 @@ function A11Y() {
   };
 
   return (
-    <div
-      className="a11y-container"
-      aria-label="Accessibility Options"
-      ref={i18nSelectRef}
-    >
+    <div className="a11y-container" aria-label="Accessibility Options" ref={i18nSelectRef}>
       <div className={`${isA11yOpen ? 'isOpen ' : ''}a11y__settings-container`}>
         <button
           className="a11y__settings-toggle"
@@ -67,16 +62,20 @@ function A11Y() {
         {isA11yOpen && (
           <menu className="a11y__settings">
             <li>
-              <div className='simplified-view-container'>
+              <div className="simplified-view-container">
                 <button
                   className="simplified-view-toggle"
                   onClick={() => store.dispatch(toggleSimplified())}
                   onKeyDown={onEscapeKey}
                   aria-label={TOGGLE_SIMPLIFIED_VIEW}
-                ><i className="fa fa-bolt-lightning" /></button>
+                >
+                  <i className="fa fa-bolt-lightning" />
+                </button>
               </div>
             </li>
-            <li><FontOptions onClose={onEscapeKey} /></li>
+            <li>
+              <FontOptions onClose={onEscapeKey} />
+            </li>
           </menu>
         )}
         {isA11yOpen && (
@@ -89,7 +88,6 @@ function A11Y() {
             <i className="fa-solid fa-xmark" />
           </button>
         )}
-
       </div>
     </div>
   );

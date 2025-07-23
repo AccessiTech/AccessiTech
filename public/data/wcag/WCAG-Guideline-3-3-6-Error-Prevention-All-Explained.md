@@ -101,5 +101,4 @@ Guideline 3.3.6 ensures that users are protected from mistakes in all forms and 
 
 ---
 
-
-*Protection and review for all—make every form on your site safe and accessible!* 
+_Protection and review for all—make every form on your site safe and accessible!_

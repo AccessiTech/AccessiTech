@@ -105,4 +105,4 @@ For more, see the [W3C’s official documentation for 1.4.8 Visual Presentation]
 
 Guideline 1.4.8 ensures users can customize how text is displayed for maximum readability and comfort. Provide controls and use flexible CSS to support all users.
 
-*Accessibility means giving users control—let them read their way!*
+_Accessibility means giving users control—let them read their way!_

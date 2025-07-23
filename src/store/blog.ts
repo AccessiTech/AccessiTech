@@ -1,19 +1,19 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { useSelector } from "react-redux";
-import { getMetaData, naturalGuidelineSort } from "../settings/utils";
-import { NavigateFunction } from "react-router-dom";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { useSelector } from 'react-redux';
+import { getMetaData, naturalGuidelineSort } from '../settings/utils';
+import { NavigateFunction } from 'react-router-dom';
 
-export const blogSliceName = "blog";
+export const blogSliceName = 'blog';
 
-export const GET_BLOG_ENTRY = "GET_BLOG_ENTRY";
-export const SET_BLOG_ENTRY = "SET_BLOG_ENTRY";
+export const GET_BLOG_ENTRY = 'GET_BLOG_ENTRY';
+export const SET_BLOG_ENTRY = 'SET_BLOG_ENTRY';
 
 export enum BlogOrder {
-  ASC = "asc",
-  DESC = "desc",
-  DATE_ASC = "date_asc",
-  DATE_DESC = "date_desc",
-  NATURAL = "natural",
+  ASC = 'asc',
+  DESC = 'desc',
+  DATE_ASC = 'date_asc',
+  DATE_DESC = 'date_desc',
+  NATURAL = 'natural',
 }
 
 export interface Blog {
@@ -26,8 +26,8 @@ export interface Blog {
   image?: string;
   image_alt?: string;
   pathname?: string; // Optional, used for routing
-  next?: { url: string, title: string }; // Optional, used for next blog entry link
-  previous?: { url: string, title: string }; // Optional, used for previous blog entry link
+  next?: { url: string; title: string }; // Optional, used for next blog entry link
+  previous?: { url: string; title: string }; // Optional, used for previous blog entry link
   excerpt?: string; // Optional, used for blog entry excerpt
 }
 
@@ -41,24 +41,23 @@ export interface GetBlogEntryPayload {
   navigate?: NavigateFunction;
   pathname?: string;
 }
-export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
-  { id, navigate, pathname }: GetBlogEntryPayload
-) => {
-  // In-memory cache for markdown blog entries
-  const mdCache: { [key: string]: string } = {};
-  const cacheKey = `${pathname || 'blog'}/${id}`;
-  let text: string | undefined;
-  if (mdCache[cacheKey]) {
-    text = mdCache[cacheKey];
-  } else {
-    const response = await fetch(`/data/${pathname || 'blog'}/${id}.md`)
-      .then((response) => {
+export const getBlogEntry = createAsyncThunk(
+  GET_BLOG_ENTRY,
+  async ({ id, navigate, pathname }: GetBlogEntryPayload) => {
+    // In-memory cache for markdown blog entries
+    const mdCache: { [key: string]: string } = {};
+    const cacheKey = `${pathname || 'blog'}/${id}`;
+    let text: string | undefined;
+    if (mdCache[cacheKey]) {
+      text = mdCache[cacheKey];
+    } else {
+      let response: Response | undefined;
+      try {
+        response = await fetch(`/data/${pathname || 'blog'}/${id}.md`);
         if (!response.ok) {
-          throw new Error("Failed to fetch blog");
+          throw new Error('Failed to fetch blog');
         }
-        return response;
-      })
-      .catch((e: string) => {
+      } catch (e) {
         console.error(e);
         // Prevent infinite redirect loop
         if (navigate && window.location.pathname !== `/${pathname || 'blog'}`) {
@@ -68,42 +67,53 @@ export const getBlogEntry = createAsyncThunk(GET_BLOG_ENTRY, async (
           // Use location.replace for hard redirects
           window.location.replace(`/${pathname || 'blog'}`);
         }
-      });
-    text = await response?.text();
-    if (text) {
-      mdCache[cacheKey] = text;
+        throw e;
+      }
+      text = await response.text();
+      if (text) {
+        mdCache[cacheKey] = text;
+      }
     }
-  }
-  if (!text) {
-    throw new Error("Failed to parse blog");
-  }
+    if (!text) {
+      throw new Error('Failed to parse blog');
+    }
 
-  const metaData = getMetaData(text);
-  const date = metaData["date"] || "";
-  const description = metaData["description"] || "";
-  const content = Object.keys(metaData).length ? text.substring(text.indexOf("-->") + 3, text.length) : text;
-  const title = metaData["title"] || content.split("\n")[0].replace("# ", "");
-  const image = metaData["image"] || "";
-  const image_alt = metaData["image_alt"] || "";
-  const excerpt = metaData["excerpt"] || "";
-  const nextStr = metaData["next"] || "";
-  const previousStr = metaData["previous"] || "";
+    const metaData = getMetaData(text);
+    const date = metaData['date'] || '';
+    const description = metaData['description'] || '';
+    const content = Object.keys(metaData).length
+      ? text.substring(text.indexOf('-->') + 3, text.length)
+      : text;
+    const title = metaData['title'] || content.split('\n')[0].replace('# ', '');
+    const image = metaData['image'] || '';
+    const image_alt = metaData['image_alt'] || '';
+    const excerpt = metaData['excerpt'] || '';
+    const nextStr = metaData['next'] || '';
+    const previousStr = metaData['previous'] || '';
 
-  return {
-    loaded: true,
-    id,
-    title,
-    content,
-    date,
-    description,
-    image,
-    image_alt,
-    pathname,
-    excerpt,
-    next: nextStr ? { url: nextStr.split(',')[0], title: nextStr.split(',')[1] || "Next" } : undefined,
-    previous: previousStr ? { url: previousStr.split(',')[0], title: previousStr.split(',')[1] || "Previous" } : undefined,
-  } as Blog;
-});
+    return {
+      loaded: true,
+      id,
+      title,
+      content,
+      date,
+      description,
+      image,
+      image_alt,
+      pathname,
+      excerpt,
+      next: nextStr
+        ? { url: nextStr.split(',')[0], title: nextStr.split(',')[1] || 'Next' }
+        : undefined,
+      previous: previousStr
+        ? {
+            url: previousStr.split(',')[0],
+            title: previousStr.split(',')[1] || 'Previous',
+          }
+        : undefined,
+    } as Blog;
+  }
+);
 
 export const blogInitialState: BlogState = {
   isLoading: false,
@@ -120,9 +130,9 @@ export const blogSlice = createSlice({
         ...state.entries[id],
         ...entry,
       };
-    }
+    },
   },
-  extraReducers: (builder) => {
+  extraReducers: builder => {
     builder.addCase(getBlogEntry.fulfilled, (state, action) => {
       state.entries[action.payload.id] = {
         ...state.entries[action.payload.id],
@@ -154,13 +164,13 @@ export interface BlogEntriesArrayProps {
   order?: BlogOrder;
   pathname?: string;
 }
-import { useMemo } from "react";
+import { useMemo } from 'react';
 
-export const useBlogEntriesArray = ({order, pathname}: BlogEntriesArrayProps): Blog[] => {
+export const useBlogEntriesArray = ({ order, pathname }: BlogEntriesArrayProps): Blog[] => {
   const entries = useBlogEntries();
   return useMemo(() => {
     return Object.values(entries)
-      .filter((entry) => entry.pathname === pathname)
+      .filter(entry => entry.pathname === pathname)
       .sort((a, b) => {
         switch (order || BlogOrder.DATE_DESC) {
           case BlogOrder.ASC:

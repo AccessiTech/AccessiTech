@@ -101,5 +101,4 @@ For more, see the [W3C’s official documentation for 3.1.4 Abbreviations](https
 
 Guideline 3.1.4 is essential for helping users understand your site. By explaining abbreviations, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make abbreviation accessibility a core part of your development process.
 
-
-*Accessibility means clarity—help users understand every term!* 
+_Accessibility means clarity—help users understand every term!_

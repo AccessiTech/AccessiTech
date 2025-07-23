@@ -23,6 +23,7 @@ next: /wcag/WCAG-Guideline-5-3-1-Conformance-Claims-Explained, Guideline 5.3.1 -
 Section 5.2.5 of WCAG 2.1 requires that if you use web technologies in a way that is not accessibility supported, or in a way that does not conform to WCAG, those technologies must not block users from accessing the rest of the page. The rest of the page must remain accessible, even if some features are not.
 
 **Key points:**
+
 - Non-accessibility-supported or non-conforming technologies must not prevent users from accessing content or functionality on the page.
 - The page must still meet all conformance requirements when unsupported technologies are turned on, turned off, or not supported by the user agent (browser or assistive technology).
 - Certain critical success criteria always apply to all content, even if that content is not relied upon for conformance.
@@ -32,6 +33,7 @@ Section 5.2.5 of WCAG 2.1 requires that if you use web technologies in a way tha
 ## **Which Success Criteria Always Apply?**
 
 The following WCAG 2.1 success criteria must be met for all content on the page, including content that is not relied upon for conformance:
+
 - **1.4.2 Audio Control** (users must be able to pause, stop, or control audio)
 - **2.1.2 No Keyboard Trap** (users must be able to move keyboard focus away from any component)
 - **2.2.2 Pause, Stop, Hide** (users must be able to pause, stop, or hide moving, blinking, scrolling, or auto-updating content)
@@ -71,10 +73,10 @@ Non-interference means that your site remains accessible even if some features a
 ---
 
 ## **References & Further Reading**
+
 - [WCAG 2.1 Section 5.2.5: Non-Interference](https://www.w3.org/TR/WCAG21/#cc5)
 - [Understanding Conformance Requirements](https://www.w3.org/WAI/WCAG21/Understanding/conformance#conformance-requirements)
 
 ---
 
-
-*Accessibility means no one gets left behind—even if some features don’t work for everyone.*
+_Accessibility means no one gets left behind—even if some features don’t work for everyone._

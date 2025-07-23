@@ -105,4 +105,3 @@ For more, see the [W3C’s official documentation for 2.2.2 Pause, Stop, Hide](h
 ## **Summary**
 
 Guideline 2.2.2 is essential for preventing distractions and supporting users with cognitive or neurological disabilities. By allowing users to pause, stop, or hide moving content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make content control a core part of your development process.
-

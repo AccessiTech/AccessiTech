@@ -98,5 +98,4 @@ For more, see the [W3C’s official documentation for 3.3.7 Redundant Entry](htt
 
 Guideline 3.3.7 ensures that users don’t have to enter the same information more than once in a process. Reduce repetition for a smoother, more accessible experience.
 
-
-*Efficiency and ease—help users by reducing unnecessary repetition!* 
+_Efficiency and ease—help users by reducing unnecessary repetition!_

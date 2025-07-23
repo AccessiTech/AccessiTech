@@ -102,4 +102,4 @@ For more, see the [W3C’s official documentation for 1.4.4 Resize Text](https:/
 
 Guideline 1.4.4 ensures users can read and interact with content at larger text sizes. Use relative units and test your site at 200% zoom to ensure accessibility.
 
-*Accessibility means everyone can read your content—make sure it scales!*
+_Accessibility means everyone can read your content—make sure it scales!_

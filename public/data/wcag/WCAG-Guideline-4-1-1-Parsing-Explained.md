@@ -102,5 +102,4 @@ For more, see the [W3C’s official documentation for 4.1.1 Parsing](https://www
 
 Guideline 4.1.1 is essential for helping users access your site. By ensuring correct parsing, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make code validation a core part of your development process.
 
-
-*Accessibility means clarity—help user agents interpret your content correctly!* 
+_Accessibility means clarity—help user agents interpret your content correctly!_
