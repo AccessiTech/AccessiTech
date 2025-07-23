@@ -31,7 +31,11 @@ function SplashSocials() {
     setIconColor(isSimplifiedView ? DARK_BLUE : WHITE);
   }, [isSimplifiedView]);
   return (
-    <section className="splash-social-buttons" aria-label={SOCIAL_MEDIA_BUTTONS}>
+    <section
+      className="splash-social-buttons"
+      aria-label={SOCIAL_MEDIA_BUTTONS}
+      data-testid="splash-socials"
+    >
       <ul>
         {/* <li>
         <SocialIcon

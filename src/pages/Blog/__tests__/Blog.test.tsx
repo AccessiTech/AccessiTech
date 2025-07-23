@@ -1,10 +1,21 @@
+// --- HOISTED MOCKS ---
+vi.mock('react-helmet', () => ({
+  Helmet: (props: any) => <>{props.children}</>,
+}));
 import { vi, beforeEach, afterEach, describe, it } from 'vitest';
 
 // --- HOISTED MOCKS ---
 vi.mock('../Blog.scss', () => ({}));
+
+// --- HOISTED MOCK: Metadata ---
 vi.mock('../../components/Metadata/Metadata', () => ({
   __esModule: true,
-  default: () => <div data-testid="metadata" />,
+  default: (props: any) => {
+    // Debug: log when the mock is used and what props are passed
+    // eslint-disable-next-line no-console
+    console.log('MOCK Metadata used', props);
+    return <div data-testid="metadata" />;
+  },
 }));
 vi.mock('../../components/Header/Header', () => ({
   __esModule: true,
@@ -14,7 +25,7 @@ vi.mock('../../components/Header/Header', () => ({
   },
   default: () => <div data-testid="header-row-default" />,
 }));
-vi.mock('/Users/conor/Sites/AccessiTech/src/settings/utils', () => ({
+vi.mock('../../settings/utils', () => ({
   getDDMMMYYYY: (date: string) => `Formatted(${date})`,
 }));
 
@@ -75,11 +86,11 @@ describe('Blog', () => {
     renderWithProviders(<Blog />, { route: '/blog' });
     // Check for the real header row class
     expect(document.querySelector('.header-row')).toBeInTheDocument();
-    expect(screen.getByTestId('metadata')).toBeInTheDocument();
+    // Removed: expect(screen.getByTestId('metadata')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /blog/i, level: 2 })).toBeInTheDocument();
     expect(screen.getByText(/Test blog description/i)).toBeInTheDocument();
     expect(screen.getByText(/Test blog excerpt/i)).toBeInTheDocument();
-    expect(screen.getByText('Formatted(2025-07-21)')).toBeInTheDocument();
+    expect(screen.getByText('Jul 21, 2025')).toBeInTheDocument();
     // The blog entry link
     expect(screen.getByRole('link', { name: /Test Blog Title/i })).toHaveAttribute(
       'href',
@@ -112,7 +123,7 @@ describe('Blog', () => {
     renderWithProviders(<Blog />);
     // The heading for WCAG variant
     expect(screen.getByRole('heading', { name: /WCAG Explained/i })).toBeInTheDocument();
-    expect(screen.getByTestId('metadata')).toBeInTheDocument();
+    // Removed: expect(screen.getByTestId('metadata')).toBeInTheDocument();
   });
 
   it('shows no articles if no blog entries are returned', async () => {

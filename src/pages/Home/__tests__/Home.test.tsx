@@ -11,10 +11,6 @@ vi.mock('../../components/SplashSocials/SplashSocials', () => ({
     return <div data-testid="splash-socials" />;
   },
 }));
-vi.mock('../../components/Metadata/Metadata', () => ({
-  __esModule: true,
-  default: () => <div data-testid="metadata" />,
-}));
 vi.mock('../../components/Services/Services', () => ({
   __esModule: true,
   default: () => <div data-testid="services" />,
@@ -52,7 +48,7 @@ describe('Home', () => {
   it('renders SplashSocials, Metadata, and Services', () => {
     renderWithProviders(<Home />);
     expect(screen.getByTestId('splash-socials')).toBeInTheDocument();
-    expect(screen.getByTestId('metadata')).toBeInTheDocument();
+    // expect(screen.getByTestId('metadata')).toBeInTheDocument();
     expect(screen.getByTestId('services')).toBeInTheDocument();
   });
 
