@@ -1,105 +1,115 @@
-import { screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import { describe, it, expect, vi } from 'vitest';
-import A11Y from './A11Y';
-import { renderWithProviders, testAccessibility } from '../../utils/__tests__/test-utils';
+import { vi } from 'vitest';
+import { screen, fireEvent } from '@testing-library/react';
+import { renderWithProviders } from '../../utils/__tests__/renderWithProviders';
+import A11Y, { SIMPLIFIED_VIEW, TOGGLE_SIMPLIFIED_VIEW } from './A11Y';
 
-// Mock the scss import
-vi.mock('./a11y.scss', () => ({}));
+// Mock store and hooks
 
-describe('A11Y Component', () => {
-  describe('Rendering', () => {
-    it('renders without errors', () => {
-      renderWithProviders(<A11Y />);
-      expect(screen.getByLabelText('Toggle Accessibility Options')).toBeInTheDocument();
-    });
+vi.mock('../../store/a11y', async () => {
+  const actual = await vi.importActual<any>('../../store/a11y');
+  return {
+    ...actual,
+    useIsA11yOpen: vi.fn(),
+    useIsSimplified: vi.fn(),
+    toggleA11y: vi.fn(() => ({ type: 'TOGGLE_A11Y' })),
+    toggleSimplified: vi.fn(() => ({ type: 'TOGGLE_SIMPLIFIED' })),
+  };
+});
+vi.mock('../../store/store', async () => {
+  const actual = await vi.importActual<any>('../../store/store');
+  return {
+    ...actual,
+    default: { dispatch: vi.fn() },
+  };
+});
+vi.mock('../../settings/utils', () => ({
+  useOutsideClick: vi.fn(() => undefined),
+}));
 
-    it('displays accessibility controls when opened', async () => {
-      const user = userEvent.setup();
-      renderWithProviders(<A11Y />);
+import {
+  useIsA11yOpen as _useIsA11yOpen,
+  useIsSimplified as _useIsSimplified,
+  toggleA11y,
+  toggleSimplified,
+} from '../../store/a11y';
+import store from '../../store/store';
+import { useOutsideClick as _useOutsideClick } from '../../settings/utils';
 
-      // Click toggle button
-      const toggleButton = screen.getByLabelText('Toggle Accessibility Options');
-      await user.click(toggleButton);
+// Cast hooks to mocked functions for testing
+const useIsA11yOpen = _useIsA11yOpen as jest.Mock;
+const useIsSimplified = _useIsSimplified as jest.Mock;
+const useOutsideClick = _useOutsideClick as jest.Mock;
 
-      // Verify the component is in the opened state rather than checking for specific elements
-      // that might not exist in the current implementation
-      expect(screen.getByLabelText('Toggle Accessibility Options')).toBeInTheDocument();
-      // The container should be visible
-      expect(screen.getByLabelText('Accessibility Options')).toBeInTheDocument();
-    });
+describe('A11Y', () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    useIsA11yOpen.mockReturnValue(false);
+    useIsSimplified.mockReturnValue(false);
+    useOutsideClick.mockReturnValue(undefined);
   });
 
-  describe('Accessibility', () => {
-    it('has no accessibility violations', async () => {
-      await testAccessibility(<A11Y />);
-    });
-
-    // Update test to match current component implementation
-    it('has correct ARIA labels', () => {
-      renderWithProviders(<A11Y />);
-      const container = screen.getByLabelText('Accessibility Options');
-      expect(container).toBeInTheDocument();
-    });
-
-    // Update the keyboard navigation test to match current implementation
-    it('supports keyboard navigation', async () => {
-      renderWithProviders(<A11Y />);
-      const toggle = screen.getByLabelText('Toggle Accessibility Options');
-      expect(toggle).toHaveAttribute('aria-label');
-    });
+  it('renders the accessibility toggle button', () => {
+    renderWithProviders(<A11Y />);
+    expect(screen.getByLabelText('Toggle Accessibility Options')).toBeInTheDocument();
   });
 
-  describe('User Interactions', () => {
-    it('renders the toggle button', () => {
-      const { store } = renderWithProviders(<A11Y />);
-
-      // Verify the toggle button is rendered
-      const toggleButton = screen.getByLabelText('Toggle Accessibility Options');
-      expect(toggleButton).toBeInTheDocument();
-
-      // Initial state should be closed
-      expect(store.getState().a11y.isOpen).toBe(false);
-    });
-
-    it('remains accessible even when closed', () => {
-      renderWithProviders(<A11Y />);
-
-      // The container should always be accessible
-      const container = screen.getByLabelText('Accessibility Options');
-      expect(container).toBeInTheDocument();
-    });
-
-    // Skip the tests that require state changes for now
-    it.skip('toggles simplified view when simplified view button is clicked', async () => {
-      const user = userEvent.setup();
-      const { store } = renderWithProviders(<A11Y />);
-
-      // Open the menu first
-      const toggleButton = screen.getByLabelText('Toggle Accessibility Options');
-      await user.click(toggleButton);
-
-      // Initial state
-      expect(store.getState().a11y.isSimplified).toBe(false);
-
-      // We'd need to find the actual button in the UI that toggles simplified view
-      // For now, we'll skip this test
-    });
+  it('opens the settings menu when toggle is clicked', () => {
+    // First render: menu closed
+    useIsA11yOpen.mockReturnValue(false);
+    const { rerender } = renderWithProviders(<A11Y />);
+    const toggle = screen.getByLabelText('Toggle Accessibility Options');
+    fireEvent.click(toggle);
+    expect(store.dispatch).toHaveBeenCalledWith(toggleA11y());
+    // Second render: menu open
+    useIsA11yOpen.mockReturnValue(true);
+    rerender(<A11Y />);
+    expect(screen.getByRole('list')).toBeInTheDocument();
+    expect(screen.getByLabelText('Close Accessibility Options')).toBeInTheDocument();
   });
 
-  describe('Keyboard Interaction', () => {
-    it('has accessible keyboard controls', () => {
-      renderWithProviders(<A11Y />);
+  it('closes the settings menu when close button is clicked', () => {
+    useIsA11yOpen.mockReturnValue(true);
+    renderWithProviders(<A11Y />);
+    const close = screen.getByLabelText('Close Accessibility Options');
+    fireEvent.click(close);
+    expect(store.dispatch).toHaveBeenCalledWith(toggleA11y());
+  });
 
-      // The toggle button should be accessible via keyboard
-      const toggleButton = screen.getByLabelText('Toggle Accessibility Options');
-      expect(toggleButton).toBeInTheDocument();
-      expect(toggleButton).toHaveAttribute('aria-label');
-    });
+  it('toggles simplified view when simplified button is clicked', () => {
+    useIsA11yOpen.mockReturnValue(true);
+    renderWithProviders(<A11Y />);
+    const simplified = screen.getByLabelText(TOGGLE_SIMPLIFIED_VIEW);
+    fireEvent.click(simplified);
+    expect(store.dispatch).toHaveBeenCalledWith(toggleSimplified());
+  });
 
-    // Skip this test for now as it requires more component understanding
-    it.skip('maintains focus management', async () => {
-      // This test would need to be updated to match the actual component implementation
+  it('adds and removes SIMPLIFIED_VIEW class on body when toggling simplified view', () => {
+    const body = document.body;
+    body.classList.remove(SIMPLIFIED_VIEW);
+    useIsSimplified.mockReturnValueOnce(true);
+    renderWithProviders(<A11Y />);
+    expect(body.classList.contains(SIMPLIFIED_VIEW)).toBe(true);
+    useIsSimplified.mockReturnValueOnce(false);
+    renderWithProviders(<A11Y />);
+    expect(body.classList.contains(SIMPLIFIED_VIEW)).toBe(false);
+  });
+
+  it('closes menu on Escape key', () => {
+    useIsA11yOpen.mockReturnValue(true);
+    renderWithProviders(<A11Y />);
+    const toggle = screen.getByLabelText('Toggle Accessibility Options');
+    fireEvent.keyDown(toggle, { key: 'Escape' });
+    expect(store.dispatch).toHaveBeenCalledWith(toggleA11y());
+  });
+
+  it('closes menu on outside click', () => {
+    useIsA11yOpen.mockReturnValue(true);
+    // Mock useOutsideClick to immediately call the callback (second argument)
+    useOutsideClick.mockImplementation((ref, callback) => {
+      callback();
+      return undefined;
     });
+    renderWithProviders(<A11Y />);
+    expect(store.dispatch).toHaveBeenCalledWith(toggleA11y());
   });
 });

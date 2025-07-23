@@ -27,6 +27,7 @@ export interface FetchBlogEntryProps {
   pathname?: string;
 }
 const fetchBlogEntry = async ({ id, navigate, pathname }: FetchBlogEntryProps) => {
+  if (!id) return;
   await store.dispatch(getBlogEntry({ id: id.replace(/.html/g, ''), navigate, pathname }));
 };
 export interface BlogEntryProps {}

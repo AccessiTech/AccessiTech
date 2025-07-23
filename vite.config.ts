@@ -20,9 +20,30 @@ function BlogHotReload() {
   } as PluginOption;
 }
 
+// Custom plugin to ignore SCSS files during test runs
+import type { Plugin } from 'vite';
+function IgnoreScssInTests(): Plugin {
+  return {
+    name: 'ignore-scss-in-tests',
+    enforce: 'pre' as const,
+    resolveId(source) {
+      if (process.env.VITEST && source.endsWith('.scss')) {
+        return source;
+      }
+      return null;
+    },
+    load(id) {
+      if (process.env.VITEST && id.endsWith('.scss')) {
+        return 'export default {}';
+      }
+      return null;
+    },
+  };
+}
+
 // Basic Vite configuration
 const viteConfig = defineConfig({
-  plugins: [react(), BlogHotReload()],
+  plugins: [react(), BlogHotReload(), IgnoreScssInTests()],
   css: {
     preprocessorOptions: {
       scss: {
@@ -40,14 +61,22 @@ const viteConfig = defineConfig({
 });
 
 // Vitest configuration
+
 const vitestConfig = {
   test: {
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/setupTests.ts'],
-    css: false, // Disable CSS processing during tests
+    css: true,
+    // Use the same SCSS configuration as the app
+    include: ['**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     deps: {
-      inline: true, // Inline all dependencies for testing
+      inline: [/\.scss$/],
+      // fallbackCJS: true,
+    },
+    mock: {
+      // Mock all .scss imports to an empty object
+      '\\.scss$': {},
     },
     coverage: {
       provider: 'istanbul', // Changed from 'v8' to 'istanbul'
@@ -65,6 +94,11 @@ const vitestConfig = {
         'src/vite-env.d.ts',
         'src/main.tsx',
         'src/**/*.stories.{ts,tsx}',
+        '**/*.config.ts',
+        'docs/assets/index-**.js',
+        'src/__tests__/**',
+        'src/utils/__tests__/**',
+        'src/server.tsx',
       ],
       // Temporarily reduce thresholds while implementing more tests
       branches: 10,

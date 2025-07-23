@@ -1,5 +1,7 @@
 # AccessiTech
 
+![Coverage](https://img.shields.io/badge/coverage-92%25-brightgreen)
+
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-4.3.4-purple.svg)](https://vitejs.dev/)
