@@ -2,21 +2,41 @@ import fs from 'fs';
 import path from 'path';
 import { getMetaData } from './rss.js';
 
-const PUBLIC_IMAGE_DIR = 'https://www.accessi.tech/assets/images/';
-
-function readCNAME(filePath) {
+export function readCNAME(filePath, fsDep = fs) {
   try {
-    const fileContents = fs.readFileSync(filePath, 'utf-8');
-    return fileContents.trim(); // Assuming the CNAME file contains only the domain
+    const fileContents = fsDep.readFileSync(filePath, 'utf-8');
+    return fileContents.trim();
   } catch (error) {
-    console.error(`Error reading CNAME file: ${error.message}`);
+    // Don't log in pure function
     return null;
   }
 }
 
-(async () => {
+export function getAllMarkdownFiles(dir, fsDep = fs, pathDep = path) {
+  let results = [];
+  const list = fsDep.readdirSync(dir);
+  list.forEach(file => {
+    const filePath = pathDep.join(dir, file);
+    const stat = fsDep.statSync(filePath);
+    if (stat && stat.isDirectory()) {
+      results = results.concat(getAllMarkdownFiles(filePath, fsDep, pathDep));
+    } else if (file.endsWith('.md')) {
+      results.push(filePath);
+    }
+  });
+  return results;
+}
+
+export function generateSitemap({
+  fsDep = fs,
+  pathDep = path,
+  rootDir = process.cwd(),
+  env = process.env,
+  getMetaDataDep = getMetaData,
+} = {}) {
+  const PUBLIC_IMAGE_DIR = 'https://www.accessi.tech/assets/images/';
   const url =
-    readCNAME(path.resolve(process.cwd(), './CNAME')) || process.env.SITE_URL || 'www.accessi.tech';
+    readCNAME(pathDep.resolve(rootDir, './CNAME'), fsDep) || env.SITE_URL || 'www.accessi.tech';
   const pages = [
     {
       url: '/',
@@ -50,28 +70,12 @@ function readCNAME(filePath) {
       status: 'published',
     },
   ];
-  const blogDir = path.join(process.cwd(), 'public/data');
-  // Recursively get all .md files from blogDir and subdirectories
-  function getAllMarkdownFiles(dir) {
-    let results = [];
-    const list = fs.readdirSync(dir);
-    list.forEach(file => {
-      const filePath = path.join(dir, file);
-      const stat = fs.statSync(filePath);
-      if (stat && stat.isDirectory()) {
-        results = results.concat(getAllMarkdownFiles(filePath));
-      } else if (file.endsWith('.md')) {
-        results.push(filePath);
-      }
-    });
-    return results;
-  }
-  const blogFiles = getAllMarkdownFiles(blogDir);
+  const blogDir = pathDep.join(rootDir, 'public/data');
+  const blogFiles = getAllMarkdownFiles(blogDir, fsDep, pathDep);
   blogFiles.forEach(filePath => {
-    const fileContent = fs.readFileSync(filePath, { encoding: 'utf-8' });
-    // Generate the blog link relative to blogDir
-    const relativePath = path.relative(blogDir, filePath).replace(/\\/g, '/');
-    const fileMetaData = getMetaData(fileContent);
+    const fileContent = fsDep.readFileSync(filePath, { encoding: 'utf-8' });
+    const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/');
+    const fileMetaData = getMetaDataDep(fileContent);
     const link = `/${relativePath}`.replace('.md', '');
     pages.push({
       ...fileMetaData,
@@ -82,7 +86,6 @@ function readCNAME(filePath) {
       imageAlt: fileMetaData.imageAlt || 'Blog post image',
     });
   });
-  console.log('blog files', pages);
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8" ?>
     <urlset
@@ -94,36 +97,28 @@ function readCNAME(filePath) {
     >
   ${pages
     .map(page => {
-      // get size of image in bytes
       if (page.status !== 'published') return;
-      let imagePath = path.resolve(
-        process.cwd(),
+      let imagePath = pathDep.resolve(
+        rootDir,
         'public/assets/images',
         page.image?.replace(PUBLIC_IMAGE_DIR, '')
       );
       let imageSize = 0;
-      if (!fs.existsSync(imagePath)) {
-        // Use default image if not found
-        console.warn(`Image not found: ${imagePath}, using default.png`);
-        imagePath = path.resolve(process.cwd(), 'public/assets/images/default.png');
+      if (!fsDep.existsSync(imagePath)) {
+        imagePath = pathDep.resolve(rootDir, 'public/assets/images/default.png');
       }
       try {
-        const stats = fs.statSync(imagePath);
+        const stats = fsDep.statSync(imagePath);
         imageSize = stats.size;
       } catch (e) {
-        console.warn(`Could not stat image: ${imagePath}`);
         imageSize = 0;
       }
 
       return `
           <url>
             <loc>https://${url}${page.url}</loc>
-            <lastmod>${
-              page.date ? new Date(page.date).toISOString() : new Date().toISOString()
-            }</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="${
-              page.image
-            }" length="${imageSize}" />
+            <lastmod>${page.date ? new Date(page.date).toISOString() : new Date().toISOString()}</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="${page.image}" length="${imageSize}" />
             <image:image>
               <image:loc>${page.image}</image:loc>
               ${page.imageAlt ? `<image:caption>${page.imageAlt}</image:caption>` : ''}
@@ -136,6 +131,20 @@ function readCNAME(filePath) {
     .filter(page => page)
     .join('')}
   </urlset>`;
-  fs.writeFileSync(path.resolve(process.cwd(), 'public/sitemap.xml'), sitemap);
+  const outputPath = pathDep.resolve(rootDir, 'public/sitemap.xml');
+  return { sitemap, outputPath };
+}
+
+// ES module entrypoint check
+const isMain = import.meta.url === `file://${process.argv[1]}`;
+if (isMain) {
+  const { sitemap, outputPath } = generateSitemap({
+    fsDep: fs,
+    pathDep: path,
+    rootDir: process.cwd(),
+    env: process.env,
+    getMetaDataDep: getMetaData,
+  });
+  fs.writeFileSync(outputPath, sitemap);
   console.log('Sitemap generated');
-})();
+}
