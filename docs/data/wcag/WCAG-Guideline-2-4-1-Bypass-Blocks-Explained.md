@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.4.1 Bypass Blocks](https
 ## **Summary**
 
 Guideline 2.4.1 is essential for helping users efficiently navigate your site. By providing skip links and mechanisms to bypass repeated content, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make bypassing blocks a core part of your development process.
-

@@ -51,6 +51,7 @@ Consider including the following in your conformance claim:
 ## **Example Optional Components Statement**
 
 > In addition to the required components, this claim includes:
+>
 > - Success criteria 2.4.7 and 3.3.5 (AAA) are also met
 > - The site uses SVG and PDF, but these are not relied upon for accessibility
 > - Tested with Chrome, Firefox, NVDA, and VoiceOver
@@ -65,5 +66,4 @@ Including optional components in your WCAG 2.1 conformance claim provides greate
 
 ---
 
-
-*Transparency builds trust—go beyond the minimum in your accessibility claims!*
+_Transparency builds trust—go beyond the minimum in your accessibility claims!_

@@ -101,5 +101,4 @@ For more, see the [W3C’s official documentation for 3.2.5 Change on Request](h
 
 Guideline 3.2.5 ensures that users are always in control of when changes happen on your site. Avoid surprises—let users decide when to trigger changes.
 
-
-*User control is essential—make sure changes only happen when your users want them!* 
+_User control is essential—make sure changes only happen when your users want them!_

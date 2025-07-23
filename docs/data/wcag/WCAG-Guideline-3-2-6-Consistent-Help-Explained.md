@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.2.6 Consistent Help](htt
 
 Guideline 3.2.6 ensures that users can always find help in the same place, making your site more accessible and user-friendly.
 
-
-*Consistency builds trust—make help easy to find for everyone!* 
+_Consistency builds trust—make help easy to find for everyone!_

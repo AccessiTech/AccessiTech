@@ -99,5 +99,4 @@ For more, see the [W3C’s official documentation for 3.3.9 Accessible Authentic
 
 Guideline 3.3.9 ensures that everyone can authenticate without cognitive or transcription barriers. Provide accessible alternatives for all authentication steps.
 
-
-*Accessibility means everyone can log in—remove barriers from your authentication process!* 
+_Accessibility means everyone can log in—remove barriers from your authentication process!_

@@ -104,4 +104,4 @@ For more, see the [W3C’s official documentation for 1.4.3 Contrast (Minimum)](
 
 Guideline 1.4.3 ensures text is readable for everyone, especially those with low vision. Use contrast checkers and always test your designs for accessibility.
 
-*Accessibility means everyone can read your message—don’t let poor contrast get in the way!*
+_Accessibility means everyone can read your message—don’t let poor contrast get in the way!_

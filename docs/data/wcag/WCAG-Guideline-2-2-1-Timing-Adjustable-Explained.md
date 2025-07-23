@@ -105,4 +105,3 @@ For more, see the [W3C’s official documentation for 2.2.1 Timing Adjustable](h
 ## **Summary**
 
 Guideline 2.2.1 is essential for preventing users from being timed out unfairly. By allowing users to turn off, adjust, or extend time limits, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make timing accessibility a core part of your development process.
-

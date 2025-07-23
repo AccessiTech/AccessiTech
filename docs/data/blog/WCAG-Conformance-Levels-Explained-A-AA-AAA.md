@@ -35,10 +35,12 @@ Each level builds on the previous one. To meet AA, you must also meet all A crit
 ## **Level A: The Essentials**
 
 **What it means:**
+
 - Your site is accessible at a basic level.
 - No content is completely inaccessible to people with disabilities.
 
 **Examples of Level A requirements:**
+
 - All images have alt text.
 - Videos have captions.
 - Content is navigable by keyboard.
@@ -50,10 +52,12 @@ Each level builds on the previous one. To meet AA, you must also meet all A crit
 ## **Level AA: The Standard for Most Sites**
 
 **What it means:**
+
 - Your site removes the most significant barriers for users with disabilities.
 - This is the legal requirement in many countries (e.g., US, EU, Canada).
 
 **Examples of Level AA requirements:**
+
 - Color contrast ratio of at least 4.5:1 for normal text.
 - Headings and labels are clear and descriptive.
 - Navigation is consistent across pages.
@@ -66,10 +70,12 @@ Each level builds on the previous one. To meet AA, you must also meet all A crit
 ## **Level AAA: The Gold Standard**
 
 **What it means:**
+
 - Your site is as accessible as possible, going above and beyond legal requirements.
 - Not all content can meet AAA (e.g., live audio captions), but strive for it where you can.
 
 **Examples of Level AAA requirements:**
+
 - Sign language interpretation for videos.
 - Color contrast ratio of at least 7:1 for normal text.
 - No timing on any part of the content.
@@ -96,4 +102,4 @@ Each level builds on the previous one. To meet AA, you must also meet all A crit
 
 In our next post, we’ll take a step back and look at WCAG itself as a living, evolving standard—how it’s developed, who maintains it, and why its structure matters. This "meta" overview will set the stage for a new series where we’ll break down each WCAG guideline and success criterion, one post at a time.
 
-*Accessibility is a journey—each level brings you closer to a web for everyone!*
+_Accessibility is a journey—each level brings you closer to a web for everyone!_

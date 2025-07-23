@@ -110,4 +110,4 @@ For more, see the [W3C’s official documentation for 2.1.2 No Keyboard Trap](ht
 
 Guideline 2.1.2 is essential for ensuring users never get stuck while navigating your site. By preventing keyboard traps, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make keyboard navigation a core part of your development process.
 
-*Accessibility means never trapping your users—let them move freely!*
+_Accessibility means never trapping your users—let them move freely!_

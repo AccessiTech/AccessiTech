@@ -102,4 +102,3 @@ For more, see the [W3C’s official documentation for 2.3.3 Animation from Inter
 ## **Summary**
 
 Guideline 2.3.3 is essential for preventing discomfort and supporting users with motion sensitivity. By allowing users to disable non-essential animation, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make animation control a core part of your development process.
-

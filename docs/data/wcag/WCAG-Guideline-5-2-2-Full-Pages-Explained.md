@@ -53,10 +53,10 @@ A "full page" includes each variation of the page that is automatically presente
 ---
 
 ## **References & Further Reading**
+
 - [WCAG 2.1 Section 5.2.2: Full Pages](https://www.w3.org/TR/WCAG21/#cc2)
 - [Understanding Conformance Requirements](https://www.w3.org/WAI/WCAG21/Understanding/conformance#conformance-requirements)
 
 ---
 
-
-*Conformance to WCAG means making the entire experience accessible—not just part of it.*
+_Conformance to WCAG means making the entire experience accessible—not just part of it._

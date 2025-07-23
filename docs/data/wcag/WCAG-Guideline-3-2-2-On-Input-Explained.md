@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.2.2 On Input](https://ww
 
 Guideline 3.2.2 ensures that users are in control of what happens when they interact with your forms and controls. Avoid surprises—let users know what to expect.
 
-
-*Predictability and control are key—make sure your forms and controls behave as users expect!* 
+_Predictability and control are key—make sure your forms and controls behave as users expect!_

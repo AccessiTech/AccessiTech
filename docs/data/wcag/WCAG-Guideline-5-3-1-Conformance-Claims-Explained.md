@@ -63,5 +63,4 @@ A valid WCAG 2.1 conformance claim must include the date, guidelines version and
 
 ---
 
-
-*Transparency builds trust—document your accessibility journey!*
+_Transparency builds trust—document your accessibility journey!_

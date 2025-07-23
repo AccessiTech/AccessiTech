@@ -101,5 +101,4 @@ For more, see the [W3C’s official documentation for 3.2.3 Consistent Navigatio
 
 Guideline 3.2.3 ensures that users can rely on your site’s navigation to be predictable and familiar. Consistency is key to accessibility and usability.
 
-
-*Consistency builds confidence—make your navigation a familiar friend for every user!* 
+_Consistency builds confidence—make your navigation a familiar friend for every user!_

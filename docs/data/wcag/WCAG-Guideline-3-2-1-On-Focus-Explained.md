@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.2.1 On Focus](https://ww
 
 Guideline 3.2.1 ensures that users can navigate your site without surprises. Focus should never trigger context changes—keep interactions predictable and accessible.
 
-
-*Predictability is key—let users control what happens when they focus on your content!* 
+_Predictability is key—let users control what happens when they focus on your content!_

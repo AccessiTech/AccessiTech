@@ -100,5 +100,4 @@ For more, see the [W3C’s official documentation for 3.3.8 Accessible Authentic
 
 Guideline 3.3.8 ensures that everyone can authenticate without unnecessary cognitive barriers. Provide accessible alternatives for all authentication steps.
 
-
-*Accessibility starts at login—make authentication easy for everyone!* 
+_Accessibility starts at login—make authentication easy for everyone!_

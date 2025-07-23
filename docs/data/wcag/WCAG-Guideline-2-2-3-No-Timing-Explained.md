@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.2.3 No Timing](https://w
 ## **Summary**
 
 Guideline 2.2.3 is essential for ensuring users are not excluded by time limits. By removing unnecessary timing, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make timing flexibility a core part of your development process.
-

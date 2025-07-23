@@ -106,4 +106,3 @@ For more, see the [W3C’s official documentation for 2.2.6 Timeouts](https://ww
 Guideline 2.2.6 is essential for preventing data loss and supporting users who need more time. By warning users about timeouts and allowing them to request more time, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make timeout management a core part of your development process.
 
 **Up Next**
-

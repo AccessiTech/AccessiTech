@@ -104,4 +104,3 @@ For more, see the [W3C’s official documentation for 2.5.3 Label in Name](https
 ## **Summary**
 
 Guideline 2.5.3 is essential for helping users interact with your site. By ensuring visible labels match accessible names, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make label matching a core part of your development process.
-

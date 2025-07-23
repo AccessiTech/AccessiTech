@@ -98,5 +98,4 @@ For more, see the [W3C’s official documentation for 4.1.2 Name, Role, Value](h
 
 Guideline 4.1.2 is essential for helping users interact with your site. By ensuring name, role, and value are programmatically determined, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make ARIA accessibility a core part of your development process.
 
-
-*Accessibility means clarity—help assistive technologies interpret your UI!* 
+_Accessibility means clarity—help assistive technologies interpret your UI!_

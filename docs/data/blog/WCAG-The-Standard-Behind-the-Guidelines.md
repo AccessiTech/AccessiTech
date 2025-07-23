@@ -55,4 +55,4 @@ The **Web Content Accessibility Guidelines (WCAG)** are a set of technical stand
 
 Starting with our next post, we’ll break down each WCAG guideline and its success criteria—one at a time. We’ll explain what each means, why it matters, and how you can meet it with practical tips and examples.
 
-*Stay tuned as we open up the WCAG guidelines, one post at a time!*
+_Stay tuned as we open up the WCAG guidelines, one post at a time!_
