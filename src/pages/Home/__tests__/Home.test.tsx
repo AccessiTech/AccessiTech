@@ -4,18 +4,18 @@ vi.mock('react-router-dom', async () => {
   const actual = await vi.importActual('react-router-dom');
   return { ...actual, useNavigate: () => mockNavigate };
 });
-vi.mock('/Users/conor/Sites/AccessiTech/src/components/SplashSocials/SplashSocials', () => ({
+vi.mock('../../components/SplashSocials/SplashSocials', () => ({
   __esModule: true,
   default: () => {
     console.log('MOCKED SplashSocials RENDERED');
     return <div data-testid="splash-socials" />;
   },
 }));
-vi.mock('/Users/conor/Sites/AccessiTech/src/components/Metadata/Metadata', () => ({
+vi.mock('../../components/Metadata/Metadata', () => ({
   __esModule: true,
   default: () => <div data-testid="metadata" />,
 }));
-vi.mock('/Users/conor/Sites/AccessiTech/src/components/Services/Services', () => ({
+vi.mock('../../components/Services/Services', () => ({
   __esModule: true,
   default: () => <div data-testid="services" />,
 }));

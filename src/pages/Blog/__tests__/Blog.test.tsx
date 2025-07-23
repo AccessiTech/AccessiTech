@@ -2,11 +2,11 @@ import { vi, beforeEach, afterEach, describe, it } from 'vitest';
 
 // --- HOISTED MOCKS ---
 vi.mock('../Blog.scss', () => ({}));
-vi.mock('/Users/conor/Sites/AccessiTech/src/components/Metadata/Metadata', () => ({
+vi.mock('../../components/Metadata/Metadata', () => ({
   __esModule: true,
   default: () => <div data-testid="metadata" />,
 }));
-vi.mock('/Users/conor/Sites/AccessiTech/src/components/Header/Header', () => ({
+vi.mock('../../components/Header/Header', () => ({
   __esModule: true,
   HeaderRow: () => {
     console.log('MOCK HeaderRow used');
