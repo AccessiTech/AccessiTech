@@ -106,7 +106,7 @@ describe('A11Y', () => {
   it('closes menu on outside click', () => {
     (useIsA11yOpen as unknown as MockInstance).mockReturnValue(true);
     let outsideClickCallback: (() => void) | undefined;
-    (useOutsideClick as unknown as MockInstance).mockImplementation((ref, cb) => {
+    (useOutsideClick as unknown as MockInstance).mockImplementation((_ref, cb) => {
       outsideClickCallback = cb;
       return undefined;
     });
