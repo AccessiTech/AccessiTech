@@ -1,0 +1,13 @@
+{
+  "name": "@accessitech/wcag-checker",
+  "description": "Automated WCAG compliance checker for web projects.",
+  "features": ["Automated accessibility scans", "Detailed reports", "Integrates with CI/CD"],
+  "accessibility": ["WCAG 2.1 AA coverage", "Screen reader testing"],
+  "githubUrl": "https://github.com/accessitech/wcag-checker",
+  "npmUrl": "https://www.npmjs.com/package/@accessitech/wcag-checker",
+  "version": "0.9.8",
+  "updated": "2025-06-15",
+  "status": "maintained",
+  "license": "Apache-2.0",
+  "type": "tool"
+}

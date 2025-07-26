@@ -39,7 +39,7 @@ export const Home = () => {
       {/* Main Rows */}
       <main id="main" aria-label={ABOUT_ACCESSITECH}>
         <Row className="cta-row">
-          <Col xs={12} md={{ span: 5, offset: 1 }} className="blog-cta">
+          <Col xs={12} md={{ span: 4, offset: 0 }} className="blog-cta">
             <h3>Accessibility, done right.</h3>
             <p>
               Explore expert-written articles, tools, and tips to help you build better, more
@@ -57,7 +57,25 @@ export const Home = () => {
               Browse the Blog
             </Button>
           </Col>
-          <Col xs={12} md={{ span: 5 }} className="wcag-cta mt-5 mt-md-0">
+          <Col xs={12} md={{ span: 4 }} className="projects-cta mt-5 mt-md-0">
+            <h3>Open Source Projects.</h3>
+            <p>
+              Discover, search, and contribute to accessibility-focused open-source packages, tools,
+              and scripts maintained by AccessiTech.
+            </p>
+            <Button
+              href="/projects"
+              variant="primary"
+              size="lg"
+              onClick={(e: any) => {
+                e.preventDefault();
+                navigate('/projects');
+              }}
+            >
+              View Projects
+            </Button>
+          </Col>
+          <Col xs={12} md={{ span: 4 }} className="wcag-cta mt-5 mt-md-0">
             <h3>WCAG, made simple.</h3>
             <p>
               Get clear, jargon-free explanations of the Web Content Accessibility Guidelines (WCAG)

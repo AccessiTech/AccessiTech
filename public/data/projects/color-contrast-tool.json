@@ -1,0 +1,13 @@
+{
+  "name": "@accessitech/color-contrast-tool",
+  "description": "Interactive color contrast checker for designers and developers.",
+  "features": ["Real-time contrast analysis", "WCAG compliance indicators", "Palette suggestions"],
+  "accessibility": ["WCAG 2.1 AA color contrast", "Visual accessibility guidance"],
+  "githubUrl": "https://github.com/accessitech/color-contrast-tool",
+  "npmUrl": "https://www.npmjs.com/package/@accessitech/color-contrast-tool",
+  "version": "2.0.1",
+  "updated": "2025-07-10",
+  "status": "active",
+  "license": "MIT",
+  "type": "tool"
+}

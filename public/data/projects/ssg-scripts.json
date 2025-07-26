@@ -1,0 +1,13 @@
+{
+  "name": "@accessitech/ssg-scripts",
+  "description": "Static site generator scripts with accessibility best practices built-in.",
+  "features": ["Accessible templates", "SEO optimization", "Easy integration"],
+  "accessibility": ["Semantic HTML output", "Keyboard navigation support"],
+  "githubUrl": "https://github.com/accessitech/ssg-scripts",
+  "npmUrl": "https://www.npmjs.com/package/@accessitech/ssg-scripts",
+  "version": "1.0.0",
+  "updated": "2025-05-20",
+  "status": "experimental",
+  "license": "GPL-3.0",
+  "type": "script"
+}

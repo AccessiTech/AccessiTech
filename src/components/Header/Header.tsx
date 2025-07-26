@@ -42,6 +42,11 @@ function Header() {
               </Link>
             </li>
             <li>
+              <Link to="/projects" className={pathname === '/projects' ? 'active' : ''}>
+                Open Source Projects
+              </Link>
+            </li>
+            <li>
               <Link to="/wcag" className={pathname === '/wcag' ? 'active' : ''}>
                 WCAG Explained
               </Link>

@@ -1,0 +1,63 @@
+[
+  {
+    "name": "@accessitech/accessible-modal",
+    "description": "A fully accessible modal dialog component with ARIA support and keyboard navigation.",
+    "features": [
+      "Keyboard accessible",
+      "ARIA roles and attributes",
+      "Focus management",
+      "Customizable styling"
+    ],
+    "accessibility": ["WCAG 2.1 AA compliant", "Uses ARIA modal dialog pattern"],
+    "githubUrl": "https://github.com/accessitech/accessible-modal",
+    "npmUrl": "https://www.npmjs.com/package/@accessitech/accessible-modal",
+    "version": "1.2.3",
+    "updated": "2025-07-01",
+    "status": "active",
+    "license": "MIT",
+    "type": "package"
+  },
+  {
+    "name": "@accessitech/wcag-checker",
+    "description": "Automated WCAG compliance checker for web projects.",
+    "features": ["Automated accessibility scans", "Detailed reports", "Integrates with CI/CD"],
+    "accessibility": ["WCAG 2.1 AA coverage", "Screen reader testing"],
+    "githubUrl": "https://github.com/accessitech/wcag-checker",
+    "npmUrl": "https://www.npmjs.com/package/@accessitech/wcag-checker",
+    "version": "0.9.8",
+    "updated": "2025-06-15",
+    "status": "maintained",
+    "license": "Apache-2.0",
+    "type": "tool"
+  },
+  {
+    "name": "@accessitech/color-contrast-tool",
+    "description": "Interactive color contrast checker for designers and developers.",
+    "features": [
+      "Real-time contrast analysis",
+      "WCAG compliance indicators",
+      "Palette suggestions"
+    ],
+    "accessibility": ["WCAG 2.1 AA color contrast", "Visual accessibility guidance"],
+    "githubUrl": "https://github.com/accessitech/color-contrast-tool",
+    "npmUrl": "https://www.npmjs.com/package/@accessitech/color-contrast-tool",
+    "version": "2.0.1",
+    "updated": "2025-07-10",
+    "status": "active",
+    "license": "MIT",
+    "type": "tool"
+  },
+  {
+    "name": "@accessitech/ssg-scripts",
+    "description": "Static site generator scripts with accessibility best practices built-in.",
+    "features": ["Accessible templates", "SEO optimization", "Easy integration"],
+    "accessibility": ["Semantic HTML output", "Keyboard navigation support"],
+    "githubUrl": "https://github.com/accessitech/ssg-scripts",
+    "npmUrl": "https://www.npmjs.com/package/@accessitech/ssg-scripts",
+    "version": "1.0.0",
+    "updated": "2025-05-20",
+    "status": "experimental",
+    "license": "GPL-3.0",
+    "type": "script"
+  }
+]

@@ -14,6 +14,7 @@ import storage from 'reduxjs-toolkit-persist/lib/storage';
 import { fontOptionsSlice, fontOptionsSliceName } from '../components/FontOptions/reducer';
 import { a11ySlice, a11ySliceName } from './a11y';
 import { blogSlice, blogSliceName } from './blog';
+import { projectsSlice, projectsSliceName } from './projects';
 
 export const persistConfig: PersistConfig<any> = {
   key: '@accessitech/homepage',
@@ -25,6 +26,7 @@ export const rootReducer = combineReducers({
   [a11ySliceName]: a11ySlice.reducer,
   [fontOptionsSliceName]: fontOptionsSlice.reducer,
   [blogSliceName]: blogSlice.reducer,
+  [projectsSliceName]: projectsSlice.reducer,
 });
 
 export const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -41,3 +43,5 @@ export const store = configureStore({
 export const persistor: Persistor = persistStore(store);
 
 export default store;
+
+export type AppDispatch = typeof store.dispatch;

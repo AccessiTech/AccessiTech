@@ -3,6 +3,7 @@ import { StaticRouter } from 'react-router-dom/server';
 import { APP_ROOT, Home } from '../pages/Home/Home';
 import Blog from '../pages/Blog/Blog';
 import BlogEntry from '../pages/BlogEntry/BlogEntry';
+import Projects from '../pages/Projects/Projects';
 import { Container, Row, Col } from 'react-bootstrap';
 import Footer from '../components/Footer/Footer';
 import Metadata from '../components/Metadata/Metadata';
@@ -29,6 +30,7 @@ export const App = (props: AppProps) => {
           <Route path="/wcag" element={<Blog hideDates hideDescription />} />
           <Route path="/wcag.html" element={<Blog hideDates hideDescription />} />
           <Route path="/wcag/:id" element={<BlogEntry />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* Footer Row */}

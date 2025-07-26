@@ -1,0 +1,18 @@
+{
+  "name": "@accessitech/accessible-modal",
+  "description": "A fully accessible modal dialog component with ARIA support and keyboard navigation.",
+  "features": [
+    "Keyboard accessible",
+    "ARIA roles and attributes",
+    "Focus management",
+    "Customizable styling"
+  ],
+  "accessibility": ["WCAG 2.1 AA compliant", "Uses ARIA modal dialog pattern"],
+  "githubUrl": "https://github.com/accessitech/accessible-modal",
+  "npmUrl": "https://www.npmjs.com/package/@accessitech/accessible-modal",
+  "version": "1.2.3",
+  "updated": "2025-07-01",
+  "status": "active",
+  "license": "MIT",
+  "type": "package"
+}
