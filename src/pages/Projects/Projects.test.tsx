@@ -33,7 +33,9 @@ describe('Projects page', () => {
   it('renders the page title and description', () => {
     const store = configureStore({ reducer: (state = initialState) => state });
     renderWithProviders(<Projects />, { store });
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Open Source Projects');
+    // There are multiple h1s, so use getAllByRole and check for the correct one
+    const headings = screen.getAllByRole('heading', { level: 1 });
+    expect(headings.some(h => h.textContent === 'Open Source Projects')).toBe(true);
     expect(screen.getByText(/accessibility-focused open-source packages/i)).toBeInTheDocument();
   });
 
@@ -57,7 +59,12 @@ describe('Projects page', () => {
     renderWithProviders(<Projects />, { store });
     const viewSelect = screen.getByLabelText('Toggle project view');
     fireEvent.change(viewSelect, { target: { value: 'list' } });
-    expect(screen.getByText('Type: package')).toBeInTheDocument();
+    // Use a function matcher to find split text
+    const typeElements = screen.getAllByText(
+      (_, element) =>
+        !!element && !!element.textContent && element.textContent.includes('Type: package')
+    );
+    expect(typeElements.length).toBeGreaterThan(0);
     fireEvent.change(viewSelect, { target: { value: 'card' } });
     expect(screen.getByText('accessitech/accessitech')).toBeInTheDocument();
   });
