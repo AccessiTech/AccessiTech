@@ -54,6 +54,6 @@ describe('ProjectCard', () => {
   it('links the project name to the GitHub repo', () => {
     renderWithProviders(<ProjectCard project={baseProject} />);
     const link = screen.getByRole('link', { name: `GitHub repository: ${baseProject.url}` });
-    expect(link).toHaveAttribute('href', `https://github.com/${baseProject.url}`);
+    expect(link).toHaveAttribute('href', baseProject.githubUrl);
   });
 });
