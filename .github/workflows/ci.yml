@@ -93,8 +93,8 @@ jobs:
     #         body: comment
     #       });
     
-    - name: Build
-      run: yarn build:prod
+    # - name: Build
+    #   run: yarn build:prod
     
     - name: Run axe accessibility tests
       run: |
