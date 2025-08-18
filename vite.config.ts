@@ -49,6 +49,13 @@ const viteConfig = defineConfig({
       scss: {
         api: 'modern-compiler',
         quietDeps: true,
+        silenceDeprecations: [
+          'import',
+          'legacy-js-api',
+          'global-builtin',
+          'color-functions',
+          'mixed-decls',
+        ],
         additionalData: `@import "./src/scss/variables.scss";`,
       },
     },
