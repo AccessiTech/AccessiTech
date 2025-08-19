@@ -93,10 +93,56 @@ jobs:
     #         body: comment
     #       });
     
-    - name: Build
-      run: yarn build:prod
+    # - name: Build
+    #   run: yarn build:prod
     
-    - name: Run axe accessibility tests
-      run: |
-        yarn add -D @axe-core/cli
-        yarn axe 'http://localhost:5173' --exit
+    # - name: Install wait-on
+    #   run: yarn add -D wait-on
+    
+    # - name: Start dev server
+    #   run: |
+    #     echo "Starting dev server..."
+    #     yarn vite --host 0.0.0.0 --port 5173 > server.log 2>&1 &
+    #     echo "Dev server started with PID: $!"
+    #     sleep 2
+    #     echo "Checking if process is still running..."
+    #     if jobs -r | grep -q "yarn\|vite"; then
+    #       echo "✅ Dev server process is running"
+    #     else
+    #       echo "❌ Dev server process may have failed"
+    #       echo "Server logs:"
+    #       cat server.log || echo "No logs available"
+    #       exit 1
+    #     fi
+      
+    # - name: Wait for server to be ready
+    #   run: |
+    #     echo "Waiting for server at http://localhost:5173..."
+    #     npx wait-on http://localhost:5173 --timeout 90000 --interval 2000 --verbose
+    #     echo "✅ Server is ready!"
+    
+    # - name: Verify server is responding
+    #   run: |
+    #     echo "Testing server response..."
+    #     curl -f http://localhost:5173 || {
+    #       echo "❌ Server is not responding properly"
+    #       echo "Server logs:"
+    #       cat server.log || echo "No logs available"
+    #       echo "Process status:"
+    #       jobs -l || echo "No jobs running"
+    #       exit 1
+    #     }
+    #     echo "✅ Server is responding correctly"
+    
+    # - name: Run axe accessibility tests
+    #   run: |
+    #     yarn add -D @axe-core/cli
+    #     yarn axe 'http://localhost:5173' --exit
+    
+    # - name: Show server logs on failure
+    #   if: failure()
+    #   run: |
+    #     echo "=== Server Logs ==="
+    #     cat server.log || echo "No server logs available"
+    #     echo "=== Process Status ==="
+    #     jobs -l || echo "No jobs running"

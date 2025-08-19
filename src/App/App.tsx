@@ -6,12 +6,13 @@ import BlogEntry from '../pages/BlogEntry/BlogEntry';
 import { Container, Row, Col } from 'react-bootstrap';
 import Footer from '../components/Footer/Footer';
 import Metadata from '../components/Metadata/Metadata';
-import { getMetaData } from '../settings/getMetaData';
+import { getMetaData, MetaDataProps } from '../settings/getMetaData';
 import { metadata } from './meta';
 import NotFound from '../pages/404/404';
 
 export interface AppProps {
   path?: string;
+  metadata?: MetaDataProps;
 }
 
 export const App = (props: AppProps) => {
@@ -42,8 +43,11 @@ export const App = (props: AppProps) => {
   );
 
   if (props.path) {
+    // SSR mode - metadata is handled by the SSG, don't render Metadata component
     return <StaticRouter location={props.path}>{Content}</StaticRouter>;
   }
+
+  // Client mode
   return (
     <BrowserRouter>
       <Metadata {...getMetaData(metadata)} />

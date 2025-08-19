@@ -1,6 +1,7 @@
-import { ConfigProps, defineConfig } from '@accessitech/vite-ssg';
+import { defineConfig } from '@accessitech/vite-ssg';
+import reactPlugin from '@vitejs/plugin-react-swc';
 
-export const config: ConfigProps = defineConfig({
+export const config = defineConfig({
   ssrEntry: 'src/server.tsx',
   urlSrc: 'public/rss.xml',
   dest: 'docs',
@@ -21,6 +22,7 @@ export const config: ConfigProps = defineConfig({
     }),
   viteServer: {
     root: process.cwd(),
+    plugins: [reactPlugin()], // Add the React plugin here
     css: {
       preprocessorOptions: {
         scss: {

@@ -15,11 +15,11 @@ export const preload = async (url: string) => {
   store.dispatch(setBlogEntry(entry));
 };
 
-export const render = async (path: string) => {
+export const render = async (path: string, metadata?: MetaDataProps) => {
   const ReactDOMServer = (await import('react-dom/server')).default;
   const component = (
     <Provider store={store}>
-      <App path={path} />
+      <App path={path} metadata={metadata} />
     </Provider>
   );
   const staticMarkup = ReactDOMServer.renderToStaticMarkup(component);
@@ -35,29 +35,46 @@ export const renderMetadata = async (data: MetaDataProps) => {
 
 export const fetchMetaData = async (
   url: string
-): Promise<{ metaData: { [key: string]: string }; fileContent: string }> => {
+): Promise<{ metaData: MetaDataProps; fileContent: string }> => {
   console.log('URL:', url);
+
+  // For dynamic pages, fetch from markdown files
   const id = url.split('/').splice(2).join('/') || '';
   const pathname = url.split('/').slice(1, 2).join('') || '';
   const fileContent = fs.readFileSync(
     path.resolve(process.cwd(), 'public/data/', pathname, `${id}.md`),
     { encoding: 'utf-8' }
   );
-  const metaData = parseMetaData(fileContent);
+  const rawMetaData = parseMetaData(fileContent);
+
+  // Map raw metadata to MetaDataProps interface
+  const metaData: MetaDataProps = {
+    title: rawMetaData['title'] || '',
+    description: rawMetaData['description'] || '',
+    canonical: `https://accessitech.org${url.replace('.md', '.html')}`,
+    type: rawMetaData['type'] || 'article',
+    image: rawMetaData['image'] || undefined,
+    imageAlt: rawMetaData['image_alt'] || undefined,
+    siteName: rawMetaData['siteName'] || undefined,
+    twitterCreator: rawMetaData['twitterCreator'] || undefined,
+  };
+
   return { metaData, fileContent };
 };
 
 export const genEntry = async (url: string): Promise<Blog> => {
   const id = url.split('/').pop()?.replace('.md', '') || '';
   const { metaData, fileContent } = await fetchMetaData(url);
-  const content = Object.keys(metaData).length
+  const rawMetaData = parseMetaData(fileContent);
+
+  const content = Object.keys(rawMetaData).length
     ? fileContent.substring(fileContent.indexOf('-->') + 3, fileContent.length)
     : fileContent;
-  const description = metaData['description'] || '';
-  const image = metaData['image'] || '';
-  const image_alt = metaData['image_alt'] || '';
-  const title = metaData['title'] || content.split('\n')[0].replace('# ', '');
-  const date = metaData['date'] || '';
+  const description = metaData.description || '';
+  const image = metaData.image || '';
+  const image_alt = metaData.imageAlt || '';
+  const title = metaData.title || content.split('\n')[0].replace('# ', '');
+  const date = rawMetaData['date'] || '';
 
   return {
     loaded: true,
@@ -73,13 +90,30 @@ export const genEntry = async (url: string): Promise<Blog> => {
 
 export const parseMetaData = (text: string): { [key: string]: string } => {
   const metaData: { [key: string]: string } = {};
-  const lines = text.split('\n');
+
+  // Find the start and end of the metadata comment block
+  const startIndex = text.indexOf('<!--');
+  const endIndex = text.indexOf('-->');
+
+  // If no comment block is found, return empty metadata
+  if (startIndex === -1 || endIndex === -1) {
+    return metaData;
+  }
+
+  // Extract only the content between <!-- and -->
+  const metaDataSection = text.substring(startIndex + 4, endIndex);
+  const lines = metaDataSection.split('\n');
+
   lines.forEach(line => {
-    const key = line.split(':')[0]?.replace('<!--', '').trim();
-    const value = line.split(':')[1]?.replace('-->', '').trim();
-    if (key && value) {
-      metaData[key] = value;
+    const colonIndex = line.indexOf(':');
+    if (colonIndex !== -1) {
+      const key = line.substring(0, colonIndex).trim();
+      const value = line.substring(colonIndex + 1).trim();
+      if (key && value) {
+        metaData[key] = value;
+      }
     }
   });
+
   return metaData;
 };
