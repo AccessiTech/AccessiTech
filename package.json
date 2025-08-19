@@ -54,7 +54,7 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
-    "@accessitech/vite-ssg": "^0.2.12",
+    "@accessitech/vite-ssg": "^0.2.14",
     "@axe-core/cli": "^4.10.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
