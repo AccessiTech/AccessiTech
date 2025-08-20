@@ -34,10 +34,15 @@ jobs:
       #   run: |
       #     sleep 10
       #     yarn axe 'http://localhost:4173' --verbose --exit
-      # - name: Install Chromium dependencies
-      #   run: |
-      #     sudo apt-get update
-      #     sudo apt-get install -y libatk-bridge2.0-0 libgtk-3-0 libgbm-dev libnss3 libxss1
+      - name: Install Chromium dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libatk-bridge2.0-0 libgtk-3-0 libgbm-dev libnss3 libxss1
       - name: Run Pa11y accessibility tests
         run: yarn pa11y-ci --sitemap https://access.tech/sitemap.xml --sitemap-find "https://access.tech" --sitemap-replace "http://localhost:4173"
-
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+          PUPPETEER_EXECUTABLE_PATH: 'google-chrome-stable'
+          CHROME_BIN: 'google-chrome-stable'
+          PUPPETEER_DISABLE_SANDBOX: 'true' # Key fix
+          CI: 'true' # Or use CLI flag if supported
