@@ -14,7 +14,7 @@
     "prepare": "husky install",
     "dev": "vite",
     "start": "yarn dev",
-    "static": "tsx ../vite-ssg/src/cli.ts generate",
+    "static": "vite-ssg generate",
     "rss": "node ./scripts/rss.js",
     "rss:prod": "node ./scripts/rss.js && cp public/rss.xml docs/rss.xml",
     "sitemap": "node ./scripts/sitemap.js",
