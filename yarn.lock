@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@accessitech/vite-ssg@^0.2.14":
-  version "0.2.14"
-  resolved "https://registry.yarnpkg.com/@accessitech/vite-ssg/-/vite-ssg-0.2.14.tgz#c9221001ab2aae77bb536eb594f293cb1bd66988"
-  integrity sha512-3iSrx5R3xfoROSn3oHNxLc5hm87QgEjC9TLgpmeV57toTGBqLYnZmy9nnfZ2ZrCneLjffEcru+wauGkjV1JZBg==
+"@accessitech/vite-ssg@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@accessitech/vite-ssg/-/vite-ssg-0.3.2.tgz#8eadc331cdc3ab269df83dd8e69725b8200dfbba"
+  integrity sha512-Nq4yrdhBk9mTTMnilo9XpTv5W08jjojku+pjth/j9qWbD1W2azPqJwjkP775wbsQ1EZmcuChOg33lQhw2jAfAQ==
   dependencies:
     ts-node "^10.9.2"
     tsx "^4.20.4"
