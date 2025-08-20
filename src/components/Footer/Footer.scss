@@ -10,6 +10,7 @@
 }
 
 .footer-section {
+  text-align: left;
   @include padding-top($alt-section-padding);
 
   h3 {
@@ -18,15 +19,16 @@
 
   ul {
     padding-left: 0;
+    text-align: left;
   }
 
   li {
-    display: inline-block;
-    @include margin(0 1rem 1rem);
+    // display: inline-block;
+    @include margin(0 0 1rem 0);
   }
 
   .github-issues {
-    @include margin-top(2rem);
+    margin-top: 1.5rem;
 
     a {
       display: inline;
@@ -34,6 +36,17 @@
   }
 
   .copyright {
+    text-align: center;
     @include margin(3rem 0 1rem);
+  }
+
+  a.logo-link {
+    @include padding(0);
+    width: 100%;
+
+    .logo-container {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
   }
 }
