@@ -20,9 +20,10 @@ jobs:
       run: yarn install --frozen-lockfile
     - name: Build
       run: yarn build:prod
-    - name: Start preview server
-      run: |
-        yarn preview --host 0.0.0.0 --port 4173 &
+    - name: Install serve
+      run: yarn add -D serve
+    - name: Start static file server
+      run: yarn serve docs --no-clipboard --listen 4173 &
     - name: Install wait-on
       run: yarn add -D wait-on
     - name: Wait for server
