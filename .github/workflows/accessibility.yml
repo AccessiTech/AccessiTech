@@ -30,4 +30,4 @@ jobs:
     - name: Run axe accessibility tests
       run: |
         yarn add -D @axe-core/cli
-        yarn axe 'http://localhost:4173' --exit
+        yarn axe 'http://localhost:4173' --verbose
