@@ -1,2 +1,13 @@
 #!/usr/bin/env bash
-yarn test
+
+# run tests to make sure they all pass
+yarn test --run
+
+# start the vite dev server
+yarn start &
+
+# run accessibility tests
+yarn pa11y http://localhost:5173
+
+# kill vite dev server
+kill $(jobs -p)
