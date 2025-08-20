@@ -84,6 +84,7 @@
     "jsdom": "^26.1.0",
     "lint-staged": "^16.1.2",
     "pa11y": "^9.0.0",
+    "pa11y-ci": "^4.0.1",
     "prettier": "^3.6.2",
     "react-bootstrap": "^2.8.0",
     "sass": "^1.86.3",
