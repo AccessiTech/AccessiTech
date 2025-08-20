@@ -87,10 +87,12 @@
     "prettier": "^3.6.2",
     "react-bootstrap": "^2.8.0",
     "sass": "^1.86.3",
+    "serve": "^14.2.4",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.4",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "wait-on": "^8.0.4"
   }
 }
