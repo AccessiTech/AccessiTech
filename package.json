@@ -55,7 +55,6 @@
   },
   "devDependencies": {
     "@accessitech/vite-ssg": "^0.3.2",
-    "@axe-core/cli": "^4.10.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -84,6 +83,7 @@
     "jest-axe": "^10.0.0",
     "jsdom": "^26.1.0",
     "lint-staged": "^16.1.2",
+    "pa11y": "^9.0.0",
     "prettier": "^3.6.2",
     "react-bootstrap": "^2.8.0",
     "sass": "^1.86.3",
