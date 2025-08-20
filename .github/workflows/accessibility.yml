@@ -39,5 +39,5 @@ jobs:
       #     sudo apt-get update
       #     sudo apt-get install -y libatk-bridge2.0-0 libgtk-3-0 libgbm-dev libnss3 libxss1
       - name: Run Pa11y accessibility tests
-        run: yarn pa11y-cli --sitemap https://access.tech/sitemap.xml --sitemap-find "https://access.tech" --sitemap-replace "http://localhost:4173"
+        run: yarn pa11y-ci --sitemap https://access.tech/sitemap.xml --sitemap-find "https://access.tech" --sitemap-replace "http://localhost:4173"
 
