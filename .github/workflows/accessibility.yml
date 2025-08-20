@@ -1,0 +1,52 @@
+name: Accessibility Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  a11y-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build
+        run: yarn build:prod
+
+      - name: Start vite preview server
+        run: yarn preview --port 4173 &
+
+      - name: Wait for server
+        run: npx wait-on http://localhost:4173 --timeout 60000
+
+      - name: Install Chromium dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libatk-bridge2.0-0 libgtk-3-0 libgbm-dev libnss3 libxss1
+
+      - name: Install Google Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Run Pa11y accessibility tests
+        run: yarn pa11y-ci --sitemap http://localhost:4173/sitemap.xml --sitemap-find "https://www.accessi.tech" --sitemap-replace "http://localhost:4173"
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+          PUPPETEER_EXECUTABLE_PATH: '/usr/bin/google-chrome-stable'
+          CHROME_BIN: '/usr/bin/google-chrome-stable'
+          PUPPETEER_DISABLE_SANDBOX: 'true'
+          CI: 'true'

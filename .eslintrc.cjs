@@ -6,10 +6,11 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended', // Add Prettier plugin
+    "plugin:jsx-a11y/recommended"
   ],
   ignorePatterns: ['dist', 'docs', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', 'prettier'], // Add Prettier to plugins
+  plugins: ['react-refresh', 'prettier', 'jsx-a11y'], // Add Prettier to plugins
   rules: {
     "@typescript-eslint/no-explicit-any": "off",
     'react-refresh/only-export-components': [

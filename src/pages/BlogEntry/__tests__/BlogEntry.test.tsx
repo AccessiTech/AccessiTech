@@ -27,7 +27,11 @@ vi.mock('../../../components/CustomTable/CustomTable', () => ({
 }));
 vi.mock('../../../components/CustomLink/CustomLink', () => ({
   __esModule: true,
-  CustomMarkdownLink: (props: any) => <a data-testid="custom-link" {...props} />,
+  CustomMarkdownLink: (props: any) => (
+    <a data-testid="custom-link" {...props}>
+      {props.children || 'Link'}
+    </a>
+  ),
 }));
 
 import type { Blog as BlogType } from '../../../store/blog';

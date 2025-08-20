@@ -1,7 +1,7 @@
 {
   "name": "@accessitech/homepage",
   "private": false,
-  "version": "2.4.0",
+  "version": "2.4.2",
   "type": "module",
   "engines": {
     "node": ">=v20.19.0"
@@ -14,7 +14,7 @@
     "prepare": "husky install",
     "dev": "vite",
     "start": "yarn dev",
-    "static": "tsx ../vite-ssg/src/cli.ts generate",
+    "static": "vite-ssg generate",
     "rss": "node ./scripts/rss.js",
     "rss:prod": "node ./scripts/rss.js && cp public/rss.xml docs/rss.xml",
     "sitemap": "node ./scripts/sitemap.js",
@@ -54,8 +54,7 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
-    "@accessitech/vite-ssg": "^0.2.14",
-    "@axe-core/cli": "^4.10.2",
+    "@accessitech/vite-ssg": "^0.3.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -84,13 +83,16 @@
     "jest-axe": "^10.0.0",
     "jsdom": "^26.1.0",
     "lint-staged": "^16.1.2",
+    "pa11y-ci": "^4.0.1",
     "prettier": "^3.6.2",
     "react-bootstrap": "^2.8.0",
     "sass": "^1.86.3",
+    "serve": "^14.2.4",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.4",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "wait-on": "^8.0.4"
   }
 }
