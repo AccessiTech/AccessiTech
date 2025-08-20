@@ -38,6 +38,12 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libatk-bridge2.0-0 libgtk-3-0 libgbm-dev libnss3 libxss1
+      - name: Install Google Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
       - name: Run Pa11y accessibility tests
         run: yarn pa11y-ci --sitemap https://access.tech/sitemap.xml --sitemap-find "https://access.tech" --sitemap-replace "http://localhost:4173"
         env:
