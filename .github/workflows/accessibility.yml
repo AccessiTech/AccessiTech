@@ -35,4 +35,4 @@ jobs:
     #     sleep 10
     #     yarn axe 'http://localhost:4173' --verbose --exit
     - name: Run Pa11y accessibility tests
-      run: yarn pa11y http://localhost:4173
+      run: yarn pa11y http://localhost:4173 --chrome-launcher-flags="--no-sandbox"
