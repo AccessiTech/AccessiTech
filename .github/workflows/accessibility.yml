@@ -31,11 +31,5 @@ jobs:
     - name: Run axe accessibility tests
       run: |
         sleep 10
-        set +e
-        yarn axe 'http://localhost:4173' --verbose > axe-output.log 2>&1
+        yarn axe 'http://localhost:4173' --verbose --exit > axe-output.log 2>&1
         cat axe-output.log
-        AXE_EXIT_CODE=$?
-        if [ $AXE_EXIT_CODE -ne 0 ]; then
-          echo "Axe found accessibility issues."
-          exit $AXE_EXIT_CODE
-        fi
