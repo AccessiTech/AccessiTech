@@ -34,9 +34,10 @@ jobs:
       #   run: |
       #     sleep 10
       #     yarn axe 'http://localhost:4173' --verbose --exit
-      - name: Install Chromium dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libatk-bridge2.0-0 libgtk-3-0 libgbm-dev libnss3 libxss1
+      # - name: Install Chromium dependencies
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y libatk-bridge2.0-0 libgtk-3-0 libgbm-dev libnss3 libxss1
       - name: Run Pa11y accessibility tests
-        run: CHROME_ARGS="--no-sandbox --disable-setuid-sandbox" yarn pa11y http://localhost:4173
+        run: yarn pa11y-cli --sitemap https://access.tech/sitemap.xml --sitemap-find "https://access.tech" --sitemap-replace "http://localhost:5173"
+
