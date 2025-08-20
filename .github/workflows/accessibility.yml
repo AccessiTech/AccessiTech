@@ -43,7 +43,7 @@ jobs:
           sudo apt-get install -y google-chrome-stable
 
       - name: Run Pa11y accessibility tests
-        run: yarn pa11y-ci --sitemap http://localhost:4173/sitemap.xml --sitemap-find "https://access.tech" --sitemap-replace "http://localhost:4173"
+        run: yarn pa11y-ci --sitemap http://localhost:4173/sitemap.xml --sitemap-find "https://www.accessi.tech" --sitemap-replace "http://localhost:4173"
         env:
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
           PUPPETEER_EXECUTABLE_PATH: '/usr/bin/google-chrome-stable'
