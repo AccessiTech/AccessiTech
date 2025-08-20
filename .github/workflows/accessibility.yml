@@ -24,6 +24,10 @@ jobs:
       run: yarn serve docs --no-clipboard --listen 4173 &
     - name: Wait for server
       run: npx wait-on http://localhost:4173 --timeout 60000
+    - name: Check for <main> and <h1> in server response
+      run: |
+        curl -s http://localhost:4173 | grep -q '<main' && echo '<main> found' || (echo 'ERROR: <main> not found' && exit 1)
+        curl -s http://localhost:4173 | grep -q '<h1' && echo '<h1> found' || (echo 'ERROR: <h1> not found' && exit 1)
     - name: Run axe accessibility tests
       run: |
         sleep 10
