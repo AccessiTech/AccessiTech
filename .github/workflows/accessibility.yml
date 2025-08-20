@@ -11,39 +11,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
           cache: "yarn"
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
       - name: Build
         run: yarn build:prod
+
       - name: Start vite preview server
         run: yarn preview --port 4173 &
-      # - name: Start static file server
-      # run: yarn serve docs --no-clipboard --listen 4173 &
+
       - name: Wait for server
         run: npx wait-on http://localhost:4173 --timeout 60000
-      # - name: Check for <main> and <h1> in server response
-      #   run: |
-      #     curl -s http://localhost:4173 | grep -q '<main' && echo '<main> found' || (echo 'ERROR: <main> not found' && exit 1)
-      #     curl -s http://localhost:4173 | grep -q '<h1' && echo '<h1> found' || (echo 'ERROR: <h1> not found' && exit 1)
-      # - name: Run axe accessibility tests
-      #   run: |
-      #     sleep 10
-      #     yarn axe 'http://localhost:4173' --verbose --exit
+
       - name: Install Chromium dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y libatk-bridge2.0-0 libgtk-3-0 libgbm-dev libnss3 libxss1
+
       - name: Install Google Chrome
         run: |
           wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
+
       - name: Run Pa11y accessibility tests
         run: yarn pa11y-ci --sitemap https://access.tech/sitemap.xml --sitemap-find "https://access.tech" --sitemap-replace "http://localhost:4173"
         env:
