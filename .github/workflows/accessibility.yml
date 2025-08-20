@@ -31,5 +31,4 @@ jobs:
     - name: Run axe accessibility tests
       run: |
         sleep 10
-        yarn axe 'http://localhost:4173' --verbose --exit > axe-output.log 2>&1
-        cat axe-output.log
+        yarn axe 'http://localhost:4173' --verbose --exit
