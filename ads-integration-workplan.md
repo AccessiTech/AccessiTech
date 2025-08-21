@@ -49,13 +49,19 @@ All placements will be accessible, clearly labeled, and will not interfere with 
 
 ## Next Steps & Alternatives
 
-- **Apply to Carbon Ads** (privacy-focused, invite-only, tech/design audience)
-- **Prepare for Google AdSense or Microsoft Ads integration** using the accessible ad component system
-- **Explore non-ad revenue options:**
-  - Donations (OpenCollective, GitHub Sponsors, Ko-fi)
-  - Affiliate links (with clear disclosure)
-  - Partnerships or sponsorships with accessibility-focused organizations
-- **Revisit EthicalAds** as traffic grows
+- **Traffic growth is now the main prerequisite for ad revenue.**
+- **Ad network status:**
+  - Applied to EthicalAds: not eligible due to low traffic.
+  - Applied to Carbon Ads: minimum traffic is ~15,000 monthly pageviews; not eligible yet.
+  - Applied to Google AdSense: application under review, but meaningful revenue requires more traffic.
+- **Focus:**
+  - Grow site traffic and engagement through content, SEO, outreach, and community.
+  - Keep accessible ad component system ready for future integration.
+  - Explore non-ad revenue options:
+    - Donations (OpenCollective, GitHub Sponsors, Ko-fi)
+    - Affiliate links (with clear disclosure)
+    - Partnerships or sponsorships with accessibility-focused organizations
+- **Revisit ad networks as traffic grows.**
 
 ---
 
