@@ -41,9 +41,11 @@ export const fetchMetaData = async (
   // For dynamic pages, fetch from markdown files
   const id = url.split('/').splice(2).join('/') || '';
   const pathname = url.split('/').slice(1, 2).join('') || '';
+  const useData = !url.includes('/disclosures');
+  const dir = `public/${useData ? 'data/' : ''}`;
   const fileContent = fs.readFileSync(
-    path.resolve(process.cwd(), 'public/data/', pathname, `${id}.md`),
-    { encoding: 'utf-8' }
+    path.resolve(process.cwd(), dir, pathname, `${id}.md`),
+    'utf-8'
   );
   const rawMetaData = parseMetaData(fileContent);
 
