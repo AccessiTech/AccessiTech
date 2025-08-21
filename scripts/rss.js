@@ -42,7 +42,7 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
   const mapFunc = filePath => {
     const fileContent = fsDep.readFileSync(filePath, { encoding: 'utf-8' });
     // Generate the blog link relative to blogDir
-    const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/');
+    const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/').replace('../', '');
     const link = `https://accessi.tech/${relativePath}`.replace('.md', '');
     const fileMetaData = getMetaData(fileContent);
     const {
