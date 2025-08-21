@@ -69,12 +69,25 @@ export function generateSitemap({
       imageAlt: 'WCAG guidelines',
       status: 'published',
     },
+    {
+      url: '/disclosures',
+      changefreq: 'monthly',
+      priority: 0.7,
+      title: 'AccessiTech - Disclosures',
+      description: 'Read our disclosures on accessibility, ads, and more.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'Disclosures page',
+      status: 'published',
+    },
   ];
   const blogDir = pathDep.join(rootDir, 'public/data');
   const blogFiles = getAllMarkdownFiles(blogDir, fsDep, pathDep);
-  blogFiles.forEach(filePath => {
+  const disclosuresDir = pathDep.join(rootDir, 'public/disclosures');
+  const disclosureFiles = getAllMarkdownFiles(disclosuresDir, fsDep, pathDep);
+
+  [...blogFiles, ...disclosureFiles].forEach(filePath => {
     const fileContent = fsDep.readFileSync(filePath, { encoding: 'utf-8' });
-    const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/');
+    const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/').replace('../', '');
     const fileMetaData = getMetaDataDep(fileContent);
     const link = `/${relativePath}`.replace('.md', '');
     pages.push({
@@ -83,7 +96,7 @@ export function generateSitemap({
       changefreq: 'monthly',
       priority: 0.8,
       image: PUBLIC_IMAGE_DIR + (fileMetaData.image || 'default.png'),
-      imageAlt: fileMetaData.imageAlt || 'Blog post image',
+      imageAlt: fileMetaData.imageAlt || 'AccessiTech Logo',
     });
   });
 
