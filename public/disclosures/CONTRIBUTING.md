@@ -1,3 +1,10 @@
+<!--
+title: Contributing Guidelines
+description: AccessiTech's guidelines for contributing to the project.
+date: 2023-08-20
+status: published
+-->
+
 # Contributing to AccessiTech
 
 First off, thank you for considering contributing to AccessiTech! It's people like you that make AccessiTech such a great tool for everyone.

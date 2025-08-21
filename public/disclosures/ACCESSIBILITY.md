@@ -1,3 +1,10 @@
+<!--
+title: Accessibility Statement
+description: AccessiTech's commitment to digital accessibility for all users.
+date: 2023-08-20
+status: published
+-->
+
 # Accessibility Statement
 
 AccessiTech is committed to ensuring digital accessibility for people of all abilities. We continuously work to improve the user experience for everyone and apply the relevant accessibility standards.
@@ -58,12 +65,12 @@ Our accessibility testing process includes:
 We welcome feedback on the accessibility of AccessiTech. If you experience any accessibility barriers or have suggestions for improvement, please:
 
 1. Open an issue on our [GitHub repository](https://github.com/AccessiTech/AccessiTech)
-2. Email us at [contact@accessitech.dev](mailto:contact@accessitech.dev)
+2. Email us at [accessit3ch@gmail.com](mailto:accessit3ch@gmail.com)
 
 ## Resources
 
 - [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
-- [AccessiTech Blog on WCAG](https://accessitech.dev/blog/wcag)
-- [Accessibility Best Practices](https://accessitech.dev/blog/accessibility-best-practices)
+- [AccessiTech Blog on WCAG](/blog/wcag)
+- [Why Web Accessibility Matters](/blog/Introduction-to-WCAG-What-It-Is-and-Why-It-Matters)
 
 Last updated: July 2023
