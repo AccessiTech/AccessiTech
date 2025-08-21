@@ -2679,10 +2679,24 @@
         
           <item>
             <title>Accessibility Statement</title>
-            <link>https://accessi.tech/disclosures/accessibility</link>
+            <link>https://accessi.tech/disclosures/ACCESSIBILITY</link>
             <pubDate>2023-08-20</pubDate>
             <description>AccessiTech's commitment to digital accessibility for all users.</description>
             <excerpt>AccessiTech's commitment to digital accessibility for all users.</excerpt>
+            undefined
+            <enclosure url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" length="1234" />
+            <media:content url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" medium="image" width="300" height="200" />
+            <media:description type="plain">Yellow text on gradient background saying, AccessiTech</media:description>
+            <media:thumbnail url="https://www.accessi.tech/assets/images/default.png" />
+            <media:credit>AccessiTech LLC</media:credit>
+          </item>
+        
+          <item>
+            <title>Contributing Guidelines</title>
+            <link>https://accessi.tech/disclosures/CONTRIBUTING</link>
+            <pubDate>2023-08-20</pubDate>
+            <description>AccessiTech's guidelines for contributing to the project.</description>
+            <excerpt>AccessiTech's guidelines for contributing to the project.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" medium="image" width="300" height="200" />
@@ -2725,20 +2739,6 @@
             <pubDate>2023-08-20</pubDate>
             <description>AccessiTech's commitment to fostering an inclusive community.</description>
             <excerpt>AccessiTech's commitment to fostering an inclusive community.</excerpt>
-            undefined
-            <enclosure url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" length="1234" />
-            <media:content url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" medium="image" width="300" height="200" />
-            <media:description type="plain">Yellow text on gradient background saying, AccessiTech</media:description>
-            <media:thumbnail url="https://www.accessi.tech/assets/images/default.png" />
-            <media:credit>AccessiTech LLC</media:credit>
-          </item>
-        
-          <item>
-            <title>Contributing Guidelines</title>
-            <link>https://accessi.tech/disclosures/contributing</link>
-            <pubDate>2023-08-20</pubDate>
-            <description>AccessiTech's guidelines for contributing to the project.</description>
-            <excerpt>AccessiTech's guidelines for contributing to the project.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" medium="image" width="300" height="200" />

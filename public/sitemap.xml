@@ -9,7 +9,7 @@
   
           <url>
             <loc>https://www.accessi.tech/</loc>
-            <lastmod>2025-08-21T02:29:45.155Z</lastmod>
+            <lastmod>2025-08-21T17:35:59.404Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -21,7 +21,7 @@
         
           <url>
             <loc>https://www.accessi.tech/blog</loc>
-            <lastmod>2025-08-21T02:29:45.156Z</lastmod>
+            <lastmod>2025-08-21T17:35:59.405Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -33,7 +33,7 @@
         
           <url>
             <loc>https://www.accessi.tech/wcag</loc>
-            <lastmod>2025-08-21T02:29:45.156Z</lastmod>
+            <lastmod>2025-08-21T17:35:59.405Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -45,7 +45,7 @@
         
           <url>
             <loc>https://www.accessi.tech/disclosures</loc>
-            <lastmod>2025-08-21T02:29:45.156Z</lastmod>
+            <lastmod>2025-08-21T17:35:59.405Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -1196,7 +1196,19 @@
           </url>
         
           <url>
-            <loc>https://www.accessi.tech/disclosures/accessibility</loc>
+            <loc>https://www.accessi.tech/disclosures/ACCESSIBILITY</loc>
+            <lastmod>2023-08-20T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
+              <image:caption>AccessiTech Logo</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/disclosures/CONTRIBUTING</loc>
             <lastmod>2023-08-20T00:00:00.000Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
@@ -1233,18 +1245,6 @@
         
           <url>
             <loc>https://www.accessi.tech/disclosures/code-of-conduct</loc>
-            <lastmod>2023-08-20T00:00:00.000Z</lastmod>
-            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
-            <image:image>
-              <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
-              <image:caption>AccessiTech Logo</image:caption>
-            </image:image>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
-          </url>
-        
-          <url>
-            <loc>https://www.accessi.tech/disclosures/contributing</loc>
             <lastmod>2023-08-20T00:00:00.000Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
