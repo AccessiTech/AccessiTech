@@ -36,6 +36,8 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
   const blogDir = pathDep.join(rootDir, 'public/data');
   // Filter out undefined values to prevent errors from mocks or recursion
   const blogFiles = getAllMarkdownFiles(blogDir, fsDep, pathDep).filter(Boolean);
+  const disclosuresDir = pathDep.join(rootDir, 'public/disclosures');
+  const disclosureFiles = getAllMarkdownFiles(disclosuresDir, fsDep, pathDep).filter(Boolean);
 
   const mapFunc = filePath => {
     const fileContent = fsDep.readFileSync(filePath, { encoding: 'utf-8' });
@@ -96,6 +98,15 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
       <description>Learn about the Web Content Accessibility Guidelines (WCAG) and how to implement them effectively.</description>
       ${blogFiles
         .filter(filePath => filePath.includes('/wcag/'))
+        .map(mapFunc)
+        .filter(blog => blog)
+        .join('')}
+    </channel>
+    <channel>
+      <title>Disclosures</title>
+      <link>https://accessi.tech/disclosures</link>
+      <description>AccessiTech's transparency and disclosure practices.</description>
+      ${disclosureFiles
         .map(mapFunc)
         .filter(blog => blog)
         .join('')}
