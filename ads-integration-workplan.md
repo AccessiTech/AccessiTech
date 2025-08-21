@@ -2,7 +2,7 @@
 title: EthicalAds Integration & Open Source Ad Package Workplan
 description: Step-by-step plan for integrating EthicalAds and building a transparent, accessible ad package for AccessiTech.
 date: 2025-08-21
-status: draft
+status: in progress
 ---
 
 # EthicalAds Integration & Open Source Ad Package Workplan
@@ -11,19 +11,21 @@ status: draft
 
 ### 1. Register with EthicalAds
 
-- Apply for an EthicalAds publisher account at https://ethicalads.io/publishers/.
-- Complete the onboarding process and obtain your publisher key/ad code.
+- Applied for an EthicalAds publisher account at https://ethicalads.io/publishers/ (onboarding in progress).
+- Will complete onboarding and obtain publisher key/ad code when approved.
 
 ### 2. Plan Ad Placement
 
-- Identify accessible, non-intrusive locations for ads (e.g., sidebar, below blog posts, footer).
-- Ensure placements do not interfere with navigation or content.
+- **Mobile & Tablet:** Banner ads at the top and bottom of pages for high visibility and minimal disruption.
+- **Desktop:** Sidebar ads for persistent but unobtrusive presence.
+- **Blogs:** Banner ads at the top, bottom, and optionally between sections/paragraphs for natural integration.
+- All placements will be accessible, clearly labeled, and will not interfere with navigation or content.
 
 ### 3. Implement EthicalAds
 
-- Add EthicalAds script and ad units to the codebase (React components or static HTML as needed).
-- Clearly label ads as "Advertisement" per policy.
-- Ensure ad containers are accessible (ARIA labels, focusable, keyboard navigation, etc.).
+- Built and tested a network-agnostic, accessible React ad component system (with unit tests).
+- Will add EthicalAds script and ad units to the codebase (React components or static HTML as needed) once publisher code is available.
+- All ad containers will be clearly labeled as "Advertisement" per policy and accessible (ARIA labels, keyboard, screen reader tested).
 
 ### 4. Accessibility & Privacy Review
 
@@ -33,13 +35,13 @@ status: draft
 
 ### 5. Documentation & Disclosure
 
-- Update documentation to describe ad integration and user empowerment options.
-- Link to [Advertisement Disclosure](public/disclosures/ads.md) from ad units if possible.
+- Documentation updated to describe ad integration and user empowerment options.
+- [Advertisement Disclosure](public/disclosures/ads.md) will be linked from ad units if possible.
 
 ### 6. Feedback & Iteration
 
-- Collect user feedback on ad accessibility and experience.
-- Iterate on placement and implementation as needed.
+- Will collect user feedback on ad accessibility and experience after launch.
+- Will iterate on placement and implementation as needed.
 
 ---
 
@@ -70,6 +72,10 @@ status: draft
 - Invite feedback and contributions from the accessibility and dev community.
 
 ---
+
+## Progress Log
+
+- 2025-08-21: Applied for EthicalAds, planned ad placements, built and tested ad component system, created GitHub issues for integration and tracking, posted research/progress update to issue #78.
 
 ## Resources
 
