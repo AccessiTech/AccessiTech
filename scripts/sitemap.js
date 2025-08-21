@@ -14,10 +14,12 @@ export function readCNAME(filePath, fsDep = fs) {
 
 export function getAllMarkdownFiles(dir, fsDep = fs, pathDep = path) {
   let results = [];
-  const list = fsDep.readdirSync(dir);
+  const list = fsDep.readdirSync(dir.includes('/disclosures') ? dir.replace('/data', '') : dir);
   list.forEach(file => {
     const filePath = pathDep.join(dir, file);
-    const stat = fsDep.statSync(filePath);
+    const stat = fsDep.statSync(
+      filePath.includes('/disclosures') ? filePath.replace('/data', '') : filePath
+    );
     if (stat && stat.isDirectory()) {
       results = results.concat(getAllMarkdownFiles(filePath, fsDep, pathDep));
     } else if (file.endsWith('.md')) {
@@ -86,7 +88,10 @@ export function generateSitemap({
   const disclosureFiles = getAllMarkdownFiles(disclosuresDir, fsDep, pathDep);
 
   [...blogFiles, ...disclosureFiles].forEach(filePath => {
-    const fileContent = fsDep.readFileSync(filePath, { encoding: 'utf-8' });
+    const fileContent = fsDep.readFileSync(
+      filePath.includes('/disclosures') ? filePath.replace('/data', '') : filePath,
+      { encoding: 'utf-8' }
+    );
     const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/').replace('../', '');
     const fileMetaData = getMetaDataDep(fileContent);
     const link = `/${relativePath}`.replace('.md', '');
