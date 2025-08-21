@@ -26,17 +26,17 @@ export const COPYRIGHT = 'Copyright';
 export const COPYRIGHT_P1 = `© ${new Date().getFullYear()} AccessiTech LLC. All Rights Reserved.`;
 export const DISCLOSURES_HEADER = 'Disclosures';
 export const ACCESSIBILITY_DISCLOSURE = 'Accessibility';
-export const ACCESSIBILITY_DISCLOSURE_URL = '/disclosures/ACCESSIBILITY.md';
+export const ACCESSIBILITY_DISCLOSURE_URL = '/disclosures/accessibility';
 export const ADVERTISING_DISCLOSURE = 'Advertising';
-export const ADVERTISING_DISCLOSURE_URL = '/disclosures/ad-disclosure.md';
+export const ADVERTISING_DISCLOSURE_URL = '/disclosures/ads';
 export const AFFILIATE_LINKS_DISCLOSURE = 'Affiliate Links';
-export const AFFILIATE_LINKS_DISCLOSURE_URL = '/disclosures/affiliate-link-disclosure.md';
+export const AFFILIATE_LINKS_DISCLOSURE_URL = '/disclosures/affiliate-links';
 export const CODE_OF_CONDUCT = 'Code of Conduct';
-export const CODE_OF_CONDUCT_URL = '/disclosures/CODE_OF_CONDUCT.md';
+export const CODE_OF_CONDUCT_URL = '/disclosures/code-of-conduct';
 export const CONTRIBUTING = 'Contributing';
-export const CONTRIBUTING_URL = '/disclosures/CONTRIBUTING.md';
+export const CONTRIBUTING_URL = '/disclosures/contributing';
 export const SPONSORED_CONTENT = 'Sponsored Content';
-export const SPONSORED_CONTENT_URL = '/disclosures/sponsored-content-disclosure.md';
+export const SPONSORED_CONTENT_URL = '/disclosures/sponsored-content';
 import { IMAGES_URL } from '../../settings/env';
 
 function Footer() {
@@ -110,46 +110,34 @@ function Footer() {
           <h3>{DISCLOSURES_HEADER}</h3>
           <ul aria-label={DISCLOSURES_HEADER}>
             <li>
-              <a
-                href={ACCESSIBILITY_DISCLOSURE_URL}
-                target={TARGET_BLANK}
-                title={ACCESSIBILITY_DISCLOSURE}
-              >
+              <Link to={ACCESSIBILITY_DISCLOSURE_URL} title={ACCESSIBILITY_DISCLOSURE}>
                 {ACCESSIBILITY_DISCLOSURE}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href={ADVERTISING_DISCLOSURE_URL}
-                target={TARGET_BLANK}
-                title={ADVERTISING_DISCLOSURE}
-              >
+              <Link to={ADVERTISING_DISCLOSURE_URL} title={ADVERTISING_DISCLOSURE}>
                 {ADVERTISING_DISCLOSURE}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href={AFFILIATE_LINKS_DISCLOSURE_URL}
-                target={TARGET_BLANK}
-                title={AFFILIATE_LINKS_DISCLOSURE}
-              >
+              <Link to={AFFILIATE_LINKS_DISCLOSURE_URL} title={AFFILIATE_LINKS_DISCLOSURE}>
                 {AFFILIATE_LINKS_DISCLOSURE}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href={CODE_OF_CONDUCT_URL} target={TARGET_BLANK} title={CODE_OF_CONDUCT}>
+              <Link to={CODE_OF_CONDUCT_URL} title={CODE_OF_CONDUCT}>
                 {CODE_OF_CONDUCT}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href={CONTRIBUTING_URL} target={TARGET_BLANK} title={CONTRIBUTING}>
+              <Link to={CONTRIBUTING_URL} title={CONTRIBUTING}>
                 {CONTRIBUTING}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href={SPONSORED_CONTENT_URL} target={TARGET_BLANK} title={SPONSORED_CONTENT}>
+              <Link to={SPONSORED_CONTENT_URL} title={SPONSORED_CONTENT}>
                 {SPONSORED_CONTENT}
-              </a>
+              </Link>
             </li>
           </ul>
         </Col>
