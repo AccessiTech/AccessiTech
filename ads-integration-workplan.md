@@ -12,25 +12,25 @@ status: in progress
 ### 1. Register with EthicalAds
 
 - Applied for an EthicalAds publisher account at https://ethicalads.io/publishers/ (onboarding in progress).
-- Will complete onboarding and obtain publisher key/ad code when approved.
+- **Update (2025-08-21):** EthicalAds responded that our site is a good content fit, but current traffic is too low to reach their $50 payout threshold in a reasonable time. We are not eligible for their network at this time, but can reapply as traffic grows.
 
 ### 2. Plan Ad Placement
 
-- **Mobile & Tablet:** Banner ads at the top and bottom of pages for high visibility and minimal disruption.
-- **Desktop:** Sidebar ads for persistent but unobtrusive presence.
-- **Blogs:** Banner ads at the top, bottom, and optionally between sections/paragraphs for natural integration.
-- All placements will be accessible, clearly labeled, and will not interfere with navigation or content.
+**Mobile & Tablet:** Banner ads at the top and bottom of pages for high visibility and minimal disruption.
+**Desktop:** Sidebar ads for persistent but unobtrusive presence.
+**Blogs:** Banner ads at the top, bottom, and optionally between sections/paragraphs for natural integration.
+All placements will be accessible, clearly labeled, and will not interfere with navigation or content.
 
 ### 3. Implement EthicalAds
 
 - Built and tested a network-agnostic, accessible React ad component system (with unit tests).
-- Will add EthicalAds script and ad units to the codebase (React components or static HTML as needed) once publisher code is available.
+- Will proceed with integrating another network (Carbon Ads, AdSense, or Microsoft Ads) using this system.
 - All ad containers will be clearly labeled as "Advertisement" per policy and accessible (ARIA labels, keyboard, screen reader tested).
 
 ### 4. Accessibility & Privacy Review
 
 - Test ad units with screen readers and keyboard navigation.
-- Confirm no tracking cookies or behavioral targeting.
+- Confirm no tracking cookies or behavioral targeting (where possible).
 - Validate compliance with WCAG 2.1 AA and AccessiTech's [ads policy](public/disclosures/ads.md).
 
 ### 5. Documentation & Disclosure
@@ -42,6 +42,20 @@ status: in progress
 
 - Will collect user feedback on ad accessibility and experience after launch.
 - Will iterate on placement and implementation as needed.
+
+---
+
+---
+
+## Next Steps & Alternatives
+
+- **Apply to Carbon Ads** (privacy-focused, invite-only, tech/design audience)
+- **Prepare for Google AdSense or Microsoft Ads integration** using the accessible ad component system
+- **Explore non-ad revenue options:**
+  - Donations (OpenCollective, GitHub Sponsors, Ko-fi)
+  - Affiliate links (with clear disclosure)
+  - Partnerships or sponsorships with accessibility-focused organizations
+- **Revisit EthicalAds** as traffic grows
 
 ---
 
@@ -76,6 +90,7 @@ status: in progress
 ## Progress Log
 
 - 2025-08-21: Applied for EthicalAds, planned ad placements, built and tested ad component system, created GitHub issues for integration and tracking, posted research/progress update to issue #78.
+- 2025-08-21: Received EthicalAds response (traffic too low for network at this time). Documented outcome and next steps. Applying to Carbon Ads and preparing for AdSense/Microsoft Ads as alternatives.
 
 ## Resources
 
