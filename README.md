@@ -196,3 +196,16 @@ I am an adament believer in simple and descriptive [Issues](https://github.com/A
 ### Contributing to this Website
 
 I am very open to collaboration as, these days, the mobility of my hands is quite limited. If you like to contribute let me know in a issue and we can chat, or fork my repo and go to town!
+
+---
+
+## Disclosures
+
+AccessiTech is committed to transparency, accessibility, and ethical practices. For details on how we handle monetization, community, and accessibility, please see our disclosures:
+
+- [Accessibility Disclosure](https://www.accessi.tech/disclosures/accessibility)
+- [Advertisement Disclosure](https://www.accessi.tech/disclosures/ads)
+- [Affiliate Link Disclosure](https://www.accessi.tech/disclosures/affiliate-links)
+- [Code of Conduct Disclosure](https://www.accessi.tech/disclosures/code-of-conduct)
+- [Contributing Disclosure](https://www.accessi.tech/disclosures/contributing)
+- [Sponsored Content Disclosure](https://www.accessi.tech/disclosures/sponsored-content)

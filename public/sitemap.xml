@@ -9,7 +9,7 @@
   
           <url>
             <loc>https://www.accessi.tech/</loc>
-            <lastmod>2025-07-23T01:41:06.078Z</lastmod>
+            <lastmod>2025-08-21T02:29:45.155Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -21,7 +21,7 @@
         
           <url>
             <loc>https://www.accessi.tech/blog</loc>
-            <lastmod>2025-07-23T01:41:06.079Z</lastmod>
+            <lastmod>2025-08-21T02:29:45.156Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -33,7 +33,7 @@
         
           <url>
             <loc>https://www.accessi.tech/wcag</loc>
-            <lastmod>2025-07-23T01:41:06.079Z</lastmod>
+            <lastmod>2025-08-21T02:29:45.156Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -41,6 +41,18 @@
             </image:image>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/disclosures</loc>
+            <lastmod>2025-08-21T02:29:45.156Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
+              <image:caption>Disclosures page</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.7</priority>
           </url>
         
           <url>
@@ -1178,6 +1190,78 @@
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-5.5.png</image:loc>
               <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.5 Explained, Statement of Partial Conformance – Language"</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/disclosures/accessibility</loc>
+            <lastmod>2023-08-20T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
+              <image:caption>AccessiTech Logo</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/disclosures/ads</loc>
+            <lastmod>2023-08-20T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
+              <image:caption>AccessiTech Logo</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/disclosures/affiliate-links</loc>
+            <lastmod>2023-08-20T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
+              <image:caption>AccessiTech Logo</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/disclosures/code-of-conduct</loc>
+            <lastmod>2023-08-20T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
+              <image:caption>AccessiTech Logo</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/disclosures/contributing</loc>
+            <lastmod>2023-08-20T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
+              <image:caption>AccessiTech Logo</image:caption>
+            </image:image>
+            <changefreq>monthly</changefreq>
+            <priority>0.8</priority>
+          </url>
+        
+          <url>
+            <loc>https://www.accessi.tech/disclosures/sponsored-content</loc>
+            <lastmod>2023-08-20T00:00:00.000Z</lastmod>
+            <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
+            <image:image>
+              <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
+              <image:caption>AccessiTech Logo</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>

@@ -19,10 +19,12 @@ export const getMetaData = text => {
 // Recursively get all .md files from a directory and its subdirectories
 export function getAllMarkdownFiles(dir, fsDep = fs, pathDep = path) {
   let results = [];
-  const list = fsDep.readdirSync(dir);
+  const list = fsDep.readdirSync(dir.includes('/disclosures') ? dir.replace('/data', '') : dir);
   list.forEach(file => {
     const filePath = pathDep.join(dir, file);
-    const stat = fsDep.statSync(filePath);
+    const stat = fsDep.statSync(
+      filePath.includes('/disclosures') ? filePath.replace('/data', '') : filePath
+    );
     if (stat && stat.isDirectory()) {
       results = results.concat(getAllMarkdownFiles(filePath, fsDep, pathDep));
     } else if (file.endsWith('.md')) {
@@ -36,11 +38,16 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
   const blogDir = pathDep.join(rootDir, 'public/data');
   // Filter out undefined values to prevent errors from mocks or recursion
   const blogFiles = getAllMarkdownFiles(blogDir, fsDep, pathDep).filter(Boolean);
+  const disclosuresDir = pathDep.join(rootDir, 'public');
+  const disclosureFiles = getAllMarkdownFiles(disclosuresDir, fsDep, pathDep).filter(Boolean);
 
   const mapFunc = filePath => {
-    const fileContent = fsDep.readFileSync(filePath, { encoding: 'utf-8' });
+    const fileContent = fsDep.readFileSync(
+      filePath.includes('/disclosures') ? filePath.replace('/data', '') : filePath,
+      { encoding: 'utf-8' }
+    );
     // Generate the blog link relative to blogDir
-    const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/');
+    const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/').replace('../', '');
     const link = `https://accessi.tech/${relativePath}`.replace('.md', '');
     const fileMetaData = getMetaData(fileContent);
     const {
@@ -96,6 +103,15 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
       <description>Learn about the Web Content Accessibility Guidelines (WCAG) and how to implement them effectively.</description>
       ${blogFiles
         .filter(filePath => filePath.includes('/wcag/'))
+        .map(mapFunc)
+        .filter(blog => blog)
+        .join('')}
+    </channel>
+    <channel>
+      <title>Disclosures</title>
+      <link>https://accessi.tech/disclosures</link>
+      <description>AccessiTech's transparency and disclosure practices.</description>
+      ${disclosureFiles
         .map(mapFunc)
         .filter(blog => blog)
         .join('')}

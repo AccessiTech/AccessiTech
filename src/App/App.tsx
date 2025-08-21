@@ -9,6 +9,8 @@ import Metadata from '../components/Metadata/Metadata';
 import { getMetaData, MetaDataProps } from '../settings/getMetaData';
 import { metadata } from './meta';
 import NotFound from '../pages/404/404';
+import { Disclosure } from '../pages/Disclosure/Disclosure';
+import Disclosures from '../pages/Disclosures/Disclosures';
 
 export interface AppProps {
   path?: string;
@@ -30,6 +32,9 @@ export const App = (props: AppProps) => {
           <Route path="/wcag" element={<Blog hideDates hideDescription />} />
           <Route path="/wcag.html" element={<Blog hideDates hideDescription />} />
           <Route path="/wcag/:id" element={<BlogEntry />} />
+          {/* Disclosure Routes */}
+          <Route path="/disclosures" element={<Disclosures hideDates />} />
+          <Route path="/disclosures/:id" element={<Disclosure />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* Footer Row */}

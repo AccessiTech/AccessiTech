@@ -1,3 +1,10 @@
+<!--
+title: Contributor Covenant Code of Conduct
+description: AccessiTech's commitment to fostering an inclusive community.
+date: 2023-08-20
+status: published
+-->
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -60,7 +67,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-[contact@accessitech.dev](mailto:contact@accessitech.dev).
+[accessit3ch@gmail.com](mailto:accessit3ch@gmail.com).
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
