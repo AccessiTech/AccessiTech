@@ -201,11 +201,11 @@ I am very open to collaboration as, these days, the mobility of my hands is quit
 
 ## Disclosures
 
-AccessiTech is committed to transparency, accessibility, and ethical practices. For details on how we handle monetization and sponsored content, please see our disclosures:
+AccessiTech is committed to transparency, accessibility, and ethical practices. For details on how we handle monetization, community, and accessibility, please see our disclosures:
 
-- [Accessibility Disclosure](disclosures/ACCESSIBILITY.md)
-- [Advertisement Disclosure](disclosures/ad-disclosure.md)
-- [Affiliate Link Disclosure](disclosures/affiliate-link-disclosure.md)
-- [Code of Conduct Disclosure](disclosures/CODE_OF_CONDUCT.md)
-- [Contributing Disclosure](disclosures/CONTRIBUTING.md)
-- [Sponsored Content Disclosure](disclosures/sponsored-content-disclosure.md)
+- [Accessibility Disclosure](https://www.accessi.tech/disclosures/accessibility)
+- [Advertisement Disclosure](https://www.accessi.tech/disclosures/ads)
+- [Affiliate Link Disclosure](https://www.accessi.tech/disclosures/affiliate-links)
+- [Code of Conduct Disclosure](https://www.accessi.tech/disclosures/code-of-conduct)
+- [Contributing Disclosure](https://www.accessi.tech/disclosures/contributing)
+- [Sponsored Content Disclosure](https://www.accessi.tech/disclosures/sponsored-content)
