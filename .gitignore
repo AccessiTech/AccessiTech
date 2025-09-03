@@ -131,3 +131,8 @@ dist
 
 # Copilot files
 .copilot/
+
+# research files
+research/competitor-analysis-report*.csv
+research/competitor-html/
+research/competitor-pdf/

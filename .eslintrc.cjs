@@ -8,7 +8,7 @@ module.exports = {
     'plugin:prettier/recommended', // Add Prettier plugin
     "plugin:jsx-a11y/recommended"
   ],
-  ignorePatterns: ['dist', 'docs', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', 'docs', '.eslintrc.cjs', 'research/competitor-html'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'prettier', 'jsx-a11y'], // Add Prettier to plugins
   rules: {
