@@ -95,13 +95,18 @@ All placements will be accessible, clearly labeled, and will not interfere with 
 
 ## Progress Log
 
-- 2025-08-21: Applied for EthicalAds, planned ad placements, built and tested ad component system, created GitHub issues for integration and tracking, posted research/progress update to issue #78.
-- 2025-08-21: Received EthicalAds response (traffic too low for network at this time). Documented outcome and next steps. Applying to Carbon Ads and preparing for AdSense/Microsoft Ads as alternatives.
+### 7. SEO & Keyword Research Progress (Google Keyword Planner)
+
+- Developed a comprehensive, deduplicated keyword list targeting accessibility, designers, developers, and modern frameworks.
+- Automated CSV/markdown conversion and keyword enhancement (long-tail, question-based, related keywords).
+- Initiated Google Keyword Planner research:
+  - Imported and validated high-priority keywords.
+  - Collected search volume, competition, and related keyword data.
+  - Drafted headlines, long headlines, and descriptions for ad campaigns.
+- Next: Continue expanding/validating keywords, prioritize by opportunity, and align content with high-impact terms.
 
 ## Resources
 
-- [EthicalAds Documentation](https://ethicalads.io/docs/)
-- [AccessiTech Advertisement Disclosure](public/disclosures/ads.md)
 - [WCAG 2.1 AA Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ---
