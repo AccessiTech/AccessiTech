@@ -70,7 +70,7 @@ We welcome feedback on the accessibility of AccessiTech. If you experience any a
 ## Resources
 
 - [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
-- [AccessiTech Blog on WCAG](/blog/wcag)
+- [AccessiTech Blog on WCAG](/wcag)
 - [Why Web Accessibility Matters](/blog/Introduction-to-WCAG-What-It-Is-and-Why-It-Matters)
 
 Last updated: July 2023
