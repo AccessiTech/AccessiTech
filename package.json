@@ -1,7 +1,7 @@
 {
   "name": "@accessitech/homepage",
   "private": false,
-  "version": "2.4.4",
+  "version": "2.4.5",
   "type": "module",
   "engines": {
     "node": ">=v20.19.0"
@@ -54,7 +54,7 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
-    "@accessitech/vite-ssg": "^0.3.3",
+    "@accessitech/vite-ssg": "^0.3.4",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
