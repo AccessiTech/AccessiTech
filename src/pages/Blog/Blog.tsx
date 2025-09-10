@@ -114,6 +114,7 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
                 <h2>{pagename}</h2>
                 <p>{pageMetadata.pageBlurb}</p>
                 <hr />
+                {blog.length === 0 && <p>No blog entries found.</p>}
                 {blog.map((blog: any) => (
                   <article key={`blog-${blog.id}`} className="blog-entry">
                     <Link key={blog.id} to={`/${pathname}/${blog.id}`}>
