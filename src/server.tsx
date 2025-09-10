@@ -7,12 +7,47 @@ import './scss/index.scss';
 import { store } from './store/store';
 import { MetaDataProps } from './settings/getMetaData';
 import { Blog, setBlogEntry } from './store/blog';
+import { XMLParser } from 'fast-xml-parser';
 
 console.log('Hello from server.tsx');
 
-export const preload = async (url: string) => {
-  const entry = await genEntry(url);
-  store.dispatch(setBlogEntry(entry));
+export const preload = async (url: string, staticPaths: string[]) => {
+  if (!staticPaths.includes(url)) {
+    const entry = await genEntry(url);
+    store.dispatch(setBlogEntry(entry));
+    return;
+  }
+
+  // console.log('Preloading blog entries for static path:', url);
+  // For static paths, preload /rss.xml with fs.readFileSync to populate page entries
+  const rss = fs.readFileSync(path.resolve(process.cwd(), 'public', 'rss.xml'), 'utf-8');
+  // Parse RSS with fast-xml-parser or similar to get entries
+  const parser = new XMLParser();
+  const parsed = parser.parse(rss);
+  // Support multiple channels
+  let channels = parsed.rss.channel;
+  if (!Array.isArray(channels)) {
+    channels = [channels];
+  }
+  // Aggregate all items from all channels
+  let items: any[] = [];
+  channels.forEach((channel: any) => {
+    if (channel && channel.item) {
+      if (Array.isArray(channel.item)) {
+        items = items.concat(channel.item);
+      } else {
+        items.push(channel.item);
+      }
+    }
+  });
+  // console.log('Parsed items:', items.length);
+  if (items && items.length) {
+    items.forEach(async (item: any) => {
+      const url = item.link.replace('accessi.tech/', '');
+      const entry = await genEntry(url);
+      store.dispatch(setBlogEntry(entry));
+    });
+  }
 };
 
 export const render = async (path: string, metadata?: MetaDataProps) => {
@@ -36,7 +71,7 @@ export const renderMetadata = async (data: MetaDataProps) => {
 export const fetchMetaData = async (
   url: string
 ): Promise<{ metaData: MetaDataProps; fileContent: string }> => {
-  console.log('URL:', url);
+  // console.log('URL:', url);
 
   // For dynamic pages, fetch from markdown files
   const id = url.split('/').splice(2).join('/') || '';
@@ -79,6 +114,7 @@ export const genEntry = async (url: string): Promise<Blog> => {
   const date = rawMetaData['date'] || '';
   const previous = rawMetaData['previous'] || undefined;
   const next = rawMetaData['next'] || undefined;
+  const pathname = url.split('/').slice(1, 2).join('') || '';
 
   const entry: Blog = {
     loaded: true,
@@ -89,6 +125,7 @@ export const genEntry = async (url: string): Promise<Blog> => {
     description,
     image,
     image_alt,
+    pathname,
   };
 
   if (previous)
