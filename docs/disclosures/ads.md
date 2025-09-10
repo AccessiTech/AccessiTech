@@ -7,10 +7,11 @@ status: published
 
 # Advertisement Disclosure
 
-At AccessiTech, our mission is to remove barriers and foster inclusion for all. To help support our accessibility resources and services, this website may display advertisements. We are committed to transparency, accessibility, and user empowerment in all advertising practices.
+At AccessiTech, our mission is to remove barriers and foster inclusion for all. To help support our accessibility resources and services, this website may display advertisements. We are committed to transparency, accessibility, privacy, and user empowerment in all advertising practices.
 
 - **Transparency:** All advertisements are clearly labeled as "Advertisement" or similar, and are always distinguishable from editorial content. Ads do not influence our content, recommendations, or reviews in any way.
 - **Accessibility:** We ensure that all advertisements meet or exceed WCAG 2.1 AA standards, are accessible to everyone (including users of assistive technologies), and do not interfere with your experience.
+- **Privacy:** Third-party advertisers (such as Google) may use cookies or similar technologies to collect information about your visit to this site for ad personalization and analytics. For more information, see [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites).
 - **User Empowerment:** If you have questions, concerns, or encounter any accessibility barriers related to ads, please [open an issue](https://github.com/AccessiTech/AccessiTech/issues) or email us at [accessit3ch@gmail.com](mailto:accessit3ch@gmail.com). Your feedback helps us improve.
 
 We regularly review our advertising practices to ensure compliance with legal, ethical, and accessibility guidelines, and to maintain a positive, inclusive experience for all users. For more about our values and accessibility commitment, see our [Accessibility Statement](accessibility).
