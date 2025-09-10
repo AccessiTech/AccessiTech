@@ -11,8 +11,8 @@
       referrerpolicy="no-referrer"
     />
 <link rel="manifest" href="/manifest.json" />
-<script type="module" crossorigin src="/assets/index-0e451a4e.js"></script>
-<link rel="stylesheet" href="/assets/index-67fa003f.css">
+<script type="module" crossorigin src="/assets/index-fe9b68c3.js"></script>
+<link rel="stylesheet" href="/assets/index-492d3c1b.css">
 <title>AccessiTech | Home</title>
 <meta name="description" content="AccessiTech LLC provides accessibility auditing, consulting, training, and content creation services for design technologists, while producing open-source content and tools for the community.">
 <meta property="og:description" content="AccessiTech LLC provides accessibility auditing, consulting, training, and content creation services for design technologists, while producing open-source content and tools for the community.">
@@ -52,6 +52,23 @@
       }
       gtag('js', new Date());
       gtag('config', 'G-6KE9W4MCVH');
+    </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7517735244627255"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function setIframeTitles() {
+        document.querySelectorAll('iframe:not([title])').forEach(iframe => {
+          iframe.title = 'Advertisement';
+        });
+      }
+      // Initial run
+      setIframeTitles();
+      // Observe for dynamically added iframes
+      const observer = new MutationObserver(setIframeTitles);
+      observer.observe(document.body, { childList: true, subtree: true });
     </script>
   </body>
 </html>

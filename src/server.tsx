@@ -77,8 +77,10 @@ export const genEntry = async (url: string): Promise<Blog> => {
   const image_alt = metaData.imageAlt || '';
   const title = metaData.title || content.split('\n')[0].replace('# ', '');
   const date = rawMetaData['date'] || '';
+  const previous = rawMetaData['previous'] || undefined;
+  const next = rawMetaData['next'] || undefined;
 
-  return {
+  const entry: Blog = {
     loaded: true,
     id,
     title,
@@ -88,6 +90,12 @@ export const genEntry = async (url: string): Promise<Blog> => {
     image,
     image_alt,
   };
+
+  if (previous)
+    entry.previous = { url: previous.split(',')[0], title: previous.split(',')[1] || 'Previous' };
+  if (next) entry.next = { url: next.split(',')[0], title: next.split(',')[1] || 'Next' };
+
+  return entry;
 };
 
 export const parseMetaData = (text: string): { [key: string]: string } => {
