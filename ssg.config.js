@@ -5,12 +5,13 @@ export const config = defineConfig({
   ssrEntry: 'src/server.tsx',
   urlSrc: 'public/rss.xml',
   dest: 'docs',
-  staticPaths: ['/', '/blog', '/404', '/wcag'],
+  staticPaths: ['/', '/blog', '/404', '/wcag', '/disclosures'],
   staticMetaData: [
     'src/App/meta.ts',
     'src/pages/Blog/meta.ts',
     'src/App/meta.ts',
     'src/pages/Blog/wcag-meta.ts',
+    'src/pages/Disclosures/meta.ts',
   ],
   productionUrlBase: 'https://accessi.tech',
   pathsBuilder: items =>
