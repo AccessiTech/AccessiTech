@@ -127,5 +127,17 @@
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7517735244627255"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function setIframeTitles() {
+        document.querySelectorAll('iframe:not([title])').forEach(iframe => {
+          iframe.title = 'Advertisement';
+        });
+      }
+      // Initial run
+      setIframeTitles();
+      // Observe for dynamically added iframes
+      const observer = new MutationObserver(setIframeTitles);
+      observer.observe(document.body, { childList: true, subtree: true });
+    </script>
   </body>
 </html>
