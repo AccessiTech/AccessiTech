@@ -43,7 +43,7 @@ export const preload = async (url: string, staticPaths: string[]) => {
   // console.log('Parsed items:', items.length);
   if (items && items.length) {
     items.forEach(async (item: any) => {
-      const url = item.link.replace('accessi.tech/', '');
+      const url = item.link.replace('accessi.tech/', '').replace('https://', '/');
       const entry = await genEntry(url);
       store.dispatch(setBlogEntry(entry));
     });
@@ -101,6 +101,10 @@ export const fetchMetaData = async (
 
 export const genEntry = async (url: string): Promise<Blog> => {
   const id = url.split('/').pop()?.replace('.md', '') || '';
+  // console.log('Generating entry for URL:', url, 'ID:', id);
+  if (!id) {
+    throw new Error('Invalid blog ID');
+  }
   const { metaData, fileContent } = await fetchMetaData(url);
   const rawMetaData = parseMetaData(fileContent);
 
