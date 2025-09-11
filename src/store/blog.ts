@@ -129,6 +129,7 @@ export const blogSlice = createSlice({
       state.entries[id] = {
         ...state.entries[id],
         ...entry,
+        id,
       };
     },
   },
