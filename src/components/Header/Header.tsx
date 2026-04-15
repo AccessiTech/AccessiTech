@@ -42,8 +42,21 @@ function Header() {
               </Link>
             </li>
             <li>
+              <Link
+                to="/products/wcag-series"
+                className={pathname.startsWith('/products') ? 'active' : ''}
+              >
+                Products
+              </Link>
+            </li>
+            <li>
               <Link to="/wcag" className={pathname === '/wcag' ? 'active' : ''}>
                 WCAG Explained
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className={pathname === '/contact' ? 'active' : ''}>
+                Contact
               </Link>
             </li>
           </ul>

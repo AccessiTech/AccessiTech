@@ -11,6 +11,10 @@ import { metadata } from './meta';
 import NotFound from '../pages/404/404';
 import { Disclosure } from '../pages/Disclosure/Disclosure';
 import Disclosures from '../pages/Disclosures/Disclosures';
+import WCAGSeries from '../pages/Products/WCAGSeries';
+import OSSASaaPs from '../pages/Products/OSSASaaPs';
+import CCCs from '../pages/Products/CCCs';
+import Contact from '../pages/Contact/Contact';
 
 export interface AppProps {
   path?: string;
@@ -35,6 +39,11 @@ export const App = (props: AppProps) => {
           {/* Disclosure Routes */}
           <Route path="/disclosures" element={<Disclosures hideDates />} />
           <Route path="/disclosures/:id" element={<Disclosure />} />
+          {/* Product Page Routes */}
+          <Route path="/products/wcag-series" element={<WCAGSeries />} />
+          <Route path="/products/oss-asaaps" element={<OSSASaaPs />} />
+          <Route path="/products/cccs" element={<CCCs />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* Footer Row */}

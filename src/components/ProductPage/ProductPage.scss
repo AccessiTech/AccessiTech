@@ -1,0 +1,37 @@
+@import "bootstrap/scss/bootstrap.scss";
+@import "../FontOptions/fontOptions.scss";
+
+.breadcrumb-row.product-page {
+  background-color: $yellow;
+}
+
+.product-page {
+  background-color: $yellow;
+  text-align: left;
+
+  h2 {
+    @include font-resize(2rem);
+    @include margin(1rem 0 1.75rem);
+  }
+
+  h3 {
+    @include font-resize(1.25rem);
+    @include margin(1rem 0);
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 2rem;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1.5rem 0 0;
+    opacity: 1;
+  }
+
+  section {
+    @include padding(1.5rem 0);
+  }
+}
