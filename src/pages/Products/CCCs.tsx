@@ -2,22 +2,22 @@ import ProductPage from '../../components/ProductPage/ProductPage';
 
 const CCCs = () => (
   <ProductPage
-    title="Continued Competency Credits (CCCs)"
-    overview="Accessible, community-led learning for design technologists building disability-forward careers — free foundational content, structured coaching available."
-    whyItExists="Removing barriers to career development for disabled design technologists. CCCs are built to meet learners where they are — not to gatekeep expertise."
+    title="Curriculum & Content Creation (CCCs)"
+    overview="A curriculum design and content creation service that builds accessible learning materials for organizations, teams, and educators — from scratch or as a retrofit. CCCs delivers structured, disability-forward content that meets your learners where they are."
+    whyItExists="Most educational content is built without disabled learners in mind. CCCs exist to fix that at the source — designing accessible curriculum and materials from the ground up so organizations and teams can teach and train without leaving people out."
     included={[
-      'Free WCAG 2.2 foundational modules',
-      'Web accessibility best practices (freemium)',
-      'VVD cohort content (coming soon — freemium)',
-      '1:1 coaching and mentorship (paid)',
+      'Accessible curriculum design for organizations, teams, and educators',
+      'Content creation for courses, workshops, and training programs',
+      'Accessibility audits of existing educational materials',
+      'Implementation guidance and delivery support',
     ]}
-    howToUse="Foundational CCC content is free. Structured cohort programs and 1:1 coaching are available as paid offerings. Start for free, level up on your terms."
-    relatedServices="Looking for structured mentorship or career coaching? Our Mentorship service offers 1:1 sessions and cohort programs designed for disabled technologists."
-    ctaLabel="Start for Free"
-    ctaHref="/wcag"
+    howToUse="CCCs is a project-based service. Bring us a learning goal — we design the accessible content to meet it. Contact us to scope your project and get a quote."
+    relatedServices="Want to train your team on accessibility itself? Our WCAG Series offers free foundational content. Consulting offers structured accessibility training and audit engagements."
+    ctaLabel="Start a Project"
+    ctaHref="/contact"
     pathname="products/cccs"
-    metaTitle="CCCs | AccessiTech"
-    metaDescription="Continued Competency Credits — accessible learning and mentorship for disabled design technologists."
+    metaTitle="Curriculum & Content Creation (CCCs) | AccessiTech"
+    metaDescription="Accessible curriculum design and content creation services for organizations, teams, and educators — from AccessiTech."
   />
 );
 

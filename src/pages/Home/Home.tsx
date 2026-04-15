@@ -43,10 +43,10 @@ export const WCAG_SERIES_DESC =
   'Free, accessible educational guides to the Web Content Accessibility Guidelines — one principle at a time.';
 export const OSS_TITLE = 'Open Source Software & ASaaPs';
 export const OSS_DESC =
-  'Accessibility-first open source tools and ASaaP frameworks — free methodology, paid implementation support.';
-export const CCCS_TITLE = 'Continued Competency Credits';
+  'Free accessibility tools and ASaaP (Accessibility Software as a Practice) frameworks — methodology open to all, implementation support available.';
+export const CCCS_TITLE = 'Curriculum & Content Creation';
 export const CCCS_DESC =
-  'Accessible, community-led learning for design technologists — free foundational content, structured coaching available.';
+  'Accessible curriculum and training materials designed from the ground up for organizations, teams, and educators.';
 
 // WORK WITH US
 export const WORK_WITH_US_HEADER = 'Work with us';
