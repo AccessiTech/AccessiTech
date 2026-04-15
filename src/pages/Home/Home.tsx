@@ -18,72 +18,127 @@ const splashRowStyle = {
 export const APP_ROOT = 'App Root';
 export const SKIP_TO_MAIN_CONTENT = 'Skip to main content';
 export const ABOUT_ACCESSITECH = 'About AccessiTech';
+
+// Tagline
 export const TAGLINE =
   'Built disabled, not despite it — accessible consulting and development, from websites to AI systems';
-export const VISION_P3 =
-  'AccessiTech LLC is a social enterprise founded by a disabled design technologist with 18+ years of lived experience. We close the accessibility accountability gap by building consulting, mentorship, and product services that are accessible by design — not retrofitted as an afterthought.';
+
+// WHO
+export const WHO_HEADER = 'Who we are';
+export const WHO_P1 =
+  'AccessiTech LLC is a social enterprise founded by a disabled design technologist with 18+ years of lived experience.';
+
+// WHY
+export const WHY_HEADER = 'Why we exist';
+export const WHY_P1 =
+  'We close the accessibility accountability gap by building consulting, mentorship, and product services that are accessible by design — not retrofitted as an afterthought.';
+
+// Backwards-compat export (used in existing tests)
+export const VISION_P3 = `${WHO_P1} ${WHY_P1}`;
+
+// PRODUCTS
+export const PRODUCTS_HEADER = 'Products';
+export const WCAG_SERIES_TITLE = 'WCAG Series';
+export const WCAG_SERIES_DESC =
+  'Free, accessible educational guides to the Web Content Accessibility Guidelines — one principle at a time.';
+export const OSS_TITLE = 'Open Source Software & ASaaPs';
+export const OSS_DESC =
+  'Accessibility-first open source tools and ASaaP frameworks — free methodology, paid implementation support.';
+export const CCCS_TITLE = 'Continued Competency Credits';
+export const CCCS_DESC =
+  'Accessible, community-led learning for design technologists — free foundational content, structured coaching available.';
+
+// WORK WITH US
+export const WORK_WITH_US_HEADER = 'Work with us';
+export const WORK_WITH_US_P1 =
+  'Consulting, mentorship, and product services — built accessible from day one.';
 
 export const Home = () => {
   const navigate = useNavigate();
   return (
     <>
       <HomeHeaderRow />
-      {/* Splash Row */}
+
+      {/* Tagline */}
       <Row className="splash-row" style={splashRowStyle}>
         <Col>
           <Metadata {...metadata} />
-          {/* <Header /> */}
           <h2>{TAGLINE}</h2>
           <SplashSocials />
         </Col>
       </Row>
 
-      {/* Main Rows */}
       <main id="main" aria-label={ABOUT_ACCESSITECH}>
-        <Row className="cta-row">
-          <Col xs={12} md={{ span: 5, offset: 1 }} className="blog-cta">
-            <h3>Accessibility, done right.</h3>
-            <p>
-              Explore expert-written articles, tools, and tips to help you build better, more
-              inclusive digital products.
-            </p>
+        {/* WHO */}
+        <Row className="who-row">
+          <Col xs={12} md={{ span: 8, offset: 2 }}>
+            <h3>{WHO_HEADER}</h3>
+            <p>{WHO_P1}</p>
+          </Col>
+        </Row>
+
+        {/* WHY */}
+        <Row className="why-row">
+          <Col xs={12} md={{ span: 8, offset: 2 }}>
+            <h3>{WHY_HEADER}</h3>
+            <p>{WHY_P1}</p>
+          </Col>
+        </Row>
+
+        {/* WHAT */}
+        <Services />
+
+        {/* PRODUCTS */}
+        <Row className="products-row">
+          <Col xs={12} md={{ span: 10, offset: 1 }}>
+            <h3>{PRODUCTS_HEADER}</h3>
+          </Col>
+          <Col xs={12} md={{ span: 3, offset: 1 }} className="product-card">
+            <h4>{WCAG_SERIES_TITLE}</h4>
+            <p>{WCAG_SERIES_DESC}</p>
             <Button
-              href="/blog"
-              variant="primary"
-              size="lg"
-              onClick={(e: any) => {
-                e.preventDefault();
-                navigate('/blog');
-              }}
+              data-testid="product-card-btn-wcag"
+              variant="outline-primary"
+              onClick={() => navigate('/products/wcag-series')}
             >
-              Browse the Blog
+              Learn more
             </Button>
           </Col>
-          <Col xs={12} md={{ span: 5 }} className="wcag-cta mt-5 mt-md-0">
-            <h3>WCAG, made simple.</h3>
-            <p>
-              Get clear, jargon-free explanations of the Web Content Accessibility Guidelines (WCAG)
-              — one principle at a time.
-            </p>
+          <Col xs={12} md={{ span: 3 }} className="product-card mt-5 mt-md-0">
+            <h4>{OSS_TITLE}</h4>
+            <p>{OSS_DESC}</p>
             <Button
-              href="/wcag"
-              variant="primary"
-              size="lg"
-              onClick={(e: any) => {
-                e.preventDefault();
-                navigate('/wcag');
-              }}
+              data-testid="product-card-btn-oss"
+              variant="outline-primary"
+              onClick={() => navigate('/products/oss-asaaps')}
             >
-              Start the Series
+              Learn more
             </Button>
           </Col>
-          <Col xs={12} md={{ span: 5, offset: 1 }} className="contact-cta mt-5 mt-md-0">
-            <h3>Work with us.</h3>
-            <p>Consulting, mentorship, and product services — built accessible from day one.</p>
+          <Col xs={12} md={{ span: 3 }} className="product-card mt-5 mt-md-0">
+            <h4>{CCCS_TITLE}</h4>
+            <p>{CCCS_DESC}</p>
             <Button
+              data-testid="product-card-btn-cccs"
+              variant="outline-primary"
+              onClick={() => navigate('/products/cccs')}
+            >
+              Learn more
+            </Button>
+          </Col>
+        </Row>
+
+        {/* WORK WITH US */}
+        <Row className="work-with-us-row">
+          <Col xs={12} md={{ span: 8, offset: 2 }} className="text-center">
+            <h3>{WORK_WITH_US_HEADER}</h3>
+            <p>{WORK_WITH_US_P1}</p>
+            <CalendlyButton label="Schedule a Free Discovery Call" />
+            <Button
+              variant="primary"
+              size="lg"
+              className="mt-3"
               href="/contact"
-              variant="primary"
-              size="lg"
               onClick={(e: any) => {
                 e.preventDefault();
                 navigate('/contact');
@@ -91,17 +146,6 @@ export const Home = () => {
             >
               Get in Touch
             </Button>
-          </Col>
-        </Row>
-
-        <Services />
-
-        <Row className="about-row">
-          <Col xs={12} md={{ span: 8, offset: 2 }}>
-            <blockquote>
-              <p>{VISION_P3}</p>
-            </blockquote>
-            <CalendlyButton label="Schedule a Free Discovery Call" />
           </Col>
         </Row>
       </main>
