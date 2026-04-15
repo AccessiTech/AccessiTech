@@ -20,9 +20,9 @@ export const COPY_SUCCESS_MESSAGE = 'Copied!';
 export const COPY_FAIL_MESSAGE = 'Unable to copy to clipboard';
 export const SERVICES_HEADER = 'Services';
 export const SERVICES_P1 =
-  'As a design technologist with over 10 years of professional experience across multiple industries I offer independent mentorship through various platforms as I continue to produce software for digital accessibility.';
+  'Founded by a disabled design technologist with 18+ years of experience across industries, AccessiTech offers consulting, mentorship, and product services grounded in lived disability experience.';
 export const SERVICES_P2 =
-  'As an accessibility consultant I offer a wide range of services throughout the product lifecycle, including but not limited to: Accessibility Audits, Design Research, Project Management, and Full-Stack Engineering.';
+  'We serve organizations, teams, and individuals who want accessibility done right — with the people most affected at the center, not the margins.';
 export const PURPOSE_PIC_ALT = 'Image Credit: Urupong from Ghetty Images';
 export const CONSULTATION_HEADER = 'Consultation';
 export const CONSULTATION_P3 =

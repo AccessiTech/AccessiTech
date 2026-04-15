@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { HomeHeaderRow } from '../../components/Header/Header';
 import Metadata from '../../components/Metadata/Metadata';
 import metadata from '../../App/meta';
+import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
@@ -17,9 +18,10 @@ const splashRowStyle = {
 export const APP_ROOT = 'App Root';
 export const SKIP_TO_MAIN_CONTENT = 'Skip to main content';
 export const ABOUT_ACCESSITECH = 'About AccessiTech';
-export const TAGLINE = 'Accessibility for Design Technologists';
+export const TAGLINE =
+  'Built disabled, not despite it — accessible consulting and development, from websites to AI systems';
 export const VISION_P3 =
-  'AccessiTech LLC is a social enterprise that aims to eliminate barriers for disabled design technologists and promote emergent technologies that improve digital accessibility, inclusion, and equity for all.';
+  'AccessiTech LLC is a social enterprise founded by a disabled design technologist with 18+ years of lived experience. We close the accessibility accountability gap by building consulting, mentorship, and product services that are accessible by design — not retrofitted as an afterthought.';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -75,6 +77,21 @@ export const Home = () => {
               Start the Series
             </Button>
           </Col>
+          <Col xs={12} md={{ span: 5, offset: 1 }} className="contact-cta mt-5 mt-md-0">
+            <h3>Work with us.</h3>
+            <p>Consulting, mentorship, and product services — built accessible from day one.</p>
+            <Button
+              href="/contact"
+              variant="primary"
+              size="lg"
+              onClick={(e: any) => {
+                e.preventDefault();
+                navigate('/contact');
+              }}
+            >
+              Get in Touch
+            </Button>
+          </Col>
         </Row>
 
         <Services />
@@ -84,6 +101,7 @@ export const Home = () => {
             <blockquote>
               <p>{VISION_P3}</p>
             </blockquote>
+            <CalendlyButton label="Schedule a Free Discovery Call" />
           </Col>
         </Row>
       </main>
