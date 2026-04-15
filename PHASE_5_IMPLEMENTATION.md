@@ -1,10 +1,10 @@
 # Phase 5 Implementation Plan — AccessiTech Website
 
-**Timeline**: April 15–18, 2026 (Aggressive 3-day sprint)  
+**Timeline**: April 15–19 (Pre-Flight Unblocks) → April 21–25 (Build Sprint)  
 **Scope**: Product pages + Blog infrastructure + CTA/conversion flows  
 **Team**: Full fleet orchestration (Conor orchestrating; devrel, docs, qa, devops specialists)  
-**Branch**: `phase-5/implementation-2026-04-15`  
-**Status**: 🟠 Planning phase (in progress)
+**Branch**: `phase-5/full-implementation`  
+**Status**: 🟢 Pre-Flight Phase (Apr 15–19) → Build Phase (Apr 21–25)
 
 ---
 
@@ -213,23 +213,23 @@ Phase 5 implements the **complete AccessiTech website** using locked Sprint B co
 ✅ **Timeline**: 24 hours over 3 days is aggressive but achievable  
 ⚠️ **Risk**: Contact form backend needs pre-sprint unblock (email service config)  
 
-**VERDICT**: **GO for Phase 1–5 (Compressed Scope)** on Tuesday, April 16
+**VERDICT**: **GO for Phase 1–5 (Compressed Scope)** on Monday, April 21 (pending pre-flight unblock resolution by Friday, April 19)
 
 ---
 
-### Phase 1 — Product Page Infrastructure (18 hours, Tue–Wed Apr 16–17)
+### Phase 1 — Product Page Infrastructure (18 hours, Mon–Tue Apr 21–22)
 
 **Build focus**: 3 product page templates + routing
 
 **Parallel workstreams**:
 
-#### WS1A: WCAG Series Product Page (6 hours, Tue–Wed)
+#### WS1A: WCAG Series Product Page (6 hours, Mon–Tue)
 - Template: 5-section (Overview, Core Services, Use Cases, Pricing/Access, Next Steps)
 - Components: Pricing table, free/paid toggle, feature list, enroll CTA
 - Routing: `/wcag-series` (or `/products/wcag-series`)
 - **Owner**: Tech lead (React component dev)
 
-#### WS1B: OSS/ASaaPs Product Page (6 hours, Tue–Wed)
+#### WS1B: OSS/ASaaPs Product Page (6 hours, Mon–Tue)
 - Template: 5-section (Overview, Core Services, Use Cases, Pricing/Access, Next Steps)
 - Components: Governance framework diagram? Feature matrix? Links to dogma repo?
 - Routing: `/oss-asaaps` (or `/products/oss`)
@@ -241,58 +241,58 @@ Phase 5 implements the **complete AccessiTech website** using locked Sprint B co
 - Routing: `/accessitech-cccs` (or `/products/cccs`)
 - **Owner**: Tech lead (React component dev)
 
-#### WS1D: Product Page Routing & Navigation (2 hours, Tue)
+#### WS1D: Product Page Routing & Navigation (2 hours, Mon)
 - Update App routing to include `/products/*` or equivalent
 - Update nav/header to link to product pages
 - Update Home WHY section CTAs to link to product pages
 - **Owner**: Tech lead (routing/nav)
 
-**Gate**: All 3 pages component-complete, routing validated (Tue night); styling/content-refinement in Phase 2
+**Gate**: All 3 pages component-complete, routing validated (Mon night); styling/content-refinement in Phase 2
 
 ---
 
-### Phase 2 — Blog Infrastructure (12 hours, Tue–Thu Apr 16–18)
+### Phase 2 — Blog Infrastructure (12 hours, Mon–Wed Apr 21–23)
 
 **Build focus**: Blog metadata schema, filtering, layout updates
 
 **Parallel workstreams**:
 
-#### WS2A: Blog Schema & Metadata Implementation (4 hours, Tue)
+#### WS2A: Blog Schema & Metadata Implementation (4 hours, Mon)
 - Update blog entry component to support: Category, Tags, Series, Collections, Featured Image + Alt
 - Implement Redux store schema for blog metadata
 - Create mock data layer (will populate from markdown frontmatter in Phase 3)
 - **Owner**: Tech lead (data layer + components)
 
-#### WS2B: Blog Category & Tag Filtering (4 hours, Wed)
+#### WS2B: Blog Category & Tag Filtering (4 hours, Tue)
 - Implement category filter UI (dropdown or pill buttons)
 - Implement tag filter UI
 - Update blog listing to filter by category/tags
 - Update blog routing to support `/blog?category=X&tags=Y,Z`
 - **Owner**: Tech lead (routing + filtering logic)
 
-#### WS2C: Blog Series & Collections Support (2 hours, Wed)
+#### WS2C: Blog Series & Collections Support (2 hours, Tue)
 - Implement "series" metadata rendering on blog entry pages
 - Implement "collection" breadcrumb on listing
 - Create related-posts logic (same series or collection)
 - **Owner**: Tech lead (component logic)
 
-#### WS2D: Blog SEO & Metadata (2 hours, Thu)
+#### WS2D: Blog SEO & Metadata (2 hours, Wed)
 - Ensure each blog entry has `<meta>` tags (title, description, keywords, image)
 - Update react-helmet to pull from blog frontmatter
 - Validate RSS generation includes all new metadata
 - **Owner**: Tech lead (SEO)
 
-**Gate**: Blog schema implemented, filtering UI functional, RSS generation validated (Wed night)
+**Gate**: Blog schema implemented, filtering UI functional, RSS generation validated (Tue night)
 
 ---
 
-### Phase 3 — CTA & Conversion Flows (8 hours, Wed–Thu Apr 17–18)
+### Phase 3 — CTA & Conversion Flows (8 hours, Tue–Thu Apr 22–24)
 
 **Build focus**: Calendly integration, contact form, inquiry routing
 
 **Parallel workstreams**:
 
-#### WS3A: Calendly Integration (4 hours, Wed)
+#### WS3A: Calendly Integration (4 hours, Tue)
 - Embed Calendly widget on/near CTA buttons
 - Implement "Schedule a Discovery Call" button flow
 - Test: button click → Calendly opens in lightbox/modal
