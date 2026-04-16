@@ -8,7 +8,7 @@
  * - Contact form pre-populates based on query params
  */
 
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest';
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { renderWithProviders } from '../utils/__tests__/renderWithProviders';
@@ -260,6 +260,279 @@ describe('Conversion Pathways — Integration Tests', () => {
       const calendlyBtns = screen.getAllByTestId('calendly-button');
       expect(calendlyBtns.length).toBeGreaterThan(0);
       expect(calendlyBtns[0]).toBeInTheDocument();
+    });
+  });
+
+  describe('Form Submission Flow', () => {
+    let fetchSpy: any;
+
+    beforeEach(() => {
+      // Mock fetch for form submission
+      fetchSpy = vi.spyOn(global, 'fetch').mockResolvedValue({
+        ok: true,
+        status: 200,
+        json: async () => ({ success: true }),
+      } as Response);
+    });
+
+    afterEach(() => {
+      fetchSpy.mockRestore();
+    });
+
+    it('submits form with correct POST body structure', async () => {
+      const user = userEvent.setup();
+      renderWithProviders(<ContactForm />);
+
+      // Fill out form
+      const nameInput = screen.getByTestId('contact-name');
+      const emailInput = screen.getByTestId('contact-email');
+      const inquirySelect = screen.getByTestId('contact-inquiry');
+      const messageInput = screen.getByTestId('contact-message');
+
+      await user.type(nameInput, 'Jane Doe');
+      await user.type(emailInput, 'jane@example.com');
+      await user.selectOptions(inquirySelect, 'Consulting');
+      await user.type(messageInput, 'I need help with accessibility audits for my SaaS product.');
+
+      // Submit form
+      const submitButton = screen.getByTestId('contact-submit');
+      await user.click(submitButton);
+
+      // Wait for fetch to be called
+      await waitFor(() => {
+        expect(fetchSpy).toHaveBeenCalledTimes(1);
+      });
+
+      // Verify POST body structure
+      const [, options] = fetchSpy.mock.calls[0];
+      expect(options.method).toBe('POST');
+      expect(options.headers['Content-Type']).toBe('application/json');
+
+      const body = JSON.parse(options.body);
+      expect(body).toEqual({
+        name: 'Jane Doe',
+        email: 'jane@example.com',
+        inquiryType: 'Consulting',
+        message: 'I need help with accessibility audits for my SaaS product.',
+      });
+    });
+
+    it('includes query param inquiry in submitted form data', async () => {
+      const user = userEvent.setup();
+      renderWithProviders(<Contact />, { route: '/contact?inquiry=qa' });
+
+      // Fill out form (inquiry should be pre-selected)
+      const nameInput = screen.getByTestId('contact-name');
+      const emailInput = screen.getByTestId('contact-email');
+      const messageInput = screen.getByTestId('contact-message');
+
+      await user.type(nameInput, 'John Smith');
+      await user.type(emailInput, 'john@example.com');
+      await user.type(messageInput, 'Need a WCAG 2.2 AA audit for our platform.');
+
+      // Verify inquiry is pre-selected
+      const inquirySelect = screen.getByTestId('contact-inquiry') as HTMLSelectElement;
+      expect(inquirySelect.value).toBe('Quality Assurance');
+
+      // Submit form
+      const submitButton = screen.getByTestId('contact-submit');
+      await user.click(submitButton);
+
+      await waitFor(() => {
+        expect(fetchSpy).toHaveBeenCalledTimes(1);
+      });
+
+      const [, options] = fetchSpy.mock.calls[0];
+      const body = JSON.parse(options.body);
+      expect(body.inquiryType).toBe('Quality Assurance');
+    });
+
+    it('validates required fields before submission', async () => {
+      const user = userEvent.setup();
+      renderWithProviders(<ContactForm />);
+
+      // Try to submit empty form
+      const submitButton = screen.getByTestId('contact-submit');
+      await user.click(submitButton);
+
+      // Form should not submit
+      expect(fetchSpy).not.toHaveBeenCalled();
+
+      // Error messages should be displayed
+      await waitFor(() => {
+        expect(screen.getByText(/name is required/i)).toBeInTheDocument();
+        expect(screen.getByText(/email is required/i)).toBeInTheDocument();
+        expect(screen.getByText(/message is required/i)).toBeInTheDocument();
+      });
+    });
+
+    it('validates email format before submission', async () => {
+      const user = userEvent.setup();
+      renderWithProviders(<ContactForm />);
+
+      const nameInput = screen.getByTestId('contact-name');
+      const emailInput = screen.getByTestId('contact-email');
+      const messageInput = screen.getByTestId('contact-message');
+
+      await user.type(nameInput, 'Test User');
+      await user.type(emailInput, 'invalid-email');
+      await user.type(messageInput, 'This is a test message with more than 20 characters.');
+
+      const submitButton = screen.getByTestId('contact-submit');
+      await user.click(submitButton);
+
+      // Form should not submit with invalid email
+      expect(fetchSpy).not.toHaveBeenCalled();
+
+      // Error message should be displayed
+      await waitFor(() => {
+        expect(screen.getByText(/please enter a valid email address/i)).toBeInTheDocument();
+      });
+    });
+
+    it('validates message minimum length before submission', async () => {
+      const user = userEvent.setup();
+      renderWithProviders(<ContactForm />);
+
+      const nameInput = screen.getByTestId('contact-name');
+      const emailInput = screen.getByTestId('contact-email');
+      const messageInput = screen.getByTestId('contact-message');
+
+      await user.type(nameInput, 'Test User');
+      await user.type(emailInput, 'test@example.com');
+      await user.type(messageInput, 'Too short');
+
+      const submitButton = screen.getByTestId('contact-submit');
+      await user.click(submitButton);
+
+      // Form should not submit with short message
+      expect(fetchSpy).not.toHaveBeenCalled();
+
+      // Error message should be displayed
+      await waitFor(() => {
+        expect(screen.getByText(/message must be at least 20 characters/i)).toBeInTheDocument();
+      });
+    });
+
+    it('displays success message after successful submission', async () => {
+      const user = userEvent.setup();
+      renderWithProviders(<ContactForm />);
+
+      const nameInput = screen.getByTestId('contact-name');
+      const emailInput = screen.getByTestId('contact-email');
+      const inquirySelect = screen.getByTestId('contact-inquiry');
+      const messageInput = screen.getByTestId('contact-message');
+
+      await user.type(nameInput, 'Test User');
+      await user.type(emailInput, 'test@example.com');
+      await user.selectOptions(inquirySelect, 'General Inquiry');
+      await user.type(messageInput, 'This is a valid test message with sufficient length.');
+
+      const submitButton = screen.getByTestId('contact-submit');
+      await user.click(submitButton);
+
+      // Success message should appear
+      await waitFor(() => {
+        expect(screen.getByTestId('contact-success')).toBeInTheDocument();
+        expect(screen.getByText(/thanks! we'll be in touch/i)).toBeInTheDocument();
+      });
+    });
+  });
+
+  describe('End-to-End Navigation Flows', () => {
+    it('verifies query param flow from service page to contact', () => {
+      // Test that ASaaPs page CTA has correct inquiry param
+      renderWithProviders(<ASaaPsPage />);
+      const asaapsCtaButton = screen.getByText(/schedule a discovery call/i);
+      expect(asaapsCtaButton).toHaveAttribute('href', '/contact?inquiry=consulting');
+
+      // Test that Contact page pre-fills inquiry when navigated with param
+      renderWithProviders(<Contact />, { route: '/contact?inquiry=consulting' });
+      const inquirySelect = screen.getByTestId('contact-inquiry') as HTMLSelectElement;
+      expect(inquirySelect.value).toBe('Consulting');
+    });
+
+    it('verifies ASaaPs consulting service routes to consulting inquiry', () => {
+      renderWithProviders(<ASaaPsPage />);
+      const ctaButton = screen.getByText(/schedule a discovery call/i);
+      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=consulting');
+    });
+
+    it('verifies QA service routes to qa inquiry', () => {
+      renderWithProviders(<QAPage />);
+      const ctaButton = screen.getByText(/schedule an audit call/i);
+      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=qa');
+    });
+
+    it('verifies Coaching mentorship service routes to mentorship inquiry', () => {
+      renderWithProviders(<CoachingPage />);
+      const ctaButton = screen.getByText(/schedule a coaching conversation/i);
+      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=mentorship');
+    });
+
+    it('verifies SOTC service routes to sotc inquiry', () => {
+      renderWithProviders(<SOTCPage />);
+      const ctaButton = screen.getByText(/join the interest list/i);
+      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=sotc');
+    });
+
+    it('verifies products hub navigation to product pages', async () => {
+      const user = userEvent.setup();
+      renderWithProviders(<ProductsHub />);
+
+      // Clicking product cards should navigate to detail pages
+      const wcagBtn = screen.getByTestId('hub-card-btn-wcag');
+      await user.click(wcagBtn);
+      expect(mockNavigate).toHaveBeenCalledWith('/products/wcag-series');
+
+      const ossBtn = screen.getByTestId('hub-card-btn-oss');
+      await user.click(ossBtn);
+      expect(mockNavigate).toHaveBeenCalledWith('/products/oss-asaaps');
+
+      const cccsBtn = screen.getByTestId('hub-card-btn-cccs');
+      await user.click(cccsBtn);
+      expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
+    });
+
+    it('verifies both Calendly and form options available on Contact page', () => {
+      renderWithProviders(<Contact />);
+
+      // Both conversion pathways should be available
+      const calendlyBtn = screen.getByTestId('calendly-button');
+      expect(calendlyBtn).toBeInTheDocument();
+
+      const contactForm = screen.getByTestId('contact-form');
+      expect(contactForm).toBeInTheDocument();
+    });
+
+    it('verifies inquiry param mapping works for consulting', () => {
+      renderWithProviders(<Contact />, { route: '/contact?inquiry=consulting' });
+      const inquirySelect = screen.getByTestId('contact-inquiry') as HTMLSelectElement;
+      expect(inquirySelect.value).toBe('Consulting');
+    });
+
+    it('verifies inquiry param mapping works for mentorship', () => {
+      renderWithProviders(<Contact />, { route: '/contact?inquiry=mentorship' });
+      const inquirySelect = screen.getByTestId('contact-inquiry') as HTMLSelectElement;
+      expect(inquirySelect.value).toBe('Mentorship');
+    });
+
+    it('verifies inquiry param mapping works for qa', () => {
+      renderWithProviders(<Contact />, { route: '/contact?inquiry=qa' });
+      const inquirySelect = screen.getByTestId('contact-inquiry') as HTMLSelectElement;
+      expect(inquirySelect.value).toBe('Quality Assurance');
+    });
+
+    it('verifies inquiry param mapping works for general', () => {
+      renderWithProviders(<Contact />, { route: '/contact?inquiry=general' });
+      const inquirySelect = screen.getByTestId('contact-inquiry') as HTMLSelectElement;
+      expect(inquirySelect.value).toBe('General Inquiry');
+    });
+
+    it('verifies inquiry param mapping works for other', () => {
+      renderWithProviders(<Contact />, { route: '/contact?inquiry=other' });
+      const inquirySelect = screen.getByTestId('contact-inquiry') as HTMLSelectElement;
+      expect(inquirySelect.value).toBe('Other');
     });
   });
 });
