@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 import { HomeHeaderRow } from '../../components/Header/Header';
 import Metadata from '../../components/Metadata/Metadata';
 import metadata from '../../App/meta';
-import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
 
 const splashRowStyle = {
   backgroundImage: SPLASH_BG,
@@ -94,28 +93,7 @@ export const Home = () => {
           </Col>
         </Row>
 
-        {/* CTA */}
-        <Row className="cta-row">
-          <Col xs={12} md={{ span: 8, offset: 2 }} className="text-center">
-            <h3>{CTA_HEADER}</h3>
-            <p>{CTA_P1}</p>
-            <CalendlyButton label="Schedule a Discovery Call" />
-            <p className="mt-3">{CTA_P2}</p>
-            <Button
-              variant="outline-primary"
-              size="lg"
-              href="/contact"
-              onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                e.preventDefault();
-                navigate('/contact');
-              }}
-            >
-              Send us a message
-            </Button>
-          </Col>
-        </Row>
-
-        {/* SERVICES */}
+        {/* CTA + SERVICES */}
         <Services />
 
         {/* WHO */}

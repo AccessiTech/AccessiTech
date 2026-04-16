@@ -1,6 +1,8 @@
 import { Button, Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import CalendlyButton from '../CalendlyButton/CalendlyButton';
+import { CTA_HEADER, CTA_P1, CTA_P2 } from '../../pages/Home/Home';
 import {
   PURPOSE_PIC_SIZES,
   PURPOSE_PIC_SRCSET,
@@ -11,7 +13,6 @@ import './Services.scss';
 export const CLICK_TO_COPY = 'click to copy link';
 export const COPY_SUCCESS_MESSAGE = 'Copied!';
 export const COPY_FAIL_MESSAGE = 'Unable to copy to clipboard';
-export const SERVICES_HEADER = 'Services';
 export const PURPOSE_PIC_ALT = 'Image Credit: Urupong from Ghetty Images';
 
 // CONSULTING
@@ -45,14 +46,33 @@ const Services = () => {
   return (
     <section id="services-row" data-testid="services">
       <Row className="services-header-row">
-        <Col xs={12} md={{ span: 5, offset: 1 }} xl={{ span: 6, offset: 1 }}>
+        <Col
+          xs={12}
+          md={{ span: 5, offset: 1 }}
+          xl={{ span: 6, offset: 1 }}
+          className="text-center text-md-start"
+        >
           <SectionHeader
-            title={SERVICES_HEADER}
+            title={CTA_HEADER}
             id="services"
+            use="h2"
             linkTitle={CLICK_TO_COPY}
             successText={COPY_SUCCESS_MESSAGE}
             failText={COPY_FAIL_MESSAGE}
           />
+          <p>{CTA_P1}</p>
+          <CalendlyButton label="Schedule a Discovery Call" />
+          <p className="mt-3">{CTA_P2}</p>
+          <Button
+            variant="outline-primary"
+            size="lg"
+            onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+              e.preventDefault();
+              navigate('/contact');
+            }}
+          >
+            Send us a message
+          </Button>
         </Col>
         <Col
           className="purpose-image"

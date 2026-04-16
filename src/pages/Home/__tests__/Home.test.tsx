@@ -26,7 +26,6 @@ describe('Home', () => {
     TAGLINE: string,
     WHO_HEADER: string,
     WHY_HEADER: string,
-    CTA_HEADER: string,
     PRODUCTS_HEADER: string,
     CONTACT_HEADER: string;
 
@@ -37,7 +36,6 @@ describe('Home', () => {
     TAGLINE = mod.TAGLINE;
     WHO_HEADER = mod.WHO_HEADER;
     WHY_HEADER = mod.WHY_HEADER;
-    CTA_HEADER = mod.CTA_HEADER;
     PRODUCTS_HEADER = mod.PRODUCTS_HEADER;
     CONTACT_HEADER = mod.CONTACT_HEADER;
     mockNavigate.mockClear();
@@ -48,11 +46,10 @@ describe('Home', () => {
     expect(screen.getByText(TAGLINE)).toBeInTheDocument();
   });
 
-  it('renders WHO, WHY, CTA, and Contact sections', () => {
+  it('renders WHO, WHY, and Contact sections', () => {
     renderWithProviders(<Home />);
     expect(screen.getByText(WHO_HEADER)).toBeInTheDocument();
     expect(screen.getByText(WHY_HEADER)).toBeInTheDocument();
-    expect(screen.getByText(CTA_HEADER)).toBeInTheDocument();
     expect(screen.getByText(CONTACT_HEADER)).toBeInTheDocument();
   });
 
@@ -74,14 +71,6 @@ describe('Home', () => {
     expect(screen.getByTestId('product-card-btn-oss')).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-cccs')).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-blog')).toBeInTheDocument();
-  });
-
-  it('renders CTA section with Calendly and contact buttons', () => {
-    renderWithProviders(<Home />);
-    expect(screen.getByText(CTA_HEADER)).toBeInTheDocument();
-    // CalendlyButton renders as <a role="button">
-    expect(screen.getByTestId('calendly-button')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /send us a message/i })).toBeInTheDocument();
   });
 
   it('renders Contact section with form link', () => {
@@ -110,12 +99,6 @@ describe('Home', () => {
       renderWithProviders(<Home />);
       fireEvent.click(screen.getByTestId('product-card-btn-blog'));
       expect(mockNavigate).toHaveBeenCalledWith('/blog');
-    });
-    it('navigates to /contact from CTA section button', () => {
-      renderWithProviders(<Home />);
-      const btn = screen.getByRole('button', { name: /send us a message/i });
-      fireEvent.click(btn);
-      expect(mockNavigate).toHaveBeenCalledWith('/contact');
     });
     it('navigates to /contact from Contact section button', () => {
       renderWithProviders(<Home />);

@@ -9,7 +9,6 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
 import Services from '../Services';
 import {
-  SERVICES_HEADER,
   PURPOSE_PIC_ALT,
   CONSULTING_HEADER,
   ASAAPS_HEADER,
@@ -21,6 +20,7 @@ import {
   OPENCLASSROOMS_HEADER,
   SOTC_HEADER,
 } from '../Services';
+import { CTA_HEADER, CTA_P1, CTA_P2 } from '../../../pages/Home/Home';
 
 expect.extend(toHaveNoViolations);
 
@@ -29,12 +29,20 @@ describe('Services', () => {
     mockNavigate.mockClear();
   });
 
-  it('renders the main section and header', () => {
+  it('renders the main section and CTA header', () => {
     render(<Services />);
     // Check for the section by id
     expect(document.getElementById('services-row')).toBeInTheDocument();
-    // Check for the main Services heading (h3)
-    expect(screen.getByRole('heading', { name: SERVICES_HEADER, level: 3 })).toBeInTheDocument();
+    // Check for the CTA heading (h2)
+    expect(screen.getByRole('heading', { name: CTA_HEADER, level: 2 })).toBeInTheDocument();
+  });
+
+  it('renders CTA content with Calendly and message buttons', () => {
+    render(<Services />);
+    expect(screen.getByText(CTA_P1)).toBeInTheDocument();
+    expect(screen.getByText(CTA_P2)).toBeInTheDocument();
+    expect(screen.getByTestId('calendly-button')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /send us a message/i })).toBeInTheDocument();
   });
 
   it('renders the purpose image with correct alt text', () => {
@@ -71,22 +79,30 @@ describe('Services', () => {
 
   it('renders two discovery call CTAs', () => {
     render(<Services />);
+    // CalendlyButton + 2 navigate() CTAs = 3 total"Schedule a Discovery Call" buttons
     const buttons = screen.getAllByRole('button', { name: /schedule a discovery call/i });
-    expect(buttons).toHaveLength(2);
+    expect(buttons).toHaveLength(3);
   });
 
   describe('navigation', () => {
+    it('navigates to /contact from CTA Send us a message button', () => {
+      render(<Services />);
+      const btn = screen.getByRole('button', { name: /send us a message/i });
+      fireEvent.click(btn);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact');
+    });
+
     it('navigates to /contact?inquiry=consulting from Consulting CTA', () => {
       render(<Services />);
       const buttons = screen.getAllByRole('button', { name: /schedule a discovery call/i });
-      fireEvent.click(buttons[0]); // First button is Consulting
+      fireEvent.click(buttons[1]); // Second button is Consulting (index 0 is CalendlyButton)
       expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=consulting');
     });
 
     it('navigates to /contact?inquiry=mentorship from Mentorship CTA', () => {
       render(<Services />);
       const buttons = screen.getAllByRole('button', { name: /schedule a discovery call/i });
-      fireEvent.click(buttons[1]); // Second button is Mentorship
+      fireEvent.click(buttons[2]); // Third button is Mentorship (index 0 is CalendlyButton)
       expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=mentorship');
     });
   });
