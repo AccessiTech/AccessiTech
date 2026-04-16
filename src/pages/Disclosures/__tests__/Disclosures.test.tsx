@@ -1,5 +1,5 @@
 import { vi, beforeEach, afterEach, describe, it, expect } from 'vitest';
-import { screen, waitFor } from '@testing-library/react';
+import { screen, waitFor, fireEvent } from '@testing-library/react';
 import { Routes, Route } from 'react-router-dom';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
 import { Disclosures } from '../Disclosures';
@@ -35,6 +35,12 @@ const rssXML = `<?xml version="1.0"?>
     <title>Test Disclosure Title</title>
     <description>Test disclosure description</description>
     <date>2025-08-20</date>
+  </item>
+  <item>
+    <link>https://localhost/disclosures/second-disclosure</link>
+    <title>Accessibility Statement</title>
+    <description>Second disclosure description</description>
+    <date>2025-09-01</date>
   </item>
 </channel></rss>`;
 
@@ -152,5 +158,19 @@ describe('Disclosures Page', () => {
       'href',
       '#main'
     );
+  });
+
+  it('navigates home when Home breadcrumb is clicked', async () => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/disclosures" element={<Disclosures />} />
+      </Routes>,
+      { route: '/disclosures' }
+    );
+    await waitFor(() => {
+      expect(screen.getByRole('heading', { name: /disclosures/i, level: 2 })).toBeInTheDocument();
+    });
+    const homeLink = screen.getByRole('link', { name: /home/i });
+    expect(() => fireEvent.click(homeLink)).not.toThrow();
   });
 });

@@ -2,6 +2,9 @@ import { vi } from 'vitest';
 import {
   blogInitialState,
   setBlogEntry,
+  setFilter,
+  clearFilters,
+  useFilters,
   BlogState,
   blogSliceName,
   blogSlice,
@@ -31,6 +34,40 @@ describe('blog store', () => {
 
   it('should have correct slice name', () => {
     expect(blogSliceName).toBe('blog');
+  });
+
+  it('should handle setFilter with category', () => {
+    const state = blogSlice.reducer(undefined, setFilter({ category: 'Accessibility' }));
+    expect(state.filters.category).toBe('Accessibility');
+  });
+
+  it('should handle setFilter with tags', () => {
+    const state = blogSlice.reducer(undefined, setFilter({ tags: ['react', 'a11y'] }));
+    expect(state.filters.tags).toEqual(['react', 'a11y']);
+  });
+
+  it('should handle setFilter with series', () => {
+    const state = blogSlice.reducer(undefined, setFilter({ series: 'WCAG Series' }));
+    expect(state.filters.series).toBe('WCAG Series');
+  });
+
+  it('should handle setFilter merging partial fields', () => {
+    const initial = {
+      ...blogInitialState,
+      filters: { category: 'existing', tags: ['a'], series: '' },
+    };
+    const state = blogSlice.reducer(initial, setFilter({ category: 'new' }));
+    expect(state.filters.category).toBe('new');
+    expect(state.filters.tags).toEqual(['a']); // preserved
+  });
+
+  it('should handle clearFilters resetting all filters', () => {
+    const initial = {
+      ...blogInitialState,
+      filters: { category: 'Accessibility', tags: ['react'], series: 'WCAG Series' },
+    };
+    const state = blogSlice.reducer(initial, clearFilters());
+    expect(state.filters).toEqual({ category: '', tags: [], series: '' });
   });
 });
 
@@ -113,6 +150,273 @@ describe('blog hooks/selectors', () => {
     expect(result.current[0].title).toBe('A');
     expect(result.current[1].title).toBe('B');
   });
+
+  it('useBlogEntriesArray filters by category', () => {
+    const store = setupStore({
+      blog: {
+        ...blogInitialState,
+        entries: {
+          a: {
+            id: 'a',
+            title: 'A',
+            content: '',
+            date: '2020-01-01',
+            loaded: true,
+            pathname: 'blog',
+            category: 'tech',
+            tags: [],
+          },
+          b: {
+            id: 'b',
+            title: 'B',
+            content: '',
+            date: '2020-01-02',
+            loaded: true,
+            pathname: 'blog',
+            category: 'design',
+            tags: [],
+          },
+        },
+        filters: { category: 'tech', tags: [], series: '' },
+      },
+    });
+    const { result } = renderHook(() => useBlogEntriesArray({ pathname: 'blog' }), {
+      wrapper: makeWrapper(store),
+    });
+    expect(result.current).toHaveLength(1);
+    expect(result.current[0].category).toBe('tech');
+  });
+
+  it('useBlogEntriesArray filters by tag', () => {
+    const store = setupStore({
+      blog: {
+        ...blogInitialState,
+        entries: {
+          a: {
+            id: 'a',
+            title: 'A',
+            content: '',
+            date: '2020-01-01',
+            loaded: true,
+            pathname: 'blog',
+            tags: ['react'],
+          },
+          b: {
+            id: 'b',
+            title: 'B',
+            content: '',
+            date: '2020-01-02',
+            loaded: true,
+            pathname: 'blog',
+            tags: ['vue'],
+          },
+        },
+        filters: { category: '', tags: ['react'], series: '' },
+      },
+    });
+    const { result } = renderHook(() => useBlogEntriesArray({ pathname: 'blog' }), {
+      wrapper: makeWrapper(store),
+    });
+    expect(result.current).toHaveLength(1);
+    expect(result.current[0].tags).toContain('react');
+  });
+
+  it('useBlogEntriesArray filters by series', () => {
+    const store = setupStore({
+      blog: {
+        ...blogInitialState,
+        entries: {
+          a: {
+            id: 'a',
+            title: 'A',
+            content: '',
+            date: '2020-01-01',
+            loaded: true,
+            pathname: 'blog',
+            series: 'WCAG 101',
+            tags: [],
+          },
+          b: {
+            id: 'b',
+            title: 'B',
+            content: '',
+            date: '2020-01-02',
+            loaded: true,
+            pathname: 'blog',
+            series: 'Other Series',
+            tags: [],
+          },
+        },
+        filters: { category: '', tags: [], series: 'WCAG 101' },
+      },
+    });
+    const { result } = renderHook(() => useBlogEntriesArray({ pathname: 'blog' }), {
+      wrapper: makeWrapper(store),
+    });
+    expect(result.current).toHaveLength(1);
+    expect(result.current[0].series).toBe('WCAG 101');
+  });
+
+  it('useBlogEntriesArray excludes different pathname entries', () => {
+    const store = setupStore({
+      blog: {
+        ...blogInitialState,
+        entries: {
+          a: {
+            id: 'a',
+            title: 'A',
+            content: '',
+            date: '2020-01-01',
+            loaded: true,
+            pathname: 'wcag',
+            tags: [],
+          },
+        },
+      },
+    });
+    const { result } = renderHook(() => useBlogEntriesArray({ pathname: 'blog' }), {
+      wrapper: makeWrapper(store),
+    });
+    expect(result.current).toHaveLength(0);
+  });
+
+  it('useFilters returns current filters', () => {
+    const store = setupStore({
+      blog: {
+        ...blogInitialState,
+        filters: { category: 'tech', tags: ['react'], series: 'S1' },
+      },
+    });
+    const { result } = renderHook(() => useFilters(), { wrapper: makeWrapper(store) });
+    expect(result.current.category).toBe('tech');
+    expect(result.current.tags).toEqual(['react']);
+    expect(result.current.series).toBe('S1');
+  });
+
+  it('useBlogEntriesArray sorts by DESC (title descending)', () => {
+    const entries = {
+      '1': {
+        id: '1',
+        title: 'Apple',
+        content: '',
+        date: '2025-01-01',
+        loaded: true,
+        pathname: 'blog',
+      },
+      '2': {
+        id: '2',
+        title: 'Zebra',
+        content: '',
+        date: '2025-02-01',
+        loaded: true,
+        pathname: 'blog',
+      },
+    };
+    const store = setupStore({ blog: { ...blogInitialState, entries } });
+    const { result } = renderHook(
+      () => useBlogEntriesArray({ order: BlogOrder.DESC, pathname: 'blog' }),
+      { wrapper: makeWrapper(store) }
+    );
+    expect(result.current[0].title).toBe('Zebra');
+    expect(result.current[1].title).toBe('Apple');
+  });
+
+  it('useBlogEntriesArray sorts by DATE_ASC (date ascending)', () => {
+    const entries = {
+      '1': {
+        id: '1',
+        title: 'Newer',
+        content: '',
+        date: '2025-09-01',
+        loaded: true,
+        pathname: 'blog',
+      },
+      '2': {
+        id: '2',
+        title: 'Older',
+        content: '',
+        date: '2024-01-01',
+        loaded: true,
+        pathname: 'blog',
+      },
+    };
+    const store = setupStore({ blog: { ...blogInitialState, entries } });
+    const { result } = renderHook(
+      () => useBlogEntriesArray({ order: BlogOrder.DATE_ASC, pathname: 'blog' }),
+      { wrapper: makeWrapper(store) }
+    );
+    expect(result.current[0].title).toBe('Older');
+    expect(result.current[1].title).toBe('Newer');
+  });
+
+  it('useBlogEntriesArray sorts by DATE_DESC (date descending)', () => {
+    const entries = {
+      '1': {
+        id: '1',
+        title: 'Older',
+        content: '',
+        date: '2024-01-01',
+        loaded: true,
+        pathname: 'blog',
+      },
+      '2': {
+        id: '2',
+        title: 'Newer',
+        content: '',
+        date: '2025-09-01',
+        loaded: true,
+        pathname: 'blog',
+      },
+    };
+    const store = setupStore({ blog: { ...blogInitialState, entries } });
+    const { result } = renderHook(
+      () => useBlogEntriesArray({ order: BlogOrder.DATE_DESC, pathname: 'blog' }),
+      { wrapper: makeWrapper(store) }
+    );
+    expect(result.current[0].title).toBe('Newer');
+    expect(result.current[1].title).toBe('Older');
+  });
+
+  it('useBlogEntriesArray sorts by NATURAL (natural guideline sort)', () => {
+    const entries = {
+      '1': {
+        id: '1',
+        title: '1.4.10 Reflow',
+        content: '',
+        date: '2025-01-01',
+        loaded: true,
+        pathname: 'wcag',
+      },
+      '2': {
+        id: '2',
+        title: '1.4.2 Audio Control',
+        content: '',
+        date: '2025-01-02',
+        loaded: true,
+        pathname: 'wcag',
+      },
+    };
+    const store = setupStore({ blog: { ...blogInitialState, entries } });
+    const { result } = renderHook(
+      () => useBlogEntriesArray({ order: BlogOrder.NATURAL, pathname: 'wcag' }),
+      { wrapper: makeWrapper(store) }
+    );
+    expect(result.current[0].title).toBe('1.4.2 Audio Control');
+    expect(result.current[1].title).toBe('1.4.10 Reflow');
+  });
+
+  it('useBlogEntriesArray returns 0 for unknown order', () => {
+    const entries = {
+      '1': { id: '1', title: 'A', content: '', date: '2025-01-01', loaded: true, pathname: 'blog' },
+      '2': { id: '2', title: 'B', content: '', date: '2025-02-01', loaded: true, pathname: 'blog' },
+    };
+    const store = setupStore({ blog: { ...blogInitialState, entries } });
+    const { result } = renderHook(
+      () => useBlogEntriesArray({ order: 'UNKNOWN' as any, pathname: 'blog' }),
+      { wrapper: makeWrapper(store) }
+    );
+    expect(result.current).toHaveLength(2);
+  });
 });
 
 import { getBlogEntry } from '../blog';
@@ -120,8 +424,8 @@ import { getBlogEntry } from '../blog';
 // Correct path for getMetaData mock
 import { getMetaData } from '../../settings/utils';
 
-vi.mock('../../settings/utils', () => {
-  const original = vi.importActual('../../settings/utils');
+vi.mock('../../settings/utils', async () => {
+  const original = await vi.importActual('../../settings/utils');
   return {
     ...original,
     getMetaData: vi.fn(),

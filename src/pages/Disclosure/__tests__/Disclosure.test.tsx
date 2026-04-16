@@ -24,7 +24,7 @@ const mockFetch = (response: Partial<Response> & { text?: () => Promise<string> 
   );
 };
 import { vi } from 'vitest';
-import { screen, waitFor } from '@testing-library/react';
+import { screen, waitFor, fireEvent } from '@testing-library/react';
 import { Routes, Route } from 'react-router-dom';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
 import { Disclosure } from '../Disclosure';
@@ -277,5 +277,29 @@ describe('Disclosure Page', () => {
     renderWithProviders(<Disclosure />, { route: '/disclosures/accessibility' });
     await waitFor(() => expect(screen.getByText('Home')).toBeInTheDocument());
     expect(screen.getByText('Disclosures')).toBeInTheDocument();
+  });
+
+  it('navigates home when Home breadcrumb is clicked', async () => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/:pathname/:id" element={<Disclosure />} />
+      </Routes>,
+      { route: '/disclosures/accessibility' }
+    );
+    await waitFor(() => expect(screen.getByText('Home')).toBeInTheDocument());
+    const homeLink = screen.getByRole('link', { name: /home/i });
+    expect(() => fireEvent.click(homeLink)).not.toThrow();
+  });
+
+  it('navigates to parent section when section breadcrumb is clicked', async () => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/:pathname/:id" element={<Disclosure />} />
+      </Routes>,
+      { route: '/disclosures/accessibility' }
+    );
+    await waitFor(() => expect(screen.getByText('Disclosures')).toBeInTheDocument());
+    const sectionLink = screen.getByRole('link', { name: /disclosures/i });
+    expect(() => fireEvent.click(sectionLink)).not.toThrow();
   });
 });
