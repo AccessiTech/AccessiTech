@@ -70,7 +70,7 @@ a.skip-link {
   }
 
   p {
-    @include font-resize($paragraph-font-size);
+    @include font-resize($about-font-size);
   }
 }
 
@@ -79,7 +79,7 @@ a.skip-link {
   @include padding($main-section-padding 0);
 
   p {
-    @include font-resize($paragraph-font-size);
+    @include font-resize($about-font-size);
   }
 }
 
@@ -87,7 +87,7 @@ a.skip-link {
   @include padding($main-section-padding 0);
 
   p {
-    @include font-resize($paragraph-font-size);
+    @include font-resize($about-font-size);
   }
 }
 
@@ -100,7 +100,7 @@ a.skip-link {
     }
 
     p {
-      @include font-resize($paragraph-font-size);
+      @include font-resize($about-font-size);
     }
   }
 }
@@ -109,7 +109,7 @@ a.skip-link {
   @include padding($main-section-padding 0);
 
   p {
-    @include font-resize($paragraph-font-size);
+    @include font-resize($about-font-size);
   }
 }
 .simplified-view {
