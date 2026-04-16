@@ -24,22 +24,22 @@ expect.extend(toHaveNoViolations);
 describe('Home', () => {
   let Home: React.FC,
     TAGLINE: string,
-    WHO_P1: string,
-    WHY_P1: string,
+    WHO_HEADER: string,
+    WHY_HEADER: string,
+    CTA_HEADER: string,
     PRODUCTS_HEADER: string,
-    WORK_WITH_US_HEADER: string,
-    WORK_WITH_US_P1: string;
+    CONTACT_HEADER: string;
 
   beforeEach(async () => {
     vi.resetModules();
     const mod = await import('../Home');
     Home = mod.default;
     TAGLINE = mod.TAGLINE;
-    WHO_P1 = mod.WHO_P1;
-    WHY_P1 = mod.WHY_P1;
+    WHO_HEADER = mod.WHO_HEADER;
+    WHY_HEADER = mod.WHY_HEADER;
+    CTA_HEADER = mod.CTA_HEADER;
     PRODUCTS_HEADER = mod.PRODUCTS_HEADER;
-    WORK_WITH_US_HEADER = mod.WORK_WITH_US_HEADER;
-    WORK_WITH_US_P1 = mod.WORK_WITH_US_P1;
+    CONTACT_HEADER = mod.CONTACT_HEADER;
     mockNavigate.mockClear();
   });
 
@@ -48,10 +48,12 @@ describe('Home', () => {
     expect(screen.getByText(TAGLINE)).toBeInTheDocument();
   });
 
-  it('renders WHO and WHY sections', () => {
+  it('renders WHO, WHY, CTA, and Contact sections', () => {
     renderWithProviders(<Home />);
-    expect(screen.getByText(WHO_P1)).toBeInTheDocument();
-    expect(screen.getByText(WHY_P1)).toBeInTheDocument();
+    expect(screen.getByText(WHO_HEADER)).toBeInTheDocument();
+    expect(screen.getByText(WHY_HEADER)).toBeInTheDocument();
+    expect(screen.getByText(CTA_HEADER)).toBeInTheDocument();
+    expect(screen.getByText(CONTACT_HEADER)).toBeInTheDocument();
   });
 
   it('renders SplashSocials, Metadata, and Services', () => {
@@ -65,19 +67,27 @@ describe('Home', () => {
     expect(screen.getByRole('main')).toBeInTheDocument();
   });
 
-  it('renders Products section with three product card buttons', () => {
+  it('renders Products section with four product card buttons', () => {
     renderWithProviders(<Home />);
     expect(screen.getByText(PRODUCTS_HEADER)).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-wcag')).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-oss')).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-cccs')).toBeInTheDocument();
+    expect(screen.getByTestId('product-card-btn-blog')).toBeInTheDocument();
   });
 
-  it('renders Work With Us section', () => {
+  it('renders CTA section with Calendly and contact buttons', () => {
     renderWithProviders(<Home />);
-    expect(screen.getByText(WORK_WITH_US_HEADER)).toBeInTheDocument();
-    expect(screen.getByText(WORK_WITH_US_P1)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /get in touch/i })).toBeInTheDocument();
+    expect(screen.getByText(CTA_HEADER)).toBeInTheDocument();
+    // CalendlyButton renders as <a role="button">
+    expect(screen.getByTestId('calendly-button')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /send us a message/i })).toBeInTheDocument();
+  });
+
+  it('renders Contact section with form link', () => {
+    renderWithProviders(<Home />);
+    expect(screen.getByText(CONTACT_HEADER)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /contact form/i })).toBeInTheDocument();
   });
 
   describe('navigation', () => {
@@ -96,9 +106,20 @@ describe('Home', () => {
       fireEvent.click(screen.getByTestId('product-card-btn-cccs'));
       expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
     });
-    it('navigates to /contact from Work With Us', () => {
+    it('navigates to /blog from Blog product button', () => {
       renderWithProviders(<Home />);
-      const btn = screen.getByRole('button', { name: /get in touch/i });
+      fireEvent.click(screen.getByTestId('product-card-btn-blog'));
+      expect(mockNavigate).toHaveBeenCalledWith('/blog');
+    });
+    it('navigates to /contact from CTA section button', () => {
+      renderWithProviders(<Home />);
+      const btn = screen.getByRole('button', { name: /send us a message/i });
+      fireEvent.click(btn);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact');
+    });
+    it('navigates to /contact from Contact section button', () => {
+      renderWithProviders(<Home />);
+      const btn = screen.getByRole('button', { name: /contact form/i });
       fireEvent.click(btn);
       expect(mockNavigate).toHaveBeenCalledWith('/contact');
     });

@@ -1,11 +1,36 @@
-import { render, screen } from '@testing-library/react';
+import { vi } from 'vitest';
+const mockNavigate = vi.fn();
+vi.mock('react-router-dom', async () => {
+  const actual = await vi.importActual('react-router-dom');
+  return { ...actual, useNavigate: () => mockNavigate };
+});
+
+import { render, screen, fireEvent } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
 import Services from '../Services';
-import { SERVICES_HEADER, SERVICES_P1, SERVICES_P2, PURPOSE_PIC_ALT } from '../Services';
+import {
+  SERVICES_HEADER,
+  SERVICES_P1,
+  SERVICES_P2,
+  PURPOSE_PIC_ALT,
+  CONSULTING_HEADER,
+  ASAAPS_HEADER,
+  AI_INTEGRATION_HEADER,
+  QA_HEADER,
+  MENTORSHIP_HEADER,
+  CCCS_HEADER,
+  COACHING_HEADER,
+  OPENCLASSROOMS_HEADER,
+  SOTC_HEADER,
+} from '../Services';
 
 expect.extend(toHaveNoViolations);
 
 describe('Services', () => {
+  beforeEach(() => {
+    mockNavigate.mockClear();
+  });
+
   it('renders the main section and header', () => {
     render(<Services />);
     // Check for the section by id
@@ -27,17 +52,51 @@ describe('Services', () => {
     expect(img).toHaveClass('purpose-picture');
   });
 
-  it('renders all key service sections', () => {
+  it('renders Consulting section with three sub-items', () => {
     render(<Services />);
-    // Use heading queries to avoid ambiguity
-    expect(screen.getByRole('heading', { name: /consultation/i, level: 4 })).toBeInTheDocument();
+    // Consulting h3
+    expect(screen.getByRole('heading', { name: CONSULTING_HEADER, level: 3 })).toBeInTheDocument();
+    // Three h4 sub-items
+    expect(screen.getByRole('heading', { name: ASAAPS_HEADER, level: 4 })).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: /quality assurance/i, level: 4 })
+      screen.getByRole('heading', { name: AI_INTEGRATION_HEADER, level: 4 })
     ).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /web mentorship/i, level: 4 })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: QA_HEADER, level: 4 })).toBeInTheDocument();
+  });
+
+  it('renders Mentorship section with four sub-items', () => {
+    render(<Services />);
+    // Mentorship h3
+    expect(screen.getByRole('heading', { name: MENTORSHIP_HEADER, level: 3 })).toBeInTheDocument();
+    // Four h4 sub-items
+    expect(screen.getByRole('heading', { name: CCCS_HEADER, level: 4 })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: COACHING_HEADER, level: 4 })).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: /software production/i, level: 4 })
+      screen.getByRole('heading', { name: OPENCLASSROOMS_HEADER, level: 4 })
     ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: SOTC_HEADER, level: 4 })).toBeInTheDocument();
+  });
+
+  it('renders two discovery call CTAs', () => {
+    render(<Services />);
+    const buttons = screen.getAllByRole('button', { name: /schedule a discovery call/i });
+    expect(buttons).toHaveLength(2);
+  });
+
+  describe('navigation', () => {
+    it('navigates to /contact?inquiry=consulting from Consulting CTA', () => {
+      render(<Services />);
+      const buttons = screen.getAllByRole('button', { name: /schedule a discovery call/i });
+      fireEvent.click(buttons[0]); // First button is Consulting
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=consulting');
+    });
+
+    it('navigates to /contact?inquiry=mentorship from Mentorship CTA', () => {
+      render(<Services />);
+      const buttons = screen.getAllByRole('button', { name: /schedule a discovery call/i });
+      fireEvent.click(buttons[1]); // Second button is Mentorship
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=mentorship');
+    });
   });
 
   it('has no basic accessibility violations', async () => {
