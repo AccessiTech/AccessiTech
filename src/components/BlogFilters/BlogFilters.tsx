@@ -1,7 +1,13 @@
 import { useDispatch } from 'react-redux';
 import { Button, ButtonGroup } from 'react-bootstrap';
-import { Blog, BlogOrder, clearFilters, setFilter, useBlogEntriesArray, useFilters } from '../../store/blog';
-import './BlogFilters.scss';
+import {
+  Blog,
+  BlogOrder,
+  clearFilters,
+  setFilter,
+  useBlogEntriesArray,
+  useFilters,
+} from '../../store/blog';
 
 export interface BlogFiltersProps {
   pathname: string;
@@ -16,9 +22,7 @@ const BlogFilters: React.FC<BlogFiltersProps> = ({ pathname }) => {
     new Set(allEntries.map((e: Blog) => e.category).filter(Boolean))
   ) as string[];
 
-  const allTags = Array.from(
-    new Set(allEntries.flatMap((e: Blog) => e.tags || []))
-  ) as string[];
+  const allTags = Array.from(new Set(allEntries.flatMap((e: Blog) => e.tags || []))) as string[];
 
   const allSeries = Array.from(
     new Set(allEntries.map((e: Blog) => e.series).filter(Boolean))
@@ -47,11 +51,13 @@ const BlogFilters: React.FC<BlogFiltersProps> = ({ pathname }) => {
   }
 
   return (
-    <div className="blog-filters" aria-label="Blog filters">
+    <div className="mb-3" aria-label="Blog filters">
       {categories.length > 0 && (
-        <div className="blog-filters__section">
-          <span className="blog-filters__label">Category:</span>
-          <ButtonGroup className="blog-filters__group" aria-label="Filter by category">
+        <div className="d-flex align-items-center flex-wrap gap-2 mb-2">
+          <span className="fw-semibold" style={{ fontSize: '0.875rem', minWidth: '4rem' }}>
+            Category:
+          </span>
+          <ButtonGroup className="flex-wrap" aria-label="Filter by category">
             <Button
               variant={selectedCategory === '' ? 'primary' : 'outline-primary'}
               size="sm"
@@ -78,9 +84,11 @@ const BlogFilters: React.FC<BlogFiltersProps> = ({ pathname }) => {
       )}
 
       {allSeries.length > 0 && (
-        <div className="blog-filters__section">
-          <span className="blog-filters__label">Series:</span>
-          <ButtonGroup className="blog-filters__group" aria-label="Filter by series">
+        <div className="d-flex align-items-center flex-wrap gap-2 mb-2">
+          <span className="fw-semibold" style={{ fontSize: '0.875rem', minWidth: '4rem' }}>
+            Series:
+          </span>
+          <ButtonGroup className="flex-wrap" aria-label="Filter by series">
             {allSeries.map(s => (
               <Button
                 key={s}
@@ -98,15 +106,17 @@ const BlogFilters: React.FC<BlogFiltersProps> = ({ pathname }) => {
       )}
 
       {allTags.length > 0 && (
-        <div className="blog-filters__section">
-          <span className="blog-filters__label">Tags:</span>
-          <div className="blog-filters__tags">
+        <div className="d-flex align-items-center flex-wrap gap-2 mb-2">
+          <span className="fw-semibold" style={{ fontSize: '0.875rem', minWidth: '4rem' }}>
+            Tags:
+          </span>
+          <div className="d-flex flex-wrap gap-1">
             {allTags.map(tag => (
               <Button
                 key={tag}
                 variant={selectedTags.includes(tag) ? 'dark' : 'outline-dark'}
                 size="sm"
-                className="blog-filters__tag"
+                style={{ borderRadius: '1rem', fontSize: '0.8rem' }}
                 aria-pressed={selectedTags.includes(tag)}
                 aria-label={`Filter by tag: ${tag}`}
                 onClick={() => handleTagClick(tag)}
@@ -119,11 +129,12 @@ const BlogFilters: React.FC<BlogFiltersProps> = ({ pathname }) => {
       )}
 
       {hasActiveFilter && (
-        <div className="blog-filters__section">
+        <div className="d-flex align-items-center flex-wrap gap-2 mb-2">
           <Button
             variant="link"
             size="sm"
-            className="blog-filters__clear"
+            className="p-0 text-decoration-underline"
+            style={{ fontSize: '0.8rem' }}
             onClick={() => dispatch(clearFilters())}
             aria-label="Clear all filters"
           >
