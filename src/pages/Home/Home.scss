@@ -68,6 +68,49 @@ a.skip-link {
   .btn {
     width: 100%;
   }
+
+  p {
+    @include font-resize($paragraph-font-size);
+  }
+}
+
+.why-row,
+.who-row {
+  @include padding($main-section-padding 0);
+
+  p {
+    @include font-resize($paragraph-font-size);
+  }
+}
+
+.products-overview-row {
+  @include padding($main-section-padding 0);
+
+  p {
+    @include font-resize($paragraph-font-size);
+  }
+}
+
+.products-row {
+  @include padding($main-section-padding 0);
+
+  .product-card {
+    h4 {
+      @include font-resize(1.25rem);
+    }
+
+    p {
+      @include font-resize($paragraph-font-size);
+    }
+  }
+}
+
+.contact-row {
+  @include padding($main-section-padding 0);
+
+  p {
+    @include font-resize($paragraph-font-size);
+  }
 }
 .simplified-view {
   .wcag-cta {
