@@ -11,7 +11,7 @@ vi.mock('../../components/SplashSocials/SplashSocials', () => ({
     return <div data-testid="splash-socials" />;
   },
 }));
-vi.mock('../../components/Services/Services', () => ({
+vi.mock('../../../components/Services/Services', () => ({
   __esModule: true,
   default: () => <div data-testid="services" />,
 }));
@@ -26,8 +26,7 @@ describe('Home', () => {
     TAGLINE: string,
     WHO_HEADER: string,
     WHY_HEADER: string,
-    PRODUCTS_HEADER: string,
-    CONTACT_HEADER: string;
+    PRODUCTS_HEADER: string;
 
   beforeEach(async () => {
     vi.resetModules();
@@ -37,7 +36,6 @@ describe('Home', () => {
     WHO_HEADER = mod.WHO_HEADER;
     WHY_HEADER = mod.WHY_HEADER;
     PRODUCTS_HEADER = mod.PRODUCTS_HEADER;
-    CONTACT_HEADER = mod.CONTACT_HEADER;
     mockNavigate.mockClear();
   });
 
@@ -46,11 +44,10 @@ describe('Home', () => {
     expect(screen.getByText(TAGLINE)).toBeInTheDocument();
   });
 
-  it('renders WHO, WHY, and Contact sections', () => {
+  it('renders WHO and WHY sections', () => {
     renderWithProviders(<Home />);
     expect(screen.getByText(WHO_HEADER)).toBeInTheDocument();
     expect(screen.getByText(WHY_HEADER)).toBeInTheDocument();
-    expect(screen.getByText(CONTACT_HEADER)).toBeInTheDocument();
   });
 
   it('renders SplashSocials, Metadata, and Services', () => {
@@ -64,19 +61,28 @@ describe('Home', () => {
     expect(screen.getByRole('main')).toBeInTheDocument();
   });
 
-  it('renders Products section with four product card buttons', () => {
+  it('renders Products section with three product card buttons', () => {
     renderWithProviders(<Home />);
     expect(screen.getByText(PRODUCTS_HEADER)).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-wcag')).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-oss')).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-cccs')).toBeInTheDocument();
-    expect(screen.getByTestId('product-card-btn-blog')).toBeInTheDocument();
   });
 
-  it('renders Contact section with form link', () => {
+  it('renders Explore all services button', () => {
     renderWithProviders(<Home />);
-    expect(screen.getByText(CONTACT_HEADER)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /contact form/i })).toBeInTheDocument();
+    expect(screen.getByTestId('explore-services-btn')).toBeInTheDocument();
+  });
+
+  it('renders contact section with Calendly and Contact Us buttons', () => {
+    renderWithProviders(<Home />);
+    expect(screen.getByTestId('calendly-button')).toBeInTheDocument();
+    expect(screen.getByTestId('contact-us-btn')).toBeInTheDocument();
+  });
+
+  it('renders Explore all products button', () => {
+    renderWithProviders(<Home />);
+    expect(screen.getByTestId('explore-products-btn')).toBeInTheDocument();
   });
 
   describe('navigation', () => {
@@ -95,16 +101,21 @@ describe('Home', () => {
       fireEvent.click(screen.getByTestId('product-card-btn-cccs'));
       expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
     });
-    it('navigates to /blog from Blog product button', () => {
+    it('navigates to /services from Explore all services button', () => {
       renderWithProviders(<Home />);
-      fireEvent.click(screen.getByTestId('product-card-btn-blog'));
-      expect(mockNavigate).toHaveBeenCalledWith('/blog');
+      fireEvent.click(screen.getByTestId('explore-services-btn'));
+      expect(mockNavigate).toHaveBeenCalledWith('/services');
     });
-    it('navigates to /contact from Contact section button', () => {
+    it('navigates to /contact from Contact Us button', () => {
       renderWithProviders(<Home />);
-      const btn = screen.getByRole('button', { name: /contact form/i });
-      fireEvent.click(btn);
+      fireEvent.click(screen.getByTestId('contact-us-btn'));
       expect(mockNavigate).toHaveBeenCalledWith('/contact');
+    });
+
+    it('navigates to /products from Explore all products button', () => {
+      renderWithProviders(<Home />);
+      fireEvent.click(screen.getByTestId('explore-products-btn'));
+      expect(mockNavigate).toHaveBeenCalledWith('/products');
     });
   });
 

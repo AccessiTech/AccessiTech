@@ -3,10 +3,10 @@ import Col from 'react-bootstrap/Col';
 import SplashSocials from '../../components/SplashSocials/SplashSocials';
 import { SPLASH_BG } from '../../settings/strings';
 import Services from '../../components/Services/Services';
+import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
 import './Home.scss';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { HomeHeaderRow } from '../../components/Header/Header';
 import Metadata from '../../components/Metadata/Metadata';
 import metadata from '../../App/meta';
 
@@ -71,8 +71,6 @@ export const Home = () => {
   const navigate = useNavigate();
   return (
     <>
-      <HomeHeaderRow />
-
       {/* Tagline */}
       <Row className="splash-row" style={splashRowStyle}>
         <Col>
@@ -94,7 +92,21 @@ export const Home = () => {
         </Row>
 
         {/* CTA + SERVICES */}
-        <Services />
+        <Services compact />
+
+        {/* EXPLORE ALL SERVICES */}
+        <Row className="services-explore-row">
+          <Col xs={12} className="text-center">
+            <Button
+              data-testid="explore-services-btn"
+              variant="secondary"
+              size="lg"
+              onClick={() => navigate('/services')}
+            >
+              Explore all services
+            </Button>
+          </Col>
+        </Row>
 
         {/* WHO */}
         <Row className="who-row">
@@ -151,35 +163,34 @@ export const Home = () => {
               Learn more
             </Button>
           </Col>
-          <Col xs={12} md={{ span: 2 }} className="product-card mt-5 mt-md-0">
-            <h4>{BLOG_TITLE}</h4>
-            <p>{BLOG_DESC}</p>
+        </Row>
+
+        {/* EXPLORE ALL PRODUCTS */}
+        <Row className="products-explore-row">
+          <Col xs={12} className="text-center">
             <Button
-              data-testid="product-card-btn-blog"
-              variant="outline-primary"
-              onClick={() => navigate('/blog')}
+              data-testid="explore-products-btn"
+              variant="secondary"
+              size="lg"
+              onClick={() => navigate('/products')}
             >
-              Learn more
+              Explore all products
             </Button>
           </Col>
         </Row>
 
         {/* CONTACT */}
         <Row className="contact-row">
-          <Col xs={12} md={{ span: 8, offset: 2 }} className="text-center">
-            <h3>{CONTACT_HEADER}</h3>
-            <p>{CONTACT_P1}</p>
-            <p>{CONTACT_P2}</p>
+          <Col xs={12} className="text-center">
+            <CalendlyButton />
             <Button
-              variant="primary"
+              data-testid="contact-us-btn"
+              variant="outline-primary"
               size="lg"
-              href="/contact"
-              onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                e.preventDefault();
-                navigate('/contact');
-              }}
+              className="ms-3"
+              onClick={() => navigate('/contact')}
             >
-              Contact Form
+              Contact Us
             </Button>
           </Col>
         </Row>

@@ -57,7 +57,7 @@
 
     &:hover,
     &:visited {
-      color: darken($pink, 15%);
+      color: $pink-dark;
       text-decoration: underline dotted $pink;
     }
   }

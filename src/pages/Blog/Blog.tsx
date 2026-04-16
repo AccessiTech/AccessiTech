@@ -8,7 +8,6 @@ import { getDDMMMYYYY } from '../../settings/utils';
 import Metadata from '../../components/Metadata/Metadata';
 import { metadata } from './meta';
 import { metadata as wcagMetadata } from './wcag-meta';
-import { HeaderRow } from '../../components/Header/Header';
 import BlogFilters from '../../components/BlogFilters/BlogFilters';
 
 interface FetchBlogEntriesProps {
@@ -89,7 +88,6 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
 
   return (
     <>
-      <HeaderRow />
       <Row className="breadcrumb-row blog">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <Metadata {...pageMetadata} />
@@ -125,11 +123,11 @@ export const Blog: BlogType = ({ hideDates, hideDescription, hideExcerpt }: Blog
                       {!hideDescription && <p>{blog.description}</p>}
                       {!hideExcerpt && <p>{blog.excerpt}</p>}
                     </Link>
-                    {blog.category && (
-                      <span className="blog-category">{blog.category}</span>
-                    )}
+                    {blog.category && <span className="blog-category">{blog.category}</span>}
                     {blog.tags?.map((tag: string) => (
-                      <span key={tag} className="blog-tag">{tag}</span>
+                      <span key={tag} className="blog-tag">
+                        {tag}
+                      </span>
                     ))}
                   </article>
                 ))}

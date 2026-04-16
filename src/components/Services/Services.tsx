@@ -26,6 +26,23 @@ export const AI_INTEGRATION_DESC = `Organizations adopting AI systems need gover
 export const QA_HEADER = 'Quality Assurance and Testing';
 export const QA_DESC = `WCAG compliance audits, UX usability testing, and QA engineering for accessible digital systems. We test against WCAG 2.2 AA standards, identify barriers before they reach production, and provide remediation roadmaps your developers can execute. Our audits include manual screen reader testing (NVDA, VoiceOver), automated accessibility scans (axe, WAVE), and plain-language documentation suitable for non-technical stakeholders.`;
 export const CONSULTING_CTA = 'Schedule a Discovery Call';
+export const ASAAPS_SHORT =
+  'Build accessible software from day one — WCAG 2.2 AA as a structural requirement, not a retrofit.';
+export const AI_INTEGRATION_SHORT =
+  'Deploy the EndogenAI governance framework for accountable, auditable AI systems without vendor lock-in.';
+export const QA_SHORT =
+  'WCAG 2.2 AA audits, manual screen reader testing (NVDA/VoiceOver), and developer-ready remediation roadmaps.';
+
+const COMPACT_AREAS = [
+  { id: 'asaaps', title: ASAAPS_HEADER, short: ASAAPS_SHORT, href: '/services/consulting/asaaps' },
+  {
+    id: 'ai-integration',
+    title: AI_INTEGRATION_HEADER,
+    short: AI_INTEGRATION_SHORT,
+    href: '/services/consulting/ai-integration',
+  },
+  { id: 'qa', title: QA_HEADER, short: QA_SHORT, href: '/services/consulting/qa' },
+];
 
 // MENTORSHIP
 export const MENTORSHIP_HEADER = 'Mentorship';
@@ -40,7 +57,7 @@ export const SOTC_HEADER = 'State of the Code (SOTC)';
 export const SOTC_DESC = `Coming soon—a community-driven initiative bringing Disabled Designers and Developers (DDDs) together to share knowledge, review open-source contributions, and build collective expertise in accessible systems design. Free to participate; open to all.`;
 export const MENTORSHIP_CTA = 'Schedule a Discovery Call';
 
-const Services = () => {
+const Services = ({ compact = false }: { compact?: boolean }) => {
   const navigate = useNavigate();
 
   return (
@@ -108,25 +125,68 @@ const Services = () => {
               />
               <p>{CONSULTING_INTRO}</p>
 
-              <h4>{ASAAPS_HEADER}</h4>
-              <p>{ASAAPS_DESC}</p>
+              {compact ? (
+                <ul className="consulting-compact-list" data-testid="consulting-compact-list">
+                  {COMPACT_AREAS.map(({ id, title, short, href }) => (
+                    <li key={id}>
+                      <strong>{title}</strong>
+                      <p>{short}</p>
+                      <Button
+                        variant="outline-primary"
+                        size="sm"
+                        data-testid={`consulting-learn-more-${id}`}
+                        onClick={() => navigate(href)}
+                      >
+                        Learn more
+                      </Button>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <>
+                  <h4>{ASAAPS_HEADER}</h4>
+                  <p>{ASAAPS_DESC}</p>
 
-              <h4>{AI_INTEGRATION_HEADER}</h4>
-              <p>{AI_INTEGRATION_DESC}</p>
+                  <h4>{AI_INTEGRATION_HEADER}</h4>
+                  <p>{AI_INTEGRATION_DESC}</p>
 
-              <h4>{QA_HEADER}</h4>
-              <p>{QA_DESC}</p>
+                  <h4>{QA_HEADER}</h4>
+                  <p>{QA_DESC}</p>
+                </>
+              )}
             </div>
-            <Button
-              size="lg"
-              variant="primary"
-              onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                e.preventDefault();
-                navigate('/contact?inquiry=consulting');
-              }}
-            >
-              {CONSULTING_CTA}
-            </Button>
+            {compact ? (
+              <div className="consulting-compact-ctas">
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  data-testid="explore-consulting-btn"
+                  onClick={() => navigate('/services/consulting')}
+                >
+                  Explore all consulting
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline-primary"
+                  className="mt-2"
+                  data-testid="reach-out-consulting-btn"
+                  onClick={() => navigate('/contact?inquiry=consulting')}
+                >
+                  Reach out directly
+                </Button>
+              </div>
+            ) : (
+              <Button
+                size="lg"
+                variant="primary"
+                onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+                  e.preventDefault();
+                  navigate('/contact?inquiry=consulting');
+                }}
+              >
+                {CONSULTING_CTA}
+              </Button>
+            )}
           </article>
         </Col>
 

@@ -12,7 +12,6 @@ vi.mock('../../../components/Metadata/Metadata', () => ({
 }));
 vi.mock('../../../components/Header/Header', () => ({
   __esModule: true,
-  HeaderRow: () => <div data-testid="header-row" />,
   default: () => <div data-testid="header-row-default" />,
 }));
 vi.mock('../../../components/SectionHeader/SectionHeader', () => ({
@@ -72,7 +71,6 @@ describe('BlogEntry', () => {
 
   it('renders blog entry with metadata, header, and content', async () => {
     renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
-    expect(screen.getByTestId('header-row')).toBeInTheDocument();
     expect(screen.getByTestId('metadata')).toBeInTheDocument();
     expect(screen.getByText('Test Blog Title')).toBeInTheDocument();
     expect(screen.getByText('Some content.')).toBeInTheDocument();

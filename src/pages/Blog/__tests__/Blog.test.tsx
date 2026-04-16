@@ -7,7 +7,6 @@ import { vi, beforeEach, afterEach, describe, it } from 'vitest';
 // Only mock Header if needed for test isolation
 vi.mock('../../components/Header/Header', () => ({
   __esModule: true,
-  HeaderRow: () => <div className="header-row" data-testid="header-row" />,
   default: () => <div data-testid="header-row-default" />,
 }));
 
@@ -66,8 +65,6 @@ afterEach(() => {
 describe('Blog', () => {
   it('renders blog entries with title, description, excerpt, and formatted date', async () => {
     renderWithProviders(<Blog />, { route: '/blog' });
-    // Check for the real header row class
-    expect(document.querySelector('.header-row')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /blog/i, level: 2 })).toBeInTheDocument();
     expect(screen.getByText(/Test blog description/i)).toBeInTheDocument();
     expect(screen.getByText(/Test blog excerpt/i)).toBeInTheDocument();

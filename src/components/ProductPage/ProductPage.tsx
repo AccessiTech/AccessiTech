@@ -1,15 +1,20 @@
 import { useNavigate } from 'react-router-dom';
 import { Breadcrumb, Button, Col, Row } from 'react-bootstrap';
-import { HeaderRow } from '../Header/Header';
 import Metadata from '../Metadata/Metadata';
 import { HOME_URL } from '../../settings/strings';
 import './ProductPage.scss';
+
+export interface ProductPageExample {
+  project: string;
+  description: string;
+}
 
 export interface ProductPageProps {
   title: string;
   overview: string;
   whyItExists: string;
   included: string[];
+  examples?: ProductPageExample[];
   howToUse: string;
   relatedServices: string;
   ctaLabel: string;
@@ -17,6 +22,7 @@ export interface ProductPageProps {
   pathname: string;
   metaTitle: string;
   metaDescription: string;
+  parentCrumb?: { label: string; href: string };
 }
 
 const ProductPage = ({
@@ -24,6 +30,7 @@ const ProductPage = ({
   overview,
   whyItExists,
   included,
+  examples,
   howToUse,
   relatedServices,
   ctaLabel,
@@ -31,6 +38,7 @@ const ProductPage = ({
   pathname,
   metaTitle,
   metaDescription,
+  parentCrumb,
 }: ProductPageProps) => {
   const navigate = useNavigate();
   const canonical = `${HOME_URL}/${pathname}`;
@@ -38,7 +46,6 @@ const ProductPage = ({
 
   return (
     <>
-      <HeaderRow />
       <Row className="breadcrumb-row product-page">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <Metadata
@@ -58,6 +65,17 @@ const ProductPage = ({
             >
               Home
             </Breadcrumb.Item>
+            {parentCrumb && (
+              <Breadcrumb.Item
+                href={parentCrumb.href}
+                onClick={(e: React.MouseEvent) => {
+                  e.preventDefault();
+                  navigate(parentCrumb.href);
+                }}
+              >
+                {parentCrumb.label}
+              </Breadcrumb.Item>
+            )}
             <Breadcrumb.Item active>{title}</Breadcrumb.Item>
           </Breadcrumb>
         </Col>
@@ -81,6 +99,20 @@ const ProductPage = ({
                     ))}
                   </ul>
                 </section>
+                {examples && examples.length > 0 && (
+                  <>
+                    <hr />
+                    <section className="product-examples">
+                      <h3>Past Work</h3>
+                      {examples.map((item, i) => (
+                        <div key={i} className="product-example">
+                          <h4>{item.project}</h4>
+                          <p>{item.description}</p>
+                        </div>
+                      ))}
+                    </section>
+                  </>
+                )}
                 <hr />
                 <section className="product-access">
                   <h3>Access &amp; Pricing</h3>

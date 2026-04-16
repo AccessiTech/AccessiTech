@@ -2,7 +2,6 @@ import { vi } from 'vitest';
 
 vi.doMock('../../components/Header/Header', () => ({
   __esModule: true,
-  HeaderRow: () => <div data-testid="header-row" />,
   default: () => <div data-testid="header-row-default" />,
 }));
 
@@ -17,9 +16,9 @@ import { renderWithProviders } from '../../../utils/__tests__/renderWithProvider
 import Contact from '../Contact';
 
 describe('Contact Page', () => {
-  it('renders the header', () => {
+  it('renders the contact section', () => {
     renderWithProviders(<Contact />, { route: '/contact' });
-    expect(screen.getByTestId('header-row')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: /get in touch/i })).toBeInTheDocument();
   });
 
   it('renders the page heading', () => {

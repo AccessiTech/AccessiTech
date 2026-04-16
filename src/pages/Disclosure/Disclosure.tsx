@@ -18,7 +18,6 @@ import remarkDirective from 'remark-directive';
 import { CustomMarkdownLink } from '../../components/CustomLink/CustomLink';
 import './Disclosure.css';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
-import { HeaderRow } from '../../components/Header/Header';
 import { getChildText } from '../../utils/getChildText';
 
 export interface FetchDisclosureProps {
@@ -109,7 +108,6 @@ export const Disclosure = () => {
 
   return (
     <>
-      <HeaderRow />
       <Row className="breadcrumb-row">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <Metadata {...metadata} />

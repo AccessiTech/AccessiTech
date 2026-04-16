@@ -223,22 +223,16 @@ describe('Disclosure Page', () => {
     document.body.removeChild(anchor);
   });
 
-  it('renders skip link for keyboard accessibility', async () => {
+  it('renders main content landmark for keyboard accessibility', async () => {
     renderWithProviders(
       <Routes>
         <Route path="/disclosures/:id" element={<Disclosure />} />
       </Routes>,
       { route: '/disclosures/accessibility' }
     );
-    // Wait for skip link
     await waitFor(() => {
-      expect(screen.getByRole('link', { name: /skip to main content/i })).toBeInTheDocument();
+      expect(screen.getByRole('main')).toBeInTheDocument();
     });
-    // Check href
-    expect(screen.getByRole('link', { name: /skip to main content/i })).toHaveAttribute(
-      'href',
-      '#main'
-    );
   });
   it('renders loading state initially', async () => {
     renderWithProviders(<Disclosure />, { route: '/disclosures/accessibility' });

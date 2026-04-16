@@ -1,5 +1,4 @@
 import { Row, Col, Breadcrumb } from 'react-bootstrap';
-import { HeaderRow } from '../../components/Header/Header';
 import Metadata from '../../components/Metadata/Metadata';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
@@ -7,15 +6,13 @@ import { HOME_URL } from '../../settings/strings';
 
 const contactMetadata = {
   title: 'Contact | AccessiTech',
-  description:
-    'Get in touch with AccessiTech for consulting, mentorship, or QA services.',
+  description: 'Get in touch with AccessiTech for consulting, mentorship, or QA services.',
   canonical: `${HOME_URL}/contact`,
 };
 
 export const Contact = () => {
   return (
     <>
-      <HeaderRow />
       <Row className="content-row">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <Metadata {...contactMetadata} />
