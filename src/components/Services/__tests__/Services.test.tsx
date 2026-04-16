@@ -10,8 +10,6 @@ import { axe, toHaveNoViolations } from 'jest-axe';
 import Services from '../Services';
 import {
   SERVICES_HEADER,
-  SERVICES_P1,
-  SERVICES_P2,
   PURPOSE_PIC_ALT,
   CONSULTING_HEADER,
   ASAAPS_HEADER,
@@ -37,12 +35,6 @@ describe('Services', () => {
     expect(document.getElementById('services-row')).toBeInTheDocument();
     // Check for the main Services heading (h3)
     expect(screen.getByRole('heading', { name: SERVICES_HEADER, level: 3 })).toBeInTheDocument();
-  });
-
-  it('renders the main service paragraphs', () => {
-    render(<Services />);
-    expect(screen.getByText(SERVICES_P1)).toBeInTheDocument();
-    expect(screen.getByText(SERVICES_P2)).toBeInTheDocument();
   });
 
   it('renders the purpose image with correct alt text', () => {

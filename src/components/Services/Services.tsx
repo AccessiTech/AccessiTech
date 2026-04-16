@@ -12,10 +12,6 @@ export const CLICK_TO_COPY = 'click to copy link';
 export const COPY_SUCCESS_MESSAGE = 'Copied!';
 export const COPY_FAIL_MESSAGE = 'Unable to copy to clipboard';
 export const SERVICES_HEADER = 'Services';
-export const SERVICES_P1 =
-  'Founded by a disabled design technologist with 18+ years of experience across industries, AccessiTech offers consulting, mentorship, and product services grounded in lived disability experience.';
-export const SERVICES_P2 =
-  'We serve organizations, teams, and individuals who want accessibility done right — with the people most affected at the center, not the margins.';
 export const PURPOSE_PIC_ALT = 'Image Credit: Urupong from Ghetty Images';
 
 // CONSULTING
@@ -57,8 +53,6 @@ const Services = () => {
             successText={COPY_SUCCESS_MESSAGE}
             failText={COPY_FAIL_MESSAGE}
           />
-          <p>{SERVICES_P1}</p>
-          <p>{SERVICES_P2}</p>
         </Col>
         <Col
           className="purpose-image"
