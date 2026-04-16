@@ -196,7 +196,7 @@ export const Home = () => {
               variant="primary"
               size="lg"
               href="/contact"
-              onClick={(e: any) => {
+              onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
                 e.preventDefault();
                 navigate('/contact');
               }}
