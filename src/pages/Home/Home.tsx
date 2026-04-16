@@ -51,13 +51,13 @@ export const PRODUCTS_OVERVIEW_P3 = `Products don't generate direct client reven
 
 export const WCAG_SERIES_TITLE = 'WCAG Series';
 export const WCAG_SERIES_DESC =
-  'Free, accessible educational guides to the Web Content Accessibility Guidelines — one principle at a time.';
+  'Free educational guides on WCAG 2.2 AA compliance and accessible design patterns.';
 export const OSS_TITLE = 'Open Source Software & ASaaPs';
 export const OSS_DESC =
-  'Free accessibility tools and ASaaP (Accessibility Software as a Practice) frameworks — methodology open to all, implementation support available.';
+  'Open-source contributions including the EndogenAI methodology and case studies showing the Red Hat model in action—free methodology, paid implementation.';
 export const CCCS_TITLE = 'Curriculum & Content Creation';
 export const CCCS_DESC =
-  'Accessible curriculum and training materials designed from the ground up for organizations, teams, and educators.';
+  'Skillbuilding courses in WCAG compliance, web best practices, and visual/video design, with WCAG 2.2 content completely free and other topics offered as freemium.';
 export const BLOG_TITLE = 'Blog';
 export const BLOG_DESC =
   'Thought leadership on accessibility, AI governance, disability justice, founder journey reflections, and case studies.';
@@ -105,7 +105,7 @@ export const Home = () => {
               variant="outline-primary"
               size="lg"
               href="/contact"
-              onClick={(e: any) => {
+              onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
                 e.preventDefault();
                 navigate('/contact');
               }}
