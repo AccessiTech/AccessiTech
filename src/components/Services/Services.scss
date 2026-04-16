@@ -46,11 +46,16 @@
         @include padding-bottom(2.5rem);
         @include margin-top(2.5rem);
 
-        article {
+        .service-section {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           height: 100%;
+
+          h4 {
+            margin-top: 1.5rem;
+            font-weight: bold;
+          }
         }
 
         .btn {

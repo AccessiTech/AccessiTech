@@ -1,13 +1,6 @@
 import { Button, Col, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import SectionHeader from '../SectionHeader/SectionHeader';
-import {
-  // FIVERR_AUDIT_URL,
-  FIVERR_MENTORSHIP_URL,
-  FIVERR_QA_URL,
-  GITHUB_DISCUSSIONS_URL,
-  GMAIL_URL,
-  TARGET_BLANK,
-} from '../../settings/strings';
 import {
   PURPOSE_PIC_SIZES,
   PURPOSE_PIC_SRCSET,
@@ -24,28 +17,35 @@ export const SERVICES_P1 =
 export const SERVICES_P2 =
   'We serve organizations, teams, and individuals who want accessibility done right — with the people most affected at the center, not the margins.';
 export const PURPOSE_PIC_ALT = 'Image Credit: Urupong from Ghetty Images';
-export const CONSULTATION_HEADER = 'Consultation';
-export const CONSULTATION_P3 =
-  'As an Accessibility Consultant I audit designs and software for accessibility compliance, offer project management services, and ensure the shipping of robust and accessible software.';
-export const CONSULTATION_CTA = 'Contact me about consultation';
-export const CONSULTATION_EMAIL_SUBJECT = 'subject=Consultation Request';
-export const QA_HEADER = 'Quality Assurance';
-export const QA_P1 =
-  'As a QA Engineer, I have spent my career testing, triaging, and debugging software at every stage of the product life cycle, including: test planning, end-to-end quality assurance, unit/integration testing, user/usability testing, and more.';
-export const QA_CTA = 'Let me test your code';
-export const QA_EMAIL_SUBJECT = 'subject=Quality Assurance Request';
-export const MENTORSHIP_HEADER = 'Web Mentorship';
-export const MENTORSHIP_P3 =
-  'As I am able to write less code, I am excited to offer mentorship in web design and development, helping overcome the steep learning curve of coding, dispelling myths and worries, and promoting their capacity to learn while instilling best practices of the field.';
-export const MENTORSHIP_CTA = 'Learn more about the web';
-export const MENTORSHIP_EMAIL_SUBJECT = 'subject=Mentorship Request';
-export const PRODUCTION_HEADER = 'Software Production';
-export const PRODUCTION_P4 =
-  'I believe that free, modular, and robust open-source software is crucial for creating an accessible web for both users and developers alike. AccessiTech proudly produces and promotes such software to counter ableism in ICT communities today.';
-export const PRODUCTION_CTA = 'Join the conversation';
-export const PRODUCTION_EMAIL_SUBJECT = 'subject=Software Production Request';
+
+// CONSULTING
+export const CONSULTING_HEADER = 'Consulting';
+export const CONSULTING_INTRO = `AccessiTech Consulting works with organizations closing the accountability gap and building accessibility into systems from the ground up—not as an afterthought. Our client engagements are founder-led, remote-first, and structured around three core service areas:`;
+export const ASAAPS_HEADER =
+  'Design and Development — Accessible Software as a Product/Service (ASaaPs)';
+export const ASAAPS_DESC = `We build digital products and services designed for accessibility from day one. Whether you're launching a new platform, refactoring a legacy system, or embedding AI features into existing tools, ASaaPs engagements ensure WCAG 2.2 AA compliance is the structural requirement, not the compliance checkbox. All deliverables are screen-reader tested, keyboard navigable, and built to be maintained by your team after handoff.`;
+export const AI_INTEGRATION_HEADER = 'Agentic Intelligence Integration';
+export const AI_INTEGRATION_DESC = `Organizations adopting AI systems need governance frameworks that account for the people those systems affect. We deploy the EndogenAI methodology—an open-source approach to AI governance that your team can audit, own, and extend without vendor lock-in. This is the Red Hat model applied to AI accountability: free methodology, paid implementation. We help you embed governance into daily operations, not bolt it on after launch.`;
+export const QA_HEADER = 'Quality Assurance and Testing';
+export const QA_DESC = `WCAG compliance audits, UX usability testing, and QA engineering for accessible digital systems. We test against WCAG 2.2 AA standards, identify barriers before they reach production, and provide remediation roadmaps your developers can execute. Our audits include manual screen reader testing (NVDA, VoiceOver), automated accessibility scans (axe, WAVE), and plain-language documentation suitable for non-technical stakeholders.`;
+export const CONSULTING_CTA = 'Schedule a Discovery Call';
+
+// MENTORSHIP
+export const MENTORSHIP_HEADER = 'Mentorship';
+export const MENTORSHIP_INTRO = `AccessiTech Mentorship offers structured teaching and training for teams and individuals embedding accessibility into their practice. We work with career-switchers, junior developers, and corporate teams building internal accessibility expertise. Our mentorship model is tiered—free resources for community learning, paid programs for deeper engagement.`;
+export const CCCS_HEADER = 'Course and Content Creation (CCCs)';
+export const CCCS_DESC = `Skillbuilding-focused educational content spanning WCAG compliance (completely free), web accessibility best practices (freemium), and visual/video design using free and open-source tools (freemium). CCCs are designed for self-paced learning and structured cohorts. WCAG 2.2 content is offered as a public good—no paywall, no gating—because accessibility education shouldn't require a budget.`;
+export const COACHING_HEADER = '1:1 Coaching and Corporate Workshops';
+export const COACHING_DESC = `Personalized mentorship for individuals navigating career transitions into accessible tech, and half-day to multi-day workshops for organizations training internal teams. Workshops cover: embedding accessibility into Agile sprints, screen reader testing for QA teams, disability justice principles for design leads, and AI governance for product managers. All sessions are recorded (with closed captions) and include follow-up resources.`;
+export const OPENCLASSROOMS_HEADER = 'OpenClassrooms Partnership';
+export const OPENCLASSROOMS_DESC = `Through mid-2025, conor served as a mentor for OpenClassrooms students—career-switchers building skills in web development, UX design, and project management. That operational precedent informs how AccessiTech Mentorship works today: accessible education for people building second or third chapters, grounded in real-world project work and accountability to community standards.`;
+export const SOTC_HEADER = 'State of the Code (SOTC)';
+export const SOTC_DESC = `Coming soon—a community-driven initiative bringing Disabled Designers and Developers (DDDs) together to share knowledge, review open-source contributions, and build collective expertise in accessible systems design. Free to participate; open to all.`;
+export const MENTORSHIP_CTA = 'Schedule a Discovery Call';
 
 const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="services-row" data-testid="services">
       <Row className="services-header-row">
@@ -80,101 +80,77 @@ const Services = () => {
       </Row>
 
       <Row className="services-row">
-        <Col className="consultation-col" sm={12} md={{ span: 10, offset: 1 }} lg={5}>
-          <article>
+        {/* CONSULTING */}
+        <Col sm={12} md={{ span: 10, offset: 1 }} lg={{ span: 5, offset: 1 }}>
+          <article className="service-section">
             <div>
               <SectionHeader
-                title={CONSULTATION_HEADER}
-                id="consultation"
-                use="h4"
+                title={CONSULTING_HEADER}
+                id="consulting"
+                use="h3"
                 linkTitle={CLICK_TO_COPY}
                 successText={COPY_SUCCESS_MESSAGE}
                 failText={COPY_FAIL_MESSAGE}
               />
-              <p>{CONSULTATION_P3}</p>
+              <p>{CONSULTING_INTRO}</p>
+
+              <h4>{ASAAPS_HEADER}</h4>
+              <p>{ASAAPS_DESC}</p>
+
+              <h4>{AI_INTEGRATION_HEADER}</h4>
+              <p>{AI_INTEGRATION_DESC}</p>
+
+              <h4>{QA_HEADER}</h4>
+              <p>{QA_DESC}</p>
             </div>
             <Button
               size="lg"
-              href={`${GMAIL_URL}?${CONSULTATION_EMAIL_SUBJECT}`}
-              target={TARGET_BLANK}
-              title={CONSULTATION_CTA}
+              variant="primary"
+              onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+                e.preventDefault();
+                navigate('/contact?inquiry=consulting');
+              }}
             >
-              {CONSULTATION_CTA}
+              {CONSULTING_CTA}
             </Button>
           </article>
         </Col>
-        <Col className="qa-col" sm={12} md={{ span: 10, offset: 1 }} lg={{ span: 5, offset: 0 }}>
-          <article>
-            <div>
-              <SectionHeader
-                title={QA_HEADER}
-                id="qa"
-                use="h4"
-                linkTitle={CLICK_TO_COPY}
-                successText={COPY_SUCCESS_MESSAGE}
-                failText={COPY_FAIL_MESSAGE}
-              />
-              <p>{QA_P1}</p>
-            </div>
-            <Button size="lg" target={TARGET_BLANK} href={FIVERR_QA_URL} title={QA_CTA}>
-              {QA_CTA}
-            </Button>
-          </article>
-        </Col>
-        <Col
-          className="mentorship-col"
-          sm={12}
-          md={{ span: 10, offset: 1 }}
-          lg={{ span: 5, offset: 1 }}
-        >
-          <article>
+
+        {/* MENTORSHIP */}
+        <Col sm={12} md={{ span: 10, offset: 1 }} lg={{ span: 5, offset: 0 }}>
+          <article className="service-section">
             <div>
               <SectionHeader
                 title={MENTORSHIP_HEADER}
                 id="mentorship"
-                use="h4"
+                use="h3"
                 linkTitle={CLICK_TO_COPY}
                 successText={COPY_SUCCESS_MESSAGE}
                 failText={COPY_FAIL_MESSAGE}
               />
-              <p>{MENTORSHIP_P3}</p>
+              <p>{MENTORSHIP_INTRO}</p>
+
+              <h4>{CCCS_HEADER}</h4>
+              <p>{CCCS_DESC}</p>
+
+              <h4>{COACHING_HEADER}</h4>
+              <p>{COACHING_DESC}</p>
+
+              <h4>{OPENCLASSROOMS_HEADER}</h4>
+              <p>{OPENCLASSROOMS_DESC}</p>
+
+              <h4>{SOTC_HEADER}</h4>
+              <p>{SOTC_DESC}</p>
             </div>
             <Button
               size="lg"
-              target={TARGET_BLANK}
-              href={FIVERR_MENTORSHIP_URL}
-              title={MENTORSHIP_CTA}
+              variant="primary"
+              onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+                e.preventDefault();
+                navigate('/contact?inquiry=mentorship');
+              }}
             >
               {MENTORSHIP_CTA}
-            </Button>
-          </article>
-        </Col>
-        <Col
-          className="production-col"
-          sm={12}
-          md={{ span: 10, offset: 1 }}
-          lg={{ span: 5, offset: 0 }}
-        >
-          <article>
-            <div>
-              <SectionHeader
-                title={PRODUCTION_HEADER}
-                id="production"
-                use="h4"
-                linkTitle={CLICK_TO_COPY}
-                successText={COPY_SUCCESS_MESSAGE}
-                failText={COPY_FAIL_MESSAGE}
-              />
-              <p>{PRODUCTION_P4}</p>
-            </div>
-
-            <Button
-              size="lg"
-              target={TARGET_BLANK}
-              href={GITHUB_DISCUSSIONS_URL}
-              title={PRODUCTION_CTA}
-            >
-              {PRODUCTION_CTA}
             </Button>
           </article>
         </Col>
