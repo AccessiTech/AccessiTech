@@ -1,6 +1,7 @@
 import { Row, Col, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Metadata from '../../components/Metadata/Metadata';
+import { HOME_URL } from '../../settings/strings';
 import {
   PRODUCTS_HEADER,
   PRODUCTS_OVERVIEW_P1,
@@ -19,6 +20,7 @@ const ProductsHub = () => {
       <Metadata
         title="Products | AccessiTech"
         description="AccessiTech Products: the WCAG Series, Open Source Software & ASaaPs, and Curriculum & Content Creation — resources that make accessibility-first design operational."
+        canonical={`${HOME_URL}/products`}
       />
       <main id="main" aria-label={PRODUCTS_HEADER}>
         <Row className="products-hub-header-row">

@@ -56,7 +56,13 @@ const viteConfig = defineConfig({
           'color-functions',
           'mixed-decls',
         ],
-        additionalData: `@import "./src/scss/variables.scss";`,
+        additionalData: `
+          @import "bootstrap/scss/functions";
+          @import "./src/scss/variables.scss";
+          @import "bootstrap/scss/variables";
+          @import "bootstrap/scss/maps";
+          @import "bootstrap/scss/mixins";
+        `,
       },
     },
   },
