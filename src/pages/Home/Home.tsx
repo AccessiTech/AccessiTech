@@ -67,7 +67,6 @@ export const CONTACT_HEADER = 'Get in touch';
 export const CONTACT_P1 = `Questions about Consulting, Mentorship, or how AccessiTech can help your organization? Send us a message using the form below. We respond within 24 hours—often faster.`;
 export const CONTACT_P2 =
   'All inquiries are routed directly to conor and sheela (founders). No triage delay, no junior staff handoff.';
-('All inquiries are routed directly to conor and sheela (founders). No triage delay, no junior staff handoff.');
 
 export const Home = () => {
   const navigate = useNavigate();
