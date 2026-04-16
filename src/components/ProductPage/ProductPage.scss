@@ -1,6 +1,3 @@
-@import "bootstrap/scss/bootstrap.scss";
-@import "../FontOptions/fontOptions.scss";
-
 .breadcrumb-row.product-page {
   background-color: $yellow;
 }
@@ -10,12 +7,12 @@
   text-align: left;
 
   h2 {
-    @include font-resize(2rem);
+    font-size: calc(2rem * var(--font-size-multiplier));
     @include margin(1rem 0 1.75rem);
   }
 
   h3 {
-    @include font-resize(1.25rem);
+    font-size: calc(1.25rem * var(--font-size-multiplier));
     @include margin(1rem 0);
   }
 

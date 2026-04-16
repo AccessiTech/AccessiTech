@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import {
   MONOSPACE,
@@ -8,13 +9,7 @@ import {
   useFontSize,
   useIsOpen,
 } from './reducer';
-import {
-  onFontFamilyChange,
-  onFontSizeChange,
-  debounce,
-  getFontSizeClass,
-  getFontFamilyClass,
-} from './helpers';
+import { onFontFamilyChange, onFontSizeChange, debounce, getFontFamilyClass } from './helpers';
 import { setFontSize, setFontFamily } from './reducer';
 
 export const namespace = 'fontOptions/';
@@ -48,6 +43,10 @@ export const FontOptions = (props: FontOptionsProps) => {
   const fontFamily = useFontFamily();
   const { onClose } = props || {};
 
+  useEffect(() => {
+    document.documentElement.style.setProperty('--font-size-multiplier', fontSize);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   const onEscapeKey = (e: any) => {
     if (e.key === ESCAPE) {
       if (isOpen) {
@@ -67,14 +66,8 @@ export const FontOptions = (props: FontOptionsProps) => {
 
   const handleFontSizeChange = debounce((e: any) => {
     const newFontSize = onFontSizeChange(e);
-    // Update body class for font size
-    const body = document.querySelector('body');
-    if (body) {
-      for (let i = 0.5; i <= 5; i += 0.1) {
-        body.classList.remove(getFontSizeClass((Math.round(i * 10) / 10).toFixed(1)));
-      }
-      body.classList.add(getFontSizeClass(newFontSize));
-    }
+    // Update CSS custom property for font size
+    document.documentElement.style.setProperty('--font-size-multiplier', newFontSize);
     dispatch(setFontSize(newFontSize));
   }, 250);
 

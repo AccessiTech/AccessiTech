@@ -1,6 +1,3 @@
-@import "./../../components/FontOptions/fontOptions.scss";
-@import "bootstrap/scss/bootstrap.scss";
-
 .App {
   text-align: center;
   color: $darkBlue;
@@ -17,7 +14,7 @@
     color: $white;
     font-style: italic;
     font-weight: 300;
-    @include font-resize(1.75rem);
+    font-size: calc(1.75rem * var(--font-size-multiplier));
 
     .simplified-view & {
       margin-top: 2rem;
@@ -49,7 +46,7 @@ a.skip-link {
   p {
     @include margin(2.5rem 0);
     color: $darkBlue;
-    @include font-resize($about-font-size);
+    font-size: calc(1.25rem * var(--font-size-multiplier));
     font-style: italic;
 
     .simplified-view & {
@@ -70,7 +67,7 @@ a.skip-link {
   }
 
   p {
-    @include font-resize($about-font-size);
+    font-size: calc(1.25rem * var(--font-size-multiplier));
   }
 }
 
@@ -79,7 +76,7 @@ a.skip-link {
   @include padding($main-section-padding 0);
 
   p {
-    @include font-resize($about-font-size);
+    font-size: calc(1.25rem * var(--font-size-multiplier));
   }
 }
 
@@ -87,7 +84,7 @@ a.skip-link {
   @include padding($main-section-padding 0);
 
   p {
-    @include font-resize($about-font-size);
+    font-size: calc(1.25rem * var(--font-size-multiplier));
   }
 }
 
@@ -96,11 +93,11 @@ a.skip-link {
 
   .product-card {
     h4 {
-      @include font-resize(1.25rem);
+      font-size: calc(1.25rem * var(--font-size-multiplier));
     }
 
     p {
-      @include font-resize($about-font-size);
+      font-size: calc(1.25rem * var(--font-size-multiplier));
     }
   }
 }
@@ -109,7 +106,7 @@ a.skip-link {
   @include padding($main-section-padding 0);
 
   p {
-    @include font-resize($about-font-size);
+    font-size: calc(1.25rem * var(--font-size-multiplier));
   }
 }
 .simplified-view {
