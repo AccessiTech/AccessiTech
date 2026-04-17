@@ -30,19 +30,25 @@ This repository hosts the AccessiTech homepage website, built with modern web te
    cd AccessiTech
    ```
 
-2. Install dependencies
+2. Use the project Node version
+
+   ```bash
+   nvm use
+   ```
+
+3. Install dependencies
 
    ```bash
    yarn install
    ```
 
-3. Start the development server
+4. Start the development server
 
    ```bash
    yarn dev
    ```
 
-4. Open your browser to http://localhost:5173 to see the application
+5. Open your browser to http://localhost:5173 to see the application
 
 ## 🛠️ Tech Stack
 

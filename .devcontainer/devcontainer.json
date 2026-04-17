@@ -1,0 +1,8 @@
+{
+  "name": "AccessiTech",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20.19.4"
+    }
+  }
+}
