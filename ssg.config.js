@@ -1,7 +1,10 @@
-import { defineConfig } from '@accessitech/vite-ssg';
 import reactPlugin from '@vitejs/plugin-react-swc';
 
-export const config = defineConfig({
+// Note: defineConfig is not imported from @accessitech/vite-ssg — that import
+// causes a runtime ESM error that prevents vite-ssg from loading this config,
+// causing it to silently fall back to defaults (broken pathsBuilder). The
+// defineConfig helper is a no-op identity function, so we export the plain object.
+export const config = {
   ssrEntry: 'src/server.tsx',
   urlSrc: 'public/rss.xml',
   dest: 'docs',
@@ -74,6 +77,6 @@ export const config = defineConfig({
     },
   },
   replaceIndexHtml: true,
-});
+};
 
 export default config;
