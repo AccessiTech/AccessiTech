@@ -18,6 +18,7 @@ const CCCs = () => (
     pathname="products/cccs"
     metaTitle="Curriculum & Content Creation (CCCs) | AccessiTech"
     metaDescription="Accessible curriculum design and content creation services for organizations, teams, and educators — from AccessiTech."
+    parentCrumb={{ label: 'Products', href: '/products' }}
   />
 );
 

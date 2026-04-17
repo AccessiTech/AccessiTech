@@ -18,6 +18,7 @@ const WCAGSeries = () => (
     pathname="products/wcag-series"
     metaTitle="WCAG Series | AccessiTech"
     metaDescription="Free WCAG 2.2 AA compliance checklists and accessible design pattern guides from AccessiTech."
+    parentCrumb={{ label: 'Products', href: '/products' }}
   />
 );
 

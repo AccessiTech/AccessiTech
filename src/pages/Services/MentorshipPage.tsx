@@ -22,6 +22,7 @@ const MentorshipPage = () => (
     pathname="services/mentorship"
     metaTitle="Mentorship | AccessiTech"
     metaDescription="AccessiTech Mentorship: courses, 1:1 coaching, and corporate workshops for teams and individuals building accessibility into their practice."
+    parentCrumb={{ label: 'Services', href: '/services' }}
   />
 );
 

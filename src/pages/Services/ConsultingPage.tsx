@@ -80,6 +80,15 @@ const ConsultingPage = () => {
             >
               Home
             </Breadcrumb.Item>
+            <Breadcrumb.Item
+              href="/services"
+              onClick={(e: React.MouseEvent) => {
+                e.preventDefault();
+                navigate('/services');
+              }}
+            >
+              Services
+            </Breadcrumb.Item>
             <Breadcrumb.Item active>{CONSULTING_HEADER}</Breadcrumb.Item>
           </Breadcrumb>
         </Col>
