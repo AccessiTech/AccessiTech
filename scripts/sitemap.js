@@ -81,6 +81,174 @@ export function generateSitemap({
       imageAlt: 'Disclosures page',
       status: 'published',
     },
+    // --- Services pages (React-only, not markdown-derived) ---
+    {
+      url: '/services',
+      changefreq: 'monthly',
+      priority: 0.9,
+      title: 'AccessiTech - Services',
+      description:
+        'AccessiTech Services: Consulting and Mentorship for organizations building accessible, accountable digital systems — from AI governance to WCAG compliance.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'AccessiTech Services',
+      status: 'published',
+    },
+    {
+      url: '/services/consulting',
+      changefreq: 'quarterly',
+      priority: 0.75,
+      title: 'AccessiTech - Consulting',
+      description:
+        'AccessiTech Consulting: accessibility-first software design, agentic AI governance, and WCAG QA for organizations building accountable digital systems.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'AccessiTech Consulting',
+      status: 'published',
+    },
+    {
+      url: '/services/consulting/asaaps',
+      changefreq: 'quarterly',
+      priority: 0.75,
+      title: 'AccessiTech - ASaaPs',
+      description:
+        'AccessiTech ASaaP engagements build WCAG 2.2 AA compliant software from day one — screen-reader tested, keyboard navigable, and built for your team to maintain.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'Accessible Software as a Practice',
+      status: 'published',
+    },
+    {
+      url: '/services/consulting/ai-integration',
+      changefreq: 'quarterly',
+      priority: 0.75,
+      title: 'AccessiTech - Agentic Intelligence Integration',
+      description:
+        'AccessiTech deploys the EndogenAI governance methodology for accountable, auditable AI systems — open-source framework, paid implementation, no vendor lock-in.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'Agentic AI Integration',
+      status: 'published',
+    },
+    {
+      url: '/services/consulting/qa',
+      changefreq: 'quarterly',
+      priority: 0.75,
+      title: 'AccessiTech - Quality Assurance & WCAG Testing',
+      description:
+        'AccessiTech QA: WCAG 2.2 AA audits, manual NVDA/VoiceOver testing, and developer-ready remediation roadmaps for accessible digital systems.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'Quality Assurance and WCAG Testing',
+      status: 'published',
+    },
+    {
+      url: '/services/mentorship',
+      changefreq: 'quarterly',
+      priority: 0.75,
+      title: 'AccessiTech - Mentorship',
+      description:
+        'AccessiTech Mentorship: courses, 1:1 coaching, and corporate workshops for teams and individuals building accessibility into their practice.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'AccessiTech Mentorship',
+      status: 'published',
+    },
+    {
+      url: '/services/mentorship/cccs',
+      changefreq: 'quarterly',
+      priority: 0.7,
+      title: 'AccessiTech - Courses & Content',
+      description:
+        "AccessiTech's course library covers WCAG 2.2 compliance, web accessibility best practices, and accessible design — free and freemium content for individuals and teams.",
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'Courses and Content Creation',
+      status: 'published',
+    },
+    {
+      url: '/services/mentorship/coaching',
+      changefreq: 'quarterly',
+      priority: 0.7,
+      title: 'AccessiTech - 1:1 Coaching & Corporate Workshops',
+      description:
+        'Personalised accessibility coaching for career-switchers and corporate workshops for teams embedding inclusive design into their practice — recorded, captioned, practice-based.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: '1:1 Coaching and Corporate Workshops',
+      status: 'published',
+    },
+    {
+      url: '/services/mentorship/openclassrooms',
+      changefreq: 'quarterly',
+      priority: 0.7,
+      title: 'AccessiTech - OpenClassrooms Partnership',
+      description:
+        "AccessiTech's OpenClassrooms mentorship for career-switchers — the operational precedent and values foundation for how we mentor today.",
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'OpenClassrooms Partnership',
+      status: 'published',
+    },
+    {
+      url: '/services/mentorship/sotc',
+      changefreq: 'quarterly',
+      priority: 0.7,
+      title: 'AccessiTech - State of the Code (SOTC)',
+      description:
+        'SOTC: a coming-soon community for Disabled Designers and Developers sharing knowledge and building collective expertise in accessible systems design. Free and open.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'State of the Code community',
+      status: 'published',
+    },
+    // --- Products pages (React-only, not markdown-derived) ---
+    {
+      url: '/products',
+      changefreq: 'monthly',
+      priority: 0.85,
+      title: 'AccessiTech - Products',
+      description:
+        'AccessiTech Products: the WCAG Series, Open Source Software & ASaaPs, and Curriculum & Content Creation — resources that make accessibility-first design operational.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'AccessiTech Products',
+      status: 'published',
+    },
+    {
+      url: '/products/wcag-series',
+      changefreq: 'quarterly',
+      priority: 0.7,
+      title: 'AccessiTech - WCAG Series',
+      description:
+        'Free WCAG 2.2 AA compliance checklists and accessible design pattern guides from AccessiTech.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'WCAG Series',
+      status: 'published',
+    },
+    {
+      url: '/products/oss-asaaps',
+      changefreq: 'quarterly',
+      priority: 0.7,
+      title: 'AccessiTech - OSS & ASaaPs',
+      description:
+        'Open-source accessibility tools and ASaaP (Accessibility Software as a Practice) frameworks from AccessiTech. Free methodology, paid implementation support.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'Open Source Software and ASaaPs',
+      status: 'published',
+    },
+    {
+      url: '/products/cccs',
+      changefreq: 'quarterly',
+      priority: 0.7,
+      title: 'AccessiTech - Curriculum & Content Creation',
+      description:
+        'Accessible curriculum design and content creation services for organizations, teams, and educators — from AccessiTech.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'Curriculum and Content Creation',
+      status: 'published',
+    },
+    // --- Contact ---
+    {
+      url: '/contact',
+      changefreq: 'yearly',
+      priority: 0.6,
+      title: 'AccessiTech - Contact',
+      description:
+        'Get in touch with AccessiTech for accessibility consulting, mentorship, or general enquiries.',
+      image: 'https://www.accessi.tech/assets/images/default.png',
+      imageAlt: 'Contact AccessiTech',
+      status: 'published',
+    },
   ];
   const blogDir = pathDep.join(rootDir, 'public/data');
   const blogFiles = getAllMarkdownFiles(blogDir, fsDep, pathDep);
