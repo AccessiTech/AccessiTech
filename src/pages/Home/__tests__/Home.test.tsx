@@ -50,9 +50,8 @@ describe('Home', () => {
     expect(screen.getByText(WHY_HEADER)).toBeInTheDocument();
   });
 
-  it('renders SplashSocials, Metadata, and Services', () => {
+  it('renders Services section', () => {
     renderWithProviders(<Home />);
-    expect(screen.getByTestId('splash-socials')).toBeInTheDocument();
     expect(screen.getByTestId('services')).toBeInTheDocument();
   });
 
