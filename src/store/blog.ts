@@ -238,5 +238,3 @@ export const useBlogEntriesArray = ({ order, pathname }: BlogEntriesArrayProps):
       });
   }, [entries, order, category, tags, series, pathname]);
 };
-
-
