@@ -8,7 +8,7 @@ import {
 export const metadata = {
   title: `Curriculum & Content Creation (CCCs) | ${ACCESSITECH}`,
   description:
-    'Accessible curriculum design and content creation services for organizations, teams, and educators — from AccessiTech.',
+    'Accessible curriculum design and content creation for educators and organizations — structured learning products and accessibility-first branded content.',
   canonical: `${HOME_URL}/products/cccs`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

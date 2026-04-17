@@ -6,9 +6,9 @@ import {
 } from '../../settings/strings';
 
 export const metadata = {
-  title: `Consulting | ${ACCESSITECH}`,
+  title: `Accessibility Consulting Services | ${ACCESSITECH}`,
   description:
-    'AccessiTech Consulting: accessibility-first software design, agentic AI governance, and WCAG QA for organizations building accountable digital systems.',
+    'Accessibility-first software design, agentic AI governance, and WCAG QA — consulting engagements for organizations building accountable digital systems.',
   canonical: `${HOME_URL}/services/consulting`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

@@ -6,9 +6,9 @@ import {
 } from '../../settings/strings';
 
 export const metadata = {
-  title: `Products | ${ACCESSITECH}`,
+  title: `Accessibility Products & Resources | ${ACCESSITECH}`,
   description:
-    'AccessiTech Products: the WCAG Series, Open Source Software & ASaaPs, and Curriculum & Content Creation — resources that make accessibility-first design operational.',
+    'WCAG Series, open-source ASaaP frameworks, and accessibility curriculum — free resources and paid tools for developers building accessible digital systems.',
   canonical: `${HOME_URL}/products`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

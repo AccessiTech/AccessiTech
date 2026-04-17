@@ -8,7 +8,7 @@ import {
 export const metadata = {
   title: `Disclosures | ${ACCESSITECH}`,
   description:
-    'AccessiTech is committed to transparency, accessibility, and ethical practices. Explore our disclosures on accessibility, advertising, affiliate links, sponsored content, code of conduct, and contributing. Learn how we foster an open, inclusive, and trustworthy community.',
+    "AccessiTech's commitments to accessibility, transparency, and ethical practice — disclosures on advertising, affiliate links, and community conduct.",
   canonical: DISCLOSURES_CANONICAL,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

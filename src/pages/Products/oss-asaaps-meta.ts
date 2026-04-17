@@ -6,9 +6,9 @@ import {
 } from '../../settings/strings';
 
 export const metadata = {
-  title: `OSS & ASaaPs | ${ACCESSITECH}`,
+  title: `Open-Source Accessibility Tools & ASaaPs | ${ACCESSITECH}`,
   description:
-    'Open-source accessibility tools and ASaaP (Accessibility Software as a Practice) frameworks from AccessiTech. Free methodology, paid implementation support.',
+    'Open-source ASaaP frameworks and accessibility tools from AccessiTech — free methodology, open implementation guides, and paid support available.',
   canonical: `${HOME_URL}/products/oss-asaaps`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

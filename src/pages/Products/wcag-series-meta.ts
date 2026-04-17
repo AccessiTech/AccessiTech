@@ -8,7 +8,7 @@ import {
 export const metadata = {
   title: `WCAG Series | ${ACCESSITECH}`,
   description:
-    'Free WCAG 2.2 AA compliance checklists and accessible design pattern guides from AccessiTech.',
+    'Free WCAG 2.2 AA checklists and accessible design pattern guides — plain-language resources for developers and teams building compliant digital products.',
   canonical: `${HOME_URL}/products/wcag-series`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

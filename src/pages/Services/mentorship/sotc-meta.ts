@@ -8,7 +8,7 @@ import {
 export const metadata = {
   title: `State of the Code (SOTC) | ${ACCESSITECH}`,
   description:
-    'SOTC: a coming-soon community for Disabled Designers and Developers sharing knowledge and building collective expertise in accessible systems design. Free and open.',
+    'SOTC: a coming-soon community for Disabled Designers and Developers sharing expertise in accessible systems design. Free and open to join.',
   canonical: `${HOME_URL}/services/mentorship/sotc`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

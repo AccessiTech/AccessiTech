@@ -8,7 +8,7 @@ import {
 export const metadata = {
   title: `Courses & Content (CCCs) | ${ACCESSITECH} Mentorship`,
   description:
-    "AccessiTech's course library covers WCAG 2.2 compliance, web accessibility best practices, and accessible design — free and freemium content for individuals and teams.",
+    'WCAG 2.2 compliance courses and accessible design tutorials — free and freemium content for individuals and teams building accessibility skills.',
   canonical: `${HOME_URL}/services/mentorship/cccs`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

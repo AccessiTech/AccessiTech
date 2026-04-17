@@ -8,7 +8,7 @@ import {
 export const metadata = {
   title: `1:1 Coaching & Corporate Workshops | ${ACCESSITECH} Mentorship`,
   description:
-    'Personalised accessibility coaching for career-switchers and corporate workshops for teams embedding inclusive design into their practice — recorded, captioned, practice-based.',
+    '1:1 accessibility coaching for career-switchers and corporate workshops for teams — recorded, captioned, and grounded in real accessibility practice.',
   canonical: `${HOME_URL}/services/mentorship/coaching`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

@@ -2,7 +2,8 @@ import { ACCESSITECH, DEFAULT_SHARE_IMAGE, DEFAULT_SHARE_IMAGE_ALT } from '../..
 
 export const metadata = {
   title: `WCAG Explained | ${ACCESSITECH}`,
-  description: 'A comprehensive guide to WCAG standards',
+  description:
+    'Free WCAG 2.2 guides and plain-language success criteria breakdowns — written by a disabled developer for teams building real-world accessible systems.',
   canonical: '/wcag',
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

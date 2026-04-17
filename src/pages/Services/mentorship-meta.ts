@@ -6,9 +6,9 @@ import {
 } from '../../settings/strings';
 
 export const metadata = {
-  title: `Mentorship | ${ACCESSITECH}`,
+  title: `Accessibility Mentorship & Training | ${ACCESSITECH}`,
   description:
-    'AccessiTech Mentorship: courses, 1:1 coaching, and corporate workshops for teams and individuals building accessibility into their practice.',
+    'Courses, 1:1 coaching, and corporate workshops for developers and teams building accessibility into their practice — WCAG fundamentals to career transitions.',
   canonical: `${HOME_URL}/services/mentorship`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',

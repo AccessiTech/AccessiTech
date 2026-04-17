@@ -8,7 +8,7 @@ import {
 export const metadata = {
   title: `OpenClassrooms Partnership | ${ACCESSITECH} Mentorship`,
   description:
-    "AccessiTech's OpenClassrooms mentorship for career-switchers — the operational precedent and values foundation for how we mentor today.",
+    'OpenClassrooms mentorship for career-switchers: guided projects, code review, and accessible development practice grounded in WCAG and real-world delivery.',
   canonical: `${HOME_URL}/services/mentorship/openclassrooms`,
   siteName: ACCESSITECH,
   twitterCreator: '@accessiT3ch',
