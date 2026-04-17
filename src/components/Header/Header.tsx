@@ -39,83 +39,74 @@ function Header() {
             <Link to="/services" className={pathname === '/services' ? 'active' : ''}>
               Services
             </Link>
-            <ul className="dropdown-menu" role="menu" aria-label="Services menu">
-              <li role="none">
+            <ul className="dropdown-menu" aria-label="Services menu">
+              <li>
                 <Link
                   to="/services/consulting"
-                  role="menuitem"
                   className={pathname.startsWith('/services/consulting') ? 'active' : ''}
                 >
                   Consulting
                 </Link>
               </li>
-              <li role="none" className="dropdown-sub-item">
+              <li className="dropdown-sub-item">
                 <Link
                   to="/services/consulting/asaaps"
-                  role="menuitem"
                   className={pathname === '/services/consulting/asaaps' ? 'active' : ''}
                 >
                   ASaaPs
                 </Link>
               </li>
-              <li role="none" className="dropdown-sub-item">
+              <li className="dropdown-sub-item">
                 <Link
                   to="/services/consulting/ai-integration"
-                  role="menuitem"
                   className={pathname === '/services/consulting/ai-integration' ? 'active' : ''}
                 >
                   AI Integration
                 </Link>
               </li>
-              <li role="none" className="dropdown-sub-item">
+              <li className="dropdown-sub-item">
                 <Link
                   to="/services/consulting/qa"
-                  role="menuitem"
                   className={pathname === '/services/consulting/qa' ? 'active' : ''}
                 >
                   QA
                 </Link>
               </li>
-              <li role="none">
+              <li>
                 <Link
                   to="/services/mentorship"
-                  role="menuitem"
                   className={pathname.startsWith('/services/mentorship') ? 'active' : ''}
                 >
                   Mentorship
                 </Link>
               </li>
-              <li role="none" className="dropdown-sub-item">
+              <li className="dropdown-sub-item">
                 <Link
                   to="/services/mentorship/cccs"
-                  role="menuitem"
                   className={pathname === '/services/mentorship/cccs' ? 'active' : ''}
                 >
                   Courses &amp; Content
                 </Link>
               </li>
-              <li role="none" className="dropdown-sub-item">
+              <li className="dropdown-sub-item">
                 <Link
                   to="/services/mentorship/coaching"
-                  role="menuitem"
                   className={pathname === '/services/mentorship/coaching' ? 'active' : ''}
                 >
                   Coaching
                 </Link>
               </li>
-              <li role="none" className="dropdown-sub-item">
+              <li className="dropdown-sub-item">
                 <Link
                   to="/services/mentorship/openclassrooms"
-                  role="menuitem"
                   className={pathname === '/services/mentorship/openclassrooms' ? 'active' : ''}
                 >
                   OpenClassrooms
                 </Link>
               </li>
-              <li role="none" className="dropdown-sub-item">
+              <li className="dropdown-sub-item">
                 <Link
                   to="/services/mentorship/sotc"
-                  role="menuitem"
                   className={pathname === '/services/mentorship/sotc' ? 'active' : ''}
                 >
                   SOTC
@@ -127,31 +118,25 @@ function Header() {
             <Link to="/products" className={pathname.startsWith('/products') ? 'active' : ''}>
               Products
             </Link>
-            <ul className="dropdown-menu" role="menu" aria-label="Products menu">
-              <li role="none" className="dropdown-sub-item">
+            <ul className="dropdown-menu" aria-label="Products menu">
+              <li className="dropdown-sub-item">
                 <Link
                   to="/products/wcag-series"
-                  role="menuitem"
                   className={pathname === '/products/wcag-series' ? 'active' : ''}
                 >
                   WCAG Series
                 </Link>
               </li>
-              <li role="none" className="dropdown-sub-item">
+              <li className="dropdown-sub-item">
                 <Link
                   to="/products/oss-asaaps"
-                  role="menuitem"
                   className={pathname === '/products/oss-asaaps' ? 'active' : ''}
                 >
                   OSS &amp; ASaaPs
                 </Link>
               </li>
-              <li role="none" className="dropdown-sub-item">
-                <Link
-                  to="/products/cccs"
-                  role="menuitem"
-                  className={pathname === '/products/cccs' ? 'active' : ''}
-                >
+              <li className="dropdown-sub-item">
+                <Link to="/products/cccs" className={pathname === '/products/cccs' ? 'active' : ''}>
                   Curriculum &amp; Content
                 </Link>
               </li>

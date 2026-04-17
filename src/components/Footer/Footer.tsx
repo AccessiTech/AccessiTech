@@ -55,6 +55,7 @@ function Footer() {
               <a
                 href={GITHUB_ISSUES_URL}
                 target={TARGET_BLANK}
+                rel="noopener noreferrer"
                 title={GITHUB_ISSUES}
                 className="text-white"
               >
@@ -90,6 +91,7 @@ function Footer() {
                 <a
                   href={FIVERR_URL}
                   target={TARGET_BLANK}
+                  rel="noopener noreferrer"
                   title={FOOTER_FIVERR}
                   className="text-white"
                 >
@@ -100,6 +102,7 @@ function Footer() {
                 <a
                   href={LINKEDIN_URL}
                   target={TARGET_BLANK}
+                  rel="noopener noreferrer"
                   title={FOOTER_LINKEDIN}
                   className="text-white"
                 >
@@ -110,6 +113,7 @@ function Footer() {
                 <a
                   href={REDDIT_URL}
                   target={TARGET_BLANK}
+                  rel="noopener noreferrer"
                   title={FOOTER_REDDIT}
                   className="text-white"
                 >
@@ -120,6 +124,7 @@ function Footer() {
                 <a
                   href={TWITTER_URL}
                   target={TARGET_BLANK}
+                  rel="noopener noreferrer"
                   title={FOOTER_TWITTER}
                   className="text-white"
                 >
