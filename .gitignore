@@ -131,3 +131,10 @@ dist
 
 # Copilot files
 .copilot/
+
+# Session scratchpads and temporary working files
+.tmp/
+
+# Python virtual environments
+.venv/
+venv/
