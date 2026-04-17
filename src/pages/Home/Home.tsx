@@ -1,6 +1,6 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import SplashSocials from '../../components/SplashSocials/SplashSocials';
+// import SplashSocials from '../../components/SplashSocials/SplashSocials';
 import { SPLASH_BG } from '../../settings/strings';
 import Services from '../../components/Services/Services';
 import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
@@ -76,7 +76,7 @@ export const Home = () => {
         <Col>
           <Metadata {...metadata} />
           <h2>{TAGLINE}</h2>
-          <SplashSocials />
+          {/* <SplashSocials /> */}
         </Col>
       </Row>
 

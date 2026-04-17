@@ -154,7 +154,8 @@ code {
   justify-content: space-between;
 }
 
-.content-row {
+.content-row,
+.footer-row {
   flex-grow: 1;
   & > .col {
     @include padding(0);

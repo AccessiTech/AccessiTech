@@ -36,21 +36,19 @@ export const CONTRIBUTING = 'Contributing';
 export const CONTRIBUTING_URL = '/disclosures/contributing';
 export const SPONSORED_CONTENT = 'Sponsored Content';
 export const SPONSORED_CONTENT_URL = '/disclosures/sponsored-content';
-import { IMAGES_URL } from '../../settings/env';
+// import { IMAGES_URL } from '../../settings/env';
 
 function Footer() {
-  const headerStyle = {
-    backgroundImage: `url('${IMAGES_URL}/TypeLogo_White_HC.svg')`,
-  };
+  // const headerStyle = {
+  //   backgroundImage: `url('${IMAGES_URL}/TypeLogo_White_HC.svg')`,
+  // };
   return (
     <footer className="bg-dark text-white pt-5 text-start" aria-label={FOOTER}>
       <Container>
         <Row className="g-4">
           <Col xs={12} md={{ span: 4, offset: 1 }}>
             <Link to={ROOT} title={COMPANY_TITLE} className="text-decoration-none d-block p-0">
-              <h3 className="logo-container fs-1 mb-0" style={headerStyle}>
-                {COMPANY_TITLE}
-              </h3>
+              <h3 className="logo-container fs-1 mb-0">{COMPANY_TITLE} </h3>
             </Link>
             <p aria-label={REPORTING_AN_ISSUE} className="mt-4">
               {ISSUES_P1}
