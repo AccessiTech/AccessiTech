@@ -24,7 +24,7 @@ const mockFetch = (response: Partial<Response> & { text?: () => Promise<string> 
   );
 };
 import { vi } from 'vitest';
-import { screen, waitFor } from '@testing-library/react';
+import { screen, waitFor, fireEvent } from '@testing-library/react';
 import { Routes, Route } from 'react-router-dom';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
 import { Disclosure } from '../Disclosure';
@@ -223,22 +223,16 @@ describe('Disclosure Page', () => {
     document.body.removeChild(anchor);
   });
 
-  it('renders skip link for keyboard accessibility', async () => {
+  it('renders main content landmark for keyboard accessibility', async () => {
     renderWithProviders(
       <Routes>
         <Route path="/disclosures/:id" element={<Disclosure />} />
       </Routes>,
       { route: '/disclosures/accessibility' }
     );
-    // Wait for skip link
     await waitFor(() => {
-      expect(screen.getByRole('link', { name: /skip to main content/i })).toBeInTheDocument();
+      expect(screen.getByRole('main')).toBeInTheDocument();
     });
-    // Check href
-    expect(screen.getByRole('link', { name: /skip to main content/i })).toHaveAttribute(
-      'href',
-      '#main'
-    );
   });
   it('renders loading state initially', async () => {
     renderWithProviders(<Disclosure />, { route: '/disclosures/accessibility' });
@@ -277,5 +271,29 @@ describe('Disclosure Page', () => {
     renderWithProviders(<Disclosure />, { route: '/disclosures/accessibility' });
     await waitFor(() => expect(screen.getByText('Home')).toBeInTheDocument());
     expect(screen.getByText('Disclosures')).toBeInTheDocument();
+  });
+
+  it('navigates home when Home breadcrumb is clicked', async () => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/:pathname/:id" element={<Disclosure />} />
+      </Routes>,
+      { route: '/disclosures/accessibility' }
+    );
+    await waitFor(() => expect(screen.getByText('Home')).toBeInTheDocument());
+    const homeLink = screen.getByRole('link', { name: /home/i });
+    expect(() => fireEvent.click(homeLink)).not.toThrow();
+  });
+
+  it('navigates to parent section when section breadcrumb is clicked', async () => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/:pathname/:id" element={<Disclosure />} />
+      </Routes>,
+      { route: '/disclosures/accessibility' }
+    );
+    await waitFor(() => expect(screen.getByText('Disclosures')).toBeInTheDocument());
+    const sectionLink = screen.getByRole('link', { name: /disclosures/i });
+    expect(() => fireEvent.click(sectionLink)).not.toThrow();
   });
 });

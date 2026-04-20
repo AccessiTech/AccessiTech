@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { SocialIcon } from 'react-social-icons';
-import './SplashSocials.scss';
 import {
   WHITE,
   TRANSPARENT,
@@ -31,12 +30,8 @@ function SplashSocials() {
     setIconColor(isSimplifiedView ? DARK_BLUE : WHITE);
   }, [isSimplifiedView]);
   return (
-    <section
-      className="splash-social-buttons"
-      aria-label={SOCIAL_MEDIA_BUTTONS}
-      data-testid="splash-socials"
-    >
-      <ul>
+    <section className="mt-4" aria-label={SOCIAL_MEDIA_BUTTONS} data-testid="splash-socials">
+      <ul className="list-unstyled d-flex justify-content-evenly p-0">
         {/* <li>
         <SocialIcon
           label={(TWITTER_LABEL)}

@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { getMetaData, naturalGuidelineSort } from '../settings/utils';
 import { NavigateFunction } from 'react-router-dom';
@@ -29,12 +30,25 @@ export interface Blog {
   next?: { url: string; title: string }; // Optional, used for next blog entry link
   previous?: { url: string; title: string }; // Optional, used for previous blog entry link
   excerpt?: string; // Optional, used for blog entry excerpt
+  category?: string;
+  tags?: string[];
+  series?: string;
+  collection?: string;
+  featured_image?: string;
+  featured_image_alt?: string;
+}
+
+export interface BlogFilters {
+  category: string;
+  tags: string[];
+  series: string;
 }
 
 export interface BlogState {
   order?: BlogOrder;
   isLoading: boolean;
   entries: { [id: string]: Blog };
+  filters: BlogFilters;
 }
 export interface GetBlogEntryPayload {
   id: string;
@@ -88,6 +102,12 @@ export const getBlogEntry = createAsyncThunk(
     const image = metaData['image'] || '';
     const image_alt = metaData['image_alt'] || '';
     const excerpt = metaData['excerpt'] || '';
+    const category = metaData['category'] || '';
+    const tags = metaData['tags'] ? metaData['tags'].split(',').map((t: string) => t.trim()) : [];
+    const series = metaData['series'] || '';
+    const collection = metaData['collection'] || '';
+    const featured_image = metaData['featured_image'] || '';
+    const featured_image_alt = metaData['featured_image_alt'] || '';
     const nextStr = metaData['next'] || '';
     const previousStr = metaData['previous'] || '';
 
@@ -102,6 +122,12 @@ export const getBlogEntry = createAsyncThunk(
       image_alt,
       pathname,
       excerpt,
+      category,
+      tags,
+      series,
+      collection,
+      featured_image,
+      featured_image_alt,
       next: nextStr
         ? { url: nextStr.split(',')[0], title: nextStr.split(',')[1] || 'Next' }
         : undefined,
@@ -118,7 +144,11 @@ export const getBlogEntry = createAsyncThunk(
 export const blogInitialState: BlogState = {
   isLoading: false,
   entries: {},
+  filters: { category: '', tags: [], series: '' },
 };
+
+export const SET_FILTER = 'SET_FILTER';
+export const CLEAR_FILTERS = 'CLEAR_FILTERS';
 
 export const blogSlice = createSlice({
   name: blogSliceName,
@@ -132,6 +162,12 @@ export const blogSlice = createSlice({
         id,
       };
     },
+    [SET_FILTER]: (state, action: { type: string; payload: Partial<BlogFilters> }) => {
+      state.filters = { ...state.filters, ...action.payload };
+    },
+    [CLEAR_FILTERS]: state => {
+      state.filters = { category: '', tags: [], series: '' };
+    },
   },
   extraReducers: builder => {
     builder.addCase(getBlogEntry.fulfilled, (state, action) => {
@@ -144,6 +180,8 @@ export const blogSlice = createSlice({
 });
 
 export const setBlogEntry = blogSlice.actions[SET_BLOG_ENTRY];
+export const setFilter = blogSlice.actions[SET_FILTER];
+export const clearFilters = blogSlice.actions[CLEAR_FILTERS];
 
 export const useBlog = (): BlogState => {
   return useSelector((state: any) => state[blogSliceName]);
@@ -161,17 +199,27 @@ export const useBlogEntry = (id: string): Blog => {
   return useBlog().entries[id];
 };
 
+export const useFilters = (): BlogFilters => {
+  return useBlog().filters;
+};
+
 export interface BlogEntriesArrayProps {
   order?: BlogOrder;
   pathname?: string;
 }
-import { useMemo } from 'react';
 
 export const useBlogEntriesArray = ({ order, pathname }: BlogEntriesArrayProps): Blog[] => {
   const entries = useBlogEntries();
+  const { category, tags, series } = useFilters();
   return useMemo(() => {
     return Object.values(entries)
-      .filter(entry => entry.pathname === pathname)
+      .filter(entry => {
+        if (entry.pathname !== pathname) return false;
+        if (category && entry.category !== category) return false;
+        if (series && entry.series !== series) return false;
+        if (tags.length > 0 && !tags.every(t => entry.tags?.includes(t))) return false;
+        return true;
+      })
       .sort((a, b) => {
         switch (order || BlogOrder.DATE_DESC) {
           case BlogOrder.ASC:
@@ -188,5 +236,5 @@ export const useBlogEntriesArray = ({ order, pathname }: BlogEntriesArrayProps):
             return 0;
         }
       });
-  }, [entries, order, pathname]);
+  }, [entries, order, category, tags, series, pathname]);
 };

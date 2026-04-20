@@ -30,6 +30,10 @@ vi.mock('../../pages/404/404', () => ({
   default: () => <div data-testid="mock-404">404 Page</div>,
 }));
 
+vi.mock('../../components/Header/Header', () => ({
+  default: () => <div data-testid="mock-header">Header</div>,
+}));
+
 vi.mock('../../components/Footer/Footer', () => ({
   default: () => <div data-testid="mock-footer">Footer Component</div>,
 }));

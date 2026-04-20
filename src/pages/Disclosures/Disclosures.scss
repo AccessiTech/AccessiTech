@@ -1,6 +1,3 @@
-@import "bootstrap/scss/bootstrap";
-@import "../../components/FontOptions/fontOptions.scss";
-
 .blog-page {
   background-color: $yellow;
 }
@@ -42,12 +39,12 @@
 .blog-entry-page,
 .blog-entry-links-row {
   h1 {
-    @include font-resize(2rem);
+    font-size: calc(2rem * var(--font-size-multiplier));
     @include margin(1rem 0 1.75rem);
   }
 
   h2 {
-    @include font-resize(1.5rem);
+    font-size: calc(1.5rem * var(--font-size-multiplier));
     @include margin(1.75rem 0 1rem);
   }
 
@@ -57,7 +54,7 @@
 
     &:hover,
     &:visited {
-      color: darken($pink, 15%);
+      color: $pink-dark;
       text-decoration: underline dotted $pink;
     }
   }

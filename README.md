@@ -14,6 +14,16 @@
 
 This repository hosts the AccessiTech homepage website, built with modern web technologies to provide an accessible and responsive user experience.
 
+## The Why
+
+AccessiTech believes access to technology is a human right, particularly when such technology promotes, protects, and/or facilitates other human rights.
+
+Producing and publishing content on accessibility in technology, AccessiTech provides clear and concise information to help disabled peoples more readily utilize the accessibility options available in their lives in order to better enable them to pursue their passions in a digital world.
+
+Through the proliferation, decentralization, and democratization of technology accessibility information, AccessiTech seeks to lower the barriers to entry for disabled peoples throughout design and development communities abroad.
+
+Collaborating and promoting design and technology for social change, AccessiTech aims to help create an increasingly accessible world for all.
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -30,19 +40,25 @@ This repository hosts the AccessiTech homepage website, built with modern web te
    cd AccessiTech
    ```
 
-2. Install dependencies
+2. Use the project Node version
+
+   ```bash
+   nvm use
+   ```
+
+3. Install dependencies
 
    ```bash
    yarn install
    ```
 
-3. Start the development server
+4. Start the development server
 
    ```bash
    yarn dev
    ```
 
-4. Open your browser to http://localhost:5173 to see the application
+5. Open your browser to http://localhost:5173 to see the application
 
 ## 🛠️ Tech Stack
 
@@ -152,9 +168,41 @@ Our commitment to accessibility includes:
 - **Reduced Motion**: Respects user preferences for reduced motion
 - **Flexible Text**: Support for text resizing without breaking layouts
 
-For more details about our accessibility features or to report accessibility issues, please see our [Accessibility Statement](ACCESSIBILITY.md).
+For more details about our accessibility testing or to report accessibility issues, please see our [testing documentation](testing/).
 
-### Connect with Me!
+## 🧪 Testing & Quality
+
+AccessiTech maintains rigorous accessibility and code quality standards:
+
+- **Test Coverage**: ≥95% line coverage requirement
+- **Accessibility Heuristics**: [10 testing heuristics](testing/ACCESSIBILITY_HEURISTICS.md) covering automated and manual verification
+- **WCAG 2.2 AA Compliance**: Full [Success Criteria matrix](testing/WCAG_2_2_AA_COMPLIANCE.md) with test coverage mapping
+
+Run the test suite:
+
+```bash
+yarn test
+```
+
+Generate coverage report:
+
+```bash
+yarn test:coverage
+```
+
+## 🤝 Contributing
+
+We welcome contributions that help make technology more accessible for everyone! Please read our [Contributing Guide](CONTRIBUTING.md) for:
+
+- Setup instructions and prerequisites
+- Testing requirements (≥95% coverage)
+- Accessibility testing protocols
+- Pull request workflow
+- Code formatting standards
+
+Before contributing, please review our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## 🌐 Community & Support
 
 - 🖥️ <a href="https://accessitech.github.io/AccessiTech/" alt="AccessiTech Website" title="AccessiTech Website" target="_blank">AccessiTech Website</a>
 - 👨‍💼 <a href="https://www.linkedin.com/company/accessitech/" alt="AccessiTech on LinkedIn" title="AccessiTech on LinkedIn" target="_blank">AccessiTech on LinkedIn</a>
@@ -171,31 +219,21 @@ AccessiTech LLC is a social enterprise dedicated to removing barriers for disabl
 
 As a social enterprise, AccessiTech LLC fosters positive social change by promoting and collaborating on emergent technologies aimed at increasing accessibility, inclusion, and equity for all.
 
-## The Why
-
-AccessiTech believes access to technology is a human right, particularly when such technology promotes, protects, and/or facilitates other human rights.
-
-Producing and publishing content on accessibility in technology, AccessiTech LLC provides clear and concise information to help disabled peoples more readily utilize the accessibility options available in their lives in order to better enable them to pursue their passions in a digital world.
-
-Through the proliferation, decentralization, and democratization of technology accessibility information, AccessiTech LLC seeks to lower the barriers to entry for disabled peoples throughout design and development communities abroad.
-
-Collaborating and promoting design and technology for social change, AccessiTech LLC aims to help create an increasingly accessible world for all.
-
 ## Collaboration
 
-As I found a mentally believe it collaboration is a form of accessibility, I encourage anyone and everyone who is interested in what excess attack is doing two reach out!
+AccessiTech believes collaboration is a form of accessibility. We encourage anyone interested in accessibility, inclusive design, or emergent technologies to reach out!
 
 ### Accessibility of this Website
 
-Accessibility has been at the forefront of the design and development of this site. That being said, I am here to learn as much as I am to share, if not more so! If you notice something that makes this site inaccessible to you, that's a mismatch and I want to address it! If I'm doing something wrong our outdated, or if you have ideas of how to better implement accessibility in the design or development, let me know and we can find solutions together! While I'm doing everything I can upfront, I know that implementing web accessibility is an ongoing and iterative process, so please bear with me!
+Accessibility has been at the forefront of the design and development of this site. That being said, we are here to learn as much as to share, if not more so! If you notice something that makes this site inaccessible to you, that's a mismatch and we want to address it! If we're doing something wrong or outdated, or if you have ideas of how to better implement accessibility in the design or development, let us know and we can find solutions together! While we're doing everything we can upfront, we know that implementing web accessibility is an ongoing and iterative process.
 
-### Issues / Bugs / Requests / etc
+### Issues / Bugs / Requests
 
-I am an adament believer in simple and descriptive [Issues](https://github.com/AccessiTech/AccessiTech/issues) as a primary means of discussing and collaborating on just about anything!
+We are adamant believers in simple and descriptive [Issues](https://github.com/AccessiTech/AccessiTech/issues) as a primary means of discussing and collaborating on just about anything!
 
 ### Contributing to this Website
 
-I am very open to collaboration as, these days, the mobility of my hands is quite limited. If you like to contribute let me know in a issue and we can chat, or fork my repo and go to town!
+We are very open to collaboration. If you'd like to contribute, let us know in an issue and we can chat, or fork the repo and submit a pull request! See our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ---
 

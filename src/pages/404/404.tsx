@@ -1,12 +1,10 @@
 import { Row, Col } from 'react-bootstrap';
-import { HeaderRow } from '../../components/Header/Header';
 import Metadata from '../../components/Metadata/Metadata';
 import metadata from '../../App/meta';
 
 export const NotFound = () => {
   return (
     <>
-      <HeaderRow />
       <Row className="content-row">
         <Col
           style={{

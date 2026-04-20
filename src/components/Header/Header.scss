@@ -1,5 +1,3 @@
-@import "bootstrap/scss/bootstrap.scss";
-
 .header-row {
   background-color: $darkBlue;
 
@@ -9,16 +7,20 @@
 }
 
 .main-header {
-  position: relative;
-  z-index: 5;
-  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $darkBlue;
+  padding: 0.5rem 1rem;
   text-align: left;
   display: flex;
   justify-content: space-between;
+  margin-inline: -0.75rem;
 
   .header-nav {
     display: flex;
     align-items: center;
+    margin-right: 2rem;
 
     ul {
       display: flex;
@@ -28,6 +30,7 @@
 
       li {
         margin-right: 1rem;
+        position: relative;
 
         a {
           color: $white;
@@ -47,6 +50,57 @@
         &:last-child {
           margin-right: 0;
         }
+
+        &.nav-dropdown {
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 0.25rem);
+            left: 0;
+            min-width: 11rem;
+            background-color: $darkBlue;
+            border: 1px solid rgba($white, 0.15);
+            border-radius: 0.25rem;
+            padding: 0.25rem 0;
+            list-style: none;
+            z-index: 200;
+            flex-direction: column;
+            margin: 0;
+
+            li {
+              margin-right: 0;
+
+              a {
+                display: block;
+                padding: 0.4rem 0.75rem;
+                white-space: nowrap;
+
+                &:hover,
+                &:focus {
+                  background-color: rgba($white, 0.1);
+                  text-decoration: underline;
+                }
+              }
+
+              &.dropdown-sub-item {
+                a {
+                  padding-left: 1.5rem;
+                  font-size: 0.85em;
+                  opacity: 0.8;
+
+                  &.active {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover .dropdown-menu,
+          &:focus-within .dropdown-menu {
+            display: flex;
+          }
+        }
       }
     }
   }
@@ -55,23 +109,7 @@
     top: 1rem;
 
     @media (min-width: map-get($grid-breakpoints, md)) {
-      top: 1.5rem;
-    }
-  }
-
-  &.home {
-    position: absolute;
-    background-color: transparent;
-    text-align: center;
-    justify-content: center;
-
-    a.logo-link {
-      margin-top: 16vh;
-      @include padding(1rem);
-    }
-
-    .a11y-container {
-      top: 1rem;
+      top: 2.125rem;
     }
   }
 

@@ -78,6 +78,22 @@ describe('utils', () => {
       expect(sorted).toContain('1.2.1');
       expect(sorted.length).toBe(2);
     });
+    it('falls back to localeCompare when numeric prefixes are equal', () => {
+      // Both have same numeric prefix '1.4.10' — falls through to localeCompare
+      const result = naturalGuidelineSort('1.4.10 - Reflow', '1.4.10 - Something');
+      expect(typeof result).toBe('number');
+      expect(result).toBeLessThan(0); // 'Reflow' < 'Something' alphabetically
+    });
+    it('handles non-numeric a when b has numeric prefix (aParts = [], aNum via ?? fallback)', () => {
+      // aMatch = null → aParts = [] → aNum = aParts[0] ?? 0 = 0
+      const result = naturalGuidelineSort('foo', '1.2.3');
+      expect(typeof result).toBe('number');
+    });
+    it('handles non-numeric b when a has numeric prefix (bParts = [], bNum via ?? fallback)', () => {
+      // bMatch = null → bParts = [] → bNum = bParts[0] ?? 0 = 0
+      const result = naturalGuidelineSort('1.2.3', 'foo');
+      expect(typeof result).toBe('number');
+    });
   });
 
   describe('getMetaData', () => {

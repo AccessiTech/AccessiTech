@@ -1,5 +1,6 @@
 import { vi, beforeEach, afterEach, describe, it } from 'vitest';
-import { screen, waitFor, act } from '@testing-library/react';
+import { screen, waitFor, act, fireEvent } from '@testing-library/react';
+import { Routes, Route } from 'react-router-dom';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
 import BlogEntry from '../BlogEntry';
 
@@ -11,7 +12,6 @@ vi.mock('../../../components/Metadata/Metadata', () => ({
 }));
 vi.mock('../../../components/Header/Header', () => ({
   __esModule: true,
-  HeaderRow: () => <div data-testid="header-row" />,
   default: () => <div data-testid="header-row-default" />,
 }));
 vi.mock('../../../components/SectionHeader/SectionHeader', () => ({
@@ -43,7 +43,7 @@ vi.mock('../../../store/blog', async () => {
   return {
     ...actual,
     useBlogEntry: (id: string) => useBlogEntryMock(id),
-    getBlogEntry: vi.fn().mockResolvedValue(undefined),
+    getBlogEntry: vi.fn(() => vi.fn().mockResolvedValue({})),
   };
 });
 
@@ -71,7 +71,6 @@ describe('BlogEntry', () => {
 
   it('renders blog entry with metadata, header, and content', async () => {
     renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
-    expect(screen.getByTestId('header-row')).toBeInTheDocument();
     expect(screen.getByTestId('metadata')).toBeInTheDocument();
     expect(screen.getByText('Test Blog Title')).toBeInTheDocument();
     expect(screen.getByText('Some content.')).toBeInTheDocument();
@@ -124,26 +123,75 @@ describe('BlogEntry', () => {
     // We can't check the offset prop directly, but we can check the link is in the document
   });
 
-  it.skip('scrolls to anchor if hash is present and element exists', async () => {
-    // Simulate entry.loaded transition
+  it('shows WCAG Explained as breadcrumb when pathname is wcag', () => {
+    renderWithProviders(<BlogEntry />, { route: '/wcag/test-blog' });
+    expect(screen.getByText('WCAG Explained')).toBeInTheDocument();
+  });
+
+  it('shows Blog as breadcrumb when pathname is blog', () => {
+    renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    expect(screen.getByText('Blog')).toBeInTheDocument();
+  });
+
+  it('renders h3 markdown headings as SectionHeader with use=h3', () => {
+    entry.content = '### Level Three Heading\n';
+    renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    expect(screen.getByTestId('section-header-h3')).toBeInTheDocument();
+    expect(screen.getByTestId('section-header-h3')).toHaveTextContent('Level Three Heading');
+  });
+
+  it('renders h4 markdown headings as SectionHeader with use=h4', () => {
+    entry.content = '#### Level Four Heading\n';
+    renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    expect(screen.getByTestId('section-header-h4')).toBeInTheDocument();
+    expect(screen.getByTestId('section-header-h4')).toHaveTextContent('Level Four Heading');
+  });
+
+  it('renders Home breadcrumb item', () => {
+    renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    expect(screen.getByText('Home')).toBeInTheDocument();
+  });
+
+  it('breadcrumb Home click does not throw', () => {
+    const { getByText } = renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    expect(() => fireEvent.click(getByText('Home'))).not.toThrow();
+  });
+
+  it('breadcrumb Blog link click does not throw', () => {
+    const { getByText } = renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    expect(() => fireEvent.click(getByText('Blog'))).not.toThrow();
+  });
+
+  it('dispatches getBlogEntry when rendered with route param id', async () => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/:pathname/:id" element={<BlogEntry />} />
+      </Routes>,
+      { route: '/blog/test-blog' }
+    );
+    await waitFor(() => {
+      expect(screen.getByText('Test Blog Title')).toBeInTheDocument();
+    });
+  });
+
+  it('scrolls to anchor if hash is present and element exists', async () => {
+    // Start with loaded = false so the effect doesn't fire on initial render
     let loaded = false;
     useBlogEntryMock.mockImplementation(() => ({ ...entry, loaded }));
-    // Mock window.location.hash
-    const originalHash = window.location.hash;
-    window.location.hash = '#anchor';
-    // Mock scrollIntoView on HTMLElement prototype
     const scrollIntoView = vi.fn();
     const originalScrollIntoView = HTMLElement.prototype.scrollIntoView;
     HTMLElement.prototype.scrollIntoView = scrollIntoView;
-    // Mock getElementById to return a real element
     const anchorDiv = document.createElement('div');
     anchorDiv.id = 'anchor';
     document.body.appendChild(anchorDiv);
     vi.spyOn(document, 'getElementById').mockImplementation((id: string) => {
       return id === 'anchor' ? anchorDiv : null;
     });
+
     const { rerender } = renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
-    // Now set loaded to true and update mock return value
+    // Set hash AFTER renderWithProviders (which clears it via pushState)
+    window.history.pushState({}, '', '/blog/test-blog#anchor');
+
     loaded = true;
     useBlogEntryMock.mockImplementation(() => ({ ...entry, loaded }));
     await act(async () => {
@@ -152,20 +200,23 @@ describe('BlogEntry', () => {
     await waitFor(() => {
       expect(scrollIntoView).toHaveBeenCalledWith({ behavior: 'smooth' });
     });
-    window.location.hash = originalHash;
+
+    window.history.pushState({}, '', '/blog/test-blog');
     document.body.removeChild(anchorDiv);
     HTMLElement.prototype.scrollIntoView = originalScrollIntoView;
-    (document.getElementById as any).mockRestore && (document.getElementById as any).mockRestore();
+    vi.restoreAllMocks();
   });
 
-  it.skip('warns if anchor is present but element does not exist', async () => {
+  it('warns if anchor is present but element does not exist', async () => {
     let loaded = false;
     useBlogEntryMock.mockImplementation(() => ({ ...entry, loaded }));
-    const originalHash = window.location.hash;
-    window.location.hash = '#notfound';
     vi.spyOn(document, 'getElementById').mockReturnValue(null);
     const warnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {});
+
     const { rerender } = renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    // Set hash AFTER renderWithProviders (which clears it via pushState)
+    window.history.pushState({}, '', '/blog/test-blog#notfound');
+
     loaded = true;
     useBlogEntryMock.mockImplementation(() => ({ ...entry, loaded }));
     await act(async () => {
@@ -174,8 +225,9 @@ describe('BlogEntry', () => {
     await waitFor(() => {
       expect(warnSpy).toHaveBeenCalledWith('Element with ID notfound not found.');
     });
-    window.location.hash = originalHash;
+
+    window.history.pushState({}, '', '/blog/test-blog');
     warnSpy.mockRestore();
-    (document.getElementById as any).mockRestore && (document.getElementById as any).mockRestore();
+    vi.restoreAllMocks();
   });
 });

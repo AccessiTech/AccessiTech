@@ -19,7 +19,6 @@ import remarkDirective from 'remark-directive';
 import { CustomMarkdownLink } from '../../components/CustomLink/CustomLink';
 import './BlogEntry.css';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
-import { HeaderRow } from '../../components/Header/Header';
 import { getChildText } from '../../utils/getChildText';
 
 export interface FetchBlogEntryProps {
@@ -75,7 +74,6 @@ export const BlogEntry = () => {
 
   return (
     <>
-      <HeaderRow />
       <Row className="breadcrumb-row">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <Metadata {...metadata} />

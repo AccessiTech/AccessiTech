@@ -1,7 +1,3 @@
-// @import "./../../sass/variables.scss";
-@import "bootstrap/scss/bootstrap.scss";
-@import "./../../components/FontOptions/fontOptions.scss";
-
 #services-row {
   text-align: left;
 
@@ -37,6 +33,13 @@
       color: $darkBlue;
       @include padding-bottom(2.5rem);
 
+      &.consulting {
+        padding-bottom: 0;
+      }
+      &.mentorship {
+        padding-top: 0;
+      }
+
       a {
         text-decoration: none;
         color: $darkBlue;
@@ -46,11 +49,16 @@
         @include padding-bottom(2.5rem);
         @include margin-top(2.5rem);
 
-        article {
+        .service-section {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           height: 100%;
+
+          h4 {
+            margin-top: 1.5rem;
+            font-weight: bold;
+          }
         }
 
         .btn {
@@ -72,6 +80,10 @@
         }
       }
     }
+  }
+  .hub-header-row .service-section {
+    justify-content: flex-start !important;
+    gap: 2rem;
   }
 
   & > div > div {

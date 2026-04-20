@@ -32,23 +32,139 @@ function Header() {
           {COMPANY_TITLE}
         </h1>
       </Link>
-      {pathname !== '/' && (
-        <nav className="header-nav" aria-label="Main navigation">
-          <ul>
-            {/* <li><Link to="/">Home</Link></li> */}
-            <li>
-              <Link to="/blog" className={pathname === '/blog' ? 'active' : ''}>
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link to="/wcag" className={pathname === '/wcag' ? 'active' : ''}>
-                WCAG Explained
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      )}
+      <nav className="header-nav" aria-label="Main navigation">
+        <ul>
+          {/* <li><Link to="/">Home</Link></li> */}
+          <li className="nav-dropdown">
+            <Link to="/services" className={pathname === '/services' ? 'active' : ''}>
+              Services
+            </Link>
+            <ul className="dropdown-menu" aria-label="Services menu">
+              <li>
+                <Link
+                  to="/services/consulting"
+                  className={pathname.startsWith('/services/consulting') ? 'active' : ''}
+                >
+                  Consulting
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link
+                  to="/services/consulting/asaaps"
+                  className={pathname === '/services/consulting/asaaps' ? 'active' : ''}
+                >
+                  ASaaPs
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link
+                  to="/services/consulting/ai-integration"
+                  className={pathname === '/services/consulting/ai-integration' ? 'active' : ''}
+                >
+                  AI Integration
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link
+                  to="/services/consulting/qa"
+                  className={pathname === '/services/consulting/qa' ? 'active' : ''}
+                >
+                  QA
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/mentorship"
+                  className={pathname.startsWith('/services/mentorship') ? 'active' : ''}
+                >
+                  Mentorship
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link
+                  to="/services/mentorship/cccs"
+                  className={pathname === '/services/mentorship/cccs' ? 'active' : ''}
+                >
+                  Courses &amp; Content
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link
+                  to="/services/mentorship/coaching"
+                  className={pathname === '/services/mentorship/coaching' ? 'active' : ''}
+                >
+                  Coaching
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link
+                  to="/services/mentorship/openclassrooms"
+                  className={pathname === '/services/mentorship/openclassrooms' ? 'active' : ''}
+                >
+                  OpenClassrooms
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link
+                  to="/services/mentorship/sotc"
+                  className={pathname === '/services/mentorship/sotc' ? 'active' : ''}
+                >
+                  SOTC
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li className="nav-dropdown">
+            <Link to="/products" className={pathname.startsWith('/products') ? 'active' : ''}>
+              Products
+            </Link>
+            <ul className="dropdown-menu" aria-label="Products menu">
+              <li className="dropdown-sub-item">
+                <Link
+                  to="/products/wcag-series"
+                  className={pathname === '/products/wcag-series' ? 'active' : ''}
+                >
+                  WCAG Series
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link
+                  to="/products/oss-asaaps"
+                  className={pathname === '/products/oss-asaaps' ? 'active' : ''}
+                >
+                  OSS &amp; ASaaPs
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link to="/products/cccs" className={pathname === '/products/cccs' ? 'active' : ''}>
+                  Curriculum &amp; Content
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link
+              to="/wcag"
+              className={pathname === '/wcag' || pathname.startsWith('/wcag/') ? 'active' : ''}
+            >
+              Resources
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/blog"
+              className={pathname === '/blog' || pathname.startsWith('/blog/') ? 'active' : ''}
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className={pathname === '/contact' ? 'active' : ''}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
       <A11Y />
     </header>
   );

@@ -11,7 +11,7 @@ vi.mock('../../components/SplashSocials/SplashSocials', () => ({
     return <div data-testid="splash-socials" />;
   },
 }));
-vi.mock('../../components/Services/Services', () => ({
+vi.mock('../../../components/Services/Services', () => ({
   __esModule: true,
   default: () => <div data-testid="services" />,
 }));
@@ -22,55 +22,74 @@ import { axe, toHaveNoViolations } from 'jest-axe';
 expect.extend(toHaveNoViolations);
 
 describe('Home', () => {
-  let Home: React.FC, TAGLINE: string, VISION_P3: string;
+  let Home: React.FC,
+    TAGLINE: string,
+    WHO_HEADER: string,
+    WHY_HEADER: string,
+    PRODUCTS_HEADER: string;
+
   beforeEach(async () => {
     vi.resetModules();
-    // Re-import Home and constants after resetting modules
     const mod = await import('../Home');
     Home = mod.default;
     TAGLINE = mod.TAGLINE;
-    VISION_P3 = mod.VISION_P3;
+    WHO_HEADER = mod.WHO_HEADER;
+    WHY_HEADER = mod.WHY_HEADER;
+    PRODUCTS_HEADER = mod.PRODUCTS_HEADER;
     mockNavigate.mockClear();
   });
 
-  it('renders the tagline and vision', () => {
+  it('renders the tagline', () => {
     renderWithProviders(<Home />);
     expect(screen.getByText(TAGLINE)).toBeInTheDocument();
-    expect(screen.getByText(VISION_P3)).toBeInTheDocument();
   });
 
-  it('renders blog and wcag CTAs', () => {
+  it('renders WHO and WHY sections', () => {
     renderWithProviders(<Home />);
-    expect(screen.getByRole('button', { name: /browse the blog/i })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /start the series/i })).toBeInTheDocument();
+    expect(screen.getByText(WHO_HEADER)).toBeInTheDocument();
+    expect(screen.getByText(WHY_HEADER)).toBeInTheDocument();
   });
 
-  it('renders SplashSocials, Metadata, and Services', () => {
+  it('renders Services section', () => {
     renderWithProviders(<Home />);
-    expect(screen.getByTestId('splash-socials')).toBeInTheDocument();
-    // expect(screen.getByTestId('metadata')).toBeInTheDocument();
     expect(screen.getByTestId('services')).toBeInTheDocument();
   });
 
-  it('renders the main landmark and blockquote', () => {
+  it('renders the main landmark', () => {
     renderWithProviders(<Home />);
     expect(screen.getByRole('main')).toBeInTheDocument();
-    expect(screen.getByText(VISION_P3)).toBeInTheDocument();
-    expect(screen.getByText(VISION_P3).closest('blockquote')).toBeInTheDocument();
+  });
+
+  it('renders Products section with three product card buttons', () => {
+    renderWithProviders(<Home />);
+    expect(screen.getByText(PRODUCTS_HEADER)).toBeInTheDocument();
+    expect(screen.getByTestId('product-card-btn-wcag')).toBeInTheDocument();
+    expect(screen.getByTestId('product-card-btn-oss')).toBeInTheDocument();
+    expect(screen.getByTestId('product-card-btn-cccs')).toBeInTheDocument();
+  });
+
+  it('renders contact section with Calendly and Link button', () => {
+    renderWithProviders(<Home />);
+    const calendlyButtons = screen.getAllByTestId('calendly-button');
+    expect(calendlyButtons.length).toBeGreaterThanOrEqual(2);
+    expect(screen.getByText('Send us a Message!')).toBeInTheDocument();
   });
 
   describe('navigation', () => {
-    it('navigates to /blog when blog CTA is clicked', () => {
+    it('navigates to /products/wcag-series from WCAG product button', () => {
       renderWithProviders(<Home />);
-      const blogBtn = screen.getByRole('button', { name: /browse the blog/i });
-      fireEvent.click(blogBtn);
-      expect(mockNavigate).toHaveBeenCalledWith('/blog');
+      fireEvent.click(screen.getByTestId('product-card-btn-wcag'));
+      expect(mockNavigate).toHaveBeenCalledWith('/products/wcag-series');
     });
-    it('navigates to /wcag when wcag CTA is clicked', () => {
+    it('navigates to /products/oss-asaaps from OSS product button', () => {
       renderWithProviders(<Home />);
-      const wcagBtn = screen.getByRole('button', { name: /start the series/i });
-      fireEvent.click(wcagBtn);
-      expect(mockNavigate).toHaveBeenCalledWith('/wcag');
+      fireEvent.click(screen.getByTestId('product-card-btn-oss'));
+      expect(mockNavigate).toHaveBeenCalledWith('/products/oss-asaaps');
+    });
+    it('navigates to /products/cccs from CCCs product button', () => {
+      renderWithProviders(<Home />);
+      fireEvent.click(screen.getByTestId('product-card-btn-cccs'));
+      expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
     });
   });
 
