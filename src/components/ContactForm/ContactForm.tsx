@@ -100,7 +100,12 @@ export const ContactForm = ({ inquiryType }: ContactFormProps) => {
   }
 
   return (
-    <Form onSubmit={handleSubmit} noValidate className="contact-form" data-testid="contact-form">
+    <Form
+      onSubmit={handleSubmit}
+      noValidate
+      className="contact-form mb-5 mt-5"
+      data-testid="contact-form"
+    >
       {submitError && (
         <Alert variant="danger" role="alert" data-testid="contact-error">
           {submitError}
@@ -188,6 +193,7 @@ export const ContactForm = ({ inquiryType }: ContactFormProps) => {
       <Button
         type="submit"
         variant="primary"
+        className="btn btn-primary btn-lg"
         disabled={submitting}
         aria-label={submitting ? 'Submitting your message...' : 'Send message'}
         data-testid="contact-submit"

@@ -17,7 +17,7 @@ export const Contact = () => {
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <Metadata {...contactMetadata} />
           <main id="main" aria-label="Contact AccessiTech">
-            <Breadcrumb>
+            <Breadcrumb className="breadcrumb-container">
               <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
               <Breadcrumb.Item active>Contact</Breadcrumb.Item>
             </Breadcrumb>
@@ -31,8 +31,7 @@ export const Contact = () => {
 
             <CalendlyButton
               label="Prefer to schedule directly? Book a discovery call."
-              variant="outline-primary"
-              className="mb-4"
+              className="mb-4 btn btn-primary btn-lg"
             />
 
             <ContactForm />

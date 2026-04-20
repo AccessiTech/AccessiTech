@@ -1,22 +1,33 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import SplashSocials from '../../components/SplashSocials/SplashSocials';
-import { SPLASH_BG } from '../../settings/strings';
+// import { SPLASH_BG } from '../../settings/strings';
 import Services from '../../components/Services/Services';
 import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
 import './Home.scss';
 import { Button } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Metadata from '../../components/Metadata/Metadata';
 import metadata from '../../App/meta';
 
+import {
+  PURPOSE_PIC_SIZES,
+  PURPOSE_PIC_SRCSET,
+  PURPOSE_PIC_URL_1024,
+} from '../../settings/settings';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
+export const CLICK_TO_COPY = 'click to copy link';
+
 const splashRowStyle = {
-  backgroundImage: SPLASH_BG,
+  // backgroundImage: SPLASH_BG,
 };
 
 export const APP_ROOT = 'App Root';
 export const SKIP_TO_MAIN_CONTENT = 'Skip to main content';
 export const ABOUT_ACCESSITECH = 'About AccessiTech';
+export const COPY_SUCCESS_MESSAGE = 'Copied!';
+export const COPY_FAIL_MESSAGE = 'Unable to copy to clipboard';
+export const PURPOSE_PIC_ALT = 'Image Credit: Urupong from Ghetty Images';
 
 // Tagline
 export const TAGLINE =
@@ -63,7 +74,7 @@ export const BLOG_DESC =
 
 // CONTACT
 export const CONTACT_HEADER = 'Get in touch';
-export const CONTACT_P1 = `Questions about Consulting, Mentorship, or how AccessiTech can help your organization? Send us a message using the form below. We respond within 24 hours—often faster.`;
+export const CONTACT_P1 = `Questions about Consulting, Mentorship, or how AccessiTech can help your organization?`;
 export const CONTACT_P2 =
   'All inquiries are routed directly to conor and sheela (founders). No triage delay, no junior staff handoff.';
 
@@ -73,7 +84,7 @@ export const Home = () => {
     <>
       {/* Tagline */}
       <Row className="splash-row" style={splashRowStyle}>
-        <Col>
+        <Col xs={12} md={{ span: 8, offset: 2 }}>
           <Metadata {...metadata} />
           <h2>{TAGLINE}</h2>
           {/* <SplashSocials /> */}
@@ -84,18 +95,79 @@ export const Home = () => {
         {/* WHY */}
         <Row className="why-row">
           <Col xs={12} md={{ span: 8, offset: 2 }}>
-            <h3>{WHY_HEADER}</h3>
+            <SectionHeader
+              title={WHY_HEADER}
+              id="why"
+              use="h2"
+              linkTitle={CLICK_TO_COPY}
+              successText={COPY_SUCCESS_MESSAGE}
+              failText={COPY_FAIL_MESSAGE}
+            />
             <p>{WHY_P1}</p>
             <p>{WHY_P2}</p>
             <p>{WHY_P3}</p>
           </Col>
         </Row>
 
-        {/* CTA + SERVICES */}
-        <Services compact />
+        {/* CTA */}
+        <section id="cta-section">
+          <Row className="cta-header-row">
+            <Col
+              xs={12}
+              md={{ span: 5, offset: 1 }}
+              xl={{ span: 6, offset: 1 }}
+              className="text-center text-md-start"
+            >
+              <SectionHeader
+                title={CTA_HEADER}
+                id="cta"
+                use="h2"
+                linkTitle={CLICK_TO_COPY}
+                successText={COPY_SUCCESS_MESSAGE}
+                failText={COPY_FAIL_MESSAGE}
+              />
+              <p>{CTA_P1}</p>
+              <CalendlyButton
+                label="Schedule a Discovery Call"
+                className="btn btn-primary btn-lg"
+              />
+              {/* <p className="mt-3">{CTA_P2}</p>
+          <Button
+            variant="outline-primary"
+            size="lg"
+            onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+              e.preventDefault();
+              navigate('/contact');
+            }}
+          >
+            Send us a message
+          </Button> */}
+            </Col>
+            <Col
+              className="purpose-image"
+              xs={{ span: 6, offset: 3 }}
+              md={{ span: 4, offset: 0 }}
+              lg={{ span: 3, offset: 1 }}
+              xl={{ span: 2, offset: 1 }}
+              aria-label="image"
+            >
+              <img
+                srcSet={PURPOSE_PIC_SRCSET}
+                sizes={PURPOSE_PIC_SIZES}
+                src={PURPOSE_PIC_URL_1024}
+                className="purpose-picture"
+                alt={PURPOSE_PIC_ALT}
+                title={PURPOSE_PIC_ALT}
+              />
+            </Col>
+          </Row>
+        </section>
+
+        {/* SERVICES */}
+        <Services />
 
         {/* EXPLORE ALL SERVICES */}
-        <Row className="services-explore-row">
+        {/* <Row className="services-explore-row">
           <Col xs={12} className="text-center">
             <Button
               data-testid="explore-services-btn"
@@ -106,12 +178,19 @@ export const Home = () => {
               Explore all services
             </Button>
           </Col>
-        </Row>
+        </Row> */}
 
         {/* WHO */}
         <Row className="who-row">
           <Col xs={12} md={{ span: 8, offset: 2 }}>
-            <h3>{WHO_HEADER}</h3>
+            <SectionHeader
+              title={WHO_HEADER}
+              id="who"
+              use="h2"
+              linkTitle={CLICK_TO_COPY}
+              successText={COPY_SUCCESS_MESSAGE}
+              failText={COPY_FAIL_MESSAGE}
+            />
             <p>{WHO_P1}</p>
             <p>{WHO_P2}</p>
             <p>{WHO_P3}</p>
@@ -121,17 +200,24 @@ export const Home = () => {
         {/* PRODUCTS OVERVIEW */}
         <Row className="products-overview-row">
           <Col xs={12} md={{ span: 10, offset: 1 }}>
-            <h3>{PRODUCTS_HEADER}</h3>
+            <SectionHeader
+              title={PRODUCTS_HEADER}
+              id="products"
+              use="h2"
+              linkTitle={CLICK_TO_COPY}
+              successText={COPY_SUCCESS_MESSAGE}
+              failText={COPY_FAIL_MESSAGE}
+            />
             <p>{PRODUCTS_OVERVIEW_P1}</p>
-            <p>{PRODUCTS_OVERVIEW_P2}</p>
-            <p>{PRODUCTS_OVERVIEW_P3}</p>
+            {/* <p>{PRODUCTS_OVERVIEW_P2}</p>
+            <p>{PRODUCTS_OVERVIEW_P3}</p> */}
           </Col>
         </Row>
 
         {/* PRODUCT CARDS */}
         <Row className="products-row">
           <Col xs={12} md={{ span: 3, offset: 1 }} className="product-card">
-            <h4>{WCAG_SERIES_TITLE}</h4>
+            <h3>{WCAG_SERIES_TITLE}</h3>
             <p>{WCAG_SERIES_DESC}</p>
             <Button
               data-testid="product-card-btn-wcag"
@@ -141,8 +227,8 @@ export const Home = () => {
               Learn more
             </Button>
           </Col>
-          <Col xs={12} md={{ span: 2 }} className="product-card mt-5 mt-md-0">
-            <h4>{OSS_TITLE}</h4>
+          <Col xs={12} md={{ span: 4 }} className="product-card mt-5 mt-md-0">
+            <h3>{OSS_TITLE}</h3>
             <p>{OSS_DESC}</p>
             <Button
               data-testid="product-card-btn-oss"
@@ -152,8 +238,8 @@ export const Home = () => {
               Learn more
             </Button>
           </Col>
-          <Col xs={12} md={{ span: 2 }} className="product-card mt-5 mt-md-0">
-            <h4>{CCCS_TITLE}</h4>
+          <Col xs={12} md={{ span: 3 }} className="product-card mt-5 mt-md-0">
+            <h3>{CCCS_TITLE}</h3>
             <p>{CCCS_DESC}</p>
             <Button
               data-testid="product-card-btn-cccs"
@@ -166,7 +252,7 @@ export const Home = () => {
         </Row>
 
         {/* EXPLORE ALL PRODUCTS */}
-        <Row className="products-explore-row">
+        {/* <Row className="products-explore-row">
           <Col xs={12} className="text-center">
             <Button
               data-testid="explore-products-btn"
@@ -177,21 +263,31 @@ export const Home = () => {
               Explore all products
             </Button>
           </Col>
-        </Row>
+        </Row> */}
 
         {/* CONTACT */}
         <Row className="contact-row">
           <Col xs={12} className="text-center">
-            <CalendlyButton />
-            <Button
+            <SectionHeader
+              title={CONTACT_HEADER}
+              id="contact"
+              use="h2"
+              linkTitle={CLICK_TO_COPY}
+              successText={COPY_SUCCESS_MESSAGE}
+              failText={COPY_FAIL_MESSAGE}
+            />
+            <p>{CONTACT_P1}</p>
+            <CalendlyButton className="btn btn-primary btn-lg" />
+            <Link to="/contact" className="ms-3 btn btn-primary btn-lg">
+              Send us a Message!
+            </Link>
+            {/* <Button
               data-testid="contact-us-btn"
               variant="outline-primary"
               size="lg"
               className="ms-3"
               onClick={() => navigate('/contact')}
-            >
-              Contact Us
-            </Button>
+            > */}
           </Col>
         </Row>
       </main>

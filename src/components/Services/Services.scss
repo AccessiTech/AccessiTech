@@ -33,6 +33,13 @@
       color: $darkBlue;
       @include padding-bottom(2.5rem);
 
+      &.consulting {
+        padding-bottom: 0;
+      }
+      &.mentorship {
+        padding-top: 0;
+      }
+
       a {
         text-decoration: none;
         color: $darkBlue;
@@ -73,6 +80,10 @@
         }
       }
     }
+  }
+  .hub-header-row .service-section {
+    justify-content: flex-start !important;
+    gap: 2rem;
   }
 
   & > div > div {

@@ -4,13 +4,19 @@
 }
 
 .splash-row {
-  height: 50vh;
-  min-height: 20rem;
-  background-size: cover;
-  background-position: center;
+  // height: 50vh;
+  // min-height: 20rem;
+  // background-size: cover;
+  // background-position: center;
+
+  // background gradient using conic gradient from 90 degrees, using $pink, $darkBlue, $lightBlue, and $pink again to create a 4-color gradient that wraps around the circle
+  background-image: conic-gradient(from 90deg, $pink, $darkBlue, $lightBlue 97%, $pink);
 
   h2 {
-    margin-top: calc(16vh + 1rem + 4rem);
+    // margin-top: calc(16vh + 1rem + 4rem);
+    position: relative;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
     color: $white;
     font-style: italic;
     font-weight: 300;
@@ -71,17 +77,57 @@ a.skip-link {
   }
 }
 
+#cta-section {
+  .row {
+    @include padding(2.5rem 0 0);
+
+    &.cta-header-row {
+      background-color: $pink;
+      color: $darkBlue;
+      @include padding(5rem 0);
+
+      a {
+        text-decoration: none;
+        color: $darkBlue;
+      }
+
+      .purpose-picture {
+        max-width: 100%;
+        border-radius: 100%;
+        aspect-ratio: 1 / 1;
+      }
+
+      .simplified-view & {
+        padding-bottom: 0;
+        .purpose-image {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 .why-row,
 .who-row {
   @include padding($main-section-padding 0);
+  text-align: left;
 
+  h2 {
+    color: black;
+  }
   p {
     font-size: calc(1.25rem * var(--font-size-multiplier));
   }
 }
 
 .products-overview-row {
-  @include padding($main-section-padding 0);
+  @include padding($main-section-padding 0 0);
+  background-color: $yellow;
+  text-align: left;
+
+  h2 {
+    color: $darkBlue;
+  }
 
   p {
     font-size: calc(1.25rem * var(--font-size-multiplier));
@@ -89,7 +135,9 @@ a.skip-link {
 }
 
 .products-row {
-  @include padding($main-section-padding 0);
+  @include padding(1rem 0 $main-section-padding 0);
+  background-color: $yellow;
+  text-align: left;
 
   .product-card {
     h4 {
@@ -99,12 +147,20 @@ a.skip-link {
     p {
       font-size: calc(1.25rem * var(--font-size-multiplier));
     }
+
+    .btn-outline-primary {
+      color: $darkBlue;
+      border-color: $darkBlue;
+    }
   }
 }
 
 .contact-row {
   @include padding($main-section-padding 0);
-
+  background-color: $pink;
+  h2 {
+    color: $darkBlue;
+  }
   p {
     font-size: calc(1.25rem * var(--font-size-multiplier));
   }

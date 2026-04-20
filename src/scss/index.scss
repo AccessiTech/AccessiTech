@@ -161,6 +161,10 @@ code {
     @include padding(0);
   }
 }
+.copyright {
+  margin-bottom: 0 !important;
+  padding-bottom: 1rem;
+}
 
 .App {
   display: flex;
@@ -171,6 +175,7 @@ code {
 .breadcrumb-container {
   // position: absolute;
   @include padding-top(1.5rem);
+
   .breadcrumb {
     padding-bottom: 0;
     text-align: left;
@@ -182,5 +187,38 @@ code {
     &:hover {
       text-decoration: underline dotted $darkBlue;
     }
+  }
+}
+
+#services-row .services-row.hub-header-row {
+  padding-top: 0;
+
+  & > div {
+    margin-top: 0;
+  }
+}
+
+.learn-more-inline-link {
+  display: inline;
+  font-weight: bold;
+  text-decoration: underline dotted $pink;
+  padding-left: 0.25rem;
+
+  &:hover,
+  &:visited {
+    color: $pink-dark;
+    text-decoration: underline dotted $pink;
+  }
+}
+
+.products-hub-header-row {
+  background-color: $yellow;
+  text-align: left;
+  color: $darkBlue;
+  // @include padding(5rem 0);
+
+  a {
+    text-decoration: none;
+    color: $darkBlue;
   }
 }

@@ -10,7 +10,7 @@ const ServicesPage = () => (
       canonical={`${HOME_URL}/services`}
     />
     <main id="main" aria-label="Services">
-      <Services />
+      <Services hub />
     </main>
   </>
 );

@@ -44,7 +44,7 @@ function Footer() {
   // };
   return (
     <footer className="bg-dark text-white pt-5 text-start" aria-label={FOOTER}>
-      <Container>
+      <Container fluid>
         <Row className="g-4">
           <Col xs={12} md={{ span: 4, offset: 1 }}>
             <Link to={ROOT} title={COMPANY_TITLE} className="text-decoration-none d-block p-0">
@@ -183,7 +183,7 @@ function Footer() {
           </Col>
         </Row>
 
-        <p aria-label={COPYRIGHT} className="text-center mt-5 mb-3">
+        <p aria-label={COPYRIGHT} className="copyright text-center mt-5 mb-3">
           {COPYRIGHT_P1}
         </p>
       </Container>

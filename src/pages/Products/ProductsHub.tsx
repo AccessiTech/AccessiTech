@@ -1,4 +1,4 @@
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col, Button, Breadcrumb } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Metadata from '../../components/Metadata/Metadata';
 import { HOME_URL } from '../../settings/strings';
@@ -24,14 +24,18 @@ const ProductsHub = () => {
       />
       <main id="main" aria-label={PRODUCTS_HEADER}>
         <Row className="products-hub-header-row">
-          <Col xs={12} md={{ span: 8, offset: 2 }}>
+          <Col sm={12} md={{ span: 8, offset: 2 }}>
+            <Breadcrumb className="breadcrumb-container">
+              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item active>Products</Breadcrumb.Item>
+            </Breadcrumb>
             <h2>{PRODUCTS_HEADER}</h2>
             <p>{PRODUCTS_OVERVIEW_P1}</p>
           </Col>
         </Row>
 
         <Row className="products-row">
-          <Col xs={12} md={{ span: 3, offset: 1 }} className="product-card">
+          <Col xs={12} md={{ span: 8, offset: 2 }} className="product-card">
             <h3>{WCAG_SERIES_TITLE}</h3>
             <p>{WCAG_SERIES_DESC}</p>
             <Button
@@ -42,7 +46,7 @@ const ProductsHub = () => {
               Learn more
             </Button>
           </Col>
-          <Col xs={12} md={{ span: 2 }} className="product-card mt-5 mt-md-0">
+          <Col xs={12} md={{ span: 8, offset: 2 }} className="product-card mt-5">
             <h3>{OSS_TITLE}</h3>
             <p>{OSS_DESC}</p>
             <Button
@@ -53,7 +57,7 @@ const ProductsHub = () => {
               Learn more
             </Button>
           </Col>
-          <Col xs={12} md={{ span: 2 }} className="product-card mt-5 mt-md-0">
+          <Col xs={12} md={{ span: 8, offset: 2 }} className="product-card mt-5">
             <h3>{CCCS_TITLE}</h3>
             <p>{CCCS_DESC}</p>
             <Button
