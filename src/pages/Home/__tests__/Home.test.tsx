@@ -68,20 +68,11 @@ describe('Home', () => {
     expect(screen.getByTestId('product-card-btn-cccs')).toBeInTheDocument();
   });
 
-  it('renders Explore all services button', () => {
+  it('renders contact section with Calendly and Link button', () => {
     renderWithProviders(<Home />);
-    expect(screen.getByTestId('explore-services-btn')).toBeInTheDocument();
-  });
-
-  it('renders contact section with Calendly and Contact Us buttons', () => {
-    renderWithProviders(<Home />);
-    expect(screen.getByTestId('calendly-button')).toBeInTheDocument();
-    expect(screen.getByTestId('contact-us-btn')).toBeInTheDocument();
-  });
-
-  it('renders Explore all products button', () => {
-    renderWithProviders(<Home />);
-    expect(screen.getByTestId('explore-products-btn')).toBeInTheDocument();
+    const calendlyButtons = screen.getAllByTestId('calendly-button');
+    expect(calendlyButtons.length).toBeGreaterThanOrEqual(2);
+    expect(screen.getByText('Send us a Message!')).toBeInTheDocument();
   });
 
   describe('navigation', () => {
@@ -99,22 +90,6 @@ describe('Home', () => {
       renderWithProviders(<Home />);
       fireEvent.click(screen.getByTestId('product-card-btn-cccs'));
       expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
-    });
-    it('navigates to /services from Explore all services button', () => {
-      renderWithProviders(<Home />);
-      fireEvent.click(screen.getByTestId('explore-services-btn'));
-      expect(mockNavigate).toHaveBeenCalledWith('/services');
-    });
-    it('navigates to /contact from Contact Us button', () => {
-      renderWithProviders(<Home />);
-      fireEvent.click(screen.getByTestId('contact-us-btn'));
-      expect(mockNavigate).toHaveBeenCalledWith('/contact');
-    });
-
-    it('navigates to /products from Explore all products button', () => {
-      renderWithProviders(<Home />);
-      fireEvent.click(screen.getByTestId('explore-products-btn'));
-      expect(mockNavigate).toHaveBeenCalledWith('/products');
     });
   });
 

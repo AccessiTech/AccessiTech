@@ -45,30 +45,6 @@ describe('Conversion Pathways — Integration Tests', () => {
   });
 
   describe('Homepage Conversion Touchpoints', () => {
-    it('has working "Explore all services" CTA', async () => {
-      const user = userEvent.setup();
-      renderWithProviders(<Home />);
-
-      await waitFor(() => expect(screen.getByTestId('explore-services-btn')).toBeInTheDocument());
-
-      const exploreBtn = screen.getByTestId('explore-services-btn');
-      await user.click(exploreBtn);
-
-      expect(mockNavigate).toHaveBeenCalledWith('/services');
-    });
-
-    it('has working "Explore all products" CTA', async () => {
-      const user = userEvent.setup();
-      renderWithProviders(<Home />);
-
-      await waitFor(() => expect(screen.getByTestId('explore-products-btn')).toBeInTheDocument());
-
-      const exploreBtn = screen.getByTestId('explore-products-btn');
-      await user.click(exploreBtn);
-
-      expect(mockNavigate).toHaveBeenCalledWith('/products');
-    });
-
     it('has working product card CTAs that navigate to product detail pages', async () => {
       const user = userEvent.setup();
       renderWithProviders(<Home />);
@@ -89,13 +65,12 @@ describe('Conversion Pathways — Integration Tests', () => {
       expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
     });
 
-    it('has working "Contact Us" CTA', async () => {
-      const user = userEvent.setup();
+    it('has working "Contact Us" Link', async () => {
       renderWithProviders(<Home />);
 
-      const contactBtn = screen.getByTestId('contact-us-btn');
-      await user.click(contactBtn);
-      expect(mockNavigate).toHaveBeenCalledWith('/contact');
+      const contactLink = screen.getByText('Send us a Message!');
+      expect(contactLink).toBeInTheDocument();
+      expect(contactLink).toHaveAttribute('href', '/contact');
     });
   });
 

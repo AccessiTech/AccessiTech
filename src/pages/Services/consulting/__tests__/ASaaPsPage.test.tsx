@@ -23,7 +23,7 @@ describe('ASaaPsPage', () => {
   it('passes the correct title', () => {
     renderWithProviders(<ASaaPsPage />, { route: '/services/consulting/asaaps' });
     expect(
-      screen.getByText('Design and Development — Accessible Software as a Product/Service (ASaaPs)')
+      screen.getByText('Accessible Software as a Product/Service (ASaaPs)')
     ).toBeInTheDocument();
   });
 
