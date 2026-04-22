@@ -57,7 +57,10 @@ export const render = async (path: string, metadata?: MetaDataProps) => {
       <App path={path} metadata={metadata} />
     </Provider>
   );
-  const staticMarkup = ReactDOMServer.renderToStaticMarkup(component);
+  // Use renderToString which supports Suspense better than renderToStaticMarkup
+  // However, it will still render Suspense fallbacks. The App component must
+  // handle SSR by not using lazy() when path prop is set (SSR mode).
+  const staticMarkup = ReactDOMServer.renderToString(component);
   return staticMarkup;
 };
 
