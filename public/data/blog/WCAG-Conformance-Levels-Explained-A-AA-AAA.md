@@ -6,6 +6,7 @@ keywords: wcag levels, wcag a aa aaa, accessibility standards, web compliance, d
 image: wcag-conformance-levels.png
 imageAlt: Three stacked blocks labeled A, AA, AAA representing WCAG levels
 status: draft
+date: 2025-05-01
 -->
 
 # **WCAG Conformance Levels Explained: A, AA, and AAA**

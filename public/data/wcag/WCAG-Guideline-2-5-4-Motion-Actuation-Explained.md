@@ -1,7 +1,7 @@
 <!--
 title: 2.5.4 - Motion Actuation
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what it means, why it matters, and how to ensure users can operate functionality without device motion.
+description: A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what it means, why it matters, and how to ensure users can operate functionality without device…
 keywords: wcag 2.5.4, motion actuation, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.5.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.4 Explained, Motion Actuation"

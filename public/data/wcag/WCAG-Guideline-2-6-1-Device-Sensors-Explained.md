@@ -1,7 +1,7 @@
 <!--
 title: 2.6.1 - Device Sensors
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.6.1 (Device Sensors)—what it means, why it matters, and how to ensure users can operate functionality without relying on device sensors.
+description: A practical guide to WCAG Guideline 2.6.1 (Device Sensors)—what it means, why it matters, and how to ensure users can operate functionality without relying…
 keywords: wcag 2.6.1, device sensors, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.6.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.6.1 Explained, Device Sensors"
