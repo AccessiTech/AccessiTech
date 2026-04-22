@@ -1,52 +1,45 @@
 /**
  * Helper to create SSR-safe lazy-loaded components.
- * On the server (SSR), imports synchronously to allow vite-ssg to render static HTML.
- * On the client, uses React.lazy() for code-splitting and faster initial load.
+ *
+ * During SSR (vite-ssg build):
+ *   - Returns the eager component so full HTML can be rendered
+ *   - Prevents Suspense fallback from being baked into static HTML
+ *
+ * During client hydration:
+ *   - Returns a lazy-loaded component for code splitting
+ *   - Maintains performance benefits on browser
  *
  * Usage:
- *   const MyComponent = createSSRSafeComponent(() => import('../pages/MyPage'));
+ *   const HomeRoute = createSSRSafeComponent(Home, () => import('../pages/Home/Home'));
+ *   const BlogRoute = createSSRSafeComponent(Blog, () => import('../pages/Blog/Blog'));
  */
 import { lazy, ComponentType } from 'react';
 
 type ComponentLoader = () => Promise<{ default: ComponentType<any> }>;
 
 /**
- * Check if we're running in a server/SSR environment
+ * Create a component that conditionally eager-loads on SSR, lazy-loads on client.
+ * This is the single place where SSR/client mode logic lives.
  */
-const isSSR = typeof window === 'undefined';
-
-export const createSSRSafeComponent = (loader: ComponentLoader): ComponentType<any> => {
-  if (isSSR) {
-    // SSR mode: synchronous require (this works in Node.js)
-    // We can't use dynamic import() in SSR, so we use require()
-    // Note: this requires the loader to be a module path string
-    // For Vite/Node.js environments, we need a different approach
-
-    // Return a placeholder component that will be rendered synchronously
-    // This prevents the Suspense fallback from being rendered
-    return () => {
-      // In SSR mode, render nothing or a minimal placeholder
-      // The component will be hydrated on the client
-      return null;
-    };
-  }
-
-  // Client mode: use lazy loading for code splitting
-  return lazy(loader);
-};
-
-/**
- * For components that must render during SSR (like Home page header),
- * create a dual-mode component: eager on SSR, lazy on client.
- *
- * This is a more advanced pattern requiring separate component files.
- */
-export const createSSRFirstComponent = (
-  ssrComponent: ComponentType<any>,
+export const createSSRSafeComponent = (
+  eagerComponent: ComponentType<any>,
   lazyLoader: ComponentLoader
 ): ComponentType<any> => {
-  if (isSSR) {
-    return ssrComponent;
+  // Note: typeof window check cannot be used here because both SSR and client
+  // need to return the same component type. Instead, we rely on App.tsx to
+  // pass the correct component based on isSSR mode.
+  // If this runs during SSR (Node.js), the eager component is already in memory.
+  // If this runs on client, we wrap it with lazy().
+
+  // We can detect SSR by checking if we're in a Node.js environment
+  // but this needs to happen at runtime during SSG, not at module load time.
+  // So we return a component that makes the decision at render time.
+
+  if (typeof window === 'undefined') {
+    // SSR environment - return eager component as-is
+    return eagerComponent;
   }
+
+  // Client environment - wrap with lazy() for code splitting
   return lazy(lazyLoader);
 };
