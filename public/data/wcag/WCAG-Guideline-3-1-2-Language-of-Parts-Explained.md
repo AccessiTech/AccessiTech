@@ -1,7 +1,7 @@
 <!--
 title: 3.1.2 - Language of Parts
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—what it means, why it matters, and how to ensure the language of each part of a page is programmatically determined.
+description: A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—what it means, why it matters, and how to ensure the language of each part of a page is…
 keywords: wcag 3.1.2, language of parts, accessibility, web standards, digital inclusion
 image: WCAG-Series-3.1.2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.2 Explained, Language of Parts"

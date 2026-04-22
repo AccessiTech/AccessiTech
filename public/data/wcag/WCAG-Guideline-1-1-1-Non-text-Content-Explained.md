@@ -1,7 +1,7 @@
 <!--
 title: 1.1.1 - Non-text Content
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 1.1.1 (Non-text Content)—what it means, why it matters, and how to provide accessible alternatives for images, icons, and more.
+description: A practical guide to WCAG Guideline 1.1.1 (Non-text Content)—what it means, why it matters, and how to provide accessible alternatives for images, icons…
 keywords: wcag 1.1.1, non-text content, alt text, accessibility, web standards, images, icons, screen readers, digital inclusion
 image: WCAG-Series-1.1.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.1.1 Explained, Non-text Content"

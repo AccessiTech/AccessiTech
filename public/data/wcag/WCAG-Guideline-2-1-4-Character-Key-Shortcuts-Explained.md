@@ -1,7 +1,7 @@
 <!--
 title: 2.1.4 - Character Key Shortcuts
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.1.4 (Character Key Shortcuts)—what it means, why it matters, and how to ensure keyboard shortcuts don't interfere with accessibility.
+description: A practical guide to WCAG Guideline 2.1.4 (Character Key Shortcuts)—what it means, why it matters, and how to ensure keyboard shortcuts don't interfere with…
 keywords: wcag 2.1.4, character key shortcuts, keyboard accessibility, web standards, digital inclusion, custom shortcuts
 image: WCAG-Series-2.1.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.4 Explained, Character Key Shortcuts"
