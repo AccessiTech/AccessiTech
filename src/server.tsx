@@ -124,7 +124,7 @@ export const fetchMetaData = async (
   const metaData: MetaDataProps = {
     title: rawMetaData['title'] || '',
     description: rawMetaData['description'] || '',
-    canonical: `https://accessitech.org${url.replace('.md', '.html')}`,
+    canonical: `https://accessi.tech${url.replace('.md', '.html')}`,
     type: rawMetaData['type'] || 'article',
     image: rawMetaData['image'] || undefined,
     imageAlt: rawMetaData['image_alt'] || undefined,
