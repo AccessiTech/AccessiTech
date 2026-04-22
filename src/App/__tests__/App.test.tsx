@@ -4,10 +4,14 @@ import { App, AppProps } from '../App';
 import { APP_ROOT } from '../../pages/Home/Home';
 
 // Mock the child components
-vi.mock('../../pages/Home/Home', () => ({
-  Home: () => <div data-testid="mock-home">Home Page</div>,
-  APP_ROOT: 'AccessiTech Application',
-}));
+vi.mock('../../pages/Home/Home', () => {
+  const MockHome = () => <div data-testid="mock-home">Home Page</div>;
+  return {
+    default: MockHome,
+    Home: MockHome,
+    APP_ROOT: 'AccessiTech Application',
+  };
+});
 
 vi.mock('../../pages/Blog/Blog', () => ({
   default: ({ hideExcerpt, hideDates, hideDescription }: any) => (

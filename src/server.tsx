@@ -7,6 +7,7 @@ import './scss/index.scss';
 import { store } from './store/store';
 import { MetaDataProps } from './settings/getMetaData';
 import { Blog, setBlogEntry } from './store/blog';
+import { setDisclosureEntry } from './store/disclosure';
 import { XMLParser } from 'fast-xml-parser';
 
 console.log('Hello from server.tsx');
@@ -48,6 +49,38 @@ export const preload = async (url: string, staticPaths: string[]) => {
       store.dispatch(setBlogEntry(entry));
     });
   }
+
+  // Preload all disclosure markdown files
+  const disclosurePath = path.resolve(process.cwd(), 'public', 'disclosures');
+  try {
+    const files = fs.readdirSync(disclosurePath).filter(f => f.endsWith('.md'));
+    files.forEach(file => {
+      const id = file.replace('.md', '');
+      const content = fs.readFileSync(path.resolve(disclosurePath, file), 'utf-8');
+      // Extract title from frontmatter or first heading
+      let title = '';
+      const frontmatterMatch = content.match(/<!--([\s\S]*?)-->/);
+      if (frontmatterMatch) {
+        const frontmatter = frontmatterMatch[1];
+        const titleMatch = frontmatter.match(/title:\s*(.+)/);
+        if (titleMatch) {
+          title = titleMatch[1].trim();
+        }
+      }
+      if (!title) {
+        title = content.split('\n')[0].replace(/^#\s*/, '').trim();
+      }
+      store.dispatch(
+        setDisclosureEntry({
+          id,
+          title,
+          content,
+        })
+      );
+    });
+  } catch (err) {
+    console.error('Error preloading disclosures:', err);
+  }
 };
 
 export const render = async (path: string, metadata?: MetaDataProps) => {
@@ -57,7 +90,10 @@ export const render = async (path: string, metadata?: MetaDataProps) => {
       <App path={path} metadata={metadata} />
     </Provider>
   );
-  const staticMarkup = ReactDOMServer.renderToStaticMarkup(component);
+  // Use renderToString which supports Suspense better than renderToStaticMarkup
+  // However, it will still render Suspense fallbacks. The App component must
+  // handle SSR by not using lazy() when path prop is set (SSR mode).
+  const staticMarkup = ReactDOMServer.renderToString(component);
   return staticMarkup;
 };
 

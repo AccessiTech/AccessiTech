@@ -14,17 +14,19 @@ import storage from 'reduxjs-toolkit-persist/lib/storage';
 import { fontOptionsSlice, fontOptionsSliceName } from '../components/FontOptions/reducer';
 import { a11ySlice, a11ySliceName } from './a11y';
 import { blogSlice, blogSliceName } from './blog';
+import disclosureReducer, { disclosureSliceName } from './disclosure';
 
 export const persistConfig: PersistConfig<any> = {
   key: '@accessitech/homepage',
   storage,
-  blacklist: [blogSliceName],
+  blacklist: [blogSliceName, disclosureSliceName],
 };
 
 export const rootReducer = combineReducers({
   [a11ySliceName]: a11ySlice.reducer,
   [fontOptionsSliceName]: fontOptionsSlice.reducer,
   [blogSliceName]: blogSlice.reducer,
+  [disclosureSliceName]: disclosureReducer,
 });
 
 export const persistedReducer = persistReducer(persistConfig, rootReducer);

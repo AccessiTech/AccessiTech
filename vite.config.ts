@@ -70,6 +70,16 @@ const viteConfig = defineConfig({
     target: 'esnext',
     outDir: 'docs',
     emptyOutDir: true,
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom', 'react-dom/client'],
+          'vendor-redux': ['react-redux', '@reduxjs/toolkit', 'reduxjs-toolkit-persist'],
+          'vendor-routing': ['react-router-dom'],
+        },
+      },
+    },
   },
 });
 
