@@ -19,6 +19,7 @@ import { CustomMarkdownLink } from '../../components/CustomLink/CustomLink';
 import './Disclosure.css';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { getChildText } from '../../utils/getChildText';
+import { useDisclosure } from '../../store/disclosure';
 
 export interface FetchDisclosureProps {
   id: string;
@@ -45,11 +46,32 @@ export const Disclosure = () => {
   const sub = useParams().sub;
   const pathname = location.pathname.split('/')[1] || '';
   const pagename = 'Disclosures';
-  const [entry, setEntry] = useState<any>({ loaded: false });
+  const disclosureId = sub ? `${sub}/${id}` : id;
+  const preloadedDisclosure = useDisclosure(disclosureId);
+  const [entry, setEntry] = useState<any>(() => {
+    // Initialize with preloaded data if available (SSG or initial load)
+    if (preloadedDisclosure?.loaded) {
+      return preloadedDisclosure;
+    }
+    return { loaded: false };
+  });
 
+  // On mount, check if we have preloaded data and update state
   useEffect(() => {
+    if (preloadedDisclosure?.loaded && !entry.loaded) {
+      setEntry(preloadedDisclosure);
+    }
+  }, [preloadedDisclosure, entry.loaded]);
+
+  // Fetch if not preloaded (for client-side navigation)
+  useEffect(() => {
+    if (preloadedDisclosure?.loaded) {
+      // Already have preloaded data, no need to fetch
+      return;
+    }
+
     let isMounted = true;
-    fetchDisclosure({ id: sub ? `${sub}/${id}` : id }).then((content: string) => {
+    fetchDisclosure({ id: disclosureId }).then((content: string) => {
       if (isMounted) {
         // Extract frontmatter-style comment block
         let title = '';
@@ -76,7 +98,7 @@ export const Disclosure = () => {
     return () => {
       isMounted = false;
     };
-  }, [id, sub]);
+  }, [disclosureId, preloadedDisclosure?.loaded]);
 
   useEffect(() => {
     fetchDisclosure({ id: sub ? `${sub}/${id}` : id });
