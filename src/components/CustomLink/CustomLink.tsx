@@ -16,12 +16,12 @@ export const CustomMarkdownLink = ({ href, ...props }: LinkProps) => {
     let enhancedChildren = props.children;
     if (props.children && typeof props.children === 'string') {
       enhancedChildren = (
-        <>
+        <span>
           {props.children}{' '}
           <sup>
             <i className="fa fa-external-link-alt" aria-hidden="true"></i>
           </sup>
-        </>
+        </span>
       );
     }
     return (
