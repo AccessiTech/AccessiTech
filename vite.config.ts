@@ -74,7 +74,7 @@ const viteConfig = defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          'vendor-react': ['react', 'react-dom'],
+          'vendor-react': ['react', 'react-dom', 'react-dom/client'],
           'vendor-redux': ['react-redux', '@reduxjs/toolkit', 'reduxjs-toolkit-persist'],
           'vendor-routing': ['react-router-dom'],
         },
