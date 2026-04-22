@@ -37,10 +37,10 @@ def parse_trace(trace_path: str) -> Dict[str, Any]:
         phase = event.get('ph', '')
         ts = event.get('ts', 0)  # Timestamp in microseconds
         
-        # Paint timing
-        if name == 'firstPaint' and phase == 'I':
+        # Paint timing (Chrome uses 'R' for paint events)
+        if name == 'firstPaint' and phase == 'R':
             metrics['first_paint'] = ts / 1000  # Convert to ms
-        elif name == 'firstContentfulPaint' and phase == 'I':
+        elif name == 'firstContentfulPaint' and phase == 'R':
             metrics['first_contentful_paint'] = ts / 1000
         
         # Document timing
@@ -49,8 +49,8 @@ def parse_trace(trace_path: str) -> Dict[str, Any]:
         elif name == 'loadEventEnd' and phase == 'I':
             metrics['load_event'] = ts / 1000
         
-        # Script evaluation
-        elif name == 'EvaluateScript' and phase in ('B', 'X'):
+        # Script evaluation (count only complete 'X' events to avoid double-counting)
+        elif name == 'EvaluateScript' and phase == 'X':
             metrics['script_eval_count'] += 1
             dur = event.get('dur', 0)
             metrics['script_eval_total_ms'] += dur / 1000
