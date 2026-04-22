@@ -138,3 +138,6 @@ dist
 # Python virtual environments
 .venv/
 venv/
+
+# QA runner output
+qa-reports/
