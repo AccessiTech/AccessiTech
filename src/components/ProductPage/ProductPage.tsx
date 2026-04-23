@@ -127,6 +127,10 @@ const ProductPage = ({
                   <h3>Access &amp; Pricing</h3>
                   <p>{howToUse}</p>
                 </section>
+              </Col>
+            </Row>
+            <Row className="getStartedRow">
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
                 <hr />
                 {getStartedLeftParagraph || getStartedRightParagraph ? (
                   <GetStartedSection
