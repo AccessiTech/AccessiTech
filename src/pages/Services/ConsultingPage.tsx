@@ -107,13 +107,8 @@ const ConsultingPage = () => {
                 <section className="product-overview">
                   <h2>{CONSULTING_HEADER}</h2>
                   <p>{CONSULTING_INTRO}</p>
-                  <CalendlyButton label="Schedule a Discovery Call" />
-                </section>
+                  {/* <CalendlyButton label="Schedule a Discovery Call" /> */}
 
-                <hr />
-
-                <section className="consulting-service-areas">
-                  <h3>Service Areas</h3>
                   <Row>
                     {CONSULTING_AREAS.map(area => (
                       <Col
@@ -125,7 +120,7 @@ const ConsultingPage = () => {
                       >
                         <div className="service-card-inner">
                           <div>
-                            <h4>{area.title}</h4>
+                            <h3>{area.title}</h3>
                             <p>{area.description}</p>
                             <ul>
                               {area.deliverables.map((d, i) => (
@@ -133,22 +128,14 @@ const ConsultingPage = () => {
                               ))}
                             </ul>
                           </div>
-                          <div className="service-card-actions">
-                            <Button
-                              variant="outline-primary"
-                              data-testid={`consulting-learn-more-${area.id}`}
-                              onClick={() => navigate(area.href)}
-                            >
-                              Learn more
-                            </Button>
-                            <Button
-                              variant="primary"
-                              data-testid={`consulting-cta-${area.id}`}
-                              onClick={() => navigate(area.contactHref)}
-                            >
-                              Schedule a call
-                            </Button>
-                          </div>
+                          <Button
+                            variant="outline-primary learn-more-btn"
+                            className="mt-3 w-100"
+                            onClick={() => navigate(area.href)}
+                            data-testid={`consulting-card-${area.id}-learn-more-btn`}
+                          >
+                            Learn More
+                          </Button>
                         </div>
                       </Col>
                     ))}
