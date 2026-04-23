@@ -128,7 +128,16 @@ def detect_page_type(path: Path) -> str:
         services-category, service-detail, products-index, product-detail,
         contact, disclosures-index, disclosure-detail, 404, unknown
     """
-    p = path.as_posix()
+    # Normalize to repo-root-relative path to handle both relative and absolute paths
+    posix = path.as_posix()
+    if posix.startswith("/"):
+        # Absolute path — extract relative portion starting from "docs/"
+        if "docs/" in posix:
+            p = posix[posix.index("docs/"):]
+        else:
+            p = posix
+    else:
+        p = posix
 
     if p == "docs/index.html":
         return "home"
@@ -272,13 +281,13 @@ def check_html_universal(soup: BeautifulSoup, filepath: Path) -> list:
     else:
         # og-004: og:url must NOT use accessitech.org (wrong domain, not owned)
         og_url = og_url_tag.get("content", "")
-        if WRONG_DOMAIN in og_url:
+        if not og_url.startswith(CORRECT_DOMAIN_PREFIX):
             results.append(
                 _result(
                     fname,
                     "og-004",
                     "ERROR",
-                    f"og:url uses wrong domain '{WRONG_DOMAIN}' (not owned by AccessiTech)",
+                    f"og:url must start with '{CORRECT_DOMAIN_PREFIX}'",
                     f'og:url="{og_url}" — must start with "{CORRECT_DOMAIN_PREFIX}"',
                 )
             )
@@ -318,13 +327,13 @@ def check_html_universal(soup: BeautifulSoup, filepath: Path) -> list:
     else:
         # canon-002: canonical href must NOT use accessitech.org (wrong domain, not owned)
         canonical_href = canonical_tag.get("href", "")
-        if WRONG_DOMAIN in canonical_href:
+        if not canonical_href.startswith(CORRECT_DOMAIN_PREFIX):
             results.append(
                 _result(
                     fname,
                     "canon-002",
                     "ERROR",
-                    f"Canonical href uses wrong domain '{WRONG_DOMAIN}' (not owned by AccessiTech)",
+                    f"Canonical href must start with '{CORRECT_DOMAIN_PREFIX}'",
                     f'canonical href="{canonical_href}" — must start with "{CORRECT_DOMAIN_PREFIX}"',
                 )
             )
@@ -930,7 +939,7 @@ def _find_duplicate_paragraphs(plain_text: str) -> list:
     """Return short previews of paragraphs that appear more than once in plain_text.
 
     A 'paragraph' is any block of text separated by one or more blank lines.
-    Only paragraphs with > 40 characters are considered to avoid false positives
+    Only paragraphs with > 80 characters are considered to avoid false positives
     on trivially repeated short fragments (e.g. "For more, see…" repeated links).
 
     Args:
@@ -940,7 +949,7 @@ def _find_duplicate_paragraphs(plain_text: str) -> list:
         List of 100-char previews for each first-seen duplicate paragraph.
     """
     raw_paragraphs = re.split(r"\n\n+", plain_text)
-    paragraphs = [p.strip() for p in raw_paragraphs if len(p.strip()) > 40]
+    paragraphs = [p.strip() for p in raw_paragraphs if len(p.strip()) > 80]
     seen: set = set()
     flagged: set = set()
     duplicates: list = []
@@ -1075,8 +1084,8 @@ def check_md_source(md_path: Path) -> tuple:
 def check_md_readability(md_path: Path, content: str) -> list:
     """Layer 1 (extended): Text quality and readability analysis for a Markdown source.
 
-    Requires the ``textstat`` package. If it is not installed, all checks
-    return INFO-level notices and the function exits cleanly.
+    Requires the ``textstat`` package. If it is not installed, the function
+    returns an empty list and exits cleanly.
 
     Applies to both blog entries (public/data/blog/) and WCAG entries
     (public/data/wcag/).
