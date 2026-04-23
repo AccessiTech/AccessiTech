@@ -76,4 +76,10 @@ describe('About', () => {
     renderWithProviders(<About />, { route: '/about' });
     expect(screen.getByTestId('get-started-section')).toBeInTheDocument();
   });
+
+  it('renders breadcrumb with Home link and active About item', () => {
+    renderWithProviders(<About />, { route: '/about' });
+    expect(screen.getByRole('link', { name: 'Home' })).toBeInTheDocument();
+    expect(screen.getByText('About')).toBeInTheDocument();
+  });
 });

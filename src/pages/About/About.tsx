@@ -1,16 +1,37 @@
+import { Row, Col, Breadcrumb } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import Metadata from '../../components/Metadata/Metadata';
 import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 import { HOME_URL } from '../../settings/strings';
 import './About.scss';
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <>
-      <Metadata
-        title="About | AccessiTech"
-        description="Conor Kelly — disabled design technologist, founder, and CEO. 18 years building accessible, equitable digital systems."
-        canonical={HOME_URL + '/about'}
-      />
+      <Row className="breadcrumb-row about-page">
+        <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+          <Metadata
+            title="About | AccessiTech"
+            description="Conor Kelly — disabled design technologist, founder, and CEO. 18 years building accessible, equitable digital systems."
+            canonical={`${HOME_URL}/about`}
+          />
+          <Breadcrumb className="breadcrumb-container">
+            <Breadcrumb.Item
+              href="/"
+              onClick={(e: React.MouseEvent) => {
+                e.preventDefault();
+                navigate('/');
+              }}
+            >
+              Home
+            </Breadcrumb.Item>
+            <Breadcrumb.Item active>About</Breadcrumb.Item>
+          </Breadcrumb>
+        </Col>
+      </Row>
+
       <main id="main" aria-label="About the Founder">
         <section className="about-section about-hero">
           <h2>The 18-Year Pattern</h2>
