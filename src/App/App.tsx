@@ -56,8 +56,8 @@ export const App = (props: AppProps) => {
   const Disclosure_Route = isSSR
     ? Disclosure
     : (lazy(() =>
-        import('../pages/Disclosure/Disclosure').then(m => ({ default: m.Disclosure }))
-      ) as any);
+      import('../pages/Disclosure/Disclosure').then(m => ({ default: m.Disclosure }))
+    ) as any);
   const Disclosures_Route = isSSR
     ? Disclosures
     : (lazy(() => import('../pages/Disclosures/Disclosures')) as any);

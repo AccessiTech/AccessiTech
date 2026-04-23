@@ -110,12 +110,7 @@ export const Home = () => {
         {/* CTA */}
         <section id="cta-section">
           <Row className="cta-header-row">
-            <Col
-              xs={12}
-              md={{ span: 5, offset: 1 }}
-              xl={{ span: 6, offset: 1 }}
-              className="text-center text-md-start"
-            >
+            <Col xs={12} md={{ span: 4, offset: 2 }} className="text-center text-md-start">
               <SectionHeader
                 title={CTA_HEADER}
                 id="cta"
@@ -129,24 +124,11 @@ export const Home = () => {
                 label="Schedule a Discovery Call"
                 className="btn btn-primary btn-lg"
               />
-              {/* <p className="mt-3">{CTA_P2}</p>
-          <Button
-            variant="outline-primary"
-            size="lg"
-            onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-              e.preventDefault();
-              navigate('/contact');
-            }}
-          >
-            Send us a message
-          </Button> */}
             </Col>
             <Col
               className="purpose-image"
               xs={{ span: 6, offset: 3 }}
-              md={{ span: 4, offset: 0 }}
-              lg={{ span: 3, offset: 1 }}
-              xl={{ span: 2, offset: 1 }}
+              md={{ span: 3, offset: 1 }}
               aria-label="image"
             >
               <img
