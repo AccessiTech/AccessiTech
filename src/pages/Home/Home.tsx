@@ -36,8 +36,8 @@ export const TAGLINE =
 // WHY
 export const WHY_HEADER = 'Why we exist';
 export const WHY_P1 = `Systems fail at the exact moments they matter most. Think about it: the people most impacted by a broken system are almost always the last ones invited to redesign it. That's not accidental. It's structural. We've seen this for generations—in government services, in healthcare platforms, in everyday software. Now it's happening at scale with AI. The accountability gap is growing, and the people most affected? Still not at the table.`;
-export const WHY_P2 = `Here's what I learned the hard way: the people most excluded from a system are the people best positioned to fix it. That's not inspiration—that's structural truth. When I'm designing something and I can't use it (Psoriatic Arthritis + a mouse-dependent workflow = dead end), that's not my problem to solve alone. That's everyone's problem to solve together. Disability justice and accessibility-first design aren't compliance boxes. They're the scaffolding for systems that actually work for everyone.`;
-export const WHY_P3 = `That's the foundation of AccessiTech. We work three ways: Consulting for organizations ready to redesign at the accountability gap. Mentorship for teams embedding accessibility into daily practice. Products—WCAG training, open-source tooling, custom coaching frameworks—that make accessibility the structural standard, not an afterthought. Each is a different way in. What they share is accountability to the people the system affects.`;
+export const WHY_P2 = ``;
+export const WHY_P3 = ``;
 
 // CTA
 export const CTA_HEADER = 'Ready to close the gap?';
@@ -104,8 +104,6 @@ export const Home = () => {
               failText={COPY_FAIL_MESSAGE}
             />
             <p>{WHY_P1}</p>
-            <p>{WHY_P2}</p>
-            <p>{WHY_P3}</p>
           </Col>
         </Row>
 
