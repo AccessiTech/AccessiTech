@@ -603,13 +603,53 @@ filename stem (e.g. `docs/blog/AI-for-Coding-Accessibility.html`).
 
 ---
 
+### Layer 1 Extended — Text Quality Checks
+
+These checks apply when `--check-sources` is enabled. They analyse the **body prose** of
+`public/data/blog/*.md` and `public/data/wcag/*.md` using the `textstat` library (pure Python,
+no ML dependencies). Front-matter is stripped before scoring; headings, bold markers, links, and
+code fences are also stripped so only prose prose is analysed.
+
+Scores are diagnostic signals, not hard pass/fail gates. All findings are **WARN** severity.
+Target audience: developers and accessibility practitioners — content should be clear but may
+contain technical vocabulary; a grade 8–12 target (FK Grade) is appropriate.
+
+| Check ID   | Metric / Test                                                         | Severity | Target / Pass                         | Fail condition                                  |
+| ---------- | --------------------------------------------------------------------- | -------- | ------------------------------------- | ----------------------------------------------- |
+| `qual-001` | Body word count                                                       | WARN     | ≥ 200 words of prose                  | < 200 words — thin content                      |
+| `qual-002` | Flesch-Kincaid Grade Level (`textstat.flesch_kincaid_grade`)          | WARN     | ≤ 14 (roughly postgraduate threshold) | > 14 — overly complex for web audience          |
+| `qual-003` | Flesch Reading Ease (`textstat.flesch_reading_ease`)                  | WARN     | ≥ 30 (fairly difficult or better)     | < 30 — "very difficult" band                    |
+| `qual-004` | Average sentence length (`textstat.avg_sentence_length`)              | WARN     | ≤ 30 words / sentence                 | > 30 words avg — overly long sentences          |
+| `qual-005` | Duplicate paragraph detection (same paragraph appears > once in file) | WARN     | No verbatim duplicates (> 80 chars)   | One or more paragraphs appear twice in the file |
+
+**Flesch Reading Ease interpretation** (for reference):
+
+| Score  | Description       |
+| ------ | ----------------- |
+| 90–100 | Very easy         |
+| 70–90  | Easy              |
+| 60–70  | Standard          |
+| 50–60  | Fairly difficult  |
+| 30–50  | Difficult         |
+| 0–30   | Very difficult ⚠️ |
+
+**Implementation notes**:
+
+- `textstat` must be installed (`pip install textstat>=0.7.3`) for these checks to run. If
+  `textstat` is not importable, `check_md_readability()` returns an empty list silently.
+- Scores are only computed when `word_count >= 100` to avoid noise from very short files.
+- `qual-005` duplicate detection ignores paragraphs ≤ 80 characters (prevents false positives
+  on short repeated phrases like summary bullets).
+
+---
+
 ### `--check-sources` Behavior Summary
 
-| Run mode                                              | Layers active               | Scope                                                     |
-| ----------------------------------------------------- | --------------------------- | --------------------------------------------------------- |
-| `python scripts/qa_html.py` (default)                 | Layer 2 only                | All `docs/*.html` files                                   |
-| `python scripts/qa_html.py --check-sources`           | Layer 1 + Layer 2 + Layer 3 | `docs/*.html` + `public/data/blog/*.md` + cross-reference |
-| `python scripts/qa_html.py --check-sources --dry-run` | Layer 1 + Layer 2 + Layer 3 | As above; no file writes                                  |
+| Run mode                                              | Layers active                                  | Scope                                                                               |
+| ----------------------------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `python scripts/qa_html.py` (default)                 | Layer 2 only                                   | All `docs/*.html` files                                                             |
+| `python scripts/qa_html.py --check-sources`           | Layer 1 + Layer 1 Extended + Layer 2 + Layer 3 | `docs/*.html` + `public/data/blog/*.md` + `public/data/wcag/*.md` + cross-reference |
+| `python scripts/qa_html.py --check-sources --dry-run` | Layer 1 + Layer 1 Extended + Layer 2 + Layer 3 | As above; no file writes                                                            |
 
 **Exit codes** (consistent with ruff convention):
 

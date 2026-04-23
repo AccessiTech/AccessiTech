@@ -32,8 +32,11 @@ sys.path.insert(0, str(_REPO_ROOT / "scripts"))
 
 from qa_html import (  # noqa: E402
     CheckResult,
+    _find_duplicate_paragraphs,
+    _strip_markdown_body,
     check_html_by_type,
     check_html_universal,
+    check_md_readability,
     check_md_source,
     check_xref,
     detect_page_type,
@@ -153,56 +156,54 @@ def test_detect_page_type(path_str, expected_type):
 
 
 @pytest.mark.io
-def test_accessitech_org_canonical_flagged_as_error():
-    """Real blog HTML files with accessitech.org canonical href produce a canon-002 ERROR.
+def test_accessitech_org_canonical_no_longer_present():
+    """Regression: no blog HTML file should produce a canon-002 ERROR (bug fixed in 1c940af).
 
-    This test asserts the *known live bug* described in testing/qa-page-specs.md
-    is caught: several docs/blog/*.html pages have canonical href pointing to
-    https://accessitech.org/ (not owned) instead of https://accessi.tech/.
+    The canonical href accessitech.org bug was fixed in src/server.tsx (commit 1c940af).
+    This test ensures the fix holds and is not regressed by future SSG rebuilds.
+    See testing/qa-page-specs.md § Known Issues for historical context.
     """
     html_files = list(_BLOG_DIR.glob("*.html"))
     assert html_files, f"No blog HTML files found in {_BLOG_DIR}"
 
-    found_bug = False
+    domain_errors = []
     for html_path in html_files:
         content = html_path.read_text(encoding="utf-8", errors="replace")
         soup = BeautifulSoup(content, "lxml")
         results = check_html_universal(soup, html_path)
-        if any(r.rule_id == "canon-002" and r.severity == "ERROR" for r in results):
-            found_bug = True
-            break
+        domain_errors.extend(
+            r for r in results if r.rule_id == "canon-002" and r.severity == "ERROR"
+        )
 
-    assert found_bug, (
-        "Expected at least one docs/blog/*.html file to produce a canon-002 ERROR "
-        "(accessitech.org canonical domain bug) — none found. "
-        "The bug may have been fixed in the source; update this test accordingly."
+    assert not domain_errors, (
+        f"canon-002 domain regression: {len(domain_errors)} files still use accessitech.org "
+        f"in canonical href. First: {domain_errors[0].filename if domain_errors else ''}"
     )
 
 
 @pytest.mark.io
-def test_accessitech_org_og_url_flagged_as_error():
-    """Real blog HTML files with accessitech.org og:url produce an og-004 ERROR.
+def test_accessitech_org_og_url_no_longer_present():
+    """Regression: no blog HTML file should produce an og-004 ERROR (bug fixed in 1c940af).
 
-    This test asserts the *known live bug* described in testing/qa-page-specs.md
-    is caught: several docs/blog/*.html pages have og:url pointing to
-    https://accessitech.org/ (not owned) instead of https://accessi.tech/.
+    The og:url accessitech.org bug was fixed in src/server.tsx (commit 1c940af).
+    This test ensures the fix holds and is not regressed by future SSG rebuilds.
+    See testing/qa-page-specs.md § Known Issues for historical context.
     """
     html_files = list(_BLOG_DIR.glob("*.html"))
     assert html_files, f"No blog HTML files found in {_BLOG_DIR}"
 
-    found_bug = False
+    domain_errors = []
     for html_path in html_files:
         content = html_path.read_text(encoding="utf-8", errors="replace")
         soup = BeautifulSoup(content, "lxml")
         results = check_html_universal(soup, html_path)
-        if any(r.rule_id == "og-004" and r.severity == "ERROR" for r in results):
-            found_bug = True
-            break
+        domain_errors.extend(
+            r for r in results if r.rule_id == "og-004" and r.severity == "ERROR"
+        )
 
-    assert found_bug, (
-        "Expected at least one docs/blog/*.html file to produce an og-004 ERROR "
-        "(accessitech.org og:url domain bug) — none found. "
-        "The bug may have been fixed in the source; update this test accordingly."
+    assert not domain_errors, (
+        f"og-004 domain regression: {len(domain_errors)} files still use accessitech.org "
+        f"in og:url. First: {domain_errors[0].filename if domain_errors else ''}"
     )
 
 
@@ -395,4 +396,133 @@ def test_exit_code_0_on_clean_html(tmp_path):
     assert result.returncode == 0, (
         f"Expected exit code 0 (clean) but got {result.returncode}.\n"
         f"stdout: {result.stdout}\nstderr: {result.stderr}"
+    )
+
+
+# ---------------------------------------------------------------------------
+# Text quality and readability checks (qual-*)
+# ---------------------------------------------------------------------------
+
+
+def test_strip_markdown_body_removes_frontmatter():
+    """_strip_markdown_body strips the HTML comment front-matter block."""
+    content = "<!--\ntitle: Test\ndescription: hello\n-->\n\nBody paragraph here."
+    result = _strip_markdown_body(content)
+    assert "title: Test" not in result
+    assert "Body paragraph here." in result
+
+
+def test_strip_markdown_body_removes_bold_keeps_text():
+    """_strip_markdown_body removes **bold** markers but keeps the inner text."""
+    content = "<!--\ntitle: T\n-->\n\n**Important word** in a sentence."
+    result = _strip_markdown_body(content)
+    assert "**" not in result
+    assert "Important word" in result
+
+
+def test_strip_markdown_body_removes_links_keeps_text():
+    """_strip_markdown_body replaces [text](url) with just the link text."""
+    content = "<!--\ntitle: T\n-->\n\nSee the [W3C docs](https://www.w3.org) for more."
+    result = _strip_markdown_body(content)
+    assert "https://www.w3.org" not in result
+    assert "W3C docs" in result
+
+
+def test_strip_markdown_body_removes_code_blocks():
+    """_strip_markdown_body removes fenced code blocks entirely."""
+    content = "<!--\ntitle: T\n-->\n\n```html\n<img alt=\"test\" />\n```\n\nProse here."
+    result = _strip_markdown_body(content)
+    assert "<img" not in result
+    assert "Prose here." in result
+
+
+def test_find_duplicate_paragraphs_detects_repeats():
+    """_find_duplicate_paragraphs returns a preview for each repeated paragraph."""
+    repeated = "For more, see the W3C accessibility documentation on this topic."
+    text = f"First section.\n\n{repeated}\n\nMiddle section.\n\n{repeated}"
+    duplicates = _find_duplicate_paragraphs(text)
+    assert len(duplicates) == 1
+    assert "For more, see" in duplicates[0]
+
+
+def test_find_duplicate_paragraphs_no_false_positive():
+    """_find_duplicate_paragraphs returns empty list when all paragraphs are unique."""
+    text = (
+        "This is the first paragraph with enough content to be counted.\n\n"
+        "This is a second paragraph that is completely different from the first.\n\n"
+        "A third paragraph with yet more unique content and no repetition."
+    )
+    assert _find_duplicate_paragraphs(text) == []
+
+
+def test_qual_001_thin_content(tmp_path):
+    """qual-001 fires as WARN when body word count is below 200."""
+    md = tmp_path / "thin.md"
+    # Create an MD file with very thin body content (<200 words)
+    md.write_text(
+        "<!--\ntitle: T\nstatus: published\ndate: 2025-01-01\n-->\n\n"
+        "Short body. Only a few words here. Not enough content.",
+        encoding="utf-8",
+    )
+    results = check_md_readability(md, md.read_text())
+    rule_ids = [r.rule_id for r in results]
+    assert "qual-001" in rule_ids, "Expected qual-001 for thin content"
+    qual001 = next(r for r in results if r.rule_id == "qual-001")
+    assert qual001.severity == "WARN"
+
+
+def test_qual_001_adequate_content_passes(tmp_path):
+    """qual-001 does NOT fire when body word count is ≥ 200 words."""
+    # Build a body with 220+ words
+    long_sentence = (
+        "This is a sentence with several words to help reach the minimum count. "
+    )
+    body = long_sentence * 30  # ~210 words
+    md = tmp_path / "adequate.md"
+    md.write_text(
+        f"<!--\ntitle: T\nstatus: published\ndate: 2025-01-01\n-->\n\n{body}",
+        encoding="utf-8",
+    )
+    results = check_md_readability(md, md.read_text())
+    assert not any(r.rule_id == "qual-001" for r in results)
+
+
+def test_qual_005_duplicate_paragraph(tmp_path):
+    """qual-005 fires as WARN when the same paragraph appears twice in one file."""
+    repeated = (
+        "For more information, see the official W3C documentation on this topic."
+    )
+    md = tmp_path / "dup.md"
+    md.write_text(
+        "<!--\ntitle: T\nstatus: published\ndate: 2025-01-01\n-->\n\n"
+        f"First section prose.\n\n{repeated}\n\n"
+        f"Second section prose.\n\n{repeated}",
+        encoding="utf-8",
+    )
+    results = check_md_readability(md, md.read_text())
+    rule_ids = [r.rule_id for r in results]
+    assert "qual-005" in rule_ids, "Expected qual-005 for duplicate paragraph"
+    qual005 = next(r for r in results if r.rule_id == "qual-005")
+    assert qual005.severity == "WARN"
+    assert "For more information" in qual005.detail
+
+
+@pytest.mark.io
+def test_qual_readability_on_real_wcag_entry():
+    """qual-003 fires on real WCAG entries known to score below 30 Flesch RE."""
+    md_path = (
+        _REPO_ROOT
+        / "public"
+        / "data"
+        / "wcag"
+        / "WCAG-Guideline-1-2-9-Audio-Only-Live-Explained.md"
+    )
+    if not md_path.exists():
+        pytest.skip("WCAG source file not present")
+    content = md_path.read_text(encoding="utf-8")
+    results = check_md_readability(md_path, content)
+    rule_ids = [r.rule_id for r in results]
+    # 1.2.9 is known to score <30 Flesch RE and has duplicate "For more, see" paragraph
+    assert "qual-003" in rule_ids or "qual-005" in rule_ids, (
+        f"Expected qual-003 or qual-005 for WCAG 1.2.9 entry; got: {rule_ids}"
     )
