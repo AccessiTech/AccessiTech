@@ -3,7 +3,7 @@ import ProductPage from '../../components/ProductPage/ProductPage';
 const OSSASaaPs = () => (
   <ProductPage
     title="Open Source Software & ASaaPs"
-    overview="Open-source tools and ASaaP frameworks with accessibility built in from day one. ASaaP stands for Accessibility Software as a Practice. It treats accessibility as an ongoing part of software development — not a one-time audit, and not a compliance checklist. The methodology is free. Implementation support is a paid engagement."
+    overview="Open-source tools and accessibility frameworks with accessibility built in from day one. Our methodology treats accessibility as an ongoing part of software development — not a one-time audit, and not a compliance checklist. The methodology is free. Implementation support is a paid Consulting engagement. (Note: we use ASaaP for our open-source practice framework and ASaaPs for our paid Consulting service offering Accessible Software as a Product/Service.)"
     whyItExists="We follow the Red Hat model: the methodology is free, paid support sustains the mission. ASaaP reframes accessibility. Instead of a one-time compliance event, it becomes a continuous, embedded practice. It was built by disabled technologists for teams that want to build accessibility in from day one."
     included={[
       'EndogenAI Workflows methodology (open source, GitHub)',
