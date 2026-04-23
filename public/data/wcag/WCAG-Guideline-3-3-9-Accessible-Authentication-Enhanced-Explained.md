@@ -20,7 +20,7 @@ next: /wcag/WCAG-Guideline-4-1-1-Parsing-Explained, Guideline 4.1.1 - Parsing
 
 ## **Guideline 3: Understandable**
 
-The Understandable principle ensures that users can easily interact with and understand web content, especially when authenticating or logging in.
+The Understandable principle means web content must be clear and easy to use. This is vital for login and authentication.
 
 ## **Guideline 3.3: Input Assistance**
 
@@ -30,11 +30,12 @@ Guideline 3.3 focuses on helping users avoid and correct mistakes when entering 
 
 > "For each step in an authentication process, at least one method is available that does not rely on a cognitive function test or the ability to transcribe information, unless an alternative is provided."
 
-Guideline 3.3.9 builds on 3.3.8 by requiring that authentication does not depend on cognitive function tests or transcription (e.g., copying codes), unless an accessible alternative is available.
+Guideline 3.3.9 is the enhanced version of 3.3.8. Two AA exceptions are banned here. First: image-picking (like 'click all traffic lights'). Second: 'pick your uploaded photo' steps. At AAA, all logins must be memory-free.
 
 - Helps users with cognitive, memory, or motor disabilities
-- Essential for fully accessible login and authentication
+- Builds on 3.3.8 by banning object-recognition and personal-content challenges
 - Applies to all authentication steps and methods
+- Compliant options at AAA: magic email links, biometrics, social login, or WebAuthn passkeys. These are all memory-free. Users do not need to recall or copy anything.
 
 For more, see [Wuhcag: Accessible Authentication (Enhanced)](https://www.wuhcag.com/accessible-authentication-enhanced/).
 
@@ -60,8 +61,8 @@ For more, see [W3C’s guidance on Accessible Authentication (Enhanced)](https:/
 
 ## **How to Meet Guideline 3.3.9**
 
-- Provide alternatives to cognitive and transcription-based authentication (e.g., biometrics, email links)
-- Avoid requiring users to copy, transcribe, or solve puzzles
+- Replace image puzzles and transcription steps entirely: use biometrics, magic email links, or social login
+- Avoid requiring users to copy, transcribe, or recognise objects in images
 - Test authentication with users with cognitive and motor disabilities
 
 For more, see the [W3C's Accessible Authentication (Enhanced) Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G219).
@@ -97,6 +98,6 @@ For more, see the [W3C’s official documentation for 3.3.9 Accessible Authentic
 
 ## **Summary**
 
-Guideline 3.3.9 ensures that everyone can authenticate without cognitive or transcription barriers. Provide accessible alternatives for all authentication steps.
+Guideline 3.3.9 removes all login barriers. No puzzles, no image tests, no typing from memory. Use passkeys, magic links, or biometrics.
 
 _Accessibility means everyone can log in—remove barriers from your authentication process!_

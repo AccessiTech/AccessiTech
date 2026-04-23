@@ -46,8 +46,6 @@ This ensures that users who are deaf-blind or have other disabilities can fully 
 - **Legal Compliance:** This is a Level AAA requirement in WCAG 2.2.
 - **Usability:** Enhances understanding for users who prefer or require text over audio/video.
 
-For more, see [W3C's media alternative docs](https://www.w3.org/WAI/WCAG22/Understanding/media-alternative-prerecorded.html).
-
 ---
 
 ## **What Needs a Media Alternative?**

@@ -46,8 +46,6 @@ This ensures that everyone can participate in live audio events, regardless of h
 - **Legal Compliance:** This is a Level AAA requirement in WCAG 2.2.
 - **Usability:** Helps users in noisy environments or when audio can’t be played aloud.
 
-For more, see [W3C's live audio accessibility docs](https://www.w3.org/WAI/WCAG22/Understanding/audio-only-live.html).
-
 ---
 
 ## **What Needs a Live Audio Alternative?**

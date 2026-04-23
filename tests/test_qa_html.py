@@ -436,6 +436,36 @@ def test_strip_markdown_body_removes_code_blocks():
     assert "Prose here." in result
 
 
+def test_strip_markdown_body_heading_adds_period_boundary():
+    """_strip_markdown_body adds a sentence-ending period after heading text.
+
+    This prevents textstat from merging heading text with adjacent prose into an
+    artificially long pseudo-sentence, which deflates Flesch Reading Ease scores.
+    """
+    content = "<!--\ntitle: T\n-->\n\n## **Section Title**\n\nBody text follows here."
+    result = _strip_markdown_body(content)
+    # Heading text gets a period so it becomes its own short sentence
+    assert "Section Title." in result
+    assert "Body text follows here." in result
+
+
+def test_strip_markdown_body_bullet_adds_period_boundary():
+    """_strip_markdown_body adds a period after each bullet item without terminal punctuation."""
+    content = "<!--\ntitle: T\n-->\n\n- First item here\n- Second item here"
+    result = _strip_markdown_body(content)
+    assert "First item here." in result
+    assert "Second item here." in result
+
+
+def test_strip_markdown_body_bullet_keeps_existing_punctuation():
+    """_strip_markdown_body does not add a period when the bullet already ends with one."""
+    content = "<!--\ntitle: T\n-->\n\n- Already a sentence.\n- Ends with question?"
+    result = _strip_markdown_body(content)
+    # Should not create double punctuation
+    assert "Already a sentence." in result
+    assert ".." not in result
+
+
 def test_find_duplicate_paragraphs_detects_repeats():
     """_find_duplicate_paragraphs returns a preview for each repeated paragraph."""
     repeated = "For more, see the W3C accessibility documentation on this topic."
@@ -509,20 +539,60 @@ def test_qual_005_duplicate_paragraph(tmp_path):
 
 @pytest.mark.io
 def test_qual_readability_on_real_wcag_entry():
-    """qual-003 fires on real WCAG entries known to score below 30 Flesch RE."""
-    md_path = (
-        _REPO_ROOT
-        / "public"
-        / "data"
-        / "wcag"
-        / "WCAG-Guideline-1-2-9-Audio-Only-Live-Explained.md"
-    )
-    if not md_path.exists():
-        pytest.skip("WCAG source file not present")
-    content = md_path.read_text(encoding="utf-8")
-    results = check_md_readability(md_path, content)
-    rule_ids = [r.rule_id for r in results]
-    # 1.2.9 is known to score <30 Flesch RE and has duplicate "For more, see" paragraph
-    assert "qual-003" in rule_ids or "qual-005" in rule_ids, (
-        f"Expected qual-003 or qual-005 for WCAG 1.2.9 entry; got: {rule_ids}"
-    )
+    """qual-003 fires on synthetic WCAG-style content that scores below 30 Flesch RE.
+
+    All current WCAG source files now pass readability checks (score >= 30). This
+    test uses a synthetic dense-jargon document to ensure the check_md_readability
+    function still surfaces qual-003 when Flesch RE drops below the threshold.
+    """
+    # Dense technical prose with high syllable count and long sentences, mimicking
+    # the worst-case pattern seen in early WCAG authentication conformance entries.
+    dense_text = """<!--
+title: Synthetic Dense Entry
+description: Test fixture for qual-003 readability regression test.
+keywords: test
+image: test.png
+imageAlt: test
+status: published
+date: 2025-01-01
+-->
+
+# **Synthetic Dense Guideline Entry**
+
+**Estimated read time:** 5–6 minutes
+
+The authentication specification requires implementation of conformance requirements utilizing
+accessible authentication methodologies. Organizational requirements stipulate that
+authentication infrastructure must accommodate individuals experiencing cognitive,
+neurological, communicative, or environmental accessibility disabilities.
+
+The technological implementation necessitates sophisticated interoperability between
+authentication subsystems and accessibility-focused assistive technologies, ensuring
+comprehensive utilization of accessibility-supported authentication alternatives.
+
+Conformance requirements establish mandatory organizational authentication accessibility
+standards encompassing authentication infrastructure, authentication methodologies, and
+accessibility-supported authentication alternatives for all organizational authentication
+infrastructure components.
+
+## **Summary**
+
+Implementation necessitates comprehensive authentication accessibility infrastructure
+ensuring organizational conformance requirements and accessibility-supported authentication
+alternatives for authentication infrastructure components.
+"""
+    from pathlib import Path
+    import tempfile
+
+    with tempfile.NamedTemporaryFile(suffix=".md", mode="w", delete=False, encoding="utf-8") as f:
+        f.write(dense_text)
+        tmp_path = Path(f.name)
+
+    try:
+        results = check_md_readability(tmp_path, dense_text)
+        rule_ids = [r.rule_id for r in results]
+        assert "qual-003" in rule_ids, (
+            f"Expected qual-003 for dense synthetic content; got: {rule_ids}"
+        )
+    finally:
+        tmp_path.unlink(missing_ok=True)

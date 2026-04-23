@@ -30,11 +30,12 @@ Guideline 5.5 addresses situations where full accessibility conformance cannot b
 
 ## **What Is a Statement of Partial Conformance – Language?**
 
-A Statement of Partial Conformance – Language is a public declaration that a web page or resource would conform to WCAG, except for issues caused by the lack of accessibility support in a specific language.
+A Statement of Partial Conformance – Language is a public note about a specific gap. Your page meets WCAG standards. The gap is that one or more languages used on the page lack screen reader support or text-to-speech voices. This is an assistive technology (AT) ecosystem gap — not a flaw in your code.
 
-- Used when some content is inaccessible solely because of language limitations
+- Used when content is inaccessible solely because of missing language support in AT
 - Helps set realistic expectations for users and stakeholders
 - Promotes transparency about accessibility efforts
+- Real examples: a site in Welsh, Irish Gaéilge, or Māori where no TTS engine exists; a multilingual portal where one minority-language section has no screen reader voice available
 
 ---
 
