@@ -29,7 +29,7 @@ const GetStartedSection: React.FC<GetStartedSectionProps> = ({
   const navigate = useNavigate();
 
   return (
-    <section className={`product-next-steps row ${page}`}>
+    <section className={`product-next-steps row getStartedRow ${page}`}>
       <h3>Get Started</h3>
       <div className="col">
         <p>{leftParagraph}</p>
