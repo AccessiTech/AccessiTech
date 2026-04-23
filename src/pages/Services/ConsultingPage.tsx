@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { Breadcrumb, Button, Col, Row } from 'react-bootstrap';
 import Metadata from '../../components/Metadata/Metadata';
-import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
 import { HOME_URL } from '../../settings/strings';
 import {
   CONSULTING_HEADER,
@@ -13,6 +12,7 @@ import {
   QA_HEADER,
   QA_DESC,
 } from '../../components/Services/Services';
+import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 
 const CONSULTING_AREAS = [
   {
@@ -107,13 +107,8 @@ const ConsultingPage = () => {
                 <section className="product-overview">
                   <h2>{CONSULTING_HEADER}</h2>
                   <p>{CONSULTING_INTRO}</p>
-                  <CalendlyButton label="Schedule a Discovery Call" />
-                </section>
+                  {/* <CalendlyButton label="Schedule a Discovery Call" /> */}
 
-                <hr />
-
-                <section className="consulting-service-areas">
-                  <h3>Service Areas</h3>
                   <Row>
                     {CONSULTING_AREAS.map(area => (
                       <Col
@@ -125,7 +120,7 @@ const ConsultingPage = () => {
                       >
                         <div className="service-card-inner">
                           <div>
-                            <h4>{area.title}</h4>
+                            <h3>{area.title}</h3>
                             <p>{area.description}</p>
                             <ul>
                               {area.deliverables.map((d, i) => (
@@ -133,46 +128,24 @@ const ConsultingPage = () => {
                               ))}
                             </ul>
                           </div>
-                          <div className="service-card-actions">
-                            <Button
-                              variant="outline-primary"
-                              data-testid={`consulting-learn-more-${area.id}`}
-                              onClick={() => navigate(area.href)}
-                            >
-                              Learn more
-                            </Button>
-                            <Button
-                              variant="primary"
-                              data-testid={`consulting-cta-${area.id}`}
-                              onClick={() => navigate(area.contactHref)}
-                            >
-                              Schedule a call
-                            </Button>
-                          </div>
+                          <Button
+                            variant="outline-primary"
+                            className="mt-3 w-100 learn-more-btn"
+                            onClick={() => navigate(area.href)}
+                            data-testid={`consulting-card-${area.id}-learn-more-btn`}
+                          >
+                            Learn More
+                          </Button>
                         </div>
                       </Col>
                     ))}
                   </Row>
                 </section>
-
-                <hr />
-
-                <section className="product-next-steps">
-                  <h3>Get Started</h3>
-                  <p>
-                    Not sure which service area fits your needs? A discovery call is the best
-                    starting point — no scope commitment required.
-                  </p>
-                  <CalendlyButton label="Schedule a Discovery Call" />
-                  <Button
-                    variant="outline-primary"
-                    className="ms-2"
-                    onClick={() => navigate('/contact?inquiry=consulting')}
-                    data-testid="consulting-hub-message-btn"
-                  >
-                    Send us a message
-                  </Button>
-                </section>
+              </Col>
+            </Row>
+            <Row className="getStartedRow">
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <GetStartedSection page="consulting" />
               </Col>
             </Row>
           </Col>

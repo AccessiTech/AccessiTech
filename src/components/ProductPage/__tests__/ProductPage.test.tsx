@@ -1,6 +1,6 @@
 import ProductPage from '../ProductPage';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
-import { fireEvent } from '@testing-library/react';
+import { fireEvent, screen } from '@testing-library/react';
 
 const defaultProps = {
   title: 'Test Product',
@@ -26,16 +26,27 @@ describe('ProductPage', () => {
     expect(getByRole('heading', { name: 'Test Product' })).toBeInTheDocument();
   });
 
-  it('renders the CTA button', () => {
-    const { getByText } = renderWithProviders(<ProductPage {...defaultProps} />);
-    expect(getByText('Get Started')).toBeInTheDocument();
+  it('renders GetStartedSection with default copy when no custom props provided', () => {
+    renderWithProviders(<ProductPage {...defaultProps} />);
+    // GetStartedSection defaults include "Not sure which mentorship path" text
+    expect(screen.getByText(/Not sure which mentorship path/i)).toBeInTheDocument();
   });
 
-  it('renders all four product sections', () => {
+  it('renders GetStartedSection with custom copy when props provided', () => {
+    const propsWithCustomCopy = {
+      ...defaultProps,
+      getStartedLeftParagraph: 'Custom left paragraph text',
+      getStartedRightParagraph: 'Custom right paragraph text',
+    };
+    renderWithProviders(<ProductPage {...propsWithCustomCopy} />);
+    expect(screen.getByText('Custom left paragraph text')).toBeInTheDocument();
+    expect(screen.getByText('Custom right paragraph text')).toBeInTheDocument();
+  });
+
+  it('renders product content sections', () => {
     const { getByRole } = renderWithProviders(<ProductPage {...defaultProps} />);
     expect(getByRole('heading', { name: /What.s Included/i })).toBeInTheDocument();
     expect(getByRole('heading', { name: /Access.*Pricing/i })).toBeInTheDocument();
-    expect(getByRole('heading', { name: /Next Steps/i })).toBeInTheDocument();
   });
 
   it('renders included items as list', () => {
@@ -48,20 +59,6 @@ describe('ProductPage', () => {
     const { getByText } = renderWithProviders(<ProductPage {...defaultProps} />);
     expect(getByText('Test overview text.')).toBeInTheDocument();
     expect(getByText('Test why it exists.')).toBeInTheDocument();
-  });
-
-  it('renders internal CTA without target=_blank', () => {
-    const { getByText } = renderWithProviders(<ProductPage {...defaultProps} />);
-    const btn = getByText('Get Started').closest('a');
-    expect(btn).not.toHaveAttribute('target', '_blank');
-  });
-
-  it('renders external CTA with target=_blank and rel=noopener noreferrer', () => {
-    const externalProps = { ...defaultProps, ctaHref: 'https://github.com/AccessiTech' };
-    const { getByText } = renderWithProviders(<ProductPage {...externalProps} />);
-    const btn = getByText('Get Started').closest('a');
-    expect(btn).toHaveAttribute('target', '_blank');
-    expect(btn).toHaveAttribute('rel', 'noopener noreferrer');
   });
 
   it('renders breadcrumb with Home and product title', () => {

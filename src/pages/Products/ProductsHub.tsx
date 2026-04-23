@@ -11,65 +11,151 @@ import {
   OSS_DESC,
   CCCS_TITLE,
   CCCS_DESC,
+  BLOG_TITLE,
+  BLOG_DESC,
 } from '../Home/Home';
+import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
+
+const PRODUCTS_AREAS = [
+  {
+    id: 'wcag-series',
+    title: WCAG_SERIES_TITLE,
+    description: WCAG_SERIES_DESC,
+    deliverables: [
+      'Free WCAG 2.2 AA compliance guides',
+      'Accessible design patterns and best practices',
+      'No paywall — public good resource',
+      'Community-driven updates and contributions',
+    ],
+    href: '/products/wcag-series',
+    contactHref: '/contact?inquiry=products',
+  },
+  {
+    id: 'oss-asaaps',
+    title: OSS_TITLE,
+    description: OSS_DESC,
+    deliverables: [
+      'EndogenAI methodology (open source, MIT licensed)',
+      'Case studies showing Red Hat model in action',
+      'Free methodology, paid implementation support',
+      'No vendor lock-in — audit and extend at will',
+    ],
+    href: '/products/oss-asaaps',
+    contactHref: '/contact?inquiry=products',
+  },
+  {
+    id: 'cccs',
+    title: CCCS_TITLE,
+    description: CCCS_DESC,
+    deliverables: [
+      'WCAG 2.2 compliance courses (free, no paywall)',
+      'Web best practices and patterns (freemium)',
+      'Visual and video design with open-source tools (freemium)',
+      'Self-paced and cohort-based learning options',
+    ],
+    href: '/products/cccs',
+    contactHref: '/contact?inquiry=products',
+  },
+  {
+    id: 'blog',
+    title: BLOG_TITLE,
+    description: BLOG_DESC,
+    deliverables: [
+      'Accessibility and WCAG deep dives',
+      'AI governance and EndogenAI methodology updates',
+      'Disability justice and founder reflections',
+      'Case studies and implementation stories',
+    ],
+    href: '/blog',
+    contactHref: '/contact?inquiry=products',
+  },
+];
 
 const ProductsHub = () => {
   const navigate = useNavigate();
+
   return (
     <>
-      <Metadata
-        title="Products | AccessiTech"
-        description="AccessiTech Products: the WCAG Series, Open Source Software & ASaaPs, and Curriculum & Content Creation — resources that make accessibility-first design operational."
-        canonical={`${HOME_URL}/products`}
-      />
-      <main id="main" aria-label={PRODUCTS_HEADER}>
-        <Row className="products-hub-header-row">
-          <Col sm={12} md={{ span: 8, offset: 2 }}>
-            <Breadcrumb className="breadcrumb-container">
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-              <Breadcrumb.Item active>Products</Breadcrumb.Item>
-            </Breadcrumb>
-            <h2>{PRODUCTS_HEADER}</h2>
-            <p>{PRODUCTS_OVERVIEW_P1}</p>
-          </Col>
-        </Row>
+      <Row className="breadcrumb-row product-page">
+        <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+          <Metadata
+            title="Products | AccessiTech"
+            description="AccessiTech Products: the WCAG Series, Open Source Software & ASaaPs, and Curriculum & Content Creation — resources that make accessibility-first design operational."
+            canonical={`${HOME_URL}/products`}
+            siteName="AccessiTech"
+            twitterCreator="@accessiT3ch"
+          />
+          <Breadcrumb className="breadcrumb-container">
+            <Breadcrumb.Item
+              href="/"
+              onClick={(e: React.MouseEvent) => {
+                e.preventDefault();
+                navigate('/');
+              }}
+            >
+              Home
+            </Breadcrumb.Item>
+            <Breadcrumb.Item active>{PRODUCTS_HEADER}</Breadcrumb.Item>
+          </Breadcrumb>
+        </Col>
+      </Row>
 
-        <Row className="products-row">
-          <Col xs={12} md={{ span: 8, offset: 2 }} className="product-card">
-            <h3>{WCAG_SERIES_TITLE}</h3>
-            <p>{WCAG_SERIES_DESC}</p>
-            <Button
-              data-testid="hub-card-btn-wcag"
-              variant="outline-primary"
-              onClick={() => navigate('/products/wcag-series')}
-            >
-              Learn more
-            </Button>
+      <Row className="content-row">
+        <main
+          id="main"
+          aria-label={PRODUCTS_HEADER}
+          className="product-page"
+          data-testid="products-hub"
+        >
+          <Col>
+            <Row>
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <section className="product-overview">
+                  <h2>{PRODUCTS_HEADER}</h2>
+                  <p>{PRODUCTS_OVERVIEW_P1}</p>
+
+                  <Row>
+                    {PRODUCTS_AREAS.map(product => (
+                      <Col
+                        key={product.id}
+                        xs={12}
+                        lg={6}
+                        className="product-service-card"
+                        data-testid={`products-card-${product.id}`}
+                      >
+                        <div className="service-card-inner">
+                          <div>
+                            <h3>{product.title}</h3>
+                            <p>{product.description}</p>
+                            <ul>
+                              {product.deliverables.map((d, i) => (
+                                <li key={i}>{d}</li>
+                              ))}
+                            </ul>
+                          </div>
+                          <Button
+                            variant="outline-primary"
+                            className="mt-3 w-100 learn-more-btn"
+                            onClick={() => navigate(product.href)}
+                            data-testid={`products-card-${product.id}-learn-more-btn`}
+                          >
+                            Learn More
+                          </Button>
+                        </div>
+                      </Col>
+                    ))}
+                  </Row>
+                </section>
+              </Col>
+            </Row>
+            <Row className="getStartedRow">
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <GetStartedSection page="products" />
+              </Col>
+            </Row>
           </Col>
-          <Col xs={12} md={{ span: 8, offset: 2 }} className="product-card mt-5">
-            <h3>{OSS_TITLE}</h3>
-            <p>{OSS_DESC}</p>
-            <Button
-              data-testid="hub-card-btn-oss"
-              variant="outline-primary"
-              onClick={() => navigate('/products/oss-asaaps')}
-            >
-              Learn more
-            </Button>
-          </Col>
-          <Col xs={12} md={{ span: 8, offset: 2 }} className="product-card mt-5">
-            <h3>{CCCS_TITLE}</h3>
-            <p>{CCCS_DESC}</p>
-            <Button
-              data-testid="hub-card-btn-cccs"
-              variant="outline-primary"
-              onClick={() => navigate('/products/cccs')}
-            >
-              Learn more
-            </Button>
-          </Col>
-        </Row>
-      </main>
+        </main>
+      </Row>
     </>
   );
 };

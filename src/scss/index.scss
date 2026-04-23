@@ -222,3 +222,49 @@ code {
     color: $darkBlue;
   }
 }
+
+.learn-more-btn {
+  border-color: $darkBlue;
+  color: $darkBlue;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $darkBlue;
+    color: $yellow;
+    border-color: $darkBlue;
+  }
+}
+.consulting-service-card,
+.mentorship-service-card,
+.product-service-card {
+  display: flex;
+  justify-content: stretch;
+  margin-bottom: 2rem;
+}
+.service-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.getStartedRow {
+  background-color: $pink;
+
+  h3 {
+    font-size: 2rem;
+  }
+  .btn {
+    border-color: $yellow;
+    // font-weight: bold;
+    color: $darkBlue;
+    background-color: $yellow;
+    margin-bottom: 0 !important;
+
+    &:hover,
+    &:focus {
+      background-color: $darkBlue;
+      color: $yellow;
+      border-color: $darkBlue;
+    }
+  }
+}

@@ -33,6 +33,11 @@ const AIIntegrationPage = () => (
     metaTitle="Agentic Intelligence Integration | AccessiTech"
     metaDescription="AccessiTech deploys the EndogenAI governance methodology for accountable, auditable AI systems — open-source framework, paid implementation, no vendor lock-in."
     parentCrumb={{ label: 'Consulting', href: '/services/consulting' }}
+    getStartedLeftParagraph="Evaluating how AI fits into your workflow? A discovery call is the best way to map out governance needs, risk areas, and where EndogenAI patterns can help your team move faster."
+    getStartedRightParagraph="Questions about governance patterns, open-source deployment, or how this differs from other AI governance frameworks? We're happy to discuss before you commit to a call."
+    getStartedLeftButtonLabel="Schedule a Discovery Call"
+    getStartedRightButtonLabel="Send us a message"
+    getStartedInquiryParam="consulting"
   />
 );
 

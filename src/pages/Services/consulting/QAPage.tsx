@@ -16,7 +16,7 @@ const QAPage = () => (
     ]}
     examples={[
       {
-        project: 'AccessiTech.io — WCAG 2.2 AA Compliance Sprint',
+        project: 'Accessi.Tech — WCAG 2.2 AA Compliance Sprint',
         description:
           'We ran a full audit of the AccessiTech platform — navigation, forms, colour contrast, ARIA landmarks, and keyboard use. We found and resolved 23 WCAG 2.2 AA violations. We also integrated axe-core into CI to catch new issues before they ship.',
       },
@@ -34,6 +34,11 @@ const QAPage = () => (
     metaTitle="Quality Assurance & WCAG Testing | AccessiTech"
     metaDescription="AccessiTech QA: WCAG 2.2 AA audits, manual NVDA/VoiceOver testing, and developer-ready remediation roadmaps for accessible digital systems."
     parentCrumb={{ label: 'Consulting', href: '/services/consulting' }}
+    getStartedLeftParagraph="Ready to audit your platform for accessibility issues? A QA discovery call lets us scope your content, estimate timeline, and confirm what success looks like for your team."
+    getStartedRightParagraph="Questions about the audit process, what's included, or how accessibility QA integrates into your workflow? We're happy to discuss before you commit to an engagement."
+    getStartedLeftButtonLabel="Schedule an Audit Call"
+    getStartedRightButtonLabel="Send us a message"
+    getStartedInquiryParam="qa"
   />
 );
 

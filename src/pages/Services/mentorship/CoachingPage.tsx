@@ -23,6 +23,7 @@ const CoachingPage = () => (
     metaTitle="1:1 Coaching & Corporate Workshops | AccessiTech Mentorship"
     metaDescription="Personalised accessibility coaching for career-switchers and corporate workshops for teams embedding inclusive design into their practice — recorded, captioned, practice-based."
     parentCrumb={{ label: 'Mentorship', href: '/services/mentorship' }}
+    getStartedInquiryParam="mentorship"
   />
 );
 

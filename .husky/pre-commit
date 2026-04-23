@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
+set -e
+
 npx lint-staged
-yarn eslint
+yarn lint:strict
+yarn test:clean
+yarn test

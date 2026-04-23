@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo "Running full test suite before push..."
+yarn test
+
+if [ $? -ne 0 ]; then
+  echo "❌ Tests failed. Push rejected."
+  echo "Fix the failing tests and try again."
+  exit 1
+fi
+
+echo "✅ All tests passed. Push allowed."
+exit 0

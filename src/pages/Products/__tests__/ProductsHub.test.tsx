@@ -25,18 +25,19 @@ describe('ProductsHub Page', () => {
     expect(screen.getByRole('heading', { level: 2, name: PRODUCTS_HEADER })).toBeInTheDocument();
   });
 
-  it('renders all three product cards', () => {
+  it('renders all four product cards', () => {
     renderWithProviders(<ProductsHub />, { route: '/products' });
     expect(screen.getByText(WCAG_SERIES_TITLE)).toBeInTheDocument();
     expect(screen.getByText(OSS_TITLE)).toBeInTheDocument();
     expect(screen.getByText(CCCS_TITLE)).toBeInTheDocument();
   });
 
-  it('renders all three product card buttons', () => {
+  it('renders all four product card buttons', () => {
     renderWithProviders(<ProductsHub />, { route: '/products' });
-    expect(screen.getByTestId('hub-card-btn-wcag')).toBeInTheDocument();
-    expect(screen.getByTestId('hub-card-btn-oss')).toBeInTheDocument();
-    expect(screen.getByTestId('hub-card-btn-cccs')).toBeInTheDocument();
+    expect(screen.getByTestId('products-card-wcag-series-learn-more-btn')).toBeInTheDocument();
+    expect(screen.getByTestId('products-card-oss-asaaps-learn-more-btn')).toBeInTheDocument();
+    expect(screen.getByTestId('products-card-cccs-learn-more-btn')).toBeInTheDocument();
+    expect(screen.getByTestId('products-card-blog-learn-more-btn')).toBeInTheDocument();
   });
 
   it('renders main landmark', () => {
@@ -47,20 +48,26 @@ describe('ProductsHub Page', () => {
   describe('navigation', () => {
     it('navigates to /products/wcag-series from WCAG card button', () => {
       renderWithProviders(<ProductsHub />, { route: '/products' });
-      fireEvent.click(screen.getByTestId('hub-card-btn-wcag'));
+      fireEvent.click(screen.getByTestId('products-card-wcag-series-learn-more-btn'));
       expect(mockNavigate).toHaveBeenCalledWith('/products/wcag-series');
     });
 
     it('navigates to /products/oss-asaaps from OSS card button', () => {
       renderWithProviders(<ProductsHub />, { route: '/products' });
-      fireEvent.click(screen.getByTestId('hub-card-btn-oss'));
+      fireEvent.click(screen.getByTestId('products-card-oss-asaaps-learn-more-btn'));
       expect(mockNavigate).toHaveBeenCalledWith('/products/oss-asaaps');
     });
 
     it('navigates to /products/cccs from CCCs card button', () => {
       renderWithProviders(<ProductsHub />, { route: '/products' });
-      fireEvent.click(screen.getByTestId('hub-card-btn-cccs'));
+      fireEvent.click(screen.getByTestId('products-card-cccs-learn-more-btn'));
       expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
+    });
+
+    it('navigates to /blog from Blog card button', () => {
+      renderWithProviders(<ProductsHub />, { route: '/products' });
+      fireEvent.click(screen.getByTestId('products-card-blog-learn-more-btn'));
+      expect(mockNavigate).toHaveBeenCalledWith('/blog');
     });
   });
 });

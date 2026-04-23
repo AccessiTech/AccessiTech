@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import { Breadcrumb, Button, Col, Row } from 'react-bootstrap';
+import { Breadcrumb, Col, Row } from 'react-bootstrap';
 import Metadata from '../Metadata/Metadata';
+import GetStartedSection from '../GetStartedSection/GetStartedSection';
 import { HOME_URL } from '../../settings/strings';
 import './ProductPage.scss';
 
@@ -23,6 +24,11 @@ export interface ProductPageProps {
   metaTitle: string;
   metaDescription: string;
   parentCrumb?: { label: string; href: string };
+  getStartedLeftParagraph?: string;
+  getStartedRightParagraph?: string;
+  getStartedLeftButtonLabel?: string;
+  getStartedRightButtonLabel?: string;
+  getStartedInquiryParam?: string;
 }
 
 const ProductPage = ({
@@ -32,17 +38,18 @@ const ProductPage = ({
   included,
   examples,
   howToUse,
-  relatedServices,
-  ctaLabel,
-  ctaHref,
   pathname,
   metaTitle,
   metaDescription,
   parentCrumb,
+  getStartedLeftParagraph,
+  getStartedRightParagraph,
+  getStartedLeftButtonLabel,
+  getStartedRightButtonLabel,
+  getStartedInquiryParam,
 }: ProductPageProps) => {
   const navigate = useNavigate();
   const canonical = `${HOME_URL}/${pathname}`;
-  const isExternal = ctaHref.startsWith('http');
 
   return (
     <>
@@ -83,14 +90,13 @@ const ProductPage = ({
       <Row className="content-row">
         <main id="main" aria-label={title} className="product-page">
           <Col>
-            <Row>
+            <Row className="pb-4">
               <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
                 <section className="product-overview">
                   <h2>{title}</h2>
                   <p>{overview}</p>
                   <p>{whyItExists}</p>
                 </section>
-                <hr />
                 <section className="product-included">
                   <h3>What&apos;s Included</h3>
                   <ul>
@@ -98,6 +104,10 @@ const ProductPage = ({
                       <li key={i}>{item}</li>
                     ))}
                   </ul>
+                </section>
+                <section className="product-access">
+                  <h3>Access &amp; Pricing</h3>
+                  <p>{howToUse}</p>
                 </section>
                 {examples && examples.length > 0 && (
                   <>
@@ -113,23 +123,18 @@ const ProductPage = ({
                     </section>
                   </>
                 )}
-                <hr />
-                <section className="product-access">
-                  <h3>Access &amp; Pricing</h3>
-                  <p>{howToUse}</p>
-                </section>
-                <hr />
-                <section className="product-next-steps">
-                  <h3>Next Steps</h3>
-                  <p>{relatedServices}</p>
-                  <Button
-                    variant="primary"
-                    href={ctaHref}
-                    {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                  >
-                    {ctaLabel}
-                  </Button>
-                </section>
+              </Col>
+            </Row>
+            <Row className="getStartedRow">
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <GetStartedSection
+                  page={pathname.split('/').pop() || 'product'}
+                  inquiryParam={getStartedInquiryParam}
+                  leftParagraph={getStartedLeftParagraph}
+                  rightParagraph={getStartedRightParagraph}
+                  leftButtonLabel={getStartedLeftButtonLabel}
+                  rightButtonLabel={getStartedRightButtonLabel}
+                />
               </Col>
             </Row>
           </Col>
