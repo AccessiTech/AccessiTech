@@ -147,7 +147,7 @@ function Header() {
               to="/wcag"
               className={pathname === '/wcag' || pathname.startsWith('/wcag/') ? 'active' : ''}
             >
-              Resources
+              Learn
             </Link>
           </li>
           <li>
