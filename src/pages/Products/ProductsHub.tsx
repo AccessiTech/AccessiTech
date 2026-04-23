@@ -134,8 +134,8 @@ const ProductsHub = () => {
                             </ul>
                           </div>
                           <Button
-                            variant="outline-primary learn-more-btn"
-                            className="mt-3 w-100"
+                            variant="outline-primary"
+                            className="mt-3 w-100 learn-more-btn"
                             onClick={() => navigate(product.href)}
                             data-testid={`products-card-${product.id}-learn-more-btn`}
                           >

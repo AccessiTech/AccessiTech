@@ -21,6 +21,7 @@ const CCCsPage = () => (
     metaTitle="Courses & Content (CCCs) | AccessiTech Mentorship"
     metaDescription="AccessiTech's course library covers WCAG 2.2 compliance, web accessibility best practices, and accessible design — free and freemium content for individuals and teams."
     parentCrumb={{ label: 'Mentorship', href: '/services/mentorship' }}
+    getStartedInquiryParam="mentorship"
   />
 );
 

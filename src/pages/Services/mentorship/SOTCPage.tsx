@@ -21,6 +21,7 @@ const SOTCPage = () => (
     metaTitle="State of the Code (SOTC) | AccessiTech"
     metaDescription="SOTC: a coming-soon community for Disabled Designers and Developers sharing knowledge and building collective expertise in accessible systems design. Free and open."
     parentCrumb={{ label: 'Mentorship', href: '/services/mentorship' }}
+    getStartedInquiryParam="mentorship"
   />
 );
 

@@ -75,57 +75,62 @@ describe('Conversion Pathways — Integration Tests', () => {
   });
 
   describe('Consulting Detail Page CTAs', () => {
-    it('ASaaPs page CTA has correct href for contact with consulting inquiry', () => {
+    it('ASaaPs page message CTA navigates to contact with consulting inquiry param', async () => {
+      const user = userEvent.setup();
       renderWithProviders(<ASaaPsPage />);
 
-      // ASaaPs page now uses GetStartedSection with a message button that navigates to contact
       const messageButton = screen.getByTestId('asaaps-hub-message-btn');
-      expect(messageButton).toBeInTheDocument();
-      expect(messageButton).toHaveTextContent(/Send us a message/i);
+      await user.click(messageButton);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=consulting');
     });
 
-    it('AI Integration page CTA has correct href for contact with consulting inquiry', () => {
+    it('AI Integration page message CTA navigates to contact with consulting inquiry param', async () => {
+      const user = userEvent.setup();
       renderWithProviders(<AIIntegrationPage />);
 
       const messageButton = screen.getByTestId('ai-integration-hub-message-btn');
-      expect(messageButton).toBeInTheDocument();
-      expect(messageButton).toHaveTextContent(/Send us a message/i);
+      await user.click(messageButton);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=consulting');
     });
 
-    it('QA page CTA has correct href for contact with qa inquiry', () => {
+    it('QA page message CTA navigates to contact with qa inquiry param', async () => {
+      const user = userEvent.setup();
       renderWithProviders(<QAPage />);
 
       const messageButton = screen.getByTestId('qa-hub-message-btn');
-      expect(messageButton).toBeInTheDocument();
-      expect(messageButton).toHaveTextContent(/Send us a message/i);
+      await user.click(messageButton);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=qa');
     });
   });
 
   describe('Mentorship Detail Page CTAs', () => {
-    it('Coaching page CTA has correct href for contact with mentorship inquiry', () => {
+    it('Coaching page message CTA navigates to contact with mentorship inquiry param', async () => {
+      const user = userEvent.setup();
       renderWithProviders(<CoachingPage />);
 
       const messageButton = screen.getByTestId('coaching-hub-message-btn');
-      expect(messageButton).toBeInTheDocument();
-      expect(messageButton).toHaveTextContent(/Send us a message/i);
+      await user.click(messageButton);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=mentorship');
     });
 
-    it('SOTC page CTA has correct href for contact with sotc inquiry', () => {
+    it('SOTC page message CTA navigates to contact with mentorship inquiry param', async () => {
+      const user = userEvent.setup();
       renderWithProviders(<SOTCPage />);
 
       const messageButton = screen.getByTestId('sotc-hub-message-btn');
-      expect(messageButton).toBeInTheDocument();
-      expect(messageButton).toHaveTextContent(/Send us a message/i);
+      await user.click(messageButton);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=mentorship');
     });
   });
 
   describe('Product Detail Page CTAs', () => {
-    it('CCCs product page CTA has correct href to contact (no inquiry param)', () => {
+    it('CCCs product page message CTA navigates to contact with general inquiry param', async () => {
+      const user = userEvent.setup();
       renderWithProviders(<CCCs />);
 
       const messageButton = screen.getByTestId('cccs-hub-message-btn');
-      expect(messageButton).toBeInTheDocument();
-      expect(messageButton).toHaveTextContent(/Send us a message/i);
+      await user.click(messageButton);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=general');
     });
   });
 

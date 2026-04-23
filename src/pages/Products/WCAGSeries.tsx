@@ -19,6 +19,7 @@ const WCAGSeries = () => (
     metaTitle="WCAG Series | AccessiTech"
     metaDescription="Free WCAG 2.2 AA compliance checklists and accessible design pattern guides from AccessiTech."
     parentCrumb={{ label: 'Products', href: '/products' }}
+    getStartedInquiryParam="general"
   />
 );
 

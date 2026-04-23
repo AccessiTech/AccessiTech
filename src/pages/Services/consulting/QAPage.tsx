@@ -38,6 +38,7 @@ const QAPage = () => (
     getStartedRightParagraph="Questions about the audit process, what's included, or how accessibility QA integrates into your workflow? We're happy to discuss before you commit to an engagement."
     getStartedLeftButtonLabel="Schedule an Audit Call"
     getStartedRightButtonLabel="Send us a message"
+    getStartedInquiryParam="qa"
   />
 );
 

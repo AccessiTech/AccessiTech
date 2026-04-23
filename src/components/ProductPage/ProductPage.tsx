@@ -28,6 +28,7 @@ export interface ProductPageProps {
   getStartedRightParagraph?: string;
   getStartedLeftButtonLabel?: string;
   getStartedRightButtonLabel?: string;
+  getStartedInquiryParam?: string;
 }
 
 const ProductPage = ({
@@ -45,6 +46,7 @@ const ProductPage = ({
   getStartedRightParagraph,
   getStartedLeftButtonLabel,
   getStartedRightButtonLabel,
+  getStartedInquiryParam,
 }: ProductPageProps) => {
   const navigate = useNavigate();
   const canonical = `${HOME_URL}/${pathname}`;
@@ -127,6 +129,7 @@ const ProductPage = ({
               <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
                 <GetStartedSection
                   page={pathname.split('/').pop() || 'product'}
+                  inquiryParam={getStartedInquiryParam}
                   leftParagraph={getStartedLeftParagraph}
                   rightParagraph={getStartedRightParagraph}
                   leftButtonLabel={getStartedLeftButtonLabel}

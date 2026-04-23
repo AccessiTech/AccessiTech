@@ -37,6 +37,7 @@ const AIIntegrationPage = () => (
     getStartedRightParagraph="Questions about governance patterns, open-source deployment, or how this differs from other AI governance frameworks? We're happy to discuss before you commit to a call."
     getStartedLeftButtonLabel="Schedule a Discovery Call"
     getStartedRightButtonLabel="Send us a message"
+    getStartedInquiryParam="consulting"
   />
 );
 

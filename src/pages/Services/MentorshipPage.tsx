@@ -143,8 +143,8 @@ const MentorshipPage = () => {
                             </ul>
                           </div>
                           <Button
-                            variant="outline-primary learn-more-btn"
-                            className="mt-3 w-100"
+                            variant="outline-primary"
+                            className="mt-3 w-100 learn-more-btn"
                             onClick={() => navigate(area.href)}
                             data-testid={`mentorship-card-${area.id}-learn-more-btn`}
                           >

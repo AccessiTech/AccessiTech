@@ -20,6 +20,7 @@ const OpenClassroomsPage = () => (
     metaTitle="OpenClassrooms Partnership | AccessiTech Mentorship"
     metaDescription="AccessiTech's OpenClassrooms mentorship for career-switchers — the operational precedent and values foundation for how we mentor today."
     parentCrumb={{ label: 'Mentorship', href: '/services/mentorship' }}
+    getStartedInquiryParam="mentorship"
   />
 );
 

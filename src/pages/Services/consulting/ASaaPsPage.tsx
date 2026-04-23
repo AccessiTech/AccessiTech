@@ -37,6 +37,7 @@ const ASaaPsPage = () => (
     getStartedRightParagraph="Have questions about what's included or how the engagement process works? We're happy to answer any questions before you commit to a call."
     getStartedLeftButtonLabel="Schedule a Discovery Call"
     getStartedRightButtonLabel="Send us a message"
+    getStartedInquiryParam="consulting"
   />
 );
 

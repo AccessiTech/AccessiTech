@@ -4,6 +4,7 @@ import { Button, Col } from 'react-bootstrap';
 
 interface GetStartedSectionProps {
   page: string;
+  inquiryParam?: string;
   leftParagraph?: string;
   rightParagraph?: string;
   leftButtonLabel?: string;
@@ -21,6 +22,7 @@ const DEFAULT_RIGHT_BUTTON = 'Send us a message';
 
 const GetStartedSection: React.FC<GetStartedSectionProps> = ({
   page,
+  inquiryParam = page,
   leftParagraph = DEFAULT_LEFT_PARAGRAPH,
   rightParagraph = DEFAULT_RIGHT_PARAGRAPH,
   leftButtonLabel = DEFAULT_LEFT_BUTTON,
@@ -38,9 +40,8 @@ const GetStartedSection: React.FC<GetStartedSectionProps> = ({
       <Col className="mt-4 mt-md-0">
         <p>{rightParagraph}</p>
         <Button
-          // variant="outline-primary"
           className="w-100"
-          onClick={() => navigate(`/contact?inquiry=${page}`)}
+          onClick={() => navigate(`/contact?inquiry=${inquiryParam}`)}
           data-testid={`${page}-hub-message-btn`}
         >
           {rightButtonLabel}
