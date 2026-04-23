@@ -17,7 +17,6 @@ import {
   MENTORSHIP_HEADER,
   CCCS_HEADER,
   COACHING_HEADER,
-  OPENCLASSROOMS_HEADER,
   SOTC_HEADER,
 } from '../Services';
 
@@ -48,16 +47,13 @@ describe('Services', () => {
     expect(screen.getByRole('heading', { name: QA_HEADER, level: 3 })).toBeInTheDocument();
   });
 
-  it('renders Mentorship section with four sub-items', () => {
+  it('renders Mentorship section with three sub-items', () => {
     renderWithProviders(<Services />);
     // Mentorship h2
     expect(screen.getByRole('heading', { name: MENTORSHIP_HEADER, level: 2 })).toBeInTheDocument();
-    // Four h3 sub-items
+    // Three h3 sub-items (OpenClassrooms is currently hidden)
     expect(screen.getByRole('heading', { name: CCCS_HEADER, level: 3 })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: COACHING_HEADER, level: 3 })).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: OPENCLASSROOMS_HEADER, level: 3 })
-    ).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: SOTC_HEADER, level: 3 })).toBeInTheDocument();
   });
 
