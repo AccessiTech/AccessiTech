@@ -1,7 +1,7 @@
 <!--
 title: 2.5.2 - Pointer Cancellation
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—what it means, why it matters, and how to ensure users can cancel pointer actions before they are completed.
+description: A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—what it means, why it matters, and how to ensure users can cancel pointer actions before…
 keywords: wcag 2.5.2, pointer cancellation, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.5.2.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.2 Explained, Pointer Cancellation"

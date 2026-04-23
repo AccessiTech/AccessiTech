@@ -1,7 +1,7 @@
 <!--
 title: 1.2.8 - Media Alternative (Prerecorded)
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for synchronized media.
+description: A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for…
 keywords: wcag 1.2.8, media alternative, video accessibility, web standards, digital inclusion, full text transcript
 image: WCAG-Series-1.2.8.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.8 Explained, Media Alternative (Prerecorded)"
@@ -45,8 +45,6 @@ This ensures that users who are deaf-blind or have other disabilities can fully 
 - **Inclusivity:** Full text alternatives provide access for users who cannot see or hear media content.
 - **Legal Compliance:** This is a Level AAA requirement in WCAG 2.2.
 - **Usability:** Enhances understanding for users who prefer or require text over audio/video.
-
-For more, see [W3C's media alternative docs](https://www.w3.org/WAI/WCAG22/Understanding/media-alternative-prerecorded.html).
 
 ---
 

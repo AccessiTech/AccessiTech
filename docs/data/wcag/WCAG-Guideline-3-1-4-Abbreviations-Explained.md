@@ -30,7 +30,7 @@ Guideline 3.1 focuses on making text content readable and understandable by clar
 
 > "A mechanism is available for identifying the expanded form or meaning of abbreviations."
 
-Guideline 3.1.4 requires that users can access the full meaning of abbreviations, acronyms, and initialisms used in your content.
+Guideline 3.1.4 requires that users can access the full meaning of abbreviations. An abbreviation is a short form of a word or phrase. Common examples include USA, HTML, and PDF. Acronyms and initialisms are also covered.
 
 - Helps users understand shortened forms and acronyms
 - Essential for users with cognitive or learning disabilities
@@ -99,6 +99,6 @@ For more, see the [W3C’s official documentation for 3.1.4 Abbreviations](https
 
 ## **Summary**
 
-Guideline 3.1.4 is essential for helping users understand your site. By explaining abbreviations, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make abbreviation accessibility a core part of your development process.
+Guideline 3.1.4 ensures users can understand every abbreviation. Spell out each abbreviation on first use, or provide a lookup mechanism. This helps users who don't recognize specialist shorthand.
 
 _Accessibility means clarity—help users understand every term!_

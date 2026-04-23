@@ -1,7 +1,7 @@
 <!--
 title: 3.3.7 - Redundant Entry
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what it means, why it matters, and how to help users avoid entering the same information multiple times.
+description: A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what it means, why it matters, and how to help users avoid entering the same information…
 keywords: wcag 3.3.7, redundant entry, accessibility, web standards, user experience, form usability
 image: WCAG-Series-3.3.7.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.7 Explained, Redundant Entry"
@@ -78,9 +78,11 @@ For more, see the [W3C's Redundant Entry Techniques](https://www.w3.org/WAI/WCAG
 
 ## **Differences Between A, AA, and AAA for Guideline 3.3.7 in WCAG 2.2**
 
-- **Level AA:** Requires redundant entry to be avoided in multi-step processes.
-- **Level AAA:** No additional requirements for 3.3.7.
-- **Level A:** Not applicable (3.3.7 is a Level AA requirement).
+- **Level A:** Not applicable. This rule is not a Level A requirement.
+- **Level AA:** Required. Users must not re-enter data they already gave. This is the main rule.
+- **Level AAA:** No extra rules. Level AA covers the full requirement.
+
+In short: 3.3.7 is an AA rule. It saves users time and effort.
 
 For more, see the [W3C’s official documentation for 3.3.7 Redundant Entry](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html).
 

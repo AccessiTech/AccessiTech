@@ -20,11 +20,11 @@ previous: /wcag/WCAG-Guideline-1-4-13-Content-on-Hover-or-Focus-Explained, Guide
 
 ## **Guideline 2: Operable**
 
-The second principle of WCAG, Operable, ensures that user interface components and navigation must be usable by everyone. This means users should be able to interact with all controls and content, regardless of their input method—such as a keyboard, mouse, or assistive technology.
+The second WCAG principle is Operable. It means every UI control and navigation element must be usable by everyone. Users interact via keyboard, mouse, or assistive technology — all must work.
 
 ## **Guideline 2.1: Keyboard Accessible**
 
-Guideline 2.1 focuses on making all functionality available from a keyboard. This is crucial for users who cannot use a mouse due to mobility impairments, temporary injuries, or personal preference. Ensuring keyboard accessibility is a foundational step in creating inclusive digital experiences.
+Guideline 2.1 makes all features work with a keyboard. This matters most for users who can't use a mouse. Keyboard access is a foundational step in accessible design.
 
 ## **What Is Guideline 2.1.1 Keyboard Accessible?**
 
@@ -108,6 +108,6 @@ For more, see the [W3C’s official documentation for 2.1.1 Keyboard Accessible]
 
 ## **Summary**
 
-Guideline 2.1.1 is essential for making your site usable by everyone. By ensuring all functionality is available from a keyboard, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make keyboard accessibility a core part of your development process.
+Guideline 2.1.1 ensures every feature on your site works with a keyboard alone. This is foundational for users who rely on keyboard navigation. Test regularly and treat it as a core build requirement.
 
 _Accessibility is about giving everyone a way in—make sure the keyboard always works!_

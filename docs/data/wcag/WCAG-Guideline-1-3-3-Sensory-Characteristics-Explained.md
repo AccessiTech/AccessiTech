@@ -1,7 +1,7 @@
 <!--
 title: 1.3.3 - Sensory Characteristics
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 1.3.3 (Sensory Characteristics)—what it means, why it matters, and how to ensure instructions don’t rely on shape, color, or sound alone.
+description: A practical guide to WCAG Guideline 1.3.3 (Sensory Characteristics)—what it means, why it matters, and how to ensure instructions don’t rely on shape…
 keywords: wcag 1.3.3, sensory characteristics, accessibility, web standards, instructions, color, shape, digital inclusion
 image: WCAG-Series-1.3.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.3 Explained, Sensory Characteristics"

@@ -1,7 +1,7 @@
 <!---
 title: 5.4 - Statement of Partial Conformance – Third Party Content
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 5.4 (Statement of Partial Conformance – Third Party Content)—what it means, why it matters, and how to document accessibility for content you do not control.
+description: A practical guide to WCAG Guideline 5.4 (Statement of Partial Conformance – Third Party Content)—what it means, why it matters, and how to document…
 keywords: wcag 5.4, partial conformance, third party content, accessibility, web standards, user experience
 image: WCAG-Series-5.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 5.4 Explained, Statement of Partial Conformance – Third Party Content"
@@ -30,10 +30,11 @@ Guideline 5.4 provides a way to document accessibility when your web page includ
 
 ## **What Is a Statement of Partial Conformance?**
 
-A statement of partial conformance is a public note that a web page would conform to WCAG except for specific third-party content that is outside your control.
+A statement of partial conformance is a public note that a web page would conform to WCAG except for specific third-party content outside your control.
 
 - Used when you cannot make all content accessible
-- Applies to ads, widgets, embedded media, or other third-party elements
+- Applies to content you didn’t write and can’t edit: ads, widgets, embedded media, or comment sections
+- Real examples: Google AdSense banners, Intercom or Drift chat widgets, Twitter/X embedded feeds, user-submitted blog comments
 - Helps clarify your accessibility efforts and limitations
 
 ---

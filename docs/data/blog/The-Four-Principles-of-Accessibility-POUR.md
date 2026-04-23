@@ -1,6 +1,6 @@
 <!--
 title: The Four Principles of Accessibility (POUR)
-description: Discover the four foundational principles of web accessibility—Perceivable, Operable, Understandable, and Robust (POUR)—with practical examples and tips for building inclusive digital experiences.
+description: A practical guide to POUR—Perceivable, Operable, Understandable, Robust—the four WCAG principles for accessible web experiences, with examples.
 keywords: accessibility principles, POUR, perceivable, operable, understandable, robust, web accessibility, inclusive design, wcag explained
 series: Making the Web Accessible for All
 date: 2025-06-12

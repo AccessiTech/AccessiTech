@@ -1,7 +1,7 @@
 <!--
 title: 1.2.3 - Audio Description or Media Alternative (Prerecorded)
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.
+description: A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content…
 keywords: wcag 1.2.3, audio description, media alternative, accessibility, video accessibility, web standards, digital inclusion
 image: WCAG-Series-1.2.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.3 Explained, Audio Description or Media Alternative (Prerecorded)"
@@ -20,11 +20,11 @@ previous: /wcag/WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained, Guideline 1
 
 ## **Guideline 1: Perceivable**
 
-The first principle of WCAG, Perceivable, ensures that information and user interface components must be presented to users in ways they can perceive. This means content can’t be invisible to all of a user’s senses—whether they are seeing, hearing, or feeling the content through assistive technology.
+The first WCAG principle is Perceivable. It means content must be available in forms users can perceive. Nothing should be invisible to all senses — sight, hearing, and touch via assistive technology all count.
 
 ## **Guideline 1.2: Time-based Media**
 
-Guideline 1.2 focuses on making time-based media—like audio and video—accessible to everyone. This includes providing alternatives such as transcripts, captions, and audio descriptions so users with different abilities can access the content.
+Guideline 1.2 makes audio and video content accessible for all. The method is providing alternatives: transcripts, captions, and audio descriptions. Each alternative serves users who cannot access the original format.
 
 ## **What Is Guideline 1.2.3 Audio Description or Media Alternative (Prerecorded)?**
 
@@ -103,4 +103,4 @@ For more, see the [W3C’s official documentation for 1.2.3 Audio Description or
 
 ## **Summary**
 
-Guideline 1.2.3 is essential for making video content accessible to everyone. By providing audio descriptions or media alternatives, you support users with disabilities, improve usability, and meet legal requirements. Make these alternatives a standard part of your video production process.
+Guideline 1.2.3 ensures prerecorded video is accessible to users who are blind or have low vision. Provide an audio description track or a full text transcript for every video. Build this into your production workflow from the start.

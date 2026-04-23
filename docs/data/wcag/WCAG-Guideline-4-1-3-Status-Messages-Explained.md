@@ -1,7 +1,7 @@
 <!---
 title: 4.1.3 - Status Messages
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what it means, why it matters, and how to ensure status messages are programmatically determined through role or properties.
+description: A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what it means, why it matters, and how to ensure status messages are programmatically determined…
 keywords: wcag 4.1.3, status messages, accessibility, web standards, digital inclusion
 image: WCAG-Series-4.1.3.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 4.1.3 Explained, Status Messages"

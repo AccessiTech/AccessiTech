@@ -1,7 +1,7 @@
 <!--
 title: 1.3.6 - Identify Purpose
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields.
+description: A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose…
 keywords: wcag 1.3.6, identify purpose, accessibility, web standards, autofill, user interface, digital inclusion
 image: WCAG-Series-1.3.6.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.6 Explained, Identify Input Purpose"
