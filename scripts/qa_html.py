@@ -41,6 +41,13 @@ from typing import Optional
 
 from bs4 import BeautifulSoup
 
+try:
+    import textstat as _textstat  # type: ignore[import]
+
+    _TEXTSTAT_AVAILABLE = True
+except ImportError:  # pragma: no cover
+    _TEXTSTAT_AVAILABLE = False
+
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
@@ -668,6 +675,79 @@ def _parse_html_comment_frontmatter(content: str) -> Optional[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Text quality helpers
+# ---------------------------------------------------------------------------
+
+
+def _strip_markdown_body(content: str) -> str:
+    """Strip HTML comment front-matter and Markdown syntax to produce plain text.
+
+    Used by check_md_readability to prepare body text for readability scoring.
+    Removes: front-matter comment, fenced/inline code, heading markers,
+    bold/italic, links, image refs, blockquote markers, HR, list bullets.
+
+    Args:
+        content: Raw content of a .md file (may include HTML comment front-matter).
+
+    Returns:
+        Plain prose text suitable for readability analysis.
+    """
+    # Remove HTML comment front-matter block (first comment only)
+    text = re.sub(r"<!--.*?-->", "", content, count=1, flags=re.DOTALL)
+    # Remove fenced code blocks
+    text = re.sub(r"```.*?```", " ", text, flags=re.DOTALL)
+    # Remove inline code
+    text = re.sub(r"`[^`]+`", " ", text)
+    # Remove markdown headings — strip # markers, keep heading text
+    text = re.sub(r"^#{1,6}\s+\*{0,2}(.+?)\*{0,2}\s*$", r"\1", text, flags=re.MULTILINE)
+    # Remove bold and italic markers (keep inner text)
+    text = re.sub(r"\*{1,3}([^*\n]+)\*{1,3}", r"\1", text)
+    # Remove links — keep link text
+    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
+    # Remove image references
+    text = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", text)
+    # Remove blockquote markers
+    text = re.sub(r"^>\s*", "", text, flags=re.MULTILINE)
+    # Remove horizontal rules
+    text = re.sub(r"^[-*_]{3,}\s*$", "", text, flags=re.MULTILINE)
+    # Remove unordered list bullets
+    text = re.sub(r"^[\s]*[-*+]\s+", "", text, flags=re.MULTILINE)
+    # Remove ordered list numbers
+    text = re.sub(r"^\s*\d+\.\s+", "", text, flags=re.MULTILINE)
+    # Collapse runs of whitespace
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    text = re.sub(r"[ \t]+", " ", text)
+    return text.strip()
+
+
+def _find_duplicate_paragraphs(plain_text: str) -> list:
+    """Return short previews of paragraphs that appear more than once in plain_text.
+
+    A 'paragraph' is any block of text separated by one or more blank lines.
+    Only paragraphs with > 40 characters are considered to avoid false positives
+    on trivially repeated short fragments (e.g. "For more, see…" repeated links).
+
+    Args:
+        plain_text: Stripped plain text body (output of _strip_markdown_body).
+
+    Returns:
+        List of 100-char previews for each first-seen duplicate paragraph.
+    """
+    raw_paragraphs = re.split(r"\n\n+", plain_text)
+    paragraphs = [p.strip() for p in raw_paragraphs if len(p.strip()) > 40]
+    seen: set = set()
+    flagged: set = set()
+    duplicates: list = []
+    for para in paragraphs:
+        key = re.sub(r"\s+", " ", para.lower().strip())
+        if key in seen and key not in flagged:
+            duplicates.append(para[:100])
+            flagged.add(key)
+        seen.add(key)
+    return duplicates
+
+
+# ---------------------------------------------------------------------------
 # Layer 1 — MD source checks
 # ---------------------------------------------------------------------------
 
@@ -779,6 +859,126 @@ def check_md_source(md_path: Path) -> tuple:
     # TODO: implement src-012
 
     return results, md_data
+
+
+# ---------------------------------------------------------------------------
+# Layer 1 (extended) — Text quality and readability checks
+# ---------------------------------------------------------------------------
+
+
+def check_md_readability(md_path: Path, content: str) -> list:
+    """Layer 1 (extended): Text quality and readability analysis for a Markdown source.
+
+    Requires the ``textstat`` package. If it is not installed, all checks
+    return INFO-level notices and the function exits cleanly.
+
+    Applies to both blog entries (public/data/blog/) and WCAG entries
+    (public/data/wcag/).
+
+    Spec: testing/qa-page-specs.md § Layer 1 Extended — Text Quality Checks
+
+    Check IDs:
+        qual-001  Body word count < 200 (thin content)
+        qual-002  Flesch-Kincaid Grade Level > 14 (postgraduate complexity)
+        qual-003  Flesch Reading Ease < 30 (very difficult)
+        qual-004  Average sentence length > 30 words
+        qual-005  Duplicate paragraph detected within the same file
+
+    Args:
+        md_path: Path to the .md source file (used for result.filename).
+        content: Raw text content of the .md file.
+
+    Returns:
+        List of CheckResult objects for any failing readability checks.
+    """
+    if not _TEXTSTAT_AVAILABLE:  # pragma: no cover
+        return []
+
+    plain_text = _strip_markdown_body(content)
+    results = []
+    fname = str(md_path)
+
+    word_count = _textstat.lexicon_count(plain_text, removepunct=True)
+
+    # qual-001: Body word count
+    if word_count < 200:
+        results.append(
+            _result(
+                fname,
+                "qual-001",
+                "WARN",
+                f"Body word count is low: {word_count} words",
+                (
+                    "Content entries should have at least 200 words of prose; "
+                    "thin entries may rank poorly and offer little reader value"
+                ),
+            )
+        )
+
+    # Only compute metric-based checks when there is enough text for reliable scores
+    if word_count >= 100:
+        # qual-002: Flesch-Kincaid Grade Level
+        fk_grade = round(_textstat.flesch_kincaid_grade(plain_text), 1)
+        if fk_grade > 14:
+            results.append(
+                _result(
+                    fname,
+                    "qual-002",
+                    "WARN",
+                    f"Flesch-Kincaid Grade Level is very high: {fk_grade}",
+                    (
+                        "Grade >14 (postgraduate level) may be too complex; "
+                        "target grade 8–12 for technical web content aimed at developers"
+                    ),
+                )
+            )
+
+        # qual-003: Flesch Reading Ease
+        fre = round(_textstat.flesch_reading_ease(plain_text), 1)
+        if fre < 30:
+            results.append(
+                _result(
+                    fname,
+                    "qual-003",
+                    "WARN",
+                    f"Flesch Reading Ease score is very low: {fre}",
+                    (
+                        "Score <30 is classified as 'very difficult'; "
+                        "target ≥40 for web content; revise for shorter sentences and simpler vocabulary"
+                    ),
+                )
+            )
+
+        # qual-004: Average sentence length
+        avg_sl = round(_textstat.words_per_sentence(plain_text), 1)
+        if avg_sl > 30:
+            results.append(
+                _result(
+                    fname,
+                    "qual-004",
+                    "WARN",
+                    f"Average sentence length is very long: {avg_sl} words/sentence",
+                    (
+                        "Sentences averaging >30 words reduce readability; "
+                        "aim for 15–20 words per sentence"
+                    ),
+                )
+            )
+
+    # qual-005: Duplicate paragraph detection
+    duplicates = _find_duplicate_paragraphs(plain_text)
+    for dup_preview in duplicates:
+        results.append(
+            _result(
+                fname,
+                "qual-005",
+                "WARN",
+                "Duplicate paragraph detected within this file",
+                f'Repeated content: \u201c{dup_preview}\u2026\u201d',
+            )
+        )
+
+    return results
 
 
 # ---------------------------------------------------------------------------
@@ -1083,11 +1283,13 @@ def main() -> int:
         all_results.extend(check_html_universal(soup, html_path))
         all_results.extend(check_html_by_type(soup, html_path, page_type))
 
-    # --- Layer 1 + Layer 3: MD source and cross-reference checks ---
+    # --- Layer 1 + Layer 3: MD source and cross-reference checks (blog) ---
     if args.check_sources and sources_dir.exists():
         for md_path in sorted(sources_dir.glob("*.md")):
+            content_text = md_path.read_text(encoding="utf-8")
             src_results, md_data = check_md_source(md_path)
             all_results.extend(src_results)
+            all_results.extend(check_md_readability(md_path, content_text))
 
             # Annotate MD source with QA status writeback (--annotate)
             if args.annotate:
@@ -1098,6 +1300,33 @@ def main() -> int:
 
             # Layer 3: cross-reference if corresponding HTML file exists
             html_counterpart = docs_dir / "blog" / (md_path.stem + ".html")
+            if html_counterpart.exists():
+                xref_content = html_counterpart.read_text(
+                    encoding="utf-8", errors="replace"
+                )
+                xref_soup = BeautifulSoup(xref_content, "lxml")
+                all_results.extend(
+                    check_xref(md_path, html_counterpart, md_data, xref_soup)
+                )
+
+    # --- Layer 1 (extended): readability checks for WCAG series entries ---
+    wcag_sources_dir = Path("public/data/wcag")
+    if args.check_sources and wcag_sources_dir.exists():
+        for md_path in sorted(wcag_sources_dir.glob("*.md")):
+            content_text = md_path.read_text(encoding="utf-8")
+            src_results, md_data = check_md_source(md_path)
+            all_results.extend(src_results)
+            all_results.extend(check_md_readability(md_path, content_text))
+
+            # Annotate MD source with QA status writeback (--annotate)
+            if args.annotate:
+                if args.dry_run:
+                    print(f"DRY RUN — would annotate: {md_path}")
+                else:
+                    annotate_md_source(md_path, src_results)
+
+            # Layer 3: cross-reference if corresponding HTML file exists
+            html_counterpart = docs_dir / "wcag" / (md_path.stem + ".html")
             if html_counterpart.exists():
                 xref_content = html_counterpart.read_text(
                     encoding="utf-8", errors="replace"
