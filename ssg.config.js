@@ -28,6 +28,7 @@ export const config = {
     '/products/wcag-series',
     '/products/oss-asaaps',
     '/products/cccs',
+    '/about',
     '/contact',
   ],
   // staticMetaData is 1:1 indexed with staticPaths — each file provides unique
@@ -53,7 +54,8 @@ export const config = {
     'src/pages/Products/wcag-series-meta.ts', // 16: /products/wcag-series
     'src/pages/Products/oss-asaaps-meta.ts', // 17: /products/oss-asaaps
     'src/pages/Products/cccs-meta.ts', // 18: /products/cccs
-    'src/App/meta.ts', // 19: /contact
+    'src/App/meta.ts', // 19: /about  (use App meta as fallback; About page <Metadata> component provides the real SEO)
+    'src/App/meta.ts', // 20: /contact
   ],
   productionUrlBase: 'https://accessi.tech',
   pathsBuilder: items =>

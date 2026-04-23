@@ -35,6 +35,11 @@ function Header() {
       <nav className="header-nav" aria-label="Main navigation">
         <ul>
           {/* <li><Link to="/">Home</Link></li> */}
+          <li>
+            <Link to="/about" className={pathname === '/about' ? 'active' : ''}>
+              About
+            </Link>
+          </li>
           <li className="nav-dropdown">
             <Link to="/services" className={pathname === '/services' ? 'active' : ''}>
               Services
