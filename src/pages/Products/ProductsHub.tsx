@@ -14,6 +14,7 @@ import {
   BLOG_TITLE,
   BLOG_DESC,
 } from '../Home/Home';
+import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 
 const PRODUCTS_AREAS = [
   {
@@ -145,23 +146,11 @@ const ProductsHub = () => {
                     ))}
                   </Row>
                 </section>
-
-                <hr />
-
-                <section className="product-next-steps">
-                  <h3>Explore Our Work</h3>
-                  <p>
-                    Our products demonstrate accessibility-first design in action. Whether you're
-                    learning, building, or contributing — start here.
-                  </p>
-                  <Button
-                    variant="outline-primary"
-                    onClick={() => navigate('/contact?inquiry=products')}
-                    data-testid="products-hub-message-btn"
-                  >
-                    Get in Touch
-                  </Button>
-                </section>
+              </Col>
+            </Row>
+            <Row className="getStartedRow">
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <GetStartedSection page="products" />
               </Col>
             </Row>
           </Col>

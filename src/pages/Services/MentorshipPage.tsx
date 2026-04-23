@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { Breadcrumb, Button, Col, Row } from 'react-bootstrap';
 import Metadata from '../../components/Metadata/Metadata';
-import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
 import { HOME_URL } from '../../settings/strings';
 import {
   MENTORSHIP_HEADER,
@@ -15,6 +14,7 @@ import {
   SOTC_HEADER,
   SOTC_DESC,
 } from '../../components/Services/Services';
+import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 
 const MENTORSHIP_AREAS = [
   {
@@ -155,25 +155,11 @@ const MentorshipPage = () => {
                     ))}
                   </Row>
                 </section>
-
-                <hr />
-
-                <section className="product-next-steps">
-                  <h3>Get Started</h3>
-                  <p>
-                    Not sure which mentorship path fits your needs? A discovery call is the best
-                    starting point — no commitment required.
-                  </p>
-                  <CalendlyButton label="Schedule a Discovery Call" />
-                  <Button
-                    variant="outline-primary"
-                    className="ms-2"
-                    onClick={() => navigate('/contact?inquiry=mentorship')}
-                    data-testid="mentorship-hub-message-btn"
-                  >
-                    Send us a message
-                  </Button>
-                </section>
+              </Col>
+            </Row>
+            <Row className="getStartedRow">
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <GetStartedSection page="mentorship" />
               </Col>
             </Row>
           </Col>
