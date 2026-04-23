@@ -42,19 +42,19 @@ describe('ConsultingPage hub', () => {
   describe('navigation', () => {
     it('navigates to /services/consulting/asaaps from Learn more', () => {
       renderWithProviders(<ConsultingPage />, { route: '/services/consulting' });
-      fireEvent.click(screen.getByTestId('consulting-learn-more-asaaps'));
+      fireEvent.click(screen.getByTestId('consulting-card-asaaps-learn-more-btn'));
       expect(mockNavigate).toHaveBeenCalledWith('/services/consulting/asaaps');
     });
 
     it('navigates to /services/consulting/ai-integration from Learn more', () => {
       renderWithProviders(<ConsultingPage />, { route: '/services/consulting' });
-      fireEvent.click(screen.getByTestId('consulting-learn-more-ai-integration'));
+      fireEvent.click(screen.getByTestId('consulting-card-ai-integration-learn-more-btn'));
       expect(mockNavigate).toHaveBeenCalledWith('/services/consulting/ai-integration');
     });
 
     it('navigates to /services/consulting/qa from Learn more', () => {
       renderWithProviders(<ConsultingPage />, { route: '/services/consulting' });
-      fireEvent.click(screen.getByTestId('consulting-learn-more-qa'));
+      fireEvent.click(screen.getByTestId('consulting-card-qa-learn-more-btn'));
       expect(mockNavigate).toHaveBeenCalledWith('/services/consulting/qa');
     });
 

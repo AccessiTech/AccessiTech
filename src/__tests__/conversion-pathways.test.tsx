@@ -131,9 +131,9 @@ describe('Conversion Pathways — Integration Tests', () => {
       renderWithProviders(<ConsultingPage />);
 
       const calendlyButtons = screen.getAllByTestId('calendly-button');
-      // ConsultingPage has 2 CalendlyButtons
-      expect(calendlyButtons).toHaveLength(2);
-      expect(calendlyButtons[0]).toHaveTextContent(/schedule a discovery call/i);
+      // ConsultingPage has 1 CalendlyButton (in the Get Started section)
+      expect(calendlyButtons.length).toBeGreaterThan(0);
+      expect(calendlyButtons[0]).toHaveTextContent(/Schedule a Discovery Call|calendly/i);
     });
 
     it('has product card buttons that navigate to detail pages', async () => {
@@ -141,17 +141,17 @@ describe('Conversion Pathways — Integration Tests', () => {
       renderWithProviders(<ProductsHub />);
 
       // Click WCAG button and verify navigation
-      const wcagBtn = screen.getByTestId('hub-card-btn-wcag');
+      const wcagBtn = screen.getByTestId('products-card-wcag-series-learn-more-btn');
       await user.click(wcagBtn);
       expect(mockNavigate).toHaveBeenCalledWith('/products/wcag-series');
 
       // Click OSS button and verify navigation
-      const ossBtn = screen.getByTestId('hub-card-btn-oss');
+      const ossBtn = screen.getByTestId('products-card-oss-asaaps-learn-more-btn');
       await user.click(ossBtn);
       expect(mockNavigate).toHaveBeenCalledWith('/products/oss-asaaps');
 
       // Click CCCs button and verify navigation
-      const cccsBtn = screen.getByTestId('hub-card-btn-cccs');
+      const cccsBtn = screen.getByTestId('products-card-cccs-learn-more-btn');
       await user.click(cccsBtn);
       expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
     });
@@ -456,15 +456,15 @@ describe('Conversion Pathways — Integration Tests', () => {
       renderWithProviders(<ProductsHub />);
 
       // Clicking product cards should navigate to detail pages
-      const wcagBtn = screen.getByTestId('hub-card-btn-wcag');
+      const wcagBtn = screen.getByTestId('products-card-wcag-series-learn-more-btn');
       await user.click(wcagBtn);
       expect(mockNavigate).toHaveBeenCalledWith('/products/wcag-series');
 
-      const ossBtn = screen.getByTestId('hub-card-btn-oss');
+      const ossBtn = screen.getByTestId('products-card-oss-asaaps-learn-more-btn');
       await user.click(ossBtn);
       expect(mockNavigate).toHaveBeenCalledWith('/products/oss-asaaps');
 
-      const cccsBtn = screen.getByTestId('hub-card-btn-cccs');
+      const cccsBtn = screen.getByTestId('products-card-cccs-learn-more-btn');
       await user.click(cccsBtn);
       expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
     });

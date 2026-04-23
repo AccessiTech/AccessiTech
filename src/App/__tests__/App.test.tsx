@@ -10,6 +10,15 @@ vi.mock('../../pages/Home/Home', () => {
     default: MockHome,
     Home: MockHome,
     APP_ROOT: 'AccessiTech Application',
+    WCAG_SERIES_TITLE: 'WCAG Series',
+    WCAG_SERIES_DESC: 'Free WCAG 2.2 AA compliance guides',
+    OSS_TITLE: 'OSS/ASaaPs',
+    OSS_DESC: 'Open-source accessibility patterns and tools',
+    CCCS_TITLE: 'CCCs',
+    CCCS_DESC: 'Custom Compliance Consultations',
+    BLOG_TITLE: 'Blog',
+    BLOG_DESC: 'Thought leadership on accessibility and AI governance',
+    PRODUCTS_HEADER: 'Our Products',
   };
 });
 
