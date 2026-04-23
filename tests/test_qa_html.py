@@ -32,12 +32,14 @@ sys.path.insert(0, str(_REPO_ROOT / "scripts"))
 
 from qa_html import (  # noqa: E402
     CheckResult,
+    _extract_tsx_prose,
     _find_duplicate_paragraphs,
     _strip_markdown_body,
     check_html_by_type,
     check_html_universal,
     check_md_readability,
     check_md_source,
+    check_tsx_readability,
     check_xref,
     detect_page_type,
 )
@@ -596,3 +598,183 @@ alternatives for authentication infrastructure components.
         )
     finally:
         tmp_path.unlink(missing_ok=True)
+
+
+# ---------------------------------------------------------------------------
+# TSX source readability — _extract_tsx_prose and check_tsx_readability
+# ---------------------------------------------------------------------------
+
+
+def test_extract_tsx_prose_named_prop(tmp_path):
+    """_extract_tsx_prose extracts double-quoted named prose props."""
+    tsx = tmp_path / "Example.tsx"
+    tsx.write_text(
+        'const Page = () => (\n'
+        '  <ProductPage\n'
+        '    whyItExists="This is a clear sentence. It explains the purpose simply."\n'
+        '    howToUse="Get started in three steps. First, schedule a call. Then we scope the work."\n'
+        '  />\n'
+        ');\n'
+    )
+    prose = _extract_tsx_prose(tsx)
+    assert "This is a clear sentence." in prose
+    assert "Get started in three steps." in prose
+
+
+def test_extract_tsx_prose_template_literal(tmp_path):
+    """_extract_tsx_prose extracts export const template literals."""
+    tsx = tmp_path / "Services.tsx"
+    tsx.write_text(
+        "export const INTRO = `We help teams build accessible systems.\n"
+        "Our work is grounded in lived experience of disability.`;\n"
+    )
+    prose = _extract_tsx_prose(tsx)
+    assert "We help teams build accessible systems." in prose
+
+
+def test_extract_tsx_prose_included_array_single_quotes(tmp_path):
+    """_extract_tsx_prose extracts single-quoted items from included/examples arrays."""
+    tsx = tmp_path / "Page.tsx"
+    tsx.write_text(
+        "const Page = () => (\n"
+        "  <ProductPage\n"
+        "    included={[\n"
+        "      'Manual screen reader testing with NVDA and VoiceOver on real devices',\n"
+        "      'Automated accessibility scans using axe-core and WAVE tooling',\n"
+        "    ]}\n"
+        "  />\n"
+        ");\n"
+    )
+    prose = _extract_tsx_prose(tsx)
+    assert "Manual screen reader testing" in prose
+    assert "Automated accessibility scans" in prose
+
+
+def test_extract_tsx_prose_included_array_double_quotes(tmp_path):
+    """_extract_tsx_prose extracts double-quoted items from included arrays."""
+    tsx = tmp_path / "Page.tsx"
+    tsx.write_text(
+        'const Page = () => (\n'
+        '  <ProductPage\n'
+        '    included={[\n'
+        '      "Plain-language executive summary for non-technical stakeholders and leadership",\n'
+        '      "Remediation roadmap with priority rankings your developers can act on",\n'
+        '    ]}\n'
+        '  />\n'
+        ');\n'
+    )
+    prose = _extract_tsx_prose(tsx)
+    assert "Plain-language executive summary" in prose
+    assert "Remediation roadmap" in prose
+
+
+def test_extract_tsx_prose_skips_paths(tmp_path):
+    """_extract_tsx_prose skips strings starting with / (path/URL-like)."""
+    tsx = tmp_path / "Page.tsx"
+    tsx.write_text(
+        'const Page = () => (\n'
+        '  <ProductPage\n'
+        '    ctaHref="/contact?inquiry=consulting"\n'
+        '    whyItExists="This is real content. It should be extracted."\n'
+        '  />\n'
+        ');\n'
+    )
+    prose = _extract_tsx_prose(tsx)
+    assert "/contact?inquiry=consulting" not in prose
+    assert "This is real content." in prose
+
+
+def test_extract_tsx_prose_skips_jsx_interpolation(tmp_path):
+    """_extract_tsx_prose skips strings containing { (JSX expression fragments)."""
+    tsx = tmp_path / "Page.tsx"
+    tsx.write_text(
+        'const Page = () => (\n'
+        '  <ProductPage\n'
+        '    title={SOME_HEADER}\n'
+        '    whyItExists="Plain prose without curly braces. Easy to read."\n'
+        '  />\n'
+        ');\n'
+    )
+    prose = _extract_tsx_prose(tsx)
+    assert "SOME_HEADER" not in prose
+    assert "Plain prose without curly braces." in prose
+
+
+def test_check_tsx_readability_fires_qual003_on_dense_content(tmp_path):
+    """check_tsx_readability raises qual-003 for very dense technical prose."""
+    tsx = tmp_path / "Dense.tsx"
+    # Dense compound-noun-heavy text guaranteed to score RE < 30 (> 100 words required
+    # before RE/FK checks run — ensure text is clearly above that threshold).
+    dense = (
+        "Programmatic governance methodologies necessitate comprehensive authentication "
+        "accessibility infrastructure requirements. Organizational implementation mandates "
+        "systematic interoperability between authentication subsystems and assistive "
+        "technologies, ensuring accessibility-supported authentication alternatives for "
+        "all organizational infrastructure components and authentication methodologies. "
+        "Conformance requirements establish mandatory accessibility standards encompassing "
+        "authentication infrastructure, authentication methodologies, and accessibility "
+        "alternatives for organizational authentication infrastructure. "
+        "Implementation necessitates comprehensive authentication accessibility infrastructure "
+        "ensuring organizational conformance requirements and accessibility-supported "
+        "authentication alternatives for authentication infrastructure components. "
+        "Programmatic governance methodologies necessitate comprehensive authentication "
+        "accessibility infrastructure requirements for organizational implementation. "
+        "Systematic authentication interoperability requirements necessitate comprehensive "
+        "organizational accessibility infrastructure and conformance methodologies. "
+        "Authentication infrastructure components mandate organizational accessibility "
+        "conformance requirements for comprehensive implementation."
+    )
+    tsx.write_text(f'const D = () => <P whyItExists="{dense}" />;\n')
+    results = check_tsx_readability(tsx)
+    rule_ids = [r.rule_id for r in results]
+    assert "qual-003" in rule_ids, f"Expected qual-003 for dense content; got: {rule_ids}"
+
+
+def test_check_tsx_readability_passes_on_clean_prose(tmp_path):
+    """check_tsx_readability returns no findings for clear, plain-language content."""
+    tsx = tmp_path / "Clean.tsx"
+    # Simple, readable prose well above 100 words with short sentences
+    clean = (
+        "We help teams build accessible software. "
+        "Our work starts with a discovery call. "
+        "Then we scope the engagement together. "
+        "Every project ends with documentation your team can maintain. "
+        "We test with real screen readers on real devices. "
+        "We use NVDA on Windows and VoiceOver on macOS. "
+        "Our reports are written for the developers who will act on them. "
+        "We keep things simple and direct. "
+        "Accessibility should not be hard to understand. "
+        "It should be part of how you build from the start. "
+        "We make that possible for teams of all sizes. "
+        "Reach out to start a conversation. "
+        "No jargon, no gatekeeping, just clear practical help. "
+    )
+    tsx.write_text(f'const C = () => <P whyItExists="{clean}" />;\n')
+    results = check_tsx_readability(tsx)
+    assert results == [], f"Expected no findings for clean prose; got: {results}"
+
+
+def test_check_tsx_readability_skips_thin_content(tmp_path):
+    """check_tsx_readability returns no findings when no prose strings can be extracted."""
+    tsx = tmp_path / "Thin.tsx"
+    # "Too short." is only 2 words — below _TSX_MIN_STRING_WORDS — so nothing is extracted.
+    tsx.write_text('const T = () => <P whyItExists="Too short." />;\n')
+    results = check_tsx_readability(tsx)
+    assert results == [], f"Expected no findings for unextractable content; got: {results}"
+
+
+def test_check_tsx_readability_on_real_service_page():
+    """Smoke test: a real cleaned service page TSX file passes all readability checks."""
+    from pathlib import Path
+
+    tsx_path = Path("src/pages/Services/consulting/ASaaPsPage.tsx")
+    if not tsx_path.exists():
+        import pytest
+
+        pytest.skip("ASaaPsPage.tsx not found — skipping real-file smoke test")
+
+    results = check_tsx_readability(tsx_path)
+    rule_ids = [r.rule_id for r in results]
+    assert rule_ids == [], (
+        f"ASaaPsPage.tsx should pass all readability checks after cleanup; got: {rule_ids}"
+    )
