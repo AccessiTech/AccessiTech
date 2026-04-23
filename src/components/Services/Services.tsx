@@ -26,17 +26,6 @@ export const AI_INTEGRATION_SHORT =
 export const QA_SHORT =
   'WCAG 2.2 AA audits, manual screen reader testing (NVDA/VoiceOver), and developer-ready remediation roadmaps.';
 
-const COMPACT_AREAS = [
-  { id: 'asaaps', title: ASAAPS_HEADER, short: ASAAPS_SHORT, href: '/services/consulting/asaaps' },
-  {
-    id: 'ai-integration',
-    title: AI_INTEGRATION_HEADER,
-    short: AI_INTEGRATION_SHORT,
-    href: '/services/consulting/ai-integration',
-  },
-  { id: 'qa', title: QA_HEADER, short: QA_SHORT, href: '/services/consulting/qa' },
-];
-
 // MENTORSHIP
 export const MENTORSHIP_HEADER = 'Mentorship';
 export const MENTORSHIP_INTRO = `AccessiTech Mentorship offers structured teaching and training for teams and individuals embedding accessibility into their practice. We work with career-switchers, junior developers, and corporate teams building internal accessibility expertise. Our mentorship model is tiered—free resources for community learning, paid programs for deeper engagement.`;
@@ -56,13 +45,14 @@ export const LearnMoreInlineLink = ({ href }: { href: string }) => (
   </Link>
 );
 
-const Services = ({ compact = false, hub = false }: { compact?: boolean; hub?: boolean }) => {
+const Services = ({ hub = false }: { hub?: boolean }) => {
   const navigate = useNavigate();
-  const md = hub ? { span: 8, offset: 2 } : { span: 10, offset: 1 };
+  const md = hub ? { span: 8, offset: 2 } : { span: 8, offset: 2 };
+  const xl = hub ? { span: 6 } : { span: 4, offset: 0 };
   return (
     <section id="services-row" data-testid="services">
+      {/* CONSULTING */}
       <Row className={`services-row consulting ${hub ? 'hub-header-row' : ''}`}>
-        {/* CONSULTING */}
         <Col sm={12} md={md}>
           {hub && (
             <Breadcrumb className="breadcrumb-container">
@@ -70,96 +60,65 @@ const Services = ({ compact = false, hub = false }: { compact?: boolean; hub?: b
               <Breadcrumb.Item active>Services</Breadcrumb.Item>
             </Breadcrumb>
           )}
-          <article className="service-section">
-            <div>
-              <SectionHeader
-                title={CONSULTING_HEADER}
-                id="consulting"
-                use="h2"
-                linkTitle={CLICK_TO_COPY}
-                successText={COPY_SUCCESS_MESSAGE}
-                failText={COPY_FAIL_MESSAGE}
-              />
-              <p>{CONSULTING_INTRO}</p>
-
-              {compact ? (
-                <ul className="consulting-compact-list" data-testid="consulting-compact-list">
-                  {COMPACT_AREAS.map(({ id, title, short, href }) => (
-                    <li key={id}>
-                      <strong>{title}</strong>
-                      <p>{short}</p>
-                      <Button
-                        variant="outline-primary"
-                        size="sm"
-                        data-testid={`consulting-learn-more-${id}`}
-                        onClick={() => navigate(href)}
-                      >
-                        Learn more
-                      </Button>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <>
+          <div className="service-section">
+            <SectionHeader
+              title={CONSULTING_HEADER}
+              id="consulting"
+              use="h2"
+              linkTitle={CLICK_TO_COPY}
+              successText={COPY_SUCCESS_MESSAGE}
+              failText={COPY_FAIL_MESSAGE}
+            />
+            <p>{CONSULTING_INTRO}</p>
+            <Row className="service-area-cards">
+              <Col key="asaaps" xs={12} xl={xl} className="service-area-card-col">
+                <article className="service-area-card">
                   <h3>{ASAAPS_HEADER}</h3>
                   <p>
                     {ASAAPS_DESC}
                     <LearnMoreInlineLink href="/services/consulting/asaaps" />
                   </p>
+                </article>
+              </Col>
 
+              <Col key="ai-integration" xs={12} xl={xl} className="service-area-card-col">
+                <article className="service-area-card">
                   <h3>{AI_INTEGRATION_HEADER}</h3>
                   <p>
                     {AI_INTEGRATION_DESC}
                     <LearnMoreInlineLink href="/services/consulting/ai-integration" />
                   </p>
+                </article>
+              </Col>
 
+              <Col key="qa" xs={12} xl={xl} className="service-area-card-col">
+                <article className="service-area-card">
                   <h3>{QA_HEADER}</h3>
                   <p>
                     {QA_DESC}
                     <LearnMoreInlineLink href="/services/consulting/qa" />
                   </p>
-                </>
-              )}
-            </div>
-            {compact ? (
-              <div className="consulting-compact-ctas">
-                <Button
-                  size="lg"
-                  variant="secondary"
-                  data-testid="explore-consulting-btn"
-                  onClick={() => navigate('/services/consulting')}
-                >
-                  Explore all consulting
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline-primary"
-                  className="mt-2"
-                  data-testid="reach-out-consulting-btn"
-                  onClick={() => navigate('/contact?inquiry=consulting')}
-                >
-                  Reach out directly
-                </Button>
-              </div>
-            ) : (
-              <Button
-                size="lg"
-                variant="primary"
-                onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                  e.preventDefault();
-                  navigate('/contact?inquiry=consulting');
-                }}
-              >
-                {CONSULTING_CTA}
-              </Button>
-            )}
-          </article>
+                </article>
+              </Col>
+            </Row>
+
+            <Button
+              size="lg"
+              variant="primary"
+              onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+                e.preventDefault();
+                navigate('/contact?inquiry=consulting');
+              }}
+            >
+              {CONSULTING_CTA}
+            </Button>
+          </div>
         </Col>
       </Row>
+      {/* MENTORSHIP */}
       <Row className={`services-row mentorship ${hub ? 'hub-header-row' : ''}`}>
-        {/* MENTORSHIP */}
         <Col sm={12} md={md}>
-          <article className="service-section">
+          <div className="service-section">
             <div>
               <SectionHeader
                 title={MENTORSHIP_HEADER}
@@ -170,30 +129,41 @@ const Services = ({ compact = false, hub = false }: { compact?: boolean; hub?: b
                 failText={COPY_FAIL_MESSAGE}
               />
               <p>{MENTORSHIP_INTRO}</p>
+              <Row className="service-area-cards">
+                <Col key="cccs" xs={12} xl={xl} className="service-area-card-col">
+                  <article className="service-area-card">
+                    <h3>{CCCS_HEADER}</h3>
+                    <p>
+                      {CCCS_DESC}
+                      <LearnMoreInlineLink href="/services/mentorship/cccs" />
+                    </p>
+                  </article>
+                </Col>
 
-              <h3>{CCCS_HEADER}</h3>
-              <p>
-                {CCCS_DESC}
-                <LearnMoreInlineLink href="/services/mentorship/cccs" />
-              </p>
+                <Col key="coaching" xs={12} xl={xl} className="service-area-card-col">
+                  <h3>{COACHING_HEADER}</h3>
+                  <p>
+                    {COACHING_DESC}
+                    <LearnMoreInlineLink href="/services/mentorship/coaching" />
+                  </p>
+                </Col>
 
-              <h3>{COACHING_HEADER}</h3>
-              <p>
-                {COACHING_DESC}
-                <LearnMoreInlineLink href="/services/mentorship/coaching" />
-              </p>
+                {/* <Col key="openclassrooms" xs={12} xl={xl} className="service-area-card-col">
+                  <h3>{OPENCLASSROOMS_HEADER}</h3>
+                  <p>
+                    {OPENCLASSROOMS_DESC}
+                    <LearnMoreInlineLink href="/services/mentorship/openclassrooms" />
+                  </p>
+                </Col> */}
 
-              <h3>{OPENCLASSROOMS_HEADER}</h3>
-              <p>
-                {OPENCLASSROOMS_DESC}
-                <LearnMoreInlineLink href="/services/mentorship/openclassrooms" />
-              </p>
-
-              <h3>{SOTC_HEADER}</h3>
-              <p>
-                {SOTC_DESC}
-                <LearnMoreInlineLink href="/services/mentorship/sotc" />
-              </p>
+                <Col key="sotc" xs={12} xl={xl} className="service-area-card-col">
+                  <h3>{SOTC_HEADER}</h3>
+                  <p>
+                    {SOTC_DESC}
+                    <LearnMoreInlineLink href="/services/mentorship/sotc" />
+                  </p>
+                </Col>
+              </Row>
             </div>
             <Button
               size="lg"
@@ -205,7 +175,7 @@ const Services = ({ compact = false, hub = false }: { compact?: boolean; hub?: b
             >
               {MENTORSHIP_CTA}
             </Button>
-          </article>
+          </div>
         </Col>
       </Row>
     </section>

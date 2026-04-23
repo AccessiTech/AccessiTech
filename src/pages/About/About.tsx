@@ -110,7 +110,7 @@ const About = () => {
               <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
                 <h2>{ABOUT_H2}</h2>
                 <p>{ABOUT_INTRO}</p>
-                <section className="about-section about-hero">
+                <section className="about-section about-hero mb-0 pb-0">
                   <h3>{ABOUT_S1_HEADING}</h3>
                   <p>{ABOUT_S1_P1}</p>
                   <blockquote className="about-pull-quote">

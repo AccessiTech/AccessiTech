@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import CalendlyButton from '../CalendlyButton/CalendlyButton';
 import { Button, Col } from 'react-bootstrap';
+import './GetStartedSection.scss';
 
 interface GetStartedSectionProps {
   page: string;

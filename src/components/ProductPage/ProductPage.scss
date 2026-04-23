@@ -37,21 +37,4 @@
   section {
     @include padding(1rem 0 0);
   }
-
-  .product-next-steps {
-    @include padding(2rem 0);
-    display: flex;
-    column-gap: 1.5rem;
-
-    // at md breakpoint the flex direction should be column
-    @media (max-width: map-get($grid-breakpoints, md)) {
-      flex-direction: column;
-    }
-
-    & > .col {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
 }

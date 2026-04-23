@@ -16,6 +16,7 @@ import {
   PURPOSE_PIC_URL_1024,
 } from '../../settings/settings';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
+import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 export const CLICK_TO_COPY = 'click to copy link';
 
 const splashRowStyle = {
@@ -76,7 +77,7 @@ export const BLOG_DESC =
 export const CONTACT_HEADER = 'Get in touch';
 export const CONTACT_P1 = `Questions about Consulting, Mentorship, or how AccessiTech can help your organization?`;
 export const CONTACT_P2 =
-  'All inquiries are routed directly to conor and sheela (founders). No triage delay, no junior staff handoff.';
+  'All inquiries are routed directly to conor. No triage delay, no junior staff handoff.';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -148,20 +149,6 @@ export const Home = () => {
         {/* SERVICES */}
         <Services />
 
-        {/* EXPLORE ALL SERVICES */}
-        {/* <Row className="services-explore-row">
-          <Col xs={12} className="text-center">
-            <Button
-              data-testid="explore-services-btn"
-              variant="secondary"
-              size="lg"
-              onClick={() => navigate('/services')}
-            >
-              Explore all services
-            </Button>
-          </Col>
-        </Row> */}
-
         {/* WHO */}
         <Row className="who-row">
           <Col xs={12} md={{ span: 8, offset: 2 }}>
@@ -174,7 +161,7 @@ export const Home = () => {
               failText={COPY_FAIL_MESSAGE}
             />
             <p>{WHO_P1}</p>
-            <div className="who-ctas">
+            {/* <div className="who-ctas">
               <Button
                 data-testid="who-about-btn"
                 variant="outline-primary"
@@ -189,13 +176,13 @@ export const Home = () => {
               >
                 Schedule a consultation
               </Button>
-            </div>
+            </div> */}
           </Col>
         </Row>
 
         {/* PRODUCTS OVERVIEW */}
         <Row className="products-overview-row">
-          <Col xs={12} md={{ span: 10, offset: 1 }}>
+          <Col xs={12} md={{ span: 8, offset: 2 }}>
             <SectionHeader
               title={PRODUCTS_HEADER}
               id="products"
@@ -212,7 +199,7 @@ export const Home = () => {
 
         {/* PRODUCT CARDS */}
         <Row className="products-row">
-          <Col xs={12} md={{ span: 3, offset: 1 }} className="product-card">
+          <Col xs={12} md={{ span: 4, offset: 2 }} className="product-card">
             <h3>{WCAG_SERIES_TITLE}</h3>
             <p>{WCAG_SERIES_DESC}</p>
             <Button
@@ -234,7 +221,7 @@ export const Home = () => {
               Learn more
             </Button>
           </Col>
-          <Col xs={12} md={{ span: 3 }} className="product-card mt-5 mt-md-0">
+          {/* <Col xs={12} md={{ span: 4, offset: 2 }} className="product-card mt-5 mt-md-0">
             <h3>{CCCS_TITLE}</h3>
             <p>{CCCS_DESC}</p>
             <Button
@@ -244,7 +231,7 @@ export const Home = () => {
             >
               Learn more
             </Button>
-          </Col>
+          </Col> */}
         </Row>
 
         {/* EXPLORE ALL PRODUCTS */}
@@ -262,28 +249,9 @@ export const Home = () => {
         </Row> */}
 
         {/* CONTACT */}
-        <Row className="contact-row">
-          <Col xs={12} className="text-center">
-            <SectionHeader
-              title={CONTACT_HEADER}
-              id="contact"
-              use="h2"
-              linkTitle={CLICK_TO_COPY}
-              successText={COPY_SUCCESS_MESSAGE}
-              failText={COPY_FAIL_MESSAGE}
-            />
-            <p>{CONTACT_P1}</p>
-            <CalendlyButton className="btn btn-primary btn-lg" />
-            <Link to="/contact" className="ms-3 btn btn-primary btn-lg">
-              Send us a Message!
-            </Link>
-            {/* <Button
-              data-testid="contact-us-btn"
-              variant="outline-primary"
-              size="lg"
-              className="ms-3"
-              onClick={() => navigate('/contact')}
-            > */}
+        <Row className="contact-row getStartedRow">
+          <Col xs={12} md={{ span: 8, offset: 2 }} className="text-center">
+            <GetStartedSection page="home" leftParagraph={CONTACT_P1} rightParagraph={CONTACT_P2} />
           </Col>
         </Row>
       </main>
