@@ -20,7 +20,7 @@ previous: /wcag/WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained, Guidelin
 
 ## **Guideline 1: Perceivable**
 
-The first principle of WCAG, Perceivable, ensures that information and user interface components must be presented to users in ways they can perceive. This means content can’t be invisible to all of a user’s senses—whether they are seeing, hearing, or feeling the content through assistive technology.
+The first WCAG principle is Perceivable. It means content must be available in forms users can perceive. Nothing should be invisible to all senses — sight, hearing, and touch via assistive technology all count.
 
 ## **Guideline 1.3: Adaptable**
 
@@ -105,4 +105,4 @@ For more, see the [W3C’s official documentation for 1.3.4 Orientation](https:/
 
 ## **Summary**
 
-Guideline 1.3.4 is essential for making your site usable and accessible for everyone. By supporting both orientations, you support users with disabilities, improve usability, and meet legal requirements. Make orientation flexibility a standard part of your development process.
+Guideline 1.3.4 ensures your site works in both portrait and landscape mode. This is vital for users who cannot rotate their device. Build orientation flexibility into your CSS from day one.

@@ -20,11 +20,11 @@ previous: /wcag/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained, Guidel
 
 ## **Guideline 1: Perceivable**
 
-The first principle of WCAG, Perceivable, ensures that information and user interface components must be presented to users in ways they can perceive. This means content can’t be invisible to all of a user’s senses—whether they are seeing, hearing, or feeling the content through assistive technology.
+The first WCAG principle is Perceivable. It means content must be available in forms users can perceive. Nothing should be invisible to all senses — sight, hearing, and touch via assistive technology all count.
 
 ## **Guideline 1.2: Time-based Media**
 
-Guideline 1.2 focuses on making time-based media—like audio and video—accessible to everyone. This includes providing alternatives such as transcripts, captions, and audio descriptions so users with different abilities can access the content.
+Guideline 1.2 makes audio and video content accessible for all. The method is providing alternatives: transcripts, captions, and audio descriptions. Each alternative serves users who cannot access the original format.
 
 ## **What Is Guideline 1.2.7 Extended Audio Description (Prerecorded)?**
 
@@ -45,8 +45,6 @@ This ensures that users who are blind or have low vision can fully understand yo
 - **Inclusivity:** Extended audio description provides access for users who are blind or have low vision.
 - **Legal Compliance:** This is a Level AAA requirement in WCAG 2.2.
 - **Usability:** Enhances understanding for users who rely on audio cues to follow video content.
-
-For more, see [W3C's audio description docs](https://www.w3.org/WAI/WCAG22/Understanding/extended-audio-description-prerecorded.html).
 
 ---
 
@@ -85,7 +83,7 @@ Audit your site regularly and use accessibility checkers to ensure all video con
 
 - **Level A:** No requirement for 1.2.7.
 - **Level AA:** No requirement for 1.2.7.
-- **Level AAA:** Requires extended audio description for all prerecorded video content in synchronized media where standard audio description is insufficient. This is the core requirement for 1.2.7 and is mandatory for AAA conformance.
+- **Level AAA:** Requires extended audio description for all prerecorded video. Use it when standard audio description is not enough. This is the core requirement for 1.2.7 and is mandatory for AAA conformance.
 
 For more, see the [W3C’s official documentation for 1.2.7 Extended Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/extended-audio-description-prerecorded.html).
 
@@ -103,4 +101,4 @@ For more, see the [W3C’s official documentation for 1.2.7 Extended Audio Descr
 
 ## **Summary**
 
-Guideline 1.2.7 is essential for making video content accessible to users who rely on audio description. By providing extended audio description, you support users with disabilities, improve usability, and meet AAA requirements. Make audio description a standard part of your video production process for maximum inclusion.
+Guideline 1.2.7 ensures complex videos are fully accessible through extended audio descriptions. When a video is too fast-paced for standard description, pause the video and narrate instead. Make extended audio description part of your AAA video production process.

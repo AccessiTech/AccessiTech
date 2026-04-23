@@ -20,19 +20,21 @@ next: /wcag/WCAG-Guideline-5-2-5-Non-Interference-Explained, Guideline 5.2.5 - N
 
 ## **What Does "Accessibility-Supported Ways" Mean?**
 
-Section 5.2.4 of WCAG 2.1 requires that you can only rely on ways of using web technologies that are supported by both user agents (like browsers) and assistive technologies (like screen readers) to meet accessibility requirements. If a feature or method is not accessibility supported, you cannot rely on it to satisfy WCAG success criteria.
+WCAG 5.2.4 sets one rule. You can only rely on web technologies that work in both browsers and assistive technologies. If a feature doesn't work with screen readers or keyboards, it cannot count toward WCAG conformance.
+
+In short: use tech that works for all. If it fails AT tests, add a backup. Test early and test often.
 
 **Key points:**
 
-- You must use technologies in ways that work with assistive technologies and mainstream browsers.
-- If you use a feature that is not accessibility supported, you must provide an alternative that is accessibility supported.
-- "Accessibility supported" means the feature has been tested and works with assistive technologies in the human language(s) of your content.
+- Use web technologies in ways that work with AT and mainstream browsers.
+- If a feature is not accessibility supported, provide a supported alternative.
+- "Accessibility supported" means the feature is tested and works with AT in your users' language.
 
 ---
 
 ## **Why Is This Important?**
 
-- **Real-world access:** Users with disabilities rely on assistive technologies. If your site uses features that don't work with these tools, those users are excluded.
+- **Real-world access:** Users with disabilities rely on AT. If your site uses features that don't work with AT, those users are excluded.
 - **Legal compliance:** Conformance to WCAG requires accessibility-supported use of technologies.
 - **Future-proofing:** Ensures your content works as technologies evolve.
 
@@ -41,8 +43,8 @@ Section 5.2.4 of WCAG 2.1 requires that you can only rely on ways of using web t
 ## **Examples**
 
 - **Accessible:** Using standard HTML form elements, which are supported by browsers and screen readers.
-- **Not accessible:** Using a custom widget that cannot be read or operated by a screen reader, unless you provide an accessible alternative.
-- **Alternative provided:** If you use a video player that is not accessible, you must also provide a player or method that is accessibility supported.
+- **Not accessible:** A custom widget that screen readers cannot read or operate, unless you add an accessible option.
+- **Alternative provided:** Use an accessible video player if the main one is not. Supply a supported option.
 
 ---
 
@@ -57,7 +59,7 @@ Section 5.2.4 of WCAG 2.1 requires that you can only rely on ways of using web t
 
 ## **Summary**
 
-You can only claim WCAG conformance if you use technologies in ways that are accessibility supported. If you use a feature that is not accessibility supported, you must provide an accessible alternative. This ensures all users, including those with disabilities, can access your content.
+WCAG conformance requires accessibility-supported technology. Any unsupported feature needs a supported alternative. This protects access for all users, including those with disabilities.
 
 ---
 

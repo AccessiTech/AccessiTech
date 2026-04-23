@@ -20,11 +20,11 @@ previous: /wcag/WCAG-Guideline-2-3-2-Three-Flashes-Explained, Guideline 2.3.2 - 
 
 ## **Guideline 2: Operable**
 
-The Operable principle ensures that all users can interact with and control web content, regardless of their abilities. This includes protecting users from unnecessary motion that could cause discomfort or distraction.
+The Operable principle means all users must be able to use and control web content. This includes protection from motion that causes discomfort or distraction.
 
 ## **Guideline 2.3: Seizures and Physical Reactions**
 
-Guideline 2.3 focuses on preventing content that could trigger seizures or other physical reactions, including motion sensitivity from animations.
+Guideline 2.3 prevents content that triggers seizures or physical reactions. This includes motion effects and animation.
 
 ## **What Is Guideline 2.3.3 Animation from Interactions?**
 
@@ -32,11 +32,11 @@ Guideline 2.3 focuses on preventing content that could trigger seizures or other
 
 Guideline 2.3.3 Animation from Interactions is a Level AAA requirement in the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions).
 
-- Users must be able to turn off non-essential motion animations triggered by their actions (e.g., scrolling, clicking, hovering).
+- Users must be able to turn off motion triggered by scrolling, clicking, or hovering. These are called interaction-triggered animations.
 - Exceptions: animations essential to functionality or information.
 - Applies to parallax effects, smooth scrolling, transitions, and other UI animations.
 
-This ensures users can disable non-essential motion animation and have a comfortable experience.
+This gives users a smooth and comfortable experience.
 
 For more, see [AccessGuide: Moving Content](https://www.accessguide.io/guide/moving-content).
 
@@ -101,4 +101,4 @@ For more, see the [W3C’s official documentation for 2.3.3 Animation from Inter
 
 ## **Summary**
 
-Guideline 2.3.3 is essential for preventing discomfort and supporting users with motion sensitivity. By allowing users to disable non-essential animation, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make animation control a core part of your development process.
+Guideline 2.3.3 protects users who are sensitive to motion. Let users disable non-essential animations. Test this control regularly and include it as a standard accessibility feature.

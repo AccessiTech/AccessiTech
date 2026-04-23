@@ -103,4 +103,4 @@ For more, see the [W3C’s official documentation for 2.2.4 Interruptions](https
 
 ## **Summary**
 
-Guideline 2.2.4 is essential for preventing distractions and supporting users with cognitive or neurological disabilities. By allowing users to postpone or suppress interruptions, you support users with disabilities, improve usability, and meet legal requirements. Test your site regularly and make interruption control a core part of your development process.
+Guideline 2.2.4 prevents unwanted distractions. It is especially important for users with cognitive or neurological disabilities. Give users control over alerts and notifications, and test this regularly.

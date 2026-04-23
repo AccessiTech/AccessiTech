@@ -698,8 +698,9 @@ def _strip_markdown_body(content: str) -> str:
     text = re.sub(r"```.*?```", " ", text, flags=re.DOTALL)
     # Remove inline code
     text = re.sub(r"`[^`]+`", " ", text)
-    # Remove markdown headings — strip # markers, keep heading text
-    text = re.sub(r"^#{1,6}\s+\*{0,2}(.+?)\*{0,2}\s*$", r"\1", text, flags=re.MULTILINE)
+    # Remove markdown headings — strip # markers, add period as sentence boundary so that
+    # heading text is not merged with adjacent prose by textstat's sentence splitter.
+    text = re.sub(r"^#{1,6}\s+\*{0,2}(.+?)\*{0,2}\s*$", r"\1. ", text, flags=re.MULTILINE)
     # Remove bold and italic markers (keep inner text)
     text = re.sub(r"\*{1,3}([^*\n]+)\*{1,3}", r"\1", text)
     # Remove links — keep link text
@@ -710,10 +711,16 @@ def _strip_markdown_body(content: str) -> str:
     text = re.sub(r"^>\s*", "", text, flags=re.MULTILINE)
     # Remove horizontal rules
     text = re.sub(r"^[-*_]{3,}\s*$", "", text, flags=re.MULTILINE)
-    # Remove unordered list bullets
-    text = re.sub(r"^[\s]*[-*+]\s+", "", text, flags=re.MULTILINE)
-    # Remove ordered list numbers
-    text = re.sub(r"^\s*\d+\.\s+", "", text, flags=re.MULTILINE)
+
+    def _terminate(m: re.Match) -> str:
+        """Strip bullet/number marker; ensure text ends with a sentence boundary."""
+        inner = m.group(1).rstrip()
+        return (inner + ". ") if (inner and inner[-1] not in ".!?:") else (inner + " ")
+
+    # Remove unordered list bullets — add period as sentence boundary
+    text = re.sub(r"^[\s]*[-*+]\s+(.+?)\s*$", _terminate, text, flags=re.MULTILINE)
+    # Remove ordered list numbers — add period as sentence boundary
+    text = re.sub(r"^\s*\d+\.\s+(.+?)\s*$", _terminate, text, flags=re.MULTILINE)
     # Collapse runs of whitespace
     text = re.sub(r"\n{3,}", "\n\n", text)
     text = re.sub(r"[ \t]+", " ", text)
