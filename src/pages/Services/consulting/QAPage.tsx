@@ -5,12 +5,12 @@ const QAPage = () => (
   <ProductPage
     title={QA_HEADER}
     overview={QA_DESC}
-    whyItExists="Most accessibility errors reach production because they are never tested against real assistive technology. AccessiTech QA closes that gap — manual screen reader testing, systematic WCAG audits, and remediation documentation written for the developers who will actually fix the issues, not for compliance archives."
+    whyItExists="Most accessibility errors reach production because no one tested with real assistive technology. AccessiTech QA closes that gap. We run manual screen reader tests, systematic WCAG audits, and write fix documentation for the developers who need to act on it — not for compliance reports."
     included={[
       'WCAG 2.2 AA compliance audit across all applicable success criteria',
       'Manual screen reader testing — NVDA (Windows) and VoiceOver (macOS / iOS)',
       'Automated scanning with axe-core and WAVE',
-      'Remediation roadmap with developer-ready fix specifications and priority rankings',
+      'A clear remediation roadmap with fix specs and priority rankings your developers can act on',
       'Plain-language executive summary for non-technical stakeholders',
       'Optional re-audit after remediation to confirm resolution',
     ]}
@@ -18,12 +18,12 @@ const QAPage = () => (
       {
         project: 'AccessiTech.io — WCAG 2.2 AA Compliance Sprint',
         description:
-          'Full manual and automated audit of the AccessiTech platform across navigation, forms, colour contrast, ARIA landmark structure, and keyboard interactivity. 23 WCAG 2.2 AA violations identified and resolved. axe-core integrated into CI to prevent regressions in subsequent development.',
+          'We ran a full audit of the AccessiTech platform — navigation, forms, colour contrast, ARIA landmarks, and keyboard use. We found and resolved 23 WCAG 2.2 AA violations. We also integrated axe-core into CI to catch new issues before they ship.',
       },
       {
         project: 'EndogenAI Workflows — Accessibility QA Review',
         description:
-          'Systematic review of agent documentation templates and web interfaces for screen reader compatibility, keyboard navigation, ARIA pattern correctness, and cognitive load. Delivered a prioritized remediation roadmap for the open-source contributor community and internal engineering team.',
+          'We reviewed agent documentation templates and web interfaces for screen reader support, keyboard navigation, ARIA patterns, and cognitive load. We delivered a prioritized fix roadmap for the contributor community and the internal engineering team.',
       },
     ]}
     howToUse="QA audit engagements are fixed-scope: we assess your current state, document every violation, and hand off a prioritized roadmap. Pricing is scoped by page-count and test complexity. A re-audit engagement is available separately after remediation is complete."

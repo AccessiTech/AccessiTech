@@ -678,6 +678,205 @@ def _parse_html_comment_frontmatter(content: str) -> Optional[dict]:
 # Text quality helpers
 # ---------------------------------------------------------------------------
 
+# TSX prose props found in ProductPage-based components
+_TSX_PROSE_PROPS = (
+    "whyItExists",
+    "howToUse",
+    "relatedServices",
+    "overview",
+)
+
+# Regex to match `const IDENTIFIER = `...` (template literal export)
+_TSX_TEMPLATE_LITERAL_RE = re.compile(
+    r"export\s+const\s+\w+\s*=\s*`(.*?)`", re.DOTALL
+)
+
+# Regex to match a named prose prop with a double-quoted string value
+# Captures the prop value; excludes values containing URLs, JSX paths, or {
+_TSX_PROP_DQUOTE_RE_TEMPLATE = r'{prop}\s*=\s*"((?:[^"\\]|\\.)*?)"'
+
+# Min word count for a TSX prose string to be included in readability analysis
+_TSX_MIN_STRING_WORDS = 8
+
+
+def _extract_tsx_prose(tsx_path: Path) -> str:
+    """Extract human-readable prose strings from a TSX source file.
+
+    Targets two patterns:
+    1. Named prose props in ProductPage-based components:
+       ``whyItExists="..."``  ``howToUse="..."``  etc.
+    2. Template-literal export constants (e.g. in Services.tsx):
+       ``export const ASAAPS_DESC = `...` ``
+    3. Double-quoted string items inside ``included`` or ``description``
+       array props (service bullet points and examples).
+
+    Excludes strings that look like URLs, JSX component props, import
+    paths, or other non-prose artefacts.
+
+    Args:
+        tsx_path: Path to the .tsx source file.
+
+    Returns:
+        Concatenated prose text ready for readability scoring, or an empty
+        string if no prose could be extracted.
+    """
+    src = tsx_path.read_text(encoding="utf-8")
+    chunks: list[str] = []
+
+    # 1. Named prose props with double-quoted values
+    for prop in _TSX_PROSE_PROPS:
+        pattern = _TSX_PROP_DQUOTE_RE_TEMPLATE.format(prop=prop)
+        for match in re.finditer(pattern, src):
+            val = match.group(1).strip()
+            # Skip values that look like paths, URLs or JSX/code fragments
+            if "/" in val[:20] or "{" in val or "import" in val:
+                continue
+            words = val.split()
+            if len(words) >= _TSX_MIN_STRING_WORDS:
+                chunks.append(val)
+
+    # 2. Template-literal export constants (e.g. Services.tsx DESC / INTRO consts)
+    for match in _TSX_TEMPLATE_LITERAL_RE.finditer(src):
+        val = match.group(1).strip()
+        if "{" in val:
+            # Contains JSX interpolation — skip
+            continue
+        words = val.split()
+        if len(words) >= _TSX_MIN_STRING_WORDS:
+            chunks.append(val)
+
+    # 3. String items inside included/examples arrays (single- or double-quoted).
+    # Look for sequences of quoted strings that follow `included={[` or
+    # `examples={[` so we only capture array items, not prop assignments.
+    for block_match in re.finditer(
+        r"(?:included|examples)\s*=\s*\{\s*\[(.*?)\]\s*\}", src, re.DOTALL
+    ):
+        block = block_match.group(1)
+        # Match both single-quoted and double-quoted strings of sufficient length
+        for item_match in re.finditer(r'["\'](.{40,}?)["\']', block):
+            val = item_match.group(1).strip()
+            if "/" in val[:10] or "{" in val or "\n" in val[:5]:
+                continue
+            words = val.split()
+            if len(words) >= _TSX_MIN_STRING_WORDS:
+                # Add sentence-boundary period if missing (same fix as _strip_markdown_body
+                # for list bullets — prevents textstat from merging items into one long sentence)
+                if val and val[-1] not in ".!?:":
+                    val = val + "."
+                chunks.append(val)
+
+    return " ".join(chunks)
+
+
+def check_tsx_readability(tsx_path: Path) -> list:
+    """Layer 1 (TSX): Text quality and readability analysis for a TSX source file.
+
+    Extracts human-readable prose from ProductPage-pattern TSX components and
+    Services.tsx export constants, then applies the same qual-* readability
+    checks used for Markdown source files.
+
+    Requires the ``textstat`` package. Returns an empty list if not installed or
+    if less than 100 words of prose can be extracted.
+
+    Check IDs (same as for Markdown sources):
+        qual-001  Extracted word count < 100 (thin content — lower than the 200-word MD
+                  threshold because service/product pages are intentionally concise)
+        qual-002  Flesch-Kincaid Grade Level > 14
+        qual-003  Flesch Reading Ease < 30
+        qual-004  Average sentence length > 30 words
+        qual-005  Duplicate block detected within the same file
+
+    Args:
+        tsx_path: Path to the .tsx source file.
+
+    Returns:
+        List of CheckResult objects for any failing checks.
+    """
+    if not _TEXTSTAT_AVAILABLE:  # pragma: no cover
+        return []
+
+    prose = _extract_tsx_prose(tsx_path)
+    # If no substantial prose strings were found (file uses JSX interpolations or is
+    # a non-content component), skip readability analysis entirely.
+    if not prose.strip():
+        return []
+    results = []
+    fname = str(tsx_path)
+
+    word_count = _textstat.lexicon_count(prose, removepunct=True)
+
+    if word_count < 100:
+        results.append(
+            _result(
+                fname,
+                "qual-001",
+                "WARN",
+                f"Extracted prose word count is low: {word_count} words",
+                (
+                    "Service/product page content should have at least 100 words of prose; "
+                    "thin pages may not provide sufficient value to visitors"
+                ),
+            )
+        )
+
+    if word_count >= 100:
+        fk_grade = round(_textstat.flesch_kincaid_grade(prose), 1)
+        if fk_grade > 14:
+            results.append(
+                _result(
+                    fname,
+                    "qual-002",
+                    "WARN",
+                    f"Flesch-Kincaid Grade Level is very high: {fk_grade}",
+                    (
+                        "Grade >14 (postgraduate level) may be too complex; "
+                        "target grade 8–12 for service page content"
+                    ),
+                )
+            )
+
+        fre = round(_textstat.flesch_reading_ease(prose), 1)
+        if fre < 30:
+            results.append(
+                _result(
+                    fname,
+                    "qual-003",
+                    "WARN",
+                    f"Flesch Reading Ease score is very low: {fre}",
+                    (
+                        "Score <30 is classified as 'very difficult'; "
+                        "target ≥40 for service page content; use shorter sentences and simpler vocabulary"
+                    ),
+                )
+            )
+
+        avg_sl = round(_textstat.words_per_sentence(prose), 1)
+        if avg_sl > 30:
+            results.append(
+                _result(
+                    fname,
+                    "qual-004",
+                    "WARN",
+                    f"Average sentence length is very long: {avg_sl} words/sentence",
+                    "Sentences averaging >30 words reduce readability; aim for 15–20 words",
+                )
+            )
+
+    # qual-005: duplicate block detection
+    duplicates = _find_duplicate_paragraphs(prose)
+    for dup_preview in duplicates:
+        results.append(
+            _result(
+                fname,
+                "qual-005",
+                "WARN",
+                "Duplicate content block detected within this file",
+                f'Repeated content: \u201c{dup_preview}\u2026\u201d',
+            )
+        )
+
+    return results
+
 
 def _strip_markdown_body(content: str) -> str:
     """Strip HTML comment front-matter and Markdown syntax to produce plain text.
@@ -1342,6 +1541,31 @@ def main() -> int:
                 all_results.extend(
                     check_xref(md_path, html_counterpart, md_data, xref_soup)
                 )
+
+    # --- Layer 1 (TSX): readability checks for service/product page components ---
+    # These pages render as a client-side SPA — the HTML output is a shell with
+    # identical body text for every route. Source-level prose lives in TSX files.
+    tsx_source_dirs = [
+        Path("src/pages/Services"),
+        Path("src/pages/Products"),
+        Path("src/components/Services"),
+    ]
+    if args.check_sources:
+        tsx_files_scanned = 0
+        for tsx_dir in tsx_source_dirs:
+            if not tsx_dir.exists():
+                continue
+            for tsx_path in sorted(tsx_dir.rglob("*.tsx")):
+                # Skip test files, the generic ProductPage template, and hub/navigation
+                # pages whose content is already captured via Services.tsx constants.
+                _HUB_PAGES = {"ProductPage.tsx", "MentorshipPage.tsx", "ConsultingPage.tsx"}
+                if "__tests__" in str(tsx_path) or tsx_path.name in _HUB_PAGES:
+                    continue
+                prose = _extract_tsx_prose(tsx_path)
+                if not prose.strip():
+                    continue
+                all_results.extend(check_tsx_readability(tsx_path))
+                tsx_files_scanned += 1
 
     # --- Aggregate counts ---
     error_count = sum(1 for r in all_results if r.severity == "ERROR")
