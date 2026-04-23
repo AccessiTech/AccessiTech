@@ -10,6 +10,11 @@ export const ABOUT_META_TITLE = 'About | AccessiTech';
 export const ABOUT_META_DESC =
   'Conor Kelly — disabled design technologist, founder, and CEO. 18 years building accessible, equitable digital systems.';
 
+// ── Page intro ──────────────────────────────────────────────────────────────
+export const ABOUT_H2 = 'About conor';
+export const ABOUT_INTRO =
+  "Disabled design technologist, founder, and CEO. Eighteen years building accessible, equitable digital systems across neuroscience, education, humanitarian data, and enterprise tech — and a career-defining turn that made disability experience a practice, not a personal narrative. Here's how it adds up.";
+
 // ── Section 1: The 18-Year Pattern ──────────────────────────────────────────
 export const ABOUT_S1_HEADING = 'The 18-Year Pattern';
 export const ABOUT_S1_P1 =
@@ -35,29 +40,30 @@ export const ABOUT_S3_QUOTE =
 
 // ── Section 4: Nothing About Us Without Us ──────────────────────────────────
 export const ABOUT_S4_HEADING = 'Nothing About Us Without Us';
-export const ABOUT_S4_P1 = "That reframe isn't a slogan. It's a structural observation with consequences.";
+export const ABOUT_S4_P1 =
+  "That reframe isn't a slogan. It's a structural observation with consequences.";
 export const ABOUT_S4_P2 =
-  'Here\'s what I learned the hard way: the people most excluded from a system are the people best positioned to fix it. That\'s not inspiration — that\'s structural truth. When I\'m designing something and I can\'t use it (Psoriatic Arthritis + a mouse-dependent workflow = dead end), that\'s not my problem to solve alone. That\'s everyone\'s problem to solve together. Disability justice and accessibility-first design aren\'t compliance boxes. They\'re the scaffolding for systems that actually work for everyone.';
+  "Here's what I learned the hard way: the people most excluded from a system are the people best positioned to fix it. That's not inspiration — that's structural truth. When I'm designing something and I can't use it (Psoriatic Arthritis + a mouse-dependent workflow = dead end), that's not my problem to solve alone. That's everyone's problem to solve together. Disability justice and accessibility-first design aren't compliance boxes. They're the scaffolding for systems that actually work for everyone.";
 export const ABOUT_S4_P3_A =
   "A disabled design technologist who becomes a founder and CEO isn't an unusual success story — it's a correction to a longstanding gap. Who builds digital infrastructure is a justice question. When the people most affected by a system's failures are excluded from building it, the failures compound. Disability experience isn't a personal narrative I bring alongside the technical skills. It ";
 export const ABOUT_S4_P3_EM = 'is';
 export const ABOUT_S4_P3_B =
   " a technical skill — one that produces better software, surfaces failure modes early, and builds systems that don't need to be retrofitted for inclusion later.";
 export const ABOUT_S4_P4 =
-  'Accessibility-first design isn\'t a niche practice for edge cases. It\'s the standard that makes software legible to everyone — including the users organizations haven\'t thought to design for yet.';
+  "Accessibility-first design isn't a niche practice for edge cases. It's the standard that makes software legible to everyone — including the users organizations haven't thought to design for yet.";
 
 // ── Section 5: Why AccessiTech ───────────────────────────────────────────────
 export const ABOUT_S5_HEADING = 'Why AccessiTech';
 export const ABOUT_S5_P1 = 'AccessiTech is how all of this becomes work you can hire.';
 export const ABOUT_S5_CONSULTING_LABEL = 'Consulting';
 export const ABOUT_S5_CONSULTING_DESC =
-  'centers three pillars: Design and Development through Accessible Software as a Product/Service (ASaaPs) for organizations building accessibility in from day one; Agentic Intelligence Integration for responsible AI adoption with governance that sticks; and Quality Assurance and Testing to catch barriers before they reach production.';
+  'centers three pillars: Design and Development — Accessible Software as a Product/Service (ASaaPs) for organizations building accessibility from day one; Agentic Intelligence Integration for responsible AI adoption with governance that sticks; and Quality Assurance and Testing to catch barriers before they reach production.';
 export const ABOUT_S5_MENTORSHIP_LABEL = 'Mentorship';
 export const ABOUT_S5_MENTORSHIP_DESC =
-  'is flexible by design. Engagement formats range from 1:1 coaching sessions to multi-day corporate workshops — scope shaped by your team\'s needs. We work with individuals navigating career transitions and corporate teams building internal accessibility expertise.';
+  "is flexible by design. Engagement formats range from 1:1 coaching sessions to multi-day corporate workshops — scope shaped by your team's needs. We work with individuals navigating career transitions and corporate teams building internal accessibility expertise.";
 export const ABOUT_S5_PRODUCTS_LABEL = 'Products';
 export const ABOUT_S5_PRODUCTS_DESC =
-  '— WCAG training, open-source tools, and community programs — are free or freemium by intent. Trust is built in public before it\'s contracted in private.';
+  "— WCAG training, open-source tools, and community programs — are free or freemium by intent. Trust is built in public before it's contracted in private.";
 export const ABOUT_S5_CLOSING =
   'Each is a different way in. What they share is accountability to the people the system affects.';
 
@@ -97,66 +103,85 @@ const About = () => {
         </Col>
       </Row>
 
-      <main id="main" aria-label="About the Founder">
-        <section className="about-section about-hero">
-          <h2>{ABOUT_S1_HEADING}</h2>
-          <p>{ABOUT_S1_P1}</p>
-          <blockquote className="about-pull-quote">
-            <p>{ABOUT_S1_QUOTE}</p>
-          </blockquote>
-        </section>
+      <Row className="content-row">
+        <main id="main" aria-label="About the Founder" className="about-page">
+          <Col>
+            <Row className="pl-0 pr-0">
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <h2>{ABOUT_H2}</h2>
+                <p>{ABOUT_INTRO}</p>
+                <section className="about-section about-hero">
+                  <h3>{ABOUT_S1_HEADING}</h3>
+                  <p>{ABOUT_S1_P1}</p>
+                  <blockquote className="about-pull-quote">
+                    <p>{ABOUT_S1_QUOTE}</p>
+                  </blockquote>
+                </section>
 
-        <section className="about-section about-background">
-          <h2>{ABOUT_S2_HEADING}</h2>
-          <p>{ABOUT_S2_P1}</p>
-          <p>{ABOUT_S2_P2}</p>
-        </section>
+                <section className="about-section about-background">
+                  <h3>{ABOUT_S2_HEADING}</h3>
+                  <p>{ABOUT_S2_P1}</p>
+                  <p>{ABOUT_S2_P2}</p>
+                </section>
+              </Col>
+            </Row>
+            <Row className="about-turning-point">
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <section className="about-section about-turning-point">
+                  <h3>{ABOUT_S3_HEADING}</h3>
+                  <p>{ABOUT_S3_P1}</p>
+                  <p>{ABOUT_S3_P2}</p>
+                  <blockquote className="about-pull-quote">
+                    <p>{ABOUT_S3_QUOTE}</p>
+                  </blockquote>
+                </section>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <section className="about-section about-philosophy">
+                  <h3>{ABOUT_S4_HEADING}</h3>
+                  <p>{ABOUT_S4_P1}</p>
+                  <p>{ABOUT_S4_P2}</p>
+                  <p>
+                    {ABOUT_S4_P3_A}
+                    <em>{ABOUT_S4_P3_EM}</em>
+                    {ABOUT_S4_P3_B}
+                  </p>
+                  <p>{ABOUT_S4_P4}</p>
+                </section>
 
-        <section className="about-section about-turning-point">
-          <h2>{ABOUT_S3_HEADING}</h2>
-          <p>{ABOUT_S3_P1}</p>
-          <p>{ABOUT_S3_P2}</p>
-          <blockquote className="about-pull-quote">
-            <p>{ABOUT_S3_QUOTE}</p>
-          </blockquote>
-        </section>
+                <section className="about-section about-services">
+                  <h3>{ABOUT_S5_HEADING}</h3>
+                  <p>{ABOUT_S5_P1}</p>
+                  <p>
+                    <strong>{ABOUT_S5_CONSULTING_LABEL}</strong> {ABOUT_S5_CONSULTING_DESC}
+                  </p>
+                  <p>
+                    <strong>{ABOUT_S5_MENTORSHIP_LABEL}</strong> {ABOUT_S5_MENTORSHIP_DESC}
+                  </p>
+                  <p>
+                    <strong>{ABOUT_S5_PRODUCTS_LABEL}</strong> {ABOUT_S5_PRODUCTS_DESC}
+                  </p>
+                  <p>{ABOUT_S5_CLOSING}</p>
+                </section>
 
-        <section className="about-section about-philosophy">
-          <h2>{ABOUT_S4_HEADING}</h2>
-          <p>{ABOUT_S4_P1}</p>
-          <p>{ABOUT_S4_P2}</p>
-          <p>
-            {ABOUT_S4_P3_A}
-            <em>{ABOUT_S4_P3_EM}</em>
-            {ABOUT_S4_P3_B}
-          </p>
-          <p>{ABOUT_S4_P4}</p>
-        </section>
-
-        <section className="about-section about-services">
-          <h2>{ABOUT_S5_HEADING}</h2>
-          <p>{ABOUT_S5_P1}</p>
-          <p>
-            <strong>{ABOUT_S5_CONSULTING_LABEL}</strong> {ABOUT_S5_CONSULTING_DESC}
-          </p>
-          <p>
-            <strong>{ABOUT_S5_MENTORSHIP_LABEL}</strong> {ABOUT_S5_MENTORSHIP_DESC}
-          </p>
-          <p>
-            <strong>{ABOUT_S5_PRODUCTS_LABEL}</strong> {ABOUT_S5_PRODUCTS_DESC}
-          </p>
-          <p>{ABOUT_S5_CLOSING}</p>
-        </section>
-
-        <p className="founder-signature">{ABOUT_SIGNATURE}</p>
-
-        <GetStartedSection
-          page="about"
-          inquiryParam="consulting"
-          leftParagraph={ABOUT_GS_LEFT}
-          rightParagraph={ABOUT_GS_RIGHT}
-        />
-      </main>
+                <p className="founder-signature">{ABOUT_SIGNATURE}</p>
+              </Col>
+            </Row>
+            <Row className="getStartedRow">
+              <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+                <GetStartedSection
+                  page="about"
+                  inquiryParam="consulting"
+                  leftParagraph={ABOUT_GS_LEFT}
+                  rightParagraph={ABOUT_GS_RIGHT}
+                />
+              </Col>
+            </Row>
+          </Col>
+        </main>
+      </Row>
     </>
   );
 };
