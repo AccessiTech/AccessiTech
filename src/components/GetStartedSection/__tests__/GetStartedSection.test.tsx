@@ -150,7 +150,6 @@ describe('GetStartedSection', () => {
     it('message button has correct styling classes', () => {
       renderWithProviders(<GetStartedSection page="consulting" />);
       const messageButton = screen.getByTestId('consulting-hub-message-btn');
-      expect(messageButton).toHaveClass('ms-2');
       expect(messageButton).toHaveClass('w-100');
       expect(messageButton).toHaveClass('btn');
       expect(messageButton).toHaveClass('btn-primary');

@@ -9,7 +9,7 @@ const WCAGSeries = () => (
       'WCAG 2.2 AA compliance checklists',
       'Accessible design pattern guides',
       'Screen reader testing guides',
-      'Free — hosted on accessitech.io and GitHub',
+      'Free — hosted on Accessi.Tech and GitHub',
     ]}
     howToUse="All WCAG Series content is free. Read it online, download as PDFs, or fork on GitHub. No account is required. Each guide covers one WCAG principle or success criterion. You can learn at your own pace or jump to what you need."
     relatedServices="Working through WCAG for a specific project? Our Consulting team offers accessibility audits, QA testing, and ASaaP implementation."

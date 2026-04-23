@@ -16,7 +16,7 @@ const QAPage = () => (
     ]}
     examples={[
       {
-        project: 'AccessiTech.io — WCAG 2.2 AA Compliance Sprint',
+        project: 'Accessi.Tech — WCAG 2.2 AA Compliance Sprint',
         description:
           'We ran a full audit of the AccessiTech platform — navigation, forms, colour contrast, ARIA landmarks, and keyboard use. We found and resolved 23 WCAG 2.2 AA violations. We also integrated axe-core into CI to catch new issues before they ship.',
       },

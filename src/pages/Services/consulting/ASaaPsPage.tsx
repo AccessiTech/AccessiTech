@@ -15,7 +15,7 @@ const ASaaPsPage = () => (
     ]}
     examples={[
       {
-        project: 'AccessiTech.io',
+        project: 'Accessi.Tech',
         description:
           'End-to-end accessible React application built from scratch — WCAG 2.2 AA compliant, screen-reader tested, keyboard navigable throughout. axe-core integrated into CI to prevent accessibility regressions before they reach production.',
       },

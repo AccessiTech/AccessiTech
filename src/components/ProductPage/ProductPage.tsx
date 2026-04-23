@@ -88,14 +88,13 @@ const ProductPage = ({
       <Row className="content-row">
         <main id="main" aria-label={title} className="product-page">
           <Col>
-            <Row>
+            <Row className="pb-4">
               <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
                 <section className="product-overview">
                   <h2>{title}</h2>
                   <p>{overview}</p>
                   <p>{whyItExists}</p>
                 </section>
-                <hr />
                 <section className="product-included">
                   <h3>What&apos;s Included</h3>
                   <ul>
@@ -103,6 +102,10 @@ const ProductPage = ({
                       <li key={i}>{item}</li>
                     ))}
                   </ul>
+                </section>
+                <section className="product-access">
+                  <h3>Access &amp; Pricing</h3>
+                  <p>{howToUse}</p>
                 </section>
                 {examples && examples.length > 0 && (
                   <>
@@ -118,11 +121,6 @@ const ProductPage = ({
                     </section>
                   </>
                 )}
-                <hr />
-                <section className="product-access">
-                  <h3>Access &amp; Pricing</h3>
-                  <p>{howToUse}</p>
-                </section>
               </Col>
             </Row>
             <Row className="getStartedRow">

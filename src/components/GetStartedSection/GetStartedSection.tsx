@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import CalendlyButton from '../CalendlyButton/CalendlyButton';
-import { Button } from 'react-bootstrap';
+import { Button, Col } from 'react-bootstrap';
 
 interface GetStartedSectionProps {
   page: string;
@@ -30,22 +30,22 @@ const GetStartedSection: React.FC<GetStartedSectionProps> = ({
 
   return (
     <section className={`product-next-steps row ${page}`}>
-      <h3>Get Started</h3>
-      <div className="col">
+      <h3 className="w-100">Get Started</h3>
+      <Col className="mt-4 mt-md-0">
         <p>{leftParagraph}</p>
         <CalendlyButton label={leftButtonLabel} className="mb-4 w-100" />
-      </div>
-      <div className="col">
+      </Col>
+      <Col className="mt-4 mt-md-0">
         <p>{rightParagraph}</p>
         <Button
           // variant="outline-primary"
-          className="ms-2 w-100"
+          className="w-100"
           onClick={() => navigate(`/contact?inquiry=${page}`)}
           data-testid={`${page}-hub-message-btn`}
         >
           {rightButtonLabel}
         </Button>
-      </div>
+      </Col>
     </section>
   );
 };
