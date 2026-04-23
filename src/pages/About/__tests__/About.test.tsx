@@ -2,7 +2,13 @@ import { vi } from 'vitest';
 
 vi.mock('../../../components/GetStartedSection/GetStartedSection', () => ({
   __esModule: true,
-  default: ({ leftParagraph, rightParagraph }: { leftParagraph?: string; rightParagraph?: string }) => (
+  default: ({
+    leftParagraph,
+    rightParagraph,
+  }: {
+    leftParagraph?: string;
+    rightParagraph?: string;
+  }) => (
     <section data-testid="get-started-section">
       <h3>Get Started</h3>
       {leftParagraph && <p>{leftParagraph}</p>}
@@ -39,9 +45,7 @@ describe('About', () => {
 
   it('renders Education & Career Breadth heading', () => {
     renderWithProviders(<About />, { route: '/about' });
-    expect(
-      screen.getByRole('heading', { name: 'Education & Career Breadth' })
-    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Education & Career Breadth' })).toBeInTheDocument();
   });
 
   it('renders The Turning Point heading', () => {
