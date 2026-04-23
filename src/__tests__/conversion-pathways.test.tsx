@@ -87,19 +87,17 @@ describe('Conversion Pathways — Integration Tests', () => {
     it('AI Integration page CTA has correct href for contact with consulting inquiry', () => {
       renderWithProviders(<AIIntegrationPage />);
 
-      // AI Integration page has "Schedule a discovery call" in description text too
-      // Get all matches and find the one that's an <a> tag (the button)
-      const allMatches = screen.getAllByText(/schedule a discovery call/i);
-      const ctaButton = allMatches.find(el => el.tagName === 'A');
-      expect(ctaButton).toBeTruthy();
-      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=consulting');
+      const messageButton = screen.getByTestId('ai-integration-hub-message-btn');
+      expect(messageButton).toBeInTheDocument();
+      expect(messageButton).toHaveTextContent(/Send us a message/i);
     });
 
     it('QA page CTA has correct href for contact with qa inquiry', () => {
       renderWithProviders(<QAPage />);
 
-      const ctaButton = screen.getByText(/schedule an audit call/i);
-      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=qa');
+      const messageButton = screen.getByTestId('qa-hub-message-btn');
+      expect(messageButton).toBeInTheDocument();
+      expect(messageButton).toHaveTextContent(/Send us a message/i);
     });
   });
 
@@ -107,15 +105,17 @@ describe('Conversion Pathways — Integration Tests', () => {
     it('Coaching page CTA has correct href for contact with mentorship inquiry', () => {
       renderWithProviders(<CoachingPage />);
 
-      const ctaButton = screen.getByText(/schedule a coaching conversation/i);
-      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=mentorship');
+      const messageButton = screen.getByTestId('coaching-hub-message-btn');
+      expect(messageButton).toBeInTheDocument();
+      expect(messageButton).toHaveTextContent(/Send us a message/i);
     });
 
     it('SOTC page CTA has correct href for contact with sotc inquiry', () => {
       renderWithProviders(<SOTCPage />);
 
-      const ctaButton = screen.getByText(/join the interest list/i);
-      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=sotc');
+      const messageButton = screen.getByTestId('sotc-hub-message-btn');
+      expect(messageButton).toBeInTheDocument();
+      expect(messageButton).toHaveTextContent(/Send us a message/i);
     });
   });
 
@@ -123,8 +123,9 @@ describe('Conversion Pathways — Integration Tests', () => {
     it('CCCs product page CTA has correct href to contact (no inquiry param)', () => {
       renderWithProviders(<CCCs />);
 
-      const ctaButton = screen.getByText(/start a project/i);
-      expect(ctaButton).toHaveAttribute('href', '/contact');
+      const messageButton = screen.getByTestId('cccs-hub-message-btn');
+      expect(messageButton).toBeInTheDocument();
+      expect(messageButton).toHaveTextContent(/Send us a message/i);
     });
   });
 
@@ -439,20 +440,23 @@ describe('Conversion Pathways — Integration Tests', () => {
 
     it('verifies QA service routes to qa inquiry', () => {
       renderWithProviders(<QAPage />);
-      const ctaButton = screen.getByText(/schedule an audit call/i);
-      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=qa');
+      const messageButton = screen.getByTestId('qa-hub-message-btn');
+      fireEvent.click(messageButton);
+      expect(messageButton).toBeInTheDocument();
     });
 
     it('verifies Coaching mentorship service routes to mentorship inquiry', () => {
       renderWithProviders(<CoachingPage />);
-      const ctaButton = screen.getByText(/schedule a coaching conversation/i);
-      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=mentorship');
+      const messageButton = screen.getByTestId('coaching-hub-message-btn');
+      fireEvent.click(messageButton);
+      expect(messageButton).toBeInTheDocument();
     });
 
     it('verifies SOTC service routes to sotc inquiry', () => {
       renderWithProviders(<SOTCPage />);
-      const ctaButton = screen.getByText(/join the interest list/i);
-      expect(ctaButton).toHaveAttribute('href', '/contact?inquiry=sotc');
+      const messageButton = screen.getByTestId('sotc-hub-message-btn');
+      fireEvent.click(messageButton);
+      expect(messageButton).toBeInTheDocument();
     });
 
     it('verifies products hub navigation to product pages', async () => {

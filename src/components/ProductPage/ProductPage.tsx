@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Breadcrumb, Button, Col, Row } from 'react-bootstrap';
+import { Breadcrumb, Col, Row } from 'react-bootstrap';
 import Metadata from '../Metadata/Metadata';
 import GetStartedSection from '../GetStartedSection/GetStartedSection';
 import { HOME_URL } from '../../settings/strings';
@@ -37,9 +37,6 @@ const ProductPage = ({
   included,
   examples,
   howToUse,
-  relatedServices,
-  ctaLabel,
-  ctaHref,
   pathname,
   metaTitle,
   metaDescription,
@@ -51,7 +48,6 @@ const ProductPage = ({
 }: ProductPageProps) => {
   const navigate = useNavigate();
   const canonical = `${HOME_URL}/${pathname}`;
-  const isExternal = ctaHref.startsWith('http');
 
   return (
     <>
@@ -131,28 +127,13 @@ const ProductPage = ({
             </Row>
             <Row className="getStartedRow">
               <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
-                <hr />
-                {getStartedLeftParagraph || getStartedRightParagraph ? (
-                  <GetStartedSection
-                    page={pathname.split('/').pop() || 'product'}
-                    leftParagraph={getStartedLeftParagraph}
-                    rightParagraph={getStartedRightParagraph}
-                    leftButtonLabel={getStartedLeftButtonLabel}
-                    rightButtonLabel={getStartedRightButtonLabel}
-                  />
-                ) : (
-                  <section className="product-next-steps">
-                    <h3>Next Steps</h3>
-                    <p>{relatedServices}</p>
-                    <Button
-                      variant="primary"
-                      href={ctaHref}
-                      {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                    >
-                      {ctaLabel}
-                    </Button>
-                  </section>
-                )}
+                <GetStartedSection
+                  page={pathname.split('/').pop() || 'product'}
+                  leftParagraph={getStartedLeftParagraph}
+                  rightParagraph={getStartedRightParagraph}
+                  leftButtonLabel={getStartedLeftButtonLabel}
+                  rightButtonLabel={getStartedRightButtonLabel}
+                />
               </Col>
             </Row>
           </Col>

@@ -1,10 +1,36 @@
 import { vi } from 'vitest';
 vi.mock('../../../../components/ProductPage/ProductPage', () => ({
   __esModule: true,
-  default: ({ title, parentCrumb }: { title: string; parentCrumb?: { label: string } }) => (
+  default: ({
+    title,
+    parentCrumb,
+    getStartedLeftParagraph,
+    getStartedRightParagraph,
+    getStartedLeftButtonLabel,
+    getStartedRightButtonLabel,
+  }: {
+    title: string;
+    parentCrumb?: { label: string };
+    getStartedLeftParagraph?: string;
+    getStartedRightParagraph?: string;
+    getStartedLeftButtonLabel?: string;
+    getStartedRightButtonLabel?: string;
+  }) => (
     <div data-testid="product-page">
       {title}
       {parentCrumb && <span data-testid="parent-crumb">{parentCrumb.label}</span>}
+      {getStartedLeftParagraph && (
+        <span data-testid="left-paragraph">{getStartedLeftParagraph}</span>
+      )}
+      {getStartedRightParagraph && (
+        <span data-testid="right-paragraph">{getStartedRightParagraph}</span>
+      )}
+      {getStartedLeftButtonLabel && (
+        <span data-testid="left-button-label">{getStartedLeftButtonLabel}</span>
+      )}
+      {getStartedRightButtonLabel && (
+        <span data-testid="right-button-label">{getStartedRightButtonLabel}</span>
+      )}
     </div>
   ),
 }));
@@ -28,5 +54,23 @@ describe('QAPage', () => {
   it('passes Consulting as the parent breadcrumb', () => {
     renderWithProviders(<QAPage />, { route: '/services/consulting/qa' });
     expect(screen.getByTestId('parent-crumb')).toHaveTextContent('Consulting');
+  });
+
+  it('passes custom GetStartedSection left paragraph', () => {
+    renderWithProviders(<QAPage />, { route: '/services/consulting/qa' });
+    expect(screen.getByTestId('left-paragraph')).toHaveTextContent(/Ready to audit your platform/);
+  });
+
+  it('passes custom GetStartedSection right paragraph', () => {
+    renderWithProviders(<QAPage />, { route: '/services/consulting/qa' });
+    expect(screen.getByTestId('right-paragraph')).toHaveTextContent(
+      /Questions about the audit process/
+    );
+  });
+
+  it('passes custom button labels for GetStartedSection', () => {
+    renderWithProviders(<QAPage />, { route: '/services/consulting/qa' });
+    expect(screen.getByTestId('left-button-label')).toHaveTextContent(/Schedule an Audit Call/);
+    expect(screen.getByTestId('right-button-label')).toHaveTextContent(/Send us a message/);
   });
 });

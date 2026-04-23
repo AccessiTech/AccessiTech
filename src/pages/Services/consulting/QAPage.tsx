@@ -34,6 +34,10 @@ const QAPage = () => (
     metaTitle="Quality Assurance & WCAG Testing | AccessiTech"
     metaDescription="AccessiTech QA: WCAG 2.2 AA audits, manual NVDA/VoiceOver testing, and developer-ready remediation roadmaps for accessible digital systems."
     parentCrumb={{ label: 'Consulting', href: '/services/consulting' }}
+    getStartedLeftParagraph="Ready to audit your platform for accessibility issues? A QA discovery call lets us scope your content, estimate timeline, and confirm what success looks like for your team."
+    getStartedRightParagraph="Questions about the audit process, what's included, or how accessibility QA integrates into your workflow? We're happy to discuss before you commit to an engagement."
+    getStartedLeftButtonLabel="Schedule an Audit Call"
+    getStartedRightButtonLabel="Send us a message"
   />
 );
 
