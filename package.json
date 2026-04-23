@@ -32,6 +32,7 @@
     "test": "vitest run",
     "test:watch": "vitest watch",
     "test:coverage": "vitest run --coverage",
+    "test:clean": "vitest run; pkill -f vitest || true; pkill -f 'node.*vitest' || true",
     "coverage:badge": "yarn test:coverage && node scripts/update-coverage-badge.js",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\"",
