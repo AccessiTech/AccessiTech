@@ -1,7 +1,7 @@
 <!--
 title: 3.3.8 - Accessible Authentication (Minimum)
 series: Making the Web Accessible for All
-description: A practical guide to WCAG Guideline 3.3.8 (Accessible Authentication (Minimum)—what it means, why it matters, and how to make authentication processes accessible to all users.
+description: A practical guide to WCAG Guideline 3.3.8 (Accessible Authentication (Minimum)—what it means, why it matters, and how to make authentication processes…
 keywords: wcag 3.3.8, accessible authentication, accessibility, web standards, user experience, login
 image: WCAG-Series-3.3.8.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.8 Explained, Accessible Authentication (Minimum)"
@@ -20,7 +20,7 @@ next: /wcag/WCAG-Guideline-3-3-9-Accessible-Authentication-Enhanced-Explained, G
 
 ## **Guideline 3: Understandable**
 
-The Understandable principle ensures that users can easily interact with and understand web content, especially when authenticating or logging in.
+The Understandable principle means web content must be clear and easy to use. This is vital for login and authentication.
 
 ## **Guideline 3.3: Input Assistance**
 
@@ -30,11 +30,12 @@ Guideline 3.3 focuses on helping users avoid and correct mistakes when entering 
 
 > "For each step in an authentication process, at least one method is available that does not rely on a cognitive function test, unless an alternative is provided."
 
-Guideline 3.3.8 requires that authentication (like logging in) does not depend solely on cognitive function tests (e.g., puzzles, remembering passwords), unless an accessible alternative is available.
+Guideline 3.3.8 requires at least one memory-free login option. A cognitive function test is a memory task. Examples: recalling a password, solving a CAPTCHA, or copying text from an image. Users must not be locked out if they struggle with these tasks.
 
 - Helps users with cognitive, memory, or learning disabilities
 - Essential for accessible login and authentication
 - Applies to all authentication steps and methods
+- Memory-free options include magic email links, biometrics, social login, and passkeys. Each avoids asking users to recall or type memorized content.
 
 For more, see [BOIA: Does Accessible Authentication Mean Less Security?](https://www.boia.org/blog/does-accessible-authentication-mean-less-security).
 
@@ -55,15 +56,16 @@ For more, see [W3C’s guidance on Accessible Authentication (Minimum)](https://
 - Login and authentication forms
 - Two-factor authentication
 - Any step requiring user authentication
+- It is a Level AA rule. It applies to every site with a login.
 
 ---
 
 ## **How to Meet Guideline 3.3.8**
 
-- Allow use of password managers and copy-paste
-- Provide alternatives to cognitive function tests (e.g., email link, biometric)
-- Avoid requiring users to solve puzzles or remember complex information
-- Test authentication with users with cognitive disabilities
+- Allow password managers and copy-paste in all login and sign-up forms
+- Offer memory-free options: magic links, biometrics, social login, or passkeys. These avoid typing or memorising passwords.
+- Remove any step that requires solving puzzles, recalling text from images, or transcribing codes
+- Test your login flow with users who have cognitive disabilities
 
 For more, see the [W3C's Accessible Authentication Techniques](https://www.w3.org/WAI/WCAG22/Techniques/general/G218).
 

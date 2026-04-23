@@ -9,8 +9,8 @@
             <title>AI for Coding Accessibility</title>
             <link>https://accessi.tech/blog/AI-for-Coding-Accessibility</link>
             <pubDate>2025-04-08</pubDate>
-            <description>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels (boilerplate, error fixing), where it fails, and why human judgment still rules.</description>
-            <excerpt>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels (boilerplate, error fixing), where it fails, and why human judgment still rules.</excerpt>
+            <description>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels, where it fails, and why human judgment still matters.</description>
+            <excerpt>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels, where it fails, and why human judgment still matters.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/AI-for-Coding-Accessibility.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/AI-for-Coding-Accessibility.png" type="image/jpeg" medium="image" width="300" height="200" />
@@ -23,8 +23,8 @@
             <title>Building a More Accessible Future Through Design and Technology</title>
             <link>https://accessi.tech/blog/Building-a-More-Accessible-Future-Through-Design-and-Technology</link>
             <pubDate>2025-03-24</pubDate>
-            <description>Conor, founder of AccessiTech LLC and a disability advocate, shares how lived experience with Psoriatic Arthritis drives his mission to make tech inclusive. Offering audits, mentorship, and open-source tools, he bridges the gap between accessibility theory and real-world solutions. Join the movement for a web that works for all.</description>
-            <excerpt>Conor, founder of AccessiTech LLC and a disability advocate, shares how lived experience with Psoriatic Arthritis drives his mission to make tech inclusive. Offering audits, mentorship, and open-source tools, he bridges the gap between accessibility theory and real-world solutions. Join the movement for a web that works for all.</excerpt>
+            <description>How lived experience with Psoriatic Arthritis drives AccessiTech’s mission—audits, mentorship, and open-source tools bridging accessibility theory and practice.</description>
+            <excerpt>How lived experience with Psoriatic Arthritis drives AccessiTech’s mission—audits, mentorship, and open-source tools bridging accessibility theory and practice.</excerpt>
             <category>Disability Advocacy</category><category>Web Accessibility</category>
             <enclosure url="https://www.accessi.tech/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png" type="image/jpeg" medium="image" width="300" height="200" />
@@ -37,8 +37,8 @@
             <title>How AccessiTech Meets You Where You Are</title>
             <link>https://accessi.tech/blog/How-AccessiTech-Meets-You-Where-You-Are</link>
             <pubDate>2025-04-03</pubDate>
-            <description>Most ‘accessible’ tech fails disabled users. AccessiTech’s services (audits, QA, mentorship) fix that—because compliance isn’t enough. Here’s how we rebuild inclusion.</description>
-            <excerpt>Most ‘accessible’ tech fails disabled users. AccessiTech’s services (audits, QA, mentorship) fix that—because compliance isn’t enough. Here’s how we rebuild inclusion.</excerpt>
+            <description>Most 'accessible' tech still fails disabled users. AccessiTech's audits, QA, and mentorship go beyond compliance to rebuild genuine inclusion.</description>
+            <excerpt>Most 'accessible' tech still fails disabled users. AccessiTech's audits, QA, and mentorship go beyond compliance to rebuild genuine inclusion.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/How-AccessiTech-Meets-You-Where-You-Are.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/How-AccessiTech-Meets-You-Where-You-Are.png" type="image/jpeg" medium="image" width="300" height="200" />
@@ -65,8 +65,8 @@
             <title>The Four Principles of Accessibility (POUR)</title>
             <link>https://accessi.tech/blog/The-Four-Principles-of-Accessibility-POUR</link>
             <pubDate>2025-06-12</pubDate>
-            <description>Discover the four foundational principles of web accessibility—Perceivable, Operable, Understandable, and Robust (POUR)—with practical examples and tips for building inclusive digital experiences.</description>
-            <excerpt>Discover the four foundational principles of web accessibility—Perceivable, Operable, Understandable, and Robust (POUR)—with practical examples and tips for building inclusive digital experiences.</excerpt>
+            <description>A practical guide to POUR—Perceivable, Operable, Understandable, Robust—the four WCAG principles for accessible web experiences, with examples.</description>
+            <excerpt>A practical guide to POUR—Perceivable, Operable, Understandable, Robust—the four WCAG principles for accessible web experiences, with examples.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" type="image/jpeg" medium="image" width="300" height="200" />
@@ -85,7 +85,7 @@
             <title>1.1.1 - Non-text Content</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-1-1-Non-text-Content-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.1.1 (Non-text Content)—what it means, why it matters, and how to provide accessible alternatives for images, icons, and more.</description>
+            <description>A practical guide to WCAG Guideline 1.1.1 (Non-text Content)—what it means, why it matters, and how to provide accessible alternatives for images, icons…</description>
             <excerpt>This guideline ensures accessible alternatives for images, icons, and other non-text content.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png" type="image/jpeg" length="1234" />
@@ -127,7 +127,7 @@
             <title>1.2.3 - Audio Description or Media Alternative (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
+            <description>A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content…</description>
             <excerpt>This guideline ensures video content is accessible for users who are blind or have low vision with audio descriptions or media alternatives.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png" type="image/jpeg" length="1234" />
@@ -155,7 +155,7 @@
             <title>1.2.5 - Audio Description (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.5 (Audio Description, Prerecorded)—what it means, why it matters, and how to make prerecorded video content accessible for users who are blind or have low vision.</description>
+            <description>A practical guide to WCAG Guideline 1.2.5 (Audio Description, Prerecorded)—what it means, why it matters, and how to make prerecorded video content…</description>
             <excerpt>This guideline ensures prerecorded video content is accessible with audio descriptions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.5.png" type="image/jpeg" length="1234" />
@@ -169,7 +169,7 @@
             <title>1.2.6 - Sign Language (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.6 (Sign Language, Prerecorded)—what it means, why it matters, and how to make video content accessible with sign language interpretation.</description>
+            <description>A practical guide to WCAG Guideline 1.2.6 (Sign Language, Prerecorded)—what it means, why it matters, and how to make video content accessible with sign…</description>
             <excerpt>This guideline ensures prerecorded video content is accessible with sign language interpretation.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.6.png" type="image/jpeg" length="1234" />
@@ -183,7 +183,7 @@
             <title>1.2.7 -  Extended Audio Description (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.7 (Extended Audio Description, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
+            <description>A practical guide to WCAG Guideline 1.2.7 (Extended Audio Description, Prerecorded)—what it means, why it matters, and how to make video content accessible…</description>
             <excerpt>Requires extended audio descriptions for prerecorded video, aiding users who are blind or have low vision.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.7.png" type="image/jpeg" length="1234" />
@@ -197,7 +197,7 @@
             <title>1.2.8 - Media Alternative (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for synchronized media.</description>
+            <description>A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for…</description>
             <excerpt>Requires a full text alternative for synchronized media, ensuring accessibility for users who cannot access audio or video content.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.8.png" type="image/jpeg" length="1234" />
@@ -225,7 +225,7 @@
             <title>1.3.1 - Info and Relationships</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-1-Info-and-Relationships-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.1 (Info and Relationships)—what it means, why it matters, and how to ensure information and relationships are programmatically determined or available in text.</description>
+            <description>A practical guide to WCAG Guideline 1.3.1 (Info and Relationships)—what it means, why it matters, and how to ensure information and relationships are…</description>
             <excerpt>This guideline ensures information and relationships are programmatically determined or available in text.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.1.png" type="image/jpeg" length="1234" />
@@ -239,7 +239,7 @@
             <title>1.3.2 - Meaningful Sequence</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-2-Meaningful-Sequence-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.2 (Meaningful Sequence)—what it means, why it matters, and how to ensure content is presented in a logical order for all users.</description>
+            <description>A practical guide to WCAG Guideline 1.3.2 (Meaningful Sequence)—what it means, why it matters, and how to ensure content is presented in a logical order for…</description>
             <excerpt>This guideline ensures content is presented in a logical order for all users.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.2.png" type="image/jpeg" length="1234" />
@@ -253,7 +253,7 @@
             <title>1.3.3 - Sensory Characteristics</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.3 (Sensory Characteristics)—what it means, why it matters, and how to ensure instructions don’t rely on shape, color, or sound alone.</description>
+            <description>A practical guide to WCAG Guideline 1.3.3 (Sensory Characteristics)—what it means, why it matters, and how to ensure instructions don’t rely on shape…</description>
             <excerpt>This guideline ensures instructions do not rely on shape, color, or sound alone.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.3.png" type="image/jpeg" length="1234" />
@@ -267,7 +267,7 @@
             <title>1.3.4 - Orientation</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-4-Orientation-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.4 (Orientation)—what it means, why it matters, and how to ensure content is not restricted to a single display orientation.</description>
+            <description>A practical guide to WCAG Guideline 1.3.4 (Orientation)—what it means, why it matters, and how to ensure content is not restricted to a single display…</description>
             <excerpt>This guideline ensures content is not restricted to a single display orientation.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.4.png" type="image/jpeg" length="1234" />
@@ -281,7 +281,7 @@
             <title>1.3.5 - Identify Input Purpose</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.5 (Identify Input Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of input fields.</description>
+            <description>A practical guide to WCAG Guideline 1.3.5 (Identify Input Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the…</description>
             <excerpt>Helps browsers and assistive technologies identify the purpose of input fields, improving usability and accessibility.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.5.png" type="image/jpeg" length="1234" />
@@ -295,7 +295,7 @@
             <title>1.3.6 - Identify Purpose</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-6-Identify-Purpose-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields.</description>
+            <description>A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose…</description>
             <excerpt>Helps browsers and assistive technologies identify the purpose of user interface components, enhancing accessibility.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.6.png" type="image/jpeg" length="1234" />
@@ -407,7 +407,7 @@
             <title>1.4.4 - Resize Text</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-4-Resize-Text-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.4.4 (Resize Text)—what it means, why it matters, and how to ensure text remains readable when users zoom or increase font size.</description>
+            <description>A practical guide to WCAG Guideline 1.4.4 (Resize Text)—what it means, why it matters, and how to ensure text remains readable when users zoom or increase…</description>
             <excerpt>This guideline ensures text remains readable when users zoom or increase font size.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.4.png" type="image/jpeg" length="1234" />
@@ -449,7 +449,7 @@
             <title>1.4.7 - Low or No Background Audio</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-7-Low-or-No-Background-Audio-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.4.7 (Low or No Background Audio)—what it means, why it matters, and how to ensure audio content is accessible for everyone.</description>
+            <description>A practical guide to WCAG Guideline 1.4.7 (Low or No Background Audio)—what it means, why it matters, and how to ensure audio content is accessible for…</description>
             <excerpt>This guideline ensures speech audio is clear and not obscured by background sounds.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.7.png" type="image/jpeg" length="1234" />
@@ -505,7 +505,7 @@
             <title>2.1.2 - No Keyboard Trap</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.1.2 (No Keyboard Trap)—what it means, why it matters, and how to ensure users can always move focus away from any component using a keyboard.</description>
+            <description>A practical guide to WCAG Guideline 2.1.2 (No Keyboard Trap)—what it means, why it matters, and how to ensure users can always move focus away from any…</description>
             <excerpt>This guideline ensures keyboard users can navigate to and away from any component without getting trapped.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.1.2.png" type="image/jpeg" length="1234" />
@@ -519,7 +519,7 @@
             <title>2.1.3 Keyboard (No Exception)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-3-Keyboard-No-Exception-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.1.3 (Keyboard, No Exception)—what it means, why it matters, and how to ensure all functionality is accessible via keyboard, with no exceptions.</description>
+            <description>A practical guide to WCAG Guideline 2.1.3 (Keyboard, No Exception)—what it means, why it matters, and how to ensure all functionality is accessible via…</description>
             <excerpt>This guideline ensures all functionality is accessible via keyboard with absolutely no exceptions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.1.3.png" type="image/jpeg" length="1234" />
@@ -533,7 +533,7 @@
             <title>2.1.4 - Character Key Shortcuts</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-4-Character-Key-Shortcuts-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.1.4 (Character Key Shortcuts)—what it means, why it matters, and how to ensure keyboard shortcuts don't interfere with accessibility.</description>
+            <description>A practical guide to WCAG Guideline 2.1.4 (Character Key Shortcuts)—what it means, why it matters, and how to ensure keyboard shortcuts don't interfere with…</description>
             <excerpt>This guideline ensures keyboard shortcuts can be turned off, remapped, or only activated when a specific element has focus.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.1.4.png" type="image/jpeg" length="1234" />
@@ -561,7 +561,7 @@
             <title>2.2.2 - Pause, Stop, Hide</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-2-Pause-Stop-Hide-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.2.2 (Pause, Stop, Hide)—what it means, why it matters, and how to ensure users can control moving, blinking, or auto-updating content.</description>
+            <description>A practical guide to WCAG Guideline 2.2.2 (Pause, Stop, Hide)—what it means, why it matters, and how to ensure users can control moving, blinking, or…</description>
             <excerpt>This guideline ensures users can control moving, blinking, or auto-updating content.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.2.2.png" type="image/jpeg" length="1234" />
@@ -603,7 +603,7 @@
             <title>2.2.5 - Re-authenticating</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-5-Re-authenticating-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.2.5 (Re-authenticating)—what it means, why it matters, and how to ensure users can continue activities without losing data after re-authentication.</description>
+            <description>A practical guide to WCAG Guideline 2.2.5 (Re-authenticating)—what it means, why it matters, and how to ensure users can continue activities without losing…</description>
             <excerpt>This guideline ensures users can continue their activities without losing data after re-authentication.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.2.5.png" type="image/jpeg" length="1234" />
@@ -631,7 +631,7 @@
             <title>2.3.1 - Three Flashes or Below Threshold</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-3-1-Three-Flashes-or-Below-Threshold-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.3.1 (Three Flashes or Below Threshold)—what it means, why it matters, and how to avoid content that flashes more than three times in any one second period.</description>
+            <description>A practical guide to WCAG Guideline 2.3.1 (Three Flashes or Below Threshold)—what it means, why it matters, and how to avoid content that flashes more than…</description>
             <excerpt>This guideline ensures content doesn't flash in ways that could trigger seizures or physical discomfort.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.3.1.png" type="image/jpeg" length="1234" />
@@ -645,7 +645,7 @@
             <title>2.3.2 - Three Flashes</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-3-2-Three-Flashes-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.3.2 (Three Flashes)—what it means, why it matters, and how to avoid content that flashes more than three times in any one second period.</description>
+            <description>A practical guide to WCAG Guideline 2.3.2 (Three Flashes)—what it means, why it matters, and how to avoid content that flashes more than three times in any…</description>
             <excerpt>This guideline ensures content does not flash more than three times in one second to prevent seizures.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.3.2.png" type="image/jpeg" length="1234" />
@@ -659,7 +659,7 @@
             <title>2.3.3 - Animation from Interactions</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-3-3-Animation-from-Interactions-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.3.3 (Animation from Interactions)—what it means, why it matters, and how to ensure users can disable non-essential animation triggered by interaction.</description>
+            <description>A practical guide to WCAG Guideline 2.3.3 (Animation from Interactions)—what it means, why it matters, and how to ensure users can disable non-essential…</description>
             <excerpt>Ensures users can disable non-essential animation triggered by interaction, reducing discomfort or distraction.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.3.3.png" type="image/jpeg" length="1234" />
@@ -715,7 +715,7 @@
             <title>2.4.4 - Link Purpose (In Context)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-4-Link-Purpose-In-Context-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.4.4 (Link Purpose, In Context)—what it means, why it matters, and how to ensure every link's purpose is clear from its context.</description>
+            <description>A practical guide to WCAG Guideline 2.4.4 (Link Purpose, In Context)—what it means, why it matters, and how to ensure every link's purpose is clear from its…</description>
             <excerpt>This guideline ensures every link's purpose is clear from its context.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.4.4.png" type="image/jpeg" length="1234" />
@@ -729,7 +729,7 @@
             <title>2.4.5 - Multiple Ways</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-5-Multiple-Ways-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it means, why it matters, and how to provide more than one way to locate a web page within a set of pages.</description>
+            <description>A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it means, why it matters, and how to provide more than one way to locate a web page within a…</description>
             <excerpt>This guideline ensures users have multiple ways to locate content on your site.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.4.5.png" type="image/jpeg" length="1234" />
@@ -771,7 +771,7 @@
             <title>2.5.1 - Pointer Gestures</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-1-Pointer-Gestures-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what it means, why it matters, and how to ensure all functionality is operable with simple pointer gestures.</description>
+            <description>A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what it means, why it matters, and how to ensure all functionality is operable with simple…</description>
             <excerpt>This guideline ensures all functionality is operable with simple pointer gestures.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.5.1.png" type="image/jpeg" length="1234" />
@@ -785,7 +785,7 @@
             <title>2.5.2 - Pointer Cancellation</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-2-Pointer-Cancellation-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—what it means, why it matters, and how to ensure users can cancel pointer actions before they are completed.</description>
+            <description>A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—what it means, why it matters, and how to ensure users can cancel pointer actions before…</description>
             <excerpt>This guideline ensures users can cancel pointer actions before they are completed, preventing accidental interactions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.5.2.png" type="image/jpeg" length="1234" />
@@ -813,7 +813,7 @@
             <title>2.5.4 - Motion Actuation</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-4-Motion-Actuation-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what it means, why it matters, and how to ensure users can operate functionality without device motion.</description>
+            <description>A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what it means, why it matters, and how to ensure users can operate functionality without device…</description>
             <excerpt>This guideline ensures users can operate functionality without relying on device motion.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.5.4.png" type="image/jpeg" length="1234" />
@@ -855,7 +855,7 @@
             <title>2.6.1 - Device Sensors</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-6-1-Device-Sensors-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.6.1 (Device Sensors)—what it means, why it matters, and how to ensure users can operate functionality without relying on device sensors.</description>
+            <description>A practical guide to WCAG Guideline 2.6.1 (Device Sensors)—what it means, why it matters, and how to ensure users can operate functionality without relying…</description>
             <excerpt>This guideline ensures users can operate functionality without relying solely on device sensors.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.6.1.png" type="image/jpeg" length="1234" />
@@ -869,7 +869,7 @@
             <title>3.1.1 - Language of Page</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-1-Language-of-Page-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.1.1 (Language of Page)—what it means, why it matters, and how to ensure the default language of each page is programmatically determined.</description>
+            <description>A practical guide to WCAG Guideline 3.1.1 (Language of Page)—what it means, why it matters, and how to ensure the default language of each page is…</description>
             <excerpt>This guideline ensures the default language of each page is programmatically determined.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.1.1.png" type="image/jpeg" length="1234" />
@@ -883,7 +883,7 @@
             <title>3.1.2 - Language of Parts</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-2-Language-of-Parts-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—what it means, why it matters, and how to ensure the language of each part of a page is programmatically determined.</description>
+            <description>A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—what it means, why it matters, and how to ensure the language of each part of a page is…</description>
             <excerpt>This guideline ensures the language of each part of a page is programmatically determined.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.1.2.png" type="image/jpeg" length="1234" />
@@ -967,7 +967,7 @@
             <title>3.2.2 - On Input</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-2-On-Input-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible.</description>
+            <description>A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable…</description>
             <excerpt>This guideline ensures changing form controls doesn't automatically cause unexpected context changes.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.2.2.png" type="image/jpeg" length="1234" />
@@ -995,7 +995,7 @@
             <title>3.2.4 - Consistent Identification</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-4-Consistent-Identification-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.2.4 (Consistent Identification)—what it means, why it matters, and how to ensure controls and components are recognizable across your site.</description>
+            <description>A practical guide to WCAG Guideline 3.2.4 (Consistent Identification)—what it means, why it matters, and how to ensure controls and components are…</description>
             <excerpt>This guideline ensures controls and components are identified consistently across your site.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.2.4.png" type="image/jpeg" length="1234" />
@@ -1037,7 +1037,7 @@
             <title>3.3.1 - Error Identification</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-1-Error-Identification-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.1 (Error Identification)—what it means, why it matters, and how to help users recognize and fix mistakes in forms and inputs.</description>
+            <description>A practical guide to WCAG Guideline 3.3.1 (Error Identification)—what it means, why it matters, and how to help users recognize and fix mistakes in forms…</description>
             <excerpt>This guideline ensures errors are clearly identified and described to users.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.1.png" type="image/jpeg" length="1234" />
@@ -1051,7 +1051,7 @@
             <title>3.3.2 - Labels or Instructions</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.2 (Labels or Instructions)—what it means, why it matters, and how to help users enter information correctly the first time.</description>
+            <description>A practical guide to WCAG Guideline 3.3.2 (Labels or Instructions)—what it means, why it matters, and how to help users enter information correctly the…</description>
             <excerpt>This guideline ensures forms and interactive elements have clear labels and instructions for users.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.2.png" type="image/jpeg" length="1234" />
@@ -1079,7 +1079,7 @@
             <title>3.3.4 - Error Prevention (Legal, Financial, Data)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.4 (Error Prevention - Legal, Financial, Data)—what it means, why it matters, and how to help users avoid costly mistakes in critical transactions.</description>
+            <description>A practical guide to WCAG Guideline 3.3.4 (Error Prevention - Legal, Financial, Data)—what it means, why it matters, and how to help users avoid costly…</description>
             <excerpt>This guideline helps users avoid costly mistakes in critical transactions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.4.png" type="image/jpeg" length="1234" />
@@ -1107,7 +1107,7 @@
             <title>3.3.6 - Error Prevention (All)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-6-Error-Prevention-All-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.6 (Error Prevention (All)—what it means, why it matters, and how to help users avoid mistakes in all types of forms and submissions.</description>
+            <description>A practical guide to WCAG Guideline 3.3.6 (Error Prevention (All)—what it means, why it matters, and how to help users avoid mistakes in all types of forms…</description>
             <excerpt>This guideline helps users avoid mistakes in forms and submissions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.6.png" type="image/jpeg" length="1234" />
@@ -1121,7 +1121,7 @@
             <title>3.3.7 - Redundant Entry</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-7-Redundant-Entry-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what it means, why it matters, and how to help users avoid entering the same information multiple times.</description>
+            <description>A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what it means, why it matters, and how to help users avoid entering the same information…</description>
             <excerpt>This guideline ensures users don't have to re-enter information they've already provided.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.7.png" type="image/jpeg" length="1234" />
@@ -1135,7 +1135,7 @@
             <title>3.3.8 - Accessible Authentication (Minimum)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.8 (Accessible Authentication (Minimum)—what it means, why it matters, and how to make authentication processes accessible to all users.</description>
+            <description>A practical guide to WCAG Guideline 3.3.8 (Accessible Authentication (Minimum)—what it means, why it matters, and how to make authentication processes…</description>
             <excerpt>This guideline ensures authentication processes are accessible without requiring cognitive function tests.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.8.png" type="image/jpeg" length="1234" />
@@ -1149,7 +1149,7 @@
             <title>3.3.9 - Accessible Authentication (Enhanced)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-9-Accessible-Authentication-Enhanced-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.9 (Accessible Authentication (Enhanced)—what it means, why it matters, and how to make authentication processes even more accessible.</description>
+            <description>A practical guide to WCAG Guideline 3.3.9 (Accessible Authentication (Enhanced)—what it means, why it matters, and how to make authentication processes even…</description>
             <excerpt>Ensures authentication processes are accessible for all users, including those with disabilities.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.9.png" type="image/jpeg" length="1234" />
@@ -1177,7 +1177,7 @@
             <title>4.1.2 - Name, Role, Value</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-4-1-2-Name-Role-Value-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 4.1.2 (Name, Role, Value)—what it means, why it matters, and how to ensure user interface components have name, role, and value that can be programmatically determined.</description>
+            <description>A practical guide to WCAG Guideline 4.1.2 (Name, Role, Value)—what it means, why it matters, and how to ensure user interface components have name, role…</description>
             <excerpt>This guideline ensures user interface components have name, role, and value that can be programmatically determined.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-4.1.2.png" type="image/jpeg" length="1234" />
@@ -1191,7 +1191,7 @@
             <title>4.1.3 - Status Messages</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-4-1-3-Status-Messages-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what it means, why it matters, and how to ensure status messages are programmatically determined through role or properties.</description>
+            <description>A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what it means, why it matters, and how to ensure status messages are programmatically determined…</description>
             <excerpt>This guideline ensures status messages are programmatically determined through role or properties.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-4.1.3.png" type="image/jpeg" length="1234" />
@@ -1261,7 +1261,7 @@
             <title>5.2.4 - Only Accessibility-Supported Ways of Using Technologies</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-4-Only-Accessibility-Supported-Ways-Explained</link>
             <pubDate>2025-07-08</pubDate>
-            <description>An in-depth explanation of WCAG 2.1 Section 5.2.4, which requires that only accessibility-supported ways of using technologies are relied upon to meet accessibility requirements.</description>
+            <description>An in-depth explanation of WCAG 2.1 Section 5.2.4, which requires that only accessibility-supported ways of using technologies are relied upon to meet…</description>
             <excerpt>This section explains the requirement that only accessibility-supported ways of using technologies can be relied upon to meet WCAG, and what to do if a feature is not accessibility supported.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5.2.4.png" type="image/jpeg" length="1234" />
@@ -1275,7 +1275,7 @@
             <title>5.2.5 - Non-Interference</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-5-Non-Interference-Explained</link>
             <pubDate>2025-07-08</pubDate>
-            <description>An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply.</description>
+            <description>An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to…</description>
             <excerpt>This section explains the requirement that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5.2.5.png" type="image/jpeg" length="1234" />
@@ -1317,7 +1317,7 @@
             <title>5.4 - Statement of Partial Conformance – Third Party Content</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 5.4 (Statement of Partial Conformance – Third Party Content)—what it means, why it matters, and how to document accessibility for content you do not control.</description>
+            <description>A practical guide to WCAG Guideline 5.4 (Statement of Partial Conformance – Third Party Content)—what it means, why it matters, and how to document…</description>
             <excerpt>This guideline explains how to document accessibility for third-party content you do not control.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5.4.png" type="image/jpeg" length="1234" />
@@ -1331,7 +1331,7 @@
             <title>5.5 - Statement of Partial Conformance – Language</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-5-5-Statement-of-Partial-Conformance-Language-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 5.5 (Statement of Partial Conformance – Language)—what it means, why it matters, and how to document partial conformance due to language limitations.</description>
+            <description>A practical guide to WCAG Guideline 5.5 (Statement of Partial Conformance – Language)—what it means, why it matters, and how to document partial conformance…</description>
             <excerpt>This guideline explains how to document partial WCAG conformance when language barriers exist.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5.5.png" type="image/jpeg" length="1234" />
@@ -1351,8 +1351,8 @@
             <title>AI for Coding Accessibility</title>
             <link>https://accessi.tech/blog/AI-for-Coding-Accessibility</link>
             <pubDate>2025-04-08</pubDate>
-            <description>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels (boilerplate, error fixing), where it fails, and why human judgment still rules.</description>
-            <excerpt>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels (boilerplate, error fixing), where it fails, and why human judgment still rules.</excerpt>
+            <description>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels, where it fails, and why human judgment still matters.</description>
+            <excerpt>How developers with disabilities use AI like Copilot to code through chronic pain—where it excels, where it fails, and why human judgment still matters.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/AI-for-Coding-Accessibility.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/AI-for-Coding-Accessibility.png" type="image/jpeg" medium="image" width="300" height="200" />
@@ -1365,8 +1365,8 @@
             <title>Building a More Accessible Future Through Design and Technology</title>
             <link>https://accessi.tech/blog/Building-a-More-Accessible-Future-Through-Design-and-Technology</link>
             <pubDate>2025-03-24</pubDate>
-            <description>Conor, founder of AccessiTech LLC and a disability advocate, shares how lived experience with Psoriatic Arthritis drives his mission to make tech inclusive. Offering audits, mentorship, and open-source tools, he bridges the gap between accessibility theory and real-world solutions. Join the movement for a web that works for all.</description>
-            <excerpt>Conor, founder of AccessiTech LLC and a disability advocate, shares how lived experience with Psoriatic Arthritis drives his mission to make tech inclusive. Offering audits, mentorship, and open-source tools, he bridges the gap between accessibility theory and real-world solutions. Join the movement for a web that works for all.</excerpt>
+            <description>How lived experience with Psoriatic Arthritis drives AccessiTech’s mission—audits, mentorship, and open-source tools bridging accessibility theory and practice.</description>
+            <excerpt>How lived experience with Psoriatic Arthritis drives AccessiTech’s mission—audits, mentorship, and open-source tools bridging accessibility theory and practice.</excerpt>
             <category>Disability Advocacy</category><category>Web Accessibility</category>
             <enclosure url="https://www.accessi.tech/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/Building-a-More-Accessible-Future-Through-Design-and-Technology.png" type="image/jpeg" medium="image" width="300" height="200" />
@@ -1379,8 +1379,8 @@
             <title>How AccessiTech Meets You Where You Are</title>
             <link>https://accessi.tech/blog/How-AccessiTech-Meets-You-Where-You-Are</link>
             <pubDate>2025-04-03</pubDate>
-            <description>Most ‘accessible’ tech fails disabled users. AccessiTech’s services (audits, QA, mentorship) fix that—because compliance isn’t enough. Here’s how we rebuild inclusion.</description>
-            <excerpt>Most ‘accessible’ tech fails disabled users. AccessiTech’s services (audits, QA, mentorship) fix that—because compliance isn’t enough. Here’s how we rebuild inclusion.</excerpt>
+            <description>Most 'accessible' tech still fails disabled users. AccessiTech's audits, QA, and mentorship go beyond compliance to rebuild genuine inclusion.</description>
+            <excerpt>Most 'accessible' tech still fails disabled users. AccessiTech's audits, QA, and mentorship go beyond compliance to rebuild genuine inclusion.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/How-AccessiTech-Meets-You-Where-You-Are.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/How-AccessiTech-Meets-You-Where-You-Are.png" type="image/jpeg" medium="image" width="300" height="200" />
@@ -1407,8 +1407,8 @@
             <title>The Four Principles of Accessibility (POUR)</title>
             <link>https://accessi.tech/blog/The-Four-Principles-of-Accessibility-POUR</link>
             <pubDate>2025-06-12</pubDate>
-            <description>Discover the four foundational principles of web accessibility—Perceivable, Operable, Understandable, and Robust (POUR)—with practical examples and tips for building inclusive digital experiences.</description>
-            <excerpt>Discover the four foundational principles of web accessibility—Perceivable, Operable, Understandable, and Robust (POUR)—with practical examples and tips for building inclusive digital experiences.</excerpt>
+            <description>A practical guide to POUR—Perceivable, Operable, Understandable, Robust—the four WCAG principles for accessible web experiences, with examples.</description>
+            <excerpt>A practical guide to POUR—Perceivable, Operable, Understandable, Robust—the four WCAG principles for accessible web experiences, with examples.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" type="image/jpeg" length="1234" />
             <media:content url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" type="image/jpeg" medium="image" width="300" height="200" />
@@ -1421,7 +1421,7 @@
             <title>1.1.1 - Non-text Content</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-1-1-Non-text-Content-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.1.1 (Non-text Content)—what it means, why it matters, and how to provide accessible alternatives for images, icons, and more.</description>
+            <description>A practical guide to WCAG Guideline 1.1.1 (Non-text Content)—what it means, why it matters, and how to provide accessible alternatives for images, icons…</description>
             <excerpt>This guideline ensures accessible alternatives for images, icons, and other non-text content.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.1.1.png" type="image/jpeg" length="1234" />
@@ -1463,7 +1463,7 @@
             <title>1.2.3 - Audio Description or Media Alternative (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
+            <description>A practical guide to WCAG Guideline 1.2.3 (Audio Description or Media Alternative, Prerecorded)—what it means, why it matters, and how to make video content…</description>
             <excerpt>This guideline ensures video content is accessible for users who are blind or have low vision with audio descriptions or media alternatives.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png" type="image/jpeg" length="1234" />
@@ -1491,7 +1491,7 @@
             <title>1.2.5 - Audio Description (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.5 (Audio Description, Prerecorded)—what it means, why it matters, and how to make prerecorded video content accessible for users who are blind or have low vision.</description>
+            <description>A practical guide to WCAG Guideline 1.2.5 (Audio Description, Prerecorded)—what it means, why it matters, and how to make prerecorded video content…</description>
             <excerpt>This guideline ensures prerecorded video content is accessible with audio descriptions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.5.png" type="image/jpeg" length="1234" />
@@ -1505,7 +1505,7 @@
             <title>1.2.6 - Sign Language (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.6 (Sign Language, Prerecorded)—what it means, why it matters, and how to make video content accessible with sign language interpretation.</description>
+            <description>A practical guide to WCAG Guideline 1.2.6 (Sign Language, Prerecorded)—what it means, why it matters, and how to make video content accessible with sign…</description>
             <excerpt>This guideline ensures prerecorded video content is accessible with sign language interpretation.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.6.png" type="image/jpeg" length="1234" />
@@ -1519,7 +1519,7 @@
             <title>1.2.7 -  Extended Audio Description (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-7-Extended-Audio-Description-Prerecorded-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.7 (Extended Audio Description, Prerecorded)—what it means, why it matters, and how to make video content accessible for users who are blind or have low vision.</description>
+            <description>A practical guide to WCAG Guideline 1.2.7 (Extended Audio Description, Prerecorded)—what it means, why it matters, and how to make video content accessible…</description>
             <excerpt>Requires extended audio descriptions for prerecorded video, aiding users who are blind or have low vision.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.7.png" type="image/jpeg" length="1234" />
@@ -1533,7 +1533,7 @@
             <title>1.2.8 - Media Alternative (Prerecorded)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for synchronized media.</description>
+            <description>A practical guide to WCAG Guideline 1.2.8 (Media Alternative, Prerecorded)—what it means, why it matters, and how to provide a full text alternative for…</description>
             <excerpt>Requires a full text alternative for synchronized media, ensuring accessibility for users who cannot access audio or video content.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.2.8.png" type="image/jpeg" length="1234" />
@@ -1561,7 +1561,7 @@
             <title>1.3.1 - Info and Relationships</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-1-Info-and-Relationships-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.1 (Info and Relationships)—what it means, why it matters, and how to ensure information and relationships are programmatically determined or available in text.</description>
+            <description>A practical guide to WCAG Guideline 1.3.1 (Info and Relationships)—what it means, why it matters, and how to ensure information and relationships are…</description>
             <excerpt>This guideline ensures information and relationships are programmatically determined or available in text.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.1.png" type="image/jpeg" length="1234" />
@@ -1575,7 +1575,7 @@
             <title>1.3.2 - Meaningful Sequence</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-2-Meaningful-Sequence-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.2 (Meaningful Sequence)—what it means, why it matters, and how to ensure content is presented in a logical order for all users.</description>
+            <description>A practical guide to WCAG Guideline 1.3.2 (Meaningful Sequence)—what it means, why it matters, and how to ensure content is presented in a logical order for…</description>
             <excerpt>This guideline ensures content is presented in a logical order for all users.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.2.png" type="image/jpeg" length="1234" />
@@ -1589,7 +1589,7 @@
             <title>1.3.3 - Sensory Characteristics</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.3 (Sensory Characteristics)—what it means, why it matters, and how to ensure instructions don’t rely on shape, color, or sound alone.</description>
+            <description>A practical guide to WCAG Guideline 1.3.3 (Sensory Characteristics)—what it means, why it matters, and how to ensure instructions don’t rely on shape…</description>
             <excerpt>This guideline ensures instructions do not rely on shape, color, or sound alone.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.3.png" type="image/jpeg" length="1234" />
@@ -1603,7 +1603,7 @@
             <title>1.3.4 - Orientation</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-4-Orientation-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.4 (Orientation)—what it means, why it matters, and how to ensure content is not restricted to a single display orientation.</description>
+            <description>A practical guide to WCAG Guideline 1.3.4 (Orientation)—what it means, why it matters, and how to ensure content is not restricted to a single display…</description>
             <excerpt>This guideline ensures content is not restricted to a single display orientation.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.4.png" type="image/jpeg" length="1234" />
@@ -1617,7 +1617,7 @@
             <title>1.3.5 - Identify Input Purpose</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-5-Identify-Input-Purpose-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.5 (Identify Input Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of input fields.</description>
+            <description>A practical guide to WCAG Guideline 1.3.5 (Identify Input Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the…</description>
             <excerpt>Helps browsers and assistive technologies identify the purpose of input fields, improving usability and accessibility.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.5.png" type="image/jpeg" length="1234" />
@@ -1631,7 +1631,7 @@
             <title>1.3.6 - Identify Purpose</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-3-6-Identify-Purpose-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose of user interface components beyond just input fields.</description>
+            <description>A practical guide to WCAG Guideline 1.3.6 (Identify Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the purpose…</description>
             <excerpt>Helps browsers and assistive technologies identify the purpose of user interface components, enhancing accessibility.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.3.6.png" type="image/jpeg" length="1234" />
@@ -1743,7 +1743,7 @@
             <title>1.4.4 - Resize Text</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-4-Resize-Text-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.4.4 (Resize Text)—what it means, why it matters, and how to ensure text remains readable when users zoom or increase font size.</description>
+            <description>A practical guide to WCAG Guideline 1.4.4 (Resize Text)—what it means, why it matters, and how to ensure text remains readable when users zoom or increase…</description>
             <excerpt>This guideline ensures text remains readable when users zoom or increase font size.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.4.png" type="image/jpeg" length="1234" />
@@ -1785,7 +1785,7 @@
             <title>1.4.7 - Low or No Background Audio</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-1-4-7-Low-or-No-Background-Audio-Explained</link>
             <pubDate>2025-07-01</pubDate>
-            <description>A practical guide to WCAG Guideline 1.4.7 (Low or No Background Audio)—what it means, why it matters, and how to ensure audio content is accessible for everyone.</description>
+            <description>A practical guide to WCAG Guideline 1.4.7 (Low or No Background Audio)—what it means, why it matters, and how to ensure audio content is accessible for…</description>
             <excerpt>This guideline ensures speech audio is clear and not obscured by background sounds.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-1.4.7.png" type="image/jpeg" length="1234" />
@@ -1841,7 +1841,7 @@
             <title>2.1.2 - No Keyboard Trap</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-2-No-Keyboard-Trap-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.1.2 (No Keyboard Trap)—what it means, why it matters, and how to ensure users can always move focus away from any component using a keyboard.</description>
+            <description>A practical guide to WCAG Guideline 2.1.2 (No Keyboard Trap)—what it means, why it matters, and how to ensure users can always move focus away from any…</description>
             <excerpt>This guideline ensures keyboard users can navigate to and away from any component without getting trapped.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.1.2.png" type="image/jpeg" length="1234" />
@@ -1855,7 +1855,7 @@
             <title>2.1.3 Keyboard (No Exception)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-3-Keyboard-No-Exception-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.1.3 (Keyboard, No Exception)—what it means, why it matters, and how to ensure all functionality is accessible via keyboard, with no exceptions.</description>
+            <description>A practical guide to WCAG Guideline 2.1.3 (Keyboard, No Exception)—what it means, why it matters, and how to ensure all functionality is accessible via…</description>
             <excerpt>This guideline ensures all functionality is accessible via keyboard with absolutely no exceptions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.1.3.png" type="image/jpeg" length="1234" />
@@ -1869,7 +1869,7 @@
             <title>2.1.4 - Character Key Shortcuts</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-1-4-Character-Key-Shortcuts-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.1.4 (Character Key Shortcuts)—what it means, why it matters, and how to ensure keyboard shortcuts don't interfere with accessibility.</description>
+            <description>A practical guide to WCAG Guideline 2.1.4 (Character Key Shortcuts)—what it means, why it matters, and how to ensure keyboard shortcuts don't interfere with…</description>
             <excerpt>This guideline ensures keyboard shortcuts can be turned off, remapped, or only activated when a specific element has focus.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.1.4.png" type="image/jpeg" length="1234" />
@@ -1897,7 +1897,7 @@
             <title>2.2.2 - Pause, Stop, Hide</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-2-Pause-Stop-Hide-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.2.2 (Pause, Stop, Hide)—what it means, why it matters, and how to ensure users can control moving, blinking, or auto-updating content.</description>
+            <description>A practical guide to WCAG Guideline 2.2.2 (Pause, Stop, Hide)—what it means, why it matters, and how to ensure users can control moving, blinking, or…</description>
             <excerpt>This guideline ensures users can control moving, blinking, or auto-updating content.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.2.2.png" type="image/jpeg" length="1234" />
@@ -1939,7 +1939,7 @@
             <title>2.2.5 - Re-authenticating</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-2-5-Re-authenticating-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.2.5 (Re-authenticating)—what it means, why it matters, and how to ensure users can continue activities without losing data after re-authentication.</description>
+            <description>A practical guide to WCAG Guideline 2.2.5 (Re-authenticating)—what it means, why it matters, and how to ensure users can continue activities without losing…</description>
             <excerpt>This guideline ensures users can continue their activities without losing data after re-authentication.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.2.5.png" type="image/jpeg" length="1234" />
@@ -1967,7 +1967,7 @@
             <title>2.3.1 - Three Flashes or Below Threshold</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-3-1-Three-Flashes-or-Below-Threshold-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.3.1 (Three Flashes or Below Threshold)—what it means, why it matters, and how to avoid content that flashes more than three times in any one second period.</description>
+            <description>A practical guide to WCAG Guideline 2.3.1 (Three Flashes or Below Threshold)—what it means, why it matters, and how to avoid content that flashes more than…</description>
             <excerpt>This guideline ensures content doesn't flash in ways that could trigger seizures or physical discomfort.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.3.1.png" type="image/jpeg" length="1234" />
@@ -1981,7 +1981,7 @@
             <title>2.3.2 - Three Flashes</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-3-2-Three-Flashes-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.3.2 (Three Flashes)—what it means, why it matters, and how to avoid content that flashes more than three times in any one second period.</description>
+            <description>A practical guide to WCAG Guideline 2.3.2 (Three Flashes)—what it means, why it matters, and how to avoid content that flashes more than three times in any…</description>
             <excerpt>This guideline ensures content does not flash more than three times in one second to prevent seizures.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.3.2.png" type="image/jpeg" length="1234" />
@@ -1995,7 +1995,7 @@
             <title>2.3.3 - Animation from Interactions</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-3-3-Animation-from-Interactions-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.3.3 (Animation from Interactions)—what it means, why it matters, and how to ensure users can disable non-essential animation triggered by interaction.</description>
+            <description>A practical guide to WCAG Guideline 2.3.3 (Animation from Interactions)—what it means, why it matters, and how to ensure users can disable non-essential…</description>
             <excerpt>Ensures users can disable non-essential animation triggered by interaction, reducing discomfort or distraction.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.3.3.png" type="image/jpeg" length="1234" />
@@ -2051,7 +2051,7 @@
             <title>2.4.4 - Link Purpose (In Context)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-4-Link-Purpose-In-Context-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.4.4 (Link Purpose, In Context)—what it means, why it matters, and how to ensure every link's purpose is clear from its context.</description>
+            <description>A practical guide to WCAG Guideline 2.4.4 (Link Purpose, In Context)—what it means, why it matters, and how to ensure every link's purpose is clear from its…</description>
             <excerpt>This guideline ensures every link's purpose is clear from its context.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.4.4.png" type="image/jpeg" length="1234" />
@@ -2065,7 +2065,7 @@
             <title>2.4.5 - Multiple Ways</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-4-5-Multiple-Ways-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it means, why it matters, and how to provide more than one way to locate a web page within a set of pages.</description>
+            <description>A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it means, why it matters, and how to provide more than one way to locate a web page within a…</description>
             <excerpt>This guideline ensures users have multiple ways to locate content on your site.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.4.5.png" type="image/jpeg" length="1234" />
@@ -2107,7 +2107,7 @@
             <title>2.5.1 - Pointer Gestures</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-1-Pointer-Gestures-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what it means, why it matters, and how to ensure all functionality is operable with simple pointer gestures.</description>
+            <description>A practical guide to WCAG Guideline 2.5.1 (Pointer Gestures)—what it means, why it matters, and how to ensure all functionality is operable with simple…</description>
             <excerpt>This guideline ensures all functionality is operable with simple pointer gestures.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.5.1.png" type="image/jpeg" length="1234" />
@@ -2121,7 +2121,7 @@
             <title>2.5.2 - Pointer Cancellation</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-2-Pointer-Cancellation-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—what it means, why it matters, and how to ensure users can cancel pointer actions before they are completed.</description>
+            <description>A practical guide to WCAG Guideline 2.5.2 (Pointer Cancellation)—what it means, why it matters, and how to ensure users can cancel pointer actions before…</description>
             <excerpt>This guideline ensures users can cancel pointer actions before they are completed, preventing accidental interactions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.5.2.png" type="image/jpeg" length="1234" />
@@ -2149,7 +2149,7 @@
             <title>2.5.4 - Motion Actuation</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-5-4-Motion-Actuation-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what it means, why it matters, and how to ensure users can operate functionality without device motion.</description>
+            <description>A practical guide to WCAG Guideline 2.5.4 (Motion Actuation)—what it means, why it matters, and how to ensure users can operate functionality without device…</description>
             <excerpt>This guideline ensures users can operate functionality without relying on device motion.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.5.4.png" type="image/jpeg" length="1234" />
@@ -2191,7 +2191,7 @@
             <title>2.6.1 - Device Sensors</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-2-6-1-Device-Sensors-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 2.6.1 (Device Sensors)—what it means, why it matters, and how to ensure users can operate functionality without relying on device sensors.</description>
+            <description>A practical guide to WCAG Guideline 2.6.1 (Device Sensors)—what it means, why it matters, and how to ensure users can operate functionality without relying…</description>
             <excerpt>This guideline ensures users can operate functionality without relying solely on device sensors.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-2.6.1.png" type="image/jpeg" length="1234" />
@@ -2205,7 +2205,7 @@
             <title>3.1.1 - Language of Page</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-1-Language-of-Page-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.1.1 (Language of Page)—what it means, why it matters, and how to ensure the default language of each page is programmatically determined.</description>
+            <description>A practical guide to WCAG Guideline 3.1.1 (Language of Page)—what it means, why it matters, and how to ensure the default language of each page is…</description>
             <excerpt>This guideline ensures the default language of each page is programmatically determined.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.1.1.png" type="image/jpeg" length="1234" />
@@ -2219,7 +2219,7 @@
             <title>3.1.2 - Language of Parts</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-1-2-Language-of-Parts-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—what it means, why it matters, and how to ensure the language of each part of a page is programmatically determined.</description>
+            <description>A practical guide to WCAG Guideline 3.1.2 (Language of Parts)—what it means, why it matters, and how to ensure the language of each part of a page is…</description>
             <excerpt>This guideline ensures the language of each part of a page is programmatically determined.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.1.2.png" type="image/jpeg" length="1234" />
@@ -2303,7 +2303,7 @@
             <title>3.2.2 - On Input</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-2-On-Input-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable and accessible.</description>
+            <description>A practical guide to WCAG Guideline 3.2.2 (On Input)—what it means, why it matters, and how to ensure that changes triggered by user input are predictable…</description>
             <excerpt>This guideline ensures changing form controls doesn't automatically cause unexpected context changes.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.2.2.png" type="image/jpeg" length="1234" />
@@ -2331,7 +2331,7 @@
             <title>3.2.4 - Consistent Identification</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-2-4-Consistent-Identification-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.2.4 (Consistent Identification)—what it means, why it matters, and how to ensure controls and components are recognizable across your site.</description>
+            <description>A practical guide to WCAG Guideline 3.2.4 (Consistent Identification)—what it means, why it matters, and how to ensure controls and components are…</description>
             <excerpt>This guideline ensures controls and components are identified consistently across your site.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.2.4.png" type="image/jpeg" length="1234" />
@@ -2373,7 +2373,7 @@
             <title>3.3.1 - Error Identification</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-1-Error-Identification-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.1 (Error Identification)—what it means, why it matters, and how to help users recognize and fix mistakes in forms and inputs.</description>
+            <description>A practical guide to WCAG Guideline 3.3.1 (Error Identification)—what it means, why it matters, and how to help users recognize and fix mistakes in forms…</description>
             <excerpt>This guideline ensures errors are clearly identified and described to users.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.1.png" type="image/jpeg" length="1234" />
@@ -2387,7 +2387,7 @@
             <title>3.3.2 - Labels or Instructions</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-2-Labels-or-Instructions-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.2 (Labels or Instructions)—what it means, why it matters, and how to help users enter information correctly the first time.</description>
+            <description>A practical guide to WCAG Guideline 3.3.2 (Labels or Instructions)—what it means, why it matters, and how to help users enter information correctly the…</description>
             <excerpt>This guideline ensures forms and interactive elements have clear labels and instructions for users.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.2.png" type="image/jpeg" length="1234" />
@@ -2415,7 +2415,7 @@
             <title>3.3.4 - Error Prevention (Legal, Financial, Data)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-4-Error-Prevention-Legal-Financial-Data-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.4 (Error Prevention - Legal, Financial, Data)—what it means, why it matters, and how to help users avoid costly mistakes in critical transactions.</description>
+            <description>A practical guide to WCAG Guideline 3.3.4 (Error Prevention - Legal, Financial, Data)—what it means, why it matters, and how to help users avoid costly…</description>
             <excerpt>This guideline helps users avoid costly mistakes in critical transactions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.4.png" type="image/jpeg" length="1234" />
@@ -2443,7 +2443,7 @@
             <title>3.3.6 - Error Prevention (All)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-6-Error-Prevention-All-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.6 (Error Prevention (All)—what it means, why it matters, and how to help users avoid mistakes in all types of forms and submissions.</description>
+            <description>A practical guide to WCAG Guideline 3.3.6 (Error Prevention (All)—what it means, why it matters, and how to help users avoid mistakes in all types of forms…</description>
             <excerpt>This guideline helps users avoid mistakes in forms and submissions.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.6.png" type="image/jpeg" length="1234" />
@@ -2457,7 +2457,7 @@
             <title>3.3.7 - Redundant Entry</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-7-Redundant-Entry-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what it means, why it matters, and how to help users avoid entering the same information multiple times.</description>
+            <description>A practical guide to WCAG Guideline 3.3.7 (Redundant Entry)—what it means, why it matters, and how to help users avoid entering the same information…</description>
             <excerpt>This guideline ensures users don't have to re-enter information they've already provided.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.7.png" type="image/jpeg" length="1234" />
@@ -2471,7 +2471,7 @@
             <title>3.3.8 - Accessible Authentication (Minimum)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-8-Accessible-Authentication-Minimum-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.8 (Accessible Authentication (Minimum)—what it means, why it matters, and how to make authentication processes accessible to all users.</description>
+            <description>A practical guide to WCAG Guideline 3.3.8 (Accessible Authentication (Minimum)—what it means, why it matters, and how to make authentication processes…</description>
             <excerpt>This guideline ensures authentication processes are accessible without requiring cognitive function tests.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.8.png" type="image/jpeg" length="1234" />
@@ -2485,7 +2485,7 @@
             <title>3.3.9 - Accessible Authentication (Enhanced)</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-3-3-9-Accessible-Authentication-Enhanced-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 3.3.9 (Accessible Authentication (Enhanced)—what it means, why it matters, and how to make authentication processes even more accessible.</description>
+            <description>A practical guide to WCAG Guideline 3.3.9 (Accessible Authentication (Enhanced)—what it means, why it matters, and how to make authentication processes even…</description>
             <excerpt>Ensures authentication processes are accessible for all users, including those with disabilities.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-3.3.9.png" type="image/jpeg" length="1234" />
@@ -2513,7 +2513,7 @@
             <title>4.1.2 - Name, Role, Value</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-4-1-2-Name-Role-Value-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 4.1.2 (Name, Role, Value)—what it means, why it matters, and how to ensure user interface components have name, role, and value that can be programmatically determined.</description>
+            <description>A practical guide to WCAG Guideline 4.1.2 (Name, Role, Value)—what it means, why it matters, and how to ensure user interface components have name, role…</description>
             <excerpt>This guideline ensures user interface components have name, role, and value that can be programmatically determined.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-4.1.2.png" type="image/jpeg" length="1234" />
@@ -2527,7 +2527,7 @@
             <title>4.1.3 - Status Messages</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-4-1-3-Status-Messages-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what it means, why it matters, and how to ensure status messages are programmatically determined through role or properties.</description>
+            <description>A practical guide to WCAG Guideline 4.1.3 (Status Messages)—what it means, why it matters, and how to ensure status messages are programmatically determined…</description>
             <excerpt>This guideline ensures status messages are programmatically determined through role or properties.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-4.1.3.png" type="image/jpeg" length="1234" />
@@ -2597,7 +2597,7 @@
             <title>5.2.4 - Only Accessibility-Supported Ways of Using Technologies</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-4-Only-Accessibility-Supported-Ways-Explained</link>
             <pubDate>2025-07-08</pubDate>
-            <description>An in-depth explanation of WCAG 2.1 Section 5.2.4, which requires that only accessibility-supported ways of using technologies are relied upon to meet accessibility requirements.</description>
+            <description>An in-depth explanation of WCAG 2.1 Section 5.2.4, which requires that only accessibility-supported ways of using technologies are relied upon to meet…</description>
             <excerpt>This section explains the requirement that only accessibility-supported ways of using technologies can be relied upon to meet WCAG, and what to do if a feature is not accessibility supported.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5.2.4.png" type="image/jpeg" length="1234" />
@@ -2611,7 +2611,7 @@
             <title>5.2.5 - Non-Interference</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-5-2-5-Non-Interference-Explained</link>
             <pubDate>2025-07-08</pubDate>
-            <description>An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply.</description>
+            <description>An in-depth explanation of WCAG 2.1 Section 5.2.5, which requires that non-accessibility-supported or non-conforming technologies must not block access to…</description>
             <excerpt>This section explains the requirement that non-accessibility-supported or non-conforming technologies must not block access to the rest of the page, and that certain success criteria always apply.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5.2.5.png" type="image/jpeg" length="1234" />
@@ -2653,7 +2653,7 @@
             <title>5.4 - Statement of Partial Conformance – Third Party Content</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-5-4-Statement-of-Partial-Conformance-Third-Party-Content-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 5.4 (Statement of Partial Conformance – Third Party Content)—what it means, why it matters, and how to document accessibility for content you do not control.</description>
+            <description>A practical guide to WCAG Guideline 5.4 (Statement of Partial Conformance – Third Party Content)—what it means, why it matters, and how to document…</description>
             <excerpt>This guideline explains how to document accessibility for third-party content you do not control.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5.4.png" type="image/jpeg" length="1234" />
@@ -2667,7 +2667,7 @@
             <title>5.5 - Statement of Partial Conformance – Language</title>
             <link>https://accessi.tech/wcag/WCAG-Guideline-5-5-Statement-of-Partial-Conformance-Language-Explained</link>
             <pubDate>2025-07-03</pubDate>
-            <description>A practical guide to WCAG Guideline 5.5 (Statement of Partial Conformance – Language)—what it means, why it matters, and how to document partial conformance due to language limitations.</description>
+            <description>A practical guide to WCAG Guideline 5.5 (Statement of Partial Conformance – Language)—what it means, why it matters, and how to document partial conformance…</description>
             <excerpt>This guideline explains how to document partial WCAG conformance when language barriers exist.</excerpt>
             undefined
             <enclosure url="https://www.accessi.tech/assets/images/WCAG-Series-5.5.png" type="image/jpeg" length="1234" />

@@ -1,4 +1,4 @@
-import{r as $,a as Yt}from"./vendor-react-e39588a0.js";var Ot={exports:{}},Pt={};/**
+import{r as $,a as Yt}from"./vendor-react-d2718be7.js";var Ot={exports:{}},Pt={};/**
  * @license React
  * use-sync-external-store-shim.production.js
  *

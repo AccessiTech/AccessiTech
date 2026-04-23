@@ -155,8 +155,8 @@ export const Home = () => {
                 srcSet={PURPOSE_PIC_SRCSET}
                 sizes={PURPOSE_PIC_SIZES}
                 src={PURPOSE_PIC_URL_1024}
-                width="1024"
-                height="1024"
+                // width="1024" // this fixes the lighthouse score but,
+                // height="1024" // this breaks the square aspect ratio
                 className="purpose-picture"
                 alt={PURPOSE_PIC_ALT}
                 title={PURPOSE_PIC_ALT}

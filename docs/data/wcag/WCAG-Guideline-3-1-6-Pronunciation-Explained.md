@@ -30,7 +30,7 @@ Guideline 3.1 focuses on making text content readable and understandable, includ
 
 > "A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation."
 
-Guideline 3.1.6 requires that users can access the correct pronunciation of words when meaning depends on it.
+Guideline 3.1.6 requires a way to check pronunciation when it changes the meaning. Not all words are clear from spelling alone. This guideline fills that gap.
 
 - Helps users understand ambiguous or unfamiliar words
 - Essential for users with cognitive, learning, or language disabilities
@@ -96,7 +96,7 @@ For more, see the [W3C’s official documentation for 3.1.6 Pronunciation](https
 
 ## **Summary**
 
-Guideline 3.1.6 ensures that users can understand how words are spoken when meaning depends on pronunciation. Provide accessible pronunciation aids for clarity.
+Guideline 3.1.6 helps users know how words are spoken. This matters most when pronunciation changes the meaning. Provide clear and accessible pronunciation aids.
 
 **Next Up**
 

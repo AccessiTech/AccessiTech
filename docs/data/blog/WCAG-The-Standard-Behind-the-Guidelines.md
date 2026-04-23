@@ -6,6 +6,7 @@ keywords: wcag, web accessibility standards, w3c, accessibility guidelines, digi
 image: wcag-meta-overview.png
 imageAlt: Abstract illustration of documents and checklists representing web standards
 status: draft
+date: 2025-04-15
 -->
 
 # **WCAG: The Standard Behind the Guidelines**

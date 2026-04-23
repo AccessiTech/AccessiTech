@@ -1,6 +1,6 @@
 <!--
 title: AI for Coding Accessibility: How Tools Like Copilot Help Me Ship Code Despite Chronic Pain
-description: How developers with disabilities use AI like Copilot to code through chronic pain—where it excels (boilerplate, error fixing), where it fails, and why human judgment still rules.
+description: How developers with disabilities use AI like Copilot to code through chronic pain—where it excels, where it fails, and why human judgment still matters.
 keywords: AI coding accessibility, GitHub Copilot chronic pain, accessible IDEs, AI boilerplate generation, #A11y, #DisabilityTech, #AIForGood, #PsoriaticArthritis
 date: 2025-04-08
 image: AI-for-Coding-Accessibility.png

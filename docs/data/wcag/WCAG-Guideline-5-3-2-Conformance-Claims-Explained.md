@@ -41,10 +41,12 @@ Consider including the following in your conformance claim:
 
 ## **Why Include Optional Components?**
 
-- **Transparency:** Helps users understand the scope and limitations of your claim
+- **Transparency:** Helps users understand the scope and limits of your claim
 - **Clarity:** Makes it easier for others to evaluate your accessibility status
 - **Continuous improvement:** Encourages regular review and updates
-- **Legal and procurement:** May be helpful for contracts or compliance
+- **Legal and procurement:** May be required for contracts or compliance
+
+A sample statement might read: _“In addition to the required components, this claim notes: AAA criteria 2.4.9 and 1.2.6 are also met. Tested with NVDA on Firefox and VoiceOver on Safari. JavaScript is used but not relied upon for core features. Last reviewed: July 2025.”_
 
 ---
 

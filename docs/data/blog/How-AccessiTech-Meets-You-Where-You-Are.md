@@ -1,6 +1,6 @@
 <!--
 title: How AccessiTech Meets You Where You Are
-description: Most ‘accessible’ tech fails disabled users. AccessiTech’s services (audits, QA, mentorship) fix that—because compliance isn’t enough. Here’s how we rebuild inclusion.
+description: Most 'accessible' tech still fails disabled users. AccessiTech's audits, QA, and mentorship go beyond compliance to rebuild genuine inclusion.
 keywords: accessibility services, WCAG compliance, disability-inclusive design, accessibility audits, QA testing for accessibility, chronic pain coding tools, screen reader compatibility testing, open-source accessibility tools, disability mentorship in tech, accessible web development, #A11y, #DisabilityInnovation, #NothingAboutUsWithoutUs, #InclusiveDesign, #PsoriaticArthritisAwareness
 date: 2025-04-03
 categories:
