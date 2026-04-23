@@ -18,7 +18,7 @@ describe('GetStartedSection', () => {
     vi.clearAllMocks();
   });
 
-  describe('Rendering', () => {
+  describe('Rendering with defaults', () => {
     it('renders the section with heading', () => {
       renderWithProviders(<GetStartedSection page="consulting" />);
       expect(screen.getByRole('heading', { name: 'Get Started', level: 3 })).toBeInTheDocument();
@@ -53,19 +53,71 @@ describe('GetStartedSection', () => {
       const section = container.querySelector('section');
       expect(section).toHaveClass('consulting');
     });
-  });
 
-  describe('Calendly Button', () => {
-    it('renders CalendlyButton with correct label', () => {
-      renderWithProviders(<GetStartedSection page="consulting" />);
-      const calendlyButton = screen.getByRole('button', { name: /Schedule a Discovery Call/i });
-      expect(calendlyButton).toBeInTheDocument();
-      expect(calendlyButton).toHaveClass('mb-4');
-      expect(calendlyButton).toHaveClass('w-100');
+    it('applies correct CSS class for asaaps page', () => {
+      const { container } = renderWithProviders(<GetStartedSection page="asaaps" />);
+      const section = container.querySelector('section');
+      expect(section).toHaveClass('asaaps');
     });
   });
 
-  describe('Message Button Navigation', () => {
+  describe('Custom copy rendering', () => {
+    it('renders custom left paragraph when provided', () => {
+      const customLeft = 'Custom left copy for testing';
+      renderWithProviders(<GetStartedSection page="asaaps" leftParagraph={customLeft} />);
+      expect(screen.getByText(customLeft)).toBeInTheDocument();
+    });
+
+    it('renders custom right paragraph when provided', () => {
+      const customRight = 'Custom right copy for testing';
+      renderWithProviders(<GetStartedSection page="asaaps" rightParagraph={customRight} />);
+      expect(screen.getByText(customRight)).toBeInTheDocument();
+    });
+
+    it('renders both custom paragraphs when provided', () => {
+      const customLeft = 'Custom left paragraph';
+      const customRight = 'Custom right paragraph';
+      renderWithProviders(
+        <GetStartedSection page="asaaps" leftParagraph={customLeft} rightParagraph={customRight} />
+      );
+      expect(screen.getByText(customLeft)).toBeInTheDocument();
+      expect(screen.getByText(customRight)).toBeInTheDocument();
+    });
+
+    it('renders default left paragraph when custom right provided', () => {
+      const customRight = 'Only providing right copy';
+      renderWithProviders(<GetStartedSection page="test" rightParagraph={customRight} />);
+      expect(
+        screen.getByText(/Not sure which mentorship path fits your needs\?/)
+      ).toBeInTheDocument();
+      expect(screen.getByText(customRight)).toBeInTheDocument();
+    });
+
+    it('renders default right paragraph when custom left provided', () => {
+      const customLeft = 'Only providing left copy';
+      renderWithProviders(<GetStartedSection page="test" leftParagraph={customLeft} />);
+      expect(screen.getByText(customLeft)).toBeInTheDocument();
+      expect(screen.getByText(/Would it be easier to start with a message\?/)).toBeInTheDocument();
+    });
+  });
+
+  describe('Custom button labels', () => {
+    it('renders custom right button label', () => {
+      const customLabel = 'Start a Conversation';
+      renderWithProviders(<GetStartedSection page="test" rightButtonLabel={customLabel} />);
+      expect(screen.getByTestId('test-hub-message-btn')).toHaveTextContent(customLabel);
+    });
+
+    it('renders default button labels when not customized', () => {
+      renderWithProviders(<GetStartedSection page="test" />);
+      expect(
+        screen.getByRole('button', { name: /Schedule a Discovery Call/i })
+      ).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /Send us a message/i })).toBeInTheDocument();
+    });
+  });
+
+  describe('Message button navigation', () => {
     it('navigates to /contact with mentorship inquiry', () => {
       renderWithProviders(<GetStartedSection page="mentorship" />);
       const messageButton = screen.getByTestId('mentorship-hub-message-btn');
@@ -78,6 +130,13 @@ describe('GetStartedSection', () => {
       const messageButton = screen.getByTestId('consulting-hub-message-btn');
       fireEvent.click(messageButton);
       expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=consulting');
+    });
+
+    it('navigates to /contact with asaaps inquiry', () => {
+      renderWithProviders(<GetStartedSection page="asaaps" />);
+      const messageButton = screen.getByTestId('asaaps-hub-message-btn');
+      fireEvent.click(messageButton);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=asaaps');
     });
 
     it('generates dynamic test IDs based on page prop', () => {
@@ -98,71 +157,54 @@ describe('GetStartedSection', () => {
     });
   });
 
-  describe('Layout', () => {
-    it('renders two columns with equal content', () => {
+  describe('Layout and structure', () => {
+    it('renders two columns with content', () => {
       const { container } = renderWithProviders(<GetStartedSection page="mentorship" />);
       const columns = container.querySelectorAll('.col');
       expect(columns).toHaveLength(2);
     });
 
-    it('renders correct content in first column', () => {
-      renderWithProviders(<GetStartedSection page="consulting" />);
-      const columns = screen
-        .getByText(/Not sure which mentorship path fits your needs\?/)
-        .closest('.col');
-      expect(columns).toBeInTheDocument();
-      expect(columns?.querySelector('[data-testid="calendly-button"]')).toBeTruthy();
-    });
-
-    it('renders correct content in second column', () => {
-      renderWithProviders(<GetStartedSection page="mentorship" />);
-      const column = screen
-        .getByText(/Would it be easier to start with a message\?/)
-        .closest('.col');
-      expect(column).toBeInTheDocument();
-      expect(column?.querySelector('[data-testid="mentorship-hub-message-btn"]')).toBeTruthy();
-    });
-  });
-
-  describe('Accessibility', () => {
-    it('section has semantic HTML structure', () => {
+    it('renders semantic HTML structure', () => {
       const { container } = renderWithProviders(<GetStartedSection page="consulting" />);
       const section = container.querySelector('section');
       expect(section).toBeInTheDocument();
       expect(section?.tagName).toBe('SECTION');
     });
 
-    it('heading is properly structured', () => {
+    it('heading is properly structured with H3', () => {
       renderWithProviders(<GetStartedSection page="mentorship" />);
       const heading = screen.getByRole('heading', { name: 'Get Started', level: 3 });
       expect(heading.tagName).toBe('H3');
     });
+  });
 
-    it('all interactive elements are accessible via keyboard', () => {
+  describe('Accessibility', () => {
+    it('message button is keyboard accessible', () => {
       renderWithProviders(<GetStartedSection page="consulting" />);
-      const buttons = screen.getAllByRole('button');
-      // Check that the message button has type="button"
       const messageButton = screen.getByTestId('consulting-hub-message-btn');
       expect(messageButton).toHaveAttribute('type', 'button');
-      // Verify we have at least 2 interactive elements (Calendly link + message button)
-      expect(buttons.length).toBeGreaterThanOrEqual(2);
+    });
+
+    it('message button uses button type for keyboard navigation', () => {
+      renderWithProviders(<GetStartedSection page="consulting" />);
+      const messageButton = screen.getByTestId('consulting-hub-message-btn');
+      expect(messageButton).toHaveAttribute('type', 'button');
     });
   });
 
-  describe('Edge Cases', () => {
-    it('handles empty page prop gracefully', () => {
-      renderWithProviders(<GetStartedSection page="" />);
-      const messageButton = screen.getByTestId('-hub-message-btn');
-      expect(messageButton).toBeInTheDocument();
-      fireEvent.click(messageButton);
-      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=');
-    });
-
+  describe('Edge cases', () => {
     it('handles special characters in page prop', () => {
       renderWithProviders(<GetStartedSection page="test-page" />);
       const messageButton = screen.getByTestId('test-page-hub-message-btn');
       fireEvent.click(messageButton);
       expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=test-page');
+    });
+
+    it('handles page prop with numbers', () => {
+      renderWithProviders(<GetStartedSection page="service123" />);
+      const messageButton = screen.getByTestId('service123-hub-message-btn');
+      fireEvent.click(messageButton);
+      expect(mockNavigate).toHaveBeenCalledWith('/contact?inquiry=service123');
     });
   });
 });

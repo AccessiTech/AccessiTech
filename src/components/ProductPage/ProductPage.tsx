@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { Breadcrumb, Button, Col, Row } from 'react-bootstrap';
 import Metadata from '../Metadata/Metadata';
+import GetStartedSection from '../GetStartedSection/GetStartedSection';
 import { HOME_URL } from '../../settings/strings';
 import './ProductPage.scss';
 
@@ -23,6 +24,10 @@ export interface ProductPageProps {
   metaTitle: string;
   metaDescription: string;
   parentCrumb?: { label: string; href: string };
+  getStartedLeftParagraph?: string;
+  getStartedRightParagraph?: string;
+  getStartedLeftButtonLabel?: string;
+  getStartedRightButtonLabel?: string;
 }
 
 const ProductPage = ({
@@ -39,6 +44,10 @@ const ProductPage = ({
   metaTitle,
   metaDescription,
   parentCrumb,
+  getStartedLeftParagraph,
+  getStartedRightParagraph,
+  getStartedLeftButtonLabel,
+  getStartedRightButtonLabel,
 }: ProductPageProps) => {
   const navigate = useNavigate();
   const canonical = `${HOME_URL}/${pathname}`;
@@ -119,17 +128,27 @@ const ProductPage = ({
                   <p>{howToUse}</p>
                 </section>
                 <hr />
-                <section className="product-next-steps">
-                  <h3>Next Steps</h3>
-                  <p>{relatedServices}</p>
-                  <Button
-                    variant="primary"
-                    href={ctaHref}
-                    {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                  >
-                    {ctaLabel}
-                  </Button>
-                </section>
+                {getStartedLeftParagraph || getStartedRightParagraph ? (
+                  <GetStartedSection
+                    page={pathname.split('/').pop() || 'product'}
+                    leftParagraph={getStartedLeftParagraph}
+                    rightParagraph={getStartedRightParagraph}
+                    leftButtonLabel={getStartedLeftButtonLabel}
+                    rightButtonLabel={getStartedRightButtonLabel}
+                  />
+                ) : (
+                  <section className="product-next-steps">
+                    <h3>Next Steps</h3>
+                    <p>{relatedServices}</p>
+                    <Button
+                      variant="primary"
+                      href={ctaHref}
+                      {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    >
+                      {ctaLabel}
+                    </Button>
+                  </section>
+                )}
               </Col>
             </Row>
           </Col>

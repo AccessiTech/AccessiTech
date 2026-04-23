@@ -33,6 +33,10 @@ const ASaaPsPage = () => (
     metaTitle="ASaaPs: Accessible Software Design & Development | AccessiTech"
     metaDescription="AccessiTech ASaaP engagements build WCAG 2.2 AA compliant software from day one — screen-reader tested, keyboard navigable, and built for your team to maintain."
     parentCrumb={{ label: 'Consulting', href: '/services/consulting' }}
+    getStartedLeftParagraph="Ready to bring accessibility into your next build or retrofit? A discovery call is the fastest way to clarify scope, timeline, and whether ASaaPs is the right engagement model for your team."
+    getStartedRightParagraph="Have questions about what's included or how the engagement process works? We're happy to answer any questions before you commit to a call."
+    getStartedLeftButtonLabel="Schedule a Discovery Call"
+    getStartedRightButtonLabel="Send us a message"
   />
 );
 
