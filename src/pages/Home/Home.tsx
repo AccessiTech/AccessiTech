@@ -6,7 +6,7 @@ import Services from '../../components/Services/Services';
 import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
 import './Home.scss';
 import { Button } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Metadata from '../../components/Metadata/Metadata';
 import metadata from '../../App/meta';
 
