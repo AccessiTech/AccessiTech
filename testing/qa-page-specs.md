@@ -122,14 +122,14 @@ These checks apply to **every** HTML file in `docs/`, regardless of page type.
 
 ### Accessibility Landmarks
 
-| Check ID   | Selector / Test                                                      | Severity | Pass                                                                    | Fail                                 |
-| ---------- | -------------------------------------------------------------------- | -------- | ----------------------------------------------------------------------- | ------------------------------------ |
-| `a11y-001` | `a.skip-link[href="#main"]` exists                                   | ERROR    | `<a class="skip-link" href="#main">Skip to main content</a>`            | Absent skip link                     |
-| `a11y-002` | `header[aria-label="Header"]` exists                                 | ERROR    | `<header aria-label="Header">`                                          | Absent or wrong label                |
-| `a11y-003` | `nav[aria-label="Main navigation"]` exists inside `header`           | ERROR    | `<nav aria-label="Main navigation">`                                    | Absent or wrong label                |
-| `a11y-004` | `nav[aria-label="Main navigation"] > ul > li` count equals exactly 5 | ERROR    | 5 top-level `<li>` items (Services, Products, Resources, Blog, Contact) | Fewer or more than 5 items           |
-| `a11y-005` | `main#main` with non-empty `aria-label` exists                       | ERROR    | `<main id="main" aria-label="About AccessiTech">`                       | Absent, missing `id`, or empty label |
-| `a11y-006` | `footer[aria-label="Footer"]` exists                                 | ERROR    | `<footer aria-label="Footer">`                                          | Absent or wrong label                |
+| Check ID   | Selector / Test                                                      | Severity | Pass                                                                | Fail                                 |
+| ---------- | -------------------------------------------------------------------- | -------- | ------------------------------------------------------------------- | ------------------------------------ |
+| `a11y-001` | `a.skip-link[href="#main"]` exists                                   | ERROR    | `<a class="skip-link" href="#main">Skip to main content</a>`        | Absent skip link                     |
+| `a11y-002` | `header[aria-label="Header"]` exists                                 | ERROR    | `<header aria-label="Header">`                                      | Absent or wrong label                |
+| `a11y-003` | `nav[aria-label="Main navigation"]` exists inside `header`           | ERROR    | `<nav aria-label="Main navigation">`                                | Absent or wrong label                |
+| `a11y-004` | `nav[aria-label="Main navigation"] > ul > li` count equals exactly 5 | ERROR    | 5 top-level `<li>` items (Services, Products, Learn, Blog, Contact) | Fewer or more than 5 items           |
+| `a11y-005` | `main#main` with non-empty `aria-label` exists                       | ERROR    | `<main id="main" aria-label="About AccessiTech">`                   | Absent, missing `id`, or empty label |
+| `a11y-006` | `footer[aria-label="Footer"]` exists                                 | ERROR    | `<footer aria-label="Footer">`                                      | Absent or wrong label                |
 
 ### Render State
 
@@ -197,20 +197,20 @@ These checks apply to **every** HTML file in `docs/`, regardless of page type.
 **Output**: `docs/wcag.html`  
 **Meta source**: `src/pages/Blog/wcag-meta.ts`
 
-**Title pattern**: `WCAG Resources | AccessiTech` _(verify against actual meta.ts)_
+**Title pattern**: `WCAG Series | AccessiTech` _(verify against actual meta.ts)_
 
-**`main` aria-label**: verify against rendered HTML; expected `"WCAG"` or `"WCAG Resources"`
+**`main` aria-label**: verify against rendered HTML; expected `"WCAG"` or `"WCAG Series"`
 
 **Notes**: The `/wcag` route uses the same blog-index component/template but with WCAG-specific
-meta. All `blog-index` checks apply. The breadcrumb on this page should reflect Home > Resources
+meta. All `blog-index` checks apply. The breadcrumb on this page should reflect Home > Learn
 (not Home > Blog).
 
 #### Additional checks
 
-| Check ID   | Selector / Test                                                 | Severity | Pass                                 | Fail                 |
-| ---------- | --------------------------------------------------------------- | -------- | ------------------------------------ | -------------------- |
-| `wcag-001` | `nav[aria-label="breadcrumb"]` present                          | ERROR    | Breadcrumb nav with Home > Resources | Absent               |
-| `wcag-002` | `link[rel="canonical"]` href equals `https://accessi.tech/wcag` | ERROR    | Correct canonical URL                | Missing or wrong URL |
+| Check ID   | Selector / Test                                                 | Severity | Pass                             | Fail                 |
+| ---------- | --------------------------------------------------------------- | -------- | -------------------------------- | -------------------- |
+| `wcag-001` | `nav[aria-label="breadcrumb"]` present                          | ERROR    | Breadcrumb nav with Home > Learn | Absent               |
+| `wcag-002` | `link[rel="canonical"]` href equals `https://accessi.tech/wcag` | ERROR    | Correct canonical URL            | Missing or wrong URL |
 
 ---
 

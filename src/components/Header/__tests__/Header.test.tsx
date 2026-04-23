@@ -88,13 +88,13 @@ describe('Header Component', () => {
       renderWithRouter(<Header />, '/blog');
       const blogLink = screen.getByText('Blog');
       expect(blogLink).toHaveClass('active');
-      expect(screen.getByText('Resources')).not.toHaveClass('active');
+      expect(screen.getByText('Learn')).not.toHaveClass('active');
     });
 
     it('contains correct top-level navigation links', () => {
       renderWithRouter(<Header />, '/blog');
       expect(screen.getByText('Blog').getAttribute('href')).toBe('/blog');
-      expect(screen.getByText('Resources').getAttribute('href')).toBe('/wcag');
+      expect(screen.getByText('Learn').getAttribute('href')).toBe('/wcag');
       expect(screen.getByText('Contact').getAttribute('href')).toBe('/contact');
     });
 
