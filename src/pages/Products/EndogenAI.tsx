@@ -20,7 +20,7 @@ export const ENDOGENAI_INCLUDED = [
 ];
 
 export const ENDOGENAI_HOW =
-  'All code is hosted at github.com/EndogenAI/dogma. Fork the repo, configure your governance corpus, deploy DogmaMCP, and connect your agent workflow. Everything is documented and open. If your organization wants expert help deploying dogma for production AI systems, schedule a Consulting — Agentic Intelligence Integration discovery call.';
+  'All code is hosted at https://github.com/EndogenAI/dogma. Fork the repo, configure your governance corpus, deploy DogmaMCP, and connect your agent workflow. Everything is documented and open. If your organization wants expert help deploying dogma for production AI systems, schedule a Consulting — Agentic Intelligence Integration discovery call.';
 
 export const ENDOGENAI_RELATED =
   'Consulting — Agentic Intelligence Integration: AI governance framework implementation, MCP server development, and EndogenAI deployment support. Consulting — Design and Development: Accessible Software as a Product/Service (ASaaPs): Custom accessible software development for digital products and services.';
@@ -42,7 +42,7 @@ const EndogenAI = () => (
     metaTitle={ENDOGENAI_META_TITLE}
     metaDescription={ENDOGENAI_META_DESC}
     parentCrumb={{ label: 'Products', href: '/products' }}
-    getStartedInquiryParam="consulting-ai"
+    getStartedInquiryParam="consulting"
   />
 );
 
