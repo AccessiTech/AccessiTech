@@ -87,17 +87,19 @@ describe('ProductPage', () => {
   it('renders CTA as an external link when ctaHref starts with https://', () => {
     const props = { ...defaultProps, ctaLabel: 'Visit Site', ctaHref: 'https://example.com' };
     renderWithProviders(<ProductPage {...props} />);
-    const link = screen.getByRole('link', { name: 'Visit Site' });
-    expect(link).toHaveAttribute('href', 'https://example.com');
-    expect(link).toHaveAttribute('target', '_blank');
-    expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+    // react-bootstrap Button renders <a role="button">, so query by text then traverse to anchor
+    const anchor = screen.getByText('Visit Site').closest('a');
+    expect(anchor).toHaveAttribute('href', 'https://example.com');
+    expect(anchor).toHaveAttribute('target', '_blank');
+    expect(anchor).toHaveAttribute('rel', 'noopener noreferrer');
   });
 
   it('renders CTA as an internal link when ctaHref is a relative path', () => {
     const props = { ...defaultProps, ctaLabel: 'Learn More', ctaHref: '/wcag' };
     renderWithProviders(<ProductPage {...props} />);
-    const link = screen.getByRole('link', { name: 'Learn More' });
-    expect(link).toHaveAttribute('href', '/wcag');
-    expect(link).not.toHaveAttribute('target');
+    // react-bootstrap Button renders <a role="button">, so query by text then traverse to anchor
+    const anchor = screen.getByText('Learn More').closest('a');
+    expect(anchor).toHaveAttribute('href', '/wcag');
+    expect(anchor).not.toHaveAttribute('target');
   });
 });

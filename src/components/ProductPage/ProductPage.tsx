@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { Breadcrumb, Col, Row } from 'react-bootstrap';
+import { Breadcrumb, Button, Col, Row } from 'react-bootstrap';
 import Metadata from '../Metadata/Metadata';
 import GetStartedSection from '../GetStartedSection/GetStartedSection';
 import { HOME_URL } from '../../settings/strings';
@@ -93,7 +93,7 @@ const ProductPage = ({
       <Row className="content-row">
         <main id="main" aria-label={title} className="product-page">
           <Col>
-            <Row className="pb-4">
+            <Row className="main-row">
               <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
                 <section className="product-overview">
                   <h2>{title}</h2>
@@ -136,18 +136,18 @@ const ProductPage = ({
                   </>
                 )}
                 {ctaLabel && ctaHref && (
-                  <div className="product-cta">
+                  <div className="product-cta d-grid col-12 col-md-6">
                     {ctaHref.startsWith('http') ? (
-                      <a
+                      <Button
                         href={ctaHref}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-primary"
+                        variant="dark"
                       >
                         {ctaLabel}
-                      </a>
+                      </Button>
                     ) : (
-                      <Link to={ctaHref} className="btn btn-primary">
+                      <Link to={ctaHref} className="btn btn-dark">
                         {ctaLabel}
                       </Link>
                     )}

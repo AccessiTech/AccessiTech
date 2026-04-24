@@ -272,3 +272,7 @@ code {
 main#main {
   text-align: left;
 }
+
+.main-row {
+  @include padding-bottom(3rem);
+}
