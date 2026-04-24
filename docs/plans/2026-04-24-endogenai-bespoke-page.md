@@ -105,7 +105,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Agent**: Review
 **Deliverables**: APPROVED verdict in scratchpad under `## P0 Review Output`
 **Gate**: P1 does not begin until APPROVED
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — APPROVED (after dependency annotation fix at commit `8ccf1bb`)
 
 ---
 
@@ -115,7 +115,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Scope**: `docs/research/` in `/Users/conor/Sites/dogma/` — 8 unread docs
 **Deliverables**: Pivot table / JSONL mapping each doc → relevant page section + proposed inline link text; ≤2000 tokens to `## P1 Output`
 **Gate**: P2 does not start until P1 Output written
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — pivot table with 8 dogma docs mapped to page sections in scratchpad
 
 ---
 
@@ -123,7 +123,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 
 **Agent**: Review
 **Gate**: P2 does not begin until APPROVED
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — APPROVED (after one mapping correction: scratchpad-architecture-decision moved from §6 to §4)
 
 ---
 
@@ -133,7 +133,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Topic**: Landing page patterns for OSS developer tools / governance products — scannability, link density, ReactMarkdown usage, comparable pages (linear.app, posthog.com, descript.com)
 **Deliverables**: ≤2000 token summary to `## P2 Output`
 **Gate**: P3 does not start until P2 Output written
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — 9 external sources scouted; 3 patterns + Markdown findings in scratchpad
 
 ---
 
@@ -141,7 +141,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 
 **Agent**: Review
 **Gate**: P3 does not begin until APPROVED
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — APPROVED
 
 ---
 
@@ -156,10 +156,10 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 
 ### Phase P4 — Update Workplan
 
-**Agent**: Executive Planner
-**Deliverables**: This workplan updated with P3 decisions; committed
+**Agent**: Executive Orchestrator (direct — coordination)
+**Deliverables**: This workplan updated with P3 decisions + Q11/Q12 follow-ups; committed
 **Gate**: P5 does not start until committed
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — committed at `3221d8d` (P3 decisions) and latest commit (Q11/Q12 follow-ups)
 
 ---
 
