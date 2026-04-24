@@ -83,6 +83,8 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 | Q8: dogma doc links | GitHub file view for now | Migrate to mkdocs URLs once deployed |
 | Q9: §6 framing | Both callout blocks + inline citations | Own dogma research synthesis papers are valid citation sources (inline only) |
 | Q10: §2 structure | Hybrid | 1–2 sentence intro + 3 callout blocks |
+| Q11: §4 encoding chain | Data-driven array | `{step, title, description, link}` objects (Comms fills P9) — embodies programmatic-first axiom |
+| Q12: §6 core papers | 3 core papers featured | `endogenic-design-paper.md`, `values-encoding.md`, `bubble-clusters-substrate.md` — need tracking artifact for full research corpus mapping |
 
 ---
 
