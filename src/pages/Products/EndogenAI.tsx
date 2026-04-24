@@ -4,64 +4,41 @@ import Metadata from '../../components/Metadata/Metadata';
 import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
 import { HOME_URL } from '../../settings/strings';
+import {
+  HERO_TAGLINE,
+  PROBLEM_INTRO,
+  PROBLEM_CARD_1_TITLE,
+  PROBLEM_CARD_1_BODY,
+  PROBLEM_CARD_2_TITLE,
+  PROBLEM_CARD_2_BODY,
+  PROBLEM_CARD_3_TITLE,
+  PROBLEM_CARD_3_BODY,
+  WHAT_TITLE,
+  WHAT_DESCRIPTION,
+  BRAND_RELATIONSHIP,
+  HOW_TITLE,
+  ENCODING_STEPS,
+  DOGMA_CARD_TITLE,
+  DOGMA_CARD_BODY,
+  DOGMAMCP_CARD_TITLE,
+  DOGMAMCP_CARD_BODY,
+  RESEARCH_TITLE,
+  RESEARCH_PAPER_1_TITLE,
+  RESEARCH_PAPER_1_SUMMARY,
+  RESEARCH_PAPER_2_TITLE,
+  RESEARCH_PAPER_2_SUMMARY,
+  RESEARCH_PAPER_3_TITLE,
+  RESEARCH_PAPER_3_SUMMARY,
+  CTA_TITLE,
+  CTA_GITHUB_LABEL,
+  CTA_GITHUB_HREF,
+} from './EndogenAI.constants';
 import './EndogenAI.scss';
 
 // Meta
 export const ENDOGENAI_META_TITLE = 'EndogenAI | AccessiTech';
 export const ENDOGENAI_META_DESC =
   "EndogenAI is AccessiTech's open-source AI governance methodology — implemented in dogma (governance corpus) and DogmaMCP (MCP server). Free and open source. Paid implementation support via AccessiTech Consulting.";
-
-// §1 Hero
-export const HERO_TAGLINE = 'Hero tagline here';
-
-// §2 The Problem
-export const PROBLEM_INTRO = 'Problem intro paragraph';
-export const PROBLEM_CARD_1_TITLE = 'UK CMA callout title';
-export const PROBLEM_CARD_1_BODY = 'UK CMA callout body';
-export const PROBLEM_CARD_2_TITLE = 'Meta/Moltbook callout title';
-export const PROBLEM_CARD_2_BODY = 'Meta/Moltbook callout body';
-export const PROBLEM_CARD_3_TITLE = 'OWASP callout title';
-export const PROBLEM_CARD_3_BODY = 'OWASP callout body';
-
-// §3 What EndogenAI is
-export const WHAT_TITLE = 'What EndogenAI is';
-export const WHAT_DESCRIPTION = 'Methodology overview with links';
-export const BRAND_RELATIONSHIP =
-  'Paragraph here: AccessiTech built EndogenAI as [relationship description - Comms to provide in P9]';
-
-// §4 How it works (data-driven encoding chain)
-export const HOW_TITLE = 'How it works';
-interface EncodingStep {
-  step: number;
-  title: string;
-  description: string;
-  link: string;
-}
-export const ENCODING_STEPS: EncodingStep[] = [
-  { step: 1, title: 'Step 1 title', description: 'Step 1 description', link: '#' },
-  { step: 2, title: 'Step 2 title', description: 'Step 2 description', link: '#' },
-  { step: 3, title: 'Step 3 title', description: 'Step 3 description', link: '#' },
-];
-
-// §5 dogma & DogmaMCP
-export const DOGMA_CARD_TITLE = 'dogma';
-export const DOGMA_CARD_BODY = 'dogma card body';
-export const DOGMAMCP_CARD_TITLE = 'DogmaMCP';
-export const DOGMAMCP_CARD_BODY = 'DogmaMCP card body';
-
-// §6 What the research says
-export const RESEARCH_TITLE = 'What the research says';
-export const RESEARCH_PAPER_1_TITLE = 'endogenic-design-paper.md';
-export const RESEARCH_PAPER_1_SUMMARY = 'Paper 1 summary';
-export const RESEARCH_PAPER_2_TITLE = 'values-encoding.md';
-export const RESEARCH_PAPER_2_SUMMARY = 'Paper 2 summary';
-export const RESEARCH_PAPER_3_TITLE = 'bubble-clusters-substrate.md';
-export const RESEARCH_PAPER_3_SUMMARY = 'Paper 3 summary';
-
-// §7 CTA
-export const CTA_TITLE = 'Get Started';
-export const CTA_GITHUB_LABEL = 'Explore on GitHub';
-export const CTA_GITHUB_HREF = 'https://github.com/EndogenAI/dogma';
 
 const EndogenAI = () => {
   const navigate = useNavigate();
