@@ -1,0 +1,17 @@
+.product-next-steps {
+  @include padding(2rem 0 3rem !important);
+  display: flex;
+  column-gap: 1.5rem;
+  text-align: left;
+
+  // at md breakpoint the flex direction should be column
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    flex-direction: column;
+  }
+
+  & > .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

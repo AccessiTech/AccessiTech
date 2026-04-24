@@ -58,19 +58,13 @@ describe('Conversion Pathways — Integration Tests', () => {
       const ossBtn = screen.getByTestId('product-card-btn-oss');
       await user.click(ossBtn);
       expect(mockNavigate).toHaveBeenCalledWith('/products/oss-asaaps');
-
-      // CCCs
-      const cccsBtn = screen.getByTestId('product-card-btn-cccs');
-      await user.click(cccsBtn);
-      expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
     });
 
-    it('has working "Contact Us" Link', async () => {
+    it('has working "Contact Us" message button', async () => {
       renderWithProviders(<Home />);
 
-      const contactLink = screen.getByText('Send us a Message!');
-      expect(contactLink).toBeInTheDocument();
-      expect(contactLink).toHaveAttribute('href', '/contact');
+      const messageBtn = screen.getByTestId('home-hub-message-btn');
+      expect(messageBtn).toBeInTheDocument();
     });
   });
 

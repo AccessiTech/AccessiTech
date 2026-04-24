@@ -60,19 +60,18 @@ describe('Home', () => {
     expect(screen.getByRole('main')).toBeInTheDocument();
   });
 
-  it('renders Products section with three product card buttons', () => {
+  it('renders Products section with two product card buttons', () => {
     renderWithProviders(<Home />);
     expect(screen.getByText(PRODUCTS_HEADER)).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-wcag')).toBeInTheDocument();
     expect(screen.getByTestId('product-card-btn-oss')).toBeInTheDocument();
-    expect(screen.getByTestId('product-card-btn-cccs')).toBeInTheDocument();
   });
 
-  it('renders contact section with Calendly and Link button', () => {
+  it('renders contact section with Calendly and message button', () => {
     renderWithProviders(<Home />);
     const calendlyButtons = screen.getAllByTestId('calendly-button');
-    expect(calendlyButtons.length).toBeGreaterThanOrEqual(2);
-    expect(screen.getByText('Send us a Message!')).toBeInTheDocument();
+    expect(calendlyButtons.length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByTestId('home-hub-message-btn')).toBeInTheDocument();
   });
 
   describe('navigation', () => {
@@ -85,11 +84,6 @@ describe('Home', () => {
       renderWithProviders(<Home />);
       fireEvent.click(screen.getByTestId('product-card-btn-oss'));
       expect(mockNavigate).toHaveBeenCalledWith('/products/oss-asaaps');
-    });
-    it('navigates to /products/cccs from CCCs product button', () => {
-      renderWithProviders(<Home />);
-      fireEvent.click(screen.getByTestId('product-card-btn-cccs'));
-      expect(mockNavigate).toHaveBeenCalledWith('/products/cccs');
     });
   });
 

@@ -32,6 +32,7 @@ import SOTCPage from '../pages/Services/mentorship/SOTCPage';
 import ASaaPsPage from '../pages/Services/consulting/ASaaPsPage';
 import AIIntegrationPage from '../pages/Services/consulting/AIIntegrationPage';
 import QAPage from '../pages/Services/consulting/QAPage';
+import About from '../pages/About/About';
 import Contact from '../pages/Contact/Contact';
 
 export interface AppProps {
@@ -101,6 +102,7 @@ export const App = (props: AppProps) => {
     ? QAPage
     : (lazy(() => import('../pages/Services/consulting/QAPage')) as any);
   const Contact_Route = isSSR ? Contact : (lazy(() => import('../pages/Contact/Contact')) as any);
+  const About_Route = isSSR ? About : (lazy(() => import('../pages/About/About')) as any);
 
   const Content = (
     <>
@@ -141,6 +143,7 @@ export const App = (props: AppProps) => {
             <Route path="/products/wcag-series" element={<WCAGSeries_Route />} />
             <Route path="/products/oss-asaaps" element={<OSSASaaPs_Route />} />
             <Route path="/products/cccs" element={<CCCs_Route />} />
+            <Route path="/about" element={<About_Route />} />
             <Route path="/contact" element={<Contact_Route />} />
             <Route path="*" element={<NotFound_Route />} />
           </Routes>
@@ -178,6 +181,7 @@ export const App = (props: AppProps) => {
               <Route path="/products/wcag-series" element={<WCAGSeries_Route />} />
               <Route path="/products/oss-asaaps" element={<OSSASaaPs_Route />} />
               <Route path="/products/cccs" element={<CCCs_Route />} />
+              <Route path="/about" element={<About_Route />} />
               <Route path="/contact" element={<Contact_Route />} />
               <Route path="*" element={<NotFound_Route />} />
             </Routes>

@@ -14,17 +14,35 @@ import {
 } from '../../components/Services/Services';
 import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 
+export const CONSULTING_META_TITLE = 'Consulting | AccessiTech';
+export const CONSULTING_META_DESC =
+  'AccessiTech Consulting: accessibility-first software design, agentic AI governance, and WCAG QA for organizations building accountable digital systems.';
+
+export const ASAAPS_DELIVERABLES = [
+  'WCAG 2.2 AA compliance by design',
+  'Screen-reader tested components (NVDA, VoiceOver)',
+  'Keyboard-navigable interfaces throughout',
+  'Handoff documentation your team can maintain',
+];
+export const AI_INTEGRATION_DELIVERABLES = [
+  'EndogenAI methodology deployment (open source)',
+  'Governance embedded in daily operations',
+  'Audit-ready documentation',
+  'No vendor lock-in',
+];
+export const QA_DELIVERABLES = [
+  'WCAG 2.2 AA compliance audit',
+  'Manual NVDA / VoiceOver testing',
+  'axe-core + WAVE automated scans',
+  'Developer-ready remediation roadmap',
+];
+
 const CONSULTING_AREAS = [
   {
     id: 'asaaps',
     title: ASAAPS_HEADER,
     description: ASAAPS_DESC,
-    deliverables: [
-      'WCAG 2.2 AA compliance by design',
-      'Screen-reader tested components (NVDA, VoiceOver)',
-      'Keyboard-navigable interfaces throughout',
-      'Handoff documentation your team can maintain',
-    ],
+    deliverables: ASAAPS_DELIVERABLES,
     href: '/services/consulting/asaaps',
     contactHref: '/contact?inquiry=consulting',
   },
@@ -32,12 +50,7 @@ const CONSULTING_AREAS = [
     id: 'ai-integration',
     title: AI_INTEGRATION_HEADER,
     description: AI_INTEGRATION_DESC,
-    deliverables: [
-      'EndogenAI methodology deployment (open source)',
-      'Governance embedded in daily operations',
-      'Audit-ready documentation',
-      'No vendor lock-in',
-    ],
+    deliverables: AI_INTEGRATION_DELIVERABLES,
     href: '/services/consulting/ai-integration',
     contactHref: '/contact?inquiry=consulting',
   },
@@ -45,12 +58,7 @@ const CONSULTING_AREAS = [
     id: 'qa',
     title: QA_HEADER,
     description: QA_DESC,
-    deliverables: [
-      'WCAG 2.2 AA compliance audit',
-      'Manual NVDA / VoiceOver testing',
-      'axe-core + WAVE automated scans',
-      'Developer-ready remediation roadmap',
-    ],
+    deliverables: QA_DELIVERABLES,
     href: '/services/consulting/qa',
     contactHref: '/contact?inquiry=qa',
   },
@@ -64,8 +72,8 @@ const ConsultingPage = () => {
       <Row className="breadcrumb-row product-page">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <Metadata
-            title="Consulting | AccessiTech"
-            description="AccessiTech Consulting: accessibility-first software design, agentic AI governance, and WCAG QA for organizations building accountable digital systems."
+            title={CONSULTING_META_TITLE}
+            description={CONSULTING_META_DESC}
             canonical={`${HOME_URL}/services/consulting`}
             siteName="AccessiTech"
             twitterCreator="@accessiT3ch"

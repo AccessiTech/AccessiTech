@@ -16,17 +16,41 @@ import {
 } from '../../components/Services/Services';
 import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 
+export const MENTORSHIP_META_TITLE = 'Mentorship | AccessiTech';
+export const MENTORSHIP_META_DESC =
+  'AccessiTech Mentorship: courses, 1:1 coaching, and corporate workshops for teams and individuals building accessibility into their practice.';
+
+export const MENTORSHIP_CCCS_DELIVERABLES = [
+  'WCAG 2.2 compliance content (free, no paywall)',
+  'Web accessibility best practices (freemium)',
+  'Visual and video design with open-source tools (freemium)',
+  'Self-paced and cohort-based learning options',
+];
+export const COACHING_DELIVERABLES = [
+  '1:1 mentorship for accessible tech careers',
+  'Half-day to multi-day corporate workshops',
+  'Topics: Agile accessibility, QA testing, disability justice, AI governance',
+  'Closed captions + follow-up resources for all sessions',
+];
+export const OPENCLASSROOMS_DELIVERABLES = [
+  'Career-switcher mentorship (web dev, UX design, project management)',
+  'Real project work with professional accountability',
+  'OpenClassrooms partnership and curriculum integration',
+  'Grounded in accessible education principles',
+];
+export const SOTC_DELIVERABLES = [
+  'Disabled Designers and Developers (DDDs) community',
+  'Knowledge sharing and best practices exchange',
+  'Open-source contribution reviews',
+  'Collective expertise building in accessible design',
+];
+
 const MENTORSHIP_AREAS = [
   {
     id: 'cccs',
     title: CCCS_HEADER,
     description: CCCS_DESC,
-    deliverables: [
-      'WCAG 2.2 compliance content (free, no paywall)',
-      'Web accessibility best practices (freemium)',
-      'Visual and video design with open-source tools (freemium)',
-      'Self-paced and cohort-based learning options',
-    ],
+    deliverables: MENTORSHIP_CCCS_DELIVERABLES,
     href: '/services/mentorship/cccs',
     contactHref: '/contact?inquiry=mentorship',
   },
@@ -34,12 +58,7 @@ const MENTORSHIP_AREAS = [
     id: 'coaching',
     title: COACHING_HEADER,
     description: COACHING_DESC,
-    deliverables: [
-      '1:1 mentorship for accessible tech careers',
-      'Half-day to multi-day corporate workshops',
-      'Topics: Agile accessibility, QA testing, disability justice, AI governance',
-      'Closed captions + follow-up resources for all sessions',
-    ],
+    deliverables: COACHING_DELIVERABLES,
     href: '/services/mentorship/coaching',
     contactHref: '/contact?inquiry=mentorship',
   },
@@ -47,12 +66,7 @@ const MENTORSHIP_AREAS = [
     id: 'openclassrooms',
     title: OPENCLASSROOMS_HEADER,
     description: OPENCLASSROOMS_DESC,
-    deliverables: [
-      'Career-switcher mentorship (web dev, UX design, project management)',
-      'Real project work with professional accountability',
-      'OpenClassrooms partnership and curriculum integration',
-      'Grounded in accessible education principles',
-    ],
+    deliverables: OPENCLASSROOMS_DELIVERABLES,
     href: '/services/mentorship/openclassrooms',
     contactHref: '/contact?inquiry=mentorship',
   },
@@ -60,12 +74,7 @@ const MENTORSHIP_AREAS = [
     id: 'sotc',
     title: SOTC_HEADER,
     description: SOTC_DESC,
-    deliverables: [
-      'Disabled Designers and Developers (DDDs) community',
-      'Knowledge sharing and best practices exchange',
-      'Open-source contribution reviews',
-      'Collective expertise building in accessible design',
-    ],
+    deliverables: SOTC_DELIVERABLES,
     href: '/services/mentorship/sotc',
     contactHref: '/contact?inquiry=mentorship',
   },
@@ -79,8 +88,8 @@ const MentorshipPage = () => {
       <Row className="breadcrumb-row product-page">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <Metadata
-            title="Mentorship | AccessiTech"
-            description="AccessiTech Mentorship: courses, 1:1 coaching, and corporate workshops for teams and individuals building accessibility into their practice."
+            title={MENTORSHIP_META_TITLE}
+            description={MENTORSHIP_META_DESC}
             canonical={`${HOME_URL}/services/mentorship`}
             siteName="AccessiTech"
             twitterCreator="@accessiT3ch"

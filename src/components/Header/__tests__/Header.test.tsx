@@ -98,15 +98,16 @@ describe('Header Component', () => {
       expect(screen.getByText('Contact').getAttribute('href')).toBe('/contact');
     });
 
-    it('renders Services as first nav item and Contact as last', () => {
+    it('renders About as first nav item and Contact as last', () => {
       renderWithRouter(<Header />, '/blog');
+      expect(screen.getByText('About')).toBeInTheDocument();
       expect(screen.getByText('Services')).toBeInTheDocument();
       expect(screen.getByText('Contact')).toBeInTheDocument();
       // Select only direct children of the top-level ul (not dropdown sub-items)
       const topNav = screen.getByLabelText('Main navigation');
       const topItems = topNav.querySelectorAll(':scope > ul > li > a');
       const texts = Array.from(topItems).map(el => el.textContent?.trim());
-      expect(texts[0]).toBe('Services');
+      expect(texts[0]).toBe('About');
       expect(texts[texts.length - 1]).toBe('Contact');
     });
   });

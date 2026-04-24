@@ -16,17 +16,41 @@ import {
 } from '../Home/Home';
 import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 
+export const PRODUCTS_META_TITLE = 'Products | AccessiTech';
+export const PRODUCTS_META_DESC =
+  'AccessiTech Products: the WCAG Series, Open Source Software & ASaaPs, and Curriculum & Content Creation — resources that make accessibility-first design operational.';
+
+export const WCAG_SERIES_DELIVERABLES = [
+  'Free WCAG 2.2 AA compliance guides',
+  'Accessible design patterns and best practices',
+  'No paywall — public good resource',
+  'Community-driven updates and contributions',
+];
+export const OSS_DELIVERABLES = [
+  'EndogenAI methodology (open source, MIT licensed)',
+  'Case studies showing Red Hat model in action',
+  'Free methodology, paid implementation support',
+  'No vendor lock-in — audit and extend at will',
+];
+export const PRODUCTS_CCCS_DELIVERABLES = [
+  'WCAG 2.2 compliance courses (free, no paywall)',
+  'Web best practices and patterns (freemium)',
+  'Visual and video design with open-source tools (freemium)',
+  'Self-paced and cohort-based learning options',
+];
+export const BLOG_DELIVERABLES = [
+  'Accessibility and WCAG deep dives',
+  'AI governance and EndogenAI methodology updates',
+  'Disability justice and founder reflections',
+  'Case studies and implementation stories',
+];
+
 const PRODUCTS_AREAS = [
   {
     id: 'wcag-series',
     title: WCAG_SERIES_TITLE,
     description: WCAG_SERIES_DESC,
-    deliverables: [
-      'Free WCAG 2.2 AA compliance guides',
-      'Accessible design patterns and best practices',
-      'No paywall — public good resource',
-      'Community-driven updates and contributions',
-    ],
+    deliverables: WCAG_SERIES_DELIVERABLES,
     href: '/products/wcag-series',
     contactHref: '/contact?inquiry=products',
   },
@@ -34,12 +58,7 @@ const PRODUCTS_AREAS = [
     id: 'oss-asaaps',
     title: OSS_TITLE,
     description: OSS_DESC,
-    deliverables: [
-      'EndogenAI methodology (open source, MIT licensed)',
-      'Case studies showing Red Hat model in action',
-      'Free methodology, paid implementation support',
-      'No vendor lock-in — audit and extend at will',
-    ],
+    deliverables: OSS_DELIVERABLES,
     href: '/products/oss-asaaps',
     contactHref: '/contact?inquiry=products',
   },
@@ -47,12 +66,7 @@ const PRODUCTS_AREAS = [
     id: 'cccs',
     title: CCCS_TITLE,
     description: CCCS_DESC,
-    deliverables: [
-      'WCAG 2.2 compliance courses (free, no paywall)',
-      'Web best practices and patterns (freemium)',
-      'Visual and video design with open-source tools (freemium)',
-      'Self-paced and cohort-based learning options',
-    ],
+    deliverables: PRODUCTS_CCCS_DELIVERABLES,
     href: '/products/cccs',
     contactHref: '/contact?inquiry=products',
   },
@@ -60,12 +74,7 @@ const PRODUCTS_AREAS = [
     id: 'blog',
     title: BLOG_TITLE,
     description: BLOG_DESC,
-    deliverables: [
-      'Accessibility and WCAG deep dives',
-      'AI governance and EndogenAI methodology updates',
-      'Disability justice and founder reflections',
-      'Case studies and implementation stories',
-    ],
+    deliverables: BLOG_DELIVERABLES,
     href: '/blog',
     contactHref: '/contact?inquiry=products',
   },
@@ -79,8 +88,8 @@ const ProductsHub = () => {
       <Row className="breadcrumb-row product-page">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <Metadata
-            title="Products | AccessiTech"
-            description="AccessiTech Products: the WCAG Series, Open Source Software & ASaaPs, and Curriculum & Content Creation — resources that make accessibility-first design operational."
+            title={PRODUCTS_META_TITLE}
+            description={PRODUCTS_META_DESC}
             canonical={`${HOME_URL}/products`}
             siteName="AccessiTech"
             twitterCreator="@accessiT3ch"

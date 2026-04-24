@@ -1,0 +1,47 @@
+.about-section {
+  padding: 2rem 0 2rem;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  p + p {
+    margin-top: 1rem;
+  }
+}
+
+// Section 3 gets a solid color background block (per Visual Strategy Decision)
+.about-turning-point {
+  background-color: $darkBlue;
+  color: $white;
+
+  .about-pull-quote {
+    border-left-color: $yellow;
+
+    p {
+      color: $yellow;
+    }
+  }
+}
+
+.about-pull-quote {
+  border-left: 4px solid $yellow;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1.25rem;
+  font-style: italic;
+
+  p {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+}
+
+.founder-signature {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem 2rem;
+  color: $darkBlue; // $grey (#aeb0b5) fails WCAG 1.4.3 contrast on white (2.17:1); $darkBlue passes (17.5:1)
+}
