@@ -26,6 +26,7 @@ export const config = {
     '/services/mentorship/sotc',
     '/products',
     '/products/wcag-series',
+    '/products/endogenai',
     '/products/oss-asaaps',
     '/products/cccs',
     '/about',
@@ -52,10 +53,11 @@ export const config = {
     'src/pages/Services/mentorship/sotc-meta.ts', // 14: /services/mentorship/sotc
     'src/pages/Products/meta.ts', // 15: /products
     'src/pages/Products/wcag-series-meta.ts', // 16: /products/wcag-series
-    'src/pages/Products/oss-asaaps-meta.ts', // 17: /products/oss-asaaps
-    'src/pages/Products/cccs-meta.ts', // 18: /products/cccs
-    'src/App/meta.ts', // 19: /about  (use App meta as fallback; About page <Metadata> component provides the real SEO)
-    'src/App/meta.ts', // 20: /contact
+    'src/pages/Products/endogenai-meta.ts', // 17: /products/endogenai
+    'src/pages/Products/oss-asaaps-meta.ts', // 18: /products/oss-asaaps
+    'src/pages/Products/cccs-meta.ts', // 19: /products/cccs
+    'src/App/meta.ts', // 20: /about  (use App meta as fallback; About page <Metadata> component provides the real SEO)
+    'src/App/meta.ts', // 21: /contact
   ],
   productionUrlBase: 'https://accessi.tech',
   pathsBuilder: items =>

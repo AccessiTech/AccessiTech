@@ -134,6 +134,14 @@ function Header() {
               </li>
               <li className="dropdown-sub-item">
                 <Link
+                  to="/products/endogenai"
+                  className={pathname === '/products/endogenai' ? 'active' : ''}
+                >
+                  EndogenAI
+                </Link>
+              </li>
+              <li className="dropdown-sub-item">
+                <Link
                   to="/products/oss-asaaps"
                   className={pathname === '/products/oss-asaaps' ? 'active' : ''}
                 >

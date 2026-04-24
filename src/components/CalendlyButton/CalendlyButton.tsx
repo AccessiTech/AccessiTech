@@ -7,7 +7,6 @@ export interface CalendlyButtonProps {
   className?: string;
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const CALENDLY_URL =
   (typeof import.meta !== 'undefined' && import.meta.env?.VITE_CALENDLY_URL) ||
   'https://calendly.com/accessit3ch/30min';
