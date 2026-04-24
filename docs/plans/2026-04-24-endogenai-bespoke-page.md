@@ -16,15 +16,22 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Governing axiom**: Endogenous-First  
 **Primary endogenous sources**: Active scratchpad `.tmp/feat-endogenai-oss-product-page/2026-04-24.md`; `consulting/docs/brand/accessitech-website-copy-complete.md`; dogma corpus at `docs/research/`
 
-## Architecture Locked (from prior session)
+## Architecture Locked (from prior session + P3 triage)
 
 | Decision | Value |
 |---|---|
 | Page architecture | Option A — Problem-first narrative arc |
-| External validation | BOTH inline (woven) AND dedicated "What the research says" block |
+| External validation | BOTH inline (woven, including own research synthesis papers) AND dedicated callout blocks in §6 |
 | Markdown copy strategy | Comms agent drafts as Markdown string constants; FE renders via `ReactMarkdown` (same as BlogEntry.tsx) |
-| Encoding chain visual | TBD in P3 |
-| File strategy | TBD in P3 |
+| Encoding chain visual | **(P3 LOCKED)** Stepped numbered list — note: steps/substrates are variable; present as "current baseline" |
+| File strategy | **(P3 LOCKED)** Replace `EndogenAI.tsx` in-place; no route changes |
+| Card components | **(P3 LOCKED)** react-bootstrap `Card` component (not raw HTML/Bootstrap classnames) |
+| Bottom CTA hierarchy | **(P3 LOCKED)** Primary: GitHub button → Secondary: GetStartedSection → Tertiary: CalendlyButton |
+| Test assertions | **(P3 LOCKED)** String constant matching (import exported constants in tests) |
+| SCSS approach | **(P3 LOCKED)** Mix: react-bootstrap component APIs + Bootstrap classnames + custom `EndogenAI.scss` for layout |
+| External doc links | **(P3 LOCKED)** mkdocs URLs where live (`https://endogenai.github.io/dogma/`); GitHub file view for gaps. Note: mkdocs 404 as of 2026-04-24 — use GitHub file view for all links now; follow-up: deploy dogma mkdocs |
+| §2 structure | **(P3 LOCKED)** Hybrid — 1–2 sentence intro + 3 callout blocks |
+| §6 structure | **(P3 LOCKED)** Both callout blocks + inline citations; own dogma research synthesis papers cited inline |
 
 ## Brand / Product Hierarchy (LOCKED)
 
@@ -62,18 +69,20 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 
 **Unread queue for P1 scouting**: `values-encoding.md`, `ai-cognitive-load.md`, `ramp-l0l3-framework.md`, `agent-taxonomy.md`, `harness-memory-governance.md`, `scratchpad-architecture-decision.md`, `orchestrator-autopilot-failure.md`, `async-process-handling.md`
 
-## Open Questions (P3 Triage)
+## P3 Decisions (LOCKED 2026-04-24)
 
-These 8 decisions are gating P5+ but do NOT block P1/P2:
-
-1. **External validation links**: dogma GitHub repo docs, or mkdocs rendered URL?
-2. **Encoding chain visual (§4)**: stepped numbered list, code fence, or ASCII diagram?
-3. **dogma/DogmaMCP cards (§5)**: Bootstrap `Card` or inline prose + link buttons?
-4. **Bottom CTA**: `GetStartedSection` reuse, `CalendlyButton`, GitHub button, or all three?
-5. **File strategy**: replace `EndogenAI.tsx` in-place, or new component + swap App.tsx import?
-6. **Test assertions**: string constant matching or partial-text `getByText`?
-7. **SCSS**: new `EndogenAI.scss` or Bootstrap-only?
-8. **dogma doc links**: GitHub raw? GitHub file view? External mkdocs?
+| Q | Decision | Notes |
+|---|---|---|
+| Q1: External validation links | mkdocs URLs (`https://endogenai.github.io/dogma/`) | mkdocs 404 as of 2026-04-24 — use GitHub file view for all links now; follow-up: deploy dogma mkdocs |
+| Q2: Encoding chain visual | Stepped numbered list | Steps are variable — present as "current baseline" |
+| Q3: Cards | react-bootstrap `Card` component | For consistency with rest of site |
+| Q4: Bottom CTA | All three with hierarchy | Primary: GitHub → Secondary: GetStartedSection → Tertiary: CalendlyButton |
+| Q5: File strategy | Replace in-place | Edit `src/pages/Products/EndogenAI.tsx`; no route changes |
+| Q6: Test assertions | String constant matching | Import exported constants directly |
+| Q7: SCSS | Mix | react-bootstrap APIs + Bootstrap classnames + custom `EndogenAI.scss` |
+| Q8: dogma doc links | GitHub file view for now | Migrate to mkdocs URLs once deployed |
+| Q9: §6 framing | Both callout blocks + inline citations | Own dogma research synthesis papers are valid citation sources (inline only) |
+| Q10: §2 structure | Hybrid | 1–2 sentence intro + 3 callout blocks |
 
 ---
 
@@ -137,9 +146,9 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P3 — Triage Open Questions + Decisions with User
 
 **Agent**: Orchestrator (direct — surface; wait for user)
-**Deliverables**: All 8 open questions answered by user; decisions locked
+**Deliverables**: All 10 open questions answered by user; decisions locked
 **Gate**: P4 does not start until user confirms all decisions
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — all 10 decisions locked (see P3 Decisions table above)
 
 ---
 
