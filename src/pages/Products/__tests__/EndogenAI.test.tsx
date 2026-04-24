@@ -35,11 +35,14 @@ describe('EndogenAI Page', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('Products')).toBeInTheDocument();
-    expect(screen.getByText('EndogenAI')).toBeInTheDocument();
+    const breadcrumbItems = screen.getAllByText('EndogenAI');
+    expect(breadcrumbItems.length).toBeGreaterThan(0);
   });
 
   it('renders the GitHub CTA button', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
-    expect(screen.getByRole('link', { name: /Explore on GitHub/i })).toBeInTheDocument();
+    const githubLink = screen.getByText(/Explore on GitHub/i);
+    expect(githubLink).toBeInTheDocument();
+    expect(githubLink.closest('a')).toHaveAttribute('href', 'https://github.com/EndogenAI/dogma');
   });
 });

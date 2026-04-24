@@ -26,6 +26,8 @@ export const PROBLEM_CARD_3_BODY = 'OWASP callout body';
 // §3 What EndogenAI is
 export const WHAT_TITLE = 'What EndogenAI is';
 export const WHAT_DESCRIPTION = 'Methodology overview with links';
+export const BRAND_RELATIONSHIP =
+  'Paragraph here: AccessiTech built EndogenAI as [relationship description - Comms to provide in P9]';
 
 // §4 How it works (data-driven encoding chain)
 export const HOW_TITLE = 'How it works';
@@ -139,6 +141,7 @@ const EndogenAI = () => {
           {/* §3 What EndogenAI is */}
           <section className="endogenai-what">
             <h2>{WHAT_TITLE}</h2>
+            <p className="brand-relationship">{BRAND_RELATIONSHIP}</p>
             <p>{WHAT_DESCRIPTION}</p>
           </section>
 
@@ -225,8 +228,10 @@ const EndogenAI = () => {
             >
               {CTA_GITHUB_LABEL}
             </Button>
-            <GetStartedSection page="endogenai" inquiryParam="consulting" />
-            <div className="mt-4">
+            <div className="secondary-cta-block">
+              <GetStartedSection page="endogenai" inquiryParam="consulting" />
+            </div>
+            <div className="mt-5">
               <CalendlyButton />
             </div>
           </section>
