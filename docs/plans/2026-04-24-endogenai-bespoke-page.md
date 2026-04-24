@@ -174,7 +174,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 - Builds clean, TypeScript 0 errors
 
 **Gate**: P5 Review does not start until build clean
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — committed at `f684085`
 
 ---
 
@@ -183,7 +183,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Agent**: Review
 **Depends on**: P5 scaffold build clean
 **Gate**: P6 does not begin until APPROVED
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — APPROVED (all 8 validation criteria passed)
 
 ---
 
@@ -193,7 +193,16 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Depends on**: P5 Review APPROVED
 **Deliverables**: Structured feedback applied; committed
 **Gate**: P7 does not start until Biz Dev returns APPROVED
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — Business Lead REQUEST CHANGES (2 issues: brand hierarchy prose, CTA visual hierarchy) → changes applied at `907500f`
+
+---
+
+### Phase P6 Review — Review Gate
+
+**Agent**: Review
+**Depends on**: P6 changes committed
+**Gate**: P7 does not begin until APPROVED
+**Status**: ✅ Complete — APPROVED (all 6 validation criteria passed)
 
 ---
 
@@ -298,3 +307,10 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 | `9e16396` | fix(products/endogenai): QA fixes — inquiry param, URL format, add tests |
 | `275b6e8` | fix(ProductPage): render ctaLabel/ctaHref/relatedServices props |
 | `087371b` | chore: Use react-bootstrap Button for ProductPage CTA |
+| `3e8cc5c` | docs(plans): scaffold EndogenAI bespoke page workplan |
+| `8ccf1bb` | docs(plans): add dependency annotations to P5-P15 phases |
+| `3221d8d` | docs(plans): record P3 architecture decisions (Q1-Q10) |
+| `dd8da25` | docs(plans): add Q11/Q12 follow-up decisions to workplan |
+| `54b2458` | docs(plans): update workplan with P0-P4 progress |
+| `f684085` | feat(endogenai): scaffold bespoke 7-section product page |
+| `907500f` | feat(endogenai): apply Biz Dev feedback — brand prose + CTA hierarchy |
