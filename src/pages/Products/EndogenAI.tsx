@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { Breadcrumb, Button, Card, Col, Row } from 'react-bootstrap';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import Metadata from '../../components/Metadata/Metadata';
 import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
@@ -80,19 +82,25 @@ const EndogenAI = () => {
           {/* §1 Hero */}
           <section className="endogenai-hero">
             <h1>EndogenAI</h1>
-            <p className="hero-tagline">{HERO_TAGLINE}</p>
+            <div className="hero-tagline">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{HERO_TAGLINE}</ReactMarkdown>
+            </div>
           </section>
 
           {/* §2 The Problem */}
           <section className="endogenai-problem">
             <h2>The Problem</h2>
-            <p>{PROBLEM_INTRO}</p>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{PROBLEM_INTRO}</ReactMarkdown>
             <Row className="problem-cards">
               <Col xs={12} md={4}>
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{PROBLEM_CARD_1_TITLE}</Card.Title>
-                    <Card.Text>{PROBLEM_CARD_1_BODY}</Card.Text>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {PROBLEM_CARD_1_BODY}
+                      </ReactMarkdown>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -100,7 +108,11 @@ const EndogenAI = () => {
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{PROBLEM_CARD_2_TITLE}</Card.Title>
-                    <Card.Text>{PROBLEM_CARD_2_BODY}</Card.Text>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {PROBLEM_CARD_2_BODY}
+                      </ReactMarkdown>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -108,7 +120,11 @@ const EndogenAI = () => {
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{PROBLEM_CARD_3_TITLE}</Card.Title>
-                    <Card.Text>{PROBLEM_CARD_3_BODY}</Card.Text>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {PROBLEM_CARD_3_BODY}
+                      </ReactMarkdown>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -118,8 +134,10 @@ const EndogenAI = () => {
           {/* §3 What EndogenAI is */}
           <section className="endogenai-what">
             <h2>{WHAT_TITLE}</h2>
-            <p className="brand-relationship">{BRAND_RELATIONSHIP}</p>
-            <p>{WHAT_DESCRIPTION}</p>
+            <div className="brand-relationship">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{BRAND_RELATIONSHIP}</ReactMarkdown>
+            </div>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{WHAT_DESCRIPTION}</ReactMarkdown>
           </section>
 
           {/* §4 How it works (data-driven encoding chain) */}
@@ -131,7 +149,7 @@ const EndogenAI = () => {
                   <h3>
                     Step {step.step}: {step.title}
                   </h3>
-                  <p>{step.description}</p>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{step.description}</ReactMarkdown>
                   <a href={step.link}>Learn more</a>
                 </div>
               ))}
@@ -146,7 +164,9 @@ const EndogenAI = () => {
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{DOGMA_CARD_TITLE}</Card.Title>
-                    <Card.Text>{DOGMA_CARD_BODY}</Card.Text>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{DOGMA_CARD_BODY}</ReactMarkdown>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -154,7 +174,11 @@ const EndogenAI = () => {
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{DOGMAMCP_CARD_TITLE}</Card.Title>
-                    <Card.Text>{DOGMAMCP_CARD_BODY}</Card.Text>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {DOGMAMCP_CARD_BODY}
+                      </ReactMarkdown>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -169,7 +193,11 @@ const EndogenAI = () => {
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{RESEARCH_PAPER_1_TITLE}</Card.Title>
-                    <Card.Text>{RESEARCH_PAPER_1_SUMMARY}</Card.Text>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {RESEARCH_PAPER_1_SUMMARY}
+                      </ReactMarkdown>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -177,7 +205,11 @@ const EndogenAI = () => {
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{RESEARCH_PAPER_2_TITLE}</Card.Title>
-                    <Card.Text>{RESEARCH_PAPER_2_SUMMARY}</Card.Text>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {RESEARCH_PAPER_2_SUMMARY}
+                      </ReactMarkdown>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -185,7 +217,11 @@ const EndogenAI = () => {
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{RESEARCH_PAPER_3_TITLE}</Card.Title>
-                    <Card.Text>{RESEARCH_PAPER_3_SUMMARY}</Card.Text>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {RESEARCH_PAPER_3_SUMMARY}
+                      </ReactMarkdown>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
