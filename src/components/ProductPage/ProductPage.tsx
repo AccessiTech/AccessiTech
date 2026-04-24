@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Breadcrumb, Col, Row } from 'react-bootstrap';
 import Metadata from '../Metadata/Metadata';
 import GetStartedSection from '../GetStartedSection/GetStartedSection';
@@ -18,8 +18,8 @@ export interface ProductPageProps {
   examples?: ProductPageExample[];
   howToUse: string;
   relatedServices: string;
-  ctaLabel: string;
-  ctaHref: string;
+  ctaLabel?: string;
+  ctaHref?: string;
   pathname: string;
   metaTitle: string;
   metaDescription: string;
@@ -38,6 +38,9 @@ const ProductPage = ({
   included,
   examples,
   howToUse,
+  relatedServices,
+  ctaLabel,
+  ctaHref,
   pathname,
   metaTitle,
   metaDescription,
@@ -122,6 +125,33 @@ const ProductPage = ({
                       ))}
                     </section>
                   </>
+                )}
+                {relatedServices && (
+                  <>
+                    <hr />
+                    <section className="product-related">
+                      <h3>Related Services</h3>
+                      <p>{relatedServices}</p>
+                    </section>
+                  </>
+                )}
+                {ctaLabel && ctaHref && (
+                  <div className="product-cta">
+                    {ctaHref.startsWith('http') ? (
+                      <a
+                        href={ctaHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary"
+                      >
+                        {ctaLabel}
+                      </a>
+                    ) : (
+                      <Link to={ctaHref} className="btn btn-primary">
+                        {ctaLabel}
+                      </Link>
+                    )}
+                  </div>
                 )}
               </Col>
             </Row>

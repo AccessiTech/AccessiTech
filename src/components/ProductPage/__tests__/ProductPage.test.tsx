@@ -78,4 +78,26 @@ describe('ProductPage', () => {
     const { getByRole } = renderWithProviders(<ProductPage {...defaultProps} />);
     expect(getByRole('main', { name: 'Test Product' })).toBeInTheDocument();
   });
+
+  it('renders relatedServices text in the DOM', () => {
+    renderWithProviders(<ProductPage {...defaultProps} />);
+    expect(screen.getByText('Test related services.')).toBeInTheDocument();
+  });
+
+  it('renders CTA as an external link when ctaHref starts with https://', () => {
+    const props = { ...defaultProps, ctaLabel: 'Visit Site', ctaHref: 'https://example.com' };
+    renderWithProviders(<ProductPage {...props} />);
+    const link = screen.getByRole('link', { name: 'Visit Site' });
+    expect(link).toHaveAttribute('href', 'https://example.com');
+    expect(link).toHaveAttribute('target', '_blank');
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+  });
+
+  it('renders CTA as an internal link when ctaHref is a relative path', () => {
+    const props = { ...defaultProps, ctaLabel: 'Learn More', ctaHref: '/wcag' };
+    renderWithProviders(<ProductPage {...props} />);
+    const link = screen.getByRole('link', { name: 'Learn More' });
+    expect(link).toHaveAttribute('href', '/wcag');
+    expect(link).not.toHaveAttribute('target');
+  });
 });
