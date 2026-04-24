@@ -155,6 +155,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P5 — Scaffold FE Page
 
 **Agent**: AT - Frontend Developer
+**Depends on**: P4 Update Workplan committed (which itself depends on P3 user decisions locked)
 **Deliverables**:
 - `src/pages/Products/EndogenAI.tsx` — bespoke scaffold, correct section structure, placeholder copy, no ProductPage template
 - `EndogenAI.scss` created (if P3 decides SCSS; else Bootstrap-only)
@@ -169,6 +170,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P5 Review — Review Gate
 
 **Agent**: Review
+**Depends on**: P5 scaffold build clean
 **Gate**: P6 does not begin until APPROVED
 **Status**: ⬜ Not started
 
@@ -177,6 +179,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P6 — Biz Dev Review → FE Iteration
 
 **Agent**: Business Lead (review); AT - Frontend Developer (apply changes)
+**Depends on**: P5 Review APPROVED
 **Deliverables**: Structured feedback applied; committed
 **Gate**: P7 does not start until Biz Dev returns APPROVED
 **Status**: ⬜ Not started
@@ -186,6 +189,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P7 — User Manual Review
 
 **Agent**: Orchestrator (surface; wait)
+**Depends on**: P6 Biz Dev APPROVED
 **Gate**: P8 does not start until user green-lights
 **Status**: ⬜ Not started
 
@@ -194,6 +198,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P8 — Tests Pass → Commit to Branch
 
 **Agent**: AT - Frontend Developer + AT - QA Tester
+**Depends on**: P7 user green-light
 **Deliverables**: All tests pass (444+); committed to branch
 **Gate**: P9 does not start until commit SHA confirmed
 **Status**: ⬜ Not started
@@ -203,6 +208,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P9 — Comms: Draft Copy as Markdown String Constants
 
 **Agent**: Comms Strategist
+**Depends on**: P8 commit SHA confirmed
 **Deliverables**: All copy as named Markdown string constants — inline-linked, external validation woven in (both inline + dedicated section), brand-voice aligned
 **Gate**: P10 does not start until draft committed
 **Status**: ⬜ Not started
@@ -212,6 +218,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P10 — FE: Markdown Rendering Integration
 
 **Agent**: AT - Frontend Developer
+**Depends on**: P9 Comms draft committed
 **Approach**: `ReactMarkdown` + `remarkGfm` (installed; same pattern as BlogEntry.tsx)
 **Deliverables**: Page renders all Markdown; TypeScript 0 errors; tests updated
 **Gate**: P11 does not start until build clean
@@ -221,6 +228,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 
 ### Phase P11 — User Personal Review
 
+**Depends on**: P10 build clean
 **Gate**: Repeat P9–P11 as needed until user green-lights
 **Status**: ⬜ Not started
 
@@ -229,6 +237,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P12 — Cross Review: Comms + Biz Dev (content quality)
 
 **Agent**: Comms Strategist + Business Lead
+**Depends on**: P11 user green-light
 **Deliverables**: Both return APPROVED or structured REQUEST CHANGES
 **Gate**: P13 does not start until both APPROVED
 **Status**: ⬜ Not started
@@ -238,6 +247,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P13 — Cross Review: FE + QA + a11y
 
 **Agent**: AT - Frontend Developer + AT - QA Tester
+**Depends on**: P12 both APPROVED
 **Deliverables**: WCAG 2.1 AA audit; responsive check; 0 lint errors; all tests green
 **Gate**: P14 does not start until all three APPROVED
 **Status**: ⬜ Not started
@@ -247,6 +257,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P14 — Documentation + Test Suite
 
 **Agent**: AT - Frontend Developer + AT - QA Tester
+**Depends on**: P13 all three APPROVED
 **Deliverables**:
 - Vitest unit tests: section rendering, string constants, links, a11y attributes
 - Integration tests: route-level (`/products/endogenai` returns expected content)
@@ -261,6 +272,7 @@ These 8 decisions are gating P5+ but do NOT block P1/P2:
 ### Phase P15 — Final Pre-Commit Review → Push to PR
 
 **Agent**: Review (final); GitHub Agent (push)
+**Depends on**: P14 all tests committed and passing
 **Deliverables**: Review APPROVED; PR #147 updated
 **Gate**: Session closes when PR URL confirmed
 **Status**: ⬜ Not started
