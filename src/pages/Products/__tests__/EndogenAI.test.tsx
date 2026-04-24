@@ -1,38 +1,45 @@
-import { vi } from 'vitest';
-vi.mock('../../../components/ProductPage/ProductPage', () => ({
-  __esModule: true,
-  default: ({
-    title,
-    parentCrumb,
-  }: {
-    title: string;
-    parentCrumb?: { label: string; href: string };
-  }) => (
-    <div data-testid="product-page">
-      {title}
-      {parentCrumb && <span data-testid="parent-crumb">{parentCrumb.label}</span>}
-    </div>
-  ),
-}));
-
 import { screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
-import EndogenAI, { ENDOGENAI_TITLE } from '../EndogenAI';
+import EndogenAI, { HERO_TAGLINE, PROBLEM_INTRO, WHAT_TITLE } from '../EndogenAI';
 
 describe('EndogenAI Page', () => {
-  it('renders the ProductPage component', () => {
+  it('renders the page with all 7 sections', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
-    expect(screen.getByTestId('product-page')).toBeInTheDocument();
+
+    // Check for main heading
+    expect(screen.getByRole('heading', { level: 1, name: 'EndogenAI' })).toBeInTheDocument();
+
+    // Check for section headings
+    expect(screen.getByRole('heading', { level: 2, name: 'The Problem' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: WHAT_TITLE })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'How it works' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'dogma & DogmaMCP' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'What the research says' })
+    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Get Started' })).toBeInTheDocument();
   });
 
-  it('passes the correct title', () => {
+  it('renders the hero section with tagline', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
-    expect(screen.getByText(ENDOGENAI_TITLE)).toBeInTheDocument();
+    expect(screen.getByText(HERO_TAGLINE)).toBeInTheDocument();
   });
 
-  it('passes Products as the parent breadcrumb', () => {
+  it('renders the problem section with intro and cards', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
-    expect(screen.getByTestId('parent-crumb')).toHaveTextContent('Products');
+    expect(screen.getByText(PROBLEM_INTRO)).toBeInTheDocument();
+  });
+
+  it('renders the breadcrumb navigation', () => {
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+    expect(screen.getByText('Home')).toBeInTheDocument();
+    expect(screen.getByText('Products')).toBeInTheDocument();
+    expect(screen.getByText('EndogenAI')).toBeInTheDocument();
+  });
+
+  it('renders the GitHub CTA button', () => {
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+    expect(screen.getByRole('link', { name: /Explore on GitHub/i })).toBeInTheDocument();
   });
 });
