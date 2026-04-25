@@ -527,7 +527,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 5. Modals for all cards: Add Modal + SHORT_BODY/MODAL_BODY pattern to §4 (2 cards), §5 (7 cards), §6 (8 cards)
 6. TypeScript 0 errors; tests updated
 **Gate**: P11T Review does not start until build clean + tests pass
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — committed at 54a3bf3 (452/452 tests passing)
 
 #### P11S Review — Review Gate
 **Agent**: Review
