@@ -550,7 +550,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Depends on**: P11T QA complete + Step 3/5 anchor fix applied
 **Deliverables**: APPROVED or REQUEST CHANGES
 **Gate**: P12 does not start until APPROVED
-**Status**: ⏳ In progress
+**Status**: ✅ Complete — APPROVED (b699f9c — all 10 criteria pass)
 
 ---
 
