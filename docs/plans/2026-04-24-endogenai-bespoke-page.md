@@ -474,6 +474,82 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Depends on**: P11O QA complete
 **Deliverables**: APPROVED or REQUEST CHANGES
 **Gate**: P12 does not start until APPROVED
+**Status**: ✅ Complete — APPROVED with 1 accessibility fix applied (aria-label on "Learn more" buttons), committed at cdb7613
+
+---
+
+#### P11Q — Document Fourth-Round Decisions + Update Workplan
+**Agent**: Orchestrator (direct — coordination)
+**Depends on**: P11P Final Review APPROVED
+**Deliverables**: 5 new feedback items documented with implementation strategy; P11Q-V phases defined; workplan committed
+**Gate**: P11R does not start until committed
+**Status**: ✅ Complete — documented in scratchpad (commit TBD)
+
+#### User Feedback Round 4 Summary (5 items)
+1. **"Our Research" links 404**: Internal research links point to non-existent URLs; scout proper links in dogma repo
+2. **"How It Works" cards**: undo 2-col grid → full-width single-column stack; undo step number color styling
+3. **"How It Works" links**: GitHub links should point to specific doc sections (e.g., `#manifesto`, `#agents-md`) not just repo root
+4. **"What the Research Says" alignment**: Full-bleed bg correct; remove inner 8-span 2-offset wrapper → match full-width alignment of other sections
+5. **Extend modal pattern**: Apply "Learn more" modal pattern to: §4 dogma/DogmaMCP (2 cards), §5 Encoding (7 cards), §6 Research (8 cards)
+
+#### P11Q Decisions Locked
+| Item | Decision |
+|---|---|
+| Research links 404 | Scout dogma repo for proper URLs to each internal research doc (4 items); update RESEARCH_INTERNAL_ITEMS links |
+| §5 Encoding full-width | Remove `Col md={6}` grid; render cards as single-column full-width stack |
+| §5 Step number styling | Remove `.step-number` color styling (blue); use default text color |
+| §5 GitHub link targets | Update each ENCODING_STEPS link to target specific README sections (`#foundational-axioms`, `#operational-constraints`, etc.) |
+| §6 Research alignment | Remove `Col xs={12} sm={{span:8, offset:2}}` wrapper; use full-width container matching other sections |
+| Modal pattern extension | Add SHORT_BODY/MODAL_BODY pairs to: dogma/DogmaMCP cards (2), Encoding cards (7), Research cards (8) = 17 new SHORT_BODY constants |
+
+#### P11R — Comms: Scout Research Links + Draft SHORT_BODY for All Remaining Cards
+**Agent**: Comms Strategist + Research Scout
+**Depends on**: P11Q decisions documented
+**Deliverables**:
+- Scout dogma repo for proper URLs (4 internal research items): verify each doc exists at `https://github.com/EndogenAI/dogma/blob/main/docs/research/[filename].md`
+- Draft SHORT_BODY (1-2 sentences, ≤55 words) for: dogma card, DogmaMCP card, 7 Encoding cards, 8 Research cards (17 new SHORT_BODY constants)
+- Identify proper GitHub section anchors for 7 Encoding step links
+**Gate**: P11S does not start until Comms returns verified links + SHORT_BODY drafts
+**Status**: ⬜ Not started
+
+#### P11R Review — Review Gate
+**Agent**: Review
+**Status**: ⬜ Not started
+
+#### P11S — FE: Implement All 5 Feedback Fixes
+**Agent**: AT - Frontend Developer
+**Depends on**: P11R Comms draft committed
+**Deliverables**:
+1. Research links: Update RESEARCH_INTERNAL_ITEMS with correct URLs
+2. §5 Encoding: Remove Col md={6} grid → single-column full-width; remove `.step-number` color styling
+3. §5 Encoding links: Update to specific section anchors (e.g., `https://github.com/EndogenAI/dogma#manifesto-md`)
+4. §6 Research: Remove inner Col xs=12 sm={span:8,offset:2} wrapper → full-width like other sections
+5. Modals for all cards: Add Modal + SHORT_BODY/MODAL_BODY pattern to §4 (2 cards), §5 (7 cards), §6 (8 cards)
+6. TypeScript 0 errors; tests updated
+**Gate**: P11T Review does not start until build clean + tests pass
+**Status**: ⬜ Not started
+
+#### P11S Review — Review Gate
+**Agent**: Review
+**Status**: ⬜ Not started
+
+#### P11T — QA: Validate All Fourth-Round Changes
+**Agent**: AT - QA Tester
+**Depends on**: P11S FE implementation committed
+**Deliverables**: Validate all 5 feedback items:
+1. Internal research links: all 4 links resolve (no 404s)
+2. §5 Encoding: cards render full-width single-column; step numbers use default text color
+3. §5 Encoding links: all 7 links point to specific README sections
+4. §6 Research: content full-width, not offset/narrowed
+5. Modals: all 17 cards (§4: 2, §5: 7, §6: 8) have "Learn more" button → Modal; SHORT_BODY in card, MODAL_BODY in modal
+**Gate**: P11U does not start until QA returns validation
+**Status**: ⬜ Not started
+
+#### P11U — Final Review Gate for P11Q-T
+**Agent**: Review
+**Depends on**: P11T QA complete
+**Deliverables**: APPROVED or REQUEST CHANGES
+**Gate**: P12 does not start until APPROVED
 **Status**: ⬜ Not started
 
 ---
