@@ -30,12 +30,17 @@
     }
   }
 
-  // §3 What EndogenAI is
-  .endogenai-what {
+  // §3.5 Why your AI needs a Harness
+  .endogenai-harness {
     margin-bottom: 3rem;
 
     h2 {
       margin-bottom: 1.5rem;
+    }
+
+    .harness-cards {
+      margin-top: 2rem;
+      row-gap: 1rem;
     }
   }
 
@@ -95,6 +100,11 @@
 
     h2 {
       margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
 
     .research-papers {

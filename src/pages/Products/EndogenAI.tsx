@@ -24,13 +24,18 @@ import {
   DOGMA_CARD_BODY,
   DOGMAMCP_CARD_TITLE,
   DOGMAMCP_CARD_BODY,
-  RESEARCH_TITLE,
-  RESEARCH_PAPER_1_TITLE,
-  RESEARCH_PAPER_1_SUMMARY,
-  RESEARCH_PAPER_2_TITLE,
-  RESEARCH_PAPER_2_SUMMARY,
-  RESEARCH_PAPER_3_TITLE,
-  RESEARCH_PAPER_3_SUMMARY,
+  HARNESS_TITLE,
+  HARNESS_INTRO,
+  HARNESS_LOCK_IN_CARD_TITLE,
+  HARNESS_LOCK_IN_CARD_BODY,
+  HARNESS_OPEN_CARD_TITLE,
+  HARNESS_OPEN_CARD_BODY,
+  HARNESS_DOGMAMCP_CARD_TITLE,
+  HARNESS_DOGMAMCP_CARD_BODY,
+  RESEARCH_INTERNAL_HEADER,
+  RESEARCH_INTERNAL_FINDINGS,
+  RESEARCH_EXTERNAL_HEADER,
+  RESEARCH_EXTERNAL_FINDINGS,
   CTA_TITLE,
   CTA_GITHUB_LABEL,
   CTA_GITHUB_HREF,
@@ -88,7 +93,7 @@ const EndogenAI = () => {
           </section>
 
           {/* §2 The Problem */}
-          <section className="endogenai-problem">
+          <section className="endogenai-problem text-start">
             <h2>The Problem</h2>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{PROBLEM_INTRO}</ReactMarkdown>
             <Row className="problem-cards">
@@ -132,7 +137,7 @@ const EndogenAI = () => {
           </section>
 
           {/* §3 What EndogenAI is */}
-          <section className="endogenai-what">
+          <section className="endogenai-what text-start">
             <h2>{WHAT_TITLE}</h2>
             <div className="brand-relationship">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{BRAND_RELATIONSHIP}</ReactMarkdown>
@@ -140,8 +145,52 @@ const EndogenAI = () => {
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{WHAT_DESCRIPTION}</ReactMarkdown>
           </section>
 
+          {/* §3.5 Why your AI needs a Harness */}
+          <section className="endogenai-harness text-start">
+            <h2>{HARNESS_TITLE}</h2>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{HARNESS_INTRO}</ReactMarkdown>
+            <Row className="harness-cards">
+              <Col xs={12} md={4}>
+                <Card className="mb-3">
+                  <Card.Body>
+                    <Card.Title>{HARNESS_LOCK_IN_CARD_TITLE}</Card.Title>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {HARNESS_LOCK_IN_CARD_BODY}
+                      </ReactMarkdown>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col xs={12} md={4}>
+                <Card className="mb-3">
+                  <Card.Body>
+                    <Card.Title>{HARNESS_OPEN_CARD_TITLE}</Card.Title>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {HARNESS_OPEN_CARD_BODY}
+                      </ReactMarkdown>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col xs={12} md={4}>
+                <Card className="mb-3">
+                  <Card.Body>
+                    <Card.Title>{HARNESS_DOGMAMCP_CARD_TITLE}</Card.Title>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {HARNESS_DOGMAMCP_CARD_BODY}
+                      </ReactMarkdown>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </section>
+
           {/* §4 How it works (data-driven encoding chain) */}
-          <section className="endogenai-how">
+          <section className="endogenai-how text-start">
             <h2>{HOW_TITLE}</h2>
             <div className="encoding-steps">
               {ENCODING_STEPS.map(step => (
@@ -157,7 +206,7 @@ const EndogenAI = () => {
           </section>
 
           {/* §5 dogma & DogmaMCP */}
-          <section className="endogenai-products">
+          <section className="endogenai-products text-start">
             <h2>dogma & DogmaMCP</h2>
             <Row className="products-cards">
               <Col xs={12} md={6}>
@@ -186,50 +235,24 @@ const EndogenAI = () => {
           </section>
 
           {/* §6 What the research says */}
-          <section className="endogenai-research">
-            <h2>{RESEARCH_TITLE}</h2>
-            <Row className="research-papers">
-              <Col xs={12} md={4}>
-                <Card className="mb-3">
-                  <Card.Body>
-                    <Card.Title>{RESEARCH_PAPER_1_TITLE}</Card.Title>
-                    <Card.Text>
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {RESEARCH_PAPER_1_SUMMARY}
-                      </ReactMarkdown>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col xs={12} md={4}>
-                <Card className="mb-3">
-                  <Card.Body>
-                    <Card.Title>{RESEARCH_PAPER_2_TITLE}</Card.Title>
-                    <Card.Text>
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {RESEARCH_PAPER_2_SUMMARY}
-                      </ReactMarkdown>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col xs={12} md={4}>
-                <Card className="mb-3">
-                  <Card.Body>
-                    <Card.Title>{RESEARCH_PAPER_3_TITLE}</Card.Title>
-                    <Card.Text>
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {RESEARCH_PAPER_3_SUMMARY}
-                      </ReactMarkdown>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
+          <section className="endogenai-research text-start">
+            <h2>What the Research Says</h2>
+            <div className="research-internal">
+              <h3>{RESEARCH_INTERNAL_HEADER}</h3>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {RESEARCH_INTERNAL_FINDINGS}
+              </ReactMarkdown>
+            </div>
+            <div className="research-external">
+              <h3>{RESEARCH_EXTERNAL_HEADER}</h3>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {RESEARCH_EXTERNAL_FINDINGS}
+              </ReactMarkdown>
+            </div>
           </section>
 
           {/* §7 CTA */}
-          <section className="endogenai-cta">
+          <section className="endogenai-cta text-start">
             <h2>{CTA_TITLE}</h2>
             <Button
               href={CTA_GITHUB_HREF}

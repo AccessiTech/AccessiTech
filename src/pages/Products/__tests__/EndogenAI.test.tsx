@@ -5,7 +5,7 @@ import EndogenAI from '../EndogenAI';
 import { WHAT_TITLE } from '../EndogenAI.constants';
 
 describe('EndogenAI Page', () => {
-  it('renders the page with all 7 sections', () => {
+  it('renders the page with all 8 sections', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
 
     // Check for main heading
@@ -14,6 +14,9 @@ describe('EndogenAI Page', () => {
     // Check for section headings
     expect(screen.getByRole('heading', { level: 2, name: 'The Problem' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: WHAT_TITLE })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'Why your AI needs a Harness' })
+    ).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'How It Works' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'dogma & DogmaMCP' })).toBeInTheDocument();
     expect(
@@ -36,6 +39,27 @@ describe('EndogenAI Page', () => {
     expect(screen.getByText(/See the full analysis/i)).toBeInTheDocument();
     expect(screen.getByText(/Platform lock-in research/i)).toBeInTheDocument();
     expect(screen.getByText(/Full threat model analysis/i)).toBeInTheDocument();
+  });
+
+  it('renders the harness section with heading and card titles', () => {
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'Why your AI needs a Harness' })
+    ).toBeInTheDocument();
+    expect(screen.getByText('The Lock-In Problem')).toBeInTheDocument();
+    expect(screen.getByText('The Open Harness Solution')).toBeInTheDocument();
+    expect(screen.getByText('DogmaMCP: Governance-First Harness')).toBeInTheDocument();
+  });
+
+  it('renders the research section with subsection headings', () => {
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'What the Research Says' })
+    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 3, name: 'Our Research' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 3, name: 'External Validation' })
+    ).toBeInTheDocument();
   });
 
   it('renders the breadcrumb navigation', () => {

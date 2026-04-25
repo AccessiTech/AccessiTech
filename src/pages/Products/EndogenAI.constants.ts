@@ -15,7 +15,7 @@
 export const HERO_TAGLINE = `The accountability gap is growing. AI systems are built without genuine consideration for the people who depend on them. **EndogenAI fixes that** — an open-source methodology for embedding governance into every layer of your AI workflows.`;
 
 // §2 The Problem
-export const PROBLEM_INTRO = `Recent governance reports expose the same structural risks: AI systems launched without accountability mechanisms, platform dependencies that trap organizations, and decision-making processes that exclude the people most affected. Here's what the research shows:`;
+export const PROBLEM_INTRO = `Recent governance reports expose the same structural risks: AI systems launched without accountability mechanisms, platform dependencies that trap organizations, and decision-making processes that exclude the people most affected. A less visible risk runs underneath all of them: most AI teams don't realize their agent harness — the scaffolding between their LLM and their tools, data, and memory — is the stickiest lock-in vector of all. Here's what the research shows:`;
 
 export const PROBLEM_CARD_1_TITLE = `UK CMA: AI Agent Autonomy Failures`;
 export const PROBLEM_CARD_1_BODY = `The UK Competition & Markets Authority's 2026 watchdog report documents systematic autonomy failures in AI agent systems: manipulation, unintended escalation, and loss of human control. Organizations deploy agents without genuine oversight mechanisms, then face cascading failures. [See the full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md#) — these aren't theoretical risks. They're happening now.`;
@@ -46,6 +46,20 @@ export const BRAND_RELATIONSHIP = `AccessiTech built EndogenAI as the governance
 
 // Export as WHAT_DESCRIPTION for component compatibility
 export const WHAT_DESCRIPTION = WHAT_ENDOGENAI_INTRO;
+
+// §3.5 Why your AI needs a Harness
+export const HARNESS_TITLE = `Why your AI needs a Harness`;
+
+export const HARNESS_INTRO = `An AI harness is the scaffolding layer between your LLM and your tools, data, and workflows — it manages memory, routes context, enforces access control, and coordinates agent behavior across sessions. Memory is not a plugin on top of a harness; as LangChain's Sarah Wooders put it, "asking to plug memory into an agent harness is like asking to plug driving into a car." They are the same system. That's why proprietary harnesses create the most durable form of AI lock-in: when a vendor controls your harness, they control your accumulated organizational memory — learned preferences, session context, behavioral constraints — and you cannot take that memory with you. [Source: LangChain — Your Harness, Your Memory](https://www.langchain.com/blog/your-harness-your-memory)`;
+
+export const HARNESS_LOCK_IN_CARD_TITLE = `The Lock-In Problem`;
+export const HARNESS_LOCK_IN_CARD_BODY = `When Harrison Chase deleted and recreated his email assistant, it lost everything — months of learned preferences, interaction patterns, and behavioral refinements. That's harness-mediated memory loss in practice. Platforms like Claude Managed Agents and the OpenAI Assistants API store learned context server-side with no export path: delete the agent, lose the memory. API lock-in is recoverable — you can retrain on your own data. Memory lock-in is not recoverable without a deliberate extraction strategy built before dependency accrues. Most teams don't build that strategy until after the loss. [Full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md)`;
+
+export const HARNESS_OPEN_CARD_TITLE = `The Open Harness Solution`;
+export const HARNESS_OPEN_CARD_BODY = `An open harness meets four criteria: model-agnostic (any LLM, not locked to one provider), standards-based (MCP, open agent formats), user-owned memory (your files, your git history — not a vendor's database), and self-hostable (no external API dependencies at runtime). DogmaMCP meets all four — and adds a governance-first fifth: constraints encoded in MANIFESTO.md and AGENTS.md are durable across sessions rather than left to prompt-level negotiation. When you restart a session, your values travel with you. [ADR-011: DogmaMCP as Open Harness Architecture](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md)`;
+
+export const HARNESS_DOGMAMCP_CARD_TITLE = `DogmaMCP: Governance-First Harness`;
+export const HARNESS_DOGMAMCP_CARD_BODY = `Most open harness options optimize for memory first — Letta integrates mem0, LangGraph manages stateful graphs, LangSmith moves traces server-side. None encode governance as substrate constraints. DogmaMCP takes a different architectural position: values defined in MANIFESTO.md and AGENTS.md travel with every session as durable enforcement — not prompt instructions that reset between conversations. It runs entirely local (Apache 2.0, no vendor dependencies), integrates with VS Code Copilot and Claude Desktop via the MCP standard, and exposes governance tools — scratchpad state checks, agent file validators, synthesis auditors — directly to your AI agents. Governance is not an add-on layer; it is the harness architecture. [Validation research](https://github.com/EndogenAI/dogma/blob/main/docs/research/dogmamcp-open-harness-validation.md)`;
 
 // §4 How It Works (Encoding Chain)
 export const HOW_TITLE = `How It Works`;
@@ -124,20 +138,36 @@ export const DOGMAMCP_CARD_TITLE = `DogmaMCP`;
 export const DOGMAMCP_CARD_BODY = `A Model Context Protocol (MCP) server that exposes dogma governance tools to your AI agents and development workflows — validators for agent files, research syntheses, scratchpad state checks, agent scaffolding templates, and more. DogmaMCP runs locally (no external API calls), integrates with VS Code Copilot and Claude Desktop, and lets your agents programmatically enforce governance policies. It's the bridge between the encoded substrate and your AI workflow.`;
 
 // §6 Research Section
-export const RESEARCH_HEADER = `What the Research Says`;
+export const RESEARCH_INTERNAL_HEADER = `Our Research`;
+
+export const RESEARCH_INTERNAL_FINDINGS = `EndogenAI is grounded in peer-reviewed research and industry governance reports:
+
+**[Endogenic Design Patterns for AI Systems](https://github.com/EndogenAI/dogma/blob/main/docs/research/endogenic-design-paper.md)** — Biological scaffolding metaphors applied to AI system design. Organizations that encode knowledge persistently show 40–60% reduction in incident recovery time compared to ad-hoc approaches.
+
+**[Values Encoding Fidelity and Agent Fleet Maturity](https://github.com/EndogenAI/dogma/blob/main/docs/research/values-encoding.md)** — How to measure whether your governance actually works. Cross-layer validation, encoding fidelity tests, and the L0–L3 maturity model from tacit knowledge to organizational policy.
+
+**[Bubble Clusters and Substrate Fragmentation](https://github.com/EndogenAI/dogma/blob/main/docs/research/bubble-clusters-substrate.md)** — Why AI workflows built with disconnected agents fail at governance boundaries. Unified substrate + version control prevents "bubble" formation where agents silently violate constraints.
+
+**[UK CMA AI Autonomy Report](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md)** — Watchdog findings on agent autonomy failures validate EndogenAI's Minimal-Posture principle: limit tool scope, require explicit phase gates, and treat every escalation as a human decision boundary.`;
+
+export const RESEARCH_EXTERNAL_HEADER = `External Validation`;
+
+export const RESEARCH_EXTERNAL_FINDINGS = `Independent research and industry analysis corroborating the open harness approach:
+
+**[LangChain: Your Harness, Your Memory](https://www.langchain.com/blog/your-harness-your-memory)** — Harness infrastructure is permanent; memory is the most durable lock-in vector. Organizations that don't own their harness cede accumulated behavioral context to the vendor — context that cannot be reconstructed without deliberate export strategies built before dependency accrues.
+
+**[Datadog: Harness-First Agents](https://www.datadoghq.com/blog/ai/harness-first-agents/)** — Harness-first architecture framing from infrastructure observability. Treating the harness as primary infrastructure (not a convenience layer) is the precondition for reliable, auditable agentic systems at production scale.
+
+**[OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)** — Seven of the ten highest-severity risks for LLM applications apply directly to agentic workflows: prompt injection, excessive agency, sensitive data leakage, and more. Harness-level governance — not application-level patching — is the appropriate mitigation layer for all seven.
+
+**[Anthropic MCP Standard Adoption](https://www.anthropic.com/news/model-context-protocol)** — MCP is rapidly becoming the cross-vendor standard for tool-calling and harness integration (Claude Desktop, VS Code, Cursor, and 3rd-party servers). Betting on MCP for open harness architecture is validated by broad industry adoption — it is the emerging interoperability contract.`;
+
+// Deprecated aliases — kept for backward compat
+export const RESEARCH_HEADER = RESEARCH_INTERNAL_HEADER;
+export const RESEARCH_FINDINGS = RESEARCH_INTERNAL_FINDINGS;
 
 // Export as RESEARCH_TITLE for component compatibility
 export const RESEARCH_TITLE = RESEARCH_HEADER;
-
-export const RESEARCH_FINDINGS = `EndogenAI is grounded in peer-reviewed research and industry governance reports:
-
-**[Endogenic Design Patterns for AI Systems](https://github.com/EndogenAI/dogma/blob/main/docs/research/endogenic-design-paper.md)** — Biological scaffolding metaphors (endogenous processes, morphogenesis) applied to AI system design. Organizations that encode knowledge persistently (scripts, governed agents, audit logs) show 40–60% reduction in incident recovery time compared to ad-hoc approaches.
-
-**[Values Encoding Fidelity and Agent Fleet Maturity](https://github.com/EndogenAI/dogma/blob/main/docs/research/values-encoding.md)** — How to measure whether your governance actually works. Cross-layer validation, encoding fidelity tests, and the L0–L3 maturity model (from tacit knowledge to organizational policy). Most organizations get stuck at L1 (individual shortcuts, not shared); the encoding ladder helps you move from L1 → L2 → L3.
-
-**[Bubble Clusters and Substrate Fragmentation](https://github.com/EndogenAI/dogma/blob/main/docs/research/bubble-clusters-substrate.md)** — Why AI workflows built with multiple disconnected agents fail. When agents don't read the same governance constraints (different AGENTS.md versions, inconsistent tool restrictions, fragmented handoff protocols), the system develops "bubbles" that violate governance at boundaries. Unified substrate + version control prevents this.
-
-**[UK CMA AI Autonomy Report](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md)** — Recent watchdog findings on agent autonomy failures validate EndogenAI's Minimal-Posture principle: limit tool scope, require explicit phase gates, and treat every escalation as a human decision boundary.`;
 
 // Research paper cards (for component compatibility)
 export const RESEARCH_PAPER_1_TITLE = `endogenic-design-paper.md`;
