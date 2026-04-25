@@ -31,9 +31,11 @@ import {
   WHAT_OSS_BODY,
   BRAND_RELATIONSHIP,
   DOGMA_CARD_TITLE,
-  DOGMA_CARD_BODY,
+  DOGMA_CARD_SHORT_BODY,
+  DOGMA_CARD_MODAL_BODY,
   DOGMAMCP_CARD_TITLE,
-  DOGMAMCP_CARD_BODY,
+  DOGMAMCP_CARD_SHORT_BODY,
+  DOGMAMCP_CARD_MODAL_BODY,
   HOW_TITLE,
   ENCODING_STEPS,
   RESEARCH_INTERNAL_HEADER,
@@ -56,6 +58,12 @@ const EndogenAI = () => {
 
   // Problem card modal state
   const [activeModal, setActiveModal] = useState<number | null>(null);
+  // Dogma/DogmaMCP modal state
+  const [activeDogmaModal, setActiveDogmaModal] = useState<number | null>(null);
+  // Encoding steps modal state
+  const [activeEncodingModal, setActiveEncodingModal] = useState<number | null>(null);
+  // Research cards modal state
+  const [activeResearchModal, setActiveResearchModal] = useState<number | null>(null);
 
   const problemCards = [
     {
@@ -214,103 +222,264 @@ const EndogenAI = () => {
             <h2>dogma & DogmaMCP</h2>
             <Row className="products-cards">
               <Col xs={12} md={6}>
-                <Card className="mb-3">
-                  <Card.Body>
+                <Card className="mb-3 h-100">
+                  <Card.Body className="d-flex flex-column">
                     <Card.Title>{DOGMA_CARD_TITLE}</Card.Title>
-                    <Card.Text>
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{DOGMA_CARD_BODY}</ReactMarkdown>
-                    </Card.Text>
+                    <div className="card-short-body flex-grow-1">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {DOGMA_CARD_SHORT_BODY}
+                      </ReactMarkdown>
+                    </div>
+                    <Button
+                      variant="outline-secondary"
+                      size="sm"
+                      className="mt-2 align-self-start"
+                      onClick={() => setActiveDogmaModal(0)}
+                      aria-label={`Learn more about ${DOGMA_CARD_TITLE}`}
+                    >
+                      Learn more
+                    </Button>
                   </Card.Body>
                 </Card>
               </Col>
               <Col xs={12} md={6}>
-                <Card className="mb-3">
-                  <Card.Body>
+                <Card className="mb-3 h-100">
+                  <Card.Body className="d-flex flex-column">
                     <Card.Title>{DOGMAMCP_CARD_TITLE}</Card.Title>
-                    <Card.Text>
+                    <div className="card-short-body flex-grow-1">
                       <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {DOGMAMCP_CARD_BODY}
+                        {DOGMAMCP_CARD_SHORT_BODY}
                       </ReactMarkdown>
-                    </Card.Text>
+                    </div>
+                    <Button
+                      variant="outline-secondary"
+                      size="sm"
+                      className="mt-2 align-self-start"
+                      onClick={() => setActiveDogmaModal(1)}
+                      aria-label={`Learn more about ${DOGMAMCP_CARD_TITLE}`}
+                    >
+                      Learn more
+                    </Button>
                   </Card.Body>
                 </Card>
               </Col>
             </Row>
           </section>
+
+          {/* Dogma/DogmaMCP modals */}
+          <Modal
+            show={activeDogmaModal === 0}
+            onHide={() => setActiveDogmaModal(null)}
+            size="lg"
+            aria-labelledby="dogma-modal-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="dogma-modal-title">{DOGMA_CARD_TITLE}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{DOGMA_CARD_MODAL_BODY}</ReactMarkdown>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={() => setActiveDogmaModal(null)}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
+          <Modal
+            show={activeDogmaModal === 1}
+            onHide={() => setActiveDogmaModal(null)}
+            size="lg"
+            aria-labelledby="dogmamcp-modal-title"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="dogmamcp-modal-title">{DOGMAMCP_CARD_TITLE}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{DOGMAMCP_CARD_MODAL_BODY}</ReactMarkdown>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={() => setActiveDogmaModal(null)}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
 
           {/* §5 How it works (data-driven encoding chain) */}
           <section className="endogenai-how text-start">
             <h2>{HOW_TITLE}</h2>
             <Row className="encoding-cards">
               {ENCODING_STEPS.map(step => (
-                <Col key={step.step} xs={12} md={6} className="mb-3">
-                  <Card className="h-100">
-                    <Card.Body>
-                      <Card.Title as="h3">
-                        <span className="step-number">{step.step}.</span> {step.title}
-                      </Card.Title>
-                      <p>{step.description}</p>
-                      <a
-                        href={step.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="card-link"
-                      >
-                        View on GitHub
-                      </a>
-                    </Card.Body>
-                  </Card>
-                </Col>
+                <Card key={step.step} className="mb-3">
+                  <Card.Body className="d-flex flex-column">
+                    <Card.Title as="h3">
+                      <span className="step-number">{step.step}.</span> {step.title}
+                    </Card.Title>
+                    <div className="card-short-body flex-grow-1">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{step.shortBody}</ReactMarkdown>
+                    </div>
+                    <Button
+                      variant="outline-secondary"
+                      size="sm"
+                      className="mt-2 align-self-start"
+                      onClick={() => setActiveEncodingModal(step.step - 1)}
+                      aria-label={`Learn more about ${step.title}`}
+                    >
+                      Learn more
+                    </Button>
+                  </Card.Body>
+                </Card>
               ))}
             </Row>
           </section>
 
+          {/* Encoding steps modals */}
+          {ENCODING_STEPS.map(step => (
+            <Modal
+              key={step.step}
+              show={activeEncodingModal === step.step - 1}
+              onHide={() => setActiveEncodingModal(null)}
+              size="lg"
+              aria-labelledby={`encoding-modal-title-${step.step}`}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title id={`encoding-modal-title-${step.step}`}>
+                  {step.step}. {step.title}
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>{step.description}</p>
+                <a href={step.link} target="_blank" rel="noopener noreferrer" className="card-link">
+                  View on GitHub ↗
+                </a>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setActiveEncodingModal(null)}>
+                  Close
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          ))}
+
           {/* §6 What the research says */}
           <div className="research-section">
             <section className="endogenai-research text-start">
-              <Col xs={12} sm={{ span: 8, offset: 2 }}>
-                <h2>What the Research Says</h2>
-                <div className="research-internal">
-                  <h3>{RESEARCH_INTERNAL_HEADER}</h3>
-                  <Row className="research-cards mt-3">
-                    {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
-                      <Col key={index} xs={12} md={6} className="mb-3">
-                        <Card className="h-100 research-card">
-                          <Card.Body>
-                            <Card.Title as="h4">
-                              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                {item.title}
-                              </a>
-                            </Card.Title>
-                            <p className="mb-0">{item.body}</p>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                    ))}
-                  </Row>
-                </div>
-                <div className="research-external mt-4">
-                  <h3>{RESEARCH_EXTERNAL_HEADER}</h3>
-                  <Row className="research-cards mt-3">
-                    {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
-                      <Col key={index} xs={12} md={6} className="mb-3">
-                        <Card className="h-100 research-card">
-                          <Card.Body>
-                            <Card.Title as="h4">
-                              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                {item.title}
-                              </a>
-                            </Card.Title>
-                            <p className="mb-0">{item.body}</p>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                    ))}
-                  </Row>
-                </div>
-              </Col>
+              <h2>What the Research Says</h2>
+              <div className="research-internal">
+                <h3>{RESEARCH_INTERNAL_HEADER}</h3>
+                <Row className="research-cards mt-3">
+                  {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
+                    <Col key={index} xs={12} md={6} className="mb-3">
+                      <Card className="h-100 research-card">
+                        <Card.Body className="d-flex flex-column">
+                          <Card.Title as="h4">{item.title}</Card.Title>
+                          <div className="card-short-body flex-grow-1">
+                            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                              {item.shortBody}
+                            </ReactMarkdown>
+                          </div>
+                          <Button
+                            variant="outline-light"
+                            size="sm"
+                            className="mt-2 align-self-start"
+                            onClick={() => setActiveResearchModal(index)}
+                            aria-label={`Learn more about ${item.title}`}
+                          >
+                            Learn more
+                          </Button>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  ))}
+                </Row>
+              </div>
+              <div className="research-external mt-4">
+                <h3>{RESEARCH_EXTERNAL_HEADER}</h3>
+                <Row className="research-cards mt-3">
+                  {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
+                    <Col key={index} xs={12} md={6} className="mb-3">
+                      <Card className="h-100 research-card">
+                        <Card.Body className="d-flex flex-column">
+                          <Card.Title as="h4">{item.title}</Card.Title>
+                          <div className="card-short-body flex-grow-1">
+                            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                              {item.shortBody}
+                            </ReactMarkdown>
+                          </div>
+                          <Button
+                            variant="outline-light"
+                            size="sm"
+                            className="mt-2 align-self-start"
+                            onClick={() =>
+                              setActiveResearchModal(RESEARCH_INTERNAL_ITEMS.length + index)
+                            }
+                            aria-label={`Learn more about ${item.title}`}
+                          >
+                            Learn more
+                          </Button>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  ))}
+                </Row>
+              </div>
             </section>
           </div>
+
+          {/* Research modals — internal */}
+          {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
+            <Modal
+              key={index}
+              show={activeResearchModal === index}
+              onHide={() => setActiveResearchModal(null)}
+              size="lg"
+              aria-labelledby={`research-internal-modal-title-${index}`}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title id={`research-internal-modal-title-${index}`}>
+                  {item.title}
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>{item.body}</p>
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
+                  Read more on GitHub ↗
+                </a>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
+                  Close
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          ))}
+
+          {/* Research modals — external */}
+          {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
+            <Modal
+              key={index}
+              show={activeResearchModal === RESEARCH_INTERNAL_ITEMS.length + index}
+              onHide={() => setActiveResearchModal(null)}
+              size="lg"
+              aria-labelledby={`research-external-modal-title-${index}`}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title id={`research-external-modal-title-${index}`}>
+                  {item.title}
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>{item.body}</p>
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
+                  Read more ↗
+                </a>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
+                  Close
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          ))}
 
           {/* §7 CTA — single GetStartedSection */}
           <section className="endogenai-cta getstartedsection text-start">

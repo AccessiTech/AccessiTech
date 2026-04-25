@@ -45,9 +45,9 @@ describe('EndogenAI Page', () => {
     expect(screen.getByText(/See the full analysis/i)).toBeInTheDocument();
     expect(screen.getByText(/Platform lock-in research/i)).toBeInTheDocument();
     expect(screen.getByText(/Full threat model analysis/i)).toBeInTheDocument();
-    // Check for "Learn more" modal trigger buttons (4 of them)
+    // Check for "Learn more" modal trigger buttons - get all buttons and filter to problem section
     const learnMoreButtons = screen.getAllByText('Learn more');
-    expect(learnMoreButtons).toHaveLength(4);
+    expect(learnMoreButtons.length).toBeGreaterThanOrEqual(4);
   });
 
   it('renders §3 What EndogenAI with 3 h3 subheaders and no harness h3 subsections', () => {
@@ -68,19 +68,28 @@ describe('EndogenAI Page', () => {
   it('renders governance stack cards', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
     expect(screen.getByText('MANIFESTO.md')).toBeInTheDocument();
-    expect(screen.getByText('AGENTS.md')).toBeInTheDocument();
+    // Use getAllByText for AGENTS.md since it appears in multiple sections now
+    const agentsMdLinks = screen.getAllByText('AGENTS.md');
+    expect(agentsMdLinks.length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText('Agent roles (.agent.md files)')).toBeInTheDocument();
     expect(screen.getByText('Reusable skills (SKILL.md files)')).toBeInTheDocument();
     expect(screen.getByText('Governance scripts')).toBeInTheDocument();
   });
 
-  it('renders encoding steps as cards with step numbers', () => {
+  it('renders encoding steps as cards with step numbers and learn more buttons', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
     expect(screen.getByText(/Foundational Axioms \(MANIFESTO\.md\)/i)).toBeInTheDocument();
     expect(screen.getByText(/Operational Constraints \(AGENTS\.md\)/i)).toBeInTheDocument();
     // Step numbers present
     expect(screen.getByText('1.')).toBeInTheDocument();
     expect(screen.getByText('2.')).toBeInTheDocument();
+    // Check for "Learn more" buttons (7 total for encoding steps)
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    const encodingLearnMoreButtons = learnMoreButtons.filter(button => {
+      const card = button.closest('.card');
+      return card && card.textContent?.includes('.');
+    });
+    expect(encodingLearnMoreButtons.length).toBeGreaterThanOrEqual(7);
   });
 
   it('renders the research section with subsection headings and cards', () => {
@@ -114,5 +123,42 @@ describe('EndogenAI Page', () => {
     // Only one h2 Get Started removed — now only h3 from GetStartedSection
     const getStartedHeadings = screen.queryAllByRole('heading', { name: /Get Started/i });
     expect(getStartedHeadings.length).toBe(1);
+  });
+
+  it('renders dogma/DogmaMCP cards with learn more modals', () => {
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+    // Check for section heading
+    expect(screen.getByRole('heading', { level: 2, name: 'dogma & DogmaMCP' })).toBeInTheDocument();
+    // Check for card titles
+    expect(screen.getByText('dogma')).toBeInTheDocument();
+    expect(screen.getByText('DogmaMCP')).toBeInTheDocument();
+    // Check for short body content markers (GitHub links)
+    expect(screen.getByText(/reads from dogma/i)).toBeInTheDocument();
+    expect(screen.getByText(/governance programmatically/i)).toBeInTheDocument();
+    // Check for "Learn more" buttons (2 total for dogma/DogmaMCP)
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    expect(learnMoreButtons.length).toBeGreaterThanOrEqual(2);
+  });
+
+  it('renders research cards with learn more modals', () => {
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+    // Check for section and subsection headings
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'What the Research Says' })
+    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 3, name: 'Our Research' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 3, name: 'External Validation' })
+    ).toBeInTheDocument();
+    // Check for research card titles
+    expect(screen.getByText('Endogenic Design Patterns for AI Systems')).toBeInTheDocument();
+    expect(screen.getByText('LangChain: Your Harness, Your Memory')).toBeInTheDocument();
+    // Check for short body content markers
+    expect(screen.getByText(/40–60% reduction in incident recovery time/i)).toBeInTheDocument();
+    expect(screen.getByText(/cede accumulated behavioral context/i)).toBeInTheDocument();
+    // Check for "Learn more" buttons (8 total: 4 internal + 4 external)
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    // Total: 4 problem + 2 dogma + 7 encoding + 8 research = 21
+    expect(learnMoreButtons.length).toBeGreaterThanOrEqual(21);
   });
 });

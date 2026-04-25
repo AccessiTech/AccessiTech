@@ -109,6 +109,7 @@ Here's how that ladder builds up:`;
 export interface EncodingStep {
   step: number;
   title: string;
+  shortBody: string;
   description: string;
   link: string;
 }
@@ -117,13 +118,15 @@ export const ENCODING_CHAIN_ARRAY: EncodingStep[] = [
   {
     step: 1,
     title: 'Foundational Axioms (MANIFESTO.md)',
+    shortBody: `Your organization's foundational values and axioms define what kind of system you are. EndogenAI uses three: Endogenous-First, Algorithms-Before-Tokens, Local-Compute-First. [Read the full MANIFESTO](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#the-three-core-axioms) — these axioms govern every layer below.`,
     description:
       "Define your organization's core values. EndogenAI uses three: Endogenous-First (read encoded knowledge), Algorithms-Before-Tokens (prefer determinism), Local-Compute-First (enforcement runs locally). These axioms are the constitution — everything else flows from them.",
-    link: 'https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#guiding-principles-cross-cutting',
+    link: 'https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#the-three-core-axioms',
   },
   {
     step: 2,
     title: 'Operational Constraints (AGENTS.md)',
+    shortBody: `Translate high-level axioms into operational rules the entire agent fleet follows: session gates, commit discipline, file-write guardrails, phase sequences. [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guiding-constraints) is where principles meet practice — the constitutional enforcement layer.`,
     description:
       'Translate axioms into operational rules that the entire agent fleet must follow. Session gates, commit discipline, file-write guardrails, phase sequences, and delegation patterns all live here. This is where principles meet practice.',
     link: 'https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guiding-constraints',
@@ -131,6 +134,7 @@ export const ENCODING_CHAIN_ARRAY: EncodingStep[] = [
   {
     step: 3,
     title: 'Agent Roles (.agent.md files)',
+    shortBody: `Specialized agents with minimal, role-specific tool sets. Each has explicit posture (readonly, creator, full), handoff patterns, and endogenous sources. No general-purpose toolkits. [Agent fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md) shows how role definitions instantiate MANIFESTO axioms.`,
     description:
       'Define specialized agents with minimal, role-specific tool sets. Each agent has explicit posture (readonly, creator, full), clear handoff patterns, and endogenous sources it reads before acting. No agent gets a general-purpose tool kit.',
     link: 'https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md',
@@ -138,13 +142,15 @@ export const ENCODING_CHAIN_ARRAY: EncodingStep[] = [
   {
     step: 4,
     title: 'Reusable Skills (SKILL.md files)',
+    shortBody: `Package domain-specific workflows so multiple agents can invoke them. When a procedure is used twice, the third time becomes a skill. [Skills library](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-skills) is the "how to" layer — decision gates, validation checklists, repeatable techniques.`,
     description:
       'Package domain-specific workflows so multiple agents can invoke them. Skills are the "how to" layer — procedures, decision gates, validation checklists. When a procedure is used twice, the third time becomes a skill.',
-    link: 'https://github.com/EndogenAI/dogma/blob/main/.github/skills/README.md',
+    link: 'https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-skills',
   },
   {
     step: 5,
     title: 'Deterministic Governance Scripts',
+    shortBody: `Deterministic validation and enforcement encoded as scripts that run on every commit (pre-commit hooks), push (pre-push tests), and in CI. [Scripts catalog](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) — scripted governance is auditable, repeatable, and more reliable than manual review gates.`,
     description:
       'Encode validation, enforcement, and automation as scripts that run on every commit (pre-commit hooks), every push (pre-push tests), and in CI. Scripted governance is auditable, repeatable, and detectable—no manual review gate can be as reliable as a script.',
     link: 'https://github.com/EndogenAI/dogma/blob/main/scripts/README.md',
@@ -152,6 +158,7 @@ export const ENCODING_CHAIN_ARRAY: EncodingStep[] = [
   {
     step: 6,
     title: 'Session State & Handoff (Scratchpad)',
+    shortBody: `Cross-agent communication in gitignored scratchpad files (\`.tmp/<branch>/<date>.md\`). Each agent appends findings under its own section; executive orchestrators synthesize across phases. [Scratchpad protocol](https://github.com/EndogenAI/dogma/blob/main/docs/guides/session-management.md#scratchpad-governance) prevents context loss across compaction events.`,
     description:
       "Cross-agent communication happens in `.tmp/<branch>/<date>.md` scratchpad files (gitignored, never committed). Each agent appends findings under its own named section. The executive orchestrator reads the full scratchpad and synthesizes across phases—but agents don't read laterally.",
     link: 'https://github.com/EndogenAI/dogma/blob/main/docs/guides/session-management.md#scratchpad-governance',
@@ -159,6 +166,7 @@ export const ENCODING_CHAIN_ARRAY: EncodingStep[] = [
   {
     step: 7,
     title: 'Runtime Validation & Monitoring',
+    shortBody: `Pre-commit hooks and CI gates enforce all upstream constraints at every boundary. Commit violates AGENTS.md? Pre-commit rejects before push. CI finds violations? PR cannot merge. [Guardrails reference](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guardrails) — governance is checked continuously, not retrospectively.`,
     description:
       'At execution time, pre-commit hooks and CI gates enforce all upstream constraints. If a commit violates AGENTS.md rules, pre-commit rejects it before push. If CI finds violations, the PR cannot merge. Governance is checked at every boundary.',
     link: 'https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guardrails',
@@ -170,10 +178,16 @@ export const ENCODING_STEPS = ENCODING_CHAIN_ARRAY;
 
 // §5 dogma & DogmaMCP
 export const DOGMA_CARD_TITLE = `dogma`;
-export const DOGMA_CARD_BODY = `The EndogenAI governance corpus — open-source, fully auditable, no proprietary lock-in. dogma contains the MANIFESTO, AGENTS.md operational guidelines, agent role definitions, reusable skills, governance scripts, and all research synthesis docs. It's the substrate: every organization using EndogenAI reads from dogma and extends it for their own context. Governance doesn't live in vendor dashboards or closed platforms. It lives in your git repository.`;
+export const DOGMA_CARD_SHORT_BODY = `The governance corpus you fork and extend: MANIFESTO.md axioms, agent roles, scripts, research synthesis. Every organization using EndogenAI [reads from dogma](https://github.com/EndogenAI/dogma) and adapts it for their context — governance lives in your git repository, not vendor dashboards.`;
+export const DOGMA_CARD_MODAL_BODY = `The EndogenAI governance corpus — open-source, fully auditable, no proprietary lock-in. dogma contains the MANIFESTO, AGENTS.md operational guidelines, agent role definitions, reusable skills, governance scripts, and all research synthesis docs. It's the substrate: every organization using EndogenAI reads from dogma and extends it for their own context. Governance doesn't live in vendor dashboards or closed platforms. It lives in your git repository.`;
 
 export const DOGMAMCP_CARD_TITLE = `DogmaMCP`;
-export const DOGMAMCP_CARD_BODY = `A Model Context Protocol (MCP) server that exposes dogma governance tools to your AI agents and development workflows — validators for agent files, research syntheses, scratchpad state checks, agent scaffolding templates, and more. DogmaMCP runs locally (no external API calls), integrates with VS Code Copilot and Claude Desktop, and lets your agents programmatically enforce governance policies. It's the bridge between the encoded substrate and your AI workflow.`;
+export const DOGMAMCP_CARD_SHORT_BODY = `MCP server exposing dogma tools to AI agents: validators for agent files, scratchpad state checks, scaffolding templates. Runs locally, integrates with VS Code Copilot and Claude Desktop, enforces [governance programmatically](https://github.com/EndogenAI/dogma/tree/main/mcp_server). It's the bridge between encoded substrate and AI workflow.`;
+export const DOGMAMCP_CARD_MODAL_BODY = `A Model Context Protocol (MCP) server that exposes dogma governance tools to your AI agents and development workflows — validators for agent files, research syntheses, scratchpad state checks, agent scaffolding templates, and more. DogmaMCP runs locally (no external API calls), integrates with VS Code Copilot and Claude Desktop, and lets your agents programmatically enforce governance policies. It's the bridge between the encoded substrate and your AI workflow.`;
+
+// Deprecated — kept for backward compat
+export const DOGMA_CARD_BODY = DOGMA_CARD_SHORT_BODY;
+export const DOGMAMCP_CARD_BODY = DOGMAMCP_CARD_SHORT_BODY;
 
 // §6 Research Section
 export const RESEARCH_INTERNAL_HEADER = `Our Research`;
@@ -181,6 +195,7 @@ export const RESEARCH_EXTERNAL_HEADER = `External Validation`;
 
 export interface ResearchItem {
   title: string;
+  shortBody: string;
   body: string;
   link: string;
 }
@@ -188,21 +203,25 @@ export interface ResearchItem {
 export const RESEARCH_INTERNAL_ITEMS: ResearchItem[] = [
   {
     title: `Endogenic Design Patterns for AI Systems`,
+    shortBody: `Biological scaffolding metaphors for AI governance. Organizations encoding knowledge persistently show [40–60% reduction in incident recovery time](https://github.com/EndogenAI/dogma/blob/main/docs/research/methodology/endogenic-design-paper.md) compared to ad-hoc approaches — the substrate grows stronger with each session.`,
     body: `Biological scaffolding metaphors applied to AI system design. Organizations that encode knowledge persistently show 40–60% reduction in incident recovery time compared to ad-hoc approaches.`,
-    link: `https://github.com/EndogenAI/dogma/blob/main/docs/research/endogenic-design-paper.md`,
+    link: `https://github.com/EndogenAI/dogma/blob/main/docs/research/methodology/endogenic-design-paper.md`,
   },
   {
     title: `Values Encoding Fidelity and Agent Fleet Maturity`,
+    shortBody: `How to measure whether your governance actually works: cross-layer validation, encoding fidelity tests, L0–L3 maturity model. [Values encoding research](https://github.com/EndogenAI/dogma/blob/main/docs/research/methodology/values-encoding.md) defines the diagnostic framework — from tacit knowledge to organizational policy.`,
     body: `How to measure whether your governance actually works — cross-layer validation, encoding fidelity tests, and the L0–L3 maturity model from tacit knowledge to organizational policy.`,
-    link: `https://github.com/EndogenAI/dogma/blob/main/docs/research/values-encoding.md`,
+    link: `https://github.com/EndogenAI/dogma/blob/main/docs/research/methodology/values-encoding.md`,
   },
   {
     title: `Bubble Clusters and Substrate Fragmentation`,
+    shortBody: `Why AI workflows built with disconnected agents fail at governance boundaries. Unified substrate and version control [prevent "bubble" formation](https://github.com/EndogenAI/dogma/blob/main/docs/research/neuroscience/bubble-clusters-substrate.md) where agents silently violate constraints — fragmented state is the enemy of coherence.`,
     body: `Why AI workflows built with disconnected agents fail at governance boundaries. Unified substrate and version control prevent "bubble" formation where agents silently violate constraints.`,
-    link: `https://github.com/EndogenAI/dogma/blob/main/docs/research/bubble-clusters-substrate.md`,
+    link: `https://github.com/EndogenAI/dogma/blob/main/docs/research/neuroscience/bubble-clusters-substrate.md`,
   },
   {
     title: `UK CMA AI Autonomy Report`,
+    shortBody: `Watchdog findings on agent autonomy failures validate EndogenAI's Minimal-Posture principle: limit tool scope, require explicit phase gates, treat every escalation as [a human decision boundary](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md). Autonomy without constraints produces manipulation and unintended escalation.`,
     body: `Watchdog findings on agent autonomy failures validate EndogenAI's Minimal-Posture principle: limit tool scope, require explicit phase gates, and treat every escalation as a human decision boundary.`,
     link: `https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md`,
   },
@@ -211,21 +230,25 @@ export const RESEARCH_INTERNAL_ITEMS: ResearchItem[] = [
 export const RESEARCH_EXTERNAL_ITEMS: ResearchItem[] = [
   {
     title: `LangChain: Your Harness, Your Memory`,
+    shortBody: `Harness infrastructure is permanent — memory is the most durable lock-in vector. Organizations that don't own their harness [cede accumulated behavioral context](https://www.langchain.com/blog/your-harness-your-memory) to the vendor, with no path to reconstruct it. Memory lives with your harness.`,
     body: `Harness infrastructure is permanent — memory is the most durable lock-in vector. Organizations that don't own their harness cede accumulated behavioral context to the vendor, with no path to reconstruct it.`,
     link: `https://www.langchain.com/blog/your-harness-your-memory`,
   },
   {
     title: `Datadog: Harness-First Agents`,
+    shortBody: `Treating the harness as primary infrastructure — not a convenience layer — is the precondition for [reliable, auditable agentic systems](https://www.datadoghq.com/blog/ai/harness-first-agents/) at production scale. Memory, tool routing, and access control belong in the harness, not bolted on afterward.`,
     body: `Treating the harness as primary infrastructure — not a convenience layer — is the precondition for reliable, auditable agentic systems at production scale.`,
     link: `https://www.datadoghq.com/blog/ai/harness-first-agents/`,
   },
   {
     title: `OWASP LLM Top 10`,
+    shortBody: `Seven of ten highest-severity LLM risks apply directly to agentic workflows. Harness-level governance — not application patching — is the [appropriate mitigation layer](https://owasp.org/www-project-top-10-for-large-language-model-applications/) for all seven. Prompt injection, excessive agency, and information leakage require architectural defense.`,
     body: `Seven of the ten highest-severity risks for LLM applications apply directly to agentic workflows. Harness-level governance — not application-level patching — is the appropriate mitigation layer for all seven.`,
     link: `https://owasp.org/www-project-top-10-for-large-language-model-applications/`,
   },
   {
     title: `Anthropic MCP Standard Adoption`,
+    shortBody: `MCP is rapidly becoming the cross-vendor standard for tool-calling across Claude Desktop, VS Code, Cursor, and third-party servers. [Open harness architecture](https://www.anthropic.com/news/model-context-protocol) is the durable bet — validating governance-as-substrate rather than governance-as-wrapper.`,
     body: `MCP is rapidly becoming the cross-vendor standard for tool-calling and harness integration across Claude Desktop, VS Code, Cursor, and third-party servers — validating open harness architecture as the durable bet.`,
     link: `https://www.anthropic.com/news/model-context-protocol`,
   },
