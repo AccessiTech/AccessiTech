@@ -100,13 +100,10 @@
     }
   }
 
-  // Research section full-bleed styling
+  // Research section full-width with dark background (utilities: py-5, Row, Col structure)
   .research-section {
     background-color: $darkBlue;
     color: $white;
-    padding: 4rem 2rem;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
 
     h2,
     h3 {

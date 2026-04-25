@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Breadcrumb, Button, Card, Col, Modal, Row } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -42,7 +42,6 @@ import {
   RESEARCH_INTERNAL_HEADER,
   RESEARCH_INTERNAL_ITEMS,
   RESEARCH_EXTERNAL_ITEMS,
-  CTA_GITHUB_LABEL,
   CTA_GITHUB_HREF,
   DOGMA_TITLE,
   BUTTON_LABEL_LEARN_MORE,
@@ -368,134 +367,150 @@ const EndogenAI = () => {
               </Modal.Footer>
             </Modal>
           ))}
-
-          {/* §6 What the research says */}
-          <div className="research-section">
-            <section className="endogenai-research text-start">
-              <h2 className="mb-4">What the Research Says</h2>
-              <p className="mb-5">{RESEARCH_INTRO}</p>
-              <div className="research-external">
-                <h3 className="mb-3">What External Authorities Say</h3>
-                <Row className="research-cards mt-3">
-                  {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
-                    <Col key={index} xs={12} md={6} className="mb-3">
-                      <Card className="h-100 research-card">
-                        <Card.Body className="d-flex flex-column">
-                          <Card.Title as="h4" className="mb-2">
-                            {item.title}
-                          </Card.Title>
-                          <div className="card-short-body flex-grow-1">
-                            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                              {item.shortBody}
-                            </ReactMarkdown>
-                          </div>
-                          <Button
-                            variant="outline-light"
-                            size="sm"
-                            className="mt-2 align-self-start"
-                            onClick={() => setActiveResearchModal(index)}
-                            aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(item.title)}
-                          >
-                            {BUTTON_LABEL_LEARN_MORE}
-                          </Button>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  ))}
-                </Row>
-              </div>
-              <div className="research-internal mt-4">
-                <h3 className="mb-3">{RESEARCH_INTERNAL_HEADER}</h3>
-                <Row className="research-cards mt-3">
-                  {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
-                    <Col key={index} xs={12} md={6} className="mb-3">
-                      <Card className="h-100 research-card">
-                        <Card.Body className="d-flex flex-column">
-                          <Card.Title as="h4" className="mb-2">
-                            {item.title}
-                          </Card.Title>
-                          <div className="card-short-body flex-grow-1">
-                            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                              {item.shortBody}
-                            </ReactMarkdown>
-                          </div>
-                          <Button
-                            variant="outline-light"
-                            size="sm"
-                            className="mt-2 align-self-start"
-                            onClick={() =>
-                              setActiveResearchModal(RESEARCH_EXTERNAL_ITEMS.length + index)
-                            }
-                            aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(item.title)}
-                          >
-                            {BUTTON_LABEL_LEARN_MORE}
-                          </Button>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  ))}
-                </Row>
-              </div>
-            </section>
-          </div>
-
-          {/* Research modals — external (now first) */}
-          {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
-            <Modal
-              key={index}
-              show={activeResearchModal === index}
-              onHide={() => setActiveResearchModal(null)}
-              size="lg"
-              aria-labelledby={`research-external-modal-title-${index}`}
-            >
-              <Modal.Header closeButton>
-                <Modal.Title id={`research-external-modal-title-${index}`}>
-                  {item.title}
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
-                <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
-                  {BUTTON_LABEL_READ_MORE} ↗
-                </a>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
-                  {BUTTON_LABEL_CLOSE}
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          ))}
-
-          {/* Research modals — internal (now second) */}
-          {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
-            <Modal
-              key={index}
-              show={activeResearchModal === RESEARCH_EXTERNAL_ITEMS.length + index}
-              onHide={() => setActiveResearchModal(null)}
-              size="lg"
-              aria-labelledby={`research-internal-modal-title-${index}`}
-            >
-              <Modal.Header closeButton>
-                <Modal.Title id={`research-internal-modal-title-${index}`}>
-                  {item.title}
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
-                <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
-                  {BUTTON_LABEL_READ_MORE} ↗
-                </a>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
-                  {BUTTON_LABEL_CLOSE}
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          ))}
         </Col>
       </Row>
+
+      {/* §6 What the research says — Full-width dark background */}
+      <Row className="research-section g-0">
+        <Col
+          xs={12}
+          sm={{ span: 10, offset: 1 }}
+          lg={{ span: 8, offset: 2 }}
+          className="text-start"
+        >
+          <section className="endogenai-research py-5">
+            <h2 className="mb-4">What the Research Says</h2>
+            <p className="mb-5">{RESEARCH_INTRO}</p>
+            <div className="research-external">
+              <h3 className="mb-3">What External Authorities Say</h3>
+              <Row className="research-cards mt-3">
+                {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
+                  <Col key={index} xs={12} md={6} className="mb-3">
+                    <Card className="h-100 research-card">
+                      <Card.Body className="d-flex flex-column">
+                        <Card.Title as="h4" className="mb-2">
+                          {item.title}
+                        </Card.Title>
+                        <div className="card-short-body flex-grow-1">
+                          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                            {item.shortBody}
+                          </ReactMarkdown>
+                        </div>
+                        <Button
+                          variant="outline-light"
+                          size="sm"
+                          className="mt-2 align-self-start"
+                          onClick={() => setActiveResearchModal(index)}
+                          aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(item.title)}
+                        >
+                          {BUTTON_LABEL_LEARN_MORE}
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            </div>
+            <div className="research-internal mt-4">
+              <h3 className="mb-3">{RESEARCH_INTERNAL_HEADER}</h3>
+              <Row className="research-cards mt-3">
+                {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
+                  <Col key={index} xs={12} md={6} className="mb-3">
+                    <Card className="h-100 research-card">
+                      <Card.Body className="d-flex flex-column">
+                        <Card.Title as="h4" className="mb-2">
+                          {item.title}
+                        </Card.Title>
+                        <div className="card-short-body flex-grow-1">
+                          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                            {item.shortBody}
+                          </ReactMarkdown>
+                        </div>
+                        <Button
+                          variant="outline-light"
+                          size="sm"
+                          className="mt-2 align-self-start"
+                          onClick={() =>
+                            setActiveResearchModal(RESEARCH_EXTERNAL_ITEMS.length + index)
+                          }
+                          aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(item.title)}
+                        >
+                          {BUTTON_LABEL_LEARN_MORE}
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+                <div className="mt-4 text-center">
+                  <Button
+                    variant="link"
+                    className="fs-5 fw-medium"
+                    href={CTA_GITHUB_HREF}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Explore EndogenAI on GitHub`}
+                  >
+                    {BUTTON_LABEL_VIEW_GITHUB}
+                  </Button>
+                </div>
+              </Row>
+            </div>
+          </section>
+        </Col>
+      </Row>
+
+      {/* Research modals — external (now first) */}
+      {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
+        <Modal
+          key={index}
+          show={activeResearchModal === index}
+          onHide={() => setActiveResearchModal(null)}
+          size="lg"
+          aria-labelledby={`research-external-modal-title-${index}`}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id={`research-external-modal-title-${index}`}>{item.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
+            <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
+              {BUTTON_LABEL_READ_MORE} ↗
+            </a>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
+              {BUTTON_LABEL_CLOSE}
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      ))}
+
+      {/* Research modals — internal (now second) */}
+      {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
+        <Modal
+          key={index}
+          show={activeResearchModal === RESEARCH_EXTERNAL_ITEMS.length + index}
+          onHide={() => setActiveResearchModal(null)}
+          size="lg"
+          aria-labelledby={`research-internal-modal-title-${index}`}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id={`research-internal-modal-title-${index}`}>{item.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
+            <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
+              {BUTTON_LABEL_READ_MORE} ↗
+            </a>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
+              {BUTTON_LABEL_CLOSE}
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      ))}
+
       {/* §7 CTA — single GetStartedSection */}
       <Row className="getStartedRow pt-5 pb-5">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
@@ -507,17 +522,6 @@ const EndogenAI = () => {
             leftButtonLabel="Schedule Consult"
             rightButtonLabel="Ask a Question"
           />
-          <div className="mt-4 text-center">
-            <Link
-              to={CTA_GITHUB_HREF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card-link text-dark"
-              aria-label={CTA_GITHUB_LABEL}
-            >
-              {CTA_GITHUB_LABEL} ↗
-            </Link>
-          </div>
         </Col>
       </Row>
     </>
