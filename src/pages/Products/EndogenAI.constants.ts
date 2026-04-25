@@ -26,6 +26,9 @@ export const PROBLEM_CARD_2_BODY = `Meta's acquisition of Moltbook and subsequen
 export const PROBLEM_CARD_3_TITLE = `OWASP LLM Top 10: Security Blindness`;
 export const PROBLEM_CARD_3_BODY = `Seven of the OWASP Top 10 for LLM Applications apply directly to agentic workflows. Three are High-severity: prompt injection attacks, excessive agency (uncontrolled tool access), and sensitive information leakage. Most organizations don't know their AI systems are exposed. [Full threat model analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md#) — governance is how you close these gaps.`;
 
+export const PROBLEM_CARD_4_TITLE = `Harness Lock-In: Memory Loss`;
+export const PROBLEM_CARD_4_BODY = `When Harrison Chase deleted and recreated his email assistant, it lost everything — months of learned preferences, interaction patterns, and behavioral refinements. That's harness-mediated memory loss in practice. Platforms like Claude Managed Agents and the OpenAI Assistants API store learned context server-side with no export path: delete the agent, lose the memory. API lock-in is recoverable — you can retrain on your own data. Memory lock-in is not recoverable without a deliberate extraction strategy built before dependency accrues. [Full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md)`;
+
 // §3 What EndogenAI is
 export const WHAT_ENDOGENAI_INTRO = `EndogenAI is a methodology for building AI governance into systems from day one — not bolting it on after launch. It's built on three core axioms: **Endogenous-First** (read your system's own encoded knowledge before acting), **Algorithms Before Tokens** (prefer deterministic solutions over interactive generation), and **Local Compute-First** (run enforcement locally, not in the cloud).
 

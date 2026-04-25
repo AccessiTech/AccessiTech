@@ -15,23 +15,19 @@ import {
   PROBLEM_CARD_2_BODY,
   PROBLEM_CARD_3_TITLE,
   PROBLEM_CARD_3_BODY,
+  PROBLEM_CARD_4_TITLE,
+  PROBLEM_CARD_4_BODY,
   WHAT_TITLE,
   WHAT_DESCRIPTION,
   BRAND_RELATIONSHIP,
-  HOW_TITLE,
-  ENCODING_STEPS,
+  HARNESS_OPEN_CARD_BODY,
+  HARNESS_DOGMAMCP_CARD_BODY,
   DOGMA_CARD_TITLE,
   DOGMA_CARD_BODY,
   DOGMAMCP_CARD_TITLE,
   DOGMAMCP_CARD_BODY,
-  HARNESS_TITLE,
-  HARNESS_INTRO,
-  HARNESS_LOCK_IN_CARD_TITLE,
-  HARNESS_LOCK_IN_CARD_BODY,
-  HARNESS_OPEN_CARD_TITLE,
-  HARNESS_OPEN_CARD_BODY,
-  HARNESS_DOGMAMCP_CARD_TITLE,
-  HARNESS_DOGMAMCP_CARD_BODY,
+  HOW_TITLE,
+  ENCODING_STEPS,
   RESEARCH_INTERNAL_HEADER,
   RESEARCH_INTERNAL_FINDINGS,
   RESEARCH_EXTERNAL_HEADER,
@@ -97,7 +93,7 @@ const EndogenAI = () => {
             <h2>The Problem</h2>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{PROBLEM_INTRO}</ReactMarkdown>
             <Row className="problem-cards">
-              <Col xs={12} md={4}>
+              <Col xs={12} md={6}>
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{PROBLEM_CARD_1_TITLE}</Card.Title>
@@ -109,7 +105,7 @@ const EndogenAI = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={6}>
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{PROBLEM_CARD_2_TITLE}</Card.Title>
@@ -121,13 +117,25 @@ const EndogenAI = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={6}>
                 <Card className="mb-3">
                   <Card.Body>
                     <Card.Title>{PROBLEM_CARD_3_TITLE}</Card.Title>
                     <Card.Text>
                       <ReactMarkdown remarkPlugins={[remarkGfm]}>
                         {PROBLEM_CARD_3_BODY}
+                      </ReactMarkdown>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col xs={12} md={6}>
+                <Card className="mb-3">
+                  <Card.Body>
+                    <Card.Title>{PROBLEM_CARD_4_TITLE}</Card.Title>
+                    <Card.Text>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {PROBLEM_CARD_4_BODY}
                       </ReactMarkdown>
                     </Card.Text>
                   </Card.Body>
@@ -143,69 +151,15 @@ const EndogenAI = () => {
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{BRAND_RELATIONSHIP}</ReactMarkdown>
             </div>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{WHAT_DESCRIPTION}</ReactMarkdown>
+
+            <h3>Open Harness Architecture: Four Core Criteria</h3>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{HARNESS_OPEN_CARD_BODY}</ReactMarkdown>
+
+            <h3>DogmaMCP: Governance-First Harness Implementation</h3>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{HARNESS_DOGMAMCP_CARD_BODY}</ReactMarkdown>
           </section>
 
-          {/* §3.5 Why your AI needs a Harness */}
-          <section className="endogenai-harness text-start">
-            <h2>{HARNESS_TITLE}</h2>
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{HARNESS_INTRO}</ReactMarkdown>
-            <Row className="harness-cards">
-              <Col xs={12} md={4}>
-                <Card className="mb-3">
-                  <Card.Body>
-                    <Card.Title>{HARNESS_LOCK_IN_CARD_TITLE}</Card.Title>
-                    <Card.Text>
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {HARNESS_LOCK_IN_CARD_BODY}
-                      </ReactMarkdown>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col xs={12} md={4}>
-                <Card className="mb-3">
-                  <Card.Body>
-                    <Card.Title>{HARNESS_OPEN_CARD_TITLE}</Card.Title>
-                    <Card.Text>
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {HARNESS_OPEN_CARD_BODY}
-                      </ReactMarkdown>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col xs={12} md={4}>
-                <Card className="mb-3">
-                  <Card.Body>
-                    <Card.Title>{HARNESS_DOGMAMCP_CARD_TITLE}</Card.Title>
-                    <Card.Text>
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {HARNESS_DOGMAMCP_CARD_BODY}
-                      </ReactMarkdown>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </section>
-
-          {/* §4 How it works (data-driven encoding chain) */}
-          <section className="endogenai-how text-start">
-            <h2>{HOW_TITLE}</h2>
-            <div className="encoding-steps">
-              {ENCODING_STEPS.map(step => (
-                <div key={step.step} className="encoding-step">
-                  <h3>
-                    Step {step.step}: {step.title}
-                  </h3>
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{step.description}</ReactMarkdown>
-                  <a href={step.link}>Learn more</a>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* §5 dogma & DogmaMCP */}
+          {/* §4 dogma & DogmaMCP */}
           <section className="endogenai-products text-start">
             <h2>dogma & DogmaMCP</h2>
             <Row className="products-cards">
@@ -232,6 +186,22 @@ const EndogenAI = () => {
                 </Card>
               </Col>
             </Row>
+          </section>
+
+          {/* §5 How it works (data-driven encoding chain) */}
+          <section className="endogenai-how text-start">
+            <h2>{HOW_TITLE}</h2>
+            <div className="encoding-steps">
+              {ENCODING_STEPS.map(step => (
+                <div key={step.step} className="encoding-step">
+                  <h3>
+                    Step {step.step}: {step.title}
+                  </h3>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{step.description}</ReactMarkdown>
+                  <a href={step.link}>Learn more</a>
+                </div>
+              ))}
+            </div>
           </section>
 
           {/* §6 What the research says */}
