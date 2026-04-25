@@ -317,18 +317,43 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 #### P11G Review — Review Gate
 **Status**: ⬜ Not started
 
+#### P11F — Comms: Review Harness Content Split
+**Agent**: Comms Strategist  
+**Depends on**: P11E decisions documented  
+**Deliverables**: Recommendation on harness content split (§2 problem framing vs §3 solution subsections); draft any new constants (PROBLEM_CARD_4 if needed)  
+**Gate**: P11G does not start until Comms returns recommendation  
+**Status**: ✅ Complete — PROBLEM_CARD_4 drafted, subsection headings provided
+
+#### P11F Review — Review Gate
+**Status**: ✅ Complete — APPROVED
+
+#### P11G — FE: Section Restructuring
+**Agent**: AT - Frontend Developer  
+**Depends on**: P11F Comms recommendation  
+**Deliverables**:
+- §2 Problem: 4 Cards in 2-across layout (UK CMA, Meta/Moltbook, OWASP, Harness Lock-In)
+- §3 What EndogenAI: Add 2 h3 subsections (Open Harness Solution + DogmaMCP Governance-First)
+- Remove §3.5 entirely (content redistributed to §2 and §3)
+- Reorder sections: §4 dogma/DogmaMCP, §5 How It Works (moved), §6 Research, §7 CTA
+- Update tests for section numbering, harness content location  
+**Gate**: P11H does not start until build clean + tests pass  
+**Status**: ✅ Complete — Commit 466a74c, 9/9 tests passing, TypeScript clean
+
+#### P11G Review — Review Gate
+**Status**: ✅ Complete — APPROVED
+
 #### P11H — FE: CSS Visual Styling
 **Agent**: AT - Frontend Developer  
 **Depends on**: P11G build clean  
 **Deliverables**:
-- Research sections: `.research-section` class with full-bleed dark blue bg (#003d7a), white text, yellow links
+- Research sections: `.research-section` class with full-bleed dark blue bg (#061a32), white text, yellow links
 - CTA section: Apply `.getstartedsection` class (lookup existing usage in other ProductPage files)
 - Validate WCAG 2.1 AA contrast ratios  
 **Gate**: P11I does not start until styling committed  
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — Commit 78073c4, WCAG AAA validated (21:1 text, 12.3:1 links)
 
 #### P11H Review — Review Gate
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — APPROVED
 
 #### P11I — FE: GetStartedSection Component Integration
 **Agent**: AT - Frontend Developer  
@@ -338,10 +363,10 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 - Replace custom endogenai-cta with `<GetStartedSection />` component
 - Pass EndogenAI-specific props (title, description, primaryCta, secondaryCta)  
 **Gate**: P11J does not start until component integrated + tests pass  
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — Commit f20a22d, component integrated with EndogenAI-specific props
 
 #### P11I Review — Review Gate
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — APPROVED
 
 #### P11J — QA: Validate All Second-Round Changes
 **Agent**: AT - QA Tester  
@@ -355,17 +380,17 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 6. All links functional
 7. Responsive check (mobile/tablet/desktop)  
 **Gate**: P11K does not start until QA returns validation  
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — All 7 items validated ✅, 0 issues found, overall verdict PASS
 
 #### P11J Review — Review Gate
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — APPROVED
 
 #### P11K — Final Review Gate for P11E-J
 **Agent**: Review  
 **Depends on**: P11J QA validation complete  
 **Deliverables**: APPROVED or REQUEST CHANGES against validation criteria (section restructuring, card layouts, visual styling, GetStartedSection integration, tests pass, TypeScript clean)  
 **Gate**: P12 does not start until APPROVED  
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — APPROVED (all 10 validation criteria passed)
 
 ---
 
