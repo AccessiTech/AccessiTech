@@ -531,7 +531,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 
 #### P11S Review — Review Gate
 **Agent**: Review
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — APPROVED (all 5 criteria met)
 
 #### P11T — QA: Validate All Fourth-Round Changes
 **Agent**: AT - QA Tester
@@ -543,14 +543,14 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 4. §6 Research: content full-width, not offset/narrowed
 5. Modals: all 17 cards (§4: 2, §5: 7, §6: 8) have "Learn more" button → Modal; SHORT_BODY in card, MODAL_BODY in modal
 **Gate**: P11U does not start until QA returns validation
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — PARTIAL PASS (4/5 items ✅; anchor fix for Steps 3+5 applied in same commit)
 
 #### P11U — Final Review Gate for P11Q-T
 **Agent**: Review
-**Depends on**: P11T QA complete
+**Depends on**: P11T QA complete + Step 3/5 anchor fix applied
 **Deliverables**: APPROVED or REQUEST CHANGES
 **Gate**: P12 does not start until APPROVED
-**Status**: ⬜ Not started
+**Status**: ⏳ In progress
 
 ---
 

@@ -137,7 +137,7 @@ export const ENCODING_CHAIN_ARRAY: EncodingStep[] = [
     shortBody: `Specialized agents with minimal, role-specific tool sets. Each has explicit posture (readonly, creator, full), handoff patterns, and endogenous sources. No general-purpose toolkits. [Agent fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md) shows how role definitions instantiate MANIFESTO axioms.`,
     description:
       'Define specialized agents with minimal, role-specific tool sets. Each agent has explicit posture (readonly, creator, full), clear handoff patterns, and endogenous sources it reads before acting. No agent gets a general-purpose tool kit.',
-    link: 'https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md',
+    link: 'https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md#agent-fleet-catalog',
   },
   {
     step: 4,
@@ -153,7 +153,7 @@ export const ENCODING_CHAIN_ARRAY: EncodingStep[] = [
     shortBody: `Deterministic validation and enforcement encoded as scripts that run on every commit (pre-commit hooks), push (pre-push tests), and in CI. [Scripts catalog](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) — scripted governance is auditable, repeatable, and more reliable than manual review gates.`,
     description:
       'Encode validation, enforcement, and automation as scripts that run on every commit (pre-commit hooks), every push (pre-push tests), and in CI. Scripted governance is auditable, repeatable, and detectable—no manual review gate can be as reliable as a script.',
-    link: 'https://github.com/EndogenAI/dogma/blob/main/scripts/README.md',
+    link: 'https://github.com/EndogenAI/dogma/blob/main/scripts/README.md#directory-layout',
   },
   {
     step: 6,
