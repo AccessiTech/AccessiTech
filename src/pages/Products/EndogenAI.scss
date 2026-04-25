@@ -113,6 +113,35 @@
     }
   }
 
+  // Research section full-bleed styling
+  .research-section {
+    background-color: $darkBlue;
+    color: $white;
+    padding: 4rem 2rem;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 3rem;
+
+    h2,
+    h3 {
+      color: $white;
+    }
+
+    a {
+      color: $yellow;
+      text-decoration: underline;
+
+      &:hover {
+        color: darken($yellow, 10%);
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      color: $white;
+    }
+  }
+
   // §7 CTA
   .endogenai-cta {
     margin-bottom: 3rem;

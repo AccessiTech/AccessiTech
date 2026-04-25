@@ -205,24 +205,26 @@ const EndogenAI = () => {
           </section>
 
           {/* §6 What the research says */}
-          <section className="endogenai-research text-start">
-            <h2>What the Research Says</h2>
-            <div className="research-internal">
-              <h3>{RESEARCH_INTERNAL_HEADER}</h3>
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {RESEARCH_INTERNAL_FINDINGS}
-              </ReactMarkdown>
-            </div>
-            <div className="research-external">
-              <h3>{RESEARCH_EXTERNAL_HEADER}</h3>
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {RESEARCH_EXTERNAL_FINDINGS}
-              </ReactMarkdown>
-            </div>
-          </section>
+          <div className="research-section">
+            <section className="endogenai-research text-start">
+              <h2>What the Research Says</h2>
+              <div className="research-internal">
+                <h3>{RESEARCH_INTERNAL_HEADER}</h3>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {RESEARCH_INTERNAL_FINDINGS}
+                </ReactMarkdown>
+              </div>
+              <div className="research-external">
+                <h3>{RESEARCH_EXTERNAL_HEADER}</h3>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {RESEARCH_EXTERNAL_FINDINGS}
+                </ReactMarkdown>
+              </div>
+            </section>
+          </div>
 
           {/* §7 CTA */}
-          <section className="endogenai-cta text-start">
+          <section className="endogenai-cta getstartedsection text-start">
             <h2>{CTA_TITLE}</h2>
             <Button
               href={CTA_GITHUB_HREF}
