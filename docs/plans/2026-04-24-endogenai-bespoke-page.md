@@ -554,13 +554,45 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 
 ---
 
-### Phase P12 — Cross Review: Comms + Biz Dev (content quality)
+### Phase P12 — Modal Content Expansion (Fifth Round)
 
-**Agent**: Comms Strategist + Business Lead
-**Depends on**: P11 user green-light
-**Deliverables**: Both return APPROVED or structured REQUEST CHANGES
-**Gate**: P13 does not start until both APPROVED
-**Status**: ⬜ Not started
+**Scope**: Expand ALL modal content to meet expansive/interlinked/scannable standards (200-400 words, ### headers, dense dogma links)
+
+#### Phase P12A — Comms Modal Expansion
+
+**Agent**: Comms Strategist
+**Depends on**: P11U APPROVED
+**Deliverables**: 
+- 7 encoding descriptions expanded (200-400 words, ### headers, bullets, ≥3 dogma links)
+- 2 dogma/MCP modal bodies expanded (same standard)
+- 4 problem card bodies reviewed for link density
+- 5 GovernanceStack items updated with `#anchor` fragments
+**Gate**: P12B Review does not start until committed
+**Status**: ✅ Complete — a9c7f42 + 63f9da2 (fixes)
+
+#### Phase P12B — Review Validation
+
+**Agent**: Review
+**Depends on**: P12A committed
+**Deliverables**: APPROVED or REQUEST CHANGES against 8 criteria
+**Gate**: P12C QA does not start until APPROVED
+**Status**: ✅ Complete — APPROVED (all 8 criteria pass)
+
+#### Phase P12C — QA Testing
+
+**Agent**: Direct (Orchestrator)
+**Depends on**: P12B APPROVED
+**Deliverables**: Validate all 21 modals render correctly, tests pass, links work
+**Gate**: P12D does not start until all 8 QA items pass
+**Status**: ✅ Complete — PASS (452/452 tests, 0 TS errors, all modals validated)
+
+#### Phase P12D — Final Merge Prep
+
+**Agent**: Direct (Orchestrator)
+**Depends on**: P12C PASS
+**Deliverables**: Update workplan, push commits, update PR description, request merge
+**Gate**: Session closes after merge prep complete
+**Status**: ⏳ In progress
 
 ---
 
