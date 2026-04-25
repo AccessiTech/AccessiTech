@@ -211,7 +211,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Agent**: Orchestrator (surface; wait)
 **Depends on**: P6 Biz Dev APPROVED
 **Gate**: P8 does not start until user green-lights
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — user green-lit scaffold structure
 
 ---
 
@@ -221,7 +221,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Depends on**: P7 user green-light
 **Deliverables**: All tests pass (444+); committed to branch
 **Gate**: P9 does not start until commit SHA confirmed
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — commit `e5bddef` (all 446/446 tests passing)
 
 ---
 
@@ -231,7 +231,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Depends on**: P8 commit SHA confirmed
 **Deliverables**: All copy as named Markdown string constants — inline-linked, external validation woven in (both inline + dedicated section), brand-voice aligned
 **Gate**: P10 does not start until draft committed
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — commit `4c380c1` (15 named constants, 7-step encoding chain array, GitHub links, brand voice)
 
 ---
 
@@ -242,7 +242,7 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Approach**: `ReactMarkdown` + `remarkGfm` (installed; same pattern as BlogEntry.tsx)
 **Deliverables**: Page renders all Markdown; TypeScript 0 errors; tests updated
 **Gate**: P11 does not start until build clean
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — commit `ff5b2e7` (ReactMarkdown integration complete, 448/448 tests pass)
 
 ---
 
@@ -250,7 +250,35 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 
 **Depends on**: P10 build clean
 **Gate**: Repeat P9–P11 as needed until user green-lights
-**Status**: ⬜ Not started
+**Status**: ✅ Complete — user provided 4 change requests, decisions locked
+
+#### P11 User Feedback Summary
+1. Text alignment: make all content below Hero left-aligned
+2. Harness framing: introduce absence of AI harnesses as part of problem; reference issue #550, ADR-011, LangChain article
+3. New section: "Why your AI needs a Harness"
+4. Split Research: "What the Research Says" → Internal (our papers) + External (closed issues + manifest.json)
+
+#### P11A — Document Decisions + Update Workplan
+**Status**: ✅ Complete — decisions documented in scratchpad + workplan
+
+#### P11B — Research Scout: Harness Corpus
+**Agent**: Research Scout  
+**Status**: ✅ Complete — scouted harness-memory-governance.md, ADR-011, dogmamcp-open-harness-validation.md, competitor-landscape, ai-platform-lock-in-risks, cached LangChain article
+
+#### P11C — Comms: Draft New/Revised Copy
+**Agent**: Comms Strategist  
+**Status**: ✅ Complete — placement decision (B: after §3), revised PROBLEM_INTRO, 7 new HARNESS_* constants, split research constants (Internal/External)
+
+#### P11C Review — Review Gate
+**Status**: ✅ Complete — APPROVED (inline)
+
+#### P11D — FE: Implement Structural Changes
+**Agent**: AT - Frontend Developer  
+**Status**: ✅ Complete — commit `bea3b18` (text left-alignment, new §3.5 harness section, split §6 research, 450/450 tests pass)
+
+#### P11D Review — Review Gate
+**Agent**: Review  
+**Status**: ✅ Complete — APPROVED (all 10 validation criteria passed)
 
 ---
 
@@ -314,3 +342,8 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 | `54b2458` | docs(plans): update workplan with P0-P4 progress |
 | `f684085` | feat(endogenai): scaffold bespoke 7-section product page |
 | `907500f` | feat(endogenai): apply Biz Dev feedback — brand prose + CTA hierarchy |
+| `2497ab0` | docs(plans): update workplan with P5-P6 completion + commit history |
+| `e5bddef` | test(endogenai): verify all tests pass (446/446) |
+| `4c380c1` | feat(endogenai): add all Markdown copy constants (P9 Comms) |
+| `ff5b2e7` | feat(endogenai): integrate ReactMarkdown rendering (P10) |
+| `bea3b18` | feat(endogenai): P11D structural changes — harness section, split research, text alignment |
