@@ -94,9 +94,35 @@
     }
   }
 
+  // §5 How it works — encoding cards
+  .endogenai-how {
+    .encoding-cards {
+      margin-top: 2rem;
+      row-gap: 1rem;
+
+      .card {
+        .step-number {
+          font-weight: 700;
+          color: var(--bs-primary);
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          margin-bottom: 0.75rem;
+        }
+
+        .card-link {
+          color: var(--bs-primary);
+          text-decoration: underline;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
   // §6 What the research says
   .endogenai-research {
-    margin-bottom: 3rem;
+    padding: 2rem 0;
 
     h2 {
       margin-bottom: 1.5rem;
@@ -107,8 +133,7 @@
       margin-bottom: 1rem;
     }
 
-    .research-papers {
-      margin-top: 2rem;
+    .research-cards {
       row-gap: 1rem;
     }
   }
@@ -140,18 +165,36 @@
     p {
       color: $white;
     }
+
+    // Research cards within the dark section
+    .research-card {
+      background-color: rgba($white, 0.08);
+      border-color: rgba($white, 0.2);
+      color: $white;
+
+      h4 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+
+        a {
+          color: $yellow;
+        }
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: rgba($white, 0.85);
+      }
+    }
   }
 
   // §7 CTA
   .endogenai-cta {
     margin-bottom: 3rem;
 
-    h2 {
-      margin-bottom: 1.5rem;
-    }
-
-    .btn-lg {
-      margin-bottom: 2rem;
+    .mt-4.text-center a {
+      color: var(--bs-primary);
+      text-decoration: underline;
     }
   }
 }
