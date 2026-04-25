@@ -280,6 +280,8 @@ export const ENCODING_STEPS = ENCODING_CHAIN_ARRAY;
 
 // §5 dogma & DogmaMCP
 export const DOGMA_TITLE = `What is dogma & DogmaMCP?`;
+export const DOGMA_RELATIONSHIP = `**dogma** is the governance substrate you own and version-control; **DogmaMCP** makes that substrate programmatically accessible to AI agents via the Model Context Protocol; **EndogenAI** is the consulting methodology for embedding both into your organization's workflows.`;
+
 export const DOGMA_CARD_TITLE = `dogma`;
 export const DOGMA_CARD_SHORT_BODY = `The governance corpus you fork and extend: MANIFESTO.md axioms, agent roles, scripts, research synthesis. Every organization using EndogenAI [reads from dogma](https://github.com/EndogenAI/dogma) and adapts it for their context — governance lives in your git repository, not vendor dashboards.`;
 export const DOGMA_CARD_MODAL_BODY = `### What it is

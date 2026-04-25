@@ -44,6 +44,7 @@ import {
   RESEARCH_EXTERNAL_ITEMS,
   CTA_GITHUB_HREF,
   DOGMA_TITLE,
+  DOGMA_RELATIONSHIP,
   BUTTON_LABEL_LEARN_MORE,
   BUTTON_LABEL_CLOSE,
   BUTTON_LABEL_READ_MORE,
@@ -206,48 +207,43 @@ const EndogenAI = () => {
             {/* §4 dogma & DogmaMCP */}
             <section className="endogenai-products text-start">
               <h2 className="mb-4">{DOGMA_TITLE}</h2>
+              <p className="mb-4">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{DOGMA_RELATIONSHIP}</ReactMarkdown>
+              </p>
               <Row className="products-cards mb-3">
                 <Col xs={12} md={6}>
-                  <Card className="mb-3 h-100">
-                    <Card.Body className="d-flex flex-column">
-                      <Card.Title>{DOGMA_CARD_TITLE}</Card.Title>
-                      <div className="card-short-body flex-grow-1">
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                          {DOGMA_CARD_SHORT_BODY}
-                        </ReactMarkdown>
-                      </div>
-                      <Button
-                        variant="outline-secondary"
-                        size="sm"
-                        className="mt-2 align-self-start"
-                        onClick={() => setActiveDogmaModal(0)}
-                        aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMA_CARD_TITLE)}
-                      >
-                        {BUTTON_LABEL_LEARN_MORE}
-                      </Button>
-                    </Card.Body>
-                  </Card>
+                  <h2>{DOGMA_CARD_TITLE}</h2>
+                  <div className="card-short-body flex-grow-1">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {DOGMA_CARD_SHORT_BODY}
+                    </ReactMarkdown>
+                  </div>
+                  <Button
+                    variant="outline-secondary"
+                    size="sm"
+                    className="mt-2 align-self-start"
+                    onClick={() => setActiveDogmaModal(0)}
+                    aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMA_CARD_TITLE)}
+                  >
+                    {BUTTON_LABEL_LEARN_MORE}
+                  </Button>
                 </Col>
                 <Col xs={12} md={6}>
-                  <Card className="h-100">
-                    <Card.Body className="d-flex flex-column">
-                      <Card.Title>{DOGMAMCP_CARD_TITLE}</Card.Title>
-                      <div className="card-short-body flex-grow-1">
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                          {DOGMAMCP_CARD_SHORT_BODY}
-                        </ReactMarkdown>
-                      </div>
-                      <Button
-                        variant="outline-secondary"
-                        size="sm"
-                        className="mt-2 align-self-start"
-                        onClick={() => setActiveDogmaModal(1)}
-                        aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMAMCP_CARD_TITLE)}
-                      >
-                        {BUTTON_LABEL_LEARN_MORE}
-                      </Button>
-                    </Card.Body>
-                  </Card>
+                  <h3>{DOGMAMCP_CARD_TITLE}</h3>
+                  <div className="card-short-body flex-grow-1">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {DOGMAMCP_CARD_SHORT_BODY}
+                    </ReactMarkdown>
+                  </div>
+                  <Button
+                    variant="outline-secondary"
+                    size="sm"
+                    className="mt-2 align-self-start"
+                    onClick={() => setActiveDogmaModal(1)}
+                    aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMAMCP_CARD_TITLE)}
+                  >
+                    {BUTTON_LABEL_LEARN_MORE}
+                  </Button>
                 </Col>
               </Row>
             </section>
@@ -379,8 +375,8 @@ const EndogenAI = () => {
           className="text-start"
         >
           <section className="endogenai-research py-5">
-            <h2 className="mb-4">What the Research Says</h2>
-            <p className="mb-5">{RESEARCH_INTRO}</p>
+            <h2 className="mb-4 text-center">What the Research Says</h2>
+            <p className="mb-5 research-intro">{RESEARCH_INTRO}</p>
             <div className="research-external">
               <h3 className="mb-3">What External Authorities Say</h3>
               <Row className="research-cards mt-3">
