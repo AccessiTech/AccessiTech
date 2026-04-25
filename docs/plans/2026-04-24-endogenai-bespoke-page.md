@@ -392,6 +392,90 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Gate**: P12 does not start until APPROVED  
 **Status**: ✅ Complete — APPROVED (all 10 validation criteria passed)
 
+#### P11L — Document Third-Round Decisions + Update Workplan
+**Agent**: Orchestrator (direct — coordination)
+**Depends on**: P11K Final Review APPROVED
+**Deliverables**: 7 new feedback items documented with implementation strategy; P11L-R phases defined; workplan committed
+**Gate**: P11M does not start until committed
+**Status**: ✅ Complete — documented below (commit TBD)
+
+#### User Feedback Round 3 Summary (7 items)
+1. **Scannability overhaul**: Entire page needs to be LOT more scannable — review styleguides, scannability research, scout web resources; add subheaders, visual chunking throughout
+2. **Problem cards**: Shorten card content; embed more links in text; add react-bootstrap Modal for "drill into card content" (one per card)
+3. **§3 What EndogenAI**: Needs subheaders for scannability; double-column layout for chunking
+4. **Encoding chain items**: "The framework encodes governance as:" list → each item becomes a "little card" (Card component)
+5. **Section flow/duplication**: §3 mentions "DogmaMCP: Governance-First Harness Implementation" BEFORE §4 introduces dogma & DogmaMCP cards → resolve duplication by removing §3 harness subsections; let §4 be the authoritative product introduction
+6. **Research section inner alignment**: Full-bleed background is correct; inner content needs 8-span 2-offset alignment matching rest of page; give each research item its own Card
+7. **Duplicate CTA**: Remove duplicate "Get Started" — currently `h2 "Get Started" + CTA_DESCRIPTION + GitHub Button` above `GetStartedSection` (which has its own `h3 "Get Started"`). Remove the outer wrapper; keep GetStartedSection as sole CTA.
+
+#### P11L Decisions Locked
+| Item | Decision |
+|---|---|
+| §3 harness subsections | REMOVE h3 "Open Harness Architecture" + h3 "DogmaMCP: Governance-First" from §3; §4 becomes authoritative product introduction |
+| §3 subheader structure | Split WHAT_ENDOGENAI_INTRO into 3 subheaded chunks: "Three Core Axioms", "The Governance Stack" (with cards), "The Open-Source Model" |
+| §3 double-column | Use Bootstrap Row/Col md={6} for the 3-subheader blocks within §3 |
+| Encoding chain | Convert ENCODING_STEPS from border-div layout to Bootstrap Cards in 2-col grid (md={6}) |
+| Problem card modals | Add react-bootstrap Modal — 4 modals (one per card); short teaser in card; full content in modal |
+| Problem card short copy | Comms drafts SHORT_BODY (1-2 sentences + link) per card; existing body moves to MODAL_BODY |
+| Research inner alignment | Wrap `<section>` content in `<Col xs={12} sm={{span: 8, offset: 2}}>` inside `.research-section` full-bleed wrapper |
+| Research items as cards | Convert RESEARCH_INTERNAL_FINDINGS + RESEARCH_EXTERNAL_FINDINGS from markdown blocks to Card arrays |
+| Duplicate CTA | Remove outer h2/CTA_DESCRIPTION/GitHub button; keep ONLY GetStartedSection; add GitHub as tertiary link below GetStartedSection |
+
+#### P11M — Comms: Draft Shortened Copy + Structure
+**Agent**: Comms Strategist
+**Depends on**: P11L decisions documented
+**Deliverables**:
+- SHORT_BODY for all 4 problem cards (1-2 sentences + link, ≤50 words each)
+- 3 subheader copy blocks for §3 (axioms text, governance stack intro, open-source model text)
+- Research item arrays (internal: 4 items; external: 4 items) as `{title, body, link}` objects
+- Recommendation on GitHub CTA tertiary text
+**Gate**: P11N Review does not start until Comms returns
+**Status**: ⬜ Not started
+
+#### P11M Review — Review Gate
+**Agent**: Review
+**Status**: ⬜ Not started
+
+#### P11N — FE: Implement All 7 Feedback Items
+**Agent**: AT - Frontend Developer
+**Depends on**: P11M Comms draft committed
+**Deliverables**:
+1. Problem cards: short teaser content + "Learn more" modal trigger; 4 Modal components with full content
+2. §3 What EndogenAI: 3 subheader sections (h3) in 2-col layout; remove harness h3 subsections
+3. §3 Governance stack: GOVERNANCE_STACK_ITEMS array rendered as Cards (mini-cards in Row/Col)
+4. §4 Encoding chain: ENCODING_STEPS rendered as Bootstrap Cards in 2-col grid (md=6)
+5. §5 dogma & DogmaMCP: no change (already cards)
+6. §6 Research: full-bleed wrapper maintained; inner content wrapped in Col xs=12 sm={span:8, offset:2}; each item as Card
+7. §7 CTA: remove h2/description/GitHub button; keep GetStartedSection + tertiary GitHub link below
+8. All TypeScript 0 errors; tests updated
+**Gate**: P11O Review does not start until build clean + tests pass
+**Status**: ⬜ Not started
+
+#### P11N Review — Review Gate
+**Agent**: Review
+**Status**: ⬜ Not started
+
+#### P11O — QA: Validate All Third-Round Changes
+**Agent**: AT - QA Tester
+**Depends on**: P11N FE implementation committed
+**Deliverables**: Validate all 7 feedback items:
+1. Page scannability: subheaders present throughout; visual chunking clear
+2. Problem cards: short content; modals open/close; full content in modal
+3. §3 subheaders: 3 h3 sections; double-column layout renders at md breakpoint
+4. Governance stack: mini-cards render for each item
+5. Encoding chain: Cards in 2-col grid
+6. Research inner alignment: 8-span 2-offset; items as Cards; full-bleed background maintained
+7. Single CTA: no duplicate "Get Started" heading
+**Gate**: P11P does not start until QA returns validation
+**Status**: ⬜ Not started
+
+#### P11P — Final Review Gate for P11L-O
+**Agent**: Review
+**Depends on**: P11O QA complete
+**Deliverables**: APPROVED or REQUEST CHANGES
+**Gate**: P12 does not start until APPROVED
+**Status**: ⬜ Not started
+
 ---
 
 ### Phase P12 — Cross Review: Comms + Biz Dev (content quality)
