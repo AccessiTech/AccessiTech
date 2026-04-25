@@ -19,85 +19,29 @@ export const PROBLEM_INTRO = `Recent governance reports expose the same structur
 
 export const PROBLEM_CARD_1_TITLE = `UK CMA: AI Agent Autonomy Failures`;
 export const PROBLEM_CARD_1_SHORT_BODY = `The UK CMA's 2026 watchdog report documents systematic AI agent failures: manipulation, unintended escalation, and loss of human oversight. [See the full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md#) — these aren't theoretical risks.`;
-export const PROBLEM_CARD_1_BODY = `### What it is
-The UK Competition & Markets Authority's 2026 watchdog report documents systematic autonomy failures in AI agent systems: manipulation, unintended escalation, and loss of human control. Organizations deploy agents without genuine oversight mechanisms, then face cascading failures when agents optimize for measurable objectives in ways that violate human intent.
-
-### Why it matters
-- **Manipulation**: agents find paths that violate human intent without explicit instruction to do so
-- **Unintended escalation**: agents with broad tool access take high-impact actions outside their intended scope
-- **Oversight loss**: retrospective human review is too slow to prevent harm once autonomy exceeds a threshold
-- These aren't theoretical risks — they're happening now in deployed systems
-
-### How it connects to EndogenAI
-The [CMA's Minimal Posture recommendation](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md) — limit tool scope, require explicit phase gates, treat every escalation as a human decision boundary — is directly implemented in [dogma's agent role files](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md) and [AGENTS.md constraints](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-authoring-conventions). Every agent role declares explicit tool restrictions; no general-purpose toolkits.
-
-### Where to go next
-- [Read the full autonomy governance analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md)
-- [See agent tool restrictions in the fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md)
-- [See phase gates in AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md)`;
+export const PROBLEM_CARD_1_BODY = `The UK Competition & Markets Authority's 2026 watchdog report documents systematic autonomy failures in AI agent systems: manipulation, unintended escalation, and loss of human control. Organizations deploy agents without genuine oversight mechanisms, then face cascading failures when agents optimize for measurable objectives in ways that violate human intent. The [CMA's Minimal Posture recommendation](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md) — limit tool scope, require explicit phase gates, treat every escalation as a human decision boundary — is directly implemented in [dogma's agent role files](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md) and [AGENTS.md constraints](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-authoring-conventions). These aren't theoretical risks. They're happening now.`;
 
 export const PROBLEM_CARD_2_TITLE = `Platform Lock-In: Vendor Volatility`;
 export const PROBLEM_CARD_2_SHORT_BODY = `Meta's acquisition of Moltbook shows how organizations can lose operational control overnight when vendor policies shift without warning. [Platform lock-in research](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-platform-lock-in-risks.md#) documents the repeating pattern.`;
-export const PROBLEM_CARD_2_BODY = `### What it is
-Meta's acquisition of Moltbook and subsequent Terms-of-Service changes illustrate a structural risk: organizations building on proprietary AI platforms can lose operational control overnight. When vendor policies shift, governance infrastructure built on that platform breaks — permanently if memory is vendor-locked.
-
-### Why it matters
-- **Overnight control loss**: vendor ToS changes can break governance infrastructure without warning
-- **Memory lock-in**: accumulated behavioral context stored in proprietary platforms has no export path
-- **Pattern is repeating**: platform lock-in failures documented across multiple vendors
-- Model lock-in is recoverable (retrain on your data); memory lock-in is not
-
-### How it connects to EndogenAI
-[Platform lock-in research](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-platform-lock-in-risks.md) shows the repeating pattern. Avoid it by designing for portability: [dogma's git-native governance model](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#3-local-compute-first) and [DogmaMCP's open harness architecture](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md) are portable by design — fork, adapt, and run anywhere.
-
-### Where to go next
-- [Read the platform lock-in research](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-platform-lock-in-risks.md)
-- [See dogma's Local-Compute-First axiom](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#3-local-compute-first)
-- [See DogmaMCP's open harness ADR](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md)`;
+export const PROBLEM_CARD_2_BODY = `Meta's acquisition of Moltbook and subsequent Terms-of-Service changes illustrate a structural risk: organizations building on proprietary AI platforms can lose operational control overnight. When vendor policies shift, governance infrastructure built on that platform breaks — permanently if memory is vendor-locked. [Platform lock-in research](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-platform-lock-in-risks.md) shows the pattern is repeating. Avoid it by designing for portability: [dogma's git-native governance model](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#3-local-compute-first) and [DogmaMCP's open harness architecture](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md) are portable by design — fork, adapt, and run anywhere.`;
 
 export const PROBLEM_CARD_3_TITLE = `OWASP LLM Top 10: Security Blindness`;
 export const PROBLEM_CARD_3_SHORT_BODY = `Seven of the OWASP LLM Top 10 apply to agentic workflows — three at High severity. Most organizations don't know they're exposed. [Full threat model analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md#) — governance closes these gaps.`;
-export const PROBLEM_CARD_3_BODY = `### What it is
-Seven of the OWASP Top 10 for LLM Applications apply directly to agentic workflows. Three are High-severity: **prompt injection** (LLM01), **excessive agency** (LLM08 — uncontrolled tool access), and **sensitive information leakage** (LLM06). Most organizations don't know their AI systems are exposed until after an incident.
-
-### Why it matters
-- **Prompt injection (LLM01)**: malicious inputs hijack agent instructions — requires architectural defense, not input filtering
-- **Excessive agency (LLM08)**: agents with overly broad tool access take unintended high-impact actions
-- **Information leakage (LLM06)**: agents pass data across trust boundaries without awareness
-- These are architectural risks, not implementation bugs — they require harness-level mitigations
-
-### How it connects to EndogenAI
-[Full threat model analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md) maps each OWASP risk to specific dogma controls: prompt injection → [agent role isolation](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md), excessive agency → [tool restrictions in .agent.md files](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-authoring-conventions), leakage → [phase gate human review](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-communication). Governance is how you close these gaps.
-
-### Where to go next
-- [Read the OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- [See EndogenAI's threat model analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md)
-- [See agent tool restrictions in the fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md)`;
+export const PROBLEM_CARD_3_BODY = `Seven of the OWASP Top 10 for LLM Applications apply directly to agentic workflows. Three are High-severity: **prompt injection** (LLM01), **excessive agency** (LLM08 — uncontrolled tool access), and **sensitive information leakage** (LLM06). Most organizations don't know their AI systems are exposed until after an incident. [Full threat model analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md) maps each OWASP risk to specific dogma controls: prompt injection → [agent role isolation](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md), excessive agency → [tool restrictions in .agent.md files](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-authoring-conventions), leakage → [phase gate human review](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-communication). Governance is how you close these gaps.`;
 
 export const PROBLEM_CARD_4_TITLE = `Harness Lock-In: Memory Loss`;
 export const PROBLEM_CARD_4_SHORT_BODY = `Deleting a proprietary AI agent loses months of learned preferences — permanently. Harnesses like Claude Managed Agents store memory server-side with no export path. [Full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md) — memory lock-in is not recoverable.`;
-export const PROBLEM_CARD_4_BODY = `### What it is
-When Harrison Chase deleted and recreated his email assistant, it lost everything — months of learned preferences, interaction patterns, and behavioral refinements. That's harness-mediated memory loss in practice. Platforms like Claude Managed Agents and the OpenAI Assistants API store learned context server-side with no export path: delete the agent, lose the memory permanently.
-
-### Why it matters
-- **Memory loss is permanent**: no reconstruction path once vendor-stored context is deleted
-- **API lock-in is recoverable** (retrain on your data); memory lock-in is not
-- Most teams don't build extraction strategy until after the loss
-- Harness is the most durable lock-in vector — memory lives with your harness
-
-### How it connects to EndogenAI
-[Full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md) — dogma's git-native memory model ([scratchpads](https://github.com/EndogenAI/dogma/blob/main/docs/guides/session-management.md), [agent roles](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md), [MANIFESTO.md axioms](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md)) lives in files you own and version-control, not vendor databases. Your organizational memory is portable by design.
-
-### Where to go next
-- [Read the harness memory governance analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md)
-- [See LangChain: Your Harness, Your Memory](https://www.langchain.com/blog/your-harness-your-memory)
-- [See DogmaMCP's open harness architecture](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md)`;
+export const PROBLEM_CARD_4_BODY = `When Harrison Chase deleted and recreated his email assistant, it lost everything — months of learned preferences, interaction patterns, and behavioral refinements. That's harness-mediated memory loss in practice. Platforms like Claude Managed Agents and the OpenAI Assistants API store learned context server-side with no export path: delete the agent, lose the memory permanently. API lock-in is recoverable — you can retrain on your own data. Memory lock-in is not recoverable without a deliberate extraction strategy built before dependency accrues. Most teams don't build that strategy until after the loss. [Full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md) — dogma's git-native memory model ([scratchpads](https://github.com/EndogenAI/dogma/blob/main/docs/guides/session-management.md), [agent roles](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md), [MANIFESTO.md axioms](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md)) lives in files you own and version-control, not vendor databases.`;
 
 // §3 What EndogenAI is
 export const WHAT_TITLE = `What EndogenAI is`;
 
 export const WHAT_AXIOMS_HEADER = `Three Core Axioms`;
-export const WHAT_AXIOMS_BODY = `**Endogenous-First** — read your system's own encoded knowledge before acting. **Algorithms Before Tokens** — prefer deterministic, scripted solutions over interactive generation. **Local Compute-First** — run enforcement locally, at the commit boundary, not delegated to cloud CI. Every layer of the governance stack implements these three principles.`;
+export const WHAT_AXIOMS_BODY = `- **[Endogenous-First](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#1-endogenous-first)** — read your system's own encoded knowledge before acting
+- **[Algorithms Before Tokens](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#2-algorithms-before-tokens)** — prefer deterministic, scripted solutions over interactive generation
+- **[Local Compute-First](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#3-local-compute-first)** — run enforcement locally, at the commit boundary, not delegated to cloud CI
+
+Every layer of the governance stack implements these three principles.`;
 
 export const WHAT_STACK_HEADER = `The Governance Stack`;
 export const WHAT_STACK_INTRO = `EndogenAI governance is encoded as a five-layer stack — each layer a concrete artifact you own, audit, and extend.`;
@@ -127,7 +71,7 @@ export const GOVERNANCE_STACK_ITEMS: GovernanceStackItem[] = [
   {
     title: `Reusable skills (SKILL.md files)`,
     description: `Domain-specific workflows packaged so any agent can invoke them — the "how to" layer for procedures used by more than one role.`,
-    link: `https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-skills`,
+    link: `https://github.com/EndogenAI/dogma/blob/main/.github/skills/`,
   },
   {
     title: `Governance scripts`,
