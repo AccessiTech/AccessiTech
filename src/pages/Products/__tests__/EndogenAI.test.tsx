@@ -7,7 +7,14 @@ import {
   WHAT_AXIOMS_HEADER,
   WHAT_STACK_HEADER,
   WHAT_OSS_HEADER,
+  DOGMA_CARD_SHORT_BODY,
+  DOGMAMCP_CARD_SHORT_BODY,
+  RESEARCH_INTERNAL_ITEMS,
+  RESEARCH_EXTERNAL_ITEMS,
 } from '../EndogenAI.constants';
+
+// Derive first link text from a Markdown string to build non-brittle assertions
+const firstLinkText = (md: string) => md.match(/\[([^\]]+)\]/)?.[1] ?? '';
 
 describe('EndogenAI Page', () => {
   it('renders the page with all 7 sections', () => {
@@ -132,9 +139,13 @@ describe('EndogenAI Page', () => {
     // Check for card titles
     expect(screen.getByText('dogma')).toBeInTheDocument();
     expect(screen.getByText('DogmaMCP')).toBeInTheDocument();
-    // Check for short body content markers (GitHub links)
-    expect(screen.getByText(/reads from dogma/i)).toBeInTheDocument();
-    expect(screen.getByText(/governance programmatically/i)).toBeInTheDocument();
+    // Check for short body content markers derived from imported constants
+    expect(
+      screen.getByText(new RegExp(firstLinkText(DOGMA_CARD_SHORT_BODY), 'i'))
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(new RegExp(firstLinkText(DOGMAMCP_CARD_SHORT_BODY), 'i'))
+    ).toBeInTheDocument();
     // Check for "Learn more" buttons (2 total for dogma/DogmaMCP)
     const learnMoreButtons = screen.getAllByText('Learn more');
     expect(learnMoreButtons.length).toBeGreaterThanOrEqual(2);
@@ -153,9 +164,13 @@ describe('EndogenAI Page', () => {
     // Check for research card titles
     expect(screen.getByText('Endogenic Design Patterns for AI Systems')).toBeInTheDocument();
     expect(screen.getByText('LangChain: Your Harness, Your Memory')).toBeInTheDocument();
-    // Check for short body content markers
-    expect(screen.getByText(/40–60% reduction in incident recovery time/i)).toBeInTheDocument();
-    expect(screen.getByText(/cede accumulated behavioral context/i)).toBeInTheDocument();
+    // Check for short body content markers derived from imported constants
+    expect(
+      screen.getByText(new RegExp(firstLinkText(RESEARCH_INTERNAL_ITEMS[0].shortBody), 'i'))
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(new RegExp(firstLinkText(RESEARCH_EXTERNAL_ITEMS[0].shortBody), 'i'))
+    ).toBeInTheDocument();
     // Check for "Learn more" buttons (8 total: 4 internal + 4 external)
     const learnMoreButtons = screen.getAllByText('Learn more');
     // Total: 4 problem + 2 dogma + 7 encoding + 8 research = 21

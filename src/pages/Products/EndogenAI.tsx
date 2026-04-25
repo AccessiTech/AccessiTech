@@ -440,7 +440,7 @@ const EndogenAI = () => {
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <p>{item.body}</p>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
                   Read more on GitHub ↗
                 </a>
@@ -468,7 +468,7 @@ const EndogenAI = () => {
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <p>{item.body}</p>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
                   Read more ↗
                 </a>
