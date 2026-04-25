@@ -4,7 +4,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Metadata from '../../components/Metadata/Metadata';
 import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
-import CalendlyButton from '../../components/CalendlyButton/CalendlyButton';
 import { HOME_URL } from '../../settings/strings';
 import {
   HERO_TAGLINE,
@@ -33,6 +32,7 @@ import {
   RESEARCH_EXTERNAL_HEADER,
   RESEARCH_EXTERNAL_FINDINGS,
   CTA_TITLE,
+  CTA_DESCRIPTION,
   CTA_GITHUB_LABEL,
   CTA_GITHUB_HREF,
 } from './EndogenAI.constants';
@@ -226,22 +226,25 @@ const EndogenAI = () => {
           {/* §7 CTA */}
           <section className="endogenai-cta getstartedsection text-start">
             <h2>{CTA_TITLE}</h2>
+            <p className="mb-4">{CTA_DESCRIPTION}</p>
             <Button
               href={CTA_GITHUB_HREF}
               target="_blank"
               rel="noopener noreferrer"
               variant="primary"
               size="lg"
-              className="mb-4"
+              className="mb-5"
             >
               {CTA_GITHUB_LABEL}
             </Button>
-            <div className="secondary-cta-block">
-              <GetStartedSection page="endogenai" inquiryParam="consulting" />
-            </div>
-            <div className="mt-5">
-              <CalendlyButton />
-            </div>
+            <GetStartedSection
+              page="endogenai"
+              inquiryParam="endogenai-implementation"
+              leftParagraph="Ready to embed EndogenAI into your workflows? Schedule a consulting discovery call to discuss implementation support."
+              rightParagraph="Have questions about the methodology? Send us a message and we'll help you find the right starting point."
+              leftButtonLabel="Schedule Implementation Consult"
+              rightButtonLabel="Ask a Question"
+            />
           </section>
         </Col>
       </Row>
