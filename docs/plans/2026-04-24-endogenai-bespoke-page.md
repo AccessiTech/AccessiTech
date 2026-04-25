@@ -280,6 +280,93 @@ Replace the existing ProductPage-template-based `EndogenAI.tsx` with a fully bes
 **Agent**: Review  
 **Status**: ✅ Complete — APPROVED (all 10 validation criteria passed)
 
+#### P11E — Document Second-Round Decisions + Update Workplan
+**Status**: ✅ Complete — all 7 user feedback items documented with implementation strategies; P11E-K phases defined
+
+#### User Feedback Round 2 Summary (7 items)
+1. Harness issue more prominent in problem statement
+2. Problem cards: 2-across layout, wrap to second row, 4 total (+ harness cards → subsections)
+3. Split "Why your AI needs a Harness": problem → §2, solution subsections → §3
+4. Section reorder: How It Works after dogma & DogmaMCP
+5. Research sections: full-bleed dark blue bg, white text, yellow links
+6. CTA section: add `.getstartedsection` class
+7. Replace custom CTA with GetStartedSection component
+
+#### P11F — Comms: Review Harness Content Split
+**Agent**: Comms Strategist  
+**Depends on**: P11E decisions documented  
+**Deliverables**: Recommendation on harness content split (§2 problem framing vs §3 solution subsections); draft any new constants (PROBLEM_CARD_4 if needed)  
+**Gate**: P11G does not start until Comms returns recommendation  
+**Status**: ⬜ Not started
+
+#### P11F Review — Review Gate
+**Status**: ⬜ Not started
+
+#### P11G — FE: Section Restructuring
+**Agent**: AT - Frontend Developer  
+**Depends on**: P11F Comms recommendation  
+**Deliverables**:
+- §2 Problem: 4 Cards in 2-across layout (UK CMA, Meta/Moltbook, OWASP, Harness Lock-In)
+- §3 What EndogenAI: Add 2 h3 subsections (Open Harness Solution + DogmaMCP Governance-First)
+- Remove §3.5 entirely (content redistributed to §2 and §3)
+- Reorder sections: §4 dogma/DogmaMCP, §5 How It Works (moved), §6 Research, §7 CTA
+- Update tests for section numbering, harness content location  
+**Gate**: P11H does not start until build clean + tests pass  
+**Status**: ⬜ Not started
+
+#### P11G Review — Review Gate
+**Status**: ⬜ Not started
+
+#### P11H — FE: CSS Visual Styling
+**Agent**: AT - Frontend Developer  
+**Depends on**: P11G build clean  
+**Deliverables**:
+- Research sections: `.research-section` class with full-bleed dark blue bg (#003d7a), white text, yellow links
+- CTA section: Apply `.getstartedsection` class (lookup existing usage in other ProductPage files)
+- Validate WCAG 2.1 AA contrast ratios  
+**Gate**: P11I does not start until styling committed  
+**Status**: ⬜ Not started
+
+#### P11H Review — Review Gate
+**Status**: ⬜ Not started
+
+#### P11I — FE: GetStartedSection Component Integration
+**Agent**: AT - Frontend Developer  
+**Depends on**: P11H styling committed  
+**Deliverables**:
+- Lookup GetStartedSection component API (src/components/GetStartedSection/)
+- Replace custom endogenai-cta with `<GetStartedSection />` component
+- Pass EndogenAI-specific props (title, description, primaryCta, secondaryCta)  
+**Gate**: P11J does not start until component integrated + tests pass  
+**Status**: ⬜ Not started
+
+#### P11I Review — Review Gate
+**Status**: ⬜ Not started
+
+#### P11J — QA: Validate All Second-Round Changes
+**Agent**: AT - QA Tester  
+**Depends on**: P11I component integration complete  
+**Deliverables**: Validate 7 feedback items:
+1. 4 problem cards render 2-across (responsive wrap on mobile)
+2. Harness content correctly split (§2 problem, §3 solution subsections)
+3. Section order correct (§5 How It Works after §4 dogma)
+4. Research sections: dark blue bg + sufficient contrast
+5. GetStartedSection renders with correct props
+6. All links functional
+7. Responsive check (mobile/tablet/desktop)  
+**Gate**: P11K does not start until QA returns validation  
+**Status**: ⬜ Not started
+
+#### P11J Review — Review Gate
+**Status**: ⬜ Not started
+
+#### P11K — Final Review Gate for P11E-J
+**Agent**: Review  
+**Depends on**: P11J QA validation complete  
+**Deliverables**: APPROVED or REQUEST CHANGES against validation criteria (section restructuring, card layouts, visual styling, GetStartedSection integration, tests pass, TypeScript clean)  
+**Gate**: P12 does not start until APPROVED  
+**Status**: ⬜ Not started
+
 ---
 
 ### Phase P12 — Cross Review: Comms + Biz Dev (content quality)
