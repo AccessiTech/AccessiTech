@@ -419,3 +419,10 @@ export const CTA_GITHUB_LABEL = `Explore on GitHub`;
 export const CTA_GITHUB_HREF = `https://github.com/EndogenAI/dogma`;
 export const CTA_CONSULTING_LABEL = `Schedule a Consulting Call`;
 export const CTA_CONSULTING_HREF = `/contact?inquiry=endogenai-implementation`;
+
+// UI Display Strings (Button Labels, Aria Labels, etc.)
+export const BUTTON_LABEL_LEARN_MORE = 'Learn more';
+export const BUTTON_LABEL_CLOSE = 'Close';
+export const BUTTON_LABEL_READ_MORE = 'Read more';
+export const BUTTON_LABEL_VIEW_GITHUB = 'View on GitHub ↗';
+export const ARIA_LABEL_LEARN_MORE_ABOUT = (title: string) => `Learn more about ${title}`;

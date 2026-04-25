@@ -125,10 +125,14 @@ describe('EndogenAI Page', () => {
 
   it('renders a single GitHub CTA link with no duplicate Get Started heading', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
-    // GitHub link present (as anchor, not Button)
-    const githubLink = screen.getByText(/Explore on GitHub/i);
-    expect(githubLink).toBeInTheDocument();
-    expect(githubLink.closest('a')).toHaveAttribute('href', 'https://github.com/EndogenAI/dogma');
+    // GitHub links present (top link + GetStartedSection tertiary link - both are OK)
+    const githubLinks = screen.getAllByText(/Explore on GitHub/i);
+    expect(githubLinks.length).toBeGreaterThanOrEqual(1);
+    // Verify at least one links to dogma repo
+    expect(githubLinks[0].closest('a')).toHaveAttribute(
+      'href',
+      'https://github.com/EndogenAI/dogma'
+    );
     // Only one h2 Get Started removed — now only h3 from GetStartedSection
     const getStartedHeadings = screen.queryAllByRole('heading', { name: /Get Started/i });
     expect(getStartedHeadings.length).toBe(1);

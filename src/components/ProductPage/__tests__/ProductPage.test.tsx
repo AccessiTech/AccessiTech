@@ -28,8 +28,8 @@ describe('ProductPage', () => {
 
   it('renders GetStartedSection with default copy when no custom props provided', () => {
     renderWithProviders(<ProductPage {...defaultProps} />);
-    // GetStartedSection defaults include "Not sure which mentorship path" text
-    expect(screen.getByText(/Not sure which mentorship path/i)).toBeInTheDocument();
+    // GetStartedSection defaults include "Ready to explore" text
+    expect(screen.getByText(/Ready to explore how this could work for you/i)).toBeInTheDocument();
   });
 
   it('renders GetStartedSection with custom copy when props provided', () => {

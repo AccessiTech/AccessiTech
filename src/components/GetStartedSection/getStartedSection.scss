@@ -1,6 +1,6 @@
 .product-next-steps {
   @include padding(2rem 0 3rem !important);
-  display: flex;
+  // display: flex;
   text-align: left;
 
   // at md breakpoint the flex direction should be column
@@ -8,9 +8,12 @@
     flex-direction: column;
   }
 
-  & > .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  & > .row {
+    align-items: stretch;
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }

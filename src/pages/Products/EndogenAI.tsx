@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Breadcrumb, Button, Card, Col, Modal, Row } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -45,6 +45,11 @@ import {
   CTA_GITHUB_LABEL,
   CTA_GITHUB_HREF,
   DOGMA_TITLE,
+  BUTTON_LABEL_LEARN_MORE,
+  BUTTON_LABEL_CLOSE,
+  BUTTON_LABEL_READ_MORE,
+  BUTTON_LABEL_VIEW_GITHUB,
+  ARIA_LABEL_LEARN_MORE_ABOUT,
 } from './EndogenAI.constants';
 import './EndogenAI.scss';
 
@@ -217,9 +222,9 @@ const EndogenAI = () => {
                         size="sm"
                         className="mt-2 align-self-start"
                         onClick={() => setActiveDogmaModal(0)}
-                        aria-label={`Learn more about ${DOGMA_CARD_TITLE}`}
+                        aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMA_CARD_TITLE)}
                       >
-                        Learn more
+                        {BUTTON_LABEL_LEARN_MORE}
                       </Button>
                     </Card.Body>
                   </Card>
@@ -238,9 +243,9 @@ const EndogenAI = () => {
                         size="sm"
                         className="mt-2 align-self-start"
                         onClick={() => setActiveDogmaModal(1)}
-                        aria-label={`Learn more about ${DOGMAMCP_CARD_TITLE}`}
+                        aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMAMCP_CARD_TITLE)}
                       >
-                        Learn more
+                        {BUTTON_LABEL_LEARN_MORE}
                       </Button>
                     </Card.Body>
                   </Card>
@@ -283,7 +288,7 @@ const EndogenAI = () => {
             </Modal.Body>
             <Modal.Footer>
               <Button variant="secondary" onClick={() => setActiveDogmaModal(null)}>
-                Close
+                {BUTTON_LABEL_CLOSE}
               </Button>
             </Modal.Footer>
           </Modal>
@@ -301,7 +306,7 @@ const EndogenAI = () => {
             </Modal.Body>
             <Modal.Footer>
               <Button variant="secondary" onClick={() => setActiveDogmaModal(null)}>
-                Close
+                {BUTTON_LABEL_CLOSE}
               </Button>
             </Modal.Footer>
           </Modal>
@@ -325,9 +330,9 @@ const EndogenAI = () => {
                         size="sm"
                         className="mt-2 align-self-start"
                         onClick={() => setActiveEncodingModal(step.step - 1)}
-                        aria-label={`Learn more about ${step.title}`}
+                        aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(step.title)}
                       >
-                        Learn more
+                        {BUTTON_LABEL_LEARN_MORE}
                       </Button>
                     </Card.Body>
                   </Card>
@@ -353,19 +358,19 @@ const EndogenAI = () => {
               <Modal.Body>
                 <p>{step.description}</p>
                 <a href={step.link} target="_blank" rel="noopener noreferrer" className="card-link">
-                  View on GitHub ↗
+                  {BUTTON_LABEL_VIEW_GITHUB}
                 </a>
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={() => setActiveEncodingModal(null)}>
-                  Close
+                  {BUTTON_LABEL_CLOSE}
                 </Button>
               </Modal.Footer>
             </Modal>
           ))}
 
           {/* §6 What the research says */}
-          <div className="research-section mb-5">
+          <div className="research-section">
             <section className="endogenai-research text-start">
               <h2 className="mb-4">What the Research Says</h2>
               <p className="mb-5">{RESEARCH_INTRO}</p>
@@ -389,9 +394,9 @@ const EndogenAI = () => {
                             size="sm"
                             className="mt-2 align-self-start"
                             onClick={() => setActiveResearchModal(index)}
-                            aria-label={`Learn more about ${item.title}`}
+                            aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(item.title)}
                           >
-                            Learn more
+                            {BUTTON_LABEL_LEARN_MORE}
                           </Button>
                         </Card.Body>
                       </Card>
@@ -421,9 +426,9 @@ const EndogenAI = () => {
                             onClick={() =>
                               setActiveResearchModal(RESEARCH_EXTERNAL_ITEMS.length + index)
                             }
-                            aria-label={`Learn more about ${item.title}`}
+                            aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(item.title)}
                           >
-                            Learn more
+                            {BUTTON_LABEL_LEARN_MORE}
                           </Button>
                         </Card.Body>
                       </Card>
@@ -451,12 +456,12 @@ const EndogenAI = () => {
               <Modal.Body>
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
-                  Read more ↗
+                  {BUTTON_LABEL_READ_MORE} ↗
                 </a>
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
-                  Close
+                  {BUTTON_LABEL_CLOSE}
                 </Button>
               </Modal.Footer>
             </Modal>
@@ -479,33 +484,40 @@ const EndogenAI = () => {
               <Modal.Body>
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
-                  Read more on GitHub ↗
+                  {BUTTON_LABEL_READ_MORE} ↗
                 </a>
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
-                  Close
+                  {BUTTON_LABEL_CLOSE}
                 </Button>
               </Modal.Footer>
             </Modal>
           ))}
-
-          {/* §7 CTA — single GetStartedSection */}
-          <section className="endogenai-cta getstartedsection text-start">
-            <GetStartedSection
-              page="endogenai"
-              inquiryParam="endogenai-implementation"
-              leftParagraph="Ready to embed EndogenAI into your workflows? Schedule a consulting discovery call to discuss implementation support."
-              rightParagraph="Have questions about the methodology? Send us a message and we'll help you find the right starting point."
-              leftButtonLabel="Schedule Implementation Consult"
-              rightButtonLabel="Ask a Question"
-            />
-            <div className="mt-4 text-center">
-              <a href={CTA_GITHUB_HREF} target="_blank" rel="noopener noreferrer">
-                {CTA_GITHUB_LABEL} ↗
-              </a>
-            </div>
-          </section>
+        </Col>
+      </Row>
+      {/* §7 CTA — single GetStartedSection */}
+      <Row className="getStartedRow pt-5 pb-5">
+        <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+          <GetStartedSection
+            page="endogenai"
+            inquiryParam="endogenai-consulting"
+            leftParagraph="Interested in implementing EndogenAI for your organization? Schedule a consulting discovery call to discuss how we can support your implementation."
+            rightParagraph="Have questions about the methodology? Send us a message and we'll help you find the right starting point."
+            leftButtonLabel="Schedule Consult"
+            rightButtonLabel="Ask a Question"
+          />
+          <div className="mt-4 text-center">
+            <Link
+              to={CTA_GITHUB_HREF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-link text-dark"
+              aria-label={CTA_GITHUB_LABEL}
+            >
+              {CTA_GITHUB_LABEL} ↗
+            </Link>
+          </div>
         </Col>
       </Row>
     </>
