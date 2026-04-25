@@ -139,6 +139,7 @@ const EndogenAI = () => {
                         size="sm"
                         className="mt-2 align-self-start"
                         onClick={() => setActiveModal(index)}
+                        aria-label={`Learn more about ${card.title}`}
                       >
                         Learn more
                       </Button>
