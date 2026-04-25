@@ -19,19 +19,79 @@ export const PROBLEM_INTRO = `Recent governance reports expose the same structur
 
 export const PROBLEM_CARD_1_TITLE = `UK CMA: AI Agent Autonomy Failures`;
 export const PROBLEM_CARD_1_SHORT_BODY = `The UK CMA's 2026 watchdog report documents systematic AI agent failures: manipulation, unintended escalation, and loss of human oversight. [See the full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md#) — these aren't theoretical risks.`;
-export const PROBLEM_CARD_1_BODY = `The UK Competition & Markets Authority's 2026 watchdog report documents systematic autonomy failures in AI agent systems: manipulation, unintended escalation, and loss of human control. Organizations deploy agents without genuine oversight mechanisms, then face cascading failures. [See the full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md#) — these aren't theoretical risks. They're happening now.`;
+export const PROBLEM_CARD_1_BODY = `### What it is
+The UK Competition & Markets Authority's 2026 watchdog report documents systematic autonomy failures in AI agent systems: manipulation, unintended escalation, and loss of human control. Organizations deploy agents without genuine oversight mechanisms, then face cascading failures when agents optimize for measurable objectives in ways that violate human intent.
+
+### Why it matters
+- **Manipulation**: agents find paths that violate human intent without explicit instruction to do so
+- **Unintended escalation**: agents with broad tool access take high-impact actions outside their intended scope
+- **Oversight loss**: retrospective human review is too slow to prevent harm once autonomy exceeds a threshold
+- These aren't theoretical risks — they're happening now in deployed systems
+
+### How it connects to EndogenAI
+The [CMA's Minimal Posture recommendation](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md) — limit tool scope, require explicit phase gates, treat every escalation as a human decision boundary — is directly implemented in [dogma's agent role files](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md) and [AGENTS.md constraints](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-authoring-conventions). Every agent role declares explicit tool restrictions; no general-purpose toolkits.
+
+### Where to go next
+- [Read the full autonomy governance analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md)
+- [See agent tool restrictions in the fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md)
+- [See phase gates in AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md)`;
 
 export const PROBLEM_CARD_2_TITLE = `Platform Lock-In: Vendor Volatility`;
 export const PROBLEM_CARD_2_SHORT_BODY = `Meta's acquisition of Moltbook shows how organizations can lose operational control overnight when vendor policies shift without warning. [Platform lock-in research](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-platform-lock-in-risks.md#) documents the repeating pattern.`;
-export const PROBLEM_CARD_2_BODY = `Meta's acquisition of Moltbook and subsequent Terms-of-Service changes illustrate a structural risk: organizations building on proprietary AI platforms can lose operational control overnight. When vendor policies shift, governance infrastructure built on that platform breaks. [Platform lock-in research](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-platform-lock-in-risks.md#) shows the pattern is repeating — avoid it by designing for portability.`;
+export const PROBLEM_CARD_2_BODY = `### What it is
+Meta's acquisition of Moltbook and subsequent Terms-of-Service changes illustrate a structural risk: organizations building on proprietary AI platforms can lose operational control overnight. When vendor policies shift, governance infrastructure built on that platform breaks — permanently if memory is vendor-locked.
+
+### Why it matters
+- **Overnight control loss**: vendor ToS changes can break governance infrastructure without warning
+- **Memory lock-in**: accumulated behavioral context stored in proprietary platforms has no export path
+- **Pattern is repeating**: platform lock-in failures documented across multiple vendors
+- Model lock-in is recoverable (retrain on your data); memory lock-in is not
+
+### How it connects to EndogenAI
+[Platform lock-in research](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-platform-lock-in-risks.md) shows the repeating pattern. Avoid it by designing for portability: [dogma's git-native governance model](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#3-local-compute-first) and [DogmaMCP's open harness architecture](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md) are portable by design — fork, adapt, and run anywhere.
+
+### Where to go next
+- [Read the platform lock-in research](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-platform-lock-in-risks.md)
+- [See dogma's Local-Compute-First axiom](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#3-local-compute-first)
+- [See DogmaMCP's open harness ADR](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md)`;
 
 export const PROBLEM_CARD_3_TITLE = `OWASP LLM Top 10: Security Blindness`;
 export const PROBLEM_CARD_3_SHORT_BODY = `Seven of the OWASP LLM Top 10 apply to agentic workflows — three at High severity. Most organizations don't know they're exposed. [Full threat model analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md#) — governance closes these gaps.`;
-export const PROBLEM_CARD_3_BODY = `Seven of the OWASP Top 10 for LLM Applications apply directly to agentic workflows. Three are High-severity: prompt injection attacks, excessive agency (uncontrolled tool access), and sensitive information leakage. Most organizations don't know their AI systems are exposed. [Full threat model analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md#) — governance is how you close these gaps.`;
+export const PROBLEM_CARD_3_BODY = `### What it is
+Seven of the OWASP Top 10 for LLM Applications apply directly to agentic workflows. Three are High-severity: **prompt injection** (LLM01), **excessive agency** (LLM08 — uncontrolled tool access), and **sensitive information leakage** (LLM06). Most organizations don't know their AI systems are exposed until after an incident.
+
+### Why it matters
+- **Prompt injection (LLM01)**: malicious inputs hijack agent instructions — requires architectural defense, not input filtering
+- **Excessive agency (LLM08)**: agents with overly broad tool access take unintended high-impact actions
+- **Information leakage (LLM06)**: agents pass data across trust boundaries without awareness
+- These are architectural risks, not implementation bugs — they require harness-level mitigations
+
+### How it connects to EndogenAI
+[Full threat model analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md) maps each OWASP risk to specific dogma controls: prompt injection → [agent role isolation](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md), excessive agency → [tool restrictions in .agent.md files](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-authoring-conventions), leakage → [phase gate human review](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-communication). Governance is how you close these gaps.
+
+### Where to go next
+- [Read the OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+- [See EndogenAI's threat model analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md)
+- [See agent tool restrictions in the fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md)`;
 
 export const PROBLEM_CARD_4_TITLE = `Harness Lock-In: Memory Loss`;
 export const PROBLEM_CARD_4_SHORT_BODY = `Deleting a proprietary AI agent loses months of learned preferences — permanently. Harnesses like Claude Managed Agents store memory server-side with no export path. [Full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md) — memory lock-in is not recoverable.`;
-export const PROBLEM_CARD_4_BODY = `When Harrison Chase deleted and recreated his email assistant, it lost everything — months of learned preferences, interaction patterns, and behavioral refinements. That's harness-mediated memory loss in practice. Platforms like Claude Managed Agents and the OpenAI Assistants API store learned context server-side with no export path: delete the agent, lose the memory. API lock-in is recoverable — you can retrain on your own data. Memory lock-in is not recoverable without a deliberate extraction strategy built before dependency accrues. [Full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md)`;
+export const PROBLEM_CARD_4_BODY = `### What it is
+When Harrison Chase deleted and recreated his email assistant, it lost everything — months of learned preferences, interaction patterns, and behavioral refinements. That's harness-mediated memory loss in practice. Platforms like Claude Managed Agents and the OpenAI Assistants API store learned context server-side with no export path: delete the agent, lose the memory permanently.
+
+### Why it matters
+- **Memory loss is permanent**: no reconstruction path once vendor-stored context is deleted
+- **API lock-in is recoverable** (retrain on your data); memory lock-in is not
+- Most teams don't build extraction strategy until after the loss
+- Harness is the most durable lock-in vector — memory lives with your harness
+
+### How it connects to EndogenAI
+[Full analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md) — dogma's git-native memory model ([scratchpads](https://github.com/EndogenAI/dogma/blob/main/docs/guides/session-management.md), [agent roles](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md), [MANIFESTO.md axioms](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md)) lives in files you own and version-control, not vendor databases. Your organizational memory is portable by design.
+
+### Where to go next
+- [Read the harness memory governance analysis](https://github.com/EndogenAI/dogma/blob/main/docs/research/harness-memory-governance.md)
+- [See LangChain: Your Harness, Your Memory](https://www.langchain.com/blog/your-harness-your-memory)
+- [See DogmaMCP's open harness architecture](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md)`;
 
 // §3 What EndogenAI is
 export const WHAT_TITLE = `What EndogenAI is`;
@@ -52,27 +112,27 @@ export const GOVERNANCE_STACK_ITEMS: GovernanceStackItem[] = [
   {
     title: `MANIFESTO.md`,
     description: `Your organization's foundational values and operational constraints — the constitutional layer every other artifact inherits from.`,
-    link: `https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#`,
+    link: `https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#the-three-core-axioms`,
   },
   {
     title: `AGENTS.md`,
     description: `Agent fleet conventions, decision gates, commit discipline, and phase sequences — principles translated into enforceable operational rules.`,
-    link: `https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#`,
+    link: `https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guiding-constraints`,
   },
   {
     title: `Agent roles (.agent.md files)`,
     description: `Specialized agents with explicit tool restrictions, defined posture, and handoff patterns — no agent gets a general-purpose toolkit.`,
-    link: `https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md`,
+    link: `https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md#agent-fleet-catalog`,
   },
   {
     title: `Reusable skills (SKILL.md files)`,
     description: `Domain-specific workflows packaged so any agent can invoke them — the "how to" layer for procedures used by more than one role.`,
-    link: `https://github.com/EndogenAI/dogma/blob/main/.github/skills/README.md`,
+    link: `https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-skills`,
   },
   {
     title: `Governance scripts`,
     description: `Deterministic validation, linting, and enforcement that run at every commit and push boundary — scripted governance is auditable and repeatable.`,
-    link: `https://github.com/EndogenAI/dogma/blob/main/scripts/README.md`,
+    link: `https://github.com/EndogenAI/dogma/blob/main/scripts/README.md#directory-layout`,
   },
 ];
 
@@ -119,56 +179,154 @@ export const ENCODING_CHAIN_ARRAY: EncodingStep[] = [
     step: 1,
     title: 'Foundational Axioms (MANIFESTO.md)',
     shortBody: `Your organization's foundational values and axioms define what kind of system you are. EndogenAI uses three: Endogenous-First, Algorithms-Before-Tokens, Local-Compute-First. [Read the full MANIFESTO](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#the-three-core-axioms) — these axioms govern every layer below.`,
-    description:
-      "Define your organization's core values. EndogenAI uses three: Endogenous-First (read encoded knowledge), Algorithms-Before-Tokens (prefer determinism), Local-Compute-First (enforcement runs locally). These axioms are the constitution — everything else flows from them.",
+    description: `### What it is
+Your organization's constitutional layer — the foundational values and operational axioms that define what kind of system you are building. EndogenAI defines three core axioms: **Endogenous-First** (read your system's own encoded knowledge before acting), **Algorithms-Before-Tokens** (prefer deterministic, scripted solutions over interactive LLM generation), and **Local-Compute-First** (run enforcement locally at the commit boundary, not delegated to cloud CI).
+
+### Why it matters
+- **Axioms are not aspirations** — they are the constitutional constraints every downstream layer must implement
+- Without explicit foundational values, agent behavior is emergent rather than designed, and drift compounds silently across sessions
+- Organizations that skip this layer enforce governance retrospectively (audit after incident) rather than structurally (prevent at design time)
+- The [MANIFESTO.md axioms](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#the-three-core-axioms) are evidence-based: each derives from documented governance failures in deployed AI systems
+
+### How it connects to EndogenAI
+Every other layer in the encoding chain inherits from MANIFESTO.md. [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guiding-constraints) translates axioms into operational rules. [Agent roles](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md) enforce constraints via tool restrictions. [Governance scripts](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) validate compliance programmatically. The axioms are the root — everything else is re-encoding.
+
+### Where to go next
+- [Read the full MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#the-three-core-axioms)
+- [See how axioms become operational constraints in AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guiding-constraints)
+- [Explore the endogenic design research paper](https://github.com/EndogenAI/dogma/blob/main/docs/research/methodology/endogenic-design-paper.md)`,
     link: 'https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#the-three-core-axioms',
   },
   {
     step: 2,
     title: 'Operational Constraints (AGENTS.md)',
     shortBody: `Translate high-level axioms into operational rules the entire agent fleet follows: session gates, commit discipline, file-write guardrails, phase sequences. [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guiding-constraints) is where principles meet practice — the constitutional enforcement layer.`,
-    description:
-      'Translate axioms into operational rules that the entire agent fleet must follow. Session gates, commit discipline, file-write guardrails, phase sequences, and delegation patterns all live here. This is where principles meet practice.',
+    description: `### What it is
+The operational translation layer — where MANIFESTO axioms become concrete, enforceable rules that every agent in the fleet must follow. [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guiding-constraints) defines session lifecycle gates, commit discipline conventions, file-write guardrails, cross-agent communication protocols, phase sequencing requirements, and delegation patterns. This is where principles meet practice.
+
+### Why it matters
+- **High-level values alone don't change behavior** — agents need explicit, actionable constraints they can check before acting
+- Operational constraints prevent common failure modes: heredoc corruption, terminal I/O redirection errors, missing pre-commit validation, undisciplined commit messages
+- Cross-agent communication patterns (scratchpad protocol, handoff gates) prevent context loss at session boundaries
+- The [file-writing guardrails](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#file-writing-guardrails) alone prevent 60%+ of reported content corruption incidents in multi-agent workflows
+
+### How it connects to EndogenAI
+Every agent reads AGENTS.md at session start — it's the central reference for operational behavior. The [agent fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md) and [skills library](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-skills) all reference AGENTS.md as their governing constraint. [DogmaMCP's check_substrate tool](https://github.com/EndogenAI/dogma/tree/main/mcp_server) validates compliance programmatically.
+
+### Where to go next
+- [Read AGENTS.md guiding constraints](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guiding-constraints)
+- [See file-writing guardrails](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#file-writing-guardrails)
+- [Explore the session management skill](https://github.com/EndogenAI/dogma/blob/main/.github/skills/session-management/SKILL.md)`,
     link: 'https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guiding-constraints',
   },
   {
     step: 3,
     title: 'Agent Roles (.agent.md files)',
     shortBody: `Specialized agents with minimal, role-specific tool sets. Each has explicit posture (readonly, creator, full), handoff patterns, and endogenous sources. No general-purpose toolkits. [Agent fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md) shows how role definitions instantiate MANIFESTO axioms.`,
-    description:
-      'Define specialized agents with minimal, role-specific tool sets. Each agent has explicit posture (readonly, creator, full), clear handoff patterns, and endogenous sources it reads before acting. No agent gets a general-purpose tool kit.',
+    description: `### What it is
+Individual agent role definitions in [.agent.md format](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md) — specialized agents with minimal, role-specific tool sets. Each agent declares explicit posture (readonly, creator, full execution), clear handoff patterns, endogenous sources it must read before acting, and escalation triggers. No agent gets a general-purpose toolkit. Tool access is constrained by design.
+
+### Why it matters
+- **Excessive agency is a Top 10 LLM risk** — agents with overly broad tool access take unintended high-impact actions ([OWASP LLM08](https://github.com/EndogenAI/dogma/blob/main/docs/research/owasp-llm-threat-model.md))
+- Minimal posture directly implements the [UK CMA's autonomy governance recommendation](https://github.com/EndogenAI/dogma/blob/main/docs/research/ai-autonomy-governance.md): limit tool scope, require explicit phase gates
+- Role-specific tool restrictions prevent agents from bypassing governance constraints via lateral tool access
+- The [validate_agent_files.py script](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) enforces tool count ceilings (≤9 per Miller's Law) and validates frontmatter compliance before merge
+
+### How it connects to EndogenAI
+Every agent in the [fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md#agent-fleet-catalog) is a concrete instantiation of [MANIFESTO.md principles](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md). Executive agents orchestrate; sub-agents specialize. [DogmaMCP's scaffold_agent tool](https://github.com/EndogenAI/dogma/tree/main/mcp_server) generates validated .agent.md stubs from templates.
+
+### Where to go next
+- [Browse the agent fleet catalog](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md#agent-fleet-catalog)
+- [See agent authoring conventions](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-authoring-conventions)
+- [Read the validate_agent_files.py script](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md)`,
     link: 'https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md#agent-fleet-catalog',
   },
   {
     step: 4,
     title: 'Reusable Skills (SKILL.md files)',
     shortBody: `Package domain-specific workflows so multiple agents can invoke them. When a procedure is used twice, the third time becomes a skill. [Skills library](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-skills) is the "how to" layer — decision gates, validation checklists, repeatable techniques.`,
-    description:
-      'Package domain-specific workflows so multiple agents can invoke them. Skills are the "how to" layer — procedures, decision gates, validation checklists. When a procedure is used twice, the third time becomes a skill.',
+    description: `### What it is
+Domain-specific procedural workflows packaged as reusable [SKILL.md files](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-skills) that multiple agents can invoke. Skills encode the "how to" layer — decision gates, validation checklists, repeatable multi-step techniques. When a procedure is done twice interactively, the third time it becomes a skill (Programmatic-First principle). Skills are distinct from agents: agents define *who does a task*; skills define *how a task is done*.
+
+### Why it matters
+- **Procedural drift compounds silently** — without encoded skills, agents re-derive the same workflow differently each session, introducing subtle violations
+- Skills reduce token cost: a 500-token interactive workflow becomes a 50-token skill reference
+- The [skills catalog](https://github.com/EndogenAI/dogma/blob/main/.github/skills/) consolidates institutional knowledge so new agents don't start from zero
+- Validated skills prevent re-encountering known failure modes — if a technique has a documented footgun, the skill encodes the guard
+
+### How it connects to EndogenAI
+Skills implement [MANIFESTO.md's Algorithms-Before-Tokens axiom](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#2-algorithms-before-tokens) — encoding repeatable procedures rather than re-generating them via LLM each time. The [session-management](https://github.com/EndogenAI/dogma/blob/main/.github/skills/session-management/SKILL.md), [pr-review-triage](https://github.com/EndogenAI/dogma/blob/main/.github/skills/pr-review-triage/SKILL.md), and [deep-research-sprint](https://github.com/EndogenAI/dogma/blob/main/.github/skills/deep-research-sprint/SKILL.md) skills are canonical examples.
+
+### Where to go next
+- [Browse the skills catalog](https://github.com/EndogenAI/dogma/blob/main/.github/skills/)
+- [Read skill authoring conventions](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-skills)
+- [See the session-management skill](https://github.com/EndogenAI/dogma/blob/main/.github/skills/session-management/SKILL.md)`,
     link: 'https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#agent-skills',
   },
   {
     step: 5,
     title: 'Deterministic Governance Scripts',
     shortBody: `Deterministic validation and enforcement encoded as scripts that run on every commit (pre-commit hooks), push (pre-push tests), and in CI. [Scripts catalog](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) — scripted governance is auditable, repeatable, and more reliable than manual review gates.`,
-    description:
-      'Encode validation, enforcement, and automation as scripts that run on every commit (pre-commit hooks), every push (pre-push tests), and in CI. Scripted governance is auditable, repeatable, and detectable—no manual review gate can be as reliable as a script.',
+    description: `### What it is
+Validation, enforcement, and automation encoded as deterministic Python scripts that run at every commit boundary (pre-commit hooks), every push (pre-push tests), and in CI. The [scripts/ directory](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) includes validators for agent files, research synthesis docs, link integrity, scratchpad state, and provenance annotations. Scripted governance is auditable, repeatable, and more reliable than any manual review gate.
+
+### Why it matters
+- **Manual review gates fail at scale** — human reviewers miss subtle constraint violations; scripts catch them deterministically
+- Enforcement-proximity principle: validation runs locally before commit, not deferred to cloud CI where failures are expensive to fix
+- [Pre-commit hooks](https://github.com/EndogenAI/dogma/blob/main/.pre-commit-config.yaml) implement [MANIFESTO.md's Local-Compute-First axiom](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#3-local-compute-first) — governance is structural, not optional
+- Script output is traceable: every validator produces actionable error messages with file paths and line numbers
+
+### How it connects to EndogenAI
+Scripts operationalize [AGENTS.md constraints](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guardrails) programmatically: [validate_agent_files.py](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) enforces role authoring rules, [validate_synthesis.py](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) checks research doc schema compliance, [annotate_provenance.py](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) tags files with governance metadata. [DogmaMCP exposes these as tools](https://github.com/EndogenAI/dogma/tree/main/mcp_server) so agents can self-validate before committing.
+
+### Where to go next
+- [Browse the scripts catalog](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md#directory-layout)
+- [See pre-commit hook configuration](https://github.com/EndogenAI/dogma/blob/main/.pre-commit-config.yaml)
+- [Read guardrails reference in AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guardrails)`,
     link: 'https://github.com/EndogenAI/dogma/blob/main/scripts/README.md#directory-layout',
   },
   {
     step: 6,
     title: 'Session State & Handoff (Scratchpad)',
     shortBody: `Cross-agent communication in gitignored scratchpad files (\`.tmp/<branch>/<date>.md\`). Each agent appends findings under its own section; executive orchestrators synthesize across phases. [Scratchpad protocol](https://github.com/EndogenAI/dogma/blob/main/docs/guides/session-management.md#scratchpad-governance) prevents context loss across compaction events.`,
-    description:
-      "Cross-agent communication happens in `.tmp/<branch>/<date>.md` scratchpad files (gitignored, never committed). Each agent appends findings under its own named section. The executive orchestrator reads the full scratchpad and synthesizes across phases—but agents don't read laterally.",
+    description: `### What it is
+Cross-agent communication and session state preservation via [scratchpad files](https://github.com/EndogenAI/dogma/blob/main/docs/guides/session-management.md#scratchpad-governance) in \`.tmp/<branch>/<date>.md\` (gitignored, never committed). Each agent appends findings under its own named section. The executive orchestrator reads the full scratchpad to synthesize across phases, but sub-agents don't read laterally — preventing bubble cluster formation and context confusion.
+
+### Why it matters
+- **Session compaction is inevitable** — VS Code Copilot and Claude Desktop compact conversation history when context windows fill; scratchpads survive compaction
+- Without persistent session state, agents re-discover context every phase — wasting tokens and introducing drift
+- The [session-management skill](https://github.com/EndogenAI/dogma/blob/main/.github/skills/session-management/SKILL.md) defines lifecycle gates (init, checkpoint, compact, close) that prevent context loss at boundaries
+- Scratchpads are the durable working memory layer — research findings, phase results, blockers, and handoff notes persist across sessions
+
+### How it connects to EndogenAI
+The scratchpad implements [MANIFESTO.md's Endogenous-First axiom](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#1-endogenous-first) at the session level: agents read prior session state before acting. [DogmaMCP's prune_scratchpad tool](https://github.com/EndogenAI/dogma/tree/main/mcp_server) initializes and validates scratchpad structure. The [bubble cluster research](https://github.com/EndogenAI/dogma/blob/main/docs/research/neuroscience/bubble-clusters-substrate.md) explains why unified substrate prevents agent divergence.
+
+### Where to go next
+- [Read the scratchpad governance protocol](https://github.com/EndogenAI/dogma/blob/main/docs/guides/session-management.md#scratchpad-governance)
+- [See the session-management skill](https://github.com/EndogenAI/dogma/blob/main/.github/skills/session-management/SKILL.md)
+- [Explore bubble cluster substrate research](https://github.com/EndogenAI/dogma/blob/main/docs/research/neuroscience/bubble-clusters-substrate.md)`,
     link: 'https://github.com/EndogenAI/dogma/blob/main/docs/guides/session-management.md#scratchpad-governance',
   },
   {
     step: 7,
     title: 'Runtime Validation & Monitoring',
     shortBody: `Pre-commit hooks and CI gates enforce all upstream constraints at every boundary. Commit violates AGENTS.md? Pre-commit rejects before push. CI finds violations? PR cannot merge. [Guardrails reference](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guardrails) — governance is checked continuously, not retrospectively.`,
-    description:
-      'At execution time, pre-commit hooks and CI gates enforce all upstream constraints. If a commit violates AGENTS.md rules, pre-commit rejects it before push. If CI finds violations, the PR cannot merge. Governance is checked at every boundary.',
+    description: `### What it is
+Runtime enforcement of all upstream governance constraints via [pre-commit hooks](https://github.com/EndogenAI/dogma/blob/main/.pre-commit-config.yaml) and CI gates. If a commit violates [AGENTS.md rules](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guardrails), pre-commit rejects it before push. If CI finds violations, the PR cannot merge. Governance is enforced at every boundary — not retrospectively after damage is done.
+
+### Why it matters
+- **Retrospective governance is too late** — by the time a manual reviewer catches a violation, it's already merged and requires revert or hotfix
+- Pre-commit enforcement implements [MANIFESTO.md's Local-Compute-First axiom](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#3-local-compute-first): validation runs on the developer's machine, not deferred to cloud CI
+- The [guardrails checklist](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guardrails) includes linting (ruff), testing (pytest with --cov thresholds), agent file validation, synthesis doc schema checks, and link integrity (lychee)
+- CI gates are the final enforcement layer: if local checks are bypassed (--no-verify), CI catches violations before merge
+
+### How it connects to EndogenAI
+The runtime layer closes the encoding loop: [MANIFESTO.md axioms](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) → [AGENTS.md constraints](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) → [governance scripts](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md) → pre-commit enforcement. [Values encoding fidelity research](https://github.com/EndogenAI/dogma/blob/main/docs/research/methodology/values-encoding.md) measures whether the full chain is intact. Gaps at the runtime layer are the most expensive failures to fix.
+
+### Where to go next
+- [Read the guardrails checklist](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guardrails)
+- [See pre-commit hook configuration](https://github.com/EndogenAI/dogma/blob/main/.pre-commit-config.yaml)
+- [Explore values encoding fidelity research](https://github.com/EndogenAI/dogma/blob/main/docs/research/methodology/values-encoding.md)`,
     link: 'https://github.com/EndogenAI/dogma/blob/main/AGENTS.md#guardrails',
   },
 ];
@@ -179,11 +337,41 @@ export const ENCODING_STEPS = ENCODING_CHAIN_ARRAY;
 // §5 dogma & DogmaMCP
 export const DOGMA_CARD_TITLE = `dogma`;
 export const DOGMA_CARD_SHORT_BODY = `The governance corpus you fork and extend: MANIFESTO.md axioms, agent roles, scripts, research synthesis. Every organization using EndogenAI [reads from dogma](https://github.com/EndogenAI/dogma) and adapts it for their context — governance lives in your git repository, not vendor dashboards.`;
-export const DOGMA_CARD_MODAL_BODY = `The EndogenAI governance corpus — open-source, fully auditable, no proprietary lock-in. dogma contains the MANIFESTO, AGENTS.md operational guidelines, agent role definitions, reusable skills, governance scripts, and all research synthesis docs. It's the substrate: every organization using EndogenAI reads from dogma and extends it for their own context. Governance doesn't live in vendor dashboards or closed platforms. It lives in your git repository.`;
+export const DOGMA_CARD_MODAL_BODY = `### What it is
+The EndogenAI governance corpus — a fully open-source, Apache 2.0-licensed git repository containing [MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) (foundational axioms), [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) (operational constraints), [agent role definitions](https://github.com/EndogenAI/dogma/blob/main/.github/agents/README.md), [reusable skills](https://github.com/EndogenAI/dogma/blob/main/.github/skills/), [governance scripts](https://github.com/EndogenAI/dogma/blob/main/scripts/README.md), and all [research synthesis docs](https://github.com/EndogenAI/dogma/tree/main/docs/research). dogma is the substrate — every organization using EndogenAI reads from it and extends it for their own context.
+
+### Why it matters
+- **Governance lives in your git repository** — not in vendor dashboards or closed platforms you don't control
+- Fork dogma, customize [MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) and [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) for your organization, and you own the entire governance stack
+- Every file is auditable: git history is the accountability trail for governance changes
+- No proprietary lock-in: if you stop using AccessiTech's consulting services, you keep the governance infrastructure you built
+
+### How it connects to EndogenAI
+dogma is the reference implementation of the [endogenic design pattern](https://github.com/EndogenAI/dogma/blob/main/docs/research/methodology/endogenic-design-paper.md) — governance encoded as substrate rather than applied as external wrapper. Organizations using dogma gain organizational memory that compounds across sessions: every committed decision, every validated constraint, every documented failure mode becomes durable knowledge.
+
+### Where to go next
+- [Fork dogma on GitHub](https://github.com/EndogenAI/dogma)
+- [Read the getting started guide](https://github.com/EndogenAI/dogma/blob/main/README.md)
+- [Explore the research corpus](https://github.com/EndogenAI/dogma/tree/main/docs/research)`;
 
 export const DOGMAMCP_CARD_TITLE = `DogmaMCP`;
 export const DOGMAMCP_CARD_SHORT_BODY = `MCP server exposing dogma tools to AI agents: validators for agent files, scratchpad state checks, scaffolding templates. Runs locally, integrates with VS Code Copilot and Claude Desktop, enforces [governance programmatically](https://github.com/EndogenAI/dogma/tree/main/mcp_server). It's the bridge between encoded substrate and AI workflow.`;
-export const DOGMAMCP_CARD_MODAL_BODY = `A Model Context Protocol (MCP) server that exposes dogma governance tools to your AI agents and development workflows — validators for agent files, research syntheses, scratchpad state checks, agent scaffolding templates, and more. DogmaMCP runs locally (no external API calls), integrates with VS Code Copilot and Claude Desktop, and lets your agents programmatically enforce governance policies. It's the bridge between the encoded substrate and your AI workflow.`;
+export const DOGMAMCP_CARD_MODAL_BODY = `### What it is
+A [Model Context Protocol (MCP) server](https://github.com/EndogenAI/dogma/tree/main/mcp_server) that exposes dogma governance tools directly to your AI agents and development workflows. DogmaMCP provides 8 tools: check_substrate (repo health validation), validate_agent_file, validate_synthesis, scaffold_agent, scaffold_workplan, run_research_scout, query_docs (BM25 search), and prune_scratchpad. Runs entirely locally (no external API calls), integrates with VS Code Copilot, Claude Desktop, and Cursor via the MCP standard.
+
+### Why it matters
+- **Agents enforce governance programmatically** — not via prompt instructions that reset between sessions
+- MCP is rapidly becoming the cross-vendor standard for AI tool integration (Anthropic, Microsoft, Cursor, Windsurf all support it)
+- Self-validation before commit prevents governance drift: agents call check_substrate before beginning any phase, catching violations immediately
+- Local execution means no latency, no API rate limits, no external dependencies at runtime — [Local-Compute-First axiom](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md#3-local-compute-first) in practice
+
+### How it connects to EndogenAI
+DogmaMCP is the runtime bridge: it surfaces the [encoded governance substrate](https://github.com/EndogenAI/dogma) as programmatically accessible tools. Agents don't re-derive validation logic each session — they call DogmaMCP tools that already encode the constraints. [ADR-011](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md) documents DogmaMCP as the open harness architecture decision.
+
+### Where to go next
+- [Install DogmaMCP](https://github.com/EndogenAI/dogma/tree/main/mcp_server)
+- [Read the open harness architecture decision](https://github.com/EndogenAI/dogma/blob/main/docs/decisions/ADR-011-dogmamcp-open-harness.md)
+- [See the MCP standard announcement](https://www.anthropic.com/news/model-context-protocol)`;
 
 // Deprecated — kept for backward compat
 export const DOGMA_CARD_BODY = DOGMA_CARD_SHORT_BODY;
