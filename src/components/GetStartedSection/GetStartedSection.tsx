@@ -34,11 +34,11 @@ const GetStartedSection: React.FC<GetStartedSectionProps> = ({
   return (
     <section className={`product-next-steps row ${page}`}>
       <h3 className="w-100">Get Started</h3>
-      <Col className="mt-4 mt-md-0">
+      <Col className="mt-4 mt-md-0 h-100">
         <p>{leftParagraph}</p>
         <CalendlyButton label={leftButtonLabel} className="mb-4 w-100" />
       </Col>
-      <Col className="mt-4 mt-md-0">
+      <Col className="mt-4 mt-md-0 h-100">
         <p>{rightParagraph}</p>
         <Button
           className="w-100"

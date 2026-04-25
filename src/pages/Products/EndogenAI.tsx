@@ -38,12 +38,13 @@ import {
   DOGMAMCP_CARD_MODAL_BODY,
   HOW_TITLE,
   ENCODING_STEPS,
+  RESEARCH_INTRO,
   RESEARCH_INTERNAL_HEADER,
   RESEARCH_INTERNAL_ITEMS,
-  RESEARCH_EXTERNAL_HEADER,
   RESEARCH_EXTERNAL_ITEMS,
   CTA_GITHUB_LABEL,
   CTA_GITHUB_HREF,
+  DOGMA_TITLE,
 } from './EndogenAI.constants';
 import './EndogenAI.scss';
 
@@ -122,16 +123,16 @@ const EndogenAI = () => {
           </Breadcrumb>
 
           {/* §1 Hero */}
-          <section className="endogenai-hero">
-            <h1>EndogenAI</h1>
+          <section className="endogenai-hero mb-5">
+            <h1 className="mb-3">EndogenAI</h1>
             <div className="hero-tagline">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{HERO_TAGLINE}</ReactMarkdown>
             </div>
           </section>
 
           {/* §2 The Problem */}
-          <section className="endogenai-problem text-start">
-            <h2>The Problem</h2>
+          <section className="endogenai-problem text-start mb-5">
+            <h2 className="mb-4">The Problem</h2>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{PROBLEM_INTRO}</ReactMarkdown>
             <Row className="problem-cards">
               {problemCards.map((card, index) => (
@@ -182,8 +183,8 @@ const EndogenAI = () => {
           ))}
 
           {/* §3 What EndogenAI is */}
-          <section className="endogenai-what text-start">
-            <h2>{WHAT_TITLE}</h2>
+          <section className="endogenai-what text-start mb-5">
+            <h2 className="mb-4">{WHAT_TITLE}</h2>
             <div className="brand-relationship mb-4">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{BRAND_RELATIONSHIP}</ReactMarkdown>
             </div>
@@ -197,9 +198,59 @@ const EndogenAI = () => {
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{WHAT_OSS_BODY}</ReactMarkdown>
               </Col>
             </Row>
+
+            {/* §4 dogma & DogmaMCP */}
+            <section className="endogenai-products text-start">
+              <h2 className="mb-4">{DOGMA_TITLE}</h2>
+              <Row className="products-cards mb-3">
+                <Col xs={12} md={6}>
+                  <Card className="mb-3 h-100">
+                    <Card.Body className="d-flex flex-column">
+                      <Card.Title>{DOGMA_CARD_TITLE}</Card.Title>
+                      <div className="card-short-body flex-grow-1">
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                          {DOGMA_CARD_SHORT_BODY}
+                        </ReactMarkdown>
+                      </div>
+                      <Button
+                        variant="outline-secondary"
+                        size="sm"
+                        className="mt-2 align-self-start"
+                        onClick={() => setActiveDogmaModal(0)}
+                        aria-label={`Learn more about ${DOGMA_CARD_TITLE}`}
+                      >
+                        Learn more
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col xs={12} md={6}>
+                  <Card className="h-100">
+                    <Card.Body className="d-flex flex-column">
+                      <Card.Title>{DOGMAMCP_CARD_TITLE}</Card.Title>
+                      <div className="card-short-body flex-grow-1">
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                          {DOGMAMCP_CARD_SHORT_BODY}
+                        </ReactMarkdown>
+                      </div>
+                      <Button
+                        variant="outline-secondary"
+                        size="sm"
+                        className="mt-2 align-self-start"
+                        onClick={() => setActiveDogmaModal(1)}
+                        aria-label={`Learn more about ${DOGMAMCP_CARD_TITLE}`}
+                      >
+                        Learn more
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </section>
+
             <h3>{WHAT_STACK_HEADER}</h3>
             <p>{WHAT_STACK_INTRO}</p>
-            <Row className="governance-stack-cards">
+            <Row className="governance-stack-cards mb-5">
               {GOVERNANCE_STACK_ITEMS.map((item, index) => (
                 <Col key={index} xs={12} md={6} className="mb-3">
                   <Card className="h-100">
@@ -214,55 +265,6 @@ const EndogenAI = () => {
                   </Card>
                 </Col>
               ))}
-            </Row>
-          </section>
-
-          {/* §4 dogma & DogmaMCP */}
-          <section className="endogenai-products text-start">
-            <h2>dogma & DogmaMCP</h2>
-            <Row className="products-cards">
-              <Col xs={12} md={6}>
-                <Card className="mb-3 h-100">
-                  <Card.Body className="d-flex flex-column">
-                    <Card.Title>{DOGMA_CARD_TITLE}</Card.Title>
-                    <div className="card-short-body flex-grow-1">
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {DOGMA_CARD_SHORT_BODY}
-                      </ReactMarkdown>
-                    </div>
-                    <Button
-                      variant="outline-secondary"
-                      size="sm"
-                      className="mt-2 align-self-start"
-                      onClick={() => setActiveDogmaModal(0)}
-                      aria-label={`Learn more about ${DOGMA_CARD_TITLE}`}
-                    >
-                      Learn more
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col xs={12} md={6}>
-                <Card className="mb-3 h-100">
-                  <Card.Body className="d-flex flex-column">
-                    <Card.Title>{DOGMAMCP_CARD_TITLE}</Card.Title>
-                    <div className="card-short-body flex-grow-1">
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {DOGMAMCP_CARD_SHORT_BODY}
-                      </ReactMarkdown>
-                    </div>
-                    <Button
-                      variant="outline-secondary"
-                      size="sm"
-                      className="mt-2 align-self-start"
-                      onClick={() => setActiveDogmaModal(1)}
-                      aria-label={`Learn more about ${DOGMAMCP_CARD_TITLE}`}
-                    >
-                      Learn more
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
             </Row>
           </section>
 
@@ -305,29 +307,31 @@ const EndogenAI = () => {
           </Modal>
 
           {/* §5 How it works (data-driven encoding chain) */}
-          <section className="endogenai-how text-start">
-            <h2>{HOW_TITLE}</h2>
+          <section className="endogenai-how text-start mb-5">
+            <h2 className="mb-4">{HOW_TITLE}</h2>
             <Row className="encoding-cards">
               {ENCODING_STEPS.map(step => (
-                <Card key={step.step} className="mb-3">
-                  <Card.Body className="d-flex flex-column">
-                    <Card.Title as="h3">
-                      <span className="step-number">{step.step}.</span> {step.title}
-                    </Card.Title>
-                    <div className="card-short-body flex-grow-1">
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{step.shortBody}</ReactMarkdown>
-                    </div>
-                    <Button
-                      variant="outline-secondary"
-                      size="sm"
-                      className="mt-2 align-self-start"
-                      onClick={() => setActiveEncodingModal(step.step - 1)}
-                      aria-label={`Learn more about ${step.title}`}
-                    >
-                      Learn more
-                    </Button>
-                  </Card.Body>
-                </Card>
+                <Col key={step.step} xs={12} md={6}>
+                  <Card className="encoding-step-card h-100">
+                    <Card.Body className="d-flex flex-column">
+                      <Card.Title as="h3">
+                        <span className="step-number">{step.step}.</span> {step.title}
+                      </Card.Title>
+                      <div className="card-short-body flex-grow-1">
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{step.shortBody}</ReactMarkdown>
+                      </div>
+                      <Button
+                        variant="outline-secondary"
+                        size="sm"
+                        className="mt-2 align-self-start"
+                        onClick={() => setActiveEncodingModal(step.step - 1)}
+                        aria-label={`Learn more about ${step.title}`}
+                      >
+                        Learn more
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
               ))}
             </Row>
           </section>
@@ -361,17 +365,20 @@ const EndogenAI = () => {
           ))}
 
           {/* §6 What the research says */}
-          <div className="research-section">
+          <div className="research-section mb-5">
             <section className="endogenai-research text-start">
-              <h2>What the Research Says</h2>
-              <div className="research-internal">
-                <h3>{RESEARCH_INTERNAL_HEADER}</h3>
+              <h2 className="mb-4">What the Research Says</h2>
+              <p className="mb-5">{RESEARCH_INTRO}</p>
+              <div className="research-external">
+                <h3 className="mb-3">What External Authorities Say</h3>
                 <Row className="research-cards mt-3">
-                  {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
+                  {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
                     <Col key={index} xs={12} md={6} className="mb-3">
                       <Card className="h-100 research-card">
                         <Card.Body className="d-flex flex-column">
-                          <Card.Title as="h4">{item.title}</Card.Title>
+                          <Card.Title as="h4" className="mb-2">
+                            {item.title}
+                          </Card.Title>
                           <div className="card-short-body flex-grow-1">
                             <ReactMarkdown remarkPlugins={[remarkGfm]}>
                               {item.shortBody}
@@ -392,14 +399,16 @@ const EndogenAI = () => {
                   ))}
                 </Row>
               </div>
-              <div className="research-external mt-4">
-                <h3>{RESEARCH_EXTERNAL_HEADER}</h3>
+              <div className="research-internal mt-4">
+                <h3 className="mb-3">{RESEARCH_INTERNAL_HEADER}</h3>
                 <Row className="research-cards mt-3">
-                  {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
+                  {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
                     <Col key={index} xs={12} md={6} className="mb-3">
                       <Card className="h-100 research-card">
                         <Card.Body className="d-flex flex-column">
-                          <Card.Title as="h4">{item.title}</Card.Title>
+                          <Card.Title as="h4" className="mb-2">
+                            {item.title}
+                          </Card.Title>
                           <div className="card-short-body flex-grow-1">
                             <ReactMarkdown remarkPlugins={[remarkGfm]}>
                               {item.shortBody}
@@ -410,7 +419,7 @@ const EndogenAI = () => {
                             size="sm"
                             className="mt-2 align-self-start"
                             onClick={() =>
-                              setActiveResearchModal(RESEARCH_INTERNAL_ITEMS.length + index)
+                              setActiveResearchModal(RESEARCH_EXTERNAL_ITEMS.length + index)
                             }
                             aria-label={`Learn more about ${item.title}`}
                           >
@@ -425,39 +434,11 @@ const EndogenAI = () => {
             </section>
           </div>
 
-          {/* Research modals — internal */}
-          {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
-            <Modal
-              key={index}
-              show={activeResearchModal === index}
-              onHide={() => setActiveResearchModal(null)}
-              size="lg"
-              aria-labelledby={`research-internal-modal-title-${index}`}
-            >
-              <Modal.Header closeButton>
-                <Modal.Title id={`research-internal-modal-title-${index}`}>
-                  {item.title}
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
-                <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
-                  Read more on GitHub ↗
-                </a>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
-                  Close
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          ))}
-
-          {/* Research modals — external */}
+          {/* Research modals — external (now first) */}
           {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
             <Modal
               key={index}
-              show={activeResearchModal === RESEARCH_INTERNAL_ITEMS.length + index}
+              show={activeResearchModal === index}
               onHide={() => setActiveResearchModal(null)}
               size="lg"
               aria-labelledby={`research-external-modal-title-${index}`}
@@ -471,6 +452,34 @@ const EndogenAI = () => {
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
                   Read more ↗
+                </a>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
+                  Close
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          ))}
+
+          {/* Research modals — internal (now second) */}
+          {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
+            <Modal
+              key={index}
+              show={activeResearchModal === RESEARCH_EXTERNAL_ITEMS.length + index}
+              onHide={() => setActiveResearchModal(null)}
+              size="lg"
+              aria-labelledby={`research-internal-modal-title-${index}`}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title id={`research-internal-modal-title-${index}`}>
+                  {item.title}
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
+                  Read more on GitHub ↗
                 </a>
               </Modal.Body>
               <Modal.Footer>

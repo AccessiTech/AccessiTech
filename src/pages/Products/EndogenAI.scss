@@ -3,12 +3,6 @@
 .endogenai-page {
   // §1 Hero
   .endogenai-hero {
-    margin-bottom: 3rem;
-
-    h1 {
-      margin-bottom: 1rem;
-    }
-
     .hero-tagline {
       font-size: 1.25rem;
       font-weight: 500;
@@ -18,12 +12,6 @@
 
   // §2 The Problem
   .endogenai-problem {
-    margin-bottom: 3rem;
-
-    h2 {
-      margin-bottom: 1.5rem;
-    }
-
     .problem-cards {
       margin-top: 2rem;
       row-gap: 1rem;
@@ -32,12 +20,6 @@
 
   // §3.5 Why your AI needs a Harness
   .endogenai-harness {
-    margin-bottom: 3rem;
-
-    h2 {
-      margin-bottom: 1.5rem;
-    }
-
     .harness-cards {
       margin-top: 2rem;
       row-gap: 1rem;
@@ -46,12 +28,6 @@
 
   // §4 How it works
   .endogenai-how {
-    margin-bottom: 3rem;
-
-    h2 {
-      margin-bottom: 1.5rem;
-    }
-
     .encoding-steps {
       display: flex;
       flex-direction: column;
@@ -65,7 +41,6 @@
 
         h3 {
           font-size: 1.25rem;
-          margin-bottom: 0.75rem;
         }
 
         p {
@@ -82,12 +57,6 @@
 
   // §5 dogma & DogmaMCP
   .endogenai-products {
-    margin-bottom: 3rem;
-
-    h2 {
-      margin-bottom: 1.5rem;
-    }
-
     .products-cards {
       margin-top: 2rem;
       row-gap: 1rem;
@@ -107,7 +76,6 @@
 
         h3 {
           font-size: 1.1rem;
-          margin-bottom: 0.75rem;
         }
 
         .card-link {
@@ -123,13 +91,8 @@
   .endogenai-research {
     padding: 2rem 0;
 
-    h2 {
-      margin-bottom: 1.5rem;
-    }
-
     h3 {
       margin-top: 2rem;
-      margin-bottom: 1rem;
     }
 
     .research-cards {
@@ -144,7 +107,6 @@
     padding: 4rem 2rem;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    margin-bottom: 3rem;
 
     h2,
     h3 {
@@ -173,7 +135,6 @@
 
       h4 {
         font-size: 1rem;
-        margin-bottom: 0.5rem;
 
         a {
           color: $yellow;
@@ -189,8 +150,6 @@
 
   // §7 CTA
   .endogenai-cta {
-    margin-bottom: 3rem;
-
     .mt-4.text-center a {
       color: var(--bs-primary);
       text-decoration: underline;

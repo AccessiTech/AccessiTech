@@ -26,8 +26,10 @@ describe('EndogenAI Page', () => {
     // Check for section headings
     expect(screen.getByRole('heading', { level: 2, name: 'The Problem' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: WHAT_TITLE })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: 'dogma & DogmaMCP' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: 'How It Works' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'What is dogma & DogmaMCP?' })
+    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'How All It Works' })).toBeInTheDocument();
     expect(
       screen.getByRole('heading', { level: 2, name: 'What the Research Says' })
     ).toBeInTheDocument();
@@ -106,7 +108,7 @@ describe('EndogenAI Page', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 3, name: 'Our Research' })).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { level: 3, name: 'External Validation' })
+      screen.getByRole('heading', { level: 3, name: 'What External Authorities Say' })
     ).toBeInTheDocument();
     // Research items rendered as cards
     expect(screen.getByText('Endogenic Design Patterns for AI Systems')).toBeInTheDocument();
@@ -135,7 +137,9 @@ describe('EndogenAI Page', () => {
   it('renders dogma/DogmaMCP cards with learn more modals', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
     // Check for section heading
-    expect(screen.getByRole('heading', { level: 2, name: 'dogma & DogmaMCP' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'What is dogma & DogmaMCP?' })
+    ).toBeInTheDocument();
     // Check for card titles
     expect(screen.getByText('dogma')).toBeInTheDocument();
     expect(screen.getByText('DogmaMCP')).toBeInTheDocument();
@@ -159,7 +163,7 @@ describe('EndogenAI Page', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 3, name: 'Our Research' })).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { level: 3, name: 'External Validation' })
+      screen.getByRole('heading', { level: 3, name: 'What External Authorities Say' })
     ).toBeInTheDocument();
     // Check for research card titles
     expect(screen.getByText('Endogenic Design Patterns for AI Systems')).toBeInTheDocument();
@@ -171,9 +175,9 @@ describe('EndogenAI Page', () => {
     expect(
       screen.getByText(new RegExp(firstLinkText(RESEARCH_EXTERNAL_ITEMS[0].shortBody), 'i'))
     ).toBeInTheDocument();
-    // Check for "Learn more" buttons (8 total: 4 internal + 4 external)
+    // Check for "Learn more" buttons (10 total: 4 internal + 6 external)
     const learnMoreButtons = screen.getAllByText('Learn more');
-    // Total: 4 problem + 2 dogma + 7 encoding + 8 research = 21
-    expect(learnMoreButtons.length).toBeGreaterThanOrEqual(21);
+    // Total: 4 problem + 2 dogma + 7 encoding + 10 research = 23
+    expect(learnMoreButtons.length).toBeGreaterThanOrEqual(23);
   });
 });
