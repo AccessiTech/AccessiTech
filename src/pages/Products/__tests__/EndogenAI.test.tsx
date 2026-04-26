@@ -140,8 +140,8 @@ describe('EndogenAI Page', () => {
     expect(
       screen.getByRole('heading', { level: 2, name: 'What is dogma & DogmaMCP?' })
     ).toBeInTheDocument();
-    // Check for card titles using h2 and h3 role queries
-    expect(screen.getByRole('heading', { level: 2, name: 'dogma' })).toBeInTheDocument();
+    // Check for card titles using h3 role queries (both are h3 in grid layout)
+    expect(screen.getByRole('heading', { level: 3, name: 'dogma' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 3, name: 'DogmaMCP' })).toBeInTheDocument();
     // Check for short body content markers derived from imported constants
     expect(
