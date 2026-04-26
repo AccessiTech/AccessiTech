@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Breadcrumb, Button, Card, Col, Modal, Row } from 'react-bootstrap';
+import { Breadcrumb, Button, Card, Col, Row } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Metadata from '../../components/Metadata/Metadata';
 import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
+import ModalCard from '../../components/ModalCard';
 
-// Custom markdown link renderer for external links
+// Custom markdown link renderer for external links (used in non-modal content)
 const markdownComponents = {
   a: ({ href, children }: { href?: string; children?: React.ReactNode }) => {
     const isExternal = href && (href.startsWith('http://') || href.startsWith('https://'));
@@ -20,6 +21,7 @@ const markdownComponents = {
     return <a href={href}>{children}</a>;
   },
 };
+
 import { HOME_URL } from '../../settings/strings';
 import {
   HERO_TAGLINE,
@@ -61,7 +63,6 @@ import {
   DOGMA_TITLE,
   DOGMA_RELATIONSHIP,
   BUTTON_LABEL_LEARN_MORE,
-  BUTTON_LABEL_CLOSE,
   BUTTON_LABEL_READ_MORE,
   BUTTON_LABEL_VIEW_GITHUB,
   ARIA_LABEL_LEARN_MORE_ABOUT,
@@ -187,27 +188,14 @@ const EndogenAI = () => {
 
           {/* Problem card modals */}
           {problemCards.map((card, index) => (
-            <Modal
+            <ModalCard
               key={index}
-              show={activeModal === index}
-              onHide={() => setActiveModal(null)}
-              size="lg"
-              aria-labelledby={`problem-modal-title-${index}`}
-            >
-              <Modal.Header closeButton>
-                <Modal.Title id={`problem-modal-title-${index}`}>{card.title}</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
-                  {card.modalBody}
-                </ReactMarkdown>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={() => setActiveModal(null)}>
-                  Close
-                </Button>
-              </Modal.Footer>
-            </Modal>
+              title={card.title}
+              body={card.modalBody}
+              isOpen={activeModal === index}
+              onClose={() => setActiveModal(null)}
+              ariaLabelledBy={`problem-modal-title-${index}`}
+            />
           ))}
 
           {/* §3 What EndogenAI is */}
@@ -300,46 +288,20 @@ const EndogenAI = () => {
           </section>
 
           {/* Dogma/DogmaMCP modals */}
-          <Modal
-            show={activeDogmaModal === 0}
-            onHide={() => setActiveDogmaModal(null)}
-            size="lg"
-            aria-labelledby="dogma-modal-title"
-          >
-            <Modal.Header closeButton>
-              <Modal.Title id="dogma-modal-title">{DOGMA_CARD_TITLE}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
-                {DOGMA_CARD_MODAL_BODY}
-              </ReactMarkdown>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={() => setActiveDogmaModal(null)}>
-                {BUTTON_LABEL_CLOSE}
-              </Button>
-            </Modal.Footer>
-          </Modal>
-          <Modal
-            show={activeDogmaModal === 1}
-            onHide={() => setActiveDogmaModal(null)}
-            size="lg"
-            aria-labelledby="dogmamcp-modal-title"
-          >
-            <Modal.Header closeButton>
-              <Modal.Title id="dogmamcp-modal-title">{DOGMAMCP_CARD_TITLE}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
-                {DOGMAMCP_CARD_MODAL_BODY}
-              </ReactMarkdown>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={() => setActiveDogmaModal(null)}>
-                {BUTTON_LABEL_CLOSE}
-              </Button>
-            </Modal.Footer>
-          </Modal>
+          <ModalCard
+            title={DOGMA_CARD_TITLE}
+            body={DOGMA_CARD_MODAL_BODY}
+            isOpen={activeDogmaModal === 0}
+            onClose={() => setActiveDogmaModal(null)}
+            ariaLabelledBy="dogma-modal-title"
+          />
+          <ModalCard
+            title={DOGMAMCP_CARD_TITLE}
+            body={DOGMAMCP_CARD_MODAL_BODY}
+            isOpen={activeDogmaModal === 1}
+            onClose={() => setActiveDogmaModal(null)}
+            ariaLabelledBy="dogmamcp-modal-title"
+          />
         </Col>
       </Row>
       <Row className="how-it-works-row">
@@ -377,36 +339,19 @@ const EndogenAI = () => {
           </section>
 
           {/* Encoding steps modals */}
-          {ENCODING_STEPS.map(step => (
-            <Modal
-              key={step.step}
-              show={activeEncodingModal === step.step - 1}
-              onHide={() => setActiveEncodingModal(null)}
-              size="lg"
-              aria-labelledby={`encoding-modal-title-${step.step}`}
-            >
-              <Modal.Header closeButton>
-                <Modal.Title id={`encoding-modal-title-${step.step}`}>
-                  {step.step}. {step.title}
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <div>
-                  <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
-                    {step.description}
-                  </ReactMarkdown>
-                </div>
-                <a href={step.link} target="_blank" rel="noopener noreferrer" className="card-link">
-                  {BUTTON_LABEL_VIEW_GITHUB}
-                </a>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={() => setActiveEncodingModal(null)}>
-                  {BUTTON_LABEL_CLOSE}
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          ))}
+          {ENCODING_STEPS.map(step => {
+            const encodingBody = `${step.description}\n\n[${BUTTON_LABEL_VIEW_GITHUB}](${step.link})`;
+            return (
+              <ModalCard
+                key={step.step}
+                title={`${step.step}. ${step.title}`}
+                body={encodingBody}
+                isOpen={activeEncodingModal === step.step - 1}
+                onClose={() => setActiveEncodingModal(null)}
+                ariaLabelledBy={`encoding-modal-title-${step.step}`}
+              />
+            );
+          })}
         </Col>
       </Row>
 
@@ -510,60 +455,34 @@ const EndogenAI = () => {
       </Row>
 
       {/* Research modals — external (now first) */}
-      {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
-        <Modal
-          key={index}
-          show={activeResearchModal === index}
-          onHide={() => setActiveResearchModal(null)}
-          size="lg"
-          aria-labelledby={`research-external-modal-title-${index}`}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id={`research-external-modal-title-${index}`}>{item.title}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
-              {item.body}
-            </ReactMarkdown>
-            <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
-              {BUTTON_LABEL_READ_MORE} ↗
-            </a>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
-              {BUTTON_LABEL_CLOSE}
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      ))}
+      {RESEARCH_EXTERNAL_ITEMS.map((item, index) => {
+        const externalBody = `${item.body}\n\n[${BUTTON_LABEL_READ_MORE} ↗](${item.link})`;
+        return (
+          <ModalCard
+            key={index}
+            title={item.title}
+            body={externalBody}
+            isOpen={activeResearchModal === index}
+            onClose={() => setActiveResearchModal(null)}
+            ariaLabelledBy={`research-external-modal-title-${index}`}
+          />
+        );
+      })}
 
       {/* Research modals — internal (now second) */}
-      {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
-        <Modal
-          key={index}
-          show={activeResearchModal === RESEARCH_EXTERNAL_ITEMS.length + index}
-          onHide={() => setActiveResearchModal(null)}
-          size="lg"
-          aria-labelledby={`research-internal-modal-title-${index}`}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id={`research-internal-modal-title-${index}`}>{item.title}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
-              {item.body}
-            </ReactMarkdown>
-            <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-link">
-              {BUTTON_LABEL_READ_MORE} ↗
-            </a>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={() => setActiveResearchModal(null)}>
-              {BUTTON_LABEL_CLOSE}
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      ))}
+      {RESEARCH_INTERNAL_ITEMS.map((item, index) => {
+        const internalBody = `${item.body}\n\n[${BUTTON_LABEL_READ_MORE} ↗](${item.link})`;
+        return (
+          <ModalCard
+            key={index}
+            title={item.title}
+            body={internalBody}
+            isOpen={activeResearchModal === RESEARCH_EXTERNAL_ITEMS.length + index}
+            onClose={() => setActiveResearchModal(null)}
+            ariaLabelledBy={`research-internal-modal-title-${index}`}
+          />
+        );
+      })}
 
       {/* §7 CTA — single GetStartedSection */}
       <Row className="getStartedRow pt-5 pb-5">
