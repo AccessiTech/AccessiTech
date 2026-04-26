@@ -139,7 +139,7 @@ const EndogenAI = () => {
           <section className="endogenai-problem text-start mb-5">
             <h2 className="mb-4">The Problem</h2>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{PROBLEM_INTRO}</ReactMarkdown>
-            <Row className="problem-cards">
+            <Row className="problem-cards mt-5">
               {problemCards.map((card, index) => (
                 <Col key={index} xs={12} md={6}>
                   <Card className="mb-3 h-100">
@@ -203,50 +203,48 @@ const EndogenAI = () => {
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{WHAT_OSS_BODY}</ReactMarkdown>
               </Col>
             </Row>
+          </section>
 
-            {/* §4 dogma & DogmaMCP */}
-            <section className="endogenai-products text-start">
-              <h2 className="mb-4">{DOGMA_TITLE}</h2>
-              <p className="mb-4">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{DOGMA_RELATIONSHIP}</ReactMarkdown>
-              </p>
-              <Row className="products-cards mb-3">
-                <Col xs={12} md={6}>
-                  <h2>{DOGMA_CARD_TITLE}</h2>
-                  <div className="card-short-body flex-grow-1">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                      {DOGMA_CARD_SHORT_BODY}
-                    </ReactMarkdown>
-                  </div>
-                  <Button
-                    variant="outline-secondary"
-                    size="sm"
-                    className="mt-2 align-self-start"
-                    onClick={() => setActiveDogmaModal(0)}
-                    aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMA_CARD_TITLE)}
-                  >
-                    {BUTTON_LABEL_LEARN_MORE}
-                  </Button>
-                </Col>
-                <Col xs={12} md={6}>
-                  <h3>{DOGMAMCP_CARD_TITLE}</h3>
-                  <div className="card-short-body flex-grow-1">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                      {DOGMAMCP_CARD_SHORT_BODY}
-                    </ReactMarkdown>
-                  </div>
-                  <Button
-                    variant="outline-secondary"
-                    size="sm"
-                    className="mt-2 align-self-start"
-                    onClick={() => setActiveDogmaModal(1)}
-                    aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMAMCP_CARD_TITLE)}
-                  >
-                    {BUTTON_LABEL_LEARN_MORE}
-                  </Button>
-                </Col>
-              </Row>
-            </section>
+          {/* §4 dogma & DogmaMCP */}
+          <section className="endogenai-products text-start">
+            <h2 className="mb-4">{DOGMA_TITLE}</h2>
+            <div className="mb-4">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{DOGMA_RELATIONSHIP}</ReactMarkdown>
+            </div>
+            <Row className="products-cards mb-3 mt-5">
+              <Col xs={12} md={6}>
+                <h2>{DOGMA_CARD_TITLE}</h2>
+                <div className="card-short-body flex-grow-1">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{DOGMA_CARD_SHORT_BODY}</ReactMarkdown>
+                </div>
+                <Button
+                  variant="outline-secondary"
+                  size="sm"
+                  className="mt-2 align-self-start"
+                  onClick={() => setActiveDogmaModal(0)}
+                  aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMA_CARD_TITLE)}
+                >
+                  {BUTTON_LABEL_LEARN_MORE}
+                </Button>
+              </Col>
+              <Col xs={12} md={6}>
+                <h3>{DOGMAMCP_CARD_TITLE}</h3>
+                <div className="card-short-body flex-grow-1">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {DOGMAMCP_CARD_SHORT_BODY}
+                  </ReactMarkdown>
+                </div>
+                <Button
+                  variant="outline-secondary"
+                  size="sm"
+                  className="mt-2 align-self-start"
+                  onClick={() => setActiveDogmaModal(1)}
+                  aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(DOGMAMCP_CARD_TITLE)}
+                >
+                  {BUTTON_LABEL_LEARN_MORE}
+                </Button>
+              </Col>
+            </Row>
 
             <h3>{WHAT_STACK_HEADER}</h3>
             <p>{WHAT_STACK_INTRO}</p>
@@ -305,15 +303,18 @@ const EndogenAI = () => {
               </Button>
             </Modal.Footer>
           </Modal>
-
+        </Col>
+      </Row>
+      <Row className="how-it-works-row">
+        <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }} className="pt-5 pb-3">
           {/* §5 How it works (data-driven encoding chain) */}
           <section className="endogenai-how text-start mb-5">
             <h2 className="mb-4">{HOW_TITLE}</h2>
-            <Row className="encoding-cards">
+            <Row className="encoding-cards mt-5">
               {ENCODING_STEPS.map(step => (
                 <Col key={step.step} xs={12} md={6}>
                   <Card className="encoding-step-card h-100">
-                    <Card.Body className="d-flex flex-column">
+                    <Card.Body className="d-flex flex-column p-4">
                       <Card.Title as="h3">
                         <span className="step-number">{step.step}.</span> {step.title}
                       </Card.Title>
@@ -367,7 +368,7 @@ const EndogenAI = () => {
       </Row>
 
       {/* §6 What the research says — Full-width dark background */}
-      <Row className="research-section g-0">
+      <Row className="research-section">
         <Col
           xs={12}
           sm={{ span: 10, offset: 1 }}
@@ -378,7 +379,7 @@ const EndogenAI = () => {
             <h2 className="mb-4 text-center">What the Research Says</h2>
             <p className="mb-5 research-intro">{RESEARCH_INTRO}</p>
             <div className="research-external">
-              <h3 className="mb-3">What External Authorities Say</h3>
+              <h3 className="mb-3 mt-5">What External Authorities Say</h3>
               <Row className="research-cards mt-3">
                 {RESEARCH_EXTERNAL_ITEMS.map((item, index) => (
                   <Col key={index} xs={12} md={6} className="mb-3">
@@ -408,7 +409,7 @@ const EndogenAI = () => {
               </Row>
             </div>
             <div className="research-internal mt-4">
-              <h3 className="mb-3">{RESEARCH_INTERNAL_HEADER}</h3>
+              <h3 className="mb-3 mt-5">{RESEARCH_INTERNAL_HEADER}</h3>
               <Row className="research-cards mt-3">
                 {RESEARCH_INTERNAL_ITEMS.map((item, index) => (
                   <Col key={index} xs={12} md={6} className="mb-3">

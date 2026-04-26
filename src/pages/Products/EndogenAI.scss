@@ -13,7 +13,6 @@
   // §2 The Problem
   .endogenai-problem {
     .problem-cards {
-      margin-top: 2rem;
       row-gap: 1rem;
     }
   }
@@ -21,7 +20,6 @@
   // §3.5 Why your AI needs a Harness
   .endogenai-harness {
     .harness-cards {
-      margin-top: 2rem;
       row-gap: 1rem;
     }
   }
@@ -32,19 +30,13 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      margin-top: 2rem;
 
       .encoding-step {
-        padding: 1.5rem;
         border: 1px solid var(--bs-border-color);
         border-radius: 0.375rem;
 
         h3 {
           font-size: 1.25rem;
-        }
-
-        p {
-          margin-bottom: 0.5rem;
         }
 
         a {
@@ -58,7 +50,6 @@
   // §5 dogma & DogmaMCP
   .endogenai-products {
     .products-cards {
-      margin-top: 2rem;
       row-gap: 1rem;
     }
   }
@@ -66,7 +57,6 @@
   // §5 How it works — encoding cards
   .endogenai-how {
     .encoding-cards {
-      margin-top: 2rem;
       row-gap: 1rem;
 
       .card {
@@ -89,59 +79,13 @@
 
   // §6 What the research says
   .endogenai-research {
-    padding: 2rem 0;
-
-    h3 {
-      margin-top: 2rem;
-    }
-
     .research-cards {
       row-gap: 1rem;
     }
-  }
 
-  // Research section full-width with dark background (utilities: py-5, Row, Col structure)
-  .research-section {
-    background-color: $darkBlue;
-    color: $white;
-
-    h2,
-    h3 {
-      color: $white;
-    }
-
-    a {
-      color: $yellow;
-      text-decoration: underline;
-
-      &:hover {
-        color: darken($yellow, 10%);
-        text-decoration: underline;
-      }
-    }
-
-    p {
-      color: $white;
-    }
-
-    // Research cards within the dark section
-    .research-card {
-      background-color: rgba($white, 0.08);
-      border-color: rgba($white, 0.2);
-      color: $white;
-
-      h4 {
-        font-size: 1rem;
-
-        a {
-          color: $yellow;
-        }
-      }
-
-      p {
-        font-size: 0.9rem;
-        color: rgba($white, 0.85);
-      }
+    & > p {
+      column-count: 2;
+      column-gap: 2rem;
     }
   }
 
@@ -156,6 +100,74 @@
   // Get Started section
   .getstartedsection {
     background-color: $pink;
-    padding: 3rem 0;
   }
+}
+
+// Research section full-width with dark background (utilities: py-5, Row, Col structure)
+.research-section {
+  background-color: $darkBlue;
+  color: $white;
+
+  h2,
+  h3 {
+    color: $white;
+  }
+
+  a {
+    color: $yellow;
+    text-decoration: underline;
+
+    &:hover {
+      color: darken($yellow, 10%);
+      text-decoration: underline;
+    }
+
+    &.btn-link {
+      color: $yellow;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($yellow, 10%);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  p {
+    color: $white;
+  }
+
+  // Research cards within the dark section
+  .research-card {
+    background-color: rgba($white, 0.08);
+    border-color: rgba($white, 0.2);
+    color: $white;
+
+    h4 {
+      font-size: 1rem;
+
+      a {
+        color: $yellow;
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: rgba($white, 0.85);
+    }
+  }
+}
+
+.research-intro {
+  column-count: 2;
+  column-gap: 1rem;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+
+.how-it-works-row.row {
+  background-color: $yellow;
 }
