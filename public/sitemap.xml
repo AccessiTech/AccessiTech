@@ -9,7 +9,7 @@
   
           <url>
             <loc>https://www.accessi.tech/</loc>
-            <lastmod>2026-04-27T17:49:29.759Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.458Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -21,7 +21,7 @@
         
           <url>
             <loc>https://www.accessi.tech/blog</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -33,7 +33,7 @@
         
           <url>
             <loc>https://www.accessi.tech/wcag</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -45,7 +45,7 @@
         
           <url>
             <loc>https://www.accessi.tech/disclosures</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -57,7 +57,7 @@
         
           <url>
             <loc>https://www.accessi.tech/services</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -69,115 +69,115 @@
         
           <url>
             <loc>https://www.accessi.tech/services/consulting</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>AccessiTech Consulting</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.75</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/services/consulting/asaaps</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>Accessible Software as a Practice</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.75</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/services/consulting/ai-integration</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>Agentic AI Integration</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.75</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/services/consulting/qa</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>Quality Assurance and WCAG Testing</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.75</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/services/mentorship</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>AccessiTech Mentorship</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.75</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/services/mentorship/cccs</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>Courses and Content Creation</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.7</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/services/mentorship/coaching</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>1:1 Coaching and Corporate Workshops</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.7</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/services/mentorship/openclassrooms</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>OpenClassrooms Partnership</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.7</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/services/mentorship/sotc</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>State of the Code community</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.7</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/products</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
@@ -189,43 +189,43 @@
         
           <url>
             <loc>https://www.accessi.tech/products/wcag-series</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>WCAG Series</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.7</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/products/oss-asaaps</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>Open Source Software and ASaaPs</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.7</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/products/cccs</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
               <image:caption>Curriculum and Content Creation</image:caption>
             </image:image>
-            <changefreq>quarterly</changefreq>
+            <changefreq>monthly</changefreq>
             <priority>0.7</priority>
           </url>
         
           <url>
             <loc>https://www.accessi.tech/contact</loc>
-            <lastmod>2026-04-27T17:49:29.760Z</lastmod>
+            <lastmod>2026-04-27T18:02:22.459Z</lastmod>
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/default.png" length="289867" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/default.png</image:loc>
