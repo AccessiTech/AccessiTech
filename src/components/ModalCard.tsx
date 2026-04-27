@@ -79,7 +79,7 @@ const ModalCard: React.FC<ModalCardProps> = ({
       <Modal.Body>
         {link && (
           <p>
-            <a href={link} target="_blank" rel="noopener noreferrer" className="ml-2">
+            <a href={link} target="_blank" rel="noopener noreferrer" className="ms-2">
               View Source ↗
             </a>
           </p>

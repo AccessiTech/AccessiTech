@@ -6,22 +6,6 @@ import remarkGfm from 'remark-gfm';
 import Metadata from '../../components/Metadata/Metadata';
 import GetStartedSection from '../../components/GetStartedSection/GetStartedSection';
 import ModalCard from '../../components/ModalCard';
-
-// Custom markdown link renderer for external links (used in non-modal content)
-const markdownComponents = {
-  a: ({ href, children }: { href?: string; children?: React.ReactNode }) => {
-    const isExternal = href && (href.startsWith('http://') || href.startsWith('https://'));
-    if (isExternal) {
-      return (
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          {children}
-        </a>
-      );
-    }
-    return <a href={href}>{children}</a>;
-  },
-};
-
 import { HOME_URL } from '../../settings/strings';
 import {
   HERO_TAGLINE,
@@ -59,6 +43,21 @@ import {
   ENDOGENAI_META_DESC,
 } from './EndogenAI.constants';
 import './EndogenAI.scss';
+
+// Custom markdown link renderer for external links (used in non-modal content)
+const markdownComponents = {
+  a: ({ href, children }: { href?: string; children?: React.ReactNode }) => {
+    const isExternal = href && (href.startsWith('http://') || href.startsWith('https://'));
+    if (isExternal) {
+      return (
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
+      );
+    }
+    return <a href={href}>{children}</a>;
+  },
+};
 
 const xs = 12;
 const sm = { span: 10, offset: 1 };
@@ -473,7 +472,7 @@ const EndogenAI = () => {
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
           <GetStartedSection
             page="endogenai"
-            inquiryParam="endogenai-consulting"
+            inquiryParam="consulting"
             leftParagraph="Interested in implementing EndogenAI for your organization? Schedule a consulting discovery call to discuss how we can support your implementation."
             rightParagraph="Have questions about the methodology? Send us a message and we'll help you find the right starting point."
             leftButtonLabel="Schedule Consult"
