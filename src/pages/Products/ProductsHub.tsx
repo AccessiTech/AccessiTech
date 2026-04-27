@@ -70,7 +70,7 @@ const PRODUCTS_AREAS = [
     description: ENDOGENAI_HUB_DESC,
     deliverables: ENDOGENAI_HUB_DELIVERABLES,
     href: '/products/endogenai',
-    contactHref: '/contact?inquiry=consulting-ai',
+    contactHref: '/contact?inquiry=consulting',
   },
   {
     id: 'oss-asaaps',
