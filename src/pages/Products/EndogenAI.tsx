@@ -26,18 +26,7 @@ import { HOME_URL } from '../../settings/strings';
 import {
   HERO_TAGLINE,
   PROBLEM_INTRO,
-  PROBLEM_CARD_1_TITLE,
-  PROBLEM_CARD_1_SHORT_BODY,
-  PROBLEM_CARD_1_BODY,
-  PROBLEM_CARD_2_TITLE,
-  PROBLEM_CARD_2_SHORT_BODY,
-  PROBLEM_CARD_2_BODY,
-  PROBLEM_CARD_3_TITLE,
-  PROBLEM_CARD_3_SHORT_BODY,
-  PROBLEM_CARD_3_BODY,
-  PROBLEM_CARD_4_TITLE,
-  PROBLEM_CARD_4_SHORT_BODY,
-  PROBLEM_CARD_4_BODY,
+  PROBLEM_CAREDS,
   WHAT_TITLE,
   WHAT_AXIOMS_HEADER,
   WHAT_AXIOMS_BODY,
@@ -66,13 +55,15 @@ import {
   BUTTON_LABEL_READ_MORE,
   BUTTON_LABEL_VIEW_GITHUB,
   ARIA_LABEL_LEARN_MORE_ABOUT,
+  ENDOGENAI_META_TITLE,
+  ENDOGENAI_META_DESC,
 } from './EndogenAI.constants';
 import './EndogenAI.scss';
 
-// Meta
-export const ENDOGENAI_META_TITLE = 'EndogenAI | AccessiTech';
-export const ENDOGENAI_META_DESC =
-  "EndogenAI is AccessiTech's open-source AI governance methodology — implemented in dogma (governance corpus) and DogmaMCP (MCP server). Free and open source. Paid implementation support via AccessiTech Consulting.";
+const xs = 12;
+const sm = { span: 10, offset: 1 };
+const lg = { span: 8, offset: 2 };
+const cardMd = 6;
 
 const EndogenAI = () => {
   const navigate = useNavigate();
@@ -86,29 +77,6 @@ const EndogenAI = () => {
   const [activeEncodingModal, setActiveEncodingModal] = useState<number | null>(null);
   // Research cards modal state
   const [activeResearchModal, setActiveResearchModal] = useState<number | null>(null);
-
-  const problemCards = [
-    {
-      title: PROBLEM_CARD_1_TITLE,
-      shortBody: PROBLEM_CARD_1_SHORT_BODY,
-      modalBody: PROBLEM_CARD_1_BODY,
-    },
-    {
-      title: PROBLEM_CARD_2_TITLE,
-      shortBody: PROBLEM_CARD_2_SHORT_BODY,
-      modalBody: PROBLEM_CARD_2_BODY,
-    },
-    {
-      title: PROBLEM_CARD_3_TITLE,
-      shortBody: PROBLEM_CARD_3_SHORT_BODY,
-      modalBody: PROBLEM_CARD_3_BODY,
-    },
-    {
-      title: PROBLEM_CARD_4_TITLE,
-      shortBody: PROBLEM_CARD_4_SHORT_BODY,
-      modalBody: PROBLEM_CARD_4_BODY,
-    },
-  ];
 
   return (
     <>
@@ -142,9 +110,13 @@ const EndogenAI = () => {
             </Breadcrumb.Item>
             <Breadcrumb.Item active>EndogenAI</Breadcrumb.Item>
           </Breadcrumb>
+        </Col>
+      </Row>
 
+      <Row className="content-row endogenai-page hero-row pb-2">
+        <Col xs={xs} sm={sm} lg={lg}>
           {/* §1 Hero */}
-          <section className="endogenai-hero mb-5">
+          <section className="endogenai-hero mb-5 mt-2">
             <h1 className="mb-3">EndogenAI</h1>
             <div className="hero-tagline">
               <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
@@ -152,7 +124,11 @@ const EndogenAI = () => {
               </ReactMarkdown>
             </div>
           </section>
+        </Col>
+      </Row>
 
+      <Row className="content-row endogenai-page mt-5">
+        <Col xs={xs} sm={sm} lg={lg}>
           {/* §2 The Problem */}
           <section className="endogenai-problem text-start mb-5">
             <h2 className="mb-4">The Problem</h2>
@@ -160,11 +136,11 @@ const EndogenAI = () => {
               {PROBLEM_INTRO}
             </ReactMarkdown>
             <Row className="problem-cards mt-5">
-              {problemCards.map((card, index) => (
-                <Col key={index} xs={12} md={6}>
+              {PROBLEM_CAREDS.map((card, index) => (
+                <Col key={index} xs={xs} md={cardMd}>
                   <Card className="mb-3 h-100">
                     <Card.Body className="d-flex flex-column">
-                      <Card.Title>{card.title}</Card.Title>
+                      <Card.Title className="fw-bold fs-5">{card.title}</Card.Title>
                       <div className="card-short-body flex-grow-1">
                         <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
                           {card.shortBody}
@@ -175,9 +151,9 @@ const EndogenAI = () => {
                         size="sm"
                         className="mt-2 align-self-start"
                         onClick={() => setActiveModal(index)}
-                        aria-label={`Learn more about ${card.title}`}
+                        aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(card.title)}
                       >
-                        Learn more
+                        {BUTTON_LABEL_LEARN_MORE}
                       </Button>
                     </Card.Body>
                   </Card>
@@ -187,10 +163,11 @@ const EndogenAI = () => {
           </section>
 
           {/* Problem card modals */}
-          {problemCards.map((card, index) => (
+          {PROBLEM_CAREDS.map((card, index) => (
             <ModalCard
               key={index}
               title={card.title}
+              link={card.link}
               body={card.modalBody}
               isOpen={activeModal === index}
               onClose={() => setActiveModal(null)}
@@ -267,6 +244,7 @@ const EndogenAI = () => {
               </Col>
             </Row>
 
+            {/* The Governance Stack */}
             <h3>{WHAT_STACK_HEADER}</h3>
             <p>{WHAT_STACK_INTRO}</p>
             <Row className="governance-stack-cards mb-5">
@@ -290,6 +268,7 @@ const EndogenAI = () => {
           {/* Dogma/DogmaMCP modals */}
           <ModalCard
             title={DOGMA_CARD_TITLE}
+            titleAs="h3"
             body={DOGMA_CARD_MODAL_BODY}
             isOpen={activeDogmaModal === 0}
             onClose={() => setActiveDogmaModal(null)}
@@ -297,6 +276,7 @@ const EndogenAI = () => {
           />
           <ModalCard
             title={DOGMAMCP_CARD_TITLE}
+            titleAs="h3"
             body={DOGMAMCP_CARD_MODAL_BODY}
             isOpen={activeDogmaModal === 1}
             onClose={() => setActiveDogmaModal(null)}
@@ -304,11 +284,12 @@ const EndogenAI = () => {
           />
         </Col>
       </Row>
+
+      {/* §5 How it works (data-driven encoding chain) */}
       <Row className="how-it-works-row">
         <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }} className="pt-5 pb-3">
-          {/* §5 How it works (data-driven encoding chain) */}
           <section className="endogenai-how text-start mb-5">
-            <h2 className="mb-4">{HOW_TITLE}</h2>
+            <h2 className="mb-4 text-center text-dark fw-bold">{HOW_TITLE}</h2>
             <Row className="encoding-cards">
               {ENCODING_STEPS.map(step => (
                 <Col key={step.step} xs={12} md={6} className="mb-4">
@@ -345,6 +326,8 @@ const EndogenAI = () => {
               <ModalCard
                 key={step.step}
                 title={`${step.step}. ${step.title}`}
+                link={step.link}
+                titleAs="h3"
                 body={encodingBody}
                 isOpen={activeEncodingModal === step.step - 1}
                 onClose={() => setActiveEncodingModal(null)}
@@ -391,7 +374,7 @@ const EndogenAI = () => {
                         <Button
                           variant="outline-light"
                           size="sm"
-                          className="mt-2 align-self-start"
+                          className="mt-2 align-self-end"
                           onClick={() => setActiveResearchModal(index)}
                           aria-label={ARIA_LABEL_LEARN_MORE_ABOUT(item.title)}
                         >
@@ -424,7 +407,7 @@ const EndogenAI = () => {
                         <Button
                           variant="outline-light"
                           size="sm"
-                          className="mt-2 align-self-start"
+                          className="mt-2 align-self-end"
                           onClick={() =>
                             setActiveResearchModal(RESEARCH_EXTERNAL_ITEMS.length + index)
                           }
@@ -461,6 +444,7 @@ const EndogenAI = () => {
           <ModalCard
             key={index}
             title={item.title}
+            link={item.link}
             body={externalBody}
             isOpen={activeResearchModal === index}
             onClose={() => setActiveResearchModal(null)}

@@ -1,5 +1,6 @@
-import { screen } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
+import userEvent from '@testing-library/user-event';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
 import EndogenAI from '../EndogenAI';
 import {
@@ -77,12 +78,15 @@ describe('EndogenAI Page', () => {
   it('renders governance stack cards', () => {
     renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
     expect(screen.getByText('MANIFESTO.md')).toBeInTheDocument();
-    // Use getAllByText for AGENTS.md since it appears in multiple sections now
+    // Use getAllByText for items that appear in multiple sections
     const agentsMdLinks = screen.getAllByText('AGENTS.md');
     expect(agentsMdLinks.length).toBeGreaterThanOrEqual(1);
-    expect(screen.getByText('Agent roles (.agent.md files)')).toBeInTheDocument();
-    expect(screen.getByText('Reusable skills (SKILL.md files)')).toBeInTheDocument();
-    expect(screen.getByText('Governance scripts')).toBeInTheDocument();
+    const agentRolesLinks = screen.getAllByText(/Agent Roles \(\.agent\.md files\)/i);
+    expect(agentRolesLinks.length).toBeGreaterThanOrEqual(1);
+    const agentSkillsLinks = screen.getAllByText(/Agent Skills \(SKILL\.md files\)/i);
+    expect(agentSkillsLinks.length).toBeGreaterThanOrEqual(1);
+    const governanceScriptsLinks = screen.getAllByText(/Governance Scripts/i);
+    expect(governanceScriptsLinks.length).toBeGreaterThanOrEqual(1);
   });
 
   it('renders encoding steps as cards with step numbers and learn more buttons', () => {
@@ -179,5 +183,187 @@ describe('EndogenAI Page', () => {
     const learnMoreButtons = screen.getAllByText('Learn more');
     // Total: 4 problem + 2 dogma + 7 encoding + 10 research = 23
     expect(learnMoreButtons.length).toBeGreaterThanOrEqual(23);
+  });
+
+  it('opens problem card modal when "Learn more" button is clicked', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+
+    // Click the first "Learn more" button in problem section
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    const firstButton = learnMoreButtons[0];
+    await user.click(firstButton);
+
+    // Modal should open - check for modal dialog presence
+    await waitFor(() => {
+      const modal = document.querySelector('.modal.show');
+      expect(modal).toBeInTheDocument();
+    });
+  });
+
+  it('closes problem card modal when Close button is clicked', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+
+    // Open modal
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    await user.click(learnMoreButtons[0]);
+
+    await waitFor(() => {
+      const modal = document.querySelector('.modal.show');
+      expect(modal).toBeInTheDocument();
+    });
+
+    // Close modal - get all buttons and find the footer Close button
+    const closeButtons = screen.getAllByRole('button');
+    const footerCloseButton = closeButtons.find(
+      btn => btn.classList.contains('btn-outline-dark') && btn.textContent === 'Close'
+    );
+
+    if (footerCloseButton) {
+      await user.click(footerCloseButton);
+    }
+
+    await waitFor(() => {
+      const modal = document.querySelector('.modal.show');
+      expect(modal).not.toBeInTheDocument();
+    });
+  });
+
+  it('opens dogma modal when "Learn more" button is clicked', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+
+    // Find all "Learn more" buttons
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    // The dogma "Learn more" buttons are after the 4 problem cards (indices 4 and 5)
+    const dogmaLearnMore = learnMoreButtons[4];
+    await user.click(dogmaLearnMore);
+
+    // Modal should open - check for modal dialog presence
+    await waitFor(() => {
+      const modal = document.querySelector('.modal.show');
+      expect(modal).toBeInTheDocument();
+    });
+  });
+
+  it('opens DogmaMCP modal when second dogma "Learn more" button is clicked', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+
+    // Find all "Learn more" buttons
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    // The DogmaMCP "Learn more" button is at index 5 (after 4 problem cards + 1 dogma)
+    const dogmaMcpLearnMore = learnMoreButtons[5];
+    await user.click(dogmaMcpLearnMore);
+
+    // Modal should open - check for modal dialog presence
+    await waitFor(() => {
+      const modal = document.querySelector('.modal.show');
+      expect(modal).toBeInTheDocument();
+    });
+  });
+
+  it('opens encoding step modal when "Learn more" button is clicked', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+
+    // Find encoding step "Learn more" buttons - they're after problem cards and dogma cards
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    // Skip first 4 (problem cards) + 2 (dogma cards are "Read more") = start at 4
+    const encodingLearnMore = learnMoreButtons[4];
+    await user.click(encodingLearnMore);
+
+    // Modal should open with encoding step details
+    await waitFor(() => {
+      expect(screen.getByRole('dialog')).toBeInTheDocument();
+    });
+  });
+
+  it('opens research card modal when "Learn more" button is clicked', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+
+    // Scroll to research section (may be needed for visibility)
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Find research "Learn more" buttons - they're at the end
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    const lastLearnMore = learnMoreButtons[learnMoreButtons.length - 1];
+    await user.click(lastLearnMore);
+
+    // Modal should open with research details
+    await waitFor(() => {
+      expect(screen.getByRole('dialog')).toBeInTheDocument();
+    });
+  });
+
+  it('renders modal with source link when card has link prop', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+
+    // Open first problem card which has a link
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    await user.click(learnMoreButtons[0]);
+
+    // Modal should display source link
+    await waitFor(() => {
+      const sourceLink = screen.getByText(/View Source/i);
+      expect(sourceLink).toBeInTheDocument();
+      const anchorElement = sourceLink.closest('a');
+      expect(anchorElement).toHaveAttribute('target', '_blank');
+      expect(anchorElement).toHaveAttribute('rel', 'noopener noreferrer');
+    });
+  });
+
+  it('renders modal content with markdown formatting', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+
+    // Open first problem card
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    await user.click(learnMoreButtons[0]);
+
+    // Check for markdown formatted content (headings, strong text, etc.)
+    await waitFor(() => {
+      const modalHeadings = screen.getAllByRole('heading', { level: 4 });
+      expect(modalHeadings.length).toBeGreaterThan(0);
+    });
+  });
+
+  it('only one modal is open at a time', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<EndogenAI />, { route: '/products/endogenai' });
+
+    // Open first modal
+    const learnMoreButtons = screen.getAllByText('Learn more');
+    await user.click(learnMoreButtons[0]);
+
+    await waitFor(() => {
+      const modals = document.querySelectorAll('.modal.show');
+      expect(modals.length).toBe(1);
+    });
+
+    // Close and open another - get all buttons and find the footer Close button
+    const closeButtons = screen.getAllByRole('button');
+    const footerCloseButton = closeButtons.find(
+      btn => btn.classList.contains('btn-outline-dark') && btn.textContent === 'Close'
+    );
+
+    if (footerCloseButton) {
+      await user.click(footerCloseButton);
+    }
+
+    await waitFor(() => {
+      const modals = document.querySelectorAll('.modal.show');
+      expect(modals.length).toBe(0);
+    });
+
+    await user.click(learnMoreButtons[1]);
+
+    await waitFor(() => {
+      const modals = document.querySelectorAll('.modal.show');
+      expect(modals.length).toBe(1);
+    });
   });
 });

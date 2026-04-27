@@ -1,12 +1,36 @@
 // EndogenAI product page styles
 
 .endogenai-page {
+  h1,
+  h2,
+  h3 {
+    font-weight: bold;
+  }
+  p a,
+  h4 a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  // Accessibility: explicit focus indicators (WCAG 2.1 Level AA)
+  button:focus-visible,
+  a:focus-visible {
+    outline: 3px solid $lightBlue;
+    outline-offset: 2px;
+  }
+  &.breadcrumb-row {
+    background-color: $lightBlue;
+  }
+  &.hero-row {
+    background-color: $lightBlue;
+    color: $darkBlue;
+  }
   // §1 Hero
   .endogenai-hero {
     .hero-tagline {
       font-size: 1.25rem;
       font-weight: 500;
-      color: var(--bs-secondary);
     }
   }
 
@@ -53,54 +77,112 @@
       row-gap: 1rem;
     }
   }
+}
 
-  // §5 How it works — encoding cards
-  .endogenai-how {
-    .encoding-cards {
-      row-gap: 1rem;
+.what-subsections {
+  strong {
+    background-color: $yellow;
+    padding: 0.1rem 0.25rem;
+    a {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+}
+.modal-title {
+  font-weight: bold;
+  color: $darkBlue;
+}
+.modal-body {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+  }
+  p a {
+    background-color: $yellow;
+    color: $darkBlue;
+    text-decoration-color: $darkBlue;
+    padding: 0.1rem 0.25rem 0.25rem;
+  }
 
-      .card {
-        .step-number {
-          font-weight: 700;
-        }
+  li {
+    list-style: disc;
+    margin-left: 1.25rem;
 
-        h3 {
-          font-size: 1.1rem;
-        }
+    a {
+      color: $darkBlue;
+      background-color: $yellow;
+      padding: 0.1rem 0.25rem 0.25rem;
+      text-decoration-color: $darkBlue;
+      text-decoration-style: dotted;
 
-        .card-link {
-          color: var(--bs-primary);
-          text-decoration: underline;
-          font-size: 0.9rem;
-        }
+      &:hover,
+      &:focus {
+        text-decoration-style: dashed;
       }
     }
   }
+}
+// §5 How it works — encoding cards
+.endogenai-how {
+  .encoding-cards {
+    row-gap: 1rem;
 
-  // §6 What the research says
-  .endogenai-research {
-    .research-cards {
-      row-gap: 1rem;
-    }
+    .card {
+      background-color: $darkBlue;
+      border-color: $darkBlue;
+      color: $yellow;
 
-    & > p {
-      column-count: 2;
-      column-gap: 2rem;
+      .step-number {
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: white;
+      }
+
+      p a {
+        color: white;
+        font-weight: bold;
+      }
+
+      .card-link {
+        color: var(--bs-primary);
+        text-decoration: underline;
+        font-size: 0.9rem;
+      }
     }
   }
+}
 
-  // §7 CTA
-  .endogenai-cta {
-    .mt-4.text-center a {
-      color: var(--bs-primary);
-      text-decoration: underline;
-    }
+// §6 What the research says
+.endogenai-research {
+  .research-cards {
+    row-gap: 1rem;
   }
 
-  // Get Started section
-  .getstartedsection {
-    background-color: $pink;
+  & > p {
+    column-count: 2;
+    column-gap: 2rem;
   }
+}
+
+// §7 CTA
+.endogenai-cta {
+  .mt-4.text-center a {
+    color: var(--bs-primary);
+    text-decoration: underline;
+  }
+}
+
+// Get Started section
+.getstartedsection {
+  background-color: $pink;
 }
 
 // Research section full-width with dark background (utilities: py-5, Row, Col structure)

@@ -5,6 +5,8 @@ import remarkGfm from 'remark-gfm';
 
 interface ModalCardProps {
   title: string;
+  titleAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  link?: string;
   body: string;
   isOpen: boolean;
   onClose: () => void;
@@ -34,6 +36,8 @@ const markdownComponents = {
  * Handles external link rendering with target="_blank" automatically.
  *
  * @param title - Modal title/heading
+ * @param titleAs - Optional heading level for title (default: 'h2')
+ * @param link - Optional link for the modal subtitle
  * @param body - Markdown string to render in modal body
  * @param isOpen - Whether the modal is visible
  * @param onClose - Callback when modal is closed
@@ -42,26 +46,37 @@ const markdownComponents = {
  */
 const ModalCard: React.FC<ModalCardProps> = ({
   title,
+  titleAs = 'h3',
   body,
   isOpen,
   onClose,
   size = 'lg',
   ariaLabelledBy,
+  link,
 }) => {
   const modalTitleId = ariaLabelledBy || 'modal-title';
 
   return (
     <Modal show={isOpen} onHide={onClose} size={size} aria-labelledby={modalTitleId}>
-      <Modal.Header closeButton>
-        <Modal.Title id={modalTitleId}>{title}</Modal.Title>
+      <Modal.Header closeButton className="bg-primary">
+        <Modal.Title id={modalTitleId} as={titleAs}>
+          {title}
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        {link && (
+          <p>
+            <a href={link} target="_blank" rel="noopener noreferrer" className="ml-2">
+              View Source ↗
+            </a>
+          </p>
+        )}
         <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
           {body}
         </ReactMarkdown>
       </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={onClose}>
+      <Modal.Footer className="bg-secondary">
+        <Button variant="outline-dark" onClick={onClose}>
           Close
         </Button>
       </Modal.Footer>
