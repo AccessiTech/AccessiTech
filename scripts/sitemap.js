@@ -95,7 +95,7 @@ export function generateSitemap({
     },
     {
       url: '/services/consulting',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.75,
       title: 'AccessiTech - Consulting',
       description:
@@ -106,7 +106,7 @@ export function generateSitemap({
     },
     {
       url: '/services/consulting/asaaps',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.75,
       title: 'AccessiTech - ASaaPs',
       description:
@@ -117,7 +117,7 @@ export function generateSitemap({
     },
     {
       url: '/services/consulting/ai-integration',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.75,
       title: 'AccessiTech - Agentic Intelligence Integration',
       description:
@@ -128,7 +128,7 @@ export function generateSitemap({
     },
     {
       url: '/services/consulting/qa',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.75,
       title: 'AccessiTech - Quality Assurance & WCAG Testing',
       description:
@@ -139,7 +139,7 @@ export function generateSitemap({
     },
     {
       url: '/services/mentorship',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.75,
       title: 'AccessiTech - Mentorship',
       description:
@@ -150,7 +150,7 @@ export function generateSitemap({
     },
     {
       url: '/services/mentorship/cccs',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.7,
       title: 'AccessiTech - Courses & Content',
       description:
@@ -161,7 +161,7 @@ export function generateSitemap({
     },
     {
       url: '/services/mentorship/coaching',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.7,
       title: 'AccessiTech - 1:1 Coaching & Corporate Workshops',
       description:
@@ -172,7 +172,7 @@ export function generateSitemap({
     },
     {
       url: '/services/mentorship/openclassrooms',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.7,
       title: 'AccessiTech - OpenClassrooms Partnership',
       description:
@@ -183,7 +183,7 @@ export function generateSitemap({
     },
     {
       url: '/services/mentorship/sotc',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.7,
       title: 'AccessiTech - State of the Code (SOTC)',
       description:
@@ -206,7 +206,7 @@ export function generateSitemap({
     },
     {
       url: '/products/wcag-series',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.7,
       title: 'AccessiTech - WCAG Series',
       description:
@@ -217,7 +217,7 @@ export function generateSitemap({
     },
     {
       url: '/products/oss-asaaps',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.7,
       title: 'AccessiTech - OSS & ASaaPs',
       description:
@@ -228,7 +228,7 @@ export function generateSitemap({
     },
     {
       url: '/products/cccs',
-      changefreq: 'quarterly',
+      changefreq: 'monthly',
       priority: 0.7,
       title: 'AccessiTech - Curriculum & Content Creation',
       description:
