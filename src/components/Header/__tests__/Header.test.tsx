@@ -231,6 +231,7 @@ describe('Header Component', () => {
     it('renders dropdown sub-links for each product page', () => {
       renderWithRouter(<Header />, '/blog');
       expect(screen.getByText('WCAG Series').getAttribute('href')).toBe('/products/wcag-series');
+      expect(screen.getByText('EndogenAI').getAttribute('href')).toBe('/products/endogenai');
       expect(screen.getByText('OSS & ASaaPs').getAttribute('href')).toBe('/products/oss-asaaps');
       expect(screen.getByText('Curriculum & Content').getAttribute('href')).toBe('/products/cccs');
     });
@@ -238,6 +239,7 @@ describe('Header Component', () => {
     it('product sub-links have dropdown-sub-item class on their li', () => {
       renderWithRouter(<Header />, '/blog');
       expect(screen.getByText('WCAG Series').closest('li')).toHaveClass('dropdown-sub-item');
+      expect(screen.getByText('EndogenAI').closest('li')).toHaveClass('dropdown-sub-item');
       expect(screen.getByText('OSS & ASaaPs').closest('li')).toHaveClass('dropdown-sub-item');
       expect(screen.getByText('Curriculum & Content').closest('li')).toHaveClass(
         'dropdown-sub-item'
@@ -257,6 +259,11 @@ describe('Header Component', () => {
     it('marks the CCCs dropdown item active on /products/cccs', () => {
       renderWithRouter(<Header />, '/products/cccs');
       expect(screen.getByText('Curriculum & Content')).toHaveClass('active');
+    });
+
+    it('marks the EndogenAI dropdown item active on /products/endogenai', () => {
+      renderWithRouter(<Header />, '/products/endogenai');
+      expect(screen.getByText('EndogenAI')).toHaveClass('active');
     });
   });
 

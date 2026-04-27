@@ -27,7 +27,7 @@ describe('GetStartedSection', () => {
     it('renders discovery call description and button', () => {
       renderWithProviders(<GetStartedSection page="mentorship" />);
       expect(
-        screen.getByText(/Not sure which mentorship path fits your needs\?/)
+        screen.getByText(/Ready to explore how this could work for you\?/)
       ).toBeInTheDocument();
       expect(
         screen.getByRole('button', { name: /Schedule a Discovery Call/i })
@@ -36,7 +36,7 @@ describe('GetStartedSection', () => {
 
     it('renders message option description and button', () => {
       renderWithProviders(<GetStartedSection page="consulting" />);
-      expect(screen.getByText(/Would it be easier to start with a message\?/)).toBeInTheDocument();
+      expect(screen.getByText(/Have questions\?/)).toBeInTheDocument();
       expect(screen.getByRole('button', { name: /Send us a message/i })).toBeInTheDocument();
     });
 
@@ -44,8 +44,10 @@ describe('GetStartedSection', () => {
       const { container } = renderWithProviders(<GetStartedSection page="mentorship" />);
       const section = container.querySelector('section');
       expect(section).toHaveClass('product-next-steps');
-      expect(section).toHaveClass('row');
       expect(section).toHaveClass('mentorship');
+      // row class is on inner div, not section
+      const rowDiv = section?.querySelector('.row');
+      expect(rowDiv).toBeTruthy();
     });
 
     it('applies correct CSS class for consulting page', () => {
@@ -88,7 +90,7 @@ describe('GetStartedSection', () => {
       const customRight = 'Only providing right copy';
       renderWithProviders(<GetStartedSection page="test" rightParagraph={customRight} />);
       expect(
-        screen.getByText(/Not sure which mentorship path fits your needs\?/)
+        screen.getByText(/Ready to explore how this could work for you\?/)
       ).toBeInTheDocument();
       expect(screen.getByText(customRight)).toBeInTheDocument();
     });
@@ -97,7 +99,7 @@ describe('GetStartedSection', () => {
       const customLeft = 'Only providing left copy';
       renderWithProviders(<GetStartedSection page="test" leftParagraph={customLeft} />);
       expect(screen.getByText(customLeft)).toBeInTheDocument();
-      expect(screen.getByText(/Would it be easier to start with a message\?/)).toBeInTheDocument();
+      expect(screen.getByText(/Have questions\?/)).toBeInTheDocument();
     });
   });
 

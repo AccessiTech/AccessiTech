@@ -13,10 +13,7 @@ module.exports = {
   plugins: ['react-refresh', 'prettier', 'jsx-a11y'], // Add Prettier to plugins
   rules: {
     "@typescript-eslint/no-explicit-any": "off",
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react-refresh/only-export-components': 'off',
     'prettier/prettier': 'error', // Show Prettier errors as ESLint errors
   },
 }

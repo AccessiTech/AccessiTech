@@ -14,6 +14,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
 import ProductsHub from '../ProductsHub';
 import { PRODUCTS_HEADER, WCAG_SERIES_TITLE, OSS_TITLE, CCCS_TITLE } from '../../Home/Home';
+import { ENDOGENAI_HUB_TITLE } from '../ProductsHub';
 
 describe('ProductsHub Page', () => {
   beforeEach(() => {
@@ -25,16 +26,18 @@ describe('ProductsHub Page', () => {
     expect(screen.getByRole('heading', { level: 2, name: PRODUCTS_HEADER })).toBeInTheDocument();
   });
 
-  it('renders all four product cards', () => {
+  it('renders all product cards including EndogenAI', () => {
     renderWithProviders(<ProductsHub />, { route: '/products' });
     expect(screen.getByText(WCAG_SERIES_TITLE)).toBeInTheDocument();
+    expect(screen.getByText(ENDOGENAI_HUB_TITLE)).toBeInTheDocument();
     expect(screen.getByText(OSS_TITLE)).toBeInTheDocument();
     expect(screen.getByText(CCCS_TITLE)).toBeInTheDocument();
   });
 
-  it('renders all four product card buttons', () => {
+  it('renders all product card buttons including EndogenAI', () => {
     renderWithProviders(<ProductsHub />, { route: '/products' });
     expect(screen.getByTestId('products-card-wcag-series-learn-more-btn')).toBeInTheDocument();
+    expect(screen.getByTestId('products-card-endogenai-learn-more-btn')).toBeInTheDocument();
     expect(screen.getByTestId('products-card-oss-asaaps-learn-more-btn')).toBeInTheDocument();
     expect(screen.getByTestId('products-card-cccs-learn-more-btn')).toBeInTheDocument();
     expect(screen.getByTestId('products-card-blog-learn-more-btn')).toBeInTheDocument();
@@ -50,6 +53,12 @@ describe('ProductsHub Page', () => {
       renderWithProviders(<ProductsHub />, { route: '/products' });
       fireEvent.click(screen.getByTestId('products-card-wcag-series-learn-more-btn'));
       expect(mockNavigate).toHaveBeenCalledWith('/products/wcag-series');
+    });
+
+    it('navigates to /products/endogenai from EndogenAI card button', () => {
+      renderWithProviders(<ProductsHub />, { route: '/products' });
+      fireEvent.click(screen.getByTestId('products-card-endogenai-learn-more-btn'));
+      expect(mockNavigate).toHaveBeenCalledWith('/products/endogenai');
     });
 
     it('navigates to /products/oss-asaaps from OSS card button', () => {

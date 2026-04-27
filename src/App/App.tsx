@@ -19,6 +19,7 @@ import NotFound from '../pages/404/404';
 import { Disclosure } from '../pages/Disclosure/Disclosure';
 import Disclosures from '../pages/Disclosures/Disclosures';
 import WCAGSeries from '../pages/Products/WCAGSeries';
+import EndogenAI from '../pages/Products/EndogenAI';
 import OSSASaaPs from '../pages/Products/OSSASaaPs';
 import CCCs from '../pages/Products/CCCs';
 import ProductsHub from '../pages/Products/ProductsHub';
@@ -64,6 +65,9 @@ export const App = (props: AppProps) => {
   const WCAGSeries_Route = isSSR
     ? WCAGSeries
     : (lazy(() => import('../pages/Products/WCAGSeries')) as any);
+  const EndogenAI_Route = isSSR
+    ? EndogenAI
+    : (lazy(() => import('../pages/Products/EndogenAI')) as any);
   const OSSASaaPs_Route = isSSR
     ? OSSASaaPs
     : (lazy(() => import('../pages/Products/OSSASaaPs')) as any);
@@ -141,6 +145,7 @@ export const App = (props: AppProps) => {
             <Route path="/services/mentorship/sotc" element={<SOTCPage_Route />} />
             <Route path="/products" element={<ProductsHub_Route />} />
             <Route path="/products/wcag-series" element={<WCAGSeries_Route />} />
+            <Route path="/products/endogenai" element={<EndogenAI_Route />} />
             <Route path="/products/oss-asaaps" element={<OSSASaaPs_Route />} />
             <Route path="/products/cccs" element={<CCCs_Route />} />
             <Route path="/about" element={<About_Route />} />
@@ -179,6 +184,7 @@ export const App = (props: AppProps) => {
               <Route path="/services/mentorship/sotc" element={<SOTCPage_Route />} />
               <Route path="/products" element={<ProductsHub_Route />} />
               <Route path="/products/wcag-series" element={<WCAGSeries_Route />} />
+              <Route path="/products/endogenai" element={<EndogenAI_Route />} />
               <Route path="/products/oss-asaaps" element={<OSSASaaPs_Route />} />
               <Route path="/products/cccs" element={<CCCs_Route />} />
               <Route path="/about" element={<About_Route />} />

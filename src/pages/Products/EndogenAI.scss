@@ -1,0 +1,255 @@
+// EndogenAI product page styles
+
+.endogenai-page {
+  h1,
+  h2,
+  h3 {
+    font-weight: bold;
+  }
+  p a,
+  h4 a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  // Accessibility: explicit focus indicators (WCAG 2.1 Level AA)
+  button:focus-visible,
+  a:focus-visible {
+    outline: 3px solid $lightBlue;
+    outline-offset: 2px;
+  }
+  &.breadcrumb-row {
+    background-color: $lightBlue;
+  }
+  &.hero-row {
+    background-color: $lightBlue;
+    color: $darkBlue;
+  }
+  // §1 Hero
+  .endogenai-hero {
+    .hero-tagline {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+  }
+
+  // §2 The Problem
+  .endogenai-problem {
+    .problem-cards {
+      row-gap: 1rem;
+    }
+  }
+
+  // §3.5 Why your AI needs a Harness
+  .endogenai-harness {
+    .harness-cards {
+      row-gap: 1rem;
+    }
+  }
+
+  // §4 How it works
+  .endogenai-how {
+    .encoding-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .encoding-step {
+        border: 1px solid var(--bs-border-color);
+        border-radius: 0.375rem;
+
+        h3 {
+          font-size: 1.25rem;
+        }
+
+        a {
+          color: var(--bs-primary);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // §5 dogma & DogmaMCP
+  .endogenai-products {
+    .products-cards {
+      row-gap: 1rem;
+    }
+  }
+}
+
+.what-subsections {
+  strong {
+    background-color: $yellow;
+    padding: 0.1rem 0.25rem;
+    a {
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+}
+.modal-title {
+  font-weight: bold;
+  color: $darkBlue;
+}
+.modal-body {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+  }
+  p a {
+    background-color: $yellow;
+    color: $darkBlue;
+    text-decoration-color: $darkBlue;
+    padding: 0.1rem 0.25rem 0.25rem;
+  }
+
+  li {
+    list-style: disc;
+    margin-left: 1.25rem;
+
+    a {
+      color: $darkBlue;
+      background-color: $yellow;
+      padding: 0.1rem 0.25rem 0.25rem;
+      text-decoration-color: $darkBlue;
+      text-decoration-style: dotted;
+
+      &:hover,
+      &:focus {
+        text-decoration-style: dashed;
+      }
+    }
+  }
+}
+// §5 How it works — encoding cards
+.endogenai-how {
+  .encoding-cards {
+    row-gap: 1rem;
+
+    .card {
+      background-color: $darkBlue;
+      border-color: $darkBlue;
+      color: $yellow;
+
+      .step-number {
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: white;
+      }
+
+      p a {
+        color: white;
+        font-weight: bold;
+      }
+
+      .card-link {
+        color: var(--bs-primary);
+        text-decoration: underline;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// §6 What the research says
+.endogenai-research {
+  .research-cards {
+    row-gap: 1rem;
+  }
+
+  & > p {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+}
+
+// §7 CTA
+.endogenai-cta {
+  .mt-4.text-center a {
+    color: var(--bs-primary);
+    text-decoration: underline;
+  }
+}
+
+// Get Started section
+.getstartedsection {
+  background-color: $pink;
+}
+
+// Research section full-width with dark background (utilities: py-5, Row, Col structure)
+.research-section {
+  background-color: $darkBlue;
+  color: $white;
+
+  h2,
+  h3 {
+    color: $white;
+  }
+
+  a {
+    color: $yellow;
+    text-decoration: underline;
+
+    &:hover {
+      color: darken($yellow, 10%);
+      text-decoration: underline;
+    }
+
+    &.btn-link {
+      color: $yellow;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($yellow, 10%);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  p {
+    color: $white;
+  }
+
+  // Research cards within the dark section
+  .research-card {
+    background-color: rgba($white, 0.08);
+    border-color: rgba($white, 0.2);
+    color: $white;
+
+    h4 {
+      font-size: 1rem;
+
+      a {
+        color: $yellow;
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: rgba($white, 0.85);
+    }
+  }
+}
+
+.research-intro {
+  column-count: 2;
+  column-gap: 1rem;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+
+.how-it-works-row.row {
+  background-color: $yellow;
+}

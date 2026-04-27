@@ -45,6 +45,16 @@ export const BLOG_DELIVERABLES = [
   'Case studies and implementation stories',
 ];
 
+export const ENDOGENAI_HUB_TITLE = 'EndogenAI';
+export const ENDOGENAI_HUB_DESC =
+  "AccessiTech's open-source AI governance methodology — implemented in dogma (governance corpus) and DogmaMCP (runtime MCP server). Free and open source under Apache 2.0.";
+export const ENDOGENAI_HUB_DELIVERABLES = [
+  'dogma governance corpus (fork and extend)',
+  'DogmaMCP — 13 runtime governance tools',
+  'AccessiTech accessibility contributions',
+  'ASaaPs case studies (open, with client permission)',
+];
+
 const PRODUCTS_AREAS = [
   {
     id: 'wcag-series',
@@ -53,6 +63,14 @@ const PRODUCTS_AREAS = [
     deliverables: WCAG_SERIES_DELIVERABLES,
     href: '/products/wcag-series',
     contactHref: '/contact?inquiry=products',
+  },
+  {
+    id: 'endogenai',
+    title: ENDOGENAI_HUB_TITLE,
+    description: ENDOGENAI_HUB_DESC,
+    deliverables: ENDOGENAI_HUB_DELIVERABLES,
+    href: '/products/endogenai',
+    contactHref: '/contact?inquiry=consulting',
   },
   {
     id: 'oss-asaaps',

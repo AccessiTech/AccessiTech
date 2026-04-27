@@ -28,8 +28,8 @@ describe('ProductPage', () => {
 
   it('renders GetStartedSection with default copy when no custom props provided', () => {
     renderWithProviders(<ProductPage {...defaultProps} />);
-    // GetStartedSection defaults include "Not sure which mentorship path" text
-    expect(screen.getByText(/Not sure which mentorship path/i)).toBeInTheDocument();
+    // GetStartedSection defaults include "Ready to explore" text
+    expect(screen.getByText(/Ready to explore how this could work for you/i)).toBeInTheDocument();
   });
 
   it('renders GetStartedSection with custom copy when props provided', () => {
@@ -77,5 +77,29 @@ describe('ProductPage', () => {
   it('renders main landmark with aria-label matching title', () => {
     const { getByRole } = renderWithProviders(<ProductPage {...defaultProps} />);
     expect(getByRole('main', { name: 'Test Product' })).toBeInTheDocument();
+  });
+
+  it('renders relatedServices text in the DOM', () => {
+    renderWithProviders(<ProductPage {...defaultProps} />);
+    expect(screen.getByText('Test related services.')).toBeInTheDocument();
+  });
+
+  it('renders CTA as an external link when ctaHref starts with https://', () => {
+    const props = { ...defaultProps, ctaLabel: 'Visit Site', ctaHref: 'https://example.com' };
+    renderWithProviders(<ProductPage {...props} />);
+    // react-bootstrap Button renders <a role="button">, so query by text then traverse to anchor
+    const anchor = screen.getByText('Visit Site').closest('a');
+    expect(anchor).toHaveAttribute('href', 'https://example.com');
+    expect(anchor).toHaveAttribute('target', '_blank');
+    expect(anchor).toHaveAttribute('rel', 'noopener noreferrer');
+  });
+
+  it('renders CTA as an internal link when ctaHref is a relative path', () => {
+    const props = { ...defaultProps, ctaLabel: 'Learn More', ctaHref: '/wcag' };
+    renderWithProviders(<ProductPage {...props} />);
+    // react-bootstrap Button renders <a role="button">, so query by text then traverse to anchor
+    const anchor = screen.getByText('Learn More').closest('a');
+    expect(anchor).toHaveAttribute('href', '/wcag');
+    expect(anchor).not.toHaveAttribute('target');
   });
 });

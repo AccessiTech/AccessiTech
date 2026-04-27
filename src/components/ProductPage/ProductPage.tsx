@@ -1,5 +1,5 @@
-import { useNavigate } from 'react-router-dom';
-import { Breadcrumb, Col, Row } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
+import { Breadcrumb, Button, Col, Row } from 'react-bootstrap';
 import Metadata from '../Metadata/Metadata';
 import GetStartedSection from '../GetStartedSection/GetStartedSection';
 import { HOME_URL } from '../../settings/strings';
@@ -18,8 +18,8 @@ export interface ProductPageProps {
   examples?: ProductPageExample[];
   howToUse: string;
   relatedServices: string;
-  ctaLabel: string;
-  ctaHref: string;
+  ctaLabel?: string;
+  ctaHref?: string;
   pathname: string;
   metaTitle: string;
   metaDescription: string;
@@ -38,6 +38,9 @@ const ProductPage = ({
   included,
   examples,
   howToUse,
+  relatedServices,
+  ctaLabel,
+  ctaHref,
   pathname,
   metaTitle,
   metaDescription,
@@ -90,7 +93,7 @@ const ProductPage = ({
       <Row className="content-row">
         <main id="main" aria-label={title} className="product-page">
           <Col>
-            <Row className="pb-4">
+            <Row className="main-row">
               <Col xs={12} sm={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
                 <section className="product-overview">
                   <h2>{title}</h2>
@@ -122,6 +125,33 @@ const ProductPage = ({
                       ))}
                     </section>
                   </>
+                )}
+                {relatedServices && (
+                  <>
+                    <hr />
+                    <section className="product-related">
+                      <h3>Related Services</h3>
+                      <p>{relatedServices}</p>
+                    </section>
+                  </>
+                )}
+                {ctaLabel && ctaHref && (
+                  <div className="product-cta d-grid col-12 col-md-6">
+                    {ctaHref.startsWith('http') ? (
+                      <Button
+                        href={ctaHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="dark"
+                      >
+                        {ctaLabel}
+                      </Button>
+                    ) : (
+                      <Link to={ctaHref} className="btn btn-dark">
+                        {ctaLabel}
+                      </Link>
+                    )}
+                  </div>
                 )}
               </Col>
             </Row>
