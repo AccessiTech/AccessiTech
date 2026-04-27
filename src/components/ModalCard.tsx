@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -55,6 +55,19 @@ const ModalCard: React.FC<ModalCardProps> = ({
   link,
 }) => {
   const modalTitleId = ariaLabelledBy || 'modal-title';
+
+  // Track if we're on the client-side (not during SSG)
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // This only runs on the client after hydration
+    setIsClient(true);
+  }, []);
+
+  // Skip rendering during SSG - Modal requires DOM to create portal
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <Modal show={isOpen} onHide={onClose} size={size} aria-labelledby={modalTitleId}>
