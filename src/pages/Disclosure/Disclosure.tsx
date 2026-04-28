@@ -122,12 +122,8 @@ export const Disclosure = () => {
     title: `${ACCESSITECH} | ${entry?.title || 'Blog Entry'}`,
     description: entry?.description || BLOG_DESCRIPTION,
     canonical: `${BLOG_CANONICAL}/${id}`,
-    image: entry?.og_image
-      ? `${IMAGES_BASE_URL}/${entry.og_image}`
-      : entry?.image
-        ? `${IMAGES_BASE_URL}/${entry.image}`
-        : DEFAULT_SHARE_IMAGE,
-    imageAlt: entry?.og_image_alt || entry?.image_alt || DEFAULT_SHARE_IMAGE_ALT,
+    image: entry?.image ? `${IMAGES_BASE_URL}/${entry?.image}` : DEFAULT_SHARE_IMAGE,
+    imageAlt: entry?.image_alt || DEFAULT_SHARE_IMAGE_ALT,
     siteName: ACCESSITECH,
     twitterCreator: '@accessiT3ch',
   };
