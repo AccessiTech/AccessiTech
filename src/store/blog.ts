@@ -26,6 +26,8 @@ export interface Blog {
   description?: string;
   image?: string;
   image_alt?: string;
+  og_image?: string; // Open Graph social media preview image (1200×630)
+  og_image_alt?: string; // Open Graph image alt text (mandatory if og_image present)
   pathname?: string; // Optional, used for routing
   next?: { url: string; title: string }; // Optional, used for next blog entry link
   previous?: { url: string; title: string }; // Optional, used for previous blog entry link
@@ -101,6 +103,14 @@ export const getBlogEntry = createAsyncThunk(
     const title = metaData['title'] || content.split('\n')[0].replace('# ', '');
     const image = metaData['image'] || '';
     const image_alt = metaData['image_alt'] || '';
+
+    // Parse Open Graph image fields with fallback to hero image
+    // If og_image exists but og_image_alt is empty, fall back to hero (validation constraint)
+    const og_image_raw = metaData['og_image'] || '';
+    const og_image_alt_raw = metaData['og_image_alt'] || '';
+    const og_image = og_image_raw && og_image_alt_raw ? og_image_raw : image;
+    const og_image_alt = og_image_raw && og_image_alt_raw ? og_image_alt_raw : image_alt;
+
     const excerpt = metaData['excerpt'] || '';
     const category = metaData['category'] || '';
     const tags = metaData['tags'] ? metaData['tags'].split(',').map((t: string) => t.trim()) : [];
@@ -112,6 +122,8 @@ export const getBlogEntry = createAsyncThunk(
     const previousStr = metaData['previous'] || '';
 
     return {
+      og_image,
+      og_image_alt,
       loaded: true,
       id,
       title,
