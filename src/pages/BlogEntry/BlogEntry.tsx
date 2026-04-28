@@ -10,7 +10,6 @@ import {
   BLOG_CANONICAL,
   DEFAULT_SHARE_IMAGE_ALT,
   DEFAULT_SHARE_IMAGE,
-  IMAGES_BASE_URL,
   BLOG_DESCRIPTION,
 } from '../../settings/strings';
 import Metadata from '../../components/Metadata/Metadata';
@@ -66,8 +65,9 @@ export const BlogEntry = () => {
     title: `${ACCESSITECH} | ${entry?.title || 'Blog Entry'}`,
     description: entry?.description || BLOG_DESCRIPTION,
     canonical: `${BLOG_CANONICAL}/${id}`,
-    image: entry?.image ? `${IMAGES_BASE_URL}/${entry?.image}` : DEFAULT_SHARE_IMAGE,
-    imageAlt: entry?.image_alt || DEFAULT_SHARE_IMAGE_ALT,
+    image: entry?.og_image || entry?.image || DEFAULT_SHARE_IMAGE,
+    imageAlt: entry?.og_image_alt || entry?.image_alt || DEFAULT_SHARE_IMAGE_ALT,
+    type: 'article',
     siteName: ACCESSITECH,
     twitterCreator: '@accessiT3ch',
   };

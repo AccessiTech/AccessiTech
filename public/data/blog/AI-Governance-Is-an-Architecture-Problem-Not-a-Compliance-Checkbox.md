@@ -1,14 +1,14 @@
 <!--
 title: AI Governance Is an Architecture Problem — Not a Compliance Checkbox
-description: When clinical AI deployments produce care recommendations that override licensed therapists — and the legal defense is "the AI did it" — that's not a compliance failure. It's an accountability architecture failure. The distinction matters more than most organizations realize.
+description: AI governance requires accountability architecture, not compliance checklists. When 'the AI did it' becomes the legal defense, that's an architecture failure.
 keywords: AI governance, accountability architecture, AI compliance, AI harness, vendor lock-in, governance substrate, AI accountability
 date: 2026-04-27
-status: published
+status: draft
 series: AI Governance Architecture
 part: 1
 previous: /blog/The-Four-Principles-of-Accessibility-POUR, The Four Principles of Accessibility (POUR)
 next: /blog/Memory-Lock-In-AI-Governance, Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
-og_image: /images/blog/og/AI-Governance-Is-an-Architecture-Problem.png
+og_image: images/blog/og/AI-Governance-Is-an-Architecture-Problem.png
 og_image_alt: AI Governance Is an Architecture Problem — Not a Compliance Checkbox
 visual_notes: |
   Hero (1200×630 px): Abstract architectural visual showing layers (policy doc ↔ governance substrate). Minimal geometric lines, two-tone or monochrome, conveys problem-awareness phase of arc. Style: book cover clarity. Tool: Figma or Excalidraw. WCAG-AA compliance (≥14px text, 4.5:1 contrast min).
