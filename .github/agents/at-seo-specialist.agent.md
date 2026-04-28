@@ -18,8 +18,8 @@ handoffs:
 ## Endogenous Sources
 
 Before any audit, read:
-- `../../docs/brand/style-guide.md` — brand voice and metadata conventions
-- Example blog frontmatter from `public/data/blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox.md` and `public/data/blog/Memory-Lock-In-The-Second-AI-Governance-Architecture-Failure.md`
+- `src/settings/strings.ts` — canonical source of brand strings and URLs
+- Example blog frontmatter from `public/data/blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox.md` and `public/data/blog/Memory-Lock-In-AI-Governance.md`
 - [Open Graph protocol specification](https://ogp.me/) — canonical OG tag reference
 - [Meta Open Graph documentation](https://developers.facebook.com/docs/sharing/webmasters/) — image size and format guidance
 
@@ -35,7 +35,7 @@ For every blog post audit:
    - Check `visual_notes` field documents production spec if OG image planned
 
 2. **Metadata Component Validation**
-   - Read `src/components/Metadata.tsx` to confirm OG tag rendering
+   - Read `src/components/Metadata/Metadata.tsx` to confirm OG tag rendering
    - Verify `og:image` outputs absolute URL (domain + path)
    - Confirm `og:type` defaults to "article" for blog posts
    - Check `og:url` resolves to canonical post URL
