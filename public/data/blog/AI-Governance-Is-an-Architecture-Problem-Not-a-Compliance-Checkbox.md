@@ -3,7 +3,7 @@ title: AI Governance Is an Architecture Problem — Not a Compliance Checkbox
 description: AI governance requires accountability architecture, not compliance checklists. When 'the AI did it' becomes the legal defense, that's an architecture failure.
 keywords: AI governance, accountability architecture, AI compliance, AI harness, vendor lock-in, governance substrate, AI accountability
 date: 2026-04-27
-status: published
+status: draft
 series: AI Governance Architecture
 part: 1
 previous: /blog/The-Four-Principles-of-Accessibility-POUR, The Four Principles of Accessibility (POUR)
