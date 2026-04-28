@@ -5,7 +5,8 @@ keywords: AI governance, accountability architecture, AI compliance, AI harness,
 date: 2026-04-27
 status: published
 series: AI Governance Architecture
-part: 1 of 2
+part: 1
+previous: /blog/The-Four-Principles-of-Accessibility-POUR, The Four Principles of Accessibility (POUR)
 next: /blog/Memory-Lock-In-AI-Governance, Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
 og_image: /images/blog/og/AI-Governance-Is-an-Architecture-Problem.png
 og_image_alt: AI Governance Is an Architecture Problem — Not a Compliance Checkbox
@@ -168,7 +169,7 @@ The "the AI did it" defense that recurs across these cases wasn't a compliance f
 
 ---
 
-_This is the first piece in a two-part series on AI governance as infrastructure. [Part 2](/blog/Memory-Lock-In-AI-Governance) explores how proprietary harnesses create memory lock-in — and what substrate-level sovereignty looks like in practice._
+_This is the first piece in the series on AI governance as infrastructure. [Part 2](/blog/Memory-Lock-In-AI-Governance) explores how proprietary harnesses create memory lock-in — and what substrate-level sovereignty looks like in practice._
 
 _[Follow conor on LinkedIn](https://www.linkedin.com/in/ckellydesign) for the live thread._
 

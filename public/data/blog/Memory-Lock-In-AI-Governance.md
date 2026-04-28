@@ -5,9 +5,9 @@ keywords: AI governance, memory lock-in, AI harness, vendor lock-in, AI agent or
 date: 2026-04-28
 status: draft
 series: AI Governance Architecture
-part: 2 of 3
-prev: /blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox, AI Governance Is an Architecture Problem
-next: /blog/introducing-dogmamcp
+part: 2
+previous: /blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox, AI Governance Is an Architecture Problem
+next: /blog/introducing-dogmamcp, Introducing DogmaMCP - The Open-Source Governance Substrate for AI Agents
 og_image: /images/blog/og/Memory-Lock-In-AI-Governance.png
 og_image_alt: Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
 visual_notes: hero=proprietary lock/chain structural visual 1200×630 px WCAG-AA; og=dedicated title-on-dark 1200×630 px; inline=harness-control diagram as image
@@ -141,7 +141,7 @@ An **open-format** governance file means **no vendor can unilaterally modify the
 
 ---
 
-_This is the second piece in a three-part series on AI governance as infrastructure. [Part 1](/blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox) established why governance is an architecture problem, not a compliance checkbox. Part 3 explores what substrate-level sovereignty looks like in practice — and the open-source implementation that emerged from field conditions where ungoverned behavior wasn't an option._
+_This is the second piece in the series on AI governance as infrastructure. [Part 1](/blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox) established why governance is an architecture problem, not a compliance checkbox. [Next](/blog/introducing-dogmamcp) explores what substrate-level sovereignty looks like in practice — and the open-source implementation that emerged from field conditions where ungoverned behavior wasn't an option._
 
 _[Follow conor on LinkedIn](https://www.linkedin.com/in/ckellydesign) for the live thread._
 
