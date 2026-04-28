@@ -500,4 +500,59 @@ describe('getBlogEntry asyncThunk', () => {
     expect(console.error).toHaveBeenCalled();
     expect(mockNavigate).toHaveBeenCalledWith('/blog', { replace: true });
   });
+
+  it('og_image and og_image_alt both present → OG values used', async () => {
+    global.fetch = vi.fn().mockResolvedValue({
+      ok: true,
+      text: () => Promise.resolve('content'),
+    });
+    (getMetaData as unknown as { mockReturnValue: (v: any) => void }).mockReturnValue({
+      title: 'Test',
+      date: '2020-01-01',
+      image: 'hero.png',
+      image_alt: 'Hero alt',
+      og_image: 'og.png',
+      og_image_alt: 'OG alt text',
+    });
+    const store = makeStore();
+    const result = await store.dispatch(getBlogEntry({ id: 'og-both' }) as any).unwrap();
+    expect(result.og_image).toBe('og.png');
+    expect(result.og_image_alt).toBe('OG alt text');
+  });
+
+  it('og_image present but og_image_alt missing → falls back to hero image/image_alt', async () => {
+    global.fetch = vi.fn().mockResolvedValue({
+      ok: true,
+      text: () => Promise.resolve('content'),
+    });
+    (getMetaData as unknown as { mockReturnValue: (v: any) => void }).mockReturnValue({
+      title: 'Test',
+      date: '2020-01-01',
+      image: 'hero.png',
+      image_alt: 'Hero alt',
+      og_image: 'og.png',
+      og_image_alt: '',
+    });
+    const store = makeStore();
+    const result = await store.dispatch(getBlogEntry({ id: 'og-no-alt' }) as any).unwrap();
+    expect(result.og_image).toBe('hero.png');
+    expect(result.og_image_alt).toBe('Hero alt');
+  });
+
+  it('neither og_image nor og_image_alt present → falls back to hero image/image_alt', async () => {
+    global.fetch = vi.fn().mockResolvedValue({
+      ok: true,
+      text: () => Promise.resolve('content'),
+    });
+    (getMetaData as unknown as { mockReturnValue: (v: any) => void }).mockReturnValue({
+      title: 'Test',
+      date: '2020-01-01',
+      image: 'hero.png',
+      image_alt: 'Hero alt',
+    });
+    const store = makeStore();
+    const result = await store.dispatch(getBlogEntry({ id: 'og-none' }) as any).unwrap();
+    expect(result.og_image).toBe('hero.png');
+    expect(result.og_image_alt).toBe('Hero alt');
+  });
 });
