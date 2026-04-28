@@ -1,6 +1,6 @@
 <!--
 title: Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
-description: Vendor lock-in has a new form. When your AI governance lives inside a proprietary harness you don't control, a single acquisition can shift the liability — retroactively. Here's how to see it coming.
+description: When AI governance lives inside proprietary harnesses, acquisitions can shift liability retroactively. Memory lock-in is vendor lock-in's new form.
 keywords: AI governance, memory lock-in, AI harness, vendor lock-in, AI agent orchestration, governance substrate, open source AI
 date: 2026-04-28
 status: draft
@@ -8,7 +8,7 @@ series: AI Governance Architecture
 part: 2
 previous: /blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox, AI Governance Is an Architecture Problem
 next: /blog/introducing-dogmamcp, Introducing DogmaMCP - The Open-Source Governance Substrate for AI Agents
-og_image: /images/blog/og/Memory-Lock-In-AI-Governance.png
+og_image: images/blog/og/Memory-Lock-In-AI-Governance.png
 og_image_alt: Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
 visual_notes: |
   Hero (1200×630 px): Proprietary lock or chain visual metaphor wrapping around a memory storage symbol. Bold geometric style, monochrome or two-tone, conveys vendor lock-in / capture / acquisition risk. Problem deepening in arc, no product reveal. Tool: Figma or Excalidraw. WCAG-AA compliance (≥14px text, 4.5:1 contrast min).
