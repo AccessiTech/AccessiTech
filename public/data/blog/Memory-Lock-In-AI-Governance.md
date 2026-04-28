@@ -10,7 +10,11 @@ previous: /blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkb
 next: /blog/introducing-dogmamcp, Introducing DogmaMCP - The Open-Source Governance Substrate for AI Agents
 og_image: /images/blog/og/Memory-Lock-In-AI-Governance.png
 og_image_alt: Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
-visual_notes: hero=proprietary lock/chain structural visual 1200×630 px WCAG-AA; og=dedicated title-on-dark 1200×630 px; inline=harness-control diagram as image
+visual_notes: |
+  Hero (1200×630 px): Proprietary lock or chain visual metaphor wrapping around a memory storage symbol. Bold geometric style, monochrome or two-tone, conveys vendor lock-in / capture / acquisition risk. Problem deepening in arc, no product reveal. Tool: Figma or Excalidraw. WCAG-AA compliance (≥14px text, 4.5:1 contrast min).
+  OG (1200×630 px): Dedicated title image. Title "Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance" in large bold type (≥32px equiv at 1200px width), brand mark small bottom-right, dark background, high contrast. Safe zone: central 900×450 px. Format: PNG ≤5 MB. Tool: Figma (OG template).
+  Inline—Harness Control Diagram (~800×500 px): System diagram showing central "Harness" node with arrows to 5 sub-nodes: "Memory Retrieval", "Tool Dispatch", "State Routing", "Retry Logic", "Identity & Access". Clean structure, labels clearly visible. Tool: Excalidraw (free, clean diagrams) or draw.io. WCAG-AA (≥14px, 4.5:1 contrast).
+  Accessibility: All text ≥14px for legibility, 4.5:1 contrast minimum. Include descriptive alt text for each image.
 -->
 
 # **Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance**
