@@ -71,8 +71,13 @@ export const getMetaData = (text: string): { [key: string]: string } => {
   const metaData: { [key: string]: string } = {};
   const lines = text.split('\n');
   lines.forEach(line => {
-    const key = line.split(':')[0]?.replace('<!--', '').trim();
-    const value = line.split(':')[1]?.replace('-->', '').trim();
+    const colonIdx = line.indexOf(':');
+    if (colonIdx === -1) return;
+    const key = line.substring(0, colonIdx).replace('<!--', '').trim();
+    const value = line
+      .substring(colonIdx + 1)
+      .replace('-->', '')
+      .trim();
     if (key && value) {
       metaData[key] = value;
     }

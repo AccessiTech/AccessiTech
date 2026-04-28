@@ -102,7 +102,7 @@ export const getBlogEntry = createAsyncThunk(
       : text;
     const title = metaData['title'] || content.split('\n')[0].replace('# ', '');
     const image = metaData['image'] || '';
-    const image_alt = metaData['image_alt'] || '';
+    const image_alt = metaData['image_alt'] || metaData['imageAlt'] || '';
 
     // Parse Open Graph image fields with fallback to hero image
     // If og_image exists but og_image_alt is empty, fall back to hero (validation constraint)
