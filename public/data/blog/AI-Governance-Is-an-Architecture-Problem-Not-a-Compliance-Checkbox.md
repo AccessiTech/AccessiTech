@@ -7,6 +7,9 @@ status: draft
 series: AI Governance Architecture
 part: 1 of 2
 next: /blog/Memory-Lock-In-AI-Governance, Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
+og_image: /images/blog/og/AI-Governance-Is-an-Architecture-Problem.png
+og_image_alt: AI Governance Is an Architecture Problem — Not a Compliance Checkbox
+visual_notes: hero=abstract structural/architectural visual 1200×630 px WCAG-AA; og=dedicated title-on-dark variant 1200×630 px safe zone 900×450 px; inline=policy-vs-substrate comparison table rendered as image
 -->
 
 # **AI Governance Is an Architecture Problem — Not a Compliance Checkbox**
