@@ -6,7 +6,7 @@ import remarkGfm from 'remark-gfm';
 
 import {
   ACCESSITECH,
-  BLOG_CANONICAL,
+  DISCLOSURES_CANONICAL,
   DEFAULT_SHARE_IMAGE_ALT,
   DEFAULT_SHARE_IMAGE,
   BLOG_DESCRIPTION,
@@ -120,7 +120,7 @@ export const Disclosure = () => {
   const metadata = {
     title: `${ACCESSITECH} | ${entry?.title || 'Blog Entry'}`,
     description: entry?.description || BLOG_DESCRIPTION,
-    canonical: `${BLOG_CANONICAL}/${id}`,
+    canonical: `${DISCLOSURES_CANONICAL}/${id}`,
     image: entry?.og_image || entry?.image || DEFAULT_SHARE_IMAGE,
     imageAlt: entry?.og_image_alt || entry?.image_alt || DEFAULT_SHARE_IMAGE_ALT,
     siteName: ACCESSITECH,
