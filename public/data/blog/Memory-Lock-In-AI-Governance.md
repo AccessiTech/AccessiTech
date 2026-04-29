@@ -8,7 +8,7 @@ series: AI Governance Architecture
 part: 2
 previous: /blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox, AI Governance Is an Architecture Problem
 next: /blog/introducing-dogmamcp, Introducing DogmaMCP - The Open-Source Governance Substrate for AI Agents
-og_image: images/blog/og/Memory-Lock-In-AI-Governance.png
+og_image: /assets/images/be-2-og.png
 og_image_alt: Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
 visual_notes: |
   Hero (1200×630 px): Proprietary lock or chain visual metaphor wrapping around a memory storage symbol. Bold geometric style, monochrome or two-tone, conveys vendor lock-in / capture / acquisition risk. Problem deepening in arc, no product reveal. Tool: Figma or Excalidraw. WCAG-AA compliance (≥14px text, 4.5:1 contrast min).
@@ -54,6 +54,8 @@ Most enterprise conversations about AI adoption center on model selection — GP
 
 If the harness controls memory, context retrieval, tool access, and state routing — the **harness is where governance either lives or doesn't**.
 
+![Concentric circles diagram showing governance infrastructure layers from LLMs at core through Client Policy Docs, Values Encoding, Agent Roles/Skills/Tools, Governance Scripts, to Product/Service at outermost layer](/assets/images/be-1-concentric-circles.png)
+
 Governance constraints the harness enforces:
 
 - **PII masking**: filtering personally identifiable information from retrieval results
@@ -74,6 +76,8 @@ This is not a theoretical concern. It's the reason data processing agreements re
 ## **The Proprietary Harness Problem**
 
 LangGraph, LangChain, and similar orchestration stacks are extraordinary tools — and **they are vendor relationships, not owned infrastructure**. This is not a criticism. It's a structural description that most organizations have not explicitly processed as a **governance decision**.
+
+![Locked data (Your Data) plus Vendor Lock equals loss of Product Sovereignty, illustrated with stacked cyan document icons, yellow padlock, and pink not-equal symbol](/assets/images/be-2-v1.png)
 
 What proprietary stacks concentrate:
 
