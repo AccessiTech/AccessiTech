@@ -72,10 +72,7 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
             <pubDate>${date}</pubDate>
             <description>${description}</description>
             <excerpt>${excerpt || description}</excerpt>
-            ${categories
-              ?.split(',')
-              ?.map(category => `<category>${category.trim()}</category>`)
-              .join('')}
+            ${categories ? categories.split(',').map(category => `<category>${category.trim()}</category>`).join('') : ''}
             <enclosure url="${imageURI}" type="image/jpeg" length="1234" />
             <media:content url="${imageURI}" type="image/jpeg" medium="image" width="300" height="200" />
             <media:description type="plain">${altText}</media:description>
