@@ -38,19 +38,18 @@ describe('About', () => {
     expect(screen.getByRole('main', { name: 'About the Founder' })).toBeInTheDocument();
   });
 
-  it('renders The 18-Year Pattern heading', () => {
+  it('renders The Two Decades of Work heading', () => {
     renderWithProviders(<About />, { route: '/about' });
-    expect(screen.getByRole('heading', { name: 'The 18-Year Pattern' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'The Two Decades of Work: One Consistent Pattern' })
+    ).toBeInTheDocument();
   });
 
-  it('renders Education & Career Breadth heading', () => {
+  it('renders The Break That Rebuilt the Work heading', () => {
     renderWithProviders(<About />, { route: '/about' });
-    expect(screen.getByRole('heading', { name: 'Education & Career Breadth' })).toBeInTheDocument();
-  });
-
-  it('renders The Turning Point heading', () => {
-    renderWithProviders(<About />, { route: '/about' });
-    expect(screen.getByRole('heading', { name: 'The Turning Point' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'The Break That Rebuilt the Work' })
+    ).toBeInTheDocument();
   });
 
   it('renders Nothing About Us Without Us heading', () => {
@@ -60,20 +59,17 @@ describe('About', () => {
     ).toBeInTheDocument();
   });
 
-  it('renders Why AccessiTech heading', () => {
-    renderWithProviders(<About />, { route: '/about' });
-    expect(screen.getByRole('heading', { name: 'Why AccessiTech' })).toBeInTheDocument();
-  });
-
-  it('renders both pull-quote blockquote elements', () => {
+  it('renders exactly two pull-quote blockquote elements', () => {
     renderWithProviders(<About />, { route: '/about' });
     const blockquotes = screen.getAllByRole('blockquote');
-    expect(blockquotes.length).toBeGreaterThanOrEqual(2);
+    expect(blockquotes.length).toBe(2);
   });
 
   it('renders the founder signature containing "conor kelly"', () => {
     renderWithProviders(<About />, { route: '/about' });
-    expect(screen.getByText(/conor kelly/i)).toBeInTheDocument();
+    const signature = screen.getByText(/founder & CEO/i);
+    expect(signature).toBeInTheDocument();
+    expect(signature).toHaveTextContent('conor kelly');
   });
 
   it('renders the GetStartedSection component', () => {
