@@ -145,9 +145,9 @@ export const getBlogEntry = createAsyncThunk(
         : undefined,
       previous: previousStr
         ? {
-          url: previousStr.split(',')[0],
-          title: previousStr.split(',')[1] || 'Previous',
-        }
+            url: previousStr.split(',')[0],
+            title: previousStr.split(',')[1] || 'Previous',
+          }
         : undefined,
     } as Blog;
   }
