@@ -8,8 +8,10 @@ series: AI Governance Architecture
 part: 1
 previous: /blog/The-Four-Principles-of-Accessibility-POUR, The Four Principles of Accessibility (POUR)
 next: /blog/Memory-Lock-In-AI-Governance, Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
-og_image: images/blog/og/AI-Governance-Is-an-Architecture-Problem.png
+og_image: be-1-og.png
 og_image_alt: AI Governance Is an Architecture Problem — Not a Compliance Checkbox
+image: be-1-og.png
+imageAlt: AI Governance Is an Architecture Problem — Not a Compliance Checkbox
 visual_notes: |
   Hero (1200×630 px): Abstract architectural visual showing layers (policy doc ↔ governance substrate). Minimal geometric lines, two-tone or monochrome, conveys problem-awareness phase of arc. Style: book cover clarity. Tool: Figma or Excalidraw. WCAG-AA compliance (≥14px text, 4.5:1 contrast min).
   OG (1200×630 px): Dedicated title image. Title "AI Governance Is an Architecture Problem" in large bold type (≥32px equiv at 1200px width), brand mark small bottom-right, dark background, high contrast. Safe zone: central 900×450 px. Format: PNG ≤5 MB. Tool: Figma (OG template).
