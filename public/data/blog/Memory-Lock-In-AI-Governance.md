@@ -19,6 +19,9 @@ visual_notes: |
 
 # **Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance**
 
+<!-- VISUAL: Hero image (1200×630 px) — Lock/chain metaphor wrapping a memory storage symbol. Bold geometric, two-tone (lock=dark/red, memory=neutral). See frontmatter visual_notes for full spec. File: images/blog/blog2-hero-memory-lock-in-1200x630.png -->
+<!-- ALT: "Proprietary lock or chain wrapping around a memory storage symbol, illustrating vendor lock-in risk in AI harness infrastructure" -->
+
 You've heard of vendor lock-in. You know it from databases, from cloud infrastructure, from SaaS contract cycles. Memory lock-in in AI governance is the same mechanism. Most procurement teams haven't named it yet.
 
 ## **What a Harness Is**
@@ -32,6 +35,9 @@ What the harness controls:
 - **State routing**: how conversation state persists across requests
 - **Retry logic**: how the agent recovers from model failures
 - **Identity & access**: what user, tenant, or security context frames the response
+
+<!-- VISUAL: Inline harness control diagram (~800×500 px) — Central "Harness" node with 5 arrows to: Memory Retrieval, Tool Dispatch, State Routing, Retry Logic, Identity & Access. Clean architecture diagram, Excalidraw or draw.io. See frontmatter visual_notes. File: images/blog/blog2-inline-harness-control-800x500.png -->
+<!-- ALT: "System diagram showing Harness as central control point with five governed functions: Memory Retrieval, Tool Dispatch, State Routing, Retry Logic, and Identity & Access" -->
 
 When you ask an AI agent what it remembers about your last conversation, the answer comes from the harness. When you ask it not to surface confidential information in its responses, the **enforcement mechanism — if it exists — lives in the harness**.
 
@@ -56,6 +62,8 @@ Governance constraints the harness enforces:
 - **Output constraints**: rules that shape what the model can say before response generation
 - **Audit logging**: tracking what the agent accessed and why
 - **Rate limiting & quotas**: preventing resource abuse or cost overruns
+
+<!-- VISUAL OPPORTUNITY: Consider a two-column comparison table image or infographic — "What governance documents say" vs "What harness controls enforce". Optional asset; not in current spec. If produced: ~800×400 px, table format, Figma. -->
 
 You can write a policy that says "agents must not surface personally identifiable information in customer-facing responses." That policy is meaningful only if it's **encoded in the harness**: as a retrieval filter, a context-assembly rule, or an output constraint.
 
@@ -117,7 +125,7 @@ The point is not that Meta acted illegally — they probably didn't. Platforms u
 
 The **structural response to proprietary lock-in is an open governance substrate**. Instructions, constraints, and behavioral rules exist as **plain-text files you version-control** — not as configuration inside a vendor's platform.
 
-[Harrison Chase's April 2026 post](https://www.langchain.com/blog/your-harness-your-memory) validates this framing from inside the orchestration ecosystem. The argument isn't that proprietary harnesses are wrong. It's that **the choice of harness architecture is a governance decision** — and that organizations need to make it deliberately, not by default.
+LangChain CEO Harrison Chase validated this framing in his [April 2026 post](https://www.langchain.com/blog/your-harness-your-memory) from inside the orchestration ecosystem. The argument isn't that proprietary harnesses are wrong. It's that **the choice of harness architecture is a governance decision** — and that organizations need to make it deliberately, not by default.
 
 Open governance substrate characteristics:
 
