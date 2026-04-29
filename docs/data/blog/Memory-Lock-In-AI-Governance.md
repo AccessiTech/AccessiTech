@@ -3,12 +3,12 @@ title: Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governanc
 description: When AI governance lives inside proprietary harnesses, acquisitions can shift liability retroactively. Memory lock-in is vendor lock-in's new form.
 keywords: AI governance, memory lock-in, AI harness, vendor lock-in, AI agent orchestration, governance substrate, open source AI
 date: 2026-04-28
-status: draft
+status: published
 series: AI Governance Architecture
 part: 2
 previous: /blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox, AI Governance Is an Architecture Problem
 next: /blog/introducing-dogmamcp, Introducing DogmaMCP - The Open-Source Governance Substrate for AI Agents
-og_image: images/blog/og/Memory-Lock-In-AI-Governance.png
+og_image: /assets/images/be-2-og.png
 og_image_alt: Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
 visual_notes: |
   Hero (1200×630 px): Proprietary lock or chain visual metaphor wrapping around a memory storage symbol. Bold geometric style, monochrome or two-tone, conveys vendor lock-in / capture / acquisition risk. Problem deepening in arc, no product reveal. Tool: Figma or Excalidraw. WCAG-AA compliance (≥14px text, 4.5:1 contrast min).
@@ -18,6 +18,9 @@ visual_notes: |
 -->
 
 # **Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance**
+
+<!-- VISUAL: Hero image (1200×630 px) — Lock/chain metaphor wrapping a memory storage symbol. Bold geometric, two-tone (lock=dark/red, memory=neutral). See frontmatter visual_notes for full spec. File: images/blog/blog2-hero-memory-lock-in-1200x630.png -->
+<!-- ALT: "Proprietary lock or chain wrapping around a memory storage symbol, illustrating vendor lock-in risk in AI harness infrastructure" -->
 
 You've heard of vendor lock-in. You know it from databases, from cloud infrastructure, from SaaS contract cycles. Memory lock-in in AI governance is the same mechanism. Most procurement teams haven't named it yet.
 
@@ -32,6 +35,9 @@ What the harness controls:
 - **State routing**: how conversation state persists across requests
 - **Retry logic**: how the agent recovers from model failures
 - **Identity & access**: what user, tenant, or security context frames the response
+
+<!-- VISUAL: Inline harness control diagram (~800×500 px) — Central "Harness" node with 5 arrows to: Memory Retrieval, Tool Dispatch, State Routing, Retry Logic, Identity & Access. Clean architecture diagram, Excalidraw or draw.io. See frontmatter visual_notes. File: images/blog/blog2-inline-harness-control-800x500.png -->
+<!-- ALT: "System diagram showing Harness as central control point with five governed functions: Memory Retrieval, Tool Dispatch, State Routing, Retry Logic, and Identity & Access" -->
 
 When you ask an AI agent what it remembers about your last conversation, the answer comes from the harness. When you ask it not to surface confidential information in its responses, the **enforcement mechanism — if it exists — lives in the harness**.
 
@@ -48,6 +54,8 @@ Most enterprise conversations about AI adoption center on model selection — GP
 
 If the harness controls memory, context retrieval, tool access, and state routing — the **harness is where governance either lives or doesn't**.
 
+![Concentric circles diagram showing governance infrastructure layers from LLMs at core through Client Policy Docs, Values Encoding, Agent Roles/Skills/Tools, Governance Scripts, to Product/Service at outermost layer](/assets/images/be-1-concentric-circles.png)
+
 Governance constraints the harness enforces:
 
 - **PII masking**: filtering personally identifiable information from retrieval results
@@ -56,6 +64,8 @@ Governance constraints the harness enforces:
 - **Output constraints**: rules that shape what the model can say before response generation
 - **Audit logging**: tracking what the agent accessed and why
 - **Rate limiting & quotas**: preventing resource abuse or cost overruns
+
+<!-- VISUAL OPPORTUNITY: Consider a two-column comparison table image or infographic — "What governance documents say" vs "What harness controls enforce". Optional asset; not in current spec. If produced: ~800×400 px, table format, Figma. -->
 
 You can write a policy that says "agents must not surface personally identifiable information in customer-facing responses." That policy is meaningful only if it's **encoded in the harness**: as a retrieval filter, a context-assembly rule, or an output constraint.
 
@@ -66,6 +76,8 @@ This is not a theoretical concern. It's the reason data processing agreements re
 ## **The Proprietary Harness Problem**
 
 LangGraph, LangChain, and similar orchestration stacks are extraordinary tools — and **they are vendor relationships, not owned infrastructure**. This is not a criticism. It's a structural description that most organizations have not explicitly processed as a **governance decision**.
+
+![Locked data (Your Data) plus Vendor Lock equals loss of Product Sovereignty, illustrated with stacked cyan document icons, yellow padlock, and pink not-equal symbol](/assets/images/be-2-v1.png)
 
 What proprietary stacks concentrate:
 
@@ -117,7 +129,7 @@ The point is not that Meta acted illegally — they probably didn't. Platforms u
 
 The **structural response to proprietary lock-in is an open governance substrate**. Instructions, constraints, and behavioral rules exist as **plain-text files you version-control** — not as configuration inside a vendor's platform.
 
-[Harrison Chase's April 2026 post](https://www.langchain.com/blog/your-harness-your-memory) validates this framing from inside the orchestration ecosystem. The argument isn't that proprietary harnesses are wrong. It's that **the choice of harness architecture is a governance decision** — and that organizations need to make it deliberately, not by default.
+LangChain CEO Harrison Chase validated this framing in his [April 2026 post](https://www.langchain.com/blog/your-harness-your-memory) from inside the orchestration ecosystem. The argument isn't that proprietary harnesses are wrong. It's that **the choice of harness architecture is a governance decision** — and that organizations need to make it deliberately, not by default.
 
 Open governance substrate characteristics:
 

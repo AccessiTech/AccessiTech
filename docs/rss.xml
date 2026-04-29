@@ -76,6 +76,20 @@
           </item>
         
           <item>
+            <title>Memory Lock-In</title>
+            <link>https://accessi.tech/blog/Memory-Lock-In-AI-Governance</link>
+            <pubDate>2026-04-28</pubDate>
+            <description>When AI governance lives inside proprietary harnesses, acquisitions can shift liability retroactively. Memory lock-in is vendor lock-in's new form.</description>
+            <excerpt>When AI governance lives inside proprietary harnesses, acquisitions can shift liability retroactively. Memory lock-in is vendor lock-in's new form.</excerpt>
+            
+            <enclosure url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" length="1234" />
+            <media:content url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" medium="image" width="300" height="200" />
+            <media:description type="plain">Yellow text on gradient background saying, AccessiTech</media:description>
+            <media:thumbnail url="https://www.accessi.tech/assets/images/default.png" />
+            <media:credit>AccessiTech LLC</media:credit>
+          </item>
+        
+          <item>
             <title>The Four Principles of Accessibility (POUR)</title>
             <link>https://accessi.tech/blog/The-Four-Principles-of-Accessibility-POUR</link>
             <pubDate>2025-06-12</pubDate>
@@ -1428,6 +1442,20 @@
             <media:content url="https://www.accessi.tech/assets/images/intorduction-to-wcag.png" type="image/jpeg" medium="image" width="300" height="200" />
             <media:description type="plain">Dark blue text on yellow background saying, Introduction to WCAG, What it is and Why it Matters</media:description>
             <media:thumbnail url="https://www.accessi.tech/assets/images/intorduction-to-wcag.png" />
+            <media:credit>AccessiTech LLC</media:credit>
+          </item>
+        
+          <item>
+            <title>Memory Lock-In</title>
+            <link>https://accessi.tech/blog/Memory-Lock-In-AI-Governance</link>
+            <pubDate>2026-04-28</pubDate>
+            <description>When AI governance lives inside proprietary harnesses, acquisitions can shift liability retroactively. Memory lock-in is vendor lock-in's new form.</description>
+            <excerpt>When AI governance lives inside proprietary harnesses, acquisitions can shift liability retroactively. Memory lock-in is vendor lock-in's new form.</excerpt>
+            
+            <enclosure url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" length="1234" />
+            <media:content url="https://www.accessi.tech/assets/images/default.png" type="image/jpeg" medium="image" width="300" height="200" />
+            <media:description type="plain">Yellow text on gradient background saying, AccessiTech</media:description>
+            <media:thumbnail url="https://www.accessi.tech/assets/images/default.png" />
             <media:credit>AccessiTech LLC</media:credit>
           </item>
         
