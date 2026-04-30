@@ -148,20 +148,6 @@ const About = () => {
                   <p>{ABOUT_S4_P5}</p>
                   <p className="founder-signature">{ABOUT_SIGNATURE}</p>
                 </section>
-
-                {/* <section className="about-section about-services">
-                  <h3>{ABOUT_S5_HEADING}</h3>
-                  <p>
-                    <strong>{ABOUT_S5_CONSULTING_LABEL}</strong> {ABOUT_S5_CONSULTING_DESC}
-                  </p>
-                  <p>
-                    <strong>{ABOUT_S5_MENTORSHIP_LABEL}</strong> {ABOUT_S5_MENTORSHIP_DESC}
-                  </p>
-                  <p>
-                    <strong>{ABOUT_S5_PRODUCTS_LABEL}</strong> {ABOUT_S5_PRODUCTS_DESC}
-                  </p>
-                  <p>{ABOUT_S5_CLOSING}</p>
-                </section> */}
               </Col>
             </Row>
             <Row className="getStartedRow">

@@ -84,14 +84,7 @@
 
       /* Fade spinner out when React hydration completes */
       #root:not(:empty)::before {
-        animation: spinFadeOut 0.6s ease-out forwards;
-      }
-
-      @keyframes spinFadeOut {
-        to {
-          opacity: 0;
-          visibility: hidden;
-        }
+        display: none;
       }
     </style>
   </head>
