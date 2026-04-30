@@ -55,6 +55,8 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>AccessiTech LLC</title>
+  </head>
+  <body>
     <style>
       /* CSS-only loading spinner - displays during SSG initial render */
       #root:empty {
@@ -81,14 +83,7 @@
           transform: translate(-50%, -50%) rotate(360deg);
         }
       }
-
-      /* Fade spinner out when React hydration completes */
-      #root:not(:empty)::before {
-        display: none;
-      }
     </style>
-  </head>
-  <body>
     <noscript>
       <!-- ssg:noscript -->
     </noscript>
