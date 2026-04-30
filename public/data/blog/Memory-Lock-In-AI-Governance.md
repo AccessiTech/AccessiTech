@@ -77,7 +77,7 @@ This is not a theoretical concern. It's the reason data processing agreements re
 
 LangGraph, LangChain, and similar orchestration stacks are extraordinary tools — and **they are vendor relationships, not owned infrastructure**. This is not a criticism. It's a structural description that most organizations have not explicitly processed as a **governance decision**.
 
-![Locked data (Your Data) plus Vendor Lock equals loss of Product Sovereignty, illustrated with stacked cyan document icons, yellow padlock, and pink not-equal symbol](/assets/images/be-2-v1.png)
+![Locked data (Your Data) plus Vendor Lock equals loss of Product Sovereignty, illustrated with stacked cyan server icons, yellow padlock, and pink not-equal symbol](/assets/images/be-2-v1.png)
 
 What proprietary stacks concentrate:
 
