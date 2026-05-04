@@ -3,7 +3,7 @@ title: When AI Kills: Data Sovereignty in High-Stakes Systems
 description: The Maven school strike killed 180 children because nobody controlled the rules the AI followed. Data sovereignty isn't about compliance — it's about who owns your AI's decision-making.
 keywords: AI governance, data sovereignty, AI accountability, digital sovereignty, AI ethics, AI targeting systems, governance substrate
 date: 2026-05-06
-status: published
+status: draft
 series: AI Governance
 og_image: be-sovereignty-og.png
 og_image_alt: When AI Kills: Data Sovereignty in High-Stakes Systems
@@ -14,7 +14,7 @@ visual_notes: |
   OG (1200×630 px): Blog title in bold type, dark background, brand mark bottom-right.
 -->
 
-# 🔒 **When AI Kills: Data Sovereignty in High-Stakes Systems**
+# **When AI Kills: Data Sovereignty in High-Stakes Systems**
 
 <!-- VISUAL: Hero image (1200×630 px) — Dark, stark visual representing human cost and sovereignty. See frontmatter visual_notes. File: images/blog/blog-sovereignty-hero-1200x630.png -->
 <!-- ALT: "Abstract representation of human cost in high-stakes AI systems, emphasizing sovereignty and control questions" -->
@@ -67,7 +67,7 @@ Not "did the AI work correctly?" **Who decided that working correctly meant movi
 
 ---
 
-## 🔒 **Sovereignty Is Not About Accuracy. It's About Control.**
+## **Sovereignty Is Not About Accuracy. It's About Control.**
 
 The Maven database was outdated. Those are implementation details.
 
@@ -103,7 +103,7 @@ If that logic lives inside a proprietary vendor platform you cannot audit, **you
 
 ---
 
-## ⚠️ **What Happens When Sovereignty Is Transferred**
+## **What Happens When Sovereignty Is Transferred**
 
 The cost of losing sovereignty over AI governance rules is not theoretical. It is visible in every system where vendor-controlled infrastructure determines organizational risk.
 
@@ -148,7 +148,7 @@ Not the public. Not the oversight bodies. **The vendors** — whose incentive is
 
 ---
 
-## 🎯 **Three Questions Your Organization Must Be Able to Answer**
+## **Three Questions Your Organization Must Be Able to Answer**
 
 If your organization is deploying AI systems that make high-stakes decisions — about people's **health, financial access, legal status, physical safety** — you need to be able to answer three questions:
 
@@ -201,7 +201,7 @@ And when something goes wrong, **that someone else will point to the contract an
 
 ---
 
-## ✅ **What Data Sovereignty Actually Requires**
+## **What Data Sovereignty Actually Requires**
 
 **Sovereignty is not a compliance checkbox. It is not a policy document.**
 
@@ -237,7 +237,7 @@ If your governance framework assumes humans will catch errors but doesn't give t
 
 ---
 
-## 🎯 **The Question That Determines Accountability**
+## **The Question That Determines Accountability**
 
 When scrutiny arrives — and it will arrive — the question will not be **"did your AI work as documented?"**
 
@@ -262,7 +262,7 @@ And the first step to solving it is recognizing that **governance you cannot ins
 
 ---
 
-## 🔧 **What AccessiTech Can Do**
+## **What AccessiTech Can Do**
 
 AccessiTech conducts **sovereignty audits** for organizations deploying high-stakes AI systems.
 
