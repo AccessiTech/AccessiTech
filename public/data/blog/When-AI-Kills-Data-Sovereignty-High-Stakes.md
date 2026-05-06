@@ -69,6 +69,10 @@ Not "did the AI work correctly?" **Who decided that working correctly meant movi
 
 ## **Sovereignty Is Not About Accuracy. It's About Control.**
 
+<!-- TODO: Karen Hao direct quote re: data imperialism + colonial extraction — verify permission with Alix/Zoe -->
+
+[Watch Karen Hao explain how 'data-rich countries' perpetuates imperial extraction](https://www.youtube.com/playlist?list=PLUe4RjfOLVwUv5d-wS60mT9m3ntM2Sr8q) — essential context for understanding who controls AI systems and who bears the cost.
+
 The Maven database was outdated. Those are implementation details.
 
 **The deeper problem is this: the organizations deploying the AI did not control the rules the AI followed.**
@@ -157,6 +161,10 @@ If your organization is deploying AI systems that make high-stakes decisions —
 **For policymakers and activists**, they're accountability audit criteria to demand from organizations deploying AI in your jurisdiction or community.
 
 **1. 🔑 Who owns the rules your AI follows?**
+
+<!-- TODO: Mara Soriano direct quote re: surveillance → weapons export pipeline + Palestinian surveillance — verify permission with Alix/Zoe -->
+
+[Hear Mara Soriano on how surveillance systems are incubated on populations without protections, then exported as 'combat-proven' technology](https://www.youtube.com/playlist?list=PLUe4RjfOLVwUv5d-wS60mT9m3ntM2Sr8q) — a direct link between governance control and human cost.
 
 Not who owns the model. Not who owns the data. **Who owns the governance logic** — the software layer that decides:
 
@@ -263,6 +271,10 @@ And the first step to solving it is recognizing that **governance you cannot ins
 ---
 
 ## **What AccessiTech Can Do**
+
+([Watch Abeba Birhane on why 'AI for good' rhetoric masks who actually gets harmed](https://www.youtube.com/playlist?list=PLUe4RjfOLVwUv5d-wS60mT9m3ntM2Sr8q) — essential framing for why corporate governance claims need external accountability, not just internal audit.)
+
+<!-- TODO: Abeba Birhane direct quote re: corporate complicity + harm framing + "AI for good" as structural evasion — verify permission with Alix/Zoe -->
 
 AccessiTech conducts **sovereignty audits** for organizations deploying high-stakes AI systems.
 

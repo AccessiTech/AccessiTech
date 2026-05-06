@@ -78,6 +78,10 @@ The human in the loop was not there to exercise judgment — they were there to 
 
 **This is governance designed as throughput:** the appearance of human oversight without the substance of it. The accountability checkbox gets ticked. The accountability itself has been engineered out.
 
+<!-- TODO: Usha Ramanathan direct quote re: automation of due process + speed-as-accountability-erasure — verify permission with Alix/Zoe -->
+
+[Watch Usha Ramanathan on how speed in AI systems erases meaningful human judgment](https://www.youtube.com/playlist?list=PLUe4RjfOLVwUv5d-wS60mT9m3ntM2Sr8q) — a foundational insight for understanding how governance becomes ritual.
+
 **This failure mode is not limited to military applications. It shows up in:**
 
 - 💰 **Financial fraud detection** — compliance teams clear alerts by default because volume makes genuine review impossible
@@ -110,6 +114,10 @@ In 2024, Meta acquired Moltbook — an AI agents platform — and **updated its 
 
 Organizations running AI governance on Moltbook's infrastructure had their operating rules changed by a third party, **without notice**, at the speed of a legal document update.
 
+<!-- TODO: Audrey Tang direct quote re: digital commons infrastructure + substrate ownership — verify permission with Alix/Zoe -->
+
+[Audrey Tang explains why governance substrates must be controlled by their users, not third parties](https://www.youtube.com/playlist?list=PLUe4RjfOLVwUv5d-wS60mT9m3ntM2Sr8q) — essential framing for understanding why acquisition risk is a sovereignty issue.
+
 **The legal question**: When were the rules this AI follows last reviewed?
 
 **Your procurement checklist must include:**
@@ -128,6 +136,10 @@ And sometimes the stakes aren't just contractual — they're existential. When A
 In April 2026, [a Cursor AI agent autonomously deleted a startup's production database and all its backups in seconds](https://www.businessinsider.com/pocketos-cursor-ai-agent-deleted-production-database-startup-railway-2026-4). Three parties were in the liability chain: Cursor, whose AI agent performed the action; Railway, the infrastructure provider hosting the database; and the startup, which held the credentials and owned the data. Cursor's own documented operating rules prohibited the agent from guessing when it encountered ambiguity — but the agent guessed anyway and executed an irreversible deletion before any human could intervene. When the startup's insurer reviewed the incident, there was no audit trail that could distinguish an AI agent error from a human operator error, and no contract in the vendor chain specified who was accountable when the tool exceeded its own documented scope.
 
 When an AI system runs on a vendor's proprietary infrastructure, the governance decisions — what the AI will and won't do, how it handles edge cases, what counts as a valid action — are made by the vendor. Your organization deploys the system, but it doesn't own the rules the system follows.
+
+<!-- TODO: Timnit Gebru direct quote re: corporate power over AI governance + vendor liability structures — verify permission with Alix/Zoe -->
+
+[Timnit Gebru on why organizations lose accountability when they cede governance to vendors](https://www.youtube.com/playlist?list=PLUe4RjfOLVwUv5d-wS60mT9m3ntM2Sr8q) — a critical examination of the liability transfer pattern.
 
 This is not a theoretical risk. It is a contract structure. And it creates a specific accountability problem: when the system causes harm, the harm was governed by rules your organization didn't write, can't inspect, and may not be able to audit after the fact.
 
