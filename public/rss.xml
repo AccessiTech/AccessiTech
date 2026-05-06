@@ -103,6 +103,20 @@
             <media:credit>AccessiTech LLC</media:credit>
           </item>
         
+          <item>
+            <title>When 'The AI Did It' Is No Longer a Defense</title>
+            <link>https://accessi.tech/blog/When-The-AI-Did-It-Is-No-Longer-a-Defense</link>
+            <pubDate>2026-05-05</pubDate>
+            <description>When AI systems cause harm, someone made the architecture decisions that created the accountability gap. Legal teams need to understand three specific failure modes before their next AI procurement.</description>
+            <excerpt>When AI systems cause harm, someone made the architecture decisions that created the accountability gap. Legal teams need to understand three specific failure modes before their next AI procurement.</excerpt>
+            
+            <enclosure url="https://www.accessi.tech/assets/images/be-3-og.png" type="image/jpeg" length="1234" />
+            <media:content url="https://www.accessi.tech/assets/images/be-3-og.png" type="image/jpeg" medium="image" width="300" height="200" />
+            <media:description type="plain">When 'The AI Did It' Is No Longer a Defense</media:description>
+            <media:thumbnail url="https://www.accessi.tech/assets/images/be-3-og.png" />
+            <media:credit>AccessiTech LLC</media:credit>
+          </item>
+        
     </channel>
     <channel>
       <title>WCAG Explained</title>
@@ -1470,6 +1484,20 @@
             <media:content url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" type="image/jpeg" medium="image" width="300" height="200" />
             <media:description type="plain">Four colored blocks labeled Perceivable, Operable, Understandable, Robust</media:description>
             <media:thumbnail url="https://www.accessi.tech/assets/images/pour-principles-accessibility.png" />
+            <media:credit>AccessiTech LLC</media:credit>
+          </item>
+        
+          <item>
+            <title>When 'The AI Did It' Is No Longer a Defense</title>
+            <link>https://accessi.tech/blog/When-The-AI-Did-It-Is-No-Longer-a-Defense</link>
+            <pubDate>2026-05-05</pubDate>
+            <description>When AI systems cause harm, someone made the architecture decisions that created the accountability gap. Legal teams need to understand three specific failure modes before their next AI procurement.</description>
+            <excerpt>When AI systems cause harm, someone made the architecture decisions that created the accountability gap. Legal teams need to understand three specific failure modes before their next AI procurement.</excerpt>
+            
+            <enclosure url="https://www.accessi.tech/assets/images/be-3-og.png" type="image/jpeg" length="1234" />
+            <media:content url="https://www.accessi.tech/assets/images/be-3-og.png" type="image/jpeg" medium="image" width="300" height="200" />
+            <media:description type="plain">When 'The AI Did It' Is No Longer a Defense</media:description>
+            <media:thumbnail url="https://www.accessi.tech/assets/images/be-3-og.png" />
             <media:credit>AccessiTech LLC</media:credit>
           </item>
         
