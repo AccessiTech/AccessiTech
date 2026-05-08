@@ -263,12 +263,14 @@ export function generateSitemap({
     const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/').replace('../', '');
     const fileMetaData = getMetaDataDep(fileContent);
     const link = `/${relativePath}`.replace('.md', '');
+    // Normalize image path - strip leading 'assets/images/' if present to avoid duplication
+    const normalizedImage = (fileMetaData.image || 'default.png').replace(/^assets\/images\//, '');
     pages.push({
       ...fileMetaData,
       url: link,
       changefreq: 'monthly',
       priority: 0.8,
-      image: PUBLIC_IMAGE_DIR + (fileMetaData.image || 'default.png'),
+      image: PUBLIC_IMAGE_DIR + normalizedImage,
       imageAlt: fileMetaData.imageAlt || 'AccessiTech Logo',
     });
   });
