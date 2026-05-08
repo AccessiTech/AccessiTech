@@ -74,7 +74,7 @@ This is not a technology question. It is an [accountability architecture questio
 
 These three failure modes — **Governance as Throughput, Stale Substrate, and Vendor Liability Transfer** — repeatedly emerge in AI systems where accountability architecture is weak or missing. Each pattern has recognizable warning signs, creates specific legal exposures, and traces back to a common root: the systems intended to catch AI failures were either never built, poorly maintained, or architected to shift accountability away from the operators responsible for deployment.
 
-#### ⚠️ **Failure Mode 1 — Governance as Throughput**
+#### **Failure Mode 1 — Governance as Throughput**
 
 In 2024, the Israeli military's [Lavender targeting system](https://www.972mag.com/lavender-ai-targeting-gaza/) generated approximately **37,000 AI-identified targets**. Human review of each target was allocated roughly **twenty seconds**.
 
@@ -92,11 +92,11 @@ The human in the loop was not there to exercise judgment — they were there to 
 
 **This failure mode is not limited to military applications. It shows up in:**
 
-- 💰 **Financial fraud detection** — compliance teams clear alerts by default because volume makes genuine review impossible
-- 📱 **Content moderation** — reviewers have seconds per item
-- 👥 **HR platforms** — hiring decisions are "reviewed" by managers with no visibility into the criteria the AI used
+- **Financial fraud detection** — compliance teams clear alerts by default because volume makes genuine review impossible
+- **Content moderation** — reviewers have seconds per item
+- **HR platforms** — hiring decisions are "reviewed" by managers with no visibility into the criteria the AI used
 
-> **The legal question**: Does the AI's operating speed and volume permit genuine human review?
+**The legal question:** Does the AI's operating speed and volume permit genuine human review?
 
 If a human reviewer would need more time than the system allows to make an independent judgment, **oversight has been designed out** — regardless of what the contract says about human-in-the-loop requirements.
 
@@ -108,7 +108,7 @@ If a human reviewer would need more time than the system allows to make an indep
 
 If the numbers don't leave room for genuine judgment, **the governance is a rubber stamp.**
 
-#### ⚠️ **Failure Mode 2 — Stale Substrate**
+#### **Failure Mode 2 — Stale Substrate**
 
 An AI system's behavior is only as current as the rules and data it runs on. When those rules or that data fall out of sync with reality, **the system continues operating with confidence** — and the harm it causes is invisible until something goes wrong.
 
@@ -126,7 +126,7 @@ Organizations running AI governance on Moltbook's infrastructure had their opera
 
 [Audrey Tang explains why governance substrates must be controlled by their users, not third parties](https://www.youtube.com/playlist?list=PLUe4RjfOLVwUv5d-wS60mT9m3ntM2Sr8q) — essential framing for understanding why acquisition risk is a sovereignty issue.
 
-> **The legal question**: When were the rules this AI follows last reviewed?
+**The legal question:** When were the rules this AI follows last reviewed?
 
 **Your procurement checklist must include:**
 
@@ -139,7 +139,7 @@ And sometimes the stakes aren't just contractual — they're existential. When A
 
 **This is a due diligence question, not a technical one.** It belongs in procurement review alongside questions about data retention, security certifications, and liability caps.
 
-#### ⚠️ **Failure Mode 3 — Vendor Liability Transfer**
+#### **Failure Mode 3 — Vendor Liability Transfer**
 
 In April 2026, [a Cursor AI agent autonomously deleted a startup's production database and all its backups in seconds](https://www.businessinsider.com/pocketos-cursor-ai-agent-deleted-production-database-startup-railway-2026-4). Three parties were in the liability chain: Cursor, whose AI agent performed the action; Railway, the infrastructure provider hosting the database; and the startup, which held the credentials and owned the data. Cursor's own documented operating rules prohibited the agent from guessing when it encountered ambiguity — but the agent guessed anyway and executed an irreversible deletion before any human could intervene. When the startup's insurer reviewed the incident, there was no audit trail that could distinguish an AI agent error from a human operator error, and no contract in the vendor chain specified who was accountable when the tool exceeded its own documented scope.
 
@@ -155,7 +155,7 @@ Post-acquisition risk makes this acute. When a vendor is acquired, the acquiring
 
 The organizations most exposed are those running AI systems where governance logic is embedded in [the vendor's proprietary harness](/blog/Memory-Lock-In-AI-Governance): the layer of software that controls how the AI receives instructions, what it's allowed to do, and how it responds to ambiguous situations. If that layer is opaque and vendor-controlled, your legal team cannot independently verify what the AI is actually doing.
 
-> **The legal question**: Who actually owns the rules this AI follows? Can your organization inspect those rules, version them, and verify that they haven't changed without your knowledge?
+**The legal question:** Who actually owns the rules this AI follows? Can your organization inspect those rules, version them, and verify that they haven't changed without your knowledge?
 
 If the vendor's infrastructure is a black box, accountability for governance decisions has been transferred to a party who is not accountable to your organization's stakeholders, your regulators, or the people your AI affects. When the liability chain spans multiple vendors — each with separate contracts, separate operating rules, and separate liability caps — the question of which contract governs an irreversible AI action may have no answer at all.
 
