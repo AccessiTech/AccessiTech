@@ -8,7 +8,7 @@ series: AI Governance Architecture
 part: 2
 previous: /blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox, AI Governance Is an Architecture Problem
 next: /blog/When-The-AI-Did-It-Is-No-Longer-a-Defense, When 'The AI Did It' Is No Longer a Defense: A Legal Framework for AI Accountability
-og_image: /assets/images/be-2-og.png
+og_image: assets/images/be-2-og.png
 og_image_alt: Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
 visual_notes: |
   Hero (1200×630 px): Proprietary lock or chain visual metaphor wrapping around a memory storage symbol. Bold geometric style, monochrome or two-tone, conveys vendor lock-in / capture / acquisition risk. Problem deepening in arc, no product reveal. Tool: Figma or Excalidraw. WCAG-AA compliance (≥14px text, 4.5:1 contrast min).
