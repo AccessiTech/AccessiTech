@@ -62,7 +62,9 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
       excerpt,
     } = fileMetaData;
     if (status !== 'published') return;
-    const imageURI = `https://www.accessi.tech/assets/images/${image || 'default.png'}`;
+    // Normalize image path - strip leading 'assets/images/' if present to avoid duplication
+    const normalizedImage = (image || 'default.png').replace(/^assets\/images\//, '');
+    const imageURI = `https://www.accessi.tech/assets/images/${normalizedImage}`;
     const altText = imageAlt || 'Yellow text on gradient background saying, AccessiTech';
 
     return `
@@ -72,7 +74,14 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
             <pubDate>${date}</pubDate>
             <description>${description}</description>
             <excerpt>${excerpt || description}</excerpt>
-            ${categories ? categories.split(',').map(category => `<category>${category.trim()}</category>`).join('') : ''}
+            ${
+              categories
+                ? categories
+                    .split(',')
+                    .map(category => `<category>${category.trim()}</category>`)
+                    .join('')
+                : ''
+            }
             <enclosure url="${imageURI}" type="image/jpeg" length="1234" />
             <media:content url="${imageURI}" type="image/jpeg" medium="image" width="300" height="200" />
             <media:description type="plain">${altText}</media:description>
