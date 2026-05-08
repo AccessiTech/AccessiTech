@@ -58,7 +58,7 @@ The system operated and issued new demands for **three years** before it was sus
 - The government's lawyers pointed to the vendor's design choices
 - The people who received the false debts had no one to point to
 
-The pattern across both cases is the same: **accountability disappears into the architecture**.
+The pattern across both cases is the same: **accountability disappears into the architecture**. 
 
 > When an AI system's governance is distributed across multiple vendors or diffused by scale, the question of who is accountable becomes unanswerable until something goes wrong.
 
@@ -70,11 +70,9 @@ This is not a technology question. It is an [accountability architecture questio
 
 ---
 
-### 🔍 **Three Failure Modes Legal Teams Need to Recognize**
+## 🔍 **Three Failure Modes Legal Teams Need to Recognize**
 
-These three failure modes — **Governance as Throughput, Stale Substrate, and Vendor Liability Transfer** — repeatedly emerge in AI systems where accountability architecture is weak or missing. Each pattern has recognizable warning signs, creates specific legal exposures, and traces back to a common root: the systems intended to catch AI failures were either never built, poorly maintained, or architected to shift accountability away from the operators responsible for deployment.
-
-#### ⚠️ **Failure Mode 1 — Governance as Throughput**
+### ⚠️ **Failure Mode 1 — Governance as Throughput**
 
 In 2024, the Israeli military's [Lavender targeting system](https://www.972mag.com/lavender-ai-targeting-gaza/) generated approximately **37,000 AI-identified targets**. Human review of each target was allocated roughly **twenty seconds**.
 
@@ -93,12 +91,12 @@ The human in the loop was not there to exercise judgment — they were there to 
 **This failure mode is not limited to military applications. It shows up in:**
 
 - 💰 **Financial fraud detection** — compliance teams clear alerts by default because volume makes genuine review impossible
-- 📱 **Content moderation** — reviewers have seconds per item
+- 📱 **Content moderation** — reviewers have seconds per item  
 - 👥 **HR platforms** — hiring decisions are "reviewed" by managers with no visibility into the criteria the AI used
 
 > **The legal question**: Does the AI's operating speed and volume permit genuine human review?
-
-If a human reviewer would need more time than the system allows to make an independent judgment, **oversight has been designed out** — regardless of what the contract says about human-in-the-loop requirements.
+>
+> If a human reviewer would need more time than the system allows to make an independent judgment, **oversight has been designed out** — regardless of what the contract says about human-in-the-loop requirements.
 
 **When your organization is procuring an AI system:**
 
@@ -108,7 +106,7 @@ If a human reviewer would need more time than the system allows to make an indep
 
 If the numbers don't leave room for genuine judgment, **the governance is a rubber stamp.**
 
-#### ⚠️ **Failure Mode 2 — Stale Substrate**
+### ⚠️ **Failure Mode 2 — Stale Substrate**
 
 An AI system's behavior is only as current as the rules and data it runs on. When those rules or that data fall out of sync with reality, **the system continues operating with confidence** — and the harm it causes is invisible until something goes wrong.
 
@@ -139,7 +137,7 @@ And sometimes the stakes aren't just contractual — they're existential. When A
 
 **This is a due diligence question, not a technical one.** It belongs in procurement review alongside questions about data retention, security certifications, and liability caps.
 
-#### ⚠️ **Failure Mode 3 — Vendor Liability Transfer**
+### ⚠️ **Failure Mode 3 — Vendor Liability Transfer**
 
 In April 2026, [a Cursor AI agent autonomously deleted a startup's production database and all its backups in seconds](https://www.businessinsider.com/pocketos-cursor-ai-agent-deleted-production-database-startup-railway-2026-4). Three parties were in the liability chain: Cursor, whose AI agent performed the action; Railway, the infrastructure provider hosting the database; and the startup, which held the credentials and owned the data. Cursor's own documented operating rules prohibited the agent from guessing when it encountered ambiguity — but the agent guessed anyway and executed an irreversible deletion before any human could intervene. When the startup's insurer reviewed the incident, there was no audit trail that could distinguish an AI agent error from a human operator error, and no contract in the vendor chain specified who was accountable when the tool exceeded its own documented scope.
 
@@ -156,16 +154,16 @@ Post-acquisition risk makes this acute. When a vendor is acquired, the acquiring
 The organizations most exposed are those running AI systems where governance logic is embedded in [the vendor's proprietary harness](/blog/Memory-Lock-In-AI-Governance): the layer of software that controls how the AI receives instructions, what it's allowed to do, and how it responds to ambiguous situations. If that layer is opaque and vendor-controlled, your legal team cannot independently verify what the AI is actually doing.
 
 > **The legal question**: Who actually owns the rules this AI follows? Can your organization inspect those rules, version them, and verify that they haven't changed without your knowledge?
-
-If the vendor's infrastructure is a black box, accountability for governance decisions has been transferred to a party who is not accountable to your organization's stakeholders, your regulators, or the people your AI affects. When the liability chain spans multiple vendors — each with separate contracts, separate operating rules, and separate liability caps — the question of which contract governs an irreversible AI action may have no answer at all.
+>
+> If the vendor's infrastructure is a black box, accountability for governance decisions has been transferred to a party who is not accountable to your organization's stakeholders, your regulators, or the people your AI affects. When the liability chain spans multiple vendors — each with separate contracts, separate operating rules, and separate liability caps — the question of which contract governs an irreversible AI action may have no answer at all.
 
 ---
 
 ## 🎯 **What Accountability Architecture Actually Requires**
 
-Intent and behavior are only the same thing when **the infrastructure connecting them is sound.**
-
 > **A policy document is not accountability architecture.** A compliance checklist is not accountability architecture.
+>
+> Intent and behavior are only the same thing when **the infrastructure connecting them is sound.**
 
 **Accountability architecture has three practical requirements:**
 
@@ -214,7 +212,6 @@ Your organization may not be deploying facial recognition. But the structural qu
 > **When scrutiny arrives, will you have an audit trail?**
 >
 > Not a policy document. **An audit trail** — specific, timestamped, showing:
->
 > - What rules your AI was following
 > - When those rules were last reviewed
 > - Who was responsible for reviewing them

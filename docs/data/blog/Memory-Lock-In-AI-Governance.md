@@ -7,7 +7,7 @@ status: published
 series: AI Governance Architecture
 part: 2
 previous: /blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox, AI Governance Is an Architecture Problem
-next: /blog/introducing-dogmamcp, Introducing DogmaMCP - The Open-Source Governance Substrate for AI Agents
+next: /blog/When-The-AI-Did-It-Is-No-Longer-a-Defense, When 'The AI Did It' Is No Longer a Defense: A Legal Framework for AI Accountability
 og_image: /assets/images/be-2-og.png
 og_image_alt: Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
 visual_notes: |

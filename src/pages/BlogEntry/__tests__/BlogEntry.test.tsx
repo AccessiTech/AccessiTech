@@ -16,8 +16,10 @@ vi.mock('../../../components/Header/Header', () => ({
 }));
 vi.mock('../../../components/SectionHeader/SectionHeader', () => ({
   __esModule: true,
-  default: ({ title, use }: { title: string; use: string }) => (
-    <div data-testid={`section-header-${use}`}>{title}</div>
+  default: ({ title, use, id }: { title: string; use: string; id: string }) => (
+    <div data-testid={`section-header-${use}`} data-test-id-value={id}>
+      {title}
+    </div>
   ),
 }));
 vi.mock('../../../components/CustomTable/CustomTable', () => ({
@@ -145,6 +147,39 @@ describe('BlogEntry', () => {
     renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
     expect(screen.getByTestId('section-header-h4')).toBeInTheDocument();
     expect(screen.getByTestId('section-header-h4')).toHaveTextContent('Level Four Heading');
+  });
+
+  it('strips emoji from heading IDs while keeping emoji in title text', () => {
+    entry.content = '## 🔍 Three Failure Modes\n';
+    renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    const header = screen.getByTestId('section-header-h2');
+    expect(header).toHaveTextContent('🔍 Three Failure Modes');
+    expect(header).toHaveAttribute('data-test-id-value', 'three-failure-modes');
+  });
+
+  it('strips multiple emoji from heading IDs', () => {
+    entry.content = '### 🎯 🚀 Multi Emoji Heading';
+    renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    const header = screen.getByTestId('section-header-h3');
+    expect(header).toHaveTextContent('🎯 🚀 Multi Emoji Heading');
+    expect(header).toHaveAttribute('data-test-id-value', 'multi-emoji-heading');
+  });
+
+  it('handles emoji mixed with text in heading IDs', () => {
+    entry.content = '#### 🌟 Welcome to Success 🌟';
+    renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    const header = screen.getByTestId('section-header-h4');
+    expect(header).toHaveTextContent('🌟 Welcome to Success 🌟');
+    expect(header).toHaveAttribute('data-test-id-value', 'welcome-to-success');
+  });
+
+  it('creates valid anchor link IDs when emoji is present', () => {
+    entry.content = '## 📊 Data Analysis Overview';
+    renderWithProviders(<BlogEntry />, { route: '/blog/test-blog' });
+    const header = screen.getByTestId('section-header-h2');
+    const id = header.getAttribute('data-test-id-value');
+    expect(id).toMatch(/^[a-z0-9-]+$/);
+    expect(id).toBe('data-analysis-overview');
   });
 
   it('renders Home breadcrumb item', () => {
