@@ -8,9 +8,9 @@ series: AI Governance Architecture
 part: 3
 previous: /blog/Memory-Lock-In-AI-Governance, Memory Lock-In: How Proprietary Harnesses Are Capturing Your AI Governance
 next: /blog/When-AI-Kills-Data-Sovereignty-High-Stakes, When AI Kills: Data Sovereignty in High-Stakes Systems
-og_image: /assets/images/be-3-og.png
+og_image: assets/images/be-3-og.png
 og_image_alt: When 'The AI Did It' Is No Longer a Defense
-image: /assets/images/be-3-og.png
+image: assets/images/be-3-og.png
 imageAlt: When 'The AI Did It' Is No Longer a Defense
 visual_notes: |
   Hero (1200×630 px): Legal/accountability framing — scales, document, architecture layers. Minimal, high-contrast. WCAG-AA compliant (≥14px text, 4.5:1 contrast).

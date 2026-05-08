@@ -19,6 +19,7 @@ import { CustomMarkdownLink } from '../../components/CustomLink/CustomLink';
 import './BlogEntry.css';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { getChildText } from '../../utils/getChildText';
+import { createSlug } from '../../utils/createSlug';
 
 export interface FetchBlogEntryProps {
   id: string;
@@ -121,11 +122,7 @@ export const BlogEntry = () => {
                           return (
                             <SectionHeader
                               title={titleText}
-                              id={titleText
-                                .replace(/[\p{Emoji_Presentation}]+/gu, '')
-                                .trim()
-                                .toLowerCase()
-                                .replace(/\s+/g, '-')}
+                              id={createSlug(titleText)}
                               use={'h2'}
                             />
                           );
@@ -136,11 +133,7 @@ export const BlogEntry = () => {
                           return (
                             <SectionHeader
                               title={titleText}
-                              id={titleText
-                                .replace(/[\p{Emoji_Presentation}]+/gu, '')
-                                .trim()
-                                .toLowerCase()
-                                .replace(/\s+/g, '-')}
+                              id={createSlug(titleText)}
                               use={'h3'}
                             />
                           );
@@ -151,11 +144,7 @@ export const BlogEntry = () => {
                           return (
                             <SectionHeader
                               title={titleText}
-                              id={titleText
-                                .replace(/[\p{Emoji_Presentation}]+/gu, '')
-                                .trim()
-                                .toLowerCase()
-                                .replace(/\s+/g, '-')}
+                              id={createSlug(titleText)}
                               use={'h4'}
                             />
                           );
