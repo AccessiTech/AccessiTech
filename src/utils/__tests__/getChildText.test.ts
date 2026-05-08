@@ -40,7 +40,26 @@ describe('getChildText', () => {
     expect(getChildText({ children: [{ someOtherProp: 'x' }] })).toBe('');
   });
 
-  it('only processes the first child', () => {
-    expect(getChildText({ children: ['first', 'second'] })).toBe('first');
+  it('concatenates text from all children', () => {
+    expect(getChildText({ children: ['first', 'second'] })).toBe('firstsecond');
+  });
+
+  it('returns full text from heading with emoji text node followed by strong node', () => {
+    expect(
+      getChildText({
+        children: [
+          { value: '⚠️ ' },
+          { children: [{ value: 'Three Failure Modes Legal Teams Need to Recognize' }] },
+        ],
+      })
+    ).toBe('⚠️ Three Failure Modes Legal Teams Need to Recognize');
+  });
+
+  it('returns full text from heading with emoji text followed by nested strong', () => {
+    expect(
+      getChildText({
+        children: [{ value: '🔍 ' }, { children: [{ children: [{ value: 'Nested Bold Text' }] }] }],
+      })
+    ).toBe('🔍 Nested Bold Text');
   });
 });

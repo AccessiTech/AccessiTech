@@ -121,7 +121,11 @@ export const BlogEntry = () => {
                           return (
                             <SectionHeader
                               title={titleText}
-                              id={titleText.toLowerCase().replace(/\s+/g, '-')}
+                              id={titleText
+                                .replace(/[\p{Emoji_Presentation}]+/gu, '')
+                                .trim()
+                                .toLowerCase()
+                                .replace(/\s+/g, '-')}
                               use={'h2'}
                             />
                           );
@@ -132,7 +136,11 @@ export const BlogEntry = () => {
                           return (
                             <SectionHeader
                               title={titleText}
-                              id={titleText.toLowerCase().replace(/\s+/g, '-')}
+                              id={titleText
+                                .replace(/[\p{Emoji_Presentation}]+/gu, '')
+                                .trim()
+                                .toLowerCase()
+                                .replace(/\s+/g, '-')}
                               use={'h3'}
                             />
                           );
@@ -143,7 +151,11 @@ export const BlogEntry = () => {
                           return (
                             <SectionHeader
                               title={titleText}
-                              id={titleText.toLowerCase().replace(/\s+/g, '-')}
+                              id={titleText
+                                .replace(/[\p{Emoji_Presentation}]+/gu, '')
+                                .trim()
+                                .toLowerCase()
+                                .replace(/\s+/g, '-')}
                               use={'h4'}
                             />
                           );
