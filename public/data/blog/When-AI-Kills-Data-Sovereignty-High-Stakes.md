@@ -3,7 +3,7 @@ title: When AI Kills: Data Sovereignty in High-Stakes Systems
 description: The Maven school strike killed 180 children because nobody controlled the rules the AI followed. Data sovereignty isn't about compliance — it's about who owns your AI's decision-making.
 keywords: AI governance, data sovereignty, AI accountability, digital sovereignty, AI ethics, AI targeting systems, governance substrate
 date: 2026-05-06
-status: draft
+status: published
 series: AI Governance
 og_image: be-sovereignty-og.png
 og_image_alt: When AI Kills: Data Sovereignty in High-Stakes Systems
