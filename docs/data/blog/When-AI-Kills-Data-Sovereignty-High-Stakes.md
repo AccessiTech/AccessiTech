@@ -5,9 +5,10 @@ keywords: AI governance, data sovereignty, AI accountability, digital sovereignt
 date: 2026-05-06
 status: published
 series: AI Governance
-og_image: be-sovereignty-og.png
+previous: /blog/When-The-AI-Did-It-Is-No-Longer-a-Defense, When 'The AI Did It' Is No Longer a Defense
+og_image: assets/images/be-3-og.png
 og_image_alt: When AI Kills: Data Sovereignty in High-Stakes Systems
-image: be-sovereignty-og.png
+image: assets/images/be-3-og.png
 imageAlt: When AI Kills: Data Sovereignty in High-Stakes Systems
 visual_notes: |
   Hero (1200×630 px): Stark, heavy visual — silhouette or abstract representation of human cost. Dark, high-contrast. WCAG-AA compliant (≥14px text, 4.5:1 contrast).
