@@ -1,20 +1,22 @@
-<!--
-title: What DogmaMCP Does (And Why It Matters)
-description: A governance-first MCP server that helps AI agents follow your project's values without you having to repeat yourself
-keywords: ai-governance, mcp, model-context-protocol, agent-frameworks
-date: 2026-05-14
+---
+title: 'What DogmaMCP Does (And Why It Took Four Posts to Get Here)'
+date: '2026-05-14'
+author: conor
+tags:
+  - ai-governance
+  - methodology
+  - oss
+  - endogenai
+  - agent-workflows
+  - dogma
+  - mcp
 status: draft
-og_image: ./assets/images/dogmamcp-og.png
-og_image_alt: DogmaMCP — experimental governance framework for endogenous AI workflows
-image: ./assets/images/dogmamcp-og.png
-imageAlt: DogmaMCP — experimental governance framework for endogenous AI workflows
-visual_notes: |
-  Minimal, technical aesthetic — monospace typography, system colors
-  OG image: 1200×630 px, WCAG AA contrast, grid-based layout
-  Heading hierarchy: H1 (title), H2 (5 sections), H3 (subsections)
--->
+image: assets/images/dogmamcp-og.png
+imageAlt: 'DogmaMCP — experimental governance framework for endogenous AI workflows'
+description: 'Four posts about what goes wrong when AI systems lack governance. This is what we built in response.'
+---
 
-# What DogmaMCP Does (And Why It Matters)
+# What DogmaMCP Does (And Why It Took Four Posts to Get Here)
 
 Four weeks ago, we started publishing a series about what happens when AI systems operate without governance architecture.
 
@@ -26,7 +28,7 @@ That is the arc. This is what we built in response.
 
 ---
 
-## The Problem Space
+## The Pattern Underneath All Four
 
 Let me be precise about what the arc actually demonstrated.
 
@@ -44,7 +46,7 @@ That's the pattern. It shows up in defense targeting. It shows up in healthcare 
 
 ---
 
-## What This Means
+## What DogmaMCP Is
 
 DogmaMCP is our attempt at an answer to that architecture problem.
 
@@ -84,7 +86,7 @@ The MCP server exposes tooling that connects this substrate to the live developm
 
 ---
 
-## What Success Requires
+## What "Experimental" Means Here
 
 DogmaMCP is not production-ready. That is not a hedge — it is a design stance.
 
@@ -102,7 +104,7 @@ We're publishing it as an experiment because the governance problem we're trying
 
 ---
 
-## What Comes Next
+## Who This Is For
 
 The people we built this for are developers and technical teams who've already hit the governance gap in their own agentic workflows.
 
@@ -114,9 +116,13 @@ If it does resonate: we've been building in the open. The substrate is there to 
 
 We're not looking for enterprise procurement conversations. We're looking for the people who've run into this problem for real, have thought hard about what good architecture looks like, and want to think through it with us.
 
-**The repository**: [https://github.com/EndogenAI/dogma](https://github.com/EndogenAI/dogma)
+---
 
-**If you want the context that got here**, the four-post arc:
+## Start Here
+
+The repository: [https://github.com/EndogenAI/dogma](https://github.com/EndogenAI/dogma)
+
+If you want the context that got here, the four-post arc:
 
 - [AI governance is an architecture problem, not a compliance checkbox](/blog/AI-Governance-Is-an-Architecture-Problem-Not-a-Compliance-Checkbox)
 - [Memory lock-in is the real risk in LLM-based systems](/blog/Memory-Lock-In-AI-Governance)
