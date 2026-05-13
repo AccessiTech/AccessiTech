@@ -18,11 +18,12 @@ visual_notes: |
 
 # Introducing EndogenAI/DogmaMCP
 
-[Opening paragraph — hook the reader, establish stakes, signal what's ahead]
+Every organization says they have values. Far fewer can prove their AI systems actually follow them. The gap between written principles and deployed behavior isn't just embarrassing—it's structural. This post introduces a governance framework designed to close that gap: where your values become infrastructure, and accountability isn't a promise but an audit trail.
 
 ---
 
 <!-- role: hook -->
+
 ## Making AI Accountable to Your Values
 
 AI systems are failing accountability tests right now, in production. The UK Competition and Markets Authority [documented cases](https://share.google/6b9E6lj45d4m2dTQD) where AI agents manipulated users and organizations lost meaningful oversight of automated decisions. These aren't hypothetical risks—they're patterns emerging wherever AI touches consequential decisions.
@@ -37,6 +38,7 @@ Closing that gap requires more than documentation. It requires infrastructure th
 ---
 
 <!-- role: problem -->
+
 ## What Governance Actually Requires
 
 Most organizations approach AI governance from one of two directions. Some write excellent policy documents—values statements, principles, ethical frameworks—and then struggle to operationalize them. Others build guardrails and safety checks after the fact, trying to constrain systems that were never designed with those values in mind. Both approaches miss the same structural requirement: governance needs two surfaces working together.
@@ -50,6 +52,7 @@ Standards bodies recognize this. [NIST's AI Risk Management Framework](https://d
 ---
 
 <!-- role: solution -->
+
 ## Introducing EndogenAI and DogmaMCP
 
 EndogenAI addresses this by treating governance as a two-layer architecture. The first layer is the [dogma repository](https://github.com/EndogenAI/dogma)—a template where your organization encodes its values in two key files. [MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) captures foundational axioms (what you believe), while [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) translates those axioms into operational constraints (what your AI systems must do). These aren't natural-language aspirations; they're structured instructions that agents read and follow.
@@ -61,6 +64,7 @@ What makes this architecture work is how the layers connect. Principles flow int
 ---
 
 <!-- role: mechanism -->
+
 ## How Values Become Infrastructure
 
 Think of governance as a construction project. You start with blueprints (your values), translate them into building codes (operational constraints), hire specialized crews (agent roles), give them standard procedures (workflow skills), and run inspections at key milestones (enforcement scripts). Each layer is a translation, but none of them are optional—and they have to stay synchronized.
@@ -74,6 +78,7 @@ The mental model is a CI/CD pipeline, but for governance. Every change flows thr
 ---
 
 <!-- role: evidence -->
+
 ## Why Sovereignty and Accountability Matter
 
 When enforcement lives in the cloud, it has the same failure modes as any other cloud dependency: network outages, service degradation, policy changes you didn't ask for. EndogenAI runs locally because local enforcement is structurally more reliable. Your governance gates execute on your machine, using your electricity, reading files you control. If your network connection drops, your enforcement layer keeps working. That's not just convenience—it's a different risk profile.
@@ -87,6 +92,7 @@ The Endogenous-First axiom captures this practically: your organization's values
 ---
 
 <!-- role: close -->
+
 ## Where We Go From Here
 
 The [dogma repository](https://github.com/EndogenAI/dogma) is open source today on GitHub. Organizations can fork it, customize [MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) and [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) to encode their own values, and start using the agent fleet and enforcement tooling immediately. [DogmaMCP](https://github.com/EndogenAI/dogma/blob/main/mcp_server/README.md)—the Model Context Protocol server that exposes governance tools to any MCP-compatible AI client—will follow in a staged public release.
