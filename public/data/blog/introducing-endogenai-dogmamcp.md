@@ -25,7 +25,7 @@ AI systems are failing accountability tests right now, in production. The UK Com
 > "People will need to be able to trust that AI agents will act in accordance with their interests and that they are not being steered or manipulated in ways that lead to worse personal outcomes."
 > — UK Competition and Markets Authority, 2026
 
-The financial exposure is material: UK regulators are considering enforcement powers for algorithmic accountability failures, and US class-action litigation is already targeting opaque AI decision-making in hiring, lending, and healthcare.
+The stakes are getting higher. Regulators in the UK and US are beginning to hold organizations accountable for what their AI systems actually do—not just what their policies say they should do. And decisions made by AI in hiring, lending, and healthcare are increasingly being challenged in court.
 
 But here's the harder question: when we talk about "AI governance," whose values are we actually enforcing? Generic frameworks sound universal until you need them to encode your organization's specific commitments—to accessibility, to transparency, to the communities you serve. That's when the gap becomes visible: the distance between what you believe and what your systems actually do.
 
@@ -39,7 +39,7 @@ Closing that gap requires more than documentation. It requires infrastructure th
 
 Most organizations approach AI governance from one of two directions. Some write excellent policy documents—values statements, principles, ethical frameworks—and then struggle to operationalize them. Others build guardrails and safety checks after the fact, trying to constrain systems that were never designed with those values in mind. Both approaches miss the same structural requirement: governance needs two surfaces working together.
 
-Existing frameworks like LangChain's governance modules or Anthropic's Constitutional AI focus on model-layer constraints—what a single LLM can say or do. EndogenAI operates at the orchestration layer—how agents coordinate, what they're allowed to fetch, and who reviews their output. Both layers matter; neither alone is sufficient.
+Most AI governance tools focus on what a single AI model is allowed to say or do—constraining it at the point of output. That's useful, but it misses the bigger picture. When multiple AI agents work together, what matters most is how they coordinate: what information they can access, who has authority to review their decisions, and how their combined behavior gets audited. EndogenAI operates at that coordination layer.
 
 The first surface is substrate: the foundational layer where your values are encoded as operational constraints. Not aspirational language in a PDF, but specific rules about how systems behave, what data they access, and what decisions require human oversight. The second surface is enforcement: the tooling that checks compliance automatically, at development time, before anything ships. Think pre-commit hooks, runtime validators, audit trails—mechanisms that don't require human vigilance every single time.
 
@@ -99,7 +99,7 @@ The Endogenous-First axiom captures this practically: your organization's values
 
 ## Where We Go From Here
 
-The [dogma repository](https://github.com/EndogenAI/dogma) is open source today on GitHub. Organizations can fork it, customize [MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) and [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) to encode their own values, and start using the agent fleet and enforcement tooling immediately. Initial setup (forking the repository and encoding your first axiom set) typically takes 4–8 hours for a DevOps engineer with compliance team input. Organizations pilot on a single AI workflow before scaling fleet-wide. [DogmaMCP](https://github.com/EndogenAI/dogma/blob/main/mcp_server/README.md)—the Model Context Protocol server that exposes governance tools to any MCP-compatible AI client—will follow in a staged public release.
+The [dogma repository](https://github.com/EndogenAI/dogma) is open source today on GitHub. Organizations can fork it, customize [MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) and [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) to encode their own values, and start using the agent fleet and enforcement tooling immediately. Getting started is straightforward: copy the template, write your first values document, and connect it to your team's workflow. Most organizations start with a single AI process before expanding across their systems. [DogmaMCP](https://github.com/EndogenAI/dogma/blob/main/mcp_server/README.md)—the Model Context Protocol server that exposes governance tools to any MCP-compatible AI client—will follow in a staged public release.
 
 We're following a Red Hat-style model: the methodology and tooling are free and open, but enterprises needing implementation support, custom agent development, or integration with existing governance frameworks can engage AccessiTech for paid services. The goal is to make values-aligned AI infrastructure accessible to organizations of any size while sustaining the engineering work that keeps it robust.
 
