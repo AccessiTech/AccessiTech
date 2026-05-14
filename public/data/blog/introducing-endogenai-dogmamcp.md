@@ -14,7 +14,7 @@ imageAlt: Introducing EndogenAI/DogmaMCP
 
 Every organization has values. The harder question is whether their systems actually reflect them. Stated principles and deployed AI behavior have a way of drifting apart — not through bad intentions, but because translating human values into running software is genuinely hard.
 
-🌍 This post introduces a framework designed to close that gap. **EndogenAI** is the open source community of practitioners advancing values-aligned AI governance. **dogma** is the framework that encodes that methodology into rules your AI reads and follows. **DogmaMCP** is the experimental software tooling that makes those rules operational at runtime — where accountability isn't a promise, but an audit trail.
+🌍 This post introduces a framework designed to close that gap. **EndogenAI** is the open source community of practitioners advancing values-aligned AI governance. **dogma** is the framework that encodes that methodology into rules your AI reads and follows. **DogmaMCP** is the experimental software tooling that puts those rules into practice as your AI works — where accountability isn't a promise, but an audit trail.
 
 ---
 
@@ -60,13 +60,13 @@ This requires integrating both surfaces: substrate that encodes your values, and
 
 ## Introducing EndogenAI and DogmaMCP
 
-Three layers work together here. **EndogenAI** is the open source community cultivating the methodology — the practitioners building and refining the patterns. **dogma** is the open source framework that encodes that methodology: the documentation, governance patterns, and policy rules your AI reads before it acts. **DogmaMCP** is the experimental software tooling that makes the framework operational at runtime — translating your documented rules into real, running constraints.
+Three layers work together here. **EndogenAI** is the open source community cultivating the methodology — the practitioners building and refining the patterns. **dogma** is the open source framework that encodes that methodology: the documentation, governance patterns, and policy rules your AI reads before it acts. **DogmaMCP** is the experimental software tooling that puts the framework to work as your AI takes action — translating your documented rules into real, running constraints.
 
 The [dogma repository](https://github.com/EndogenAI/dogma) is where your organization encodes its values in two key files. [MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) is your constitution — it captures the foundational principles you believe in and won't compromise on. [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) is your operations manual — it translates those principles into specific instructions your AI systems read and follow. These aren't aspirational documents gathering dust; **they're the rules the system actually enforces.**
 
 [DogmaMCP](https://github.com/EndogenAI/dogma/blob/main/mcp_server/README.md) is the local server that makes those rules stick. It automatically checks that every action your AI takes respects your documented constraints. It creates a clear record of what each agent did and why — so if something goes wrong, you can trace it. And it connects to the AI tools your team is likely already using — VS Code Copilot, Claude Desktop, Cursor — giving them access to your governance rules without extra setup.
 
-What makes this architecture work is how the layers connect. **Principles flow into tooling without requiring human re-interpretation every time.** When an agent needs to fetch a source, it checks your rules first. When it's about to make a change, your enforcement gates run automatically. The system doesn't rely on agents remembering your values — it makes compliance the path of least resistance.
+What makes this system work is how the layers connect. **Principles flow into tooling without requiring human re-interpretation every time.** When an agent is about to do something — look something up, make a change — it checks your rules first, automatically. The system doesn't rely on agents remembering your values — it makes compliance the path of least resistance.
 
 ---
 
