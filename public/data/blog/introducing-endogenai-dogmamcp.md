@@ -42,7 +42,7 @@ Closing that gap requires more than documentation (though documentation is THE s
 
 Most organizations approach AI governance from one of two directions. Some write excellent policy documents—values statements, principles, ethical frameworks—and then struggle to operationalize them. Others build guardrails and safety checks after the fact, trying to constrain systems that were never designed with those values in mind. Both approaches miss the same structural requirement: governance needs two surfaces working together.
 
-Most AI governance tools focus on what a single AI model is allowed to say or do—constraining it at the point of output. That's useful, but it misses the bigger picture. When multiple AI agents work together, what matters most is how they coordinate: what information they can access, who has authority to review their decisions, and how their combined behavior gets audited. EndogenAI operates at that coordination layer.
+All existing AI governance solutions focus on constraining single models at the point of output—either external dashboards (SaaS compliance tools) or local guardrails scattered across scripts and pre-commit hooks. That's useful, but it misses the bigger picture. When multiple AI agents work together, what matters most is how they coordinate: what information they can access, who has authority to review their decisions, and how their combined behavior gets audited. EndogenAI operates at that coordination layer.
 
 The first surface is substrate: **the foundational layer where your values are encoded as operational constraints.** Not aspirational language in a PDF, but specific rules about how systems behave, what data they access, and what decisions require human oversight. The second surface is enforcement: **the tooling that checks compliance automatically, at development time, before anything ships.** Think basic unit tests, continuous integration hooks, runtime validators, audit trails—mechanisms, etc. - that don't require human vigilance every single time.
 
@@ -66,6 +66,8 @@ The [dogma repository](https://github.com/EndogenAI/dogma) is where your organiz
 
 [DogmaMCP](https://github.com/EndogenAI/dogma/blob/main/mcp_server/README.md) is the local server that makes those rules stick. It automatically checks that every action your AI takes respects your documented constraints. It creates a clear record of what each agent did and why — so if something goes wrong, you can trace it. And it connects to the AI tools your team is likely already using — VS Code Copilot, Claude Desktop, Cursor — giving them access to your governance rules without extra setup.
 
+This synthesis integrates established patterns from three domains: Constitutional AI (Anthropic, 2023) covers LLM alignment via principle-driven constraints; policy-as-code practices (HashiCorp OPA, Kyverno) establish governance as verifiable code; and GitOps discipline (Weaveworks, FluxCD) operationalize versioned infrastructure enforcement. None of these individually solve the full governance challenge. **EndogenAI combines them into an integrated framework — the first comprehensive synthesis of philosophy-driven constraints, testable policies, and local enforcement.**
+
 What makes this system work is how the layers connect. **Principles flow into tooling without requiring human re-interpretation every time.** When an agent is about to do something — look something up, make a change — it checks your rules first, automatically. The system doesn't rely on agents remembering your values — it makes compliance the path of least resistance.
 
 ---
@@ -88,6 +90,28 @@ In EndogenAI, this becomes a five-layer encoding chain:
 4. **SKILL.md files** — reusable procedures that multiple agents can invoke (how to run a research sprint, how to validate a pull request, how to triage review comments)
 5. **scripts/** — deterministic enforcement (validators that block commits violating your rules, watchers that annotate files automatically, health checks that audit substrate integrity)
 
+**Example: MANIFESTO.md axiom**
+```yaml
+Endogenous-First:
+  definition: "Read your own knowledge first; compound over sessions."
+  enforcement: "Every agent checks internal cache before fetching external sources."
+```
+
+**Example: pre-commit hook validation output**
+```
+$ git commit -m "feat: add customer integration"
+[DogmaMCP validation]
+✅ AGENTS.md: Human oversight required (Tier 1 decision)
+✅ Governance rules applied: vendor-independence check
+✅ Audit trail recorded
+```
+
+**Example: Audit trail in git log**
+```
+git log --grep="governance" --oneline
+3f8a2c1 Agent audit: vendor-independence check passed
+```
+
 The mental model is a continuous integration/continuous deployment (CI/CD) pipeline, but for governance. **Every change flows through gates that check alignment with your stated values.** Every agent action generates audit trails you can inspect later. And because it all runs locally — on your development machine, in your repository — you maintain complete visibility and control. The system is as inspectable as the code it governs.
 
 We've documented [several more mental models](https://github.com/EndogenAI/dogma/blob/main/docs/guides/mental-models.md) in the dogma repo if you want to explore how these concepts connect.
@@ -100,11 +124,23 @@ We've documented [several more mental models](https://github.com/EndogenAI/dogma
 
 When enforcement lives in the cloud, it has the same failure modes as any other cloud dependency: network outages, service degradation, policy changes you didn't ask for. **EndogenAI runs locally because local enforcement is structurally more reliable and fundamentally more augmentive.** Your governance gates execute on your machine, using your electricity, reading files you control. If your network connection drops, your enforcement layer keeps working. But reliability is only part of it.
 
+**Local enforcement vs. cloud-hosted governance:**
+
+| Dimension | Local Enforcement | Cloud-Hosted |
+|-----------|------------------|---------------|
+| **Availability** | Your machine (you control uptime) | Vendor SLA (dependent on provider) |
+| **Visibility** | Full audit trail in your git repo | Logs may be vendor-controlled or restricted |
+| **Policy scope** | Your rules, your changes | Vendor-defined defaults + customization |
+| **Latency** | Milliseconds (local execution) | 100–500ms + network dependency |
+| **Lock-in risk** | Low (you control the code) | High (proprietary platform) |
+
+Both approaches have tradeoffs—local governance requires operational overhead that cloud services handle for you. **The choice reflects a values decision: do you prioritize convenience, or sovereignty?** DogmaMCP assumes you prioritize knowing what your governance rules are and having the ability to change them independently.
+
 🤝 When governance runs locally, it's visible. You can watch it work in real time, read the rules it's enforcing, question them, and improve them. That's what the Augmentive Partnership principle is about: governance that's transparent and local creates the conditions for humans to stay in the loop as genuine decision-makers — not rubber-stampers approving outputs they can't inspect. (Different AI tools offer varying levels of interactive visibility around this — your experience will depend on the tools you're using — but the substrate is yours to read either way.)
 
 Vendor lock-in in AI isn't just about pricing or contract terms. The [EU Agency for Cybersecurity identifies eight dimensions of lock-in risk](https://www.enisa.europa.eu/publications/cloud-computing-risk-assessment), including memory lock-in (systems that can't migrate context between providers) and policy lock-in (governance rules baked into proprietary platforms you don't control). **When your values are encoded in a vendor's system, you're trusting them to interpret and enforce those values forever — or until they change their terms of service.**
 
-**Accountability in AI governance isn't abstract.** It means affected people — the users of your software, the communities your decisions impact — have a mechanism to audit what happened and why. That requires audit trails, not just assurances. It requires systems where you can trace a decision from the governance rule that shaped it, through the agent role that executed it, to the specific commit that encoded it. [NIST's AI RMF](https://doi.org/10.6028/NIST.AI.100-1) mandates that organizations maintain this kind of operational oversight for third-party AI components, **not as documentation theater but as ongoing structural capacity.**
+**Accountability in AI governance isn't abstract.** It means your organization — your teams, your leadership, your audit function — has a mechanism to inspect what happened and why. That requires audit trails, not just assurances. It requires systems where you can trace a decision from the governance rule that shaped it, through the agent role that executed it, to the specific commit that encoded it. **Generated audit data is yours; you decide whether and how to share it externally — with regulators, customers, or affected communities.** Governance infrastructure doesn't force transparency; it enables it. [NIST's AI RMF](https://doi.org/10.6028/NIST.AI.100-1) mandates that organizations maintain this kind of operational oversight for third-party AI components, **not as documentation theater but as ongoing structural capacity.**
 
 The Endogenous-First axiom captures this practically: your organization's values, encoded in files you control, take precedence over external defaults or vendor-supplied templates. **You're not customizing someone else's governance framework — you're defining your own and using tooling to enforce it consistently.** That's the difference between compliance as a checklist and governance as infrastructure.
 
@@ -114,9 +150,13 @@ The Endogenous-First axiom captures this practically: your organization's values
 
 ## Where We Go From Here
 
-🌱 The [dogma repository](https://github.com/EndogenAI/dogma) is open source today on GitHub. Organizations can fork it, customize [MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) and [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) to encode their own values, and start using the agent fleet and enforcement tooling immediately. **Getting started is straightforward: copy the template, write your first values document, and connect it to your team's workflow.** Most organizations start with a single AI process before expanding across their systems. [DogmaMCP](https://github.com/EndogenAI/dogma/blob/main/mcp_server/README.md) — the Model Context Protocol server that exposes governance tools to any MCP-compatible AI client — will follow in a staged public release.
+🌱 The [dogma repository](https://github.com/EndogenAI/dogma) is open source today on GitHub. **For engineering teams building internal governance frameworks:** organizations can fork it, customize [MANIFESTO.md](https://github.com/EndogenAI/dogma/blob/main/MANIFESTO.md) and [AGENTS.md](https://github.com/EndogenAI/dogma/blob/main/AGENTS.md) to encode their own values, and start using the agent fleet and enforcement tooling immediately.
 
-We're following a Red Hat-style model: the methodology and tooling are free and open, but enterprises needing implementation support, custom agent development, or integration with existing governance frameworks can engage AccessiTech for paid services. **The goal is to make values-aligned AI infrastructure accessible to organizations of any size while sustaining the engineering work that keeps it robust.**
+**Realistic timeline:** Expect 2–3 days to define MANIFESTO.md core axioms with your team (this intentional friction prevents fragile governance rules). Then 1–2 weeks to scaffold initial agent roles and workflow skills. Most organizations pilot on a single AI process before expanding fleet-wide. This timeline exists because governance-as-code requires thoughtful design — rushing through it produces rules that break under scrutiny. [DogmaMCP](https://github.com/EndogenAI/dogma/blob/main/mcp_server/README.md) — the Model Context Protocol server that exposes governance tools to any MCP-compatible AI client — will follow in a staged public release.
+
+**On the product side:** EndogenAI is an open source framework (Apache 2.0 license, free to use and modify). There are no licensing fees, vendor lock-in, or proprietary components. Organizations own their governance rules and can fork/branch the framework at any time.
+
+**On business sustainability:** We're exploring a Red Hat-style model where the framework itself remains free, but enterprises needing implementation support, custom agent development, or compliance integration can engage AccessiTech for paid services. **This is a future initiative and separate from the core framework.** Our immediate focus is ensuring the governance infrastructure itself is robust, documented, and community-tested. **The goal is to make values-aligned AI infrastructure accessible to organizations of any size while sustaining the engineering work that keeps it robust.**
 
 If you're interested in contributing, the repository welcomes issues, pull requests, and discussions. We're particularly interested in hearing from organizations experimenting with agent governance patterns, compliance teams mapping regulatory requirements to operational constraints, and anyone working on local-first AI infrastructure. Follow-up posts in this series will dive deeper into specific governance patterns — agent fleet maturity models, substrate health checks, and how to migrate existing AI workflows into this framework. **The conversation is just beginning.**
 
