@@ -2,7 +2,7 @@
 title: Introducing EndogenAI/DogmaMCP
 description: Making AI Accountable to Your Values
 keywords: AI governance, values enforcement, accountability, local-first AI, DogmaMCP, EndogenAI
-date: 2026-05-14
+date: 2026-05-18
 status: draft
 og_image: ./assets/images/introducing-endogenai-dogmamcp-og.png
 og_image_alt: Introducing EndogenAI/DogmaMCP
@@ -91,13 +91,15 @@ In EndogenAI, this becomes a five-layer encoding chain:
 5. **scripts/** — deterministic enforcement (validators that block commits violating your rules, watchers that annotate files automatically, health checks that audit substrate integrity)
 
 **Example: MANIFESTO.md axiom**
+
 ```yaml
 Endogenous-First:
-  definition: "Read your own knowledge first; compound over sessions."
-  enforcement: "Every agent checks internal cache before fetching external sources."
+  definition: 'Read your own knowledge first; compound over sessions.'
+  enforcement: 'Every agent checks internal cache before fetching external sources.'
 ```
 
 **Example: pre-commit hook validation output**
+
 ```
 $ git commit -m "feat: add customer integration"
 [DogmaMCP validation]
@@ -107,6 +109,7 @@ $ git commit -m "feat: add customer integration"
 ```
 
 **Example: Audit trail in git log**
+
 ```
 git log --grep="governance" --oneline
 3f8a2c1 Agent audit: vendor-independence check passed
@@ -126,13 +129,13 @@ When enforcement lives in the cloud, it has the same failure modes as any other 
 
 **Local enforcement vs. cloud-hosted governance:**
 
-| Dimension | Local Enforcement | Cloud-Hosted |
-|-----------|------------------|---------------|
-| **Availability** | Your machine (you control uptime) | Vendor SLA (dependent on provider) |
-| **Visibility** | Full audit trail in your git repo | Logs may be vendor-controlled or restricted |
-| **Policy scope** | Your rules, your changes | Vendor-defined defaults + customization |
-| **Latency** | Milliseconds (local execution) | 100–500ms + network dependency |
-| **Lock-in risk** | Low (you control the code) | High (proprietary platform) |
+| Dimension        | Local Enforcement                 | Cloud-Hosted                                |
+| ---------------- | --------------------------------- | ------------------------------------------- |
+| **Availability** | Your machine (you control uptime) | Vendor SLA (dependent on provider)          |
+| **Visibility**   | Full audit trail in your git repo | Logs may be vendor-controlled or restricted |
+| **Policy scope** | Your rules, your changes          | Vendor-defined defaults + customization     |
+| **Latency**      | Milliseconds (local execution)    | 100–500ms + network dependency              |
+| **Lock-in risk** | Low (you control the code)        | High (proprietary platform)                 |
 
 Both approaches have tradeoffs—local governance requires operational overhead that cloud services handle for you. **The choice reflects a values decision: do you prioritize convenience, or sovereignty?** DogmaMCP assumes you prioritize knowing what your governance rules are and having the ability to change them independently.
 
