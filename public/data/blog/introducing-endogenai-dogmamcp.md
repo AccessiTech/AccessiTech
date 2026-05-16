@@ -3,7 +3,7 @@ title: Introducing EndogenAI/DogmaMCP
 description: Making AI Accountable to Your Values
 keywords: AI governance, values enforcement, accountability, local-first AI, DogmaMCP, EndogenAI
 date: 2026-05-18
-status: draft
+status: published
 og_image: ./assets/images/introducing-endogenai-dogmamcp-og.png
 og_image_alt: Introducing EndogenAI/DogmaMCP
 image: ./assets/images/introducing-endogenai-dogmamcp-og.png
