@@ -155,7 +155,7 @@ export const WHAT_OSS_BODY = `This is the same model Red Hat used to open-source
 export const WHAT_ENDOGENAI_INTRO = WHAT_AXIOMS_BODY;
 export const WHAT_DESCRIPTION = WHAT_ENDOGENAI_INTRO;
 
-export const BRAND_RELATIONSHIP = `AccessiTech built EndogenAI as the governance layer for organizations closing the accountability gap with AI systems. The methodology emerges from three years of accessibility-first consulting work: seeing how systems fail when they're built without genuine consideration for the people who depend on them, and discovering that the same structural blindness appears in AI governance. Disability justice principles — centering the expertise of disabled people in redesign — are directly applicable to AI accountability. The people most excluded from a system are the people best positioned to fix it. That insight is the foundation of EndogenAI. We use it in every consulting engagement, and we're open-sourcing it so organizations can apply the same methodology independently.`;
+export const BRAND_RELATIONSHIP = `AccessiTech built EndogenAI as the governance layer for organizations closing the accountability gap with AI systems. The methodology emerges from three years of accessibility-first consulting work: seeing how systems fail when they're built without genuine consideration for the people who depend on them, and discovering that the same structural blindness appears in AI governance. Disability justice principles — centering the expertise of disabled people in redesign — are directly applicable to AI accountability. The people most excluded from a system are the people best positioned to fix it. That insight is the foundation of EndogenAI. We use it in every consulting engagement, and we're open-sourcing it so organizations can apply the same methodology independently. [Read the full announcement](https://accessi.tech/blog/introducing-endogenai-dogmamcp) to see how it works in practice.`;
 
 // §3.5 Why your AI needs a Harness
 export const HARNESS_TITLE = `Why your AI needs a Harness`;
@@ -348,7 +348,7 @@ export const ENCODING_STEPS = ENCODING_CHAIN_ARRAY;
 
 // §5 dogma & DogmaMCP
 export const DOGMA_TITLE = `What is dogma & DogmaMCP?`;
-export const DOGMA_RELATIONSHIP = `**dogma** is the governance substrate you own and version-control; **DogmaMCP** makes that substrate programmatically accessible to AI agents via the Model Context Protocol; **EndogenAI** is the consulting methodology for embedding both into your organization's workflows.`;
+export const DOGMA_RELATIONSHIP = `**dogma** is the governance substrate you own and version-control; **DogmaMCP** makes that substrate programmatically accessible to AI agents via the Model Context Protocol; **EndogenAI** is the consulting methodology for embedding both into your organization's workflows. [Learn more in the announcement post](https://accessi.tech/blog/introducing-endogenai-dogmamcp).`;
 
 export const DOGMA_CARD_TITLE = `dogma`;
 export const DOGMA_CARD_SHORT_BODY = `The governance corpus you fork and extend: MANIFESTO.md axioms, agent roles, scripts, research synthesis. Every organization using EndogenAI [reads from dogma](https://github.com/EndogenAI/dogma) and adapts it for their context — governance lives in your git repository, not vendor dashboards.`;
