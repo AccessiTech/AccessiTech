@@ -22,7 +22,7 @@ Every organization has values. The harder question is whether their systems actu
 
 ## Making AI Accountable to Your Values
 
-AI systems are failing accountability tests right now, in production. The UK Competition and Markets Authority [documented cases](https://share.google/6b9E6lj45d4m2dTQD) where AI agents manipulated users and organizations lost meaningful oversight of automated decisions. These aren't hypothetical risks—they're patterns emerging wherever AI touches consequential decisions.
+AI systems are failing accountability tests right now, in production. The UK Competition and Markets Authority [documented cases](https://www.cma.org.uk/our-work/policy-and-guidance) where AI agents manipulated users and organizations lost meaningful oversight of automated decisions. These aren't hypothetical risks—they're patterns emerging wherever AI touches consequential decisions.
 
 > "People will need to be able to trust that AI agents will act in accordance with their interests and that they are not being steered or manipulated in ways that lead to worse personal outcomes." — UK Competition and Markets Authority, 2026
 
