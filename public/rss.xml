@@ -131,6 +131,20 @@
             <media:credit>AccessiTech LLC</media:credit>
           </item>
         
+          <item>
+            <title>Introducing EndogenAI/DogmaMCP</title>
+            <link>https://accessi.tech/blog/introducing-endogenai-dogmamcp</link>
+            <pubDate>2026-05-18</pubDate>
+            <description>Making AI Accountable to Your Values</description>
+            <excerpt>Making AI Accountable to Your Values</excerpt>
+            
+            <enclosure url="https://www.accessi.tech/assets/images/li-5-hero-a.png" type="image/jpeg" length="1234" />
+            <media:content url="https://www.accessi.tech/assets/images/li-5-hero-a.png" type="image/jpeg" medium="image" width="300" height="200" />
+            <media:description type="plain">Introducing EndogenAI/DogmaMCP</media:description>
+            <media:thumbnail url="https://www.accessi.tech/assets/images/li-5-hero-a.png" />
+            <media:credit>AccessiTech LLC</media:credit>
+          </item>
+        
     </channel>
     <channel>
       <title>WCAG Explained</title>
@@ -1526,6 +1540,20 @@
             <media:content url="https://www.accessi.tech/assets/images/be-3-og.png" type="image/jpeg" medium="image" width="300" height="200" />
             <media:description type="plain">When 'The AI Did It' Is No Longer a Defense</media:description>
             <media:thumbnail url="https://www.accessi.tech/assets/images/be-3-og.png" />
+            <media:credit>AccessiTech LLC</media:credit>
+          </item>
+        
+          <item>
+            <title>Introducing EndogenAI/DogmaMCP</title>
+            <link>https://accessi.tech/blog/introducing-endogenai-dogmamcp</link>
+            <pubDate>2026-05-18</pubDate>
+            <description>Making AI Accountable to Your Values</description>
+            <excerpt>Making AI Accountable to Your Values</excerpt>
+            
+            <enclosure url="https://www.accessi.tech/assets/images/li-5-hero-a.png" type="image/jpeg" length="1234" />
+            <media:content url="https://www.accessi.tech/assets/images/li-5-hero-a.png" type="image/jpeg" medium="image" width="300" height="200" />
+            <media:description type="plain">Introducing EndogenAI/DogmaMCP</media:description>
+            <media:thumbnail url="https://www.accessi.tech/assets/images/li-5-hero-a.png" />
             <media:credit>AccessiTech LLC</media:credit>
           </item>
         
