@@ -276,3 +276,18 @@ main#main {
 .main-row {
   @include padding-bottom(3rem);
 }
+
+/* Code blocks and inline code - Highlight.js handles syntax highlighting */
+pre {
+  background-color: $darkBlue;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+pre code {
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}

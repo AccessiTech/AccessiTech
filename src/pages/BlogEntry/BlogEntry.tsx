@@ -20,6 +20,8 @@ import './BlogEntry.css';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { getChildText } from '../../utils/getChildText';
 import { createSlug } from '../../utils/createSlug';
+import hljs from 'highlight.js';
+import 'highlight.js/styles/atom-one-dark.css';
 
 export interface FetchBlogEntryProps {
   id: string;
@@ -59,6 +61,13 @@ export const BlogEntry = () => {
           console.warn(`Element with ID ${anchorId} not found.`);
         }
       }
+    }
+  }, [entry?.loaded]);
+
+  // Apply syntax highlighting to code blocks after content loads
+  useEffect(() => {
+    if (entry?.loaded) {
+      hljs.highlightAll();
     }
   }, [entry?.loaded]);
 

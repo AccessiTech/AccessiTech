@@ -71,9 +71,22 @@
 .blog-entry-page a.section-anchor {
   color: #061a32;
 }
-.blog-entry-page a.section-anchor h2,
-.blog-entry-page a.section-anchor h3,
+.blog-entry-page a.section-anchor h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.blog-entry-page a.section-anchor h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-weight: 600;
+}
+
 .blog-entry-page a.section-anchor h4 {
+  font-size: 1.125rem;
   margin-bottom: 0.5rem;
   margin-top: 0;
   font-weight: 600;
@@ -111,4 +124,19 @@
 
 .simplified-view sup > .fa.fa-external-link-alt {
   display: none;
+}
+
+.blog-entry-page h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.blog-entry-page h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.blog-entry-page h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
