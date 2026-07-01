@@ -67,7 +67,9 @@ export const BlogEntry = () => {
   // Apply syntax highlighting to code blocks after content loads
   useEffect(() => {
     if (entry?.loaded) {
-      hljs.highlightAll();
+      document.querySelectorAll('.blog-entry-page pre code').forEach(block => {
+        hljs.highlightElement(block as HTMLElement);
+      });
     }
   }, [entry?.loaded]);
 
