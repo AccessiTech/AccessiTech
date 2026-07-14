@@ -139,20 +139,18 @@ For more, see the [W3C's media alternatives docs](https://www.w3.org/WAI/WCAG22/
 **Best for**: Silent animations, visual demonstrations without narration, instructional graphics
 
 ```html
-<video controls>
+<video controls aria-describedby="video-description">
   <source src="animation.mp4" type="video/mp4" />
   Your browser does not support the video element.
 </video>
 
-<div aria-describedby="video-description">
-  <p id="video-description">
-    <strong>Visual Description:</strong> A blue circle appears in the center of the screen and
-    expands outward. As it expands, it changes color from blue to green. Three smaller yellow
-    circles emerge from the edges and orbit the green circle. Text fades in reading "Data flows from
-    source to destination." The yellow circles converge at the center, merge into the green circle,
-    and the entire graphic fades out.
-  </p>
-</div>
+<p id="video-description">
+  <strong>Visual Description:</strong> A blue circle appears in the center of the screen and expands
+  outward. As it expands, it changes color from blue to green. Three smaller yellow circles emerge
+  from the edges and orbit the green circle. Text fades in reading "Data flows from source to
+  destination." The yellow circles converge at the center, merge into the green circle, and the
+  entire graphic fades out.
+</p>
 ```
 
 **Format requirements**:
@@ -262,7 +260,7 @@ Yes, as long as the link is clearly labeled and easy to find. Best practice is t
 
 ### Do I need both a transcript AND captions?
 
-Not for 1.2.1. Audio-only content requires a transcript **OR** captions. Most platforms make transcripts easier to implement. For regular video (audio + visuals), you need captions ([1.2.2](https://www.w3.org/WAI/WCAG22/quickref/#captions-prerecorded))—not covered by 1.2.1.
+Not for 1.2.1. **Audio-only content** requires a **text alternative** (typically a transcript). If you publish your audio-only content as a video file (e.g., podcast uploaded to YouTube with a static image), you can provide either a transcript or captions. For **regular video** (audio + visuals), you need captions ([1.2.2](https://www.w3.org/WAI/WCAG22/quickref/#captions-prerecorded))—not covered by 1.2.1.
 
 ---
 
@@ -271,9 +269,8 @@ Not for 1.2.1. Audio-only content requires a transcript **OR** captions. Most pl
 - No transcript for audio-only content
 - No description for video-only content
 - Alternatives that are incomplete or inaccurate
-- Hiding transcripts or descriptions from users
+- Transcripts or descriptions that are hard to find (unlabeled links, buried in footer, generic "Download" text)
 - Relying on auto-generated transcripts without manual review
-- Providing only a "Download transcript" link without displaying it on the page
 
 Audit your site regularly and use accessibility checkers to ensure all media has proper alternatives. For more, see [WebAIM's guide to captions, transcripts, and audio descriptions](https://webaim.org/techniques/captions/), which covers best practices for making audio and video content accessible, and [NIDCD's hearing statistics](https://www.nidcd.nih.gov/health/statistics/quick-statistics-hearing) for demographic context on who benefits from transcripts.
 
