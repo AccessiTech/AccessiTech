@@ -336,7 +336,7 @@ Your audio descriptions should:
 ### Testing Tools
 
 - **Manual review**: Work with a colleague who is blind or has low vision
-- **Screen reader test**: Use VoiceOver (Mac) or NVDA (Windows) to verify AD track loads
+- **Screen reader test**: Use VoiceOver (Mac) or NVDA (Windows) to verify descriptions text track is exposed and accessible
 - **Training resources**: [Described and Captioned Media Program (DCMP)](https://dcmp.org/learn/captioningkey/639)
 
 ---
