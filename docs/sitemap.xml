@@ -397,7 +397,7 @@
             <xhtml:link rel="enclosure" type="image/png" href="https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png" length="72903" />
             <image:image>
               <image:loc>https://www.accessi.tech/assets/images/WCAG-Series-1.2.3.png</image:loc>
-              <image:caption>Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.2.3 Explained, Audio Description or Media Alternative (Prerecorded)"</image:caption>
+              <image:caption>Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.2.3 Explained, Audio Description or Media Alternative (Prerecorded)"</image:caption>
             </image:image>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
