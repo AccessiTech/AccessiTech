@@ -42,7 +42,7 @@ This ensures everyone can access the information in your videos, regardless of v
 
 ---
 
-⚠️ **Scope Note: Understanding the Audio Description Guidelines**
+### ⚠️ **Scope Note: Understanding the Audio Description Guidelines**
 
 WCAG includes three related guidelines for audio descriptions. Here's how they differ:
 
@@ -321,7 +321,7 @@ If you're looking for deaf/hard-of-hearing accessibility, see [WCAG 1.2.2 Captio
 - **Level A compliance (1.2.3)**: You can provide a full text transcript describing both audio and visual content, and you're compliant.
 - **Level AA compliance (1.2.5)**: You **must** provide actual audio descriptions. A text transcript alone is not sufficient.
 
-See the [scope note table](#what-is-guideline-125-audio-description-prerecorded) above for the full comparison of 1.2.3, 1.2.5, and 1.2.7.
+See the [scope note table](/wcag/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained#scope-note-understanding-the-audio-description-guidelines) above for the full comparison of 1.2.3, 1.2.5, and 1.2.7.
 
 ### Do auto-generated audio descriptions exist?
 

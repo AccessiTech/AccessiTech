@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.3.5 (Identify Input Purpose)—what it means, why it matters, and how to help browsers and assistive tech identify the…
 keywords: wcag 1.3.5, identify input purpose, accessibility, web standards, autofill, input fields, digital inclusion
 image: WCAG-Series-1.3.5.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.5 Explained, Identify Input Purpose"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.3.5 Explained, Identify Input Purpose"
 status: published
 date: 2025-07-01
 excerpt: Helps browsers and assistive technologies identify the purpose of input fields, improving usability and accessibility.

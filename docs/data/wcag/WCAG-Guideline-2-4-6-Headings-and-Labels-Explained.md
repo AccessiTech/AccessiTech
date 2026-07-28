@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.4.6 (Headings and Labels)—what it means, why it matters, and how to ensure headings and labels describe topic or purpose.
 keywords: wcag 2.4.6, headings, labels, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.4.6.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.6 Explained, Headings and Labels"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.4.6 Explained, Headings and Labels"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures headings and labels describe the topic or purpose clearly.

@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.4 (Resize Text)—what it means, why it matters, and how to ensure text remains readable when users zoom or increase…
 keywords: wcag 1.4.4, resize text, accessibility, web standards, zoom, responsive design
 image: WCAG-Series-1.4.4.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.4 Explained, Resize Text"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.4.4 Explained, Resize Text"
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures text remains readable when users zoom or increase font size.

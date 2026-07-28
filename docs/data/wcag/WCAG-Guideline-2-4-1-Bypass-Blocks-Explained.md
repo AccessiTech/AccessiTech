@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.4.1 (Bypass Blocks)—what it means, why it matters, and how to help users skip repetitive content.
 keywords: wcag 2.4.1, bypass blocks, skip links, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.4.1.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.1 Explained, Bypass Blocks"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.4.1 Explained, Bypass Blocks"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can skip repetitive content to access main content quickly.

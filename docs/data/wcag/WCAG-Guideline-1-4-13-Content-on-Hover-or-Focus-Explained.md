@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.13 (Content on Hover or Focus)—what it means, why it matters, and how to ensure popups and tooltips are accessible.
 keywords: wcag 1.4.13, content on hover, accessibility, web standards, tooltips, popups
 image: WCAG-Series-1.4.13.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.13, Content on Hover or Focus"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.4.13, Content on Hover or Focus"
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures tooltips and popups are accessible, dismissible, and do not interfere with content.

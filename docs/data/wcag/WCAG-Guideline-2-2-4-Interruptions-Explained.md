@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.2.4 (Interruptions)—what it means, why it matters, and how to ensure users can postpone or suppress interruptions.
 keywords: wcag 2.2.4, interruptions, notifications, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.2.4.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.4 Explained, Interruptions"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.2.4 Explained, Interruptions"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users can postpone or suppress interruptions like notifications or alerts.

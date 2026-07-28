@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.6 (Error Prevention (All)—what it means, why it matters, and how to help users avoid mistakes in all types of forms…
 keywords: wcag 3.3.6, error prevention, accessibility, web standards, user experience, form validation
 image: WCAG-Series-3.3.6.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.6 Explained, Error Prevention (All)"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 3.3.6 Explained, Error Prevention (All)"
 status: published
 date: 2025-07-03
 excerpt: This guideline helps users avoid mistakes in forms and submissions.

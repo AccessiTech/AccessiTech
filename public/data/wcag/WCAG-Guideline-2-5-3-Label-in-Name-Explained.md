@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.5.3 (Label in Name)—what it means, why it matters, and how to ensure visible labels match accessible names.
 keywords: wcag 2.5.3, label in name, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.5.3.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.3 Explained, Label in Name"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.5.3 Explained, Label in Name"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures visible labels match accessible names for controls.
