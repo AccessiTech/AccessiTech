@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.8 (Accessible Authentication (Minimum)—what it means, why it matters, and how to make authentication processes…
 keywords: wcag 3.3.8, accessible authentication, accessibility, web standards, user experience, login
 image: WCAG-Series-3.3.8.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.8 Explained, Accessible Authentication (Minimum)"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 3.3.8 Explained, Accessible Authentication (Minimum)"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures authentication processes are accessible without requiring cognitive function tests.

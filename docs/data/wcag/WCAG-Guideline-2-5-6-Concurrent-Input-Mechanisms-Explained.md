@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.5.6 (Concurrent Input Mechanisms)—what it means, why it matters, and how to ensure users can switch between input methods.
 keywords: wcag 2.5.6, concurrent input mechanisms, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.5.6.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.5.6 Explained, Concurrent Input Mechanisms"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.5.6 Explained, Concurrent Input Mechanisms"
 status: published
 date: 2025-07-03
 excerpt: Ensures users can switch between input methods, supporting accessibility for diverse needs.

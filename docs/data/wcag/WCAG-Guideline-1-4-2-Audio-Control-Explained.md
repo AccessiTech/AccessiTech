@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.2 (Audio Control)—what it means, why it matters, and how to ensure users can control audio that plays automatically.
 keywords: wcag 1.4.2, audio control, accessibility, web standards, autoplay, user experience
 image: WCAG-Series-1.4.2.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.2 Explained, Audio Control"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.4.2 Explained, Audio Control"
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures users can control audio that plays automatically.

@@ -68,10 +68,10 @@ For more, see [W3C's sign language docs](https://www.w3.org/WAI/WCAG22/Understan
 
 **These are different accommodations for different user groups:**
 
-| Guideline | User Group | Solution | Language Mode | WCAG Level |
-|-----------|-----------|----------|---------------|------------|
-| **1.2.2 Captions (Prerecorded)** | Deaf/hard-of-hearing users who read English/text | Text captions synchronized with audio | Written language | **A** (required) |
-| **1.2.4 Captions (Live)** | Deaf/hard-of-hearing users who read English/text | Real-time text captions | Written language | **AA** (required) |
+| Guideline                             | User Group                                                        | Solution                                   | Language Mode                              | WCAG Level             |
+| ------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ---------------------- |
+| **1.2.2 Captions (Prerecorded)**      | Deaf/hard-of-hearing users who read English/text                  | Text captions synchronized with audio      | Written language                           | **A** (required)       |
+| **1.2.4 Captions (Live)**             | Deaf/hard-of-hearing users who read English/text                  | Real-time text captions                    | Written language                           | **AA** (required)      |
 | **1.2.6 Sign Language (Prerecorded)** | **Culturally Deaf users whose primary language is sign language** | Sign language interpretation overlay/track | **Visual-spatial language (ASL/BSL/etc.)** | **AAA** (aspirational) |
 
 **Why BOTH may be needed**: A video may require captions (1.2.2/1.2.4) for deaf users who prefer text AND sign language interpretation (1.2.6) for Deaf users who use sign language as their primary language. These are not interchangeable — they serve distinct communities with different communication preferences.
@@ -126,6 +126,7 @@ Embed the sign language interpreter directly in the video frame as a picture-in-
 ```
 
 **Production specs**:
+
 - Interpreter positioned in lower right or lower left corner (consistent placement across all videos)
 - Minimum size: 25-30% of video frame width
 - High contrast background behind interpreter (solid color, not transparent)
@@ -169,16 +170,19 @@ Embed the sign language interpreter directly in the video frame as a picture-in-
 ### **Platform-Specific Considerations**
 
 **YouTube**:
+
 - Does not support separate sign language tracks
 - Bake sign language interpretation into the video itself (picture-in-picture)
 - Or upload separate video versions with ASL/BSL in the title
 
 **Vimeo**:
+
 - Supports text captions via WebVTT
 - Does not natively support sign language video tracks
 - Use picture-in-picture or upload separate sign language versions
 
 **Custom HTML5 Players**:
+
 - Can offer toggle button to show/hide sign language overlay
 - Can provide full-screen interpreter option
 - Consider [Able Player](https://ableplayer.github.io/ableplayer/) which has built-in sign language support
@@ -194,6 +198,7 @@ Embed the sign language interpreter directly in the video frame as a picture-in-
 - **International content**: Offer multiple sign language versions or default to the region's primary sign language
 
 **Video Production Specs**:
+
 - **Frame rate**: Minimum 30fps (sign language requires smooth motion; 60fps preferred for fast signing)
 - **Resolution**: Minimum 720p for interpreter visibility (1080p preferred)
 - **Lighting**: Consistent, shadow-free lighting on interpreter's face and hands
@@ -246,6 +251,7 @@ For testing recruitment, contact [NAD local chapters](https://www.nad.org/) or [
 ### **Which sign language should I use?**
 
 Match your audience's region:
+
 - **United States**: ASL (American Sign Language)
 - **United Kingdom**: BSL (British Sign Language)
 - **Australia**: Auslan (Australian Sign Language)
@@ -271,6 +277,7 @@ For guidance, see [NAD's position on sign language avatars](https://www.nad.org/
 ### **How much does sign language interpretation cost?**
 
 Costs vary based on:
+
 - Interpreter certification level and experience
 - Video length and complexity
 - Regional market rates ([RID interpreters](https://rid.org/) in the US typically charge $75-150/hour)
@@ -281,6 +288,7 @@ Budget for interpretation during video production planning — retrofitting sign
 ### **Do I need different interpreters for different topics?**
 
 **Yes, for specialized content.** Certified interpreters with subject matter expertise produce more accurate interpretation. For example:
+
 - Medical content: Interpreter with healthcare interpretation experience
 - Legal content: Certified Deaf Interpreter (CDI) or legal specialist
 - Technical/academic: Interpreter familiar with discipline-specific vocabulary
@@ -317,6 +325,7 @@ Consult [RID's specialist certification programs](https://rid.org/) for guidance
 - **Local**: Contact Deaf community organizations, schools for the Deaf, or interpreter agencies in your area
 
 **Never**:
+
 - Use unqualified signers (family members, friends, students)
 - Use AI-generated or avatar-based sign language
 - Assume someone who knows "some sign language" can interpret professionally
@@ -342,8 +351,7 @@ Audit your site regularly and use accessibility checkers to ensure all video con
 - **Level AA:** No requirement for 1.2.6.
 - **Level AAA:** Requires sign language interpretation for all prerecorded audio content in synchronized media. This is the core requirement for 1.2.6 and is mandatory for AAA conformance.
 
-For more, see the [W3C’s official documentation for 1.2.6 Sign Language (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/sign-language-prerecorded.html).
----
+## For more, see the [W3C’s official documentation for 1.2.6 Sign Language (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/sign-language-prerecorded.html).
 
 ### **🎯 AAA Level: Aspirational, Not Required — But Best Practice for True Inclusion**
 
@@ -358,8 +366,7 @@ For more, see the [W3C’s official documentation for 1.2.6 Sign Language (Prere
 
 **The distinction matters**: Meeting Level AA (captions for deaf users) is required. Meeting Level AAA (sign language for Deaf users) is aspirational — but it's the difference between minimum legal compliance and recognizing sign language as a distinct, equal language.
 
-For guidance on AAA adoption, see [W3C's Understanding Conformance](https://www.w3.org/WAI/WCAG22/Understanding/conformance) and [NAD's advocacy for sign language access](https://www.nad.org/).
----
+## For guidance on AAA adoption, see [W3C's Understanding Conformance](https://www.w3.org/WAI/WCAG22/Understanding/conformance) and [NAD's advocacy for sign language access](https://www.nad.org/).
 
 ## **Quick Checklist**
 
@@ -376,6 +383,7 @@ For guidance on AAA adoption, see [W3C's Understanding Conformance](https://www.
 Guideline 1.2.6 is essential for making video content accessible to **culturally Deaf users whose primary language is sign language**. By providing certified, qualified sign language interpretation, you recognize Deaf culture and linguistic diversity, improve comprehension for native signers, and meet AAA best practices. Make sign language interpretation a standard part of your video production process — and consult with the Deaf community to ensure your implementation is accurate, respectful, and truly inclusive.
 
 **Key resources**:
+
 - [National Association of the Deaf (NAD)](https://www.nad.org/) — US Deaf advocacy and resources
 - [World Federation of the Deaf (WFD)](https://wfdeaf.org/) — Global Deaf community and sign language rights
 - [Registry of Interpreters for the Deaf (RID)](https://rid.org/) — US interpreter certification and directory

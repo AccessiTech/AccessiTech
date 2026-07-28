@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.4.5 (Multiple Ways)—what it means, why it matters, and how to provide more than one way to locate a web page within a…
 keywords: wcag 2.4.5, multiple ways, navigation, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.4.5.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.5 Explained, Multiple Ways"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.4.5 Explained, Multiple Ways"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users have multiple ways to locate content on your site.

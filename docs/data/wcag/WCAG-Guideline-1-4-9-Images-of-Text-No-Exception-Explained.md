@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.4.9 (Images of Text No Exception)—what it means, why it matters, and how to ensure all text is real, not just an image.
 keywords: wcag 1.4.9, images of text, accessibility, web standards, real text, screen readers
 image: WCAG-Series-1.4.9.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.4.9 Explained, Images of Text (No Exception)"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.4.9 Explained, Images of Text (No Exception)"
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures all text is real and not just an image.

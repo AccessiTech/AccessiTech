@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.2.3 (No Timing)—what it means, why it matters, and how to ensure content is accessible without time limits.
 keywords: wcag 2.2.3, no timing, time limits, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.2.3.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.3 Explained, No Timing"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.2.3 Explained, No Timing"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures content is accessible without unnecessary time limits.
