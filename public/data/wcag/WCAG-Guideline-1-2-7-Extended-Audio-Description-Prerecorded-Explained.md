@@ -127,10 +127,10 @@ Use this decision criteria:
 ```xml
 <smil>
   <body>
-    <par>
+    <excl>
       <video src="lecture.mp4" />
       <audio src="extended-descriptions.mp3" begin="15s" />
-    </par>
+    </excl>
   </body>
 </smil>
 ```
