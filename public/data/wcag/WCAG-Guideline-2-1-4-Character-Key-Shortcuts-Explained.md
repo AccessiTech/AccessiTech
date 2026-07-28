@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.1.4 (Character Key Shortcuts)—what it means, why it matters, and how to ensure keyboard shortcuts don't interfere with…
 keywords: wcag 2.1.4, character key shortcuts, keyboard accessibility, web standards, digital inclusion, custom shortcuts
 image: WCAG-Series-2.1.4.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.4 Explained, Character Key Shortcuts"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.1.4 Explained, Character Key Shortcuts"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures keyboard shortcuts can be turned off, remapped, or only activated when a specific element has focus.

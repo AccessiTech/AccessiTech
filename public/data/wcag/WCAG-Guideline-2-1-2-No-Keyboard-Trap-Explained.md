@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.1.2 (No Keyboard Trap)—what it means, why it matters, and how to ensure users can always move focus away from any…
 keywords: wcag 2.1.2, keyboard trap, focus management, accessibility, web standards, digital inclusion, tab order
 image: WCAG-Series-2.1.2.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.1.2 Explained, No Keyboard Trap"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.1.2 Explained, No Keyboard Trap"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures keyboard users can navigate to and away from any component without getting trapped.

@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.4.7 (Focus Visible)—what it means, why it matters, and how to ensure keyboard focus is always visible.
 keywords: wcag 2.4.7, focus visible, keyboard navigation, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.4.7.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.4.7 Explained, Focus Visible"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.4.7 Explained, Focus Visible"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures keyboard focus is always visible for users.

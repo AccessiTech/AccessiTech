@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.3.3 (Error Suggestion)—what it means, why it matters, and how to help users fix mistakes with helpful suggestions.
 keywords: wcag 3.3.3, error suggestion, accessibility, web standards, form validation, user experience
 image: WCAG-Series-3.3.3.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.3.3 Explained, Error Suggestion"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 3.3.3 Explained, Error Suggestion"
 status: published
 date: 2025-07-03
 excerpt: This guideline helps users fix mistakes with helpful error suggestions.

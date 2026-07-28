@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 1.3.1 (Info and Relationships)—what it means, why it matters, and how to ensure information and relationships are…
 keywords: wcag 1.3.1, info and relationships, accessibility, web standards, headings, lists, tables, digital inclusion
 image: WCAG-Series-1.3.1.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 1.3.1 Explained,  Info and Relationships"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.3.1 Explained,  Info and Relationships"
 status: published
 date: 2025-07-01
 excerpt: This guideline ensures information and relationships are programmatically determined or available in text.

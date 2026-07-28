@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 2.2.6 (Timeouts)—what it means, why it matters, and how to ensure users are warned about timeouts and can request more time.
 keywords: wcag 2.2.6, timeouts, session, accessibility, web standards, digital inclusion
 image: WCAG-Series-2.2.6.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 2.2.6 Explained, Timeouts"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 2.2.6 Explained, Timeouts"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures users are warned about timeouts and can request more time.

@@ -4,7 +4,7 @@ series: Making the Web Accessible for All
 description: A practical guide to WCAG Guideline 3.1.1 (Language of Page)—what it means, why it matters, and how to ensure the default language of each page is…
 keywords: wcag 3.1.1, language of page, accessibility, web standards, digital inclusion
 image: WCAG-Series-3.1.1.png
-imageAlt: Blue text on yellow background saying, "Web Content Accessibiilty Guiedlines (WCAG) 3.1.1 Explained, Language of Page"
+imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 3.1.1 Explained, Language of Page"
 status: published
 date: 2025-07-03
 excerpt: This guideline ensures the default language of each page is programmatically determined.
