@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'reduxjs-toolkit-persist/integration/react';
 import App from './App/App';
 import './scss/index.scss';
+import 'highlight.js/styles/atom-one-dark.css';
 import { store, persistor } from './store/store';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
