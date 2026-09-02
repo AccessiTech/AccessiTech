@@ -53,7 +53,7 @@ For more, see [W3C's identify purpose docs](https://www.w3.org/WAI/WCAG22/Unders
 ## **What You Can Do Right Now**
 
 🔍 **Audit Your Content**
-Run your screen reader's landmarks/regions list (NVDA: `Insert+F7` → Landmarks tab; VoiceOver: `VO+U` → Landmarks rotor; JAWS: `Insert+F6` filtered to regions, or `R` to jump region-to-region). Confirm every meaningful region — banner, navigation, main, search, complementary, footer — appears exactly once with a name describing its purpose. Then tab through icon-only buttons (menu, search, cart) and confirm each announces its function, not just "button."
+Run your screen reader's landmarks/regions list (NVDA: `Insert+F7` → Landmarks tab; VoiceOver: `VO+U` → Landmarks rotor; JAWS: `Insert+Ctrl+R` for the Landmarks list, or `R` to jump region-to-region). Confirm every meaningful region — banner, navigation, main, search, complementary, footer — appears exactly once with a name describing its purpose. Then tab through icon-only buttons (menu, search, cart) and confirm each announces its function, not just "button."
 
 🛠️ **Implement Purpose Identification**
 Give every icon-only control an accessible name (`aria-label`, visually-hidden text, or `<title>` inside inline SVG). Use one instance of each landmark role per page where possible; when you need more than one of the same role (e.g., two `<nav>` elements), distinguish them with `aria-label` (e.g., `aria-label="Primary"` / `aria-label="Footer"`). Replace generic `<div>` regions with a real ARIA `role` (or semantic HTML5 element) that names what the region actually is.
