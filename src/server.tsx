@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import App from './App/App';
 import Metadata from './components/Metadata/Metadata';
 import './scss/index.scss';
+import 'highlight.js/styles/atom-one-dark.css';
 import { store } from './store/store';
 import { MetaDataProps } from './settings/getMetaData';
 import { Blog, setBlogEntry } from './store/blog';
