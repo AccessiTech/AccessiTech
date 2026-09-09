@@ -21,7 +21,9 @@ import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { getChildText } from '../../utils/getChildText';
 import { createSlug } from '../../utils/createSlug';
 import hljs from 'highlight.js';
-import 'highlight.js/styles/atom-one-dark.css';
+// Theme CSS is imported eagerly in index.tsx/server.tsx, not here — this file is
+// lazy-loaded via React.lazy(), and a CSS-code-split chunk here previously raced
+// against hljs.highlightElement() applying classes before its stylesheet loaded.
 
 export interface FetchBlogEntryProps {
   id: string;
@@ -68,7 +70,11 @@ export const BlogEntry = () => {
   useEffect(() => {
     if (entry?.loaded) {
       document.querySelectorAll('.blog-entry-page pre code').forEach(block => {
-        hljs.highlightElement(block as HTMLElement);
+        const el = block as HTMLElement;
+        // hljs throws on a node it already highlighted; clear the marker so
+        // re-renders (route change reusing this component) don't crash silently.
+        delete el.dataset.highlighted;
+        hljs.highlightElement(el);
       });
     }
   }, [entry?.loaded]);
