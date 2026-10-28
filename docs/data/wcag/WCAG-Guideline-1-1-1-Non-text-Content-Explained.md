@@ -6,13 +6,15 @@ keywords: wcag 1.1.1, non-text content, alt text, accessibility, web standards, 
 image: WCAG-Series-1.1.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.1.1 Explained, Non-text Content"
 status: published
-date: 2025-07-01
+date: 2024-07-01
 excerpt: This guideline ensures accessible alternatives for images, icons, and other non-text content.
 previous: /blog/The-Four-Principles-of-Accessibility-POUR, The Four Principles of Accessibility (POUR)
 next: /wcag/WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained, Guideline 1.2.1 - Audio-only and Video-only (Prerecorded)
 -->
 
 # **WCAG Guideline 1.1.1: Non-text Content Explained**
+
+**Author:** Conor Kelly | **Published:** 2024-07-01
 
 **Estimated read time:** 8–10 minutes
 
@@ -116,5 +118,3 @@ For more, see the [W3C’s official documentation for 1.1.1 Non-text Content](ht
 ## **Summary**
 
 Guideline 1.1.1 is the foundation of accessible web content. By providing text alternatives for all non-text content, you make your site usable for everyone. This small step can have a huge impact on digital inclusion, search engine optimization, and legal compliance. Start with your most important images and work your way through your site—every improvement counts.
-
-[Read Guideline 1.2.1: Audio-only and Video-only (Prerecorded) →](WCAG-Guideline-1-2-1-Audio-Video-Prerecorded-Explained)

@@ -6,13 +6,15 @@ keywords: wcag 1.2.1, audio-only, video-only, accessibility, captions, transcrip
 image: WCAG-Series-1.2.1.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.2.1 Explained, Audio-only and Video-only (Prerecorded)"
 status: published
-date: 2025-07-01
+date: 2024-07-01
 excerpt: This guideline ensures audio-only and video-only content is accessible with captions or transcripts.
 next: /wcag/WCAG-Guideline-1-2-2-Captions-Prerecorded-Explained, Guideline 1.2.2 - Captions (Prerecorded)
 previous: /wcag/WCAG-Guideline-1-1-1-Non-text-Content-Explained, Guideline 1.1.1 - Non-text Content
 -->
 
 # **WCAG Guideline 1.2.1: Audio-only and Video-only (Prerecorded) Explained**
+
+**Author:** Conor Kelly | **Published:** 2024-07-01
 
 **Estimated read time:** 8–10 minutes
 

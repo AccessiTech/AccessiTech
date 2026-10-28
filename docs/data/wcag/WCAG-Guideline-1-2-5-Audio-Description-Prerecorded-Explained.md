@@ -14,6 +14,8 @@ previous: /wcag/WCAG-Guideline-1-2-4-Captions-Live-Explained, Guideline 1.2.4 - 
 
 # **WCAG Guideline 1.2.5: Audio Description (Prerecorded) Explained**
 
+**Author:** Conor Kelly | **Published:** 2025-07-01
+
 **Estimated read time:** 8–10 minutes
 
 ---
