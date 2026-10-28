@@ -14,6 +14,8 @@ previous: /wcag/WCAG-Guideline-1-2-9-Audio-Only-Live-Explained, Guideline 1.2.9 
 
 # **WCAG Guideline 1.3.1: Info and Relationships Explained**
 
+**Author:** Conor Kelly | **Published:** 2026-07-01
+
 **Estimated read time:** 8–10 minutes
 
 ---

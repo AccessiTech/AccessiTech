@@ -14,6 +14,8 @@ previous: /wcag/WCAG-Guideline-1-2-8-Media-Alternative-Prerecorded-Explained, Gu
 
 # **WCAG Guideline 1.2.9: Audio-only (Live) Explained**
 
+**Author:** Conor Kelly | **Published:** 2025-07-01
+
 **Estimated read time:** 8–10 minutes
 
 ---

@@ -14,6 +14,8 @@ previous: /wcag/WCAG-Guideline-1-3-3-Sensory-Characteristics-Explained, Guidelin
 
 # **WCAG Guideline 1.3.4: Orientation Explained**
 
+**Author:** Conor Kelly | **Published:** 2026-07-01
+
 **Estimated read time:** 8–10 minutes
 
 ---
