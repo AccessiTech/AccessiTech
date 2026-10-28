@@ -6,13 +6,15 @@ keywords: wcag 1.2.4, captions, live video, accessibility, web standards, digita
 image: WCAG-Series-1.2.4.png
 imageAlt: Blue text on yellow background saying, "Web Content Accessibility Guidelines (WCAG) 1.2.4 Explained, Captions (Live)"
 status: published
-date: 2025-07-01
+date: 2024-07-01
 excerpt: This guideline ensures live video content is accessible with captions.
 next: /wcag/WCAG-Guideline-1-2-5-Audio-Description-Prerecorded-Explained, Guideline 1.2.5 - Audio Description (Prerecorded)
 previous: /wcag/WCAG-Guideline-1-2-3-Audio-Description-Media-Alternative-Explained, Guideline 1.2.3 - Audio Description or Media Alternative (Prerecorded)
 -->
 
 # **WCAG Guideline 1.2.4: Captions (Live) Explained**
+
+**Author:** Conor Kelly | **Published:** 2024-07-01
 
 **Estimated read time:** 8–10 minutes
 

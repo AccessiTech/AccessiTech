@@ -14,6 +14,8 @@ previous: /wcag/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained, Guidel
 
 # **WCAG Guideline 1.2.7: Extended Audio Description (Prerecorded) Explained**
 
+**Author:** Conor Kelly | **Published:** 2025-07-01
+
 **Estimated read time:** 8–10 minutes
 
 ---
