@@ -47,11 +47,11 @@ export const preload = async (url: string, staticPaths: string[]) => {
   });
   // console.log('Parsed items:', items.length);
   if (items && items.length) {
-    items.forEach(async (item: any) => {
-      const url = item.link.replace('accessi.tech/', '').replace('https://', '/');
+    for (const item of items) {
+      const url = new URL(item.link).pathname;
       const entry = await genEntry(url);
       store.dispatch(setBlogEntry(entry));
-    });
+    }
   }
 
   // Preload all disclosure markdown files

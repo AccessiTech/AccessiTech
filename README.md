@@ -202,6 +202,11 @@ yarn vitest run src/pages/BlogEntry/__tests__/BlogEntry.metadata.test.tsx src/co
 These are local regression checks, not proof of Google indexing or a successful
 production deployment.
 
+SSR preloading parses RSS links with `URL.pathname`, so changing the canonical
+hostname cannot corrupt Markdown source paths. Preloads are awaited before
+rendering, and a missing source rejects the build rather than leaving an unhandled
+background rejection.
+
 ## ♿ Accessibility Features
 
 Our commitment to accessibility includes:
