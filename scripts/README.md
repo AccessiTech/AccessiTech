@@ -15,6 +15,47 @@ Missing required artifacts cause a nonzero exit; disclosure Markdown is retained
 because client navigation fetches it. Canonical lowercase URLs remain the only
 disclosure variants in the sitemap and RSS.
 
+**CLI usage** (from the repository root):
+
+```bash
+# Generate docs/ and run Pages preparation as the final build step.
+yarn build:prod
+
+# Recheck existing build output and refresh compatibility aliases without rebuilding.
+yarn pages:prepare
+# Equivalent direct invocation:
+node scripts/prepare-pages.js
+```
+
+The standalone commands require an existing build; they do not generate missing
+artifacts, change Pages settings, or deploy the site.
+
+**Programmatic usage** (ES modules, from the repository root after building):
+
+```js
+import { preparePages } from './scripts/prepare-pages.js';
+
+const { aliases, caseInsensitiveAliases } = preparePages();
+console.log({ aliases, caseInsensitiveAliases });
+
+// For another checkout, pass its repository root, not its docs/ directory.
+preparePages({ rootDir: '/path/to/AccessiTech' });
+```
+
+Importing the helper does not run preparation. Both return arrays contain filenames:
+on a fresh Linux build, `aliases` contains `ACCESSIBILITY.html`, `ACCESSIBILITY.md`,
+`CONTRIBUTING.html`, and `CONTRIBUTING.md`, while `caseInsensitiveAliases` is empty.
+On a case-insensitive Mac, those names are normally reported in
+`caseInsensitiveAliases` instead and no files are copied onto themselves.
+Repeat runs refresh existing distinct aliases from their lowercase sources.
+Missing required artifacts throw an error (or exit nonzero through the CLI).
+
+**Regression checks**:
+
+```bash
+yarn vitest run scripts/__tests__/prepare-pages.test.js
+```
+
 ## test_ssg_regression.py
 
 Regression detection for SSG-generated HTML files.
