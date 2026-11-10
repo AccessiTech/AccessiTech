@@ -20,7 +20,11 @@ export const Metadata = (props: MetaDataProps) => {
       case 'canonical':
         return <link key={key} rel="canonical" href={value} />;
       default:
-        return <meta key={key} name={key} content={value} />;
+        return key.startsWith('og:') ? (
+          <meta key={key} property={key} content={value} />
+        ) : (
+          <meta key={key} name={key} content={value} />
+        );
     }
   });
   if (typeof document === 'undefined') {

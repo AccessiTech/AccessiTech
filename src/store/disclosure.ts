@@ -7,6 +7,7 @@ export interface Disclosure {
   loaded: boolean;
   id: string;
   title: string;
+  description?: string;
   content: string;
 }
 
@@ -25,11 +26,12 @@ export const disclosureSlice = createSlice({
   initialState,
   reducers: {
     setDisclosureEntry: (state, action) => {
-      const { id, title, content } = action.payload;
+      const { id, title, description, content } = action.payload;
       state.entries[id] = {
         loaded: true,
         id,
         title,
+        description,
         content,
       };
     },

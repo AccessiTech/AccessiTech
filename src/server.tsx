@@ -10,6 +10,9 @@ import { MetaDataProps } from './settings/getMetaData';
 import { Blog, setBlogEntry } from './store/blog';
 import { setDisclosureEntry } from './store/disclosure';
 import { XMLParser } from 'fast-xml-parser';
+import { parseMetaData } from './utils/parseMetaData';
+
+export { parseMetaData };
 
 console.log('Hello from server.tsx');
 
@@ -44,11 +47,11 @@ export const preload = async (url: string, staticPaths: string[]) => {
   });
   // console.log('Parsed items:', items.length);
   if (items && items.length) {
-    items.forEach(async (item: any) => {
-      const url = item.link.replace('accessi.tech/', '').replace('https://', '/');
+    for (const item of items) {
+      const url = new URL(item.link).pathname;
       const entry = await genEntry(url);
       store.dispatch(setBlogEntry(entry));
-    });
+    }
   }
 
   // Preload all disclosure markdown files
@@ -58,23 +61,13 @@ export const preload = async (url: string, staticPaths: string[]) => {
     files.forEach(file => {
       const id = file.replace('.md', '');
       const content = fs.readFileSync(path.resolve(disclosurePath, file), 'utf-8');
-      // Extract title from frontmatter or first heading
-      let title = '';
-      const frontmatterMatch = content.match(/<!--([\s\S]*?)-->/);
-      if (frontmatterMatch) {
-        const frontmatter = frontmatterMatch[1];
-        const titleMatch = frontmatter.match(/title:\s*(.+)/);
-        if (titleMatch) {
-          title = titleMatch[1].trim();
-        }
-      }
-      if (!title) {
-        title = content.split('\n')[0].replace(/^#\s*/, '').trim();
-      }
+      const metadata = parseMetaData(content);
+      const title = metadata.title || content.split('\n')[0].replace(/^#\s*/, '').trim();
       store.dispatch(
         setDisclosureEntry({
           id,
           title,
+          description: metadata.description || '',
           content,
         })
       );
@@ -125,7 +118,7 @@ export const fetchMetaData = async (
   const metaData: MetaDataProps = {
     title: rawMetaData['title'] || '',
     description: rawMetaData['description'] || '',
-    canonical: `https://accessi.tech${url.replace('.md', '.html')}`,
+    canonical: `https://www.accessi.tech${url.replace('.md', '.html')}`,
     type: rawMetaData['type'] || 'article',
     image: rawMetaData['image'] || undefined,
     imageAlt: rawMetaData['image_alt'] || undefined,
@@ -174,34 +167,4 @@ export const genEntry = async (url: string): Promise<Blog> => {
   if (next) entry.next = { url: next.split(',')[0], title: next.split(',')[1] || 'Next' };
 
   return entry;
-};
-
-export const parseMetaData = (text: string): { [key: string]: string } => {
-  const metaData: { [key: string]: string } = {};
-
-  // Find the start and end of the metadata comment block
-  const startIndex = text.indexOf('<!--');
-  const endIndex = text.indexOf('-->');
-
-  // If no comment block is found, return empty metadata
-  if (startIndex === -1 || endIndex === -1) {
-    return metaData;
-  }
-
-  // Extract only the content between <!-- and -->
-  const metaDataSection = text.substring(startIndex + 4, endIndex);
-  const lines = metaDataSection.split('\n');
-
-  lines.forEach(line => {
-    const colonIndex = line.indexOf(':');
-    if (colonIndex !== -1) {
-      const key = line.substring(0, colonIndex).trim();
-      const value = line.substring(colonIndex + 1).trim();
-      if (key && value) {
-        metaData[key] = value;
-      }
-    }
-  });
-
-  return metaData;
 };

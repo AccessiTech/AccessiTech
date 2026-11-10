@@ -48,7 +48,7 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
     );
     // Generate the blog link relative to blogDir
     const relativePath = pathDep.relative(blogDir, filePath).replace(/\\/g, '/').replace('../', '');
-    const link = `https://accessi.tech/${relativePath}`.replace('.md', '');
+    const link = `https://www.accessi.tech/${relativePath}`.replace('.md', '');
     const fileMetaData = getMetaData(fileContent);
     const {
       title,
@@ -95,7 +95,7 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
   <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
       <title>AccessiTech Blog</title>
-      <link>https://accessi.tech/blog</link>
+      <link>https://www.accessi.tech/blog</link>
       <description>Explore expert-written articles, tools, and tips to help you build better, more inclusive digital products.</description>
       ${blogFiles
         .filter(filePath => filePath.includes('/blog/'))
@@ -105,7 +105,7 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
     </channel>
     <channel>
       <title>WCAG Explained</title>
-      <link>https://accessi.tech/wcag</link>
+      <link>https://www.accessi.tech/wcag</link>
       <description>Learn about the Web Content Accessibility Guidelines (WCAG) and how to implement them effectively.</description>
       ${blogFiles
         .filter(filePath => filePath.includes('/wcag/'))
@@ -115,7 +115,7 @@ export function generateRssFeed({ fsDep = fs, pathDep = path, rootDir = process.
     </channel>
     <channel>
       <title>Disclosures</title>
-      <link>https://accessi.tech/disclosures</link>
+      <link>https://www.accessi.tech/disclosures</link>
       <description>AccessiTech's transparency and disclosure practices.</description>
       ${disclosureFiles
         .map(mapFunc)

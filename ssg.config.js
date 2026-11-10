@@ -59,7 +59,7 @@ export const config = {
     'src/App/meta.ts', // 20: /about  (use App meta as fallback; About page <Metadata> component provides the real SEO)
     'src/App/meta.ts', // 21: /contact
   ],
-  productionUrlBase: 'https://accessi.tech',
+  productionUrlBase: 'https://www.accessi.tech',
   pathsBuilder: items =>
     items.map(item => {
       const { link } = item;

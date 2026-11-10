@@ -3,5 +3,4 @@ set -e
 
 npx lint-staged
 yarn lint:strict
-yarn test:clean
 yarn test
