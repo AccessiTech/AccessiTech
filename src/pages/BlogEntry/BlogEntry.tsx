@@ -7,7 +7,7 @@ import { getBlogEntry, useBlogEntry } from '../../store/blog';
 import store from '../../store/store';
 import {
   ACCESSITECH,
-  BLOG_CANONICAL,
+  HOME_URL,
   DEFAULT_SHARE_IMAGE_ALT,
   DEFAULT_SHARE_IMAGE,
   BLOG_DESCRIPTION,
@@ -32,7 +32,7 @@ export interface FetchBlogEntryProps {
 }
 const fetchBlogEntry = async ({ id, navigate, pathname }: FetchBlogEntryProps) => {
   if (!id) return;
-  await store.dispatch(getBlogEntry({ id: id.replace(/.html/g, ''), navigate, pathname }));
+  await store.dispatch(getBlogEntry({ id: id.replace(/\.html$/i, ''), navigate, pathname }));
 };
 export interface BlogEntryProps {}
 export interface BlogEntryType extends React.FC<BlogEntryProps> {
@@ -42,7 +42,7 @@ export interface BlogEntryType extends React.FC<BlogEntryProps> {
 export const BlogEntry = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const id = useParams().id?.replace('.html', '') as string;
+  const id = useParams().id?.replace(/\.html$/i, '') as string;
   const sub = useParams().sub;
   const pathname = location.pathname.split('/')[1] || '';
   const pagename = pathname === 'wcag' ? 'WCAG Explained' : 'Blog';
@@ -82,7 +82,7 @@ export const BlogEntry = () => {
   const metadata = {
     title: `${ACCESSITECH} | ${entry?.title || 'Blog Entry'}`,
     description: entry?.description || BLOG_DESCRIPTION,
-    canonical: `${BLOG_CANONICAL}/${id}`,
+    canonical: `${HOME_URL}/${pathname}/${sub ? `${sub}/` : ''}${id}`,
     image: entry?.og_image || entry?.image || DEFAULT_SHARE_IMAGE,
     imageAlt: entry?.og_image_alt || entry?.image_alt || DEFAULT_SHARE_IMAGE_ALT,
     type: 'article',

@@ -110,6 +110,11 @@ Generate test coverage report:
 yarn test:coverage
 ```
 
+The pre-commit hook runs lint-staged, strict lint, and one non-watch test run.
+`test:clean` remains a compatibility alias for `yarn test`; it does not kill
+processes by name or port, and test failures propagate normally. No cleanup of
+unrelated development servers or test sessions is performed.
+
 ## 🧹 Code Formatting
 
 Format your code with Prettier:
@@ -175,6 +180,27 @@ not a manual upload of the Mac's `docs/` tree.
 
 After deployment, check both lowercase and uppercase URLs, page-specific metadata,
 canonical URLs, and client-side disclosure navigation; then repeat GSC inspection.
+
+### Generated and client metadata
+
+WCAG Explained articles use `/wcag/<id>` canonicals; ordinary blog articles retain
+`/blog/<id>`. Both use the `www` host and omit an optional `.html` suffix.
+At client startup, `adoptGeneratedMetadata` marks only the canonical and SEO meta
+keys owned by `Metadata` for Helmet reconciliation. This allows Helmet to replace
+the SSG tags rather than appending a second canonical/description after React mounts.
+Other head content, including robots/verification tags, styles, icons, and scripts,
+is left untouched. Open Graph uses `property`; Twitter uses `name`.
+
+The metadata lifecycle tests load real generated heads and exercise WCAG, blog,
+and consulting direct routes and client navigation. Run them after a production
+build as well as against the committed output:
+
+```bash
+yarn vitest run src/pages/BlogEntry/__tests__/BlogEntry.metadata.test.tsx src/components/Metadata/__tests__/Metadata.test.tsx
+```
+
+These are local regression checks, not proof of Google indexing or a successful
+production deployment.
 
 ## ♿ Accessibility Features
 

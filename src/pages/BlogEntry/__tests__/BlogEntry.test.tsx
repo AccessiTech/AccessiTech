@@ -3,12 +3,15 @@ import { screen, waitFor, act, fireEvent } from '@testing-library/react';
 import { Routes, Route } from 'react-router-dom';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
 import BlogEntry from '../BlogEntry';
+import type { MetaDataProps } from '../../../settings/getMetaData';
 
 // --- HOISTED MOCKS ---
 vi.mock('../BlogEntry.css', () => ({}));
 vi.mock('../../../components/Metadata/Metadata', () => ({
   __esModule: true,
-  default: () => <div data-testid="metadata" />,
+  default: ({ canonical }: MetaDataProps) => (
+    <div data-testid="metadata" data-canonical={canonical} />
+  ),
 }));
 vi.mock('../../../components/Header/Header', () => ({
   __esModule: true,
@@ -81,6 +84,33 @@ describe('BlogEntry', () => {
     // Previous/Next links
     expect(screen.getByText(/Previous: Previous Blog/)).toBeInTheDocument();
     expect(screen.getByText(/Next: Next Blog/)).toBeInTheDocument();
+  });
+
+  it.each([
+    [
+      '/wcag/WCAG-Guideline-2-5-4-Motion-Actuation-Explained',
+      'wcag',
+      'WCAG-Guideline-2-5-4-Motion-Actuation-Explained',
+    ],
+    [
+      '/wcag/WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained.html',
+      'wcag',
+      'WCAG-Guideline-1-2-6-Sign-Language-Prerecorded-Explained',
+    ],
+    ['/blog/test-blog', 'blog', 'test-blog'],
+    ['/blog/test-blog.HTML', 'blog', 'test-blog'],
+  ])('uses the route family for %s metadata and content loading', (route, family, id) => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/:pathname/:id" element={<BlogEntry />} />
+      </Routes>,
+      { route }
+    );
+    expect(screen.getByTestId('metadata')).toHaveAttribute(
+      'data-canonical',
+      `https://www.accessi.tech/${family}/${id}`
+    );
+    expect(useBlogEntryMock).toHaveBeenCalledWith(id);
   });
 
   it('shows loading state if entry is not loaded', () => {

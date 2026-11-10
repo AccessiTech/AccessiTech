@@ -40,3 +40,16 @@ export const getMetaData = ({
   'twitter:image:alt': image ? imageAlt : DEFAULT_SHARE_IMAGE_ALT,
   'twitter:url': canonical,
 });
+
+export const adoptGeneratedMetadata = (head: HTMLHeadElement): void => {
+  const ownedKeys = new Set(
+    Object.keys(getMetaData({ title: '', description: '', canonical: '' }))
+  );
+  // Helmet only replaces nodes it owns; adopt generated SEO tags before mounting React.
+  head.querySelectorAll('link[rel="canonical"], meta[name], meta[property]').forEach(node => {
+    const key = node.getAttribute('name') || node.getAttribute('property');
+    if (node.tagName === 'LINK' || (key && ownedKeys.has(key))) {
+      node.setAttribute('data-react-helmet', 'true');
+    }
+  });
+};

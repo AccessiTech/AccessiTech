@@ -5,7 +5,9 @@ import App from './App/App';
 import './scss/index.scss';
 import 'highlight.js/styles/atom-one-dark.css';
 import { store, persistor } from './store/store';
+import { adoptGeneratedMetadata } from './settings/getMetaData';
 
+adoptGeneratedMetadata(document.head);
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
