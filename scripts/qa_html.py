@@ -52,7 +52,7 @@ except ImportError:  # pragma: no cover
 # Constants
 # ---------------------------------------------------------------------------
 
-CORRECT_DOMAIN_PREFIX = "https://accessi.tech/"
+CORRECT_DOMAIN_PREFIX = "https://www.accessi.tech/"
 WRONG_DOMAIN = "accessitech.org"
 VALID_STATUSES = {"published", "draft", "unpublished"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -465,7 +465,7 @@ def _check_wcag_index(soup: BeautifulSoup, filepath: Path) -> list:
     results = []
     # wcag-001: breadcrumb nav with Home > Resources present
     # TODO: implement wcag-001
-    # wcag-002: canonical href equals https://accessi.tech/wcag
+    # wcag-002: canonical href equals https://www.accessi.tech/wcag
     # TODO: implement wcag-002
     return results
 
@@ -563,7 +563,7 @@ def _check_contact(soup: BeautifulSoup, filepath: Path) -> list:
     # TODO: implement contact-001
     # contact-002: contact form or Calendly embed present
     # TODO: implement contact-002
-    # contact-003: canonical href equals https://accessi.tech/contact
+    # contact-003: canonical href equals https://www.accessi.tech/contact
     # TODO: implement contact-003
     return results
 
@@ -1259,7 +1259,7 @@ def check_xref(
     # xref-003: HTML og:image URL contains MD image filename
     # TODO: implement xref-003
 
-    # xref-004: HTML canonical href uses https://accessi.tech/ (not accessitech.org)
+    # xref-004: HTML canonical href uses https://www.accessi.tech/ (not accessitech.org)
     canonical_tag = soup.find("link", attrs={"rel": "canonical"})
     if canonical_tag:
         href = canonical_tag.get("href", "")
@@ -1274,7 +1274,7 @@ def check_xref(
                 )
             )
 
-    # xref-005: HTML og:url uses https://accessi.tech/ (not accessitech.org)
+    # xref-005: HTML og:url uses https://www.accessi.tech/ (not accessitech.org)
     og_url_tag = soup.find("meta", attrs={"property": "og:url"})
     if og_url_tag:
         og_url = og_url_tag.get("content", "")

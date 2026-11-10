@@ -36,7 +36,7 @@ export const GITHUB_ORG_URL = 'https://github.com/AccessiTech';
 export const GITHUB_ISSUES_URL = 'https://github.com/AccessiTech/AccessiTech/issues';
 export const GITHUB_DISCUSSIONS_URL = 'https://github.com/AccessiTech/AccessiTech/discussions/33';
 export const TWITCH_URL = 'https://www.twitch.tv/accessitech';
-export const HOME_URL = 'https://accessi.tech';
+export const HOME_URL = 'https://www.accessi.tech';
 export const IMAGES_BASE_URL = HOME_URL + '/assets/images';
 
 // Helmet Strings
