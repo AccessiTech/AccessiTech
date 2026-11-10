@@ -19,6 +19,7 @@ import './Disclosure.css';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import { getChildText } from '../../utils/getChildText';
 import { useDisclosure } from '../../store/disclosure';
+import { parseMetaData } from '../../utils/parseMetaData';
 
 export interface FetchDisclosureProps {
   id: string;
@@ -41,7 +42,10 @@ export interface DisclosureProps {}
 export const Disclosure = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const id = useParams().id?.replace('.html', '') as string;
+  const id =
+    useParams()
+      .id?.replace(/\.(html|md)$/i, '')
+      .toLowerCase() || '';
   const sub = useParams().sub;
   const pathname = location.pathname.split('/')[1] || '';
   const pagename = 'Disclosures';
@@ -72,24 +76,13 @@ export const Disclosure = () => {
     let isMounted = true;
     fetchDisclosure({ id: disclosureId }).then((content: string) => {
       if (isMounted) {
-        // Extract frontmatter-style comment block
-        let title = '';
-        const frontmatterMatch = content.match(/<!--([\s\S]*?)-->/);
-        if (frontmatterMatch) {
-          const frontmatter = frontmatterMatch[1];
-          const titleMatch = frontmatter.match(/title:\s*(.+)/);
-          if (titleMatch) {
-            title = titleMatch[1].trim();
-          }
-        }
-        if (!title) {
-          // fallback to first markdown heading
-          title = content.split('\n')[0].replace(/^#\s*/, '');
-        }
+        const metadata = parseMetaData(content);
+        const title = metadata.title || content.split('\n')[0].replace(/^#\s*/, '');
         setEntry((prev: any) => ({
           ...prev,
           content,
           title,
+          description: metadata.description || '',
           loaded: true,
         }));
       }
@@ -98,10 +91,6 @@ export const Disclosure = () => {
       isMounted = false;
     };
   }, [disclosureId, preloadedDisclosure?.loaded]);
-
-  useEffect(() => {
-    fetchDisclosure({ id: sub ? `${sub}/${id}` : id });
-  }, [id, sub]);
 
   useEffect(() => {
     if (entry?.loaded && window) {

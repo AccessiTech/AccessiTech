@@ -153,6 +153,29 @@ This will:
 3. Run the static site generator
 4. Output to the `docs/` directory
 
+### GitHub Pages publishing
+
+Use **Settings -> Pages -> Build and deployment -> Source: GitHub Actions** with
+[the Pages workflow](.github/workflows/pages.yml). Switch the source before merging
+this publishing change; the workflow builds and tests on Linux and uploads the
+generated site. The previous branch-based Jekyll build can turn disclosure Markdown
+into competing pages with generic metadata.
+
+The [source marker](public/.nojekyll) is copied to `docs/.nojekyll` on every clean
+build. Do not remove disclosure Markdown: React fetches it for client navigation.
+Disclosure source names, RSS/sitemap URLs, metadata and footer links use lowercase
+extensionless URLs, such as `/disclosures/accessibility`.
+
+The final build step [prepares legacy aliases](scripts/prepare-pages.js) for
+`ACCESSIBILITY` and `CONTRIBUTING` HTML/Markdown files. Their HTML keeps the lowercase
+canonical; this preserves old uppercase and `.html` links without adding them to
+the sitemap. A case-insensitive Mac resolves these aliases locally; Linux writes
+the distinct files into the deployment artifact. Publish through the workflow,
+not a manual upload of the Mac's `docs/` tree.
+
+After deployment, check both lowercase and uppercase URLs, page-specific metadata,
+canonical URLs, and client-side disclosure navigation; then repeat GSC inspection.
+
 ## ♿ Accessibility Features
 
 Our commitment to accessibility includes:

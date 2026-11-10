@@ -25,9 +25,10 @@ const mockFetch = (response: Partial<Response> & { text?: () => Promise<string> 
 };
 import { vi } from 'vitest';
 import { screen, waitFor, fireEvent } from '@testing-library/react';
-import { Routes, Route } from 'react-router-dom';
+import { Link, Routes, Route } from 'react-router-dom';
 import { renderWithProviders } from '../../../utils/__tests__/renderWithProviders';
 import { Disclosure } from '../Disclosure';
+import { setDisclosureEntry } from '../../../store/disclosure';
 
 // Vite/ Vitest: use vi instead of jest
 beforeEach(() => {
@@ -138,6 +139,90 @@ afterEach(() => {
 });
 
 describe('Disclosure Page', () => {
+  it.each([
+    'accessibility',
+    'ACCESSIBILITY',
+    'accessibility.html',
+    'ACCESSIBILITY.html',
+    'contributing',
+    'CONTRIBUTING.html',
+  ])('loads %s using lowercase Markdown and canonical metadata', async id => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/disclosures/:id" element={<Disclosure />} />
+      </Routes>,
+      { route: `/disclosures/${id}` }
+    );
+    const normalizedId = id.replace('.html', '').toLowerCase();
+    await waitFor(() => {
+      expect(
+        screen.getByRole('heading', { name: 'Accessibility Statement', level: 1 })
+      ).toBeInTheDocument();
+      expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
+        'href',
+        `https://www.accessi.tech/disclosures/${normalizedId}`
+      );
+      expect(document.querySelector('meta[name="description"]')).toHaveAttribute(
+        'content',
+        "AccessiTech's commitment to digital accessibility for all users."
+      );
+    });
+    expect(global.fetch).toHaveBeenCalledWith(`/disclosures/${normalizedId}.md`);
+    expect(global.fetch).not.toHaveBeenCalledWith(`/disclosures/${normalizedId.toUpperCase()}.md`);
+  });
+
+  it('loads disclosure content and metadata after client-side navigation', async () => {
+    renderWithProviders(
+      <Routes>
+        <Route path="/" element={<Link to="/disclosures/accessibility">Disclosure link</Link>} />
+        <Route path="/disclosures/:id" element={<Disclosure />} />
+      </Routes>
+    );
+    fireEvent.click(screen.getByRole('link', { name: 'Disclosure link' }));
+    await waitFor(() => {
+      expect(
+        screen.getByRole('heading', { name: 'Accessibility Statement', level: 1 })
+      ).toBeInTheDocument();
+      expect(document.querySelector('meta[name="description"]')).toHaveAttribute(
+        'content',
+        "AccessiTech's commitment to digital accessibility for all users."
+      );
+    });
+    expect(global.fetch).toHaveBeenCalledWith('/disclosures/accessibility.md');
+  });
+
+  it('preserves preloaded description metadata on legacy routes without fetching again', async () => {
+    const { store } = renderWithProviders(
+      <Routes>
+        <Route
+          path="/"
+          element={<Link to="/disclosures/ACCESSIBILITY.html">Disclosure link</Link>}
+        />
+        <Route path="/disclosures/:id" element={<Disclosure />} />
+      </Routes>
+    );
+    store.dispatch(
+      setDisclosureEntry({
+        id: 'accessibility',
+        title: 'Preloaded statement',
+        description: 'Page-specific preloaded description',
+        content: '# Preloaded statement',
+      })
+    );
+    fireEvent.click(screen.getByRole('link', { name: 'Disclosure link' }));
+    await waitFor(() => {
+      expect(document.querySelector('meta[name="description"]')).toHaveAttribute(
+        'content',
+        'Page-specific preloaded description'
+      );
+      expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
+        'href',
+        'https://www.accessi.tech/disclosures/accessibility'
+      );
+    });
+    expect(global.fetch).not.toHaveBeenCalled();
+  });
+
   it('handles fetch failure gracefully', async () => {
     mockFetch({ ok: false, status: 404, text: () => Promise.resolve('Not found') });
     renderWithProviders(
